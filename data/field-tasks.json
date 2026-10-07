@@ -1,0 +1,976 @@
+{
+  "schema": "ks-field-tasks/v1",
+  "revision": "FK-01",
+  "source_head": "69b26eb4037c0eacdf0554819bb0e35f0cc36819",
+  "status_codes": [
+    "OPEN",
+    "IN_PROGRESS",
+    "CAPTURED_UNREVIEWED",
+    "BLOCKED_UNKNOWN"
+  ],
+  "timing_labels": {
+    "BEFORE_RELEASE": "Vor dem Lösen",
+    "DURING_RELEASE": "Beim Lösen",
+    "AFTER_RELEASE": "Direkt nach dem Öffnen",
+    "AFTER_REMOVAL": "Nach dem Ausbau"
+  },
+  "tasks": [
+    {
+      "task_id": "TASK-ORIENT",
+      "title": "Blickseiten gemeinsam benennen",
+      "component": "COMP-RADSTATT",
+      "family": "COMP-RADSTATT",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Einbauzusammenhang und Blickrichtung gehen verloren.",
+      "instruction": "Zeigt Seite A und B im selben Übersichtsbild. Erst nach gemeinsamer Bestätigung Land/Wasser zuordnen. Oben, Fluss und Drehrichtung getrennt festhalten.",
+      "photo_views": [
+        "Übersicht von A",
+        "Übersicht von B",
+        "Pfeile und Person im Bild"
+      ],
+      "measurement_endpoints": [
+        "Achsmitte",
+        "fester Punkt am Tragwerk"
+      ],
+      "tools": [
+        "Kreide",
+        "Maßband"
+      ],
+      "questions": [
+        "Welche Seite nennt ihr Landseite?",
+        "Dreht das Rad tatsächlich oder steht es?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Übersicht von A",
+          "Übersicht von B",
+          "Pfeile und Person im Bild"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Zwei beschriftete Übersichten; Person und Blickrichtung angegeben.",
+      "status": "OPEN",
+      "source_refs": [
+        "HUMAN-01",
+        "GAP-01",
+        "GAP-07"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 1
+    },
+    {
+      "task_id": "TASK-DATUM",
+      "title": "Drei bleibende Referenzpunkte setzen",
+      "component": "COMP-RADSTATT",
+      "family": "COMP-RADSTATT",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Nach dem Abbau fehlt der gemeinsame räumliche Bezug.",
+      "instruction": "DATUM-A, B und C am verbleibenden Tragwerk vorsehen, nicht auf einer Geraden. Punkte beschreiben, fotografieren und alle drei Verbindungsstrecken sowie Höhenbezug messen.",
+      "photo_views": [
+        "Jeder Marker nah",
+        "alle Marker im Zusammenhang"
+      ],
+      "measurement_endpoints": [
+        "DATUM-A / DATUM-B / DATUM-C",
+        "jeweils Gegenpunkt, gleiche Markenmitte"
+      ],
+      "tools": [
+        "Maßband",
+        "Wasserwaage",
+        "Marker"
+      ],
+      "questions": [
+        "Bleiben alle Punkte nach dem Ausbau erhalten?"
+      ],
+      "media_requirements": {
+        "photos": 2,
+        "photo_labels": [
+          "Jeder Marker nah",
+          "alle Marker im Zusammenhang"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "3 markierte Punkte, 3 Strecken mit Einheit/Unsicherheit und Skizze; Lage nicht kollinear.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-01"
+      ],
+      "stop_before_release": true,
+      "measurement_required": true,
+      "order": 2
+    },
+    {
+      "task_id": "TASK-POSE",
+      "title": "Einbaumaße vor dem Lösen sichern",
+      "component": "COMP-RIMS",
+      "family": "COMP-RIMS",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Ringabstand und Achslage lassen sich später nicht sicher zurückrechnen.",
+      "instruction": "Bezugflächen an beiden Kränzen benennen. Abstand an drei Umfangsorten messen; zwei Durchmesser, Gesamtbreite und Wellenlage zum Datum ergänzen.",
+      "photo_views": [
+        "Endpunkte jeder Messstrecke",
+        "Gesamtansicht mit Maßstab"
+      ],
+      "measurement_endpoints": [
+        "gewählte Kranzfläche A",
+        "gewählte Kranzfläche B"
+      ],
+      "tools": [
+        "Maßband",
+        "Lot"
+      ],
+      "questions": [
+        "Ist das Rad verformt oder absichtlich versetzt?"
+      ],
+      "media_requirements": {
+        "photos": 2,
+        "photo_labels": [
+          "Endpunkte jeder Messstrecke",
+          "Gesamtansicht mit Maßstab"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Drei Abstände, zwei Durchmesser und Lage zum Datum; jede Messung mit Endpunkten.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-01",
+        "CONFLICT-03",
+        "CONFLICT-04"
+      ],
+      "stop_before_release": true,
+      "measurement_required": true,
+      "order": 3
+    },
+    {
+      "task_id": "TASK-ARM-BEFORE",
+      "title": "STOPP: Armzonen vor dem ersten Keilzug",
+      "component": "COMP-ARMS",
+      "family": "COMP-ARMS",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0++",
+      "irreversible_loss": "Endpaarung, Keilrichtung und axialer Verlauf werden beim Öffnen getrennt.",
+      "instruction": "Beide Armzonen rundum sichern: axial von A/B, vier Schrägansichten, Marken und sichtbare Eintritte. Sichtbare Enden vorläufig einzeln markieren; keine Paarung 1/4 erraten.",
+      "photo_views": [
+        "axial A",
+        "axial B",
+        "vier Schrägansichten",
+        "jede historische Marke"
+      ],
+      "measurement_endpoints": [
+        "sichtbarer Eintritt jedes Arms",
+        "gemeinsam markierte axiale Bezugsfläche"
+      ],
+      "tools": [
+        "Kamera",
+        "Maßstab",
+        "reversible Anhänger"
+      ],
+      "questions": [
+        "Gerade oder gekröpft?",
+        "Welche Enden gehören wirklich zusammen?"
+      ],
+      "media_requirements": {
+        "photos": 4,
+        "photo_labels": [
+          "axial A",
+          "axial B",
+          "vier Schrägansichten",
+          "jede historische Marke"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Beide Armzonen vollständig; sichtbare Enden getrennt benannt; verdeckte Paarungen offen.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-02",
+        "H-ARM-01",
+        "H-ARM-02",
+        "H-ARM-04"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 4
+    },
+    {
+      "task_id": "TASK-ARM-RELEASE",
+      "title": "Jeden Keilzug und jede Freigabe festhalten",
+      "component": "COMP-FASTENERS",
+      "family": "COMP-FASTENERS",
+      "instance": null,
+      "timing": "DURING_RELEASE",
+      "priority": "P0++",
+      "irreversible_loss": "Kontaktflächen und ursprüngliche Verriegelungsrichtung verschwinden.",
+      "instruction": "Vor dem Keilzug Spitze, Sitz und Partner fotografieren. Nach Freigabe beide Kontaktflächen zusammen aufnehmen. Tatsächliche Auszugsrichtung und Reihenfolge protokollieren.",
+      "photo_views": [
+        "Keil vor Zug",
+        "Sitz nach Zug",
+        "beide Partnerflächen"
+      ],
+      "measurement_endpoints": [
+        "Eintrittsfläche",
+        "Ende der Einstecktiefe"
+      ],
+      "tools": [
+        "Tiefenmaß",
+        "Maßstab",
+        "Anhänger"
+      ],
+      "questions": [
+        "Welcher Keil trägt, welcher hält nur die Montage?",
+        "Welcher nächste Arm wird dadurch frei?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Keil vor Zug",
+          "Sitz nach Zug",
+          "beide Partnerflächen"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Vorher/nachher, Keil-ID, Partner, Tiefe und Ereignisfolge dokumentiert.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-02",
+        "GAP-08",
+        "H-ARM-03"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 5
+    },
+    {
+      "task_id": "TASK-MORTISE",
+      "title": "Geöffnete Wellenzone ohne Deutung aufnehmen",
+      "component": "COMP-SHAFT",
+      "family": "COMP-SHAFT",
+      "instance": null,
+      "timing": "AFTER_RELEASE",
+      "priority": "P0++",
+      "irreversible_loss": "Kurzzeitig zugängliche Innenflächen werden verdeckt oder getrennt.",
+      "instruction": "Zugängliche Ein- und Austrittsflächen, Schnittpunkte und Tiefen fotografieren und messen. Nur sichtbare Kontaktflächen benennen. Keine zusätzliche Zerlegung allein für das Modell.",
+      "photo_views": [
+        "Eintritt",
+        "Austritt",
+        "Innenfläche mit Maßstab"
+      ],
+      "measurement_endpoints": [
+        "gewählte Wellenbezugsfläche",
+        "Ein-/Austritt jedes freigelegten Durchgangs"
+      ],
+      "tools": [
+        "Tiefenmaß",
+        "Messschieber",
+        "Kamera"
+      ],
+      "questions": [
+        "Welche Flächen berühren sich wirklich?",
+        "Ist die Reihenfolge zwingend oder nur bequem?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Eintritt",
+          "Austritt",
+          "Innenfläche mit Maßstab"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Sichtbare Durchgänge mit Lage/Tiefe; verdeckte Zonen ausdrücklich unbekannt.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-02",
+        "H-ARM-02",
+        "H-ARM-03"
+      ],
+      "stop_before_release": false,
+      "measurement_required": true,
+      "order": 6
+    },
+    {
+      "task_id": "TASK-ARM-PROFILE",
+      "title": "Ausgebauten Arm vollständig erfassen",
+      "component": "COMP-ARMS",
+      "family": "COMP-ARMS",
+      "instance": null,
+      "timing": "AFTER_REMOVAL",
+      "priority": "P0++",
+      "irreversible_loss": "Endzuordnung und lokale Benennung könnten verloren gehen.",
+      "instruction": "Einen Arm pro Aufnahme. Gesamtansicht, Seitenprofil, Draufsicht, beide Enden und Querschnitte mit Maßstab. Kröpfung/Knickpunkte messen; historische Marken nicht überschreiben.",
+      "photo_views": [
+        "orthogonale Gesamtansicht",
+        "Seitenprofil",
+        "Draufsicht",
+        "beide Enden"
+      ],
+      "measurement_endpoints": [
+        "markierter Anfang des realen Arms",
+        "Ende / jeder Knickpunkt"
+      ],
+      "tools": [
+        "Maßband",
+        "gerade Latte",
+        "Maßstab"
+      ],
+      "questions": [
+        "Wo ist die Kröpfung?",
+        "War dieses Holz schon einmal ersetzt?"
+      ],
+      "media_requirements": {
+        "photos": 4,
+        "photo_labels": [
+          "orthogonale Gesamtansicht",
+          "Seitenprofil",
+          "Draufsicht",
+          "beide Enden"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Reale Arm-ID, Endpaar und Profil dokumentiert; Montagefolge nicht aus Rückwärtsfolge behauptet.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-02",
+        "H-ARM-01",
+        "H-ARM-04"
+      ],
+      "stop_before_release": false,
+      "measurement_required": true,
+      "order": 7
+    },
+    {
+      "task_id": "TASK-KRU-BEFORE",
+      "title": "STOPP: Kranzstoß vor der Trennung",
+      "component": "COMP-KRUEMMLINGE",
+      "family": "COMP-KRUEMMLINGE",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Stoßpose und Überdeckung verlieren ihre Zuordnung.",
+      "instruction": "Jeden Stoß von beiden Ringseiten und radial fotografieren. Beide Partner markieren; Breite entlang der Welle und Tiefe radial ausdrücklich unterscheiden.",
+      "photo_views": [
+        "beide Ringseiten",
+        "radialer Blick",
+        "Partner-IDs"
+      ],
+      "measurement_endpoints": [
+        "axiale Stirnfläche",
+        "axiale Gegenfläche; radiale Innen-/Außenkante separat"
+      ],
+      "tools": [
+        "Maßstab",
+        "Messschieber"
+      ],
+      "questions": [
+        "Reparatur oder ursprünglicher Stoß?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "beide Ringseiten",
+          "radialer Blick",
+          "Partner-IDs"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Partnerkarte, Stoßpose, getrennte Breite/Tiefe und Marken gesichert.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-03",
+        "CONFLICT-04"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 8
+    },
+    {
+      "task_id": "TASK-KRU-OPEN",
+      "title": "Beide Stoßflächen zusammen dokumentieren",
+      "component": "COMP-KRUEMMLINGE",
+      "family": "COMP-KRUEMMLINGE",
+      "instance": null,
+      "timing": "AFTER_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Lose Kontaktflächen werden verwechselt.",
+      "instruction": "Beide getrennten Flächen im selben Bild mit IDs zeigen. Lochabstände, Überblattung und Keil-/Nagelrichtung aufnehmen, soweit sichtbar.",
+      "photo_views": [
+        "Flächenpaar",
+        "Lochbild",
+        "Seitenprofil"
+      ],
+      "measurement_endpoints": [
+        "definierte Lochmitte",
+        "zweite Lochmitte"
+      ],
+      "tools": [
+        "Messschieber",
+        "Maßstab"
+      ],
+      "questions": [
+        "Welche Fläche trägt?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Flächenpaar",
+          "Lochbild",
+          "Seitenprofil"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Zugeordnetes Flächenpaar mit Lochbild und realen IDs.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-03"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 9
+    },
+    {
+      "task_id": "TASK-COUNT",
+      "title": "Umfangsfolge vor Ausbau sichern",
+      "component": "COMP-PADDLES",
+      "family": "COMP-PADDLES",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Die Winkelphase zwischen Kümpfen und Schaufeln geht verloren.",
+      "instruction": "Stillstehende Pose und Blickseite festhalten. Umfang lückenlos fotografieren; vorhandene, fehlende und verdeckte Positionen unterscheiden. Keine erwarteten 24 Teile als Zählung übernehmen.",
+      "photo_views": [
+        "überlappende Umfangsbilder",
+        "Startmarke",
+        "verdeckte Bereiche sobald zugänglich"
+      ],
+      "measurement_endpoints": [
+        "eindeutiges Startteil",
+        "nächstes Teil in dokumentierter Zählrichtung"
+      ],
+      "tools": [
+        "Kamera",
+        "Anhänger"
+      ],
+      "questions": [
+        "Wo beginnt die Zählung?",
+        "Welche Stelle fehlt oder ist verdeckt?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "überlappende Umfangsbilder",
+          "Startmarke",
+          "verdeckte Bereiche sobald zugänglich"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Vollständige Umfangsliste oder ausdrücklich markierte Lücken; gleiche Blickrichtung für beide Ebenen.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-05",
+        "CONFLICT-07"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 10
+    },
+    {
+      "task_id": "TASK-KUM-BEFORE",
+      "title": "STOPP: Kumpf samt Aufhängung",
+      "component": "COMP-KUEMPFE",
+      "family": "COMP-KUEMPFE",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Neigung und Befestigung sind nach Ausbau unklar.",
+      "instruction": "Jeden Kumpf in Einbaulage benennen; Öffnung, Neigung und beide Befestigungspartner zeigen. Abweichende Gefäße einzeln erfassen.",
+      "photo_views": [
+        "Seitenbild",
+        "Stirnbild",
+        "beide Kontakte"
+      ],
+      "measurement_endpoints": [
+        "Kumpfboden / Öffnung",
+        "gewählter Kranzbezug"
+      ],
+      "tools": [
+        "Maßstab",
+        "Kamera"
+      ],
+      "questions": [
+        "Welche Kümpfe sind anders und warum?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Seitenbild",
+          "Stirnbild",
+          "beide Kontakte"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Pose, reale ID, Partner und Varianten gesichert.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-04"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 11
+    },
+    {
+      "task_id": "TASK-KUM-VARIANT",
+      "title": "22 oder 24 mm - oder ein anderes Maß?",
+      "component": "COMP-KUMPF-STAVES",
+      "family": "COMP-KUMPF-STAVES",
+      "instance": null,
+      "timing": "AFTER_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Daubenkontakt und Nuten könnten später verdeckt sein.",
+      "instruction": "Am zugänglichen realen Teil Daubendicke messen. Alte Varianten 22/24 mm getrennt lassen. Außen-/Nutdurchmesser und Bodenlage nur dort messen, wo ohne erzwungene Zerlegung zugänglich.",
+      "photo_views": [
+        "Messstelle",
+        "Nut mit Maßstab",
+        "reale ID"
+      ],
+      "measurement_endpoints": [
+        "Innenfläche der Daube",
+        "Außenfläche derselben Daube"
+      ],
+      "tools": [
+        "Messschieber"
+      ],
+      "questions": [
+        "Passt eine alte Variante oder keine?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Messstelle",
+          "Nut mit Maßstab",
+          "reale ID"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Messwert mit Einheit, Unsicherheit, Teil-ID und Foto; unbekannte Nuten bleiben offen.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-04",
+        "CONFLICT-01"
+      ],
+      "stop_before_release": false,
+      "measurement_required": true,
+      "order": 12
+    },
+    {
+      "task_id": "TASK-HOOPS",
+      "title": "Spannringe und Überlappung vergleichen",
+      "component": "COMP-KUMPF-HOOPS",
+      "family": "COMP-KUMPF-HOOPS",
+      "instance": null,
+      "timing": "AFTER_REMOVAL",
+      "priority": "P0",
+      "irreversible_loss": "Ringposition und Überlappung werden verwechselt.",
+      "instruction": "Ringposition am Kumpf sichern. Umfang, Länge und Überlappung getrennt aufnehmen. Alte Zahlen 780/875/968 und 784/880/972 nicht mitteln.",
+      "photo_views": [
+        "Ringlage",
+        "Überlappung",
+        "Befestigung"
+      ],
+      "measurement_endpoints": [
+        "Ringanfang",
+        "Ringende; Überlappungsgrenzen separat"
+      ],
+      "tools": [
+        "flexibles Maßband"
+      ],
+      "questions": [
+        "Ist eine Zahl Rohmateriallänge oder geschlossener Umfang?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Ringlage",
+          "Überlappung",
+          "Befestigung"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Drei Ringpositionen zugeordnet; Messbedeutung und Einheit dokumentiert.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-04",
+        "CONFLICT-02",
+        "CONFLICT-06"
+      ],
+      "stop_before_release": false,
+      "measurement_required": true,
+      "order": 13
+    },
+    {
+      "task_id": "TASK-PAD",
+      "title": "Schaufel mit Nachbarn und Vorderseite",
+      "component": "COMP-PADDLES",
+      "family": "COMP-PADDLES",
+      "instance": null,
+      "timing": "DURING_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Anstellung und Vorder-/Rückseite gehen verloren.",
+      "instruction": "Vor Ausbau Vorderseite, Nachbarkumpf, Krümmling und Befestiger sichern. Nach Lösen Gegenflächen mit IDs aufnehmen.",
+      "photo_views": [
+        "eingebaut mit Nachbarn",
+        "Vorder-/Rückseite",
+        "Kontaktflächen"
+      ],
+      "measurement_endpoints": [
+        "Schaufelkante",
+        "markierter Kranzbezug"
+      ],
+      "tools": [
+        "Maßstab",
+        "Kamera"
+      ],
+      "questions": [
+        "Was bestimmt die Anstellung?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "eingebaut mit Nachbarn",
+          "Vorder-/Rückseite",
+          "Kontaktflächen"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Schaufel-ID, Richtung, Partner und Kontaktpaar im Ereignislog.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-05",
+        "GAP-08"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 14
+    },
+    {
+      "task_id": "TASK-KEI",
+      "title": "Kleinteile behalten ihren Partner",
+      "component": "COMP-FASTENERS",
+      "family": "COMP-FASTENERS",
+      "instance": null,
+      "timing": "DURING_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Lose Keile und Befestiger werden unzuordenbar.",
+      "instruction": "Jeden ausgebauten Keil/Befestiger sofort mit eigener ID und Partner versehen; Richtung und Sitz fotografieren; beschriftet ablegen.",
+      "photo_views": [
+        "Befestiger im Sitz",
+        "ausgebaut mit Partneretikett"
+      ],
+      "measurement_endpoints": [
+        "Keilspitze",
+        "Keilkopf"
+      ],
+      "tools": [
+        "Anhänger",
+        "Beutel",
+        "Maßstab"
+      ],
+      "questions": [
+        "Trocken locker oder fest?",
+        "Was passiert beim Quellen?"
+      ],
+      "media_requirements": {
+        "photos": 2,
+        "photo_labels": [
+          "Befestiger im Sitz",
+          "ausgebaut mit Partneretikett"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Keine unbenannten Kleinteile; Partner, Richtung und Lagerort dokumentiert.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-08",
+        "GAP-02"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 15
+    },
+    {
+      "task_id": "TASK-BEARING",
+      "title": "STOPP: vor dem Anheben der Welle",
+      "component": "COMP-BEARINGS",
+      "family": "COMP-BEARINGS",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Achsbezug und reale Auflage verschwinden.",
+      "instruction": "Beide Lagerzentren, Zapfenlage, Anschläge und Datumbezug sichern. Beim Anheben zugängliche Auflageflächen und Beilagen unmittelbar fotografieren.",
+      "photo_views": [
+        "beide Lager eingebaut",
+        "Datumbezug",
+        "Auflage nach Öffnung"
+      ],
+      "measurement_endpoints": [
+        "Lagerzentrum A",
+        "Lagerzentrum B; Datumhöhe separat"
+      ],
+      "tools": [
+        "Maßband",
+        "Lot",
+        "Maßstab"
+      ],
+      "questions": [
+        "Welche Beilagen gehören wohin?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "beide Lager eingebaut",
+          "Datumbezug",
+          "Auflage nach Öffnung"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Beide Lagerlagen und anschließende Kontaktflächen mit Orientierung.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-06"
+      ],
+      "stop_before_release": true,
+      "measurement_required": true,
+      "order": 16
+    },
+    {
+      "task_id": "TASK-WATER",
+      "title": "Wasserlinie, Trog und Drehrichtung",
+      "component": "COMP-TROUGH",
+      "family": "COMP-TROUGH",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Wasserstand und funktionale Lage sind zeitabhängig.",
+      "instruction": "Wasserlinie mit Uhrzeit zum festen Datum sichern. Achse, Trogöffnung und Rinnenauslauf zeigen. Beobachtete Fließ-/Drehrichtung einzeichnen; Stillstand ausdrücklich vermerken.",
+      "photo_views": [
+        "Wasserlinie",
+        "Trog zur Achse",
+        "Auslauf zur Rinne"
+      ],
+      "measurement_endpoints": [
+        "fester Datumspunkt / Achsmitte",
+        "Wasserlinie / Trogöffnung"
+      ],
+      "tools": [
+        "Maßband",
+        "Kamera"
+      ],
+      "questions": [
+        "Welcher Wasserstand ist kritisch?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "Wasserlinie",
+          "Trog zur Achse",
+          "Auslauf zur Rinne"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Zeit, Datumbezug und funktionale Pfeile; Trog 250/244 bleibt bis Messklärung offen.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-07",
+        "CONFLICT-12"
+      ],
+      "stop_before_release": true,
+      "measurement_required": true,
+      "order": 17
+    },
+    {
+      "task_id": "TASK-SCAN",
+      "title": "Scans mit Referenzen verbinden",
+      "component": "COMP-RADSTATT",
+      "family": "COMP-RADSTATT",
+      "instance": null,
+      "timing": "BEFORE_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Scans ohne gemeinsame Marken bleiben räumlich lose.",
+      "instruction": "Alle drei bleibenden Marken und eine unabhängige Kontrollstrecke in jedem neuen Scan sichtbar halten. Geometrie: Handmaß/LiDAR/Photogrammetrie. Splats nur für Oberfläche und Kontext.",
+      "photo_views": [
+        "drei Marker",
+        "Kontrollstrecke",
+        "Scanweg"
+      ],
+      "measurement_endpoints": [
+        "markierter Kontrollpunkt 1",
+        "Kontrollpunkt 2"
+      ],
+      "tools": [
+        "Kamera / LiDAR",
+        "Maßband"
+      ],
+      "questions": [
+        "Welche Flächen bleiben im Scan verdeckt?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "drei Marker",
+          "Kontrollstrecke",
+          "Scanweg"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Rohdateien plus Markerbilder, Kontrollmaß und Scanprotokoll; keine Lochreparatur.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-01",
+        "CONFLICT-08",
+        "CONFLICT-09",
+        "CONFLICT-10"
+      ],
+      "stop_before_release": true,
+      "measurement_required": false,
+      "order": 18
+    },
+    {
+      "task_id": "TASK-CRAFT",
+      "title": "Erfahrung direkt am Teil weitergeben",
+      "component": "COMP-ARMS",
+      "family": "COMP-ARMS",
+      "instance": null,
+      "timing": "DURING_RELEASE",
+      "priority": "P0",
+      "irreversible_loss": "Begründung und Handgriff sind später schwer rekonstruierbar.",
+      "instruction": "Person/Rolle und konkrete Teil-/Ereignis-ID nennen. Eine kurze Erklärung wörtlich festhalten, technische Deutung getrennt. Gegenmeinungen ebenfalls erhalten.",
+      "photo_views": [
+        "erklärte Kontaktfläche",
+        "Person zeigt das Teil"
+      ],
+      "measurement_endpoints": [
+        "betroffene Kontaktfläche",
+        "zugehöriger Partner"
+      ],
+      "tools": [
+        "Kamera / Audio",
+        "Maßstab"
+      ],
+      "questions": [
+        "Was darf quellen oder schwinden?",
+        "Welches Warnsignal ist kritisch?",
+        "Welche Reparatur hat sich bewährt?"
+      ],
+      "media_requirements": {
+        "photos": 2,
+        "photo_labels": [
+          "erklärte Kontaktfläche",
+          "Person zeigt das Teil"
+        ],
+        "explanation": true
+      },
+      "acceptance_evidence": "Wörtliche Aussage, Person, Teil/Event und Bild/Audio-Bezug; Interpretation getrennt.",
+      "status": "OPEN",
+      "source_refs": [
+        "HUMAN-05",
+        "GAP-08"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 19
+    },
+    {
+      "task_id": "TASK-REGISTER",
+      "title": "Reales Teil und Lagerplatz eintragen",
+      "component": "COMP-FASTENERS",
+      "family": "COMP-FASTENERS",
+      "instance": null,
+      "timing": "AFTER_REMOVAL",
+      "priority": "P0",
+      "irreversible_loss": "Einbauort und Gegenstücke gehen auf dem Lagerplatz verloren.",
+      "instruction": "Neue KS-ID zusätzlich zu alten Marken vergeben. Lokalen Namen, ursprüngliche Lage, Partner, Zustand, Ausbauereignis und Lagerplatz ins Register eintragen.",
+      "photo_views": [
+        "alte Marke",
+        "neue ID",
+        "Lagerplatz"
+      ],
+      "measurement_endpoints": [
+        "reales Teil",
+        "physische Partner-ID"
+      ],
+      "tools": [
+        "Anhänger",
+        "Stift"
+      ],
+      "questions": [
+        "Wie nennt ihr das Teil?"
+      ],
+      "media_requirements": {
+        "photos": 3,
+        "photo_labels": [
+          "alte Marke",
+          "neue ID",
+          "Lagerplatz"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Nur real beobachtete Teile; ID am Teil stimmt mit Register und Lagerplatz überein.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-08"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 20
+    },
+    {
+      "task_id": "TASK-FINAL",
+      "title": "Vor dem Verlassen gemeinsam prüfen",
+      "component": "COMP-RADSTATT",
+      "family": "COMP-RADSTATT",
+      "instance": null,
+      "timing": "AFTER_REMOVAL",
+      "priority": "P0",
+      "irreversible_loss": "Ungesicherte Medien und offene Zuordnungen werden vergessen.",
+      "instruction": "Aufgabenliste, Teile, Ereignisse und Lagerplätze abgleichen. Fehlende Angaben offen markieren. Export auf zweitem Gerät einlesen; Papier und Originalmedien getrennt sichern.",
+      "photo_views": [
+        "Übersicht Lagerorte",
+        "beschriftete Teile"
+      ],
+      "measurement_endpoints": [
+        "Aufgaben-/Teileliste",
+        "gesicherte Medien und Export"
+      ],
+      "tools": [
+        "zweites Speichermedium",
+        "Papiermappe"
+      ],
+      "questions": [
+        "Welche Frage können wir später nicht mehr beantworten?"
+      ],
+      "media_requirements": {
+        "photos": 2,
+        "photo_labels": [
+          "Übersicht Lagerorte",
+          "beschriftete Teile"
+        ],
+        "explanation": false
+      },
+      "acceptance_evidence": "Keine unbekannten Restteile verschwiegen; Sicherung geöffnet und geprüft; offene Punkte mit Verantwortlichen.",
+      "status": "OPEN",
+      "source_refs": [
+        "GAP-08"
+      ],
+      "stop_before_release": false,
+      "measurement_required": false,
+      "order": 21
+    }
+  ]
+}

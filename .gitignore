@@ -5,3 +5,6 @@ dist/
 public/evidence/
 public/drawings/
 test-results/
+
+public/field-pack/
+tmp/

@@ -1,0 +1,25 @@
+{
+  "schema": "ks-physical-instances/v1",
+  "instances": [],
+  "id_prefixes": {
+    "ARM": "COMP-ARMS",
+    "KRU": "COMP-KRUEMMLINGE",
+    "KUM": "COMP-KUEMPFE",
+    "PAD": "COMP-PADDLES",
+    "KEI": "COMP-FASTENERS"
+  },
+  "fields": [
+    "id",
+    "historic_marks",
+    "local_name",
+    "installed_position",
+    "partners",
+    "condition",
+    "removal_event",
+    "storage_location",
+    "media_ids",
+    "person",
+    "timestamp"
+  ],
+  "rule": "IDs assigned only after a person observes and labels a real part; expected slots are not physical instances."
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "ks-field-language/v1",
+  "conflicts": {
+    "CONFLICT-01": "Dauben 24 oder 22 mm; zugehörige Nutdurchmesser 244/264 oder 248/268. Alte Varianten getrennt prüfen.",
+    "CONFLICT-02": "Alte Ringlängen: 780/875/968 oder 784/880/972. Überlappung und Messbedeutung klären.",
+    "CONFLICT-03": "Wellenskizze 370/37 ohne bestätigte Einheit; daneben Rohholz 4,50 m / 50 cm und Einbauangabe 40 cm. Kein gemeinsames Ist-Maß.",
+    "CONFLICT-04": "Krümmling-Breite 14 cm und radiale Differenz 213-198 = 15: verschiedene Messrichtungen möglich.",
+    "CONFLICT-05": "Historische Armnummern und drei Durchgänge sind den heute sichtbaren Armen noch nicht sicher zugeordnet.",
+    "CONFLICT-06": "Alte Holzband-/Keil-Bezeichnungen und heutige Metallbänder können unterschiedliche Funktionen oder Reparaturen betreffen.",
+    "CONFLICT-07": "Erwartete 24 Kümpfe und 24 Schaufeln sind auf den Fotos nicht vollständig gezählt.",
+    "CONFLICT-08": "Im Foto sichtbare Flächen fehlen teilweise im Scan. Das beweist kein fehlendes Bauteil.",
+    "CONFLICT-09": "Historisch interpretierter Raddurchmesser und gesamte Scan-Ausdehnung sind ohne Lage- und Maßbezug nicht vergleichbar.",
+    "CONFLICT-10": "PLY und GLB besitzen unterschiedliche Exportachsen und Punktmengen; mechanische Ausrichtung bleibt offen.",
+    "CONFLICT-11": "Einige industrielle Vorlagen im Ordner waren falsch zugeordnet. Ihre reale Verwendung am Rad bleibt zu klären.",
+    "CONFLICT-12": "Trogangaben 250 und (244) stehen nebeneinander. Innen-/Außenmaß oder Zeichnungsänderung prüfen."
+  }
+}

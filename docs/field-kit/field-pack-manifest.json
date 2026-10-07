@@ -1,0 +1,224 @@
+{
+  "schema": "ks-field-pack/v1",
+  "task_source": "data/field-tasks.json",
+  "task_source_sha256": "75098f14d036878a20331fb31d5ee3ead4cd4765b02377a12e4299f140ab72c5",
+  "model_source": "src/workbench/geometry.mjs",
+  "task_ids": [
+    "TASK-ORIENT",
+    "TASK-DATUM",
+    "TASK-POSE",
+    "TASK-ARM-BEFORE",
+    "TASK-ARM-RELEASE",
+    "TASK-MORTISE",
+    "TASK-ARM-PROFILE",
+    "TASK-KRU-BEFORE",
+    "TASK-KRU-OPEN",
+    "TASK-COUNT",
+    "TASK-KUM-BEFORE",
+    "TASK-KUM-VARIANT",
+    "TASK-HOOPS",
+    "TASK-PAD",
+    "TASK-KEI",
+    "TASK-BEARING",
+    "TASK-WATER",
+    "TASK-SCAN",
+    "TASK-CRAFT",
+    "TASK-REGISTER",
+    "TASK-FINAL"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "code": "FK-00",
+      "title": "Wissen erhalten. Gemeinsam weitergeben."
+    },
+    {
+      "page": 2,
+      "code": "FK-01",
+      "title": "Rollen und gemeinsamer Ablauf"
+    },
+    {
+      "page": 3,
+      "code": "FK-02",
+      "title": "Orientierung: Seite A / B bleiben vorläufig"
+    },
+    {
+      "page": 4,
+      "code": "TASK-ORIENT",
+      "title": "Blickseiten gemeinsam benennen"
+    },
+    {
+      "page": 5,
+      "code": "TASK-DATUM",
+      "title": "Drei bleibende Referenzpunkte setzen"
+    },
+    {
+      "page": 6,
+      "code": "TASK-POSE",
+      "title": "Einbaumaße vor dem Lösen sichern"
+    },
+    {
+      "page": 7,
+      "code": "TASK-ARM-BEFORE",
+      "title": "STOPP: Armzonen vor dem ersten Keilzug"
+    },
+    {
+      "page": 8,
+      "code": "TASK-ARM-RELEASE",
+      "title": "Jeden Keilzug und jede Freigabe festhalten"
+    },
+    {
+      "page": 9,
+      "code": "TASK-MORTISE",
+      "title": "Geöffnete Wellenzone ohne Deutung aufnehmen"
+    },
+    {
+      "page": 10,
+      "code": "TASK-ARM-PROFILE",
+      "title": "Ausgebauten Arm vollständig erfassen"
+    },
+    {
+      "page": 11,
+      "code": "TASK-KRU-BEFORE",
+      "title": "STOPP: Kranzstoß vor der Trennung"
+    },
+    {
+      "page": 12,
+      "code": "TASK-KRU-OPEN",
+      "title": "Beide Stoßflächen zusammen dokumentieren"
+    },
+    {
+      "page": 13,
+      "code": "TASK-COUNT",
+      "title": "Umfangsfolge vor Ausbau sichern"
+    },
+    {
+      "page": 14,
+      "code": "TASK-KUM-BEFORE",
+      "title": "STOPP: Kumpf samt Aufhängung"
+    },
+    {
+      "page": 15,
+      "code": "TASK-KUM-VARIANT",
+      "title": "22 oder 24 mm - oder ein anderes Maß?"
+    },
+    {
+      "page": 16,
+      "code": "TASK-HOOPS",
+      "title": "Spannringe und Überlappung vergleichen"
+    },
+    {
+      "page": 17,
+      "code": "TASK-PAD",
+      "title": "Schaufel mit Nachbarn und Vorderseite"
+    },
+    {
+      "page": 18,
+      "code": "TASK-KEI",
+      "title": "Kleinteile behalten ihren Partner"
+    },
+    {
+      "page": 19,
+      "code": "TASK-BEARING",
+      "title": "STOPP: vor dem Anheben der Welle"
+    },
+    {
+      "page": 20,
+      "code": "TASK-WATER",
+      "title": "Wasserlinie, Trog und Drehrichtung"
+    },
+    {
+      "page": 21,
+      "code": "TASK-SCAN",
+      "title": "Scans mit Referenzen verbinden"
+    },
+    {
+      "page": 22,
+      "code": "TASK-CRAFT",
+      "title": "Erfahrung direkt am Teil weitergeben"
+    },
+    {
+      "page": 23,
+      "code": "TASK-REGISTER",
+      "title": "Reales Teil und Lagerplatz eintragen"
+    },
+    {
+      "page": 24,
+      "code": "TASK-FINAL",
+      "title": "Vor dem Verlassen gemeinsam prüfen"
+    },
+    {
+      "page": 25,
+      "code": "FK-H-OPEN",
+      "title": "Arm / Welle - alternative Arbeitsdarstellung"
+    },
+    {
+      "page": 26,
+      "code": "FK-H-STRAIGHT",
+      "title": "Arm / Welle - alternative Arbeitsdarstellung"
+    },
+    {
+      "page": 27,
+      "code": "FK-H-DOGLEG",
+      "title": "Arm / Welle - alternative Arbeitsdarstellung"
+    },
+    {
+      "page": 28,
+      "code": "FK-H-COPLANAR",
+      "title": "Arm / Welle - alternative Arbeitsdarstellung"
+    },
+    {
+      "page": 29,
+      "code": "FK-H-REVERSE",
+      "title": "Arm / Welle - alternative Arbeitsdarstellung"
+    },
+    {
+      "page": 30,
+      "code": "FK-V-1",
+      "title": "Alte Angaben vergleichen - offen lassen"
+    },
+    {
+      "page": 31,
+      "code": "FK-V-2",
+      "title": "Alte Angaben vergleichen - offen lassen"
+    },
+    {
+      "page": 32,
+      "code": "FK-V-3",
+      "title": "Alte Angaben vergleichen - offen lassen"
+    },
+    {
+      "page": 33,
+      "code": "FK-V-4",
+      "title": "Alte Angaben vergleichen - offen lassen"
+    },
+    {
+      "page": 34,
+      "code": "FK-R1",
+      "title": "Reale Teile / historische Marken"
+    },
+    {
+      "page": 35,
+      "code": "FK-R2",
+      "title": "Ereignisse beim Öffnen"
+    },
+    {
+      "page": 36,
+      "code": "FK-R3",
+      "title": "Lagerorte / bleibende Zuordnung"
+    },
+    {
+      "page": 37,
+      "code": "FK-R4",
+      "title": "Offene Punkte / nächste Verantwortung"
+    },
+    {
+      "page": 38,
+      "code": "FK-END",
+      "title": "Aufgabenstand am Ende gemeinsam abgleichen"
+    }
+  ],
+  "format": "A3 landscape",
+  "minimum_task_body_pt": 16,
+  "physical_instances_precreated": 0
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "ks-arm-hypotheses/v1",
+  "status": "UNVERIFIED",
+  "current_geometry": null,
+  "hidden_joinery": null,
+  "default": "unknown",
+  "shapes": [
+    {
+      "id": "unknown",
+      "label": "Verlauf offen",
+      "provenance": [
+        "H-ARM-01",
+        "GAP-02"
+      ]
+    },
+    {
+      "id": "straight",
+      "label": "Gerader Platzhalter",
+      "provenance": [
+        "H-ARM-01"
+      ]
+    },
+    {
+      "id": "dogleg",
+      "label": "Mögliche Kröpfung",
+      "provenance": [
+        "H-ARM-01"
+      ]
+    }
+  ],
+  "axial_layers": [
+    {
+      "id": "staggered",
+      "label": "Axial versetzt (Arbeitsannahme)"
+    },
+    {
+      "id": "coplanar",
+      "label": "Gleiche Ebene (Alternative)"
+    },
+    {
+      "id": "reverse",
+      "label": "Umgekehrter Versatz (Alternative)"
+    }
+  ],
+  "display_only": {
+    "dogleg_offset": 0.18,
+    "unknown_zone_radius": 0.34,
+    "note": "Arbitrary visualization values, not field measurements or fabrication geometry"
+  },
+  "task_ids": [
+    "TASK-ARM-BEFORE",
+    "TASK-ARM-RELEASE",
+    "TASK-MORTISE",
+    "TASK-ARM-PROFILE"
+  ]
+}

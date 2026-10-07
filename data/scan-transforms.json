@@ -1,0 +1,96 @@
+{
+  "schema": "ks-scan-transforms/v1",
+  "source": "SCAN-20261007-01-GLB",
+  "states": [
+    "RAW_EXPORT",
+    "AXIS_NORMALIZED",
+    "ROUGH_ALIGNED",
+    "MECHANICALLY_REGISTERED",
+    "METRICALLY_CALIBRATED"
+  ],
+  "state": "AXIS_NORMALIZED",
+  "axis_normalization": {
+    "matrix_row_major": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "description": "Rx(+90°): GLTF (x,y,z) -> display (x,-z,y); determinant +1; up +Y -> +Z. Not mechanical registration.",
+    "provenance": [
+      "data/reference-system.json",
+      "CLAIM-0324"
+    ]
+  },
+  "rough_alignment": null,
+  "adopted_mechanical_transform": null,
+  "field_scale": null,
+  "human_side_confirmation": null,
+  "handedness_numeric": "right-handed determinant +1",
+  "handedness_photo_review": "pending HUMAN-01; visible landmarks cannot establish signed mechanical frame",
+  "markers": [
+    {
+      "id": "DATUM-A",
+      "status": "PLANNED_NOT_PLACED",
+      "physical_description": null,
+      "coordinate": null,
+      "uncertainty": null,
+      "survives_disassembly": null,
+      "photo_ids": []
+    },
+    {
+      "id": "DATUM-B",
+      "status": "PLANNED_NOT_PLACED",
+      "physical_description": null,
+      "coordinate": null,
+      "uncertainty": null,
+      "survives_disassembly": null,
+      "photo_ids": []
+    },
+    {
+      "id": "DATUM-C",
+      "status": "PLANNED_NOT_PLACED",
+      "physical_description": null,
+      "coordinate": null,
+      "uncertainty": null,
+      "survives_disassembly": null,
+      "photo_ids": []
+    },
+    {
+      "id": "AXIS-A",
+      "status": "PLANNED_NOT_PLACED",
+      "physical_description": null,
+      "coordinate": null,
+      "uncertainty": null,
+      "survives_disassembly": null,
+      "photo_ids": []
+    },
+    {
+      "id": "AXIS-B",
+      "status": "PLANNED_NOT_PLACED",
+      "physical_description": null,
+      "coordinate": null,
+      "uncertainty": null,
+      "survives_disassembly": null,
+      "photo_ids": []
+    }
+  ],
+  "required_control_distances": [
+    "DATUM-A to DATUM-B",
+    "DATUM-B to DATUM-C",
+    "DATUM-C to DATUM-A",
+    "independent fourth control distance"
+  ]
+}

@@ -1,10 +1,13 @@
 import * as T from 'three';
+import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import armConfig from '../../data/arm-hypotheses.json' with {type:'json'};
 import config from '../../data/hypothesis.parameters.json' with { type: 'json' };
 export { config };
 export const p = Object.fromEntries(Object.entries(config.parameters).map(([k,v])=>[k,v.value]));
 export const views = {gesamt:[6,-7,5],land:[-9,0,0],wasser:[9,0,0],welle:[1,-7,3],kranz:[-8,0,0],kumpf:[-5,-4,3],schaufeln:[5,-5,3]};
-export function makeModel(variant='A', explode=0) {
+export function makeModel(variant='A', explode=0, options={}) {
  const group=new T.Group(); group.name='hypothesis';
+ const shape=options.armShape||'unknown',layers=options.armLayers||'staggered';
  const add=(id,family,geometry,position=[0,0,0],rotation=[0,0,0],stationary=false)=>{
   const material=new T.MeshStandardMaterial({color:stationary?0x738178:family.includes('KUMPF')||family==='COMP-KUEMPFE'?0xb68a44:0x377d79,transparent:true,opacity:stationary?.25:.58,roughness:1,side:T.DoubleSide});
   const mesh=new T.Mesh(geometry,material);mesh.position.set(...position);mesh.rotation.set(...rotation);mesh.userData={id,family,stationary,status:'hypothesis',parameters:'data/hypothesis.parameters.json'};
@@ -13,7 +16,15 @@ export function makeModel(variant='A', explode=0) {
  add('HYP-SHAFT','COMP-SHAFT',new T.BoxGeometry(p.shaftLength,p.shaftWidth,p.shaftWidth));
  for(const [side,sign] of [['LAND',-1],['WATER',1]]) {
   const x=sign*(p.ringDistance/2+explode*.8);
-  for(let i=0;i<p.armsPerPlane;i++)add(`HIST-ARM-${side}-${i+1}-${i+4}`,'COMP-ARMS',new T.BoxGeometry(p.armDepth,p.armWidth,p.innerRadius*2),[x+(i-1)*p.armDepth,0,0],[i*Math.PI/3,0,0]);
+  for(let i=0;i<p.armsPerPlane;i++) {
+   const layer=layers==='coplanar'?0:(i-1)*p.armDepth*(layers==='reverse'?-1:1), pieces=[];
+   for(const sign of [-1,1]) {
+    const points=shape==='dogleg'?[[0,0,sign*.4],[armConfig.display_only.dogleg_offset*sign,0,sign*.85],[armConfig.display_only.dogleg_offset*sign,0,sign*p.innerRadius]]:[[0,0,sign*.4],[0,0,sign*p.innerRadius]];
+    for(let j=1;j<points.length;j++) {const a=new T.Vector3(...points[j-1]),b=new T.Vector3(...points[j]),v=b.clone().sub(a),g=new T.BoxGeometry(p.armDepth,p.armWidth,v.length());g.applyQuaternion(new T.Quaternion().setFromUnitVectors(new T.Vector3(0,0,1),v.normalize()));const mid=a.clone().add(b).multiplyScalar(.5);g.translate(...mid.toArray());pieces.push(g)}
+   }
+   const geometry=mergeGeometries(pieces);pieces.forEach(g=>g.dispose());const mesh=add(`HIST-ARM-${side}-${i+1}-${i+4}`,'COMP-ARMS',geometry,[x+layer,0,0],[i*Math.PI/3,0,0]);mesh.userData.armShape=shape;mesh.userData.armLayers=layers;mesh.userData.hiddenCenterOmitted=true;mesh.material.wireframe=shape==='unknown';
+  }
+  const unknown=add(`UNKNOWN-JOINT-${side}`,'COMP-SHAFT',new T.SphereGeometry(armConfig.display_only.unknown_zone_radius,12,8),[x,0,0]);unknown.material.wireframe=true;unknown.userData.unknownZone=true;
   for(let i=0;i<p.segmentsPerPlane;i++) {
    const shape=new T.Shape(),a=i*Math.PI/3+.012,b=(i+1)*Math.PI/3-.012;
    shape.moveTo(-Math.sin(a)*p.outerRadius,Math.cos(a)*p.outerRadius);
