@@ -1,8 +1,8 @@
-name: Build research page
+name: Build and deploy research draft
 
 on:
   push:
-    branches: [work/github-pages-research-view-20261007]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: research-page-${{ github.ref }}-${{ github.sha }}
-  cancel-in-progress: false
+  group: research-page-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -28,8 +28,22 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run check
       - run: npm run build
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
-          name: research-page-dist
           path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
