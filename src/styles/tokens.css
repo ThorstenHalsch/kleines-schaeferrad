@@ -1,0 +1,20 @@
+:root{
+  --mux-paper:#fafbf7;
+  --mux-paper-warm:#f6f4ed;
+  --mux-surface:#fffef9;
+  --mux-ink:#172b25;
+  --mux-muted:#5b6962;
+  --mux-green:#193e35;
+  --mux-green-2:#285749;
+  --mux-lime:#dbe987;
+  --mux-soft:#edf1e7;
+  --mux-soft-2:#f0f3eb;
+  --mux-line:#d7ddd4;
+  --mux-line-strong:#b8c3ba;
+  --mux-amber:#a96b1e;
+  --mux-warning-bg:#fff2d7;
+  --mux-radius-lg:18px;
+  --mux-radius-md:10px;
+  --mux-max:1320px;
+  --mux-font:'Manrope Variable',system-ui,sans-serif;
+}
