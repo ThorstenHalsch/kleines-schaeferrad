@@ -92,5 +92,32 @@
     "DATUM-B to DATUM-C",
     "DATUM-C to DATUM-A",
     "independent fourth control distance"
-  ]
+  ],
+  "viewer_source": "SCAN-20261007-01-PLY",
+  "viewer_source_note": "The visible workbench scan uses the original PLY point cloud. From the documented PLY→GLB export relation plus GLB Rx(+90°), PLY XYZ maps to the axis-normalized display as identity. This is export-axis normalization only, not mechanical registration.",
+  "ply_axis_normalization": {
+    "matrix_row_major": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "description": "PLY native XYZ -> axis-normalized display XYZ (identity), derived from export-alignment.json and GLB Rx(+90°). Not mechanical registration.",
+    "provenance": [
+      "evidence/derived/export-alignment.json",
+      "data/reference-system.json"
+    ]
+  }
 }

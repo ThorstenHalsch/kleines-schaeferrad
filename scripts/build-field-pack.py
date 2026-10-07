@@ -1,108 +1,256 @@
 from pathlib import Path
-import json,hashlib,shutil
+import json, hashlib, shutil, math
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A3,A4,landscape
+from reportlab.lib.pagesizes import A3, A4, landscape
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.colors import HexColor, Color
 from xml.sax.saxutils import escape
+
 ROOT=Path(__file__).resolve().parent.parent
-out=ROOT/'output/pdf';out.mkdir(parents=True,exist_ok=True)
-data=json.loads((ROOT/'data/field-tasks.json').read_text());tasks=data['tasks'];conflicts=json.loads((ROOT/'data/conflicts.json').read_text())['conflicts'];sketches=json.loads((ROOT/'docs/field-kit/model-projections.json').read_text())['views']
-font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf';bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-pdfmetrics.registerFont(TTFont('Field',font));pdfmetrics.registerFont(TTFont('FieldBold',bold))
-W,H=landscape(A3);margin=14*mm; page=0; manifest=[];c=canvas.Canvas(str(out/'KS-Field-Pack-A3.pdf'),pagesize=(W,H),invariant=1);c.setTitle('Kleines Schäferrad - Field Pack FK-01');c.setAuthor('Kleines Schäferrad - gemeinsam dokumentiert')
-def text(s,x,y,size=16,bold=False):c.setFont('FieldBold' if bold else 'Field',size);c.drawString(x,y,str(s).replace('–','-').replace('—','-'))
-def para(s,x,y,width,size=16):
- p=Paragraph(escape(str(s).replace('–','-').replace('—','-')),ParagraphStyle('p',fontName='Field',fontSize=size,leading=size*1.4));_,h=p.wrap(width,H);p.drawOn(c,x,y-h);return y-h-6
+OUT=ROOT/'output/pdf'; OUT.mkdir(parents=True,exist_ok=True)
+PUBLIC=ROOT/'public/field-pack'; PUBLIC.mkdir(parents=True,exist_ok=True)
 
-def begin(title,code,subtitle='Arbeitsunterlage vor der Demontage - keine Fertigungsfreigabe'):
- global page
- if page:c.showPage()
- page+=1;manifest.append({'page':page,'code':code,'title':title});c.setStrokeColorRGB(0,0,0);c.setFillColorRGB(0,0,0);c.setLineWidth(.5*mm);c.rect(8*mm,8*mm,W-16*mm,H-16*mm);text('KLEINES SCHÄFERRAD / FIELD PACK',margin,H-22*mm,14,True);text(title,margin,H-37*mm,24,True);text(subtitle,margin,H-48*mm,13);c.setLineWidth(.25*mm);c.line(margin,H-54*mm,W-margin,H-54*mm);c.line(8*mm,24*mm,W-8*mm,24*mm);text(f'{code} | FK-01 | Blatt {page} | A3 quer | 07.10.2026',margin,15*mm,12);c.line(W-90*mm,16*mm,W-40*mm,16*mm);c.line(W-90*mm,14*mm,W-90*mm,18*mm);c.line(W-40*mm,14*mm,W-40*mm,18*mm);text('50 mm - 100 % drucken',W-91*mm,10*mm,9);return H-65*mm
+tasks_data=json.loads((ROOT/'data/field-tasks.json').read_text())
+tasks=tasks_data['tasks']
+task_by_id={t['task_id']:t for t in tasks}
+guides_data=json.loads((ROOT/'data/visual-guides.json').read_text())
+guides=guides_data['guides']
+guide_by_id={g['id']:g for g in guides}
+conflicts=json.loads((ROOT/'data/field-language.json').read_text())['conflicts']
 
-def lines(x,y,width,n=4,gap=15*mm,label=None):
- if label:text(label,x,y,15,True);y-=8*mm
- c.setLineWidth(.18*mm)
- for _ in range(n):c.line(x,y,width+x,y);y-=gap
- return y
+font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+pdfmetrics.registerFont(TTFont('KS',font)); pdfmetrics.registerFont(TTFont('KSB',bold))
 
-def draw_sketch(view,x,y,w,h):
- pts=[p for line in view['lines'] for p in line['points']];xmin=min(p[0] for p in pts);xmax=max(p[0] for p in pts);ymin=min(p[1] for p in pts);ymax=max(p[1] for p in pts);scale=min(w/(xmax-xmin),h/(ymax-ymin));c.saveState()
- for line in view['lines']:
-  c.setDash(3,3) if line['unknown'] else c.setDash();c.setLineWidth(.18*mm if line['unknown'] else .45*mm);a,b=line['points'];c.line(x+(a[0]-xmin)*scale,y+(a[1]-ymin)*scale,x+(b[0]-xmin)*scale,y+(b[1]-ymin)*scale)
- c.restoreState()
-y=begin('Wissen erhalten. Gemeinsam weitergeben.','FK-00')
-y=para('Ihr habt dieses Rad erhalten. Diese Mappe hilft, Einbaulagen, Handgriffe und Erfahrungen so festzuhalten, dass sie weitergegeben werden können.',margin,y,W-2*margin,23)
-y=para('Alte Zeichnungen und Arbeitsmodelle helfen beim Fragen. Entscheidend ist, was am echten Rad zu sehen, zu messen und aus Erfahrung bekannt ist. Offene Maße bleiben offen.',margin,y,W-2*margin,18)
-y=lines(margin,y-12*mm,W-2*margin,3,22*mm,'Datum / Team / verantwortliche Person / Ort:')
-para('Papier und Web verwenden dieselben TASK-, KS- und Ereignis-IDs. Aufnahmen in der App bleiben ungeprüfte Feldangaben. Keine Aufgabe ist eine Anweisung für eine sichere Demontagemethode: Ablauf und Freigabe bestimmen die fachkundigen Personen vor Ort.',margin,y+3*mm,W-2*margin,16)
-y=begin('Rollen und gemeinsamer Ablauf','FK-01')
-for head,body in [('1 / Ablauf bestimmen','Erfahrene Monteure bestimmen die tatsächliche Reihenfolge und benennen die Teile. Niemand löst für eine Modellannahme zusätzliche Verbindungen.'),('2 / Vor dem Lösen aufnehmen','Zweite Rolle führt Fotos, Maße und Ereignislog. STOPP-Aufträge vor jedem irreversiblen Schritt auf Vollständigkeit prüfen.'),('3 / Beim Öffnen zuordnen','Vorher und nachher dokumentieren. Beide Partnerflächen mit IDs zeigen. Historische Marken erhalten.'),('4 / Beschriften und sichern','Teil, Partner und Lagerplatz verbinden. Am Ende Export auf zweitem Gerät öffnen; Papier und Originalmedien mitnehmen.')]:
- text(head,margin,y,19,True);y=para(body,margin,y-9*mm,W-2*margin,17)-9*mm
-lines(margin,y,W-2*margin,2,18*mm,'Rollen / Kürzel / Zuständigkeit:')
-y=begin('Orientierung: Seite A / B bleiben vorläufig','FK-02')
-left=margin;right=W/2+8*mm;cw=W/2-margin-16*mm
-yl=para('X entlang der Welle, Z nach oben, Y rechtshändig quer: X × Y = Z. Land/Wasser, Fluss und Drehrichtung erst nach gemeinsamer Bestätigung eintragen.',left,y,cw,18)
-for label in ['Seite A heißt vor Ort:','Seite B heißt vor Ort:','Bestätigt durch / Datum:','Fließrichtung / Rad steht oder dreht:']:yl=lines(left,yl-6*mm,cw,1,17*mm,label)
-text('Lageskizze mit Blickpfeilen und Datum',right,y,17,True);c.rect(right,80*mm,cw,y-90*mm);text('KEIN MASSSTAB / keine Ist-Geometrie',right,68*mm,13)
-# One canonical task per sheet. No task instructions are retyped in the PDF template.
-for t in tasks:
- y=begin(t['title'],t['task_id'],data['timing_labels'][t['timing']]+' | '+t['priority']+' | '+t['family'])
- if t['stop_before_release']:
-  c.setLineWidth(.7*mm);c.rect(margin,y-13*mm,W-2*margin,18*mm);text('STOPP - NOCH NICHT LÖSEN. Erst die Aufnahmen sichern.',margin+4*mm,y-7*mm,20,True);y-=25*mm
- cw=(W-3*margin)/2;right=2*margin+cw;yl=y;yr=y
- for heading,body in [('Warum jetzt?',t['irreversible_loss']),('So aufnehmen',t['instruction']),('Fotoansichten',' / '.join(t['photo_views'])),('Messendpunkte',' → '.join(t['measurement_endpoints'])),('Werkzeug',', '.join(t['tools']))]:
-  text(heading,margin,yl,16,True);yl=para(body,margin,yl-6*mm,cw,16)-1*mm
- text('Teil-ID / alte Marke / Person / Ereignis',right,yr,16,True);yr=lines(right,yr-12*mm,cw,2,14*mm)
- text('Ergebnis / Bildnamen / Messskizze',right,yr,16,True);yr=lines(right,yr-12*mm,cw,3,14*mm)
- yr=para('Messwert: ________ Einheit: ____  ± ________',right,yr+5*mm,cw,15);yr=para('Endpunkte / Werkzeug: ____________________',right,yr,cw,15)
- bottom=min(yl,yr)-3*mm
- # Questions and acceptance in full-width dedicated low strip.
- bottom=min(bottom,105*mm)
- if bottom<74*mm: raise RuntimeError('Task layout overflow '+t['task_id']+' '+str(bottom/mm))
- c.line(margin,bottom,W-margin,bottom)
- by=para('Fragen: '+' / '.join(t['questions']),margin,bottom-5*mm,W-2*margin,16)
- by=para('Fertig, wenn: '+t['acceptance_evidence'],margin,by,W-2*margin,16)
- text('Status:  OFFEN / IN ARBEIT / AUFGENOMMEN, UNGEPRÜFT / BLOCKIERT, UNBEKANNT',margin,33*mm,12)
- # Internal evidence remains traceable, not printed as current dimensional truth.
- text('Bezug: '+', '.join(t['source_refs']),margin,27*mm,10)
-for view in sketches:
- y=begin('Arm / Welle - alternative Arbeitsdarstellung','FK-H-'+view['id'],'UNGEPRÜFT | Form: '+{'unknown':'offen','straight':'gerade','dogleg':'gekröpft'}[view['shape']]+' | axiale Lage: '+{'staggered':'versetzt','coplanar':'in einer Ebene','reverse':'umgekehrt versetzt'}[view['layers']])
- draw_sketch(view,margin+10*mm,95*mm,W*.55,130*mm)
- x=W*.63;cw=W-x-margin
- yy=para('Die gestrichelten Innenzonen bleiben unbekannt. Zapfen und verdeckte Verbindungen sind nicht ergänzt. Abstände und Kröpfung sind reine Darstellungswerte.',x,y,cw,18)
- yy=para('TASK-ARM-BEFORE / TASK-ARM-RELEASE / TASK-MORTISE / TASK-ARM-PROFILE',x,yy,cw,16)
- lines(x,yy-9*mm,cw,4,20*mm,'So sieht es wirklich aus:')
- para('Drei durchgehende Hölzer / sechs Enden je Kranz sind die historische Arbeitshypothese. Reale Endpaare und axialer Verlauf bleiben bis zur Aufnahme offen. Räumliche Drahtprojektion aus derselben Geometrie wie die Werkstatt; keine Fertigungszeichnung.',margin,83*mm,W-2*margin,17)
-# Preserve all conflicts; one comparison sheet per group of three.
-for start in range(0,len(conflicts),3):
- y=begin('Alte Angaben vergleichen - offen lassen','FK-V-'+str(start//3+1))
- for item in conflicts[start:start+3]:
-  text(item['id']+' / '+item['resolution_capture'],margin,y,16,True);y=para(json.loads((ROOT/'data/field-language.json').read_text())['conflicts'][item['id']],margin,y-7*mm,W-2*margin,18);y=para('Quellen: '+', '.join(item['sources'])+' | Keine ausgewählte Ist-Variante.',margin,y,W-2*margin,12);y=lines(margin,y-6*mm,W-2*margin,1,16*mm,'Reales Teil / Befund / Bild / Person:')-7*mm
-# Blank physical registers - no verified instances seeded.
-for code,title,heads in [('FK-R1','Reale Teile / historische Marken',['KS-ID / alte Marke','Lokaler Name / Zustand','Einbauposition / Partner','Person / Foto']),('FK-R2','Ereignisse beim Öffnen',['Event / Uhrzeit','Teil / Partner / Richtung','Vorher / nachher / Kontaktfoto','Person / nächster freier Teil']),('FK-R3','Lagerorte / bleibende Zuordnung',['KS-ID / Befestiger','Ausbauereignis','Lagerort / Behälter','Kontrolle / Person']),('FK-R4','Offene Punkte / nächste Verantwortung',['Aufgabe / reales Teil','Was fehlt oder widerspricht?','Wer klärt es / wann?','Foto / Ablage / Bemerkung'])]:
- y=begin(title,code);cw=(W-2*margin)/4
- for i,h in enumerate(heads):para(h,margin+i*cw+3*mm,y,cw-6*mm,15)
- top=y-20*mm;bottom=45*mm;c.setLineWidth(.25*mm)
- for i in range(5):c.line(margin+i*cw,bottom,margin+i*cw,top)
- for j in range(7):yy=top-j*(top-bottom)/6;c.line(margin,yy,W-margin,yy)
- text('KS-ARM / KS-KRU / KS-KUM / KS-PAD / KS-KEI-NNN | Reale IDs erst am Teil vergeben.',margin,33*mm,13)
-y=begin('Aufgabenstand am Ende gemeinsam abgleichen','FK-END')
-for t in tasks:
- if y<42*mm:y=begin('Aufgabenstand - Fortsetzung','FK-END-2')
- c.rect(margin,y-3*mm,4*mm,4*mm);text(t['task_id']+'  '+t['title'],margin+8*mm,y,14);y-=9*mm
+INK=HexColor('#172b25'); MUTED=HexColor('#5b6962'); GREEN=HexColor('#193e35')
+LINE=HexColor('#cdd5cf'); AMBER=HexColor('#b06f22'); WARN=HexColor('#fff3d8')
+SOFT=HexColor('#edf1e7'); WATER=HexColor('#7396a4')
+
+W,H=landscape(A3); M=13*mm
+manifest_pages=[]; page_no=0
+c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=(W,H),invariant=1)
+c.setTitle('Kleines Schäferrad - Werkstatt- und Aufnahmeplan V2')
+c.setAuthor('Kleines Schäferrad - gemeinsam dokumentiert')
+
+def txt(s,x,y,size=12,b=False,color=INK):
+    c.setFillColor(color); c.setFont('KSB' if b else 'KS',size); c.drawString(x,y,str(s))
+
+def para(s,x,y,w,size=11,b=False,color=INK,leading=None):
+    p=Paragraph(escape(str(s)),ParagraphStyle('p',fontName='KSB' if b else 'KS',fontSize=size,leading=leading or size*1.35,textColor=color))
+    _,h=p.wrap(w,H); p.drawOn(c,x,y-h); return y-h
+
+def header(code,title,subtitle='Arbeitsunterlage · offene Maße bleiben offen'):
+    global page_no
+    if page_no: c.showPage()
+    page_no+=1
+    manifest_pages.append({'page':page_no,'code':code,'title':title})
+    c.setFillColor(HexColor('#fafbf7')); c.rect(0,0,W,H,fill=1,stroke=0)
+    c.setStrokeColor(LINE); c.setLineWidth(.25*mm); c.line(M,H-25*mm,W-M,H-25*mm)
+    txt('KLEINES SCHÄFERRAD',M,H-15*mm,10,True,GREEN)
+    txt(code,W-M-35*mm,H-15*mm,9,True,MUTED)
+    txt(title,M,H-39*mm,23,True,INK)
+    txt(subtitle,M,H-48*mm,10,False,MUTED)
+    c.line(M,21*mm,W-M,21*mm)
+    txt(f'V2 · Blatt {page_no} · A3 quer · 07.10.2026',M,12*mm,8,False,MUTED)
+    c.line(W-86*mm,13*mm,W-36*mm,13*mm); c.line(W-86*mm,11*mm,W-86*mm,15*mm); c.line(W-36*mm,11*mm,W-36*mm,15*mm)
+    txt('50 mm · 100 %',W-87*mm,8*mm,7,False,MUTED)
+
+def pt(panel,x,y):
+    px,py,pw,ph=panel
+    return px+x/100*pw, py+(100-y)/100*ph
+
+def arrow(x1,y1,x2,y2,color=AMBER):
+    c.setStrokeColor(color); c.setFillColor(color); c.setLineWidth(.55*mm); c.line(x1,y1,x2,y2)
+    for xa,ya,xb,yb in [(x1,y1,x2,y2),(x2,y2,x1,y1)]:
+        ang=math.atan2(yb-ya,xb-xa); L=3.2*mm
+        p1=(xa+math.cos(ang+.48)*L,ya+math.sin(ang+.48)*L)
+        p2=(xa+math.cos(ang-.48)*L,ya+math.sin(ang-.48)*L)
+        c.line(xa,ya,*p1); c.line(xa,ya,*p2)
+
+def draw_primitive(p,panel):
+    style=p.get('style','solid')
+    color={'solid':INK,'ghost':HexColor('#8b918b'),'unknown':AMBER,'water':WATER}.get(style,INK)
+    c.setStrokeColor(color); c.setFillColor(Color(color.red,color.green,color.blue,alpha=.08) if style in ['ghost','unknown'] else Color(1,1,1,alpha=0))
+    c.setLineWidth(.45*mm if style=='solid' else .3*mm)
+    c.setDash(2.5,2) if style in ['ghost','unknown'] else c.setDash()
+    typ=p['type']
+    if typ=='line':
+        a=pt(panel,p['x1'],p['y1']); b=pt(panel,p['x2'],p['y2']); c.line(*a,*b)
+    elif typ=='rect':
+        x1,y1=pt(panel,p['x'],p['y']); x2,y2=pt(panel,p['x']+p['w'],p['y']+p['h'])
+        c.rect(x1,y2,x2-x1,y1-y2,fill=0,stroke=1)
+    elif typ=='circle':
+        x,y=pt(panel,p['cx'],p['cy']); _,yr=pt(panel,p['cx'],p['cy']+p['r']); xr,_=pt(panel,p['cx']+p['r'],p['cy'])
+        c.ellipse(x-(xr-x),y-(y-yr),x+(xr-x),y+(y-yr),fill=0,stroke=1)
+    elif typ in ['polyline','trapezoid']:
+        points=p['points']; path=c.beginPath(); x,y=pt(panel,*points[0]); path.moveTo(x,y)
+        for q in points[1:]: x,y=pt(panel,*q); path.lineTo(x,y)
+        if typ=='trapezoid': path.close()
+        c.drawPath(path,fill=0,stroke=1)
+    elif typ=='arc':
+        x,y=pt(panel,p['cx'],p['cy']); xr,_=pt(panel,p['cx']+p['r'],p['cy']); _,yr=pt(panel,p['cx'],p['cy']+p['r'])
+        rX=xr-x; rY=y-yr
+        c.arc(x-rX,y-rY,x+rX,y+rY,startAng=360-p['a1'],extent=p['a1']-p['a0'])
+    c.setDash()
+
+def draw_callout(q,panel):
+    typ=q['type']; c.setFont('KSB',8)
+    if typ=='measure':
+        a=pt(panel,q['x1'],q['y1']); b=pt(panel,q['x2'],q['y2']); arrow(*a,*b)
+        mx=(a[0]+b[0])/2; my=(a[1]+b[1])/2+3*mm
+        c.setFillColor(WARN); c.roundRect(mx-9*mm,my-3.2*mm,18*mm,6.4*mm,2*mm,fill=1,stroke=0); txt(q['id'],mx-5*mm,my-1.7*mm,7,True,INK)
+    elif typ=='photo':
+        a=pt(panel,q['x'],q['y']); b=pt(panel,q['tx'],q['ty']); c.setStrokeColor(GREEN); c.setLineWidth(.4*mm); c.line(*a,*b)
+        c.setFillColor(HexColor('#fafbf7')); c.setStrokeColor(GREEN); c.roundRect(a[0]-4*mm,a[1]-3*mm,8*mm,6*mm,1.2*mm,fill=1,stroke=1)
+        c.circle(a[0],a[1],1.4*mm,fill=0,stroke=1); txt(q['id'],a[0]+5*mm,a[1]+1.5*mm,7,True,GREEN)
+    elif typ in ['scan','datum']:
+        a=pt(panel,q['x'],q['y']); c.setStrokeColor(GREEN); c.circle(*a,3*mm,fill=0,stroke=1); c.line(a[0]-4*mm,a[1],a[0]+4*mm,a[1]); c.line(a[0],a[1]-4*mm,a[0],a[1]+4*mm); txt(q['id'],a[0]+4*mm,a[1]+2*mm,7,True,GREEN)
+    elif typ=='unknown':
+        a=pt(panel,q['x'],q['y']); c.setStrokeColor(AMBER); c.setFillColor(WARN); c.circle(*a,4*mm,fill=1,stroke=1); txt('?',a[0]-1.5*mm,a[1]-2.4*mm,10,True,AMBER)
+
+def draw_guide(g):
+    ytop=H-60*mm; bottom=32*mm
+    drawing=(M,bottom,238*mm,ytop-bottom)
+    info=(M+248*mm,bottom,135*mm,ytop-bottom)
+    c.setFillColor(HexColor('#fffdf8')); c.setStrokeColor(LINE); c.roundRect(drawing[0],drawing[1],drawing[2],drawing[3],4*mm,fill=1,stroke=1)
+    for p in g['primitives']: draw_primitive(p,drawing)
+    for q in g['callouts']: draw_callout(q,drawing)
+
+    c.setStrokeColor(LINE); c.line(info[0],info[1],info[0],info[1]+info[3])
+    x=info[0]+8*mm; y=info[1]+info[3]-2*mm; width=info[2]-12*mm
+    txt('AUF DER ZEICHNUNG',x,y,8,True,MUTED); y-=7*mm
+    for q in g['callouts']:
+        color=AMBER if q['type'] in ['measure','unknown'] else GREEN
+        txt(q['id'],x,y,8,True,color); y=para(q['label'],x+13*mm,y+2*mm,width-13*mm,8,False,INK)-3*mm
+    y-=2*mm; c.setStrokeColor(LINE); c.line(x,y,width+x,y); y-=8*mm
+    txt('NICHT VERGESSEN',x,y,8,True,MUTED); y-=6*mm
+    for tid in g['tasks']:
+        t=task_by_id[tid]
+        bullet=t['title'].replace('STOPP: ','')
+        y=para('• '+bullet,x,y,width,8,False,INK)-2*mm
+    y-=3*mm
+    txt('NOCH OFFEN',x,y,8,True,AMBER); y-=6*mm
+    para(g['note'],x,y,width,8,False,MUTED)
+
+def route_page():
+    header('KS-A00','Werkstatt- und Aufnahmeplan','Die rote Linie: orientieren → aufnehmen → lösen → zuordnen → sichern')
+    x=M; y=H-67*mm; width=W-2*M
+    para('Dieser Plan ist keine Demontageanweisung. Er zeigt, welche Informationen verloren gehen können und wo sie vor, während oder nach dem Öffnen aufgenommen werden sollen.',x,y,width,12,False,INK)
+    y-=25*mm
+    phases=[
+      ('1','VOR DEM LÖSEN','Orientierung, Referenzpunkte, Einbaulage, sichtbare Verbindungen.'),
+      ('2','BEIM ÖFFNEN','Keil/Partner vorher, Kontaktflächen direkt danach.'),
+      ('3','NACH DEM ÖFFNEN','Innenflächen, Tiefen, reale Paarungen und Varianten.'),
+      ('4','NACH DEM AUSBAU','Teil-ID, Profil, Lagerplatz, Sicherung und offene Fragen.')
+    ]
+    cell=(width-3*8*mm)/4
+    for i,(n,h,t) in enumerate(phases):
+        xx=x+i*(cell+8*mm); c.setFillColor(HexColor('#fffdf8')); c.setStrokeColor(LINE); c.roundRect(xx,y-55*mm,cell,55*mm,4*mm,fill=1,stroke=1)
+        txt(n,xx+6*mm,y-11*mm,18,True,AMBER); txt(h,xx+6*mm,y-23*mm,9,True,INK); para(t,xx+6*mm,y-29*mm,cell-12*mm,8,False,MUTED)
+    y-=78*mm
+    txt('ARBEITSBLÄTTER',x,y,9,True,MUTED); y-=9*mm
+    for i,g in enumerate(guides):
+        col=i%2; row=i//2; xx=x+col*(width/2); yy=y-row*17*mm
+        txt(g['sheet'],xx,yy,9,True,GREEN); txt(g['title'],xx+25*mm,yy,9,False,INK)
+    para('Regel: Erst fotografieren und Bezug markieren, dann lösen. Rohbilder unverändert behalten. Offene Stellen ausdrücklich offen lassen.',x,42*mm,width,10,True,INK)
+
+def register_page():
+    header('KS-A09','Teile, Ereignisse und Lagerorte','Reale IDs erst vergeben, wenn ein Teil wirklich gesehen und beschriftet wurde')
+    cols=[('KS-ID / alte Marke',38),('so nennt ihr das Teil',58),('Einbaulage / Partner',82),('Ereignis / Lagerplatz',92),('Foto / Person',72)]
+    x=M; y=H-66*mm; total=sum(w for _,w in cols)*mm
+    xx=x
+    for name,w in cols:
+        para(name,xx+2*mm,y,w*mm-4*mm,8,True,INK); xx+=w*mm
+    top=y-10*mm; bottom=42*mm
+    c.setStrokeColor(LINE); xx=x
+    for _,w in cols: c.line(xx,bottom,xx,top); xx+=w*mm
+    c.line(xx,bottom,xx,top)
+    for i in range(9):
+        yy=top-i*(top-bottom)/8; c.line(x,yy,x+total,yy)
+    para('Keile und Kleinteile bleiben bei ihrem Partner. Historische Marken nicht ersetzen, sondern zusätzlich zur neuen KS-ID notieren.',x,33*mm,total,9,False,MUTED)
+
+def conflicts_page():
+    header('KS-A10','Alte Angaben und offene Varianten','Nicht mitteln. Am realen Teil entscheiden – oder ausdrücklich offen lassen.')
+    items=list(conflicts.items())
+    x=M; y=H-66*mm; colw=(W-2*M-10*mm)/2
+    for i,(cid,textv) in enumerate(items):
+        col=i%2; row=i//2; xx=x+col*(colw+10*mm); yy=y-row*31*mm
+        txt(cid,xx,yy,8,True,AMBER); para(textv,xx+20*mm,yy+2*mm,colw-20*mm,8,False,INK)
+        c.setStrokeColor(LINE); c.line(xx,yy-19*mm,xx+colw,yy-19*mm)
+        txt('Befund / Foto / Teil-ID: _______________________________',xx,yy-26*mm,7,False,MUTED)
+
+def final_page():
+    header('KS-A11','Vor dem Verlassen gemeinsam prüfen','Kein unbekanntes Restteil verschweigen · Sicherung wirklich öffnen')
+    checks=[
+      'Alle STOPP-Punkte entweder aufgenommen oder ausdrücklich blockiert.',
+      'Reale Teile tragen ID, alte Marke, Partner und Lagerort.',
+      'Keile und Befestiger sind keinem falschen Partner zugeordnet.',
+      'Neue Innenflächen und Kontaktpaare sind fotografiert.',
+      'Messwerte besitzen Endpunkte, Einheit, Werkzeug und Unsicherheit.',
+      'Datumspunkte und Kontrollstrecken sind gesichert.',
+      'Originalfotos und Scans liegen unverändert vor.',
+      'Feldsicherung wurde auf einem zweiten Gerät geöffnet.',
+      'Offene Fragen haben eine Person oder einen nächsten Termin.'
+    ]
+    x=M; y=H-67*mm; width=W-2*M
+    for i,t in enumerate(checks):
+        c.rect(x,y-3*mm,5*mm,5*mm,fill=0,stroke=1); txt(f'{i+1:02}',x+9*mm,y,8,True,AMBER); y=para(t,x+23*mm,y+2*mm,width-23*mm,11,False,INK)-9*mm
+    txt('Was können wir später nicht mehr nachholen?',x,52*mm,11,True,INK); c.line(x,42*mm,W-M,42*mm); c.line(x,32*mm,W-M,32*mm)
+
+route_page()
+for g in guides:
+    header(g['sheet'],g['title'],'Skizze und Aufnahmepunkte · keine Fertigungszeichnung')
+    draw_guide(g)
+register_page()
+conflicts_page()
+final_page()
 c.save()
-# A4 compact leadership sheet derived from the same ordered task dataset.
-w,h=landscape(A4);a=canvas.Canvas(str(out/'KS-Einsatzleitung-A4.pdf'),pagesize=(w,h),invariant=1);a.setTitle('Einsatzleitung - Kleines Schäferrad');a.setFont('FieldBold',20);a.drawString(12*mm,h-18*mm,'Kleines Schäferrad / Einsatzleitung');a.setFont('Field',11);a.drawString(12*mm,h-26*mm,'FK-01 | gleiche Aufgaben-IDs wie Web und A3-Mappe | keine Demontage- oder Fertigungsfreigabe')
-y=h-38*mm
-for t in tasks:
- a.setFont('FieldBold',10);a.drawString(12*mm,y,t['task_id']);a.setFont('Field',10);a.drawString(55*mm,y,t['title']);a.setFont('Field',8);a.drawString(224*mm,y,data['timing_labels'][t['timing']]);y-=6.6*mm
-a.setFont('Field',10);a.drawString(12*mm,17*mm,'Rollen: ____________________ / ____________________   Datum: __________   Export geöffnet / Papier mitgenommen: ______');a.save()
-manifest={'schema':'ks-field-pack/v1','task_source':'data/field-tasks.json','task_source_sha256':hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest(),'model_source':'src/workbench/geometry.mjs','task_ids':[t['task_id'] for t in tasks],'pages':manifest,'format':'A3 landscape','minimum_task_body_pt':16,'physical_instances_precreated':0}
+
+# compact A4 running plan: two pages maximum
+aw,ah=landscape(A4)
+a=canvas.Canvas(str(OUT/'KS-Kurzplan-A4.pdf'),pagesize=(aw,ah),invariant=1)
+def aheader(title):
+    a.setFillColor(HexColor('#fafbf7')); a.rect(0,0,aw,ah,fill=1,stroke=0)
+    a.setFont('KSB',18); a.setFillColor(INK); a.drawString(12*mm,ah-18*mm,title)
+    a.setFont('KS',8); a.setFillColor(MUTED); a.drawString(12*mm,ah-25*mm,'gleiche Blattkennungen wie Web und A3-Plan · keine Demontagefreigabe')
+aheader('Kleines Schäferrad · Ablauf vor Ort')
+y=ah-37*mm
+for i,t in enumerate(tasks[:12]):
+    sheet=guide_by_id[guides_data['task_visual_map'][t['task_id']]]['sheet']; a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i+1:02} · {sheet}")
+    a.setFillColor(INK); a.drawString(38*mm,y,t['title'][:62])
+    a.setFont('KS',7); a.setFillColor(MUTED); a.drawRightString(282*mm,y,tasks_data['timing_labels'][t['timing']])
+    y-=10*mm
+a.showPage(); aheader('Kleines Schäferrad · Fortsetzung und Abschluss')
+y=ah-37*mm
+for i,t in enumerate(tasks[12:],start=13):
+    sheet=guide_by_id[guides_data['task_visual_map'][t['task_id']]]['sheet']; a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i:02} · {sheet}")
+    a.setFillColor(INK); a.drawString(38*mm,y,t['title'][:62])
+    a.setFont('KS',7); a.setFillColor(MUTED); a.drawRightString(282*mm,y,tasks_data['timing_labels'][t['timing']])
+    y-=10*mm
+a.setFont('KSB',8); a.setFillColor(INK); a.drawString(12*mm,24*mm,'Abschluss: Sicherung auf zweitem Gerät geöffnet · Papier/Originalmedien mitgenommen · offene Punkte benannt')
+a.save()
+
+task_hash=hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest()
+guide_hash=hashlib.sha256((ROOT/'data/visual-guides.json').read_bytes()).hexdigest()
+manifest={
+  'schema':'ks-field-pack/v2',
+  'task_source':'data/field-tasks.json',
+  'task_source_sha256':task_hash,
+  'visual_source':'data/visual-guides.json',
+  'visual_source_sha256':guide_hash,
+  'task_ids':[t['task_id'] for t in tasks],
+  'task_to_sheet':{tid:guide_by_id[gid]['sheet'] for tid,gid in guides_data['task_visual_map'].items()},
+  'pages':manifest_pages,
+  'format':'A3 landscape',
+  'physical_instances_precreated':0
+}
 (ROOT/'docs/field-kit/field-pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-public=ROOT/'public/field-pack';public.mkdir(exist_ok=True)
-for f in out.glob('*.pdf'):shutil.copyfile(f,public/f.name)
-print('Generated',page,'A3 pages and one A4 leadership sheet from',len(tasks),'canonical tasks')
+for p in OUT.glob('*.pdf'): shutil.copyfile(p,PUBLIC/p.name)
+# Compatibility aliases for earlier published links; human-facing UI uses German names.
+shutil.copyfile(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf',PUBLIC/'KS-Field-Pack-A3.pdf')
+shutil.copyfile(OUT/'KS-Kurzplan-A4.pdf',PUBLIC/'KS-Einsatzleitung-A4.pdf')
+print('Generated',page_no,'A3 pages and 2 A4 pages from',len(guides),'visual guides /',len(tasks),'canonical tasks')

@@ -3,11 +3,118 @@ import '@fontsource-variable/manrope';
 import '../styles/field.css';
 import {href} from '../lib/paths';
 ---
-<!doctype html><html lang="de"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#193e35"/><title>Am Rad arbeiten · Kleines Schäferrad</title><link rel="manifest" href={href('manifest.webmanifest')}/><link rel="icon" href={href('favicon.svg')}/></head>
-<body><header class="field-header"><a href={href('')}>Kleines Schäferrad</a><nav aria-label="Arbeitsmodus"><a href={href('werkstatt/')}>Werkstatt</a><a href={href('field-pack/KS-Field-Pack-A3.pdf')}>Papiermappe</a></nav></header>
-<main id="field-app" data-base={href('')}><div class="field-status"><span id="field-storage" role="status">Speicher wird geöffnet …</span><span id="offline-status" role="status">Offline-Vorrat wird geprüft …</span></div><p id="field-error" role="alert"></p>
-<div id="task-screen"><div class="field-top"><span class="eyebrow">Gemeinsam erhalten · vor Ort aufnehmen</span><button id="open-index">Aufgabenübersicht</button></div><p id="task-progress"></p><p id="task-timing" class="eyebrow"></p><h1 id="task-title"></h1><p id="task-stop" class="stop" hidden>STOPP - NOCH NICHT LÖSEN. Erst die Aufnahmen sichern.</p><div id="task-content"></div><div class="field-navigation"><button id="field-back">Zurück</button><button id="field-next" class="primary">Weiter</button></div><p id="task-save" role="status"></p></div>
-<section id="index-screen" hidden><h1>Was ist als Nächstes dran?</h1><p>Reihenfolge mit den erfahrenen Monteuren abstimmen. „Noch offen“ gibt einen STOPP-Schritt nicht frei.</p><label>Zeitpunkt<select id="timing-filter"><option value="">Alle Zeitpunkte</option><option value="BEFORE_RELEASE">Vor dem Lösen</option><option value="DURING_RELEASE">Beim Lösen</option><option value="AFTER_RELEASE">Direkt nach dem Öffnen</option><option value="AFTER_REMOVAL">Nach dem Ausbau</option></select></label><div id="task-index"></div><button id="close-index">Zur aktuellen Aufgabe</button></section>
-<section id="register-screen" hidden><h1>Reale Teile beschriften</h1><p>Nur Teile eintragen, die ihr gesehen und zusätzlich beschriftet habt. Historische Marken bleiben erhalten. Erwartete Modellpositionen sind kein Teileinventar.</p><form id="instance-form"><label>Neue ID<input name="id" placeholder="KS-ARM-001" required pattern="KS-(ARM|KRU|KUM|PAD|KEI)-[0-9]{3,}"/></label><label>So nennt ihr das Teil<input name="local_name" required/></label><label>Alte Marken<input name="historic_marks"/></label><label>Einbaulage<input name="installed_position" required/></label><label>Partner-IDs (Komma getrennt)<input name="partners"/></label><label>Zustand<input name="condition" required/></label><label>Ausbauereignis / laufende Nummer<input name="removal_event" placeholder="EVT-001; leer wenn noch eingebaut"/></label><label>Lagerplatz / noch eingebaut<input name="storage_location" required/></label><label>Person / Kürzel<input name="person" required/></label><label>Foto-IDs / Dateinamen<input name="media_ids"/></label><label class="check"><input name="observed" type="checkbox" required/> Dieses reale Teil ist gesehen und beschriftet.</label><button type="submit" class="primary">Teil lokal eintragen</button></form><div id="instance-list"></div><button id="close-register">Zur Aufgabe</button></section>
-<section id="backup-screen" hidden><h1>Sicherung mitnehmen</h1><p>Fotos bleiben als Originaldateien in diesem Browser. Die Sicherung enthält Aufgaben, Fotos, Teile und Ereignisse. Auf einem zweiten Gerät einlesen und prüfen.</p><p id="storage-budget"></p><button id="persist-request">Browser um dauerhaften Speicher bitten</button><button id="field-export" class="primary">Alles als Datei sichern</button><label>Sicherung einlesen<input id="field-import" type="file" accept="application/json,.json"/></label><p id="backup-status" role="status"></p><p>Privatmodus, gelöschte Websitedaten oder Speicherdruck können Daten entfernen. Offline-Vorrat ersetzt keine Sicherung. Große Sitzungen regelmäßig aufteilen; ein JSON-Export braucht zusätzlich Arbeitsspeicher. 25 MB je Foto, höchstens 250 MB Bilddaten je Sitzung.</p><button id="close-backup">Zur Aufgabe</button></section>
-<footer class="field-footer"><button id="open-register">Teile / Lagerorte</button><button id="open-backup">Sicherung</button><a href={href('field-pack/KS-Einsatzleitung-A4.pdf')}>Kurzplan</a></footer></main><script>import '../field/client.js';</script></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#fafbf7"/>
+  <title>Vor Ort arbeiten · Kleines Schäferrad</title>
+  <link rel="manifest" href={href('manifest.webmanifest')}/>
+  <link rel="icon" href={href('favicon.svg')}/>
+</head>
+<body>
+<header class="field-header">
+  <a class="field-brand" href={href('')}>Kleines Schäferrad</a>
+  <nav aria-label="Arbeitswege">
+    <a href={href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf')}>Arbeitsplan</a>
+    <a href={href('werkstatt/')}>Werkstattmodell</a>
+  </nav>
+</header>
+
+<main id="field-app" data-base={href('')}>
+  <div class="field-status">
+    <span id="field-storage" role="status">Speicher wird geöffnet …</span>
+    <span id="offline-status" role="status">Offline-Vorrat wird geprüft …</span>
+  </div>
+  <p id="field-error" role="alert"></p>
+
+  <div id="task-screen">
+    <div class="field-context">
+      <div>
+        <span class="eyebrow">Vor Ort arbeiten</span>
+        <h1>Ein Schritt nach dem anderen.</h1>
+        <p>Die Skizze zeigt zuerst, <strong>wo</strong> wir hinschauen. Danach folgt nur der nächste Handgriff: Foto, Maß oder Erklärung.</p>
+      </div>
+      <div class="field-context-actions">
+        <a href={href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf')}>A3-Arbeitsplan öffnen</a>
+        <button id="open-index">Alle Schritte</button>
+      </div>
+    </div>
+
+    <div class="phase-track" aria-label="Arbeitsphasen">
+      <span data-phase="BEFORE_RELEASE">1 · Vor dem Lösen</span>
+      <span data-phase="DURING_RELEASE">2 · Beim Öffnen</span>
+      <span data-phase="AFTER_RELEASE">3 · Direkt danach</span>
+      <span data-phase="AFTER_REMOVAL">4 · Nach dem Ausbau</span>
+    </div>
+
+    <section class="task-shell">
+      <div class="task-heading">
+        <div>
+          <p id="task-progress" class="task-progress"></p>
+          <p id="task-timing" class="eyebrow"></p>
+          <h2 id="task-title"></h2>
+        </div>
+        <span id="task-code" class="task-code"></span>
+      </div>
+      <p id="task-stop" class="stop" hidden>STOPP · NOCH NICHT LÖSEN. Erst die markierten Aufnahmen sichern.</p>
+      <div id="task-visual"></div>
+      <div id="task-content"></div>
+      <div class="field-navigation">
+        <button id="field-back">Zurück</button>
+        <button id="field-next" class="primary">Weiter</button>
+      </div>
+      <p id="task-save" role="status"></p>
+    </section>
+  </div>
+
+  <section id="index-screen" hidden>
+    <div class="screen-heading"><div><span class="eyebrow">Orientierung</span><h1>Alle Arbeitsschritte.</h1></div><button id="close-index">Zur aktuellen Aufgabe</button></div>
+    <p>Die Reihenfolge wird mit den erfahrenen Monteuren abgestimmt. Ein STOPP-Schritt bleibt offen, solange seine Aufnahmen fehlen.</p>
+    <label>Phase<select id="timing-filter"><option value="">Alle Phasen</option><option value="BEFORE_RELEASE">Vor dem Lösen</option><option value="DURING_RELEASE">Beim Öffnen</option><option value="AFTER_RELEASE">Direkt nach dem Öffnen</option><option value="AFTER_REMOVAL">Nach dem Ausbau</option></select></label>
+    <div id="task-index"></div>
+  </section>
+
+  <section id="register-screen" hidden>
+    <div class="screen-heading"><div><span class="eyebrow">Teile erhalten ihre Identität</span><h1>Reales Teil beschriften.</h1></div><button id="close-register">Zur Aufgabe</button></div>
+    <p>Nur Teile eintragen, die wirklich gesehen und beschriftet wurden. Alte Marken bleiben erhalten.</p>
+    <form id="instance-form" class="register-grid">
+      <label>Neue ID<input name="id" placeholder="KS-ARM-001" required pattern="KS-(ARM|KRU|KUM|PAD|KEI)-[0-9]{3,}"/></label>
+      <label>So nennt ihr das Teil<input name="local_name" required/></label>
+      <label>Alte Marken<input name="historic_marks"/></label>
+      <label>Einbaulage<input name="installed_position" required/></label>
+      <label>Partner-IDs<input name="partners"/></label>
+      <label>Zustand<input name="condition" required/></label>
+      <label>Ausbauereignis<input name="removal_event" placeholder="EVT-001"/></label>
+      <label>Lagerplatz / noch eingebaut<input name="storage_location" required/></label>
+      <label>Person / Kürzel<input name="person" required/></label>
+      <label>Foto-IDs / Dateinamen<input name="media_ids"/></label>
+      <label class="check full"><input name="observed" type="checkbox" required/>Dieses reale Teil ist gesehen und beschriftet.</label>
+      <button type="submit" class="primary full">Teil lokal eintragen</button>
+    </form>
+    <div id="instance-list"></div>
+  </section>
+
+  <section id="backup-screen" hidden>
+    <div class="screen-heading"><div><span class="eyebrow">Sicherung</span><h1>Aufnahmen mitnehmen.</h1></div><button id="close-backup">Zur Aufgabe</button></div>
+    <p>Die Sicherung enthält Arbeitsschritte, Fotos, Teile und Ereignisse. Nach wichtigen Abschnitten exportieren und auf einem zweiten Gerät öffnen.</p>
+    <p id="storage-budget"></p>
+    <div class="backup-actions">
+      <button id="persist-request">Lokalen Speicher absichern</button>
+      <button id="field-export" class="primary">Alles als Datei sichern</button>
+    </div>
+    <label>Sicherung einlesen<input id="field-import" type="file" accept="application/json,.json"/></label>
+    <p id="backup-status" role="status"></p>
+    <p class="fineprint">Browserdaten sind keine Archivierung. Privatmodus, gelöschte Websitedaten oder Speicherdruck können lokale Daten entfernen.</p>
+  </section>
+
+  <footer class="field-footer">
+    <button id="open-register">Teile / Lagerorte</button>
+    <button id="open-backup">Sicherung</button>
+    <a href={href('field-pack/KS-Kurzplan-A4.pdf')}>Kurzübersicht</a>
+  </footer>
+</main>
+<script>import '../field/client.js';</script>
+</body>
+</html>

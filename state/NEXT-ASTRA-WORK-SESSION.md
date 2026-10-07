@@ -1,206 +1,104 @@
-# NEXT ASTRA WORK SESSION — Pre-Disassembly Field Kit & UX Refinement
+# NEXT ASTRA WORK SESSION — Brute-Force Functional Reconstruction
 
-Branch base: `work/pre-disassembly-field-kit-20261007`
+Status: **PREPARED — noch nicht starten**  
+Ausgangspunkt nach Merge: Maintenance-Coherence-Stand auf `main`.
+
+Verbindlicher Missionsvertrag:
+`state/ASTRA-BRUTE-FORCE-RECONSTRUCTION.md`
+
+## Startbedingung
+
+Die Session soll beginnen, sobald:
+1. der aktuelle Maintenance-Rebuild gemergt und deployed ist;
+2. die vorhandenen Wasserseitenbilder als Kontextquelle übernommen sind;
+3. möglichst weitere Bilder aus `docs/PHOTO-CAPTURE-TODO.md` vorliegen.
+
+Weitere Bilder verbessern die Rekonstruktion, sind aber kein Grund, bereits vorhandene Evidenz erneut zu vereinfachen.
 
 ## Mission
 
-Bring the current Workbench Alpha from a technically functional research tool to a **pre-disassembly field system** that supports experienced craftspeople, produces a printable technical Field Pack, and preserves unresolved geometry as explicit questions.
+Erzeuge die maximal plausible funktionale Rekonstruktion des **gesamten technischen Systems**:
 
-Target gate:
+- Radkörper,
+- Welle und Armvarianten,
+- Kränze / Krümmlinge,
+- Kümpfe / Schaufeln,
+- Keile / Stifte / Befestiger,
+- Lager und Lagerstöcke,
+- Radstatt,
+- obere / untere / seitliche Rahmen,
+- Trog und Rinne,
+- Wasserlinie,
+- Regnitz-Ufer,
+- Fließrichtung und plausible Radfunktion,
+- Standortorientierung / Himmelsrichtungen sobald belastbar.
 
-**PRE-DISASSEMBLY FIELD KIT READY**
+Nicht nur ein Radmodell, sondern ein Systemmodell.
 
-## Mandatory sources
+## Forschungsauftrag
 
-Read first:
-- `docs/UX-AUDIT-DRAFT-02.md`
-- `docs/TONE-AND-LANGUAGE.md`
-- `docs/MUX-DESIGN-GRAMMAR-V2.md`
-- `docs/SCAN-REGISTRATION-PLAN.md`
-- `docs/ARM-SHAFT-HYPOTHESES.md`
-- `docs/PRE-DISASSEMBLY-FIELD-KIT.md`
-- `docs/CAPTURE-BEFORE-DISASSEMBLY.md`
-- `docs/HANDWERKSWISSEN-CAPTURE.md`
-- `docs/DRAWING-LANGUAGE.md`
-- `docs/workbench/HUMAN-PLAN.md`
-- all current baseline JSON
+Vor Geometriesynthese gezielt öffentliche Quellen zu historischen Regnitz-/Möhrendorfer Wasserschöpfrädern recherchieren:
 
-## Design contract — one identity, three densities
+- traditionelle Radstatt- und Lagerkonstruktionen,
+- Arm-/Wellenverbindungen,
+- Mortisen, Keile, Holznägel und Verstiftungen,
+- typische Krümmling-/Kumpf-/Schaufelverbindungen,
+- Trog-/Rinnen-Wasserführung,
+- verwandte erhaltene Räder,
+- historische Proportionen und Terminologie.
 
-Keep the shared MUX token system in `src/styles/tokens.css`.
+Quellenmaterial und daraus abgeleitete Annahmen getrennt speichern.
 
-- **Story / Intro:** warm, photographic, proud, moderately spacious.
-- **Werkstatt / Analysis:** same identity, much denser and more technical; model, photos and drawings get the space, not cards/chrome.
-- **Field Mode:** same identity, one task per screen and very large controls.
+## Brute-Force-Regel
 
-Do not copy marketing-style Astro cards into the workshop. Do not create a separate unrelated design system.
+Astra darf fehlende Mechanik synthetisch ergänzen, wenn sie als solche sichtbar bleibt.
 
-## Phase A — Human-facing language & aesthetic
+Für verdeckte Verbindungen mehrere Kandidaten erzeugen und ranken nach:
+- Foto-/Scanverträglichkeit,
+- historischen Zeichnungen,
+- Kollisionsfreiheit,
+- Montage-/Demontierbarkeit,
+- plausiblem Kraftfluss,
+- Holzbau-/Zimmermannslogik,
+- minimalen Zusatzannahmen.
 
-Refactor public page and workbench:
-- craftspeople-first German copy,
-- pride, continuity and shared authorship,
-- reduce Research/Claims/Conflict jargon in human UI,
-- keep internal schemas unchanged,
-- use paper/technical-workbench aesthetic,
-- reduce card density and vertical waste,
-- let wheel/photos/model dominate.
+Keine synthetische Geometrie als gemessen ausgeben.
 
-## Phase B — Orientation & scan correctness
+## Pflichtdarstellungen
 
-Fix the current scan overlay architecture:
-- normalize GLTF Y-up to mechanical Z-up,
-- verify handedness,
-- show permanent axis triad and orientation legend,
-- distinguish RAW_EXPORT / AXIS_NORMALIZED / ROUGH_ALIGNED / REGISTERED / CALIBRATED,
-- do not fake mechanical registration,
-- store transform as data,
-- prepare 3+ fixed field datum markers,
-- do not assert LAND/WATER before HUMAN-01.
+- Evidence-only model
+- best-ranked synthetic model
+- alternative connection candidates
+- installed state
+- exploded state
+- cutaways / shaft interior candidates
+- stationary frame context
+- water/site context
+- provenance/confidence overlay
 
-## Phase C — Arm/shaft hypothesis model
+## UX-Vertrag
 
-Replace the visually overconfident straight-arm presentation with explicit hypotheses.
+Die vorhandene Maintenance-UX bleibt verbindlich:
+- human-facing Deutsch,
+- Source-Stylekit-Tokens,
+- keine aufgeblasenen Marketingkomponenten,
+- Modell dominant,
+- technische Details progressiv,
+- visuelle Werkstatt-/Messführung aus `data/visual-guides.json`.
 
-Support at least:
-- straight/simple placeholder,
-- possible bent/dogleg representation,
-- axial-layer alternatives,
-- visible unknown mortise/interlocking zone.
-
-Do not invent hidden joinery. Generate targeted P0++ field questions from these hypotheses.
-
-## Phase D — Field Mode
-
-Add a separate `/feld/` or explicit Field Mode.
-
-Rules:
-- one task per screen,
-- very large controls,
-- minimal free text,
-- next/back,
-- visible persistence,
-- task completion state,
-- supports photo, measurement, explanation and unknown,
-- works without research terminology,
-- analysis workbench remains separately available.
-
-## Phase E — Shared task model
-
-Create canonical structured task data used by both Web Field Mode and printable Field Pack.
-
-Required fields:
-- task_id
-- component/family/instance
-- timing
-- irreversible_loss
-- instruction
-- photo_views
-- measurement_endpoints
-- tools
-- questions
-- media_requirements
-- acceptance_evidence
-- status
-
-No duplicated handwritten task logic in templates.
-
-## Phase F — Physical instance register
-
-Prepare schema/UI for:
-- KS-ARM/KRU/KUM/PAD/KEI IDs,
-- historic marks,
-- local name,
-- installed position,
-- partners,
-- condition,
-- removal event,
-- storage location.
-
-Do not pre-create unverified physical instances as facts.
-
-## Phase G — Printable Field Pack
-
-Generate a coherent printable PDF in the established classic technical drawing style.
-
-Target:
-- A3 landscape primary format,
-- readable by 60–80-year-old workshop users,
-- high contrast,
-- large writing fields,
-- STOP cards before irreversible actions,
-- technical sketches where useful,
-- conflict comparisons,
-- arm/shaft P0++ pages,
-- scan/photo instructions,
-- craft-knowledge questions,
-- event and part registers,
-- final completeness checklist.
-
-PDF must be generated from the same task/model data as Web Field Mode.
-
-## Phase H — Offline robustness
-
-Before gate:
-- PWA/service-worker offline start,
-- verify after one preload,
-- test 20–50 photo session,
-- storage warning,
-- export while offline,
-- document browser storage limitations.
-
-Do not build a backend.
-
-## Phase I — Acceptance
-
-Automated:
-- desktop
-- 320 px
-- iPhone emulation
-- 200 % text
-- offline reload
-- task resume
-- 20+ photo load
-- PDF generation
-- no horizontal overflow
-- ≥44 px frequent touch controls
-
-Human/manual remaining if unavailable:
-- physical current iPhone Safari
-- actual target users
-- real field daylight/wet-hand test
-
-## Stop conditions
-
-Do not:
-- promote hypothesis to current geometry,
-- repair scan holes,
-- assert LAND/WATER before human confirmation,
-- claim Gaussian Splats as metric evidence,
-- invent arm/mortise topology,
-- build cloud platform/backend.
+Astra darf die UX für neue 3D-Funktionen erweitern, aber nicht erneut ein Cockpit bauen.
 
 ## Gate
 
-Stop only at:
+Stoppe bei:
 
-**PRE-DISASSEMBLY FIELD KIT READY**
+**BRUTE-FORCE FUNCTIONAL RECONSTRUCTION READY**
 
-Deliver:
-- refined public page,
-- refined analysis workbench,
-- field mode,
-- corrected scan coordinate handling,
-- arm/shaft hypothesis layer,
-- canonical task model,
-- printable Field Pack PDF,
-- offline evidence,
-- validation report,
-- remaining human calibration list.
-
-
-## Abschluss dieser Session — 2026-10-07
-
-**PRE-DISASSEMBLY FIELD KIT READY**. Phasen A–I materialisiert und automatisiert abgenommen. Verbindlicher Abschlussbericht: `docs/field-kit/VALIDATION.md`; Nutzung und menschliche Restkalibrierung: `docs/field-kit/FIELD-USE.md`. Druckunterlagen: `output/pdf/KS-Field-Pack-A3.pdf` und `output/pdf/KS-Einsatzleitung-A4.pdf`. Offline-/Browsernachweise: `state/field-kit/browser/`.
-
-Hier stoppen. Keine neue Designrichtung, keine Ist-Geometrie aus Hypothesen, kein Merge und kein Deploy. Nächster fachlicher Schritt ist die reale Feldaufnahme und menschliche Kalibrierung, nicht eine weitere Modellvermutung.
+Das Gate verlangt:
+- vollständiges funktionales Systemmodell,
+- stationäre Rahmen-/Lager-/Wasserkomponenten enthalten oder explizit offen,
+- verdeckte Verbindungen als gerankte Kandidaten,
+- Standort-/Wasserfunktion räumlich nachvollziehbar,
+- Evidence vs Synthetic jederzeit unterscheidbar,
+- Modell/Zeichnungen/visuelle Feldhilfen aus derselben Geometriebasis,
+- nachvollziehbare Quellen- und Annahmenmatrix.

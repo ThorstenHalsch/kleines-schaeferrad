@@ -10,7 +10,7 @@ export function makeModel(variant='A', explode=0, options={}) {
  const shape=options.armShape||'unknown',layers=options.armLayers||'staggered';
  const add=(id,family,geometry,position=[0,0,0],rotation=[0,0,0],stationary=false)=>{
   const material=new T.MeshStandardMaterial({color:stationary?0x738178:family.includes('KUMPF')||family==='COMP-KUEMPFE'?0xb68a44:0x377d79,transparent:true,opacity:stationary?.25:.58,roughness:1,side:T.DoubleSide});
-  const mesh=new T.Mesh(geometry,material);mesh.position.set(...position);mesh.rotation.set(...rotation);mesh.userData={id,family,stationary,status:'hypothesis',parameters:'data/hypothesis.parameters.json'};
+  const mesh=new T.Mesh(geometry,material);mesh.position.set(...position);mesh.rotation.set(...rotation);mesh.userData={id,family,stationary,status:stationary?'context-hypothesis':'hypothesis',parameters:'data/hypothesis.parameters.json'};
   const edges=new T.LineSegments(new T.EdgesGeometry(geometry,25),new T.LineBasicMaterial({color:stationary?0x758477:0x1a4946,transparent:true,opacity:.8}));mesh.add(edges);group.add(mesh);return mesh;
  };
  add('HYP-SHAFT','COMP-SHAFT',new T.BoxGeometry(p.shaftLength,p.shaftWidth,p.shaftWidth));
@@ -46,7 +46,19 @@ export function makeModel(variant='A', explode=0, options={}) {
   add(`EXPECTED-KUM-${String(i+1).padStart(2,'0')}`,'COMP-KUEMPFE',g,[-p.ringDistance/2-explode*1.2,-Math.sin(a)*r,Math.cos(a)*r],[a,0,0]);
  }
  for(let i=0;i<p.paddleCount;i++) {const a=(i+.5)*Math.PI*2/p.paddleCount,r=p.outerRadius+.15+explode*.45;add(`EXPECTED-PAD-${String(i+1).padStart(2,'0')}`,'COMP-PADDLES',new T.BoxGeometry(p.ringDistance,.09,.42),[explode*.2,-Math.sin(a)*r,Math.cos(a)*r],[a,0,0]);}
- for(const sign of [-1,1]){add(`HYP-BEARING-${sign}`,'COMP-BEARINGS',new T.BoxGeometry(.38,.55,.3),[sign*1.65,0,-.28],[0,0,0],true);add(`HYP-STAND-${sign}`,'COMP-RADSTATT',new T.BoxGeometry(.24,.45,2),[sign*1.65,0,-1.45],[0,0,0],true)}
+ for(const sign of [-1,1]){
+  add(`HYP-BEARING-${sign}`,'COMP-BEARINGS',new T.BoxGeometry(.38,.55,.3),[sign*1.65,0,-.28],[0,0,0],true);
+  add(`CTX-BEARING-STAND-${sign}`,'COMP-BEARING-STANDS',new T.BoxGeometry(.34,.42,2.35),[sign*1.65,0,-1.45],[0,0,0],true);
+ }
+ // Stationary timber context seen around the wheel. All dimensions and exact joints are display hypotheses.
+ add('CTX-MAIN-BEAM-FRONT','COMP-FRAME-MAIN',new T.BoxGeometry(.28,5.25,.28),[.55,0,-.82],[0,0,0],true);
+ add('CTX-MAIN-BEAM-REAR','COMP-FRAME-MAIN',new T.BoxGeometry(.28,4.65,.24),[-.95,0,-1.02],[0,0,0],true);
+ for(const y of [-2.25,-.78,.78,2.25]) add(`CTX-POST-${y}`,'COMP-FRAME-MAIN',new T.BoxGeometry(.3,.3,2.45),[.55,y,-1.92],[0,0,0],true);
+ add('CTX-LOWER-RAIL','COMP-FRAME-LOWER',new T.BoxGeometry(.28,4.7,.24),[.5,0,-2.55],[0,0,0],true);
+ add('CTX-LOWER-RAIL-REAR','COMP-FRAME-LOWER',new T.BoxGeometry(.28,3.8,.22),[-.9,0,-2.35],[0,0,0],true);
+ for(const [y,rot] of [[-1.55,.62],[1.55,-.62]]) add(`CTX-DIAG-${y}`,'COMP-FRAME-LOWER',new T.BoxGeometry(.22,2.25,.2),[.48,y,-1.72],[rot,0,0],true);
+ add('CTX-SIDE-GUIDE-A','COMP-FRAME-SIDE',new T.BoxGeometry(1.8,.2,.22),[-.2,-2.6,-.65],[0,.12,0],true);
+ add('CTX-SIDE-GUIDE-B','COMP-FRAME-SIDE',new T.BoxGeometry(1.8,.2,.22),[-.2,2.6,-.65],[0,-.12,0],true);
  add('HYP-TROUGH','COMP-TROUGH',new T.BoxGeometry(.55,2.4,.2),[-1.15,0,1.8],[0,0,0],true);
  group.updateMatrixWorld(true);return group;
 }

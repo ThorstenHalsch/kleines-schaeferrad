@@ -3,225 +3,110 @@ import { href } from '../lib/paths';
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
-import TechnicalPlate from '../components/TechnicalPlate.astro';
 
 import hero from '../../evidence/raw/IMG_6858.jpeg';
 import anatomy from '../../evidence/raw/IMG_6861.jpeg';
-import drawing from '../../evidence/raw/IMG_6831.jpeg';
-import closeup from '../../evidence/raw/IMG_6854.jpeg';
-import scanImage from '../../evidence/derived/ply-spatial.png';
 
-import manifest from '../../evidence/manifest.json';
-import claimsData from '../../data/geometry.claims.json';
-import componentsData from '../../data/components.json';
-import conflictsData from '../../data/conflicts.json';
-import gapsData from '../../data/knowledge-gaps.json';
+const routes = {
+  workshop: href('werkstatt/'),
+  field: href('feld/'),
+  plan: href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf')
+};
 
-const claims = claimsData.claims;
-const components = componentsData.components;
-const conflicts = conflictsData.conflicts;
-const gaps = gapsData.gaps;
-const originalCount = manifest.assets.length;
-const currentClaims = claims.filter((claim) => claim.evidence_class === 'observed-current').length;
-const historicalClaims = claims.filter((claim) => claim.evidence_class === 'historical-drawing').length;
-const measuredClaims = claims.filter((claim) => claim.evidence_class === 'measured').length;
-
-const preferredOrder = [
-  'COMP-SHAFT','COMP-ARMS','COMP-RIM-LAND','COMP-RIM-WATER','COMP-KRUEMMLINGE',
-  'COMP-KUEMPFE','COMP-KUMPF-STAVES','COMP-KUMPF-HOOPS','COMP-PADDLES',
-  'COMP-FASTENERS','COMP-BEARINGS','COMP-RADSTATT','COMP-TROUGH','COMP-RINNE'
-];
-const displayComponents = preferredOrder.flatMap((id) => {
-  const component = components.find((item) => item.id === id);
-  return component ? [component] : [];
-});
-
-const craftPrompts = [
-  'Warum sitzt dieser Keil genau in dieser Richtung – und was passiert, wenn er anders herum sitzt?',
-  'Welche Passung muss trocken locker sein, damit sie im Wasser nach dem Quellen richtig trägt?',
-  'Wo greift die Strömung so an, dass ein falscher Winkel später kritisch wird?',
-  'Woran erkennt ein erfahrener Monteur ohne Maßband, dass das Teil wirklich richtig sitzt?',
-  'Welche Reparatur hat sich bewährt – und welche Variante aus der Zeichnung würdet ihr heute nicht mehr bauen?'
+const system = [
+  ['Radkörper','Welle, Arme, Kränze und Krümmlinge'],
+  ['Wasseraufnahme','Kümpfe und Schaufeln'],
+  ['Lagerung','Zapfen, Lager, Lagerstöcke und Auflager'],
+  ['Tragwerk','Radstatt, Querbalken und Rahmen'],
+  ['Wasserführung','Trog, Rinne, Wasserlinie und Fließrichtung']
 ];
 
-const roadmap = [
-  ['L0','Rohquellen','Fotos, Zeichnungen, 3D-Aufnahmen und Aussagen bleiben unverändert erhalten.'],
-  ['L1','Ordnen & zuordnen','Quellen, Aussagen, offene Punkte, Referenzen und reale Teil-IDs werden zusammengeführt.'],
-  ['L2','Mechanisches Arbeitsmodell','Mit bestätigten Feldmaßen wird die Geometrie Schritt für Schritt belastbarer.'],
-  ['L3','Oberflächen & Reparaturen','Holzoberflächen, Reparaturen und Alterung werden mit der Mechanik verbunden.'],
-  ['L4','Ort & Umgebung','Wasser, Ufer und Umgebung setzen das Rad wieder in seinen räumlichen Zusammenhang.']
+const paths = [
+  {
+    number:'01',
+    title:'Arbeitsplan',
+    text:'Für den Abbau: Skizzen, Messstellen, Fotopositionen und STOPP-Punkte auf Papier.',
+    href:routes.plan,
+    action:'A3-Plan öffnen'
+  },
+  {
+    number:'02',
+    title:'Vor Ort',
+    text:'Eine Aufgabe nach der anderen aufnehmen. Fotos, Maße, Teile und Sicherung bleiben zusammen.',
+    href:routes.field,
+    action:'Vor-Ort-Modus öffnen'
+  },
+  {
+    number:'03',
+    title:'Werkstattmodell',
+    text:'Rad, Tragwerk, Punktewolke und offene Verbindungen gemeinsam ansehen und vergleichen.',
+    href:routes.workshop,
+    action:'Arbeitsmodell öffnen'
+  }
 ];
 ---
-<BaseLayout title="Das Kleine Schäferrad" description="Gemeinsam halten wir fest, wie das Kleine Schäferrad gebaut ist und welches Werkstattwissen darin steckt.">
-  <div class="container" style="padding-top:1rem"><a class="button button-dark" href={href('werkstatt/')}>Zur Werkstatt · gemeinsam prüfen und festhalten ↗</a></div>
-<section class="hero container">
-    <div class="hero-copy">
-      <span class="location-label"><span class="status-dot"></span> Möhrendorf / Oberndorf · an der Regnitz</span>
-      <h1>Was viele Hände<br /><span class="hero-word">wissen.</span></h1>
-      <p>Das Kleine Schäferrad wird mit Erfahrung, Sorgfalt und vielen Handgriffen erhalten. Gemeinsam halten wir fest, wie es wirklich gebaut ist – damit Zeichnungen, Maße und Werkstattwissen weitergegeben werden können.</p>
-      <div class="hero-actions">
-        <a class="button button-dark" href="#anatomie">Das Rad verstehen <Icon name="arrow" /></a>
-        <a class="text-link" href="#demontage">Arbeitsplan ansehen <Icon name="diagonal" size={18} /></a>
-      </div>
-      <div class="hero-signature"><span class="signature-line"></span> Gemeinsam dokumentiert · vor der Demontage 2026</div>
-    </div>
-    <div class="hero-visual">
-      <Image src={hero} alt="Das Kleine Schäferrad im eingebauten Zustand an der Regnitz" widths={[480, 720, 960]} sizes="(max-width: 899px) 100vw, 50vw" loading="eager" fetchpriority="high" class="hero-image" />
-      <div class="heritage-badge"><span>Gemeinsam</span><strong>erhalten &<br />weitergeben</strong><Icon name="wheel" size={25} /></div>
-      <div class="photo-caption">
-        <span>Handwerk an der Regnitz</span>
-        <strong>Das Kleine Schäferrad.</strong>
-        <a href="#evidenz" class="round-link" aria-label="Zu den Quellen"><Icon name="diagonal" size={23} /></a>
+<BaseLayout title="Das Kleine Schäferrad" description="Ein Stück Regnitzgeschichte: Aufbau, Handwerk und Wissen des Kleinen Schäferrads gemeinsam erhalten.">
+  <section class="home-hero container">
+    <div class="home-hero-copy">
+      <span class="location-label"><span class="status-dot"></span>Möhrendorf / Oberndorf · Regnitz</span>
+      <h1>Das Kleine Schäferrad.</h1>
+      <p class="hero-kicker">Handwerk, das weitergetragen wird.</p>
+      <p class="home-lead">Ein Wasserschöpfrad lebt nicht nur von Holz und Wasser, sondern vom Wissen der Menschen, die es aufbauen, pflegen und wieder zerlegen. Dieses Wissen halten wir vor der Demontage gemeinsam fest.</p>
+      <div class="home-actions">
+        <a class="button button-dark" href={routes.plan}>Arbeitsplan öffnen <Icon name="diagonal" size={16} /></a>
+        <a class="text-link" href={routes.field}>Vor Ort arbeiten <Icon name="arrow" size={16} /></a>
+        <a class="text-link" href={routes.workshop}>Werkstattmodell <Icon name="arrow" size={16} /></a>
       </div>
     </div>
+    <figure class="home-hero-visual">
+      <Image src={hero} alt="Das Kleine Schäferrad im eingebauten Zustand an der Regnitz" widths={[640,960,1280]} sizes="(max-width: 899px) 100vw, 50vw" loading="eager" fetchpriority="high" />
+      <figcaption>Das Kleine Schäferrad im eingebauten Zustand.</figcaption>
+    </figure>
   </section>
 
-  <div class="values-strip" aria-label="Arbeitsstand in Zahlen">
-    <div class="container">
-      <div class="value"><strong>{originalCount}</strong><span>Originalquellen gesichert</span></div>
-      <div class="value"><strong>{gaps.length}</strong><span>Aufgaben vor und beim Zerlegen</span></div>
-      <div class="value"><strong>{conflicts.length}</strong><span>Punkte noch ungeklärt</span></div>
-      <div class="value"><strong>1</strong><span>gemeinsames Ziel: Wissen weitergeben</span></div>
-    </div>
-  </div>
-
-  <section class="section container" aria-labelledby="know-title">
-    <div class="section-heading">
-      <div><span class="eyebrow">Gemeinsam prüfen</span><h2 id="know-title">Was wir schon wissen.<br />Was ihr uns noch zeigen könnt.</h2></div>
-      <p>Alte Zeichnungen, aktuelle Fotos und erste 3D-Aufnahmen geben uns einen guten Anfang. Was nur am echten Rad sichtbar oder aus Erfahrung bekannt ist, klären wir gemeinsam.</p>
-    </div>
-    <div class="feature-grid">
-      <article class="feature-card">
-        <span class="feature-icon"><Icon name="wheel" size={27} /></span><span class="feature-number">01</span>
-        <h3>Das Rad Schritt für Schritt verstehen.</h3>
-        <p>Welle, durchgehende Arme, zwei Kranzebenen, Krümmlinge, Kümpfe, Schaufeln, Keile, Lager, Trog und Rinne sind als System modelliert – inklusive ihrer noch unsicheren Beziehungen.</p>
-      </article>
-      <article class="feature-card">
-        <span class="feature-icon"><Icon name="layers" size={27} /></span><span class="feature-number">02</span>
-        <h3>Alte Zeichnungen bleiben wertvoll.</h3>
-        <p>{historicalClaims} historische, {currentClaims} aktuelle und {measuredClaims} digital erfasste Befunde werden nicht vermischt. Varianten und Reparaturzustände dürfen nebeneinander bestehen.</p>
-      </article>
-      <article class="feature-card feature-card-green">
-        <span class="feature-icon"><Icon name="measure" size={27} /></span><span class="feature-number">03</span>
-        <h3>Was noch fehlt, wird am Rad geklärt.</h3>
-        <p>Kein Claim ist derzeit als finale metrische Ist-Geometrie markiert. Genau diese Lücke schließen wir mit Handmaßen, Demontagebildern, Teil-IDs und dem Wissen der Menschen vor Ort.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="anatomie" class="section section-tinted">
-    <div class="container">
-      <div class="section-heading">
-        <div><span class="eyebrow">Aufbau & Teile</span><h2>Wie das Rad<br />zusammenarbeitet.</h2></div>
-        <p>Wir ordnen die sichtbaren Baugruppen so, dass Zeichnungen, reale Teile und Werkstattwissen später eindeutig zusammenfinden. Die endgültige Stückliste entsteht erst beim Zerlegen.</p>
-      </div>
-      <div class="anatomy-layout">
-        <div class="anatomy-visual">
-          <Image src={anatomy} alt="Innenansicht des Kleinen Schäferrads mit Welle, Armen und Radkranz" widths={[480, 760, 1100]} sizes="(max-width: 899px) 100vw, 52vw" />
-          <div class="anatomy-caption"><span class="eyebrow">Aktueller Bestand</span><p>Die Fotos belegen Beziehungen und sichtbare Passungen. Verdeckte Mortisen, Einstecktiefen und reale Teilfolgen bleiben offen, bis sie beim Zerlegen sichtbar werden.</p></div>
-        </div>
-        <div class="component-list">
-          {displayComponents.map((component) => (
-            <div class="component-row">
-              <div><strong>{component.label}</strong><small>{component.note ?? component.kind}</small></div>
-              <span>{component.multiplicity.description}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="zeichnungen" class="section container">
-    <div class="section-heading">
-      <div><span class="eyebrow">Papier & Werkstatt</span><h2>Zeichnungen,<br />die man lesen kann.</h2></div>
-      <p>Für die Männer, die das Rad seit Jahrzehnten auf- und abbauen, nutzen wir bewusst eine vertraute technische Zeichensprache: schwarz auf weiß, klare Ansichten, Maßketten, Schriftfeld und sichtbarer Prüfstatus.</p>
-    </div>
-    <TechnicalPlate />
-    <p class="drawing-explainer">Dieses erste Blatt ist nur die visuelle und semantische Vorlage. Maßhaltige Einzelteil-, Zusammenbau- und Schnittzeichnungen werden erst aus der später kalibrierten Geometrie erzeugt – niemals aus einer hübschen Schätzung.</p>
-  </section>
-
-  <section id="evidenz" class="section section-tinted">
-    <div class="container">
-      <div class="section-heading">
-        <div><span class="eyebrow">Quellen & Erinnerungen</span><h2>Zeichnung, Foto, Scan<br />– und Erfahrung.</h2></div>
-        <p>Die alten Werkstattblätter erzählen, wie gedacht und gebaut wurde. Die aktuellen Fotos zeigen, was heute tatsächlich dort steht. Die Scans geben uns räumliche Fragmente – und ihre Lücken.</p>
-      </div>
-      <div class="evidence-grid">
-        <article class="evidence-card">
-          <div class="evidence-image"><Image src={drawing} alt="Historische Montagezeichnung mit Arm- und Krümmlingfolge" widths={[420, 700]} sizes="(max-width: 899px) 100vw, 33vw" /></div>
-          <div class="evidence-copy"><span class="eyebrow">Historische Zeichnung</span><h3>Montagewissen auf Papier.</h3><p>Zeichnungen liefern Maße, Reihenfolgen und lokale Benennungen – aber sie können Varianten, ältere Zustände oder Fertigungshilfen dokumentieren.</p><div class="meta-pills"><span class="pill">historical-drawing</span><span class="pill">nicht automatisch as-built</span></div></div>
-        </article>
-        <article class="evidence-card">
-          <div class="evidence-image"><Image src={closeup} alt="Nahaufnahme eines Kumpfs und seiner Befestigung am aktuellen Rad" widths={[420, 700]} sizes="(max-width: 899px) 100vw, 33vw" /></div>
-          <div class="evidence-copy"><span class="eyebrow">Aktueller Bestand</span><h3>Holz, Keile, Reparaturen.</h3><p>Aktuelle Fotos bestätigen reale Kontakte, Oberflächen und sichtbare Befestiger. Was verdeckt ist, bleibt in der Baseline bewusst unbekannt.</p><div class="meta-pills"><span class="pill">observed-current</span><span class="pill">2026</span></div></div>
-        </article>
-        <article class="evidence-card">
-          <div class="evidence-image"><Image src={scanImage} alt="Räumliche Darstellung der partiellen Scaniverse-Punktewolke" widths={[420, 700]} sizes="(max-width: 899px) 100vw, 33vw" /></div>
-          <div class="evidence-copy"><span class="eyebrow">3D Forensics</span><h3>Der Dreck bleibt sichtbar.</h3><p>PLY und GLB sind technisch valide Teilcaptures. Ufer, Gerüst, Vegetation und Scanartefakte werden nicht weggeputzt, bevor wir wissen, was sie bedeuten.</p><div class="meta-pills"><span class="pill">PLY + GLB</span><span class="pill">partiell</span></div></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="konflikte" class="section container">
-    <div class="section-heading">
-      <div><span class="eyebrow">Noch ungeklärt</span><h2>Wo wir gemeinsam<br />nachsehen müssen.</h2></div>
-      <p>22 oder 24 Millimeter? Andere Ringlänge? Reparatur oder Variante? Wir behalten konkurrierende Aussagen sichtbar, bis reale Feldbeobachtung entscheidet.</p>
-    </div>
-    <div class="conflict-grid">
-      {conflicts.map((conflict) => (
-        <article class="conflict-card">
-          <div class="conflict-top"><span class="conflict-id">{conflict.id}</span><span class="conflict-status">{conflict.status}</span></div>
-          <h3>{conflict.issue}</h3>
-          <p>{conflict.possible_explanations.join(' · ')}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section id="demontage" class="section section-tinted">
-    <div class="container">
-      <div class="mission-intro">
-        <div><span class="eyebrow">Vor der Demontage</span><h2>Festhalten, bevor es<br />auseinandergeht.</h2></div>
-        <p>Die wichtigste Datenerhebung passiert nicht im Rechner, sondern beim Öffnen der realen Verbindungen. Acht P0-Aufträge retten genau den Kontext, der nach dem Zerlegen nicht mehr sichtbar ist.</p>
-      </div>
-      <div class="mission-grid">
-        {gaps.map((gap, index) => (
-          <article class="mission-card">
-            <span class="mission-number">{String(index + 1).padStart(2,'0')}</span>
-            <div><h3>{gap.subject}</h3><p>{gap.irreversible_loss}</p><span class="mission-priority">{gap.priority}</span></div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section id="handwerk" class="section container">
-    <div class="craft-panel">
+  <section id="geschichte" class="home-story">
+    <div class="container home-story-grid">
       <div>
-        <span class="eyebrow">Wissen aus den Händen</span>
-        <h2>Maße reichen<br />nicht aus.</h2>
-        <p>Warum wurde ein Keil genau so gesetzt? Welche Verbindung muss trocken Spiel haben, damit sie im Wasser trägt? Wo entstehen durch Strömung oder Quellen echte Risiken? Dieses Wissen steckt oft nur noch in den Köpfen der Menschen, die das Rad über Jahre gebaut haben.</p>
+        <span class="eyebrow">Regnitzgeschichte</span>
+        <h2>Seit Jahrhunderten aus Erfahrung gebaut.</h2>
       </div>
-      <div class="craft-prompts">
-        {craftPrompts.map((prompt) => <div class="craft-prompt">{prompt}</div>)}
+      <div class="home-story-copy">
+        <p>Wasserschöpfräder sind an der Regnitz seit dem frühen 15. Jahrhundert belegt. Um 1805 arbeiteten zwischen Fürth und Forchheim noch rund 190 Räder.</p>
+        <p>Dass diese Technik heute noch sichtbar ist, verdankt sie den Menschen, die sie jedes Jahr aufbauen, pflegen, reparieren und wieder abbauen. Genau dieses praktische Wissen gehört zur Geschichte des Rades. <a href="https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder" target="_blank" rel="noopener">Gemeinde Möhrendorf ↗</a></p>
       </div>
     </div>
   </section>
 
-  <section class="section section-tinted">
-    <div class="container">
-      <div class="section-heading">
-        <div><span class="eyebrow">Digitale Rekonstruktion</span><h2>Von Werkstattwissen<br />zur Geometrie.</h2></div>
-        <p>Die digitale Rekonstruktion wächst mit jedem bestätigten Maß, jedem geöffneten Kontakt und jeder Erklärung aus der Werkstatt. Unsichere Stellen bleiben sichtbar offen.</p>
+  <section id="aufbau" class="section container home-system">
+    <div class="section-heading compact-heading">
+      <div><span class="eyebrow">Das technische System</span><h2>Mehr als ein Rad.</h2></div>
+      <p>Radkörper, Lagerung, Radstatt und Wasserführung gehören zusammen. Was noch nicht sicher verstanden ist, bleibt als offene Stelle sichtbar.</p>
+    </div>
+    <div class="home-system-grid">
+      <figure class="home-system-image">
+        <Image src={anatomy} alt="Innenansicht mit Welle, Armen, Kranz und Tragwerk" widths={[640,960,1280]} sizes="(max-width: 899px) 100vw, 58vw" />
+        <figcaption>Welle, Arme und stationäres Tragwerk im Zusammenhang.</figcaption>
+      </figure>
+      <div class="home-system-list">
+        {system.map(([title,text]) => <div><strong>{title}</strong><span>{text}</span></div>)}
       </div>
-      <div class="roadmap">
-        {roadmap.map(([level,title,text], index) => (
-          <div class:list={['roadmap-step', index <= 1 && 'current']}>
-            <span class="roadmap-level">{level}</span>
-            <div><h3>{title}</h3><p>{text}</p></div>
-          </div>
+    </div>
+  </section>
+
+  <section class="home-paths">
+    <div class="container">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow">Weiterarbeiten</span><h2>Drei Wege. Ein gemeinsamer Stand.</h2></div>
+        <p>Der Arbeitsplan führt durch den Abbau, der Vor-Ort-Modus hält Befunde fest, das Werkstattmodell hilft beim Verstehen.</p>
+      </div>
+      <div class="path-list">
+        {paths.map((item) => (
+          <a href={item.href} class="path-row">
+            <span class="path-number">{item.number}</span>
+            <strong>{item.title}</strong>
+            <span>{item.text}</span>
+            <span class="path-action">{item.action} <Icon name="arrow" size={16} /></span>
+          </a>
         ))}
       </div>
     </div>

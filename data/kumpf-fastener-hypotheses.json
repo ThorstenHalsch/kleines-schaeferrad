@@ -1,0 +1,49 @@
+{
+  "schema": "ks-kumpf-fastener-hypotheses/v1",
+  "status": "UNVERIFIED",
+  "human_term_candidate": "Nagelhölzer",
+  "canonical_working_label": "hölzerne Kumpf-Sicherungsstifte",
+  "evidence": [
+    {
+      "type": "current-photo",
+      "description": "Two removed wooden fastener-like pieces are shown by hand and side by side. One is distinctly longer; both have a bent/curved shaft and enlarged head."
+    },
+    {
+      "type": "field-narrative",
+      "description": "Reported workshop explanation: possibly two per Kumpf, one long and one short, potentially used to establish or secure twist/inclination.",
+      "confidence": "unverified-hearsay"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "KFS-H1",
+      "statement": "Each Kumpf uses a paired long and short wooden securing pin.",
+      "confidence": "plausible-unverified"
+    },
+    {
+      "id": "KFS-H2",
+      "statement": "The length/curvature difference contributes to Kumpf inclination or twist.",
+      "confidence": "plausible-unverified"
+    },
+    {
+      "id": "KFS-H3",
+      "statement": "The pins primarily secure the Kumpf and do not set its geometry.",
+      "confidence": "alternative"
+    },
+    {
+      "id": "KFS-H4",
+      "statement": "Long/short pairs vary by repair history rather than being a canonical pair.",
+      "confidence": "alternative"
+    }
+  ],
+  "saturday_acceptance": [
+    "Photograph long and short pin together while still installed on at least three Kumpf assemblies.",
+    "Record orientation, head side, insertion direction and neighboring paddle/rim reference.",
+    "Keep each removed pair physically associated with its Kumpf ID.",
+    "Measure total length, section, bend/offset and head geometry of each removed pin.",
+    "Photograph empty seats/holes immediately after removal.",
+    "Measure Kumpf inclination before removal and compare against long/short pair orientation.",
+    "Ask experienced craftsperson what local term is correct and what functional difference long vs short has."
+  ],
+  "promotion_rule": "Do not promote pair count or inclination-setting function to current geometry until installed evidence and craft explanation agree."
+}

@@ -555,6 +555,66 @@
       ],
       "confidence": "medium",
       "note": null
+    },
+    {
+      "id": "COMP-BEARING-STANDS",
+      "label": "Lagerstöcke / Wellenauflager",
+      "kind": "fixed-context-family",
+      "multiplicity": {
+        "description": "mehrere sichtbar; genaue Zuordnung noch offen",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [],
+      "confidence": "medium",
+      "note": "Stationärer Kontext. Lage und Maße im 3D-Modell sind bis zur Feldaufnahme nur Arbeitsannahmen."
+    },
+    {
+      "id": "COMP-FRAME-MAIN",
+      "label": "Tragbalken / Pfostenrahmen",
+      "kind": "fixed-context-family",
+      "multiplicity": {
+        "description": "mehrere Hölzer sichtbar; genaue Stückliste offen",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [],
+      "confidence": "medium",
+      "note": "Umgebendes Tragwerk des Rades; noch nicht als reale Einzelteile inventarisiert."
+    },
+    {
+      "id": "COMP-FRAME-LOWER",
+      "label": "untere Trag- und Halterahmen",
+      "kind": "fixed-context-family",
+      "multiplicity": {
+        "description": "teilweise sichtbar; genaue Topologie offen",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [],
+      "confidence": "low",
+      "note": "Ghosted Kontext für Aufnahmeplanung; keine freigegebene Ist-Geometrie."
+    },
+    {
+      "id": "COMP-FRAME-SIDE",
+      "label": "seitliche Führungs- / Auffangrahmen",
+      "kind": "fixed-context-family",
+      "multiplicity": {
+        "description": "teilweise sichtbar; Funktion und genaue Lage offen",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [],
+      "confidence": "low",
+      "note": "Ghosted Kontext; Funktion und Verbindungspartner vor Ort klären."
     }
   ],
   "local_term_map": {
