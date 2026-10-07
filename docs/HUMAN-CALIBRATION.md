@@ -8,3 +8,6 @@ Die bekannten Quellen sind analysiert; diese Entscheidungen werden nicht geraten
 4. **HUMAN-04 / GAP-06,07,08:** Wann findet die Demontage tatsächlich statt, welche Einbauinformationen kennt nur der Monteur, und welche Teile bleiben im Wasser? Frühere Zusammenfassung nennt Samstag (10.10.2026); Reihenfolge und aktuelle Wasser-/Drehlage vor Ort erfassen.
 
 Keiner dieser offenen Punkte wird zu einer sicheren aktuellen Geometrie oder physischen Instanz hochgestuft. Das Gate beendet die Verständnisphase und übergibt diese gezielten Fragen und Feld-Captures; es ist keine Freigabe einer fertigen Rekonstruktion.
+
+
+5. **HUMAN-05 / Handwerkswissen:** Während Vorführung und Demontage die fachkundigen Personen nicht nur nach Maßen fragen, sondern nach Begründungen und Erfahrungsregeln: Holzart, Quell-/Schwindverhalten, Keilrichtung, Passungsgefühl, Strömungs-/Stoßlasten, typische Verschleißbilder, Reparaturvarianten, Warnsignale und zwingende Montageschritte. Aussagen immer einem konkreten Teil/Ereignis zuordnen. Siehe `HANDWERKSWISSEN-CAPTURE.md`.
