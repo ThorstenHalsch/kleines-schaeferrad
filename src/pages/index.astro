@@ -6,8 +6,6 @@ import Icon from '../components/Icon.astro';
 
 import hero from '../../evidence/raw/IMG_6858.jpeg';
 import anatomy from '../../evidence/raw/IMG_6861.jpeg';
-import closeup from '../../evidence/raw/IMG_6854.jpeg';
-import drawing from '../../evidence/raw/IMG_6831.jpeg';
 
 const routes = {
   workshop: href('werkstatt/'),
@@ -116,36 +114,4 @@ const openQuestions = [
     </div>
   </section>
 
-  <section id="werkstattwissen" class="section home-craft">
-    <div class="container home-craft-grid">
-      <figure>
-        <Image src={closeup} alt="Nahaufnahme eines Kumpfs und seiner Befestigung" widths={[560,840]} sizes="(max-width: 899px) 100vw, 44vw" />
-      </figure>
-      <div>
-        <span class="eyebrow">Werkstattwissen</span>
-        <h2>Was nur die Hände wissen.</h2>
-        <p>„Woran merkt ihr, dass der Keil richtig sitzt?“ ist für diese Rekonstruktion genauso wichtig wie ein Millimetermaß.</p>
-        <p>Darum halten wir Aussagen möglichst direkt am Teil fest: wörtlich, mit Person, Foto und dem konkreten Handgriff dazu.</p>
-        <a class="text-link" href={routes.field}>Vor Ort aufnehmen <Icon name="arrow" size={17} /></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="zeichnungen" class="section container home-plan">
-    <div class="section-heading compact-heading">
-      <div><span class="eyebrow">Papier bleibt wichtig</span><h2>Arbeitsplan statt Bedienungsanleitung.</h2></div>
-      <p>Die nächste Fassung wird deutlich kompakter: Baugruppenblätter mit Skizzen, Messpfeilen und Kamerapositionen. Der Text erklärt nur noch, was die Zeichnung nicht zeigen kann.</p>
-    </div>
-    <div class="plan-preview">
-      <figure>
-        <Image src={drawing} alt="Historische technische Zeichnung des Kleinen Schäferrads" widths={[560,840]} sizes="(max-width: 899px) 100vw, 42vw" />
-        <figcaption>Die vertraute Werkstattzeichnung bleibt unsere visuelle Sprache.</figcaption>
-      </figure>
-      <div class="plan-links">
-        <a href={routes.plan}><strong>A3 Werkstatt- und Aufnahmeplan</strong><span>Messstellen, Fotos, STOPP-Punkte und offene Fragen</span></a>
-        <a href={routes.shortPlan}><strong>Kurzübersicht</strong><span>Reihenfolge und Blattverweise für die Einsatzleitung</span></a>
-        <a href={routes.workshop}><strong>Werkstattmodell</strong><span>Aufbau, Quellen und Arbeitsannahmen vergleichen</span></a>
-      </div>
-    </div>
-  </section>
 </BaseLayout>
