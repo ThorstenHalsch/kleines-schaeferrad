@@ -593,9 +593,36 @@
           "tx": 62,
           "ty": 52,
           "label": "Befestigung"
+        },
+        {
+          "type": "photo",
+          "id": "F22",
+          "x": 20,
+          "y": 28,
+          "tx": 39,
+          "ty": 36,
+          "label": "langer + kurzer Holzstift noch im Sitz"
+        },
+        {
+          "type": "photo",
+          "id": "F23",
+          "x": 80,
+          "y": 28,
+          "tx": 61,
+          "ty": 36,
+          "label": "Stiftpaar nach Ausbau + Kumpf-ID"
+        },
+        {
+          "type": "measure",
+          "id": "M26",
+          "x1": 28,
+          "y1": 88,
+          "x2": 72,
+          "y2": 88,
+          "label": "Stiftlänge / Kröpfung / Querschnitt"
         }
       ],
-      "note": "Alte Varianten nebeneinander lassen; kein Mittelwert."
+      "note": "Kumpfneigung, Aufhängung und lang/kurz-Stiftpaar gemeinsam sichern. Funktion der hölzernen Stifte bis zur Feldbestätigung offen lassen; alte Maßvarianten nicht mitteln."
     },
     {
       "id": "GUIDE-PADDLE",
