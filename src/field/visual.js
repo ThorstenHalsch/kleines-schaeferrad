@@ -16,8 +16,8 @@ function primitive(p){
 function callout(c,active){
  const cls=`guide-callout guide-${c.type} ${active?'is-active':''}`;
  if(c.type==='measure')return `<g class="${cls}"><line x1="${c.x1}" y1="${c.y1}" x2="${c.x2}" y2="${c.y2}"/><circle cx="${c.x1}" cy="${c.y1}" r="1.2"/><circle cx="${c.x2}" cy="${c.y2}" r="1.2"/><text x="${(c.x1+c.x2)/2}" y="${(c.y1+c.y2)/2-2}">${esc(c.id)}</text></g>`;
- if(c.type==='photo')return `<g class="${cls}"><line x1="${c.x}" y1="${c.y}" x2="${c.tx}" y2="${c.ty}"/><rect x="${c.x-3}" y="${c.y-2.2}" width="6" height="4.4" rx=".7"/><circle cx="${c.x}" cy="${c.y}" r="1.1"/><text x="${c.x+4}" y="${c.y-3}">${esc(c.id)}</text></g>`;
- if(c.type==='scan'||c.type==='datum')return `<g class="${cls}"><circle cx="${c.x}" cy="${c.y}" r="3"/><path d="M ${c.x-4} ${c.y} h 8 M ${c.x} ${c.y-4} v 8"/><text x="${c.x+4}" y="${c.y-3}">${esc(c.id)}</text></g>`;
+ if(c.type==='photo'){const right=c.x>80,tx=right?c.x-4:c.x+4,anchor=right?'end':'start';return `<g class="${cls}"><line x1="${c.x}" y1="${c.y}" x2="${c.tx}" y2="${c.ty}"/><rect x="${c.x-3}" y="${c.y-2.2}" width="6" height="4.4" rx=".7"/><circle cx="${c.x}" cy="${c.y}" r="1.1"/><text x="${tx}" y="${c.y-3}" text-anchor="${anchor}">${esc(c.id)}</text></g>`;}
+ if(c.type==='scan'||c.type==='datum'){const right=c.x>80,tx=right?c.x-4:c.x+4,anchor=right?'end':'start';return `<g class="${cls}"><circle cx="${c.x}" cy="${c.y}" r="3"/><path d="M ${c.x-4} ${c.y} h 8 M ${c.x} ${c.y-4} v 8"/><text x="${tx}" y="${c.y-3}" text-anchor="${anchor}">${esc(c.id)}</text></g>`;}
  if(c.type==='unknown')return `<g class="${cls}"><circle cx="${c.x}" cy="${c.y}" r="4"/><text class="question-mark" x="${c.x}" y="${c.y+2}">?</text></g>`;
  return '';
 }
