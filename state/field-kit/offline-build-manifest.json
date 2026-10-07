@@ -1,6 +1,6 @@
 {
   "schema": "ks-offline-preload/v1",
-  "cache_name": "ks-field-266def8fb629b6ed",
+  "cache_name": "ks-field-6a825d52479bae97",
   "urls": [
     "/kleines-schaeferrad/_astro/IMG_6831.BZ7QJ-v0_2hU7nG.webp",
     "/kleines-schaeferrad/_astro/IMG_6831.BZ7QJ-v0_Z2swqHL.webp",
@@ -16,7 +16,7 @@
     "/kleines-schaeferrad/_astro/IMG_6861.DT2sdUtb_1k5gwo.webp",
     "/kleines-schaeferrad/_astro/IMG_6861.DT2sdUtb_Z1KBXoh.webp",
     "/kleines-schaeferrad/_astro/IMG_6861.DT2sdUtb_ZmmrGt.webp",
-    "/kleines-schaeferrad/_astro/feld.astro_astro_type_script_index_0_lang.BBt72tlN.js",
+    "/kleines-schaeferrad/_astro/feld.astro_astro_type_script_index_0_lang.Civ0bouP.js",
     "/kleines-schaeferrad/_astro/index.ZJqerqh1.css",
     "/kleines-schaeferrad/_astro/manrope-cyrillic-wght-normal.Dvxsihut.woff2",
     "/kleines-schaeferrad/_astro/manrope-greek-wght-normal.DL7QRZyv.woff2",
@@ -27,8 +27,8 @@
     "/kleines-schaeferrad/_astro/ply-spatial.yYwngt9x_Z1FbNOn.webp",
     "/kleines-schaeferrad/_astro/ply-spatial.yYwngt9x_Zp7mRq.webp",
     "/kleines-schaeferrad/_astro/ply-spatial.yYwngt9x_d3DgU.webp",
-    "/kleines-schaeferrad/_astro/werkstatt.Cf3RZY-C.css",
-    "/kleines-schaeferrad/_astro/werkstatt.astro_astro_type_script_index_0_lang.fZtmjTbm.js",
+    "/kleines-schaeferrad/_astro/werkstatt.E61vfbdo.css",
+    "/kleines-schaeferrad/_astro/werkstatt.astro_astro_type_script_index_0_lang.CWFdD3MY.js",
     "/kleines-schaeferrad/drawings/KS-00.svg",
     "/kleines-schaeferrad/drawings/KS-10.svg",
     "/kleines-schaeferrad/drawings/KS-20.svg",
@@ -91,7 +91,7 @@
     "/kleines-schaeferrad/feld/",
     "/kleines-schaeferrad/werkstatt/"
   ],
-  "bytes": 38449354,
+  "bytes": 38474033,
   "scope": "/kleines-schaeferrad/",
   "policy": "Atomic complete install; old cache kept on failure; local captures in IndexedDB, never in SW cache."
 }

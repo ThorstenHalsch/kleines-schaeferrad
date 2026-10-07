@@ -84,3 +84,6 @@ footer{padding:.65rem 0;color:var(--mux-muted)}
 }
 
 .arm-choice{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}#axis-triad{position:absolute;right:.3rem;top:.3rem;width:84px;height:84px;z-index:3;background:var(--mux-paper);border:1px solid var(--mux-line);pointer-events:none}#scan-separation{position:absolute;left:.3rem;top:0;max-width:calc(100% - 94px);font-size:.75rem;z-index:2;background:var(--mux-paper)}@media(max-width:500px){.arm-choice{grid-template-columns:1fr}}
+
+/* Let enlarged text reflow the inspector below the model. */
+.workspace{display:flex;flex-wrap:wrap}.workspace>.model-panel{flex:1.85 1 36rem}.workspace>.inspector{flex:.75 1 20rem}

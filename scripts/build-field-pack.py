@@ -70,13 +70,13 @@ for t in tasks:
  # Internal evidence remains traceable, not printed as current dimensional truth.
  text('Bezug: '+', '.join(t['source_refs']),margin,27*mm,10)
 for view in sketches:
- y=begin('Arm / Welle - alternative Arbeitsdarstellung','FK-H-'+view['id'],'UNGEPRÜFT | Form: '+view['shape']+' | axiale Lage: '+view['layers'])
+ y=begin('Arm / Welle - alternative Arbeitsdarstellung','FK-H-'+view['id'],'UNGEPRÜFT | Form: '+{'unknown':'offen','straight':'gerade','dogleg':'gekröpft'}[view['shape']]+' | axiale Lage: '+{'staggered':'versetzt','coplanar':'in einer Ebene','reverse':'umgekehrt versetzt'}[view['layers']])
  draw_sketch(view,margin+10*mm,95*mm,W*.55,130*mm)
  x=W*.63;cw=W-x-margin
- yy=para('Die gestrichelten Innenzonen bleiben unbekannt. Kein Zapfen und keine Mortise ist erfunden. Abstände und Kröpfung sind reine Darstellungswerte.',x,y,cw,18)
+ yy=para('Die gestrichelten Innenzonen bleiben unbekannt. Zapfen und verdeckte Verbindungen sind nicht ergänzt. Abstände und Kröpfung sind reine Darstellungswerte.',x,y,cw,18)
  yy=para('TASK-ARM-BEFORE / TASK-ARM-RELEASE / TASK-MORTISE / TASK-ARM-PROFILE',x,yy,cw,16)
  lines(x,yy-9*mm,cw,4,20*mm,'So sieht es wirklich aus:')
- para('Drei durchgehende Hölzer / sechs Enden je Kranz sind die historische Arbeitshypothese. Reale Endpaare und axialer Verlauf bleiben bis zur Aufnahme offen. Perspektivische Drahtprojektion aus derselben Geometrie wie die Werkstatt; keine Fertigungszeichnung.',margin,83*mm,W-2*margin,17)
+ para('Drei durchgehende Hölzer / sechs Enden je Kranz sind die historische Arbeitshypothese. Reale Endpaare und axialer Verlauf bleiben bis zur Aufnahme offen. Räumliche Drahtprojektion aus derselben Geometrie wie die Werkstatt; keine Fertigungszeichnung.',margin,83*mm,W-2*margin,17)
 # Preserve all conflicts; one comparison sheet per group of three.
 for start in range(0,len(conflicts),3):
  y=begin('Alte Angaben vergleichen - offen lassen','FK-V-'+str(start//3+1))

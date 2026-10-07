@@ -1,9 +1,14 @@
-✔ canonical tasks have complete field contract and valid baseline refs (1.257123ms)
-✔ axis normalization maps Y-up to Z-up, is invertible and does not reflect or register (0.934908ms)
-✔ arm alternatives leave inner zone empty, differ in profile and axial order without creating joints (133.235555ms)
-✔ task completion cannot hide missing views or missing measurement; unknown remains reasoned (0.466388ms)
-✔ physical instances require observation; merges reject divergent evidence (0.741483ms)
-✔ PDF task parity and source hash are generated from the canonical dataset (1.352994ms)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kleines-schaeferrad-research-page@0.1.0 test:field
+> node --test tests/field-kit.test.mjs
+
+✔ canonical tasks have complete field contract and valid baseline refs (1.21156ms)
+✔ axis normalization maps Y-up to Z-up, is invertible and does not reflect or register (1.183689ms)
+✔ arm alternatives leave inner zone empty, differ in profile and axial order without creating joints (198.233081ms)
+✔ task completion cannot hide missing views or missing measurement; unknown remains reasoned (0.741004ms)
+✔ physical instances require observation; merges reject divergent evidence (0.683109ms)
+✔ PDF task parity and source hash are generated from the canonical dataset (1.762454ms)
 ℹ tests 6
 ℹ suites 0
 ℹ pass 6
@@ -11,4 +16,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 241.74847
+ℹ duration_ms 330.784494
