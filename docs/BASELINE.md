@@ -24,6 +24,10 @@ Die Conflict Matrix unterscheidet echte Zeichnungsvarianten, unklare Bezugsdimen
 
 Acht priorisierte Demontageaufträge retten: (1) globale Pose/Datum/Ringabstand, (2) Mortisen/Keile/Armfolge, (3) Krümmlingstöße, (4) Kumpfkontakte/Varianten, (5) reale Umfangsfolge und Kumpf-/Schaufelphase, (6) Lager-/Zapfenlage, (7) Wasser-/Trog-/Rinnenlage, (8) Demontageereignisse/Teilidentität. Konkrete Aufnahmen, Maße und Fertigkriterien stehen in `CAPTURE-BEFORE-DISASSEMBLY.md`.
 
+## Implizites Handwerkswissen
+
+Neben Geometrie und Bild-/Scan-Evidenz wird das Erfahrungswissen der Monteure als eigener Evidenzstrom erfasst. Begründungen zu Materialwahl, Passungen, Quell-/Schwindverhalten, Verkeilung, Strömungsrisiken, Verschleiß und Reparaturhistorie werden als expert-narrative Claims einem konkreten Teil oder Demontageereignis zugeordnet. Leitfaden: `HANDWERKSWISSEN-CAPTURE.md`.
+
 ## Einstieg und Stop-Grenze
 
 - `EVIDENCE-AUDIT.md`, `SOURCE-CATALOG.md`, `SOURCE-ANALYSIS.md`: Audit und Einzelbefunde.
