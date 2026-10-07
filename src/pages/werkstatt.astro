@@ -3,42 +3,223 @@ import '@fontsource-variable/manrope';
 import '../styles/workbench.css';
 import {href} from '../lib/paths';
 ---
-<!doctype html><html lang="de"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Werkstatt · Kleines Schäferrad</title><meta name="robots" content="noindex,nofollow"/><link rel="icon" href={href('favicon.svg')}/></head>
-<body><a class="skip" href="#parts">Zum Teilfinder</a>
-<header class="wb-header"><a href={href('')}>← Zum Kleinen Schäferrad</a><strong>Kleines Schäferrad <span>Werkstatt · gemeinsam prüfen</span></strong><a href={href('feld/')}>Im Feld arbeiten →</a><a href="#records">Arbeitsprotokoll <span id="record-count">0</span></a></header>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Werkstatt · Kleines Schäferrad</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="icon" href={href('favicon.svg')}/>
+</head>
+<body>
+<a class="skip" href="#model-heading">Direkt zum Arbeitsmodell</a>
+<header class="wb-header">
+  <a href={href('')}>← Kleines Schäferrad</a>
+  <strong>Werkstatt <span>Aufbau gemeinsam prüfen</span></strong>
+  <nav>
+    <a href={href('field-pack/KS-Field-Pack-A3.pdf')}>Arbeitsplan</a>
+    <a href={href('feld/')}>Vor Ort arbeiten</a>
+  </nav>
+</header>
+
 <main id="workbench" data-base={href('')}>
-<div class="intro"><p class="eyebrow">Gemeinsam prüfen · nachmessen · weitergeben</p><h1>Zeigt uns, wie es wirklich gebaut ist.</h1><p>Wählt ein Teil, schaut auf Zeichnung und Arbeitsmodell und haltet fest, was am echten Rad zu sehen, zu messen oder aus Erfahrung bekannt ist.</p><div class="notice">Arbeitsmodell · vieles ist noch nicht nachgemessen. Alte Zeichnungen helfen uns, ersetzen aber nicht das echte Rad.</div></div>
-<p id="storage-status" role="status" class="status">Lokales Feldprotokoll wird geladen …</p>
-<div class="orientation-strip" aria-label="Räumliche Orientierung noch zu bestätigen">
-  <span><strong>SEITE A</strong> ← Welle → <strong>SEITE B</strong></span>
-  <span><strong>OBEN ↑</strong></span>
-  <span>Land/Wasser und Fließrichtung bitte am echten Rad bestätigen.</span>
-</div>
-<div class="workspace">
-<section class="model-panel" aria-labelledby="model-heading"><div class="section-head"><h2 id="model-heading">1 / Rad ansehen</h2><button id="reset">Zur Ausgangsansicht</button></div>
-<div class="view-buttons" aria-label="Feste Standardansichten"><button data-view="gesamt" aria-pressed="true">Gesamt</button><button data-view="land">Seite A</button><button data-view="wasser">Seite B</button><button data-view="welle">Welle / Arme</button><button data-view="kranz">Kranz</button><button data-view="kumpf">Kumpf</button><button data-view="schaufeln">Schaufeln</button></div>
-<div class="arm-choice"><label>Armverlauf - nicht nachgemessen<select id="arm-shape"><option value="unknown">Verlauf offen</option><option value="straight">Gerader Platzhalter</option><option value="dogleg">Mögliche Kröpfung</option></select></label><label>Axiale Lage - nicht nachgemessen<select id="arm-layers"><option value="staggered">Versetzt</option><option value="coplanar">Gleiche Ebene</option><option value="reverse">Umgekehrter Versatz</option></select></label></div><p>Die Drahtkugeln markieren unbekannte Welleninnenzonen. Dort werden keine Armverbindungen gezeichnet. <a href={href('feld/?task=TASK-ARM-BEFORE')}>Vor dem ersten Keilzug aufnehmen →</a></p><div id="viewport"><svg id="axis-triad" viewBox="0 0 84 84" aria-label="Rechtshändiges Anzeigesystem: X Welle, Z oben, Y quer">{['X','Y','Z'].map((a,i)=><g fill={['#193e35','#755025','#172b25'][i]} stroke={['#193e35','#755025','#172b25'][i]}><line id={'axis-'+a} x1="42" y1="42" x2="42" y2="42" stroke-width="2"/><text id={'label-'+a} stroke="none" font-size="12" text-anchor="middle">{a}</text></g>)}</svg><p id="scan-separation" hidden>Links: Arbeitsmodell · rechts: Scan ohne mechanischen Bezug</p><div id="canvas-host"></div><div id="pins" aria-label="Fragen und Messstellen"></div><p id="render-status" role="status">3D wird geladen …</p><div class="view-label" id="view-label">Gesamt · Arbeitsmodell A</div></div>
-<div class="model-controls"><button id="orbit" aria-pressed="false">Modell bewegen: aus</button><button id="explode" aria-pressed="false">Auseinanderziehen: aus</button><button id="cut" aria-pressed="false">Halbschnitt: aus</button><button id="variant" aria-pressed="false">Kumpf-Variante A · 24 mm</button></div>
-<p id="variant-note">Alte Zeichnungen nennen 24 bzw. 22 mm Daubendicke. Welche Variante am echten Rad steckt, bitte vor Ort prüfen. Die Außenform ist noch ein Arbeitsmodell.</p>
-<fieldset class="layers"><legend>Darstellung</legend><label><input type="checkbox" id="layer-model" checked/> Arbeitsmodell</label><label><input type="checkbox" id="layer-stationary" checked/> Tragwerk / Umgebung</label><label><input type="checkbox" id="layer-historical"/> Arbeitskontur</label><label><input type="checkbox" id="layer-questions" checked/> Offene Fragen</label><label><input type="checkbox" id="layer-scan"/> 3D-Scan · noch nicht ausgerichtet</label></fieldset>
-<p id="scan-status" role="status">AXIS_NORMALIZED vorbereitet · Scan nicht geladen · Bezug zum Rad offen.</p><details id="scan-settings"><summary>3D-Scan · Koordinaten und Vergleich</summary><p>X: Welle; Z: oben; X × Y = Z. Seite A/B, Fließ- und Drehrichtung bleiben bis HUMAN-01 offen. Die Achsnormalisierung dreht GLTF Y-up nach Z-up, ohne Spiegelung. Sie ist keine Registrierung.</p><label>Vergleichszustand<select id="scan-stage"><option value="RAW_EXPORT">RAW_EXPORT · unveränderte Exportachsen</option><option value="AXIS_NORMALIZED" selected>AXIS_NORMALIZED · Y-up → Z-up</option><option value="ROUGH_ALIGNED">ROUGH_ALIGNED · manueller Versuch</option></select></label><p>MECHANICALLY_REGISTERED / METRICALLY_CALIBRATED sind gesperrt, bis unabhängige Feldbezüge geprüft sind. Scan und Modell bleiben getrennte Ansichten. Änderungen sind im Protokollexport enthalten.</p><div class="field-grid"><label>X-Verschiebung<input id="scan-x" type="number" value="0" step="0.1"/></label><label>Y-Verschiebung<input id="scan-y" type="number" value="0" step="0.1"/></label><label>Z-Verschiebung<input id="scan-z" type="number" value="0" step="0.1"/></label><label>Skalenfaktor<input id="scan-scale" type="number" value="1" min="0.01" max="100" step="0.1"/></label><label>Drehung um X (°)<input id="scan-rx" type="number" value="0" step="5"/></label><label>Drehung um Y (°)<input id="scan-ry" type="number" value="0" step="5"/></label><label>Drehung um Z (°)<input id="scan-rz" type="number" value="0" step="5"/></label></div><button id="scan-reset">Scantransform zurücksetzen</button></details>
-<details class="legend" open><summary>So liest sich das Arbeitsmodell</summary><ul><li><b>Türkis:</b> Arbeitsmodell – noch nicht nachgemessen.</li><li><b>Dunkle Kontur:</b> Kontur desselben Arbeitsmodells, einschließlich offener Platzhalter.</li><li><b>Grau:</b> Tragwerk nur schematisch gesetzt.</li><li><b>Ocker + A/B:</b> zwei alte Angaben, die wir am echten Teil prüfen müssen.</li><li><b>3D-Scan:</b> eigene Ansicht; Achsenkorrektur ist keine Ausrichtung am Rad.</li><li><b>Bestätigte Maße:</b> erscheinen erst, wenn sie am echten Rad sauber aufgenommen und geprüft wurden.</li></ul></details>
-</section>
-<aside id="parts" class="inspector"><h2>2 / Teil auswählen</h2><label for="part-search">Teilname, Werkstattbegriff oder ID</label><input id="part-search" type="search" placeholder="z. B. Kumpf, Arm, Schetter"/><div id="part-list" class="part-list"></div><div id="selection" aria-live="polite"></div></aside>
-</div>
-<section id="capture" class="capture-panel" aria-labelledby="capture-heading"><div class="section-head"><h2 id="capture-heading">3 / Befund festhalten</h2><span id="draft-status" role="status"></span></div><p id="capture-context"></p><div id="capture-actions" class="action-row"><button data-kind="measurement">Messen</button><button data-kind="observation">Foto / Beobachtung</button><button data-kind="identification">Teil / Variante zuordnen</button><button data-kind="expert-narrative">Erfahrung festhalten</button><button data-kind="risk">Risiko / Warnsignal</button></div>
-<form id="capture-form"><p id="step-indicator">Schritt 1 von 3 · Befund</p>
-<fieldset data-step="1"><legend>Befund am ausgewählten Teil</legend><label>Art<select name="kind"><option value="measurement">Messung</option><option value="observation">Beobachtung</option><option value="identification">Identifikation / A-B</option><option value="expert-narrative">Expertenaussage</option><option value="risk">Risiko / Handwerkswissen</option></select></label><label>Offene Frage<select name="question_id"></select></label><label>Merkmal / kurze Beobachtung<textarea name="feature" required rows="2" placeholder="Was wird gemessen oder beobachtet?"></textarea></label>
-<div data-kinds="measurement" class="field-grid"><label>Wert<input name="value" type="number" step="any"/></label><label>Einheit<select name="unit"><option>mm</option><option>cm</option><option>m</option><option>°</option><option>Stück</option></select></label><label>Endpunkt A<input name="endpoint_a"/></label><label>Endpunkt B<input name="endpoint_b"/></label><label>Werkzeug<input name="tool"/></label><label>Unsicherheit ± (gleiche Einheit)<input name="uncertainty" type="number" min="0" step="any"/></label></div>
-<div data-kinds="identification"><label>Reale Teil-ID (wenn vorhanden)<input name="physical_id" placeholder="KS-KUM-001 – nur am realen Teil zuweisen"/></label><label>Variante am Teil<select name="variant"><option value="unknown">Unklar / keine Auswahl</option><option value="A">A · historisch 24 mm</option><option value="B">B · historisch 22 mm</option><option value="other">Andere Variante</option></select></label></div>
-<div data-kinds="expert-narrative,risk"><label>Wörtliche Aussage<textarea name="quote" rows="3"></textarea></label><label>Technische Interpretation (getrennt)<textarea name="interpretation" rows="2"></textarea></label></div>
-<div data-kinds="risk"><label>Thema<select name="risk_topic"><option value="RISK-MOISTURE">Quellen / Schwinden</option><option value="RISK-FIT">Keile / Passung</option><option value="RISK-LOAD">Strömung / Stoßlast</option><option value="RISK-WEAR">Verschleiß</option><option value="RISK-REPAIR">Reparaturpraxis</option><option value="RISK-SIGN">Warnsignale</option></select></label><div class="field-grid"><label>Auslöser / Zustand<input name="trigger"/></label><label>Mechanismus<input name="mechanism"/></label><label>Erwartetes Verhalten<input name="expected_behaviour"/></label><label>Fehlerfolge<input name="failure_consequence"/></label><label>Warnsignal<input name="warning_sign"/></label><label>Abhilfe / Reparatur<input name="mitigation"/></label><label>Abweichende Erinnerung<input name="alternate_account"/></label></div></div>
-<label class="check"><input type="checkbox" name="unknown"/> Weiß ich nicht / noch nicht zugänglich</label></fieldset>
-<fieldset data-step="2" hidden><legend>Wo und in welchem Zustand?</legend><div class="field-grid"><label>Person / Rolle<input name="person" required/></label><label>Ereignis-ID<input name="event_id" placeholder="EVT-001" required/></label><label>Seite<select name="side"><option value="UNKNOWN">Noch nicht zugeordnet</option><option value="LAND">Landseite – erst nach Bestätigung</option><option value="WATER">Wasserseite – erst nach Bestätigung</option></select></label><label>Zustand<select name="state"><option value="installed">Eingebaut</option><option value="during-release">Beim Lösen</option><option value="removed">Ausgebaut</option></select></label><label>Partner-IDs<input name="partners" placeholder="durch Komma getrennt"/></label><label>Verbindung<select name="relation_id"><option value="">Noch nicht zugeordnet</option></select></label><label>Orientierung / Befestiger<input name="orientation"/></label><label>Lagerplatz nach Ausbau<input name="storage_location"/></label><label>Sicherheit der Aussage<select name="confidence"><option value="unknown">Unbekannt</option><option value="low">Niedrig</option><option value="medium">Mittel</option><option value="high">Hoch</option></select></label><label>Medienrolle<select name="media_role"><option value="context">Übersicht</option><option value="before">Vor Lösen</option><option value="after">Nach Lösen / Kontaktfläche</option><option value="measurement">Messstrecke</option></select></label></div>
-<label>Foto aufnehmen oder Datei wählen (max. 3 MB pro Datei)<input id="media-input" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" multiple/></label><p id="media-status"></p><div id="media-list"></div><label>Externe Foto-/Video-/Audio-Dateireferenz<input name="media_reference" placeholder="Dateiname / Ablageort; Datei separat sichern"/></label><p>Fotos werden unverändert lokal gespeichert und in JSON eingebettet. Audio/Video als Referenz zu separat gesicherter Datei.</p></fieldset>
-<fieldset data-step="3" hidden><legend>Gemeinsam prüfen: Wozu gehört dieser Befund?</legend><label>Bezug auf vorhandene Aussage<select name="claim_id"><option value="">Keine konkrete Aussage</option></select></label><label>Was bedeutet der Befund?<select name="effect"><option value="context">Ergänzt unser Bild</option><option value="supports">Bestätigt die ausgewählte Aussage</option><option value="challenges">Passt nicht zur ausgewählten Aussage</option></select></label><div id="review"></div><p class="notice">Speichern legt einen lokalen Eintrag an. Alte Aussagen und offene Punkte bleiben bestehen, bis wir sie gemeinsam prüfen. Ein Maß wird dadurch nicht automatisch freigegeben.</p></fieldset>
-<p id="form-error" role="alert"></p><div class="action-row"><button type="button" id="step-back" hidden>Zurück</button><button type="button" id="step-next">Weiter zum Kontext</button><button type="submit" id="save-record" hidden>Lokal speichern</button></div></form></section>
-<section id="records"><div class="section-head"><h2>4 / Arbeitsprotokoll</h2><button id="export">Sicherung als JSON</button></div><p>Einträge, Fotos und Entwürfe werden lokal gespeichert. Bitte regelmäßig sichern – besonders vor und während der Demontage.</p><label>Sicherung wieder einlesen<input id="import" type="file" accept="application/json,.json"/></label><div id="record-list"></div></section>
-<section id="drawings"><h2>Werkstattblätter / Arbeitsstand A0</h2><p>Die Blätter nutzen dieselbe Arbeitsgeometrie wie die Werkstatt. Offene Maße bleiben offen und sollen am echten Rad ergänzt werden.</p><a href={href('field-pack/KS-Field-Pack-A3.pdf')}>Field Pack · A3-PDF für die Demontage ↗</a><div class="drawing-links">{['KS-00','KS-10','KS-20','KS-30','KS-60'].map(id=><a href={href(`drawings/${id}.svg`)} target="_blank">{id} · SVG-Prüfblatt ↗</a>)}</div><a href={href('drawings/index.html')} target="_blank">Alle A3-Blätter drucken / als PDF speichern ↗</a></section>
-<footer>Gemeinsam dokumentiert · Arbeitsstand vor der Demontage 2026 · <a href="https://github.com/jdistlr/kleines-schaeferrad">Technisches Repository</a></footer>
-</main><script>import '../workbench/client.js';</script></body></html>
+  <section class="wb-intro">
+    <div>
+      <p class="eyebrow">Arbeitsmodell · noch nicht vollständig vermessen</p>
+      <h1>Aufbau verstehen.<br/>Offene Stellen sichtbar lassen.</h1>
+    </div>
+    <p>Das Modell hilft beim Zeigen und Vergleichen. Wo eine Verbindung oder ein Maß noch nicht geklärt ist, wird nichts erfunden. Für die Demontage führt der Arbeitsplan mit Skizzen und Messstellen weiter.</p>
+  </section>
+
+  <div class="wb-statebar">
+    <p id="storage-status" role="status">Lokales Arbeitsprotokoll wird geladen …</p>
+    <p><strong>Seite A</strong> ← Welle → <strong>Seite B</strong> · <strong>oben ↑</strong> · Land/Wasser und Fließrichtung noch vor Ort bestätigen.</p>
+  </div>
+
+  <section class="model-shell" aria-labelledby="model-heading">
+    <div class="model-title">
+      <div><span class="eyebrow">Arbeitsmodell</span><h2 id="model-heading">Das Rad und sein Tragwerk</h2></div>
+      <button id="reset">Zur Ausgangsansicht</button>
+    </div>
+
+    <div class="view-buttons" aria-label="Feste Ansichten">
+      <button data-view="gesamt" aria-pressed="true">Gesamt</button>
+      <button data-view="land">Seite A</button>
+      <button data-view="wasser">Seite B</button>
+      <button data-view="welle">Welle / Arme</button>
+      <button data-view="kranz">Kranz</button>
+      <button data-view="kumpf">Kumpf</button>
+      <button data-view="schaufeln">Schaufeln</button>
+    </div>
+
+    <div id="viewport">
+      <svg id="axis-triad" viewBox="0 0 84 84" aria-label="Anzeigesystem: X Welle, Z oben, Y quer">
+        {['X','Y','Z'].map((a,i)=><g fill={['#24463d','#9b6b32','#242520'][i]} stroke={['#24463d','#9b6b32','#242520'][i]}><line id={'axis-'+a} x1="42" y1="42" x2="42" y2="42" stroke-width="2"/><text id={'label-'+a} stroke="none" font-size="12" text-anchor="middle">{a}</text></g>)}
+      </svg>
+      <p id="scan-separation" hidden>Arbeitsmodell und 3D-Scan werden nur zum Vergleich synchron bewegt.</p>
+      <div id="canvas-host"></div>
+      <div id="pins" aria-label="Offene Fragen und Messstellen"></div>
+      <p id="render-status" role="status">3D wird geladen …</p>
+      <div class="view-label" id="view-label">Gesamt · Arbeitsmodell A</div>
+    </div>
+
+    <div class="quick-layers">
+      <label><input type="checkbox" id="layer-model" checked/> Radkörper</label>
+      <label><input type="checkbox" id="layer-stationary" checked/> Tragwerk / Rahmen</label>
+      <label><input type="checkbox" id="layer-questions" checked/> offene Stellen</label>
+      <label><input type="checkbox" id="layer-scan"/> 3D-Scan vergleichen</label>
+      <label class="hidden-control"><input type="checkbox" id="layer-historical"/> Arbeitskontur</label>
+    </div>
+
+    <p id="scan-status" role="status" class="scan-summary">Scan aus · noch keine mechanische Registrierung.</p>
+
+    <details class="technical-settings">
+      <summary>Technische Einstellungen</summary>
+      <div class="technical-grid">
+        <div>
+          <h3>Welle / Arme</h3>
+          <label>Armverlauf
+            <select id="arm-shape">
+              <option value="unknown">noch offen</option>
+              <option value="straight">gerader Platzhalter</option>
+              <option value="dogleg">mögliche Kröpfung</option>
+            </select>
+          </label>
+          <label>Axiale Lage
+            <select id="arm-layers">
+              <option value="staggered">versetzt – Arbeitsannahme</option>
+              <option value="coplanar">gleiche Ebene – Alternative</option>
+              <option value="reverse">umgekehrter Versatz – Alternative</option>
+            </select>
+          </label>
+          <p>Die Welleninnenzone bleibt bewusst offen. Keine verdeckte Verbindung ist als Tatsache modelliert.</p>
+        </div>
+        <div>
+          <h3>Darstellung</h3>
+          <div class="model-controls">
+            <button id="orbit" aria-pressed="false">Modell bewegen: aus</button>
+            <button id="explode" aria-pressed="false">Auseinanderziehen: aus</button>
+            <button id="cut" aria-pressed="false">Halbschnitt: aus</button>
+            <button id="variant" aria-pressed="false">Kumpf-Variante A · 24 mm</button>
+          </div>
+          <p id="variant-note">22 und 24 mm sind alte Varianten. Welche am heutigen Rad vorkommt, muss am Teil geprüft werden.</p>
+        </div>
+      </div>
+
+      <details id="scan-settings" class="scan-advanced">
+        <summary>3D-Scan · Expertenvergleich</summary>
+        <p>Die Exportachsen werden korrigiert. Eine Deckung mit dem Arbeitsmodell wird erst behauptet, wenn Referenzpunkte und Maßstab am Rad aufgenommen wurden.</p>
+        <label>Vergleichszustand
+          <select id="scan-stage">
+            <option value="RAW_EXPORT">Rohscan</option>
+            <option value="AXIS_NORMALIZED" selected>Achsen korrigiert</option>
+            <option value="ROUGH_ALIGNED">grob ausgerichtet</option>
+          </select>
+        </label>
+        <details>
+          <summary>Numerische Ausrichtung</summary>
+          <div class="field-grid">
+            <label>X-Verschiebung<input id="scan-x" type="number" value="0" step="0.1"/></label>
+            <label>Y-Verschiebung<input id="scan-y" type="number" value="0" step="0.1"/></label>
+            <label>Z-Verschiebung<input id="scan-z" type="number" value="0" step="0.1"/></label>
+            <label>Skalenfaktor<input id="scan-scale" type="number" value="1" min="0.01" max="100" step="0.1"/></label>
+            <label>Drehung X (°)<input id="scan-rx" type="number" value="0" step="5"/></label>
+            <label>Drehung Y (°)<input id="scan-ry" type="number" value="0" step="5"/></label>
+            <label>Drehung Z (°)<input id="scan-rz" type="number" value="0" step="5"/></label>
+          </div>
+          <button id="scan-reset">Scanvergleich zurücksetzen</button>
+        </details>
+      </details>
+    </details>
+  </section>
+
+  <section class="wb-inspect">
+    <div class="part-column" id="parts">
+      <div class="section-head">
+        <div><span class="eyebrow">Teil auswählen</span><h2>Wo sollen wir genauer hinsehen?</h2></div>
+      </div>
+      <label for="part-search">Teilname oder Werkstattbegriff</label>
+      <input id="part-search" type="search" placeholder="z. B. Kumpf, Krümmling, Keil, Arm"/>
+      <div id="part-list" class="part-list"></div>
+    </div>
+    <aside id="selection" class="selection-panel" aria-live="polite"></aside>
+  </section>
+
+  <details class="capture-shell" id="capture">
+    <summary>Befund am ausgewählten Teil festhalten</summary>
+    <div class="capture-inner">
+      <div class="section-head"><h2 id="capture-heading">Foto, Maß oder Werkstattwissen</h2><span id="draft-status" role="status"></span></div>
+      <p id="capture-context"></p>
+      <div id="capture-actions" class="action-row">
+        <button data-kind="measurement">Messen</button>
+        <button data-kind="observation">Foto / Beobachtung</button>
+        <button data-kind="identification">Teil / Variante</button>
+        <button data-kind="expert-narrative">Erfahrung</button>
+        <button data-kind="risk">Warnsignal / Risiko</button>
+      </div>
+      <form id="capture-form">
+        <p id="step-indicator">Schritt 1 von 3 · Befund</p>
+        <fieldset data-step="1">
+          <legend>Befund</legend>
+          <label>Art<select name="kind"><option value="measurement">Messung</option><option value="observation">Beobachtung</option><option value="identification">Identifikation / Variante</option><option value="expert-narrative">Werkstatterfahrung</option><option value="risk">Warnsignal / Risiko</option></select></label>
+          <label>Offene Frage<select name="question_id"></select></label>
+          <label>Was wurde gesehen oder gemessen?<textarea name="feature" required rows="2"></textarea></label>
+          <div data-kinds="measurement" class="field-grid">
+            <label>Wert<input name="value" type="number" step="any"/></label><label>Einheit<select name="unit"><option>mm</option><option>cm</option><option>m</option><option>°</option><option>Stück</option></select></label>
+            <label>Endpunkt A<input name="endpoint_a"/></label><label>Endpunkt B<input name="endpoint_b"/></label>
+            <label>Werkzeug<input name="tool"/></label><label>Unsicherheit ±<input name="uncertainty" type="number" min="0" step="any"/></label>
+          </div>
+          <div data-kinds="identification"><label>Reale Teil-ID<input name="physical_id" placeholder="KS-KUM-001"/></label><label>Variante<select name="variant"><option value="unknown">noch offen</option><option value="A">A · 24 mm</option><option value="B">B · 22 mm</option><option value="other">andere Variante</option></select></label></div>
+          <div data-kinds="expert-narrative,risk"><label>Wörtliche Aussage<textarea name="quote" rows="3"></textarea></label><label>Technische Deutung – getrennt davon<textarea name="interpretation" rows="2"></textarea></label></div>
+          <div data-kinds="risk"><label>Thema<select name="risk_topic"><option value="RISK-MOISTURE">Quellen / Schwinden</option><option value="RISK-FIT">Keile / Passung</option><option value="RISK-LOAD">Strömung / Stoßlast</option><option value="RISK-WEAR">Verschleiß</option><option value="RISK-REPAIR">Reparaturpraxis</option><option value="RISK-SIGN">Warnsignale</option></select></label><div class="field-grid"><label>Auslöser / Zustand<input name="trigger"/></label><label>Mechanismus<input name="mechanism"/></label><label>Erwartetes Verhalten<input name="expected_behaviour"/></label><label>Fehlerfolge<input name="failure_consequence"/></label><label>Warnsignal<input name="warning_sign"/></label><label>Abhilfe / Reparatur<input name="mitigation"/></label><label>Abweichende Erinnerung<input name="alternate_account"/></label></div></div>
+          <label class="check"><input type="checkbox" name="unknown"/>Noch nicht bekannt / nicht zugänglich</label>
+        </fieldset>
+
+        <fieldset data-step="2" hidden>
+          <legend>Kontext</legend>
+          <div class="field-grid">
+            <label>Person / Rolle<input name="person" required/></label><label>Ereignis-ID<input name="event_id" placeholder="EVT-001" required/></label>
+            <label>Seite<select name="side"><option value="UNKNOWN">noch nicht zugeordnet</option><option value="LAND">Landseite – bestätigt</option><option value="WATER">Wasserseite – bestätigt</option></select></label>
+            <label>Zustand<select name="state"><option value="installed">eingebaut</option><option value="during-release">beim Lösen</option><option value="removed">ausgebaut</option></select></label>
+            <label>Partner-IDs<input name="partners"/></label><label>Verbindung<select name="relation_id"><option value="">noch nicht zugeordnet</option></select></label>
+            <label>Orientierung / Befestiger<input name="orientation"/></label><label>Lagerplatz<input name="storage_location"/></label>
+            <label>Sicherheit der Aussage<select name="confidence"><option value="unknown">offen</option><option value="low">niedrig</option><option value="medium">mittel</option><option value="high">hoch</option></select></label>
+            <label>Medienrolle<select name="media_role"><option value="context">Übersicht</option><option value="before">vor dem Lösen</option><option value="after">nach dem Öffnen</option><option value="measurement">Messstelle</option></select></label>
+          </div>
+          <label>Foto aufnehmen oder Datei wählen<input id="media-input" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" multiple/></label>
+          <p id="media-status"></p><div id="media-list"></div>
+          <label>Externe Audio-/Video-Datei<input name="media_reference"/></label>
+        </fieldset>
+
+        <fieldset data-step="3" hidden>
+          <legend>Gemeinsam zuordnen</legend>
+          <label>Bezug auf vorhandene Aussage<select name="claim_id"><option value="">keine konkrete Aussage</option></select></label>
+          <label>Was bedeutet der Befund?<select name="effect"><option value="context">ergänzt unser Bild</option><option value="supports">bestätigt die ausgewählte Aussage</option><option value="challenges">passt nicht zur ausgewählten Aussage</option></select></label>
+          <div id="review"></div>
+          <p class="notice">Der Eintrag bleibt ungeprüft, bis er gemeinsam abgeglichen wurde. Ein Maß wird dadurch nicht automatisch freigegeben.</p>
+        </fieldset>
+
+        <p id="form-error" role="alert"></p>
+        <div class="action-row"><button type="button" id="step-back" hidden>Zurück</button><button type="button" id="step-next">Weiter</button><button type="submit" id="save-record" hidden>Lokal speichern</button></div>
+      </form>
+    </div>
+  </details>
+
+  <section id="records" class="records-shell">
+    <div class="section-head"><div><span class="eyebrow">Arbeitsprotokoll</span><h2>Gesicherte Befunde</h2></div><button id="export">Sicherung als JSON</button></div>
+    <label>Sicherung wieder einlesen<input id="import" type="file" accept="application/json,.json"/></label>
+    <div id="record-list"></div>
+  </section>
+
+  <section id="drawings" class="drawing-shell">
+    <div class="section-head"><div><span class="eyebrow">Papier</span><h2>Werkstatt- und Aufnahmeplan</h2></div><a class="plan-button" href={href('field-pack/KS-Field-Pack-A3.pdf')}>A3-Arbeitsplan öffnen</a></div>
+    <p>Für die Demontage ist der Arbeitsplan die primäre Führung. Die digitalen Zeichnungen bleiben ergänzende Prüfansichten.</p>
+    <div class="drawing-links">{['KS-00','KS-10','KS-20','KS-30','KS-60'].map(id=><a href={href(`drawings/${id}.svg`)} target="_blank">{id} · Prüfblatt ↗</a>)}</div>
+  </section>
+
+  <footer>Arbeitsstand vor der Demontage 2026 · <a href="https://github.com/jdistlr/kleines-schaeferrad">Technisches Repository</a></footer>
+</main>
+<script>import '../workbench/client.js';</script>
+</body>
+</html>
