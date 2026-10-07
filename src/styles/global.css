@@ -1,3 +1,4 @@
+@import './tokens.css';
 
 :root{
   --paper:#fafbf7;--white:#fff;--ink:#172b25;--muted:#5b6962;--green:#193e35;
@@ -218,3 +219,63 @@ h3{font-size:1.35rem;font-weight:720}
 .technical-plate .titlebox-strong{font-size:8.5px;font-weight:700}
 .technical-plate .titlebox-text{font-size:7.5px}
 .drawing-explainer{max-width:820px;margin:18px 0 0;font-size:.82rem}
+
+
+/* MUX v2 — same identity, less publication chrome, more useful density */
+:root{
+  --paper:var(--mux-paper);
+  --white:var(--mux-surface);
+  --ink:var(--mux-ink);
+  --muted:var(--mux-muted);
+  --green:var(--mux-green);
+  --green-2:var(--mux-green-2);
+  --lime:var(--mux-lime);
+  --soft:var(--mux-soft);
+  --soft-2:var(--mux-soft-2);
+  --line:var(--mux-line);
+  --radius:var(--mux-radius-lg);
+  --max:var(--mux-max);
+  font-family:var(--mux-font);
+}
+.section{padding-block:48px}
+.header-inner{min-height:76px}
+.hero{gap:28px;padding-block:30px 36px;min-height:0}
+.hero-visual{min-height:380px;border-radius:var(--mux-radius-lg)}
+.heritage-badge{width:92px;height:92px}
+.section-heading{margin-bottom:26px}
+.feature-grid{border-top:1px solid var(--line);gap:0}
+.feature-card{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:20px 0}
+.feature-card:hover{transform:none}
+.feature-card-green{background:transparent;color:var(--ink);border-left:4px solid var(--green);padding-left:18px}
+.feature-card-green p{color:var(--muted)}
+.feature-card-green .feature-icon{background:var(--soft);color:var(--green)}
+.feature-card-green .feature-number{color:#879180}
+.feature-icon{width:42px;height:42px;border-radius:10px;margin-bottom:18px}
+.evidence-card{background:transparent;border:0;border-radius:0}
+.evidence-image{border-radius:14px}
+.evidence-copy{padding:15px 0 4px}
+.conflict-grid{border-top:1px solid var(--line)}
+.conflict-card{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:17px 0}
+.mission-grid{border-top:1px solid var(--line)}
+.mission-card{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:16px 0}
+.craft-panel{background:var(--soft);color:var(--ink);padding:28px;border:1px solid var(--line);border-radius:var(--mux-radius-lg)}
+.craft-panel .eyebrow{color:var(--green)}
+.craft-panel p{color:var(--muted)}
+.craft-prompt{background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.roadmap{border-radius:12px}
+.roadmap-step{padding:18px 22px}
+.site-footer{padding-top:40px}
+@media(min-width:900px){
+  .header-inner{min-height:82px}
+  .hero{min-height:560px;padding-block:38px;gap:48px}
+  .hero-visual{min-height:460px;border-radius:22px}
+  .section{padding-block:64px}
+  .section-heading{margin-bottom:30px}
+  .feature-grid{grid-template-columns:repeat(3,1fr);gap:28px;border-top:0}
+  .feature-card{border-top:1px solid var(--line);border-bottom:0;padding:22px 0}
+  .feature-card-green{padding-left:18px}
+  .anatomy-layout{gap:22px}
+  .evidence-grid{gap:28px}
+  .mission-grid{gap:0 28px}
+  .craft-panel{padding:34px 38px}
+}
