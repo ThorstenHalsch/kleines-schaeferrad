@@ -57,7 +57,7 @@ import {href} from '../lib/paths';
       <svg id="axis-triad" viewBox="0 0 84 84" aria-label="Anzeigesystem: X Welle, Z oben, Y quer">
         {['X','Y','Z'].map((a,i)=><g fill={['#24463d','#9b6b32','#242520'][i]} stroke={['#24463d','#9b6b32','#242520'][i]}><line id={'axis-'+a} x1="42" y1="42" x2="42" y2="42" stroke-width="2"/><text id={'label-'+a} stroke="none" font-size="12" text-anchor="middle">{a}</text></g>)}
       </svg>
-      <p id="scan-separation" hidden>Arbeitsmodell und 3D-Scan werden nur zum Vergleich synchron bewegt.</p>
+      <p id="scan-separation" hidden>Arbeitsmodell und Punktewolke werden nur zum Vergleich synchron bewegt.</p>
       <div id="canvas-host"></div>
       <div id="scan-host" hidden><span class="scan-panel-label">Punktewolke · noch nicht registriert</span></div>
       <div id="pins" aria-label="Offene Fragen und Messstellen"></div>
@@ -69,11 +69,11 @@ import {href} from '../lib/paths';
       <label><input type="checkbox" id="layer-model" checked/> Radkörper</label>
       <label><input type="checkbox" id="layer-stationary" checked/> Tragwerk / Rahmen</label>
       <label><input type="checkbox" id="layer-questions" checked/> offene Stellen</label>
-      <label><input type="checkbox" id="layer-scan"/> 3D-Scan vergleichen</label>
+      <label><input type="checkbox" id="layer-scan"/> Punktewolke vergleichen</label>
       <label class="hidden-control"><input type="checkbox" id="layer-historical"/> Arbeitskontur</label>
     </div>
 
-    <p id="scan-status" role="status" class="scan-summary">Scan aus · noch keine mechanische Registrierung.</p>
+    <p id="scan-status" role="status" class="scan-summary">Punktewolke aus · noch keine mechanische Registrierung.</p>
 
     <details class="technical-settings">
       <summary>Technische Einstellungen</summary>
@@ -109,7 +109,7 @@ import {href} from '../lib/paths';
       </div>
 
       <details id="scan-settings" class="scan-advanced">
-        <summary>3D-Scan · Expertenvergleich</summary>
+        <summary>Punktewolke · Expertenvergleich</summary>
         <p>Die Exportachsen werden korrigiert. Eine Deckung mit dem Arbeitsmodell wird erst behauptet, wenn Referenzpunkte und Maßstab am Rad aufgenommen wurden.</p>
         <label>Vergleichszustand
           <select id="scan-stage">
