@@ -52,25 +52,25 @@ const roadmap = [
   ['L4','Site Reality','Wasser, Vegetation, Atmosphäre und spätere Splats setzen das Rad wieder in seinen Ort.']
 ];
 ---
-<BaseLayout title="Research View" description="Evidenzbasierte Rekonstruktion des Kleinen Schäferrads vor seiner Demontage 2026.">
-  <div class="container" style="padding-top:1rem"><a class="button button-dark" href={href('werkstatt/')}>Werkstatt öffnen · Teil finden, messen, erklären ↗</a></div>
+<BaseLayout title="Das Kleine Schäferrad" description="Gemeinsam halten wir fest, wie das Kleine Schäferrad gebaut ist und welches Werkstattwissen darin steckt.">
+  <div class="container" style="padding-top:1rem"><a class="button button-dark" href={href('werkstatt/')}>Zur Werkstatt · gemeinsam prüfen und festhalten ↗</a></div>
 <section class="hero container">
     <div class="hero-copy">
       <span class="location-label"><span class="status-dot"></span> Möhrendorf / Oberndorf · an der Regnitz</span>
-      <h1>Ein Rad.<br />Viele <span class="hero-word">Wahrheiten.</span></h1>
-      <p>Bevor das Kleine Schäferrad zerlegt wird, halten wir nicht nur seine Form fest. Wir rekonstruieren, wie Zeichnungen, Holz, Wasser, Reparaturen und jahrzehntelanges Handwerkswissen ineinandergreifen.</p>
+      <h1>Was viele Hände<br /><span class="hero-word">wissen.</span></h1>
+      <p>Das Kleine Schäferrad wird mit Erfahrung, Sorgfalt und vielen Handgriffen erhalten. Gemeinsam halten wir fest, wie es wirklich gebaut ist – damit Zeichnungen, Maße und Werkstattwissen weitergegeben werden können.</p>
       <div class="hero-actions">
-        <a class="button button-dark" href="#anatomie">Konstruktion entdecken <Icon name="arrow" /></a>
-        <a class="text-link" href="#demontage">Was noch fehlt <Icon name="diagonal" size={18} /></a>
+        <a class="button button-dark" href="#anatomie">Das Rad verstehen <Icon name="arrow" /></a>
+        <a class="text-link" href="#demontage">Arbeitsplan ansehen <Icon name="diagonal" size={18} /></a>
       </div>
-      <div class="hero-signature"><span class="signature-line"></span> Baseline Understanding Ready · 07.10.2026</div>
+      <div class="hero-signature"><span class="signature-line"></span> Gemeinsam dokumentiert · vor der Demontage 2026</div>
     </div>
     <div class="hero-visual">
       <Image src={hero} alt="Das Kleine Schäferrad im eingebauten Zustand an der Regnitz" widths={[480, 720, 960]} sizes="(max-width: 899px) 100vw, 50vw" loading="eager" fetchpriority="high" class="hero-image" />
-      <div class="heritage-badge"><span>Research</span><strong>vor der<br />Demontage</strong><Icon name="wheel" size={25} /></div>
+      <div class="heritage-badge"><span>Gemeinsam</span><strong>erhalten &<br />weitergeben</strong><Icon name="wheel" size={25} /></div>
       <div class="photo-caption">
-        <span>Der reale Zustand</span>
-        <strong>Nicht idealisiert. Nicht geglättet.</strong>
+        <span>Handwerk an der Regnitz</span>
+        <strong>Das Kleine Schäferrad.</strong>
         <a href="#evidenz" class="round-link" aria-label="Zur Evidenz"><Icon name="diagonal" size={23} /></a>
       </div>
     </div>
@@ -78,32 +78,32 @@ const roadmap = [
 
   <div class="values-strip" aria-label="Baseline Kennzahlen">
     <div class="container">
-      <div class="value"><strong>{originalCount}</strong><span>Originalquellen</span></div>
-      <div class="value"><strong>{claims.length}</strong><span>atomare Claims</span></div>
-      <div class="value"><strong>{conflicts.length}</strong><span>sichtbare Konflikte</span></div>
-      <div class="value"><strong>{gaps.length}</strong><span>P0 Capture-Gaps</span></div>
+      <div class="value"><strong>{originalCount}</strong><span>Originalquellen gesichert</span></div>
+      <div class="value"><strong>{gaps.length}</strong><span>Aufgaben vor und beim Zerlegen</span></div>
+      <div class="value"><strong>{conflicts.length}</strong><span>Punkte noch ungeklärt</span></div>
+      <div class="value"><strong>1</strong><span>gemeinsames Ziel: Wissen weitergeben</span></div>
     </div>
   </div>
 
   <section class="section container" aria-labelledby="know-title">
     <div class="section-heading">
-      <div><span class="eyebrow">Baseline</span><h2 id="know-title">Was wir wissen.<br />Und was bewusst offen bleibt.</h2></div>
-      <p>Die Rekonstruktion beginnt nicht mit einem schönen Mesh, sondern mit sauber getrennten Evidenzschichten. Kein historischer Wert wird heimlich zur heutigen Ist-Geometrie.</p>
+      <div><span class="eyebrow">Gemeinsam prüfen</span><h2 id="know-title">Was wir schon wissen.<br />Was ihr uns noch zeigen könnt.</h2></div>
+      <p>Alte Zeichnungen, aktuelle Fotos und erste 3D-Aufnahmen geben uns einen guten Anfang. Was nur am echten Rad sichtbar oder aus Erfahrung bekannt ist, klären wir gemeinsam.</p>
     </div>
     <div class="feature-grid">
       <article class="feature-card">
         <span class="feature-icon"><Icon name="wheel" size={27} /></span><span class="feature-number">01</span>
-        <h3>Die Konstruktion wird lesbar.</h3>
+        <h3>Das Rad Schritt für Schritt verstehen.</h3>
         <p>Welle, durchgehende Arme, zwei Kranzebenen, Krümmlinge, Kümpfe, Schaufeln, Keile, Lager, Trog und Rinne sind als System modelliert – inklusive ihrer noch unsicheren Beziehungen.</p>
       </article>
       <article class="feature-card">
         <span class="feature-icon"><Icon name="layers" size={27} /></span><span class="feature-number">02</span>
-        <h3>Quellen bleiben getrennt.</h3>
+        <h3>Alte Zeichnungen bleiben wertvoll.</h3>
         <p>{historicalClaims} historische, {currentClaims} aktuelle und {measuredClaims} digital gemessene Claims werden nicht vermischt. Varianten und Reparaturzustände dürfen nebeneinander bestehen.</p>
       </article>
       <article class="feature-card feature-card-green">
         <span class="feature-icon"><Icon name="measure" size={27} /></span><span class="feature-number">03</span>
-        <h3>As-built ist noch nicht freigegeben.</h3>
+        <h3>Was noch fehlt, wird am Rad geklärt.</h3>
         <p>Kein Claim ist derzeit als finale metrische Ist-Geometrie markiert. Genau diese Lücke schließen wir mit Handmaßen, Demontagebildern, Teil-IDs und dem Wissen der Menschen vor Ort.</p>
       </article>
     </div>
@@ -112,8 +112,8 @@ const roadmap = [
   <section id="anatomie" class="section section-tinted">
     <div class="container">
       <div class="section-heading">
-        <div><span class="eyebrow">Konstruktionsmodell</span><h2>Anatomie eines<br />Schöpfrads.</h2></div>
-        <p>Die Liste ist keine Stückliste des aktuellen 2026er Zustands. Sie ist unsere belastete Ontologie: Bauteilfamilien, Baugruppen und Funktionsräume, an die wir reale Teile später anbinden.</p>
+        <div><span class="eyebrow">Aufbau & Teile</span><h2>Wie das Rad<br />zusammenarbeitet.</h2></div>
+        <p>Wir ordnen die sichtbaren Baugruppen so, dass Zeichnungen, reale Teile und Werkstattwissen später eindeutig zusammenfinden. Die endgültige Stückliste entsteht erst beim Zerlegen.</p>
       </div>
       <div class="anatomy-layout">
         <div class="anatomy-visual">
@@ -144,7 +144,7 @@ const roadmap = [
   <section id="evidenz" class="section section-tinted">
     <div class="container">
       <div class="section-heading">
-        <div><span class="eyebrow">Evidence Explorer</span><h2>Nicht eine Quelle.<br />Ein Geflecht.</h2></div>
+        <div><span class="eyebrow">Quellen & Erinnerungen</span><h2>Zeichnung, Foto, Scan<br />– und Erfahrung.</h2></div>
         <p>Die alten Werkstattblätter erzählen, wie gedacht und gebaut wurde. Die aktuellen Fotos zeigen, was heute tatsächlich dort steht. Die Scans geben uns räumliche Fragmente – und ihre Lücken.</p>
       </div>
       <div class="evidence-grid">
@@ -166,7 +166,7 @@ const roadmap = [
 
   <section id="konflikte" class="section container">
     <div class="section-heading">
-      <div><span class="eyebrow">Conflict Matrix</span><h2>Widersprüche sind<br />keine Fehler.</h2></div>
+      <div><span class="eyebrow">Noch ungeklärt</span><h2>Wo wir gemeinsam<br />nachsehen müssen.</h2></div>
       <p>22 oder 24 Millimeter? Andere Ringlänge? Reparatur oder Variante? Wir behalten konkurrierende Aussagen sichtbar, bis reale Feldbeobachtung entscheidet.</p>
     </div>
     <div class="conflict-grid">
@@ -183,7 +183,7 @@ const roadmap = [
   <section id="demontage" class="section section-tinted">
     <div class="container">
       <div class="mission-intro">
-        <div><span class="eyebrow">Mission: Demontage</span><h2>Was jetzt verloren<br />gehen kann.</h2></div>
+        <div><span class="eyebrow">Vor der Demontage</span><h2>Festhalten, bevor es<br />auseinandergeht.</h2></div>
         <p>Die wichtigste Datenerhebung passiert nicht im Rechner, sondern beim Öffnen der realen Verbindungen. Acht P0-Aufträge retten genau den Kontext, der nach dem Zerlegen nicht mehr sichtbar ist.</p>
       </div>
       <div class="mission-grid">
@@ -213,8 +213,8 @@ const roadmap = [
   <section class="section section-tinted">
     <div class="container">
       <div class="section-heading">
-        <div><span class="eyebrow">Road to Digital Twin</span><h2>Von Evidenz<br />zu Geometrie.</h2></div>
-        <p>Die Website wächst mit dem Forschungsstand. Die schwere 3D-Phase beginnt erst nach Human Calibration und Demontage-Capture – nicht vorher.</p>
+        <div><span class="eyebrow">Digitale Rekonstruktion</span><h2>Von Werkstattwissen<br />zur Geometrie.</h2></div>
+        <p>Die digitale Rekonstruktion wächst mit jedem bestätigten Maß, jedem geöffneten Kontakt und jeder Erklärung aus der Werkstatt. Unsichere Stellen bleiben sichtbar offen.</p>
       </div>
       <div class="roadmap">
         {roadmap.map(([level,title,text], index) => (
