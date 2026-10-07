@@ -2,3 +2,6 @@ __pycache__/
 node_modules/
 dist/
 .astro/
+public/evidence/
+public/drawings/
+test-results/

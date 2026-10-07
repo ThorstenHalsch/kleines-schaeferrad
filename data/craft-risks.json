@@ -1,0 +1,75 @@
+{
+  "schema": "ks-craft-risk/v1",
+  "status": "capture-prompts-not-validated-mechanisms",
+  "fields": [
+    "trigger",
+    "mechanism",
+    "expected_behaviour",
+    "failure_consequence",
+    "warning_sign",
+    "mitigation",
+    "source_person",
+    "alternate_account"
+  ],
+  "topics": [
+    {
+      "id": "RISK-MOISTURE",
+      "label": "Quellen / Schwinden",
+      "components": [
+        "COMP-ARMS",
+        "COMP-KUMPF-STAVES",
+        "COMP-FASTENERS"
+      ],
+      "prompt": "Was verändert sich hier trocken und im Wasser?"
+    },
+    {
+      "id": "RISK-FIT",
+      "label": "Keile / Passung",
+      "components": [
+        "COMP-FASTENERS",
+        "COMP-SHAFT",
+        "COMP-ARMS"
+      ],
+      "prompt": "Woran erkennen Sie die richtige Passung und Keilrichtung?"
+    },
+    {
+      "id": "RISK-LOAD",
+      "label": "Strömung / Stoßlast",
+      "components": [
+        "COMP-PADDLES",
+        "COMP-KUEMPFE",
+        "COMP-RIMS"
+      ],
+      "prompt": "Bei welchem Wasserstand oder Stoß tritt hier ein Problem auf?"
+    },
+    {
+      "id": "RISK-WEAR",
+      "label": "Verschleiß",
+      "components": [
+        "COMP-BEARINGS",
+        "COMP-SHAFT"
+      ],
+      "prompt": "Welche Spuren zeigen normalen oder kritischen Verschleiß?"
+    },
+    {
+      "id": "RISK-REPAIR",
+      "label": "Reparaturpraxis",
+      "components": [
+        "COMP-KRUEMMLINGE",
+        "COMP-KUEMPFE",
+        "COMP-RADSTATT"
+      ],
+      "prompt": "Was wurde ersetzt und warum? Gibt es eine andere Erinnerung?"
+    },
+    {
+      "id": "RISK-SIGN",
+      "label": "Warnsignale",
+      "components": [
+        "COMP-BEARINGS",
+        "COMP-FASTENERS",
+        "COMP-PADDLES"
+      ],
+      "prompt": "Welches Geräusch, welcher Riss oder welche Bewegung verlangt eine Prüfung?"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schema": "ks-hypothesis-parameters/v1",
+  "units": "metre display coordinates; not a field scale",
+  "current_as_built": false,
+  "parameters": {
+    "outerRadius": {
+      "value": 2.13,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "CLAIM-0234",
+        "CLAIM-0236"
+      ],
+      "status": "hypothesis-only",
+      "note": "213/426 have no explicit unit; cm interpretation per BASELINE, not current measurement"
+    },
+    "innerRadius": {
+      "value": 1.98,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "CLAIM-0235",
+        "CLAIM-0237"
+      ],
+      "status": "hypothesis-only",
+      "note": "198/396 have no explicit unit; cm interpretation only"
+    },
+    "rimWidth": {
+      "value": 0.14,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "CLAIM-0239",
+        "CONFLICT-04"
+      ],
+      "status": "hypothesis-only",
+      "note": "14 cm historic width interpreted axial; unresolved dimension semantics"
+    },
+    "ringDistance": {
+      "value": 1.15,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-01"
+      ],
+      "status": "hypothesis-only",
+      "note": "arbitrary display separation; actual value and plausible range unknown"
+    },
+    "shaftLength": {
+      "value": 3.7,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "CLAIM-0001",
+        "CONFLICT-03"
+      ],
+      "status": "hypothesis-only",
+      "note": "370 without unit; cm interpretation only, competing stock description preserved"
+    },
+    "shaftWidth": {
+      "value": 0.37,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "CLAIM-0002",
+        "CONFLICT-03"
+      ],
+      "status": "hypothesis-only",
+      "note": "37 without unit; cm interpretation only"
+    },
+    "armWidth": {
+      "value": 0.16,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-02"
+      ],
+      "status": "hypothesis-only",
+      "note": "display placeholder, no metric authority"
+    },
+    "armDepth": {
+      "value": 0.12,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-02"
+      ],
+      "status": "hypothesis-only",
+      "note": "display placeholder; axial staggering not verified"
+    },
+    "vesselRadius": {
+      "value": 0.16,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-04"
+      ],
+      "status": "hypothesis-only",
+      "note": "schematic vessel radius, not inferred field dimension"
+    },
+    "vesselHeight": {
+      "value": 0.44,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-04"
+      ],
+      "status": "hypothesis-only",
+      "note": "schematic height; orientation and attachment unknown"
+    },
+    "vesselCount": {
+      "value": 24,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "EXT-VZO-INFO",
+        "CONFLICT-07"
+      ],
+      "status": "hypothesis-only",
+      "note": "expected slots, not counted physical vessels"
+    },
+    "paddleCount": {
+      "value": 24,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "EXT-VZO-INFO",
+        "CONFLICT-07"
+      ],
+      "status": "hypothesis-only",
+      "note": "expected slots, not counted physical paddles"
+    },
+    "armsPerPlane": {
+      "value": 3,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "status": "hypothesis-only",
+      "note": "three full members = six ends; current identification pending"
+    },
+    "segmentsPerPlane": {
+      "value": 6,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "EXT-VZO-INFO",
+        "CLAIM-0240"
+      ],
+      "status": "hypothesis-only",
+      "note": "expected sectors, joint detail intentionally omitted"
+    },
+    "stationaryContext": {
+      "value": null,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-06",
+        "GAP-07"
+      ],
+      "status": "hypothesis-only",
+      "note": "all supports, trough, bearing positions are diagrammatic placeholders"
+    },
+    "jointGeometry": {
+      "value": null,
+      "current_value": null,
+      "range": null,
+      "provenance": [
+        "GAP-02",
+        "GAP-03",
+        "GAP-04"
+      ],
+      "status": "hypothesis-only",
+      "note": "no invented mortises, joinery or hidden contact surfaces"
+    }
+  },
+  "variants": {
+    "A": {
+      "staveThickness": 0.024,
+      "claim_ids": [
+        "CLAIM-0040"
+      ],
+      "conflict_ids": [
+        "CONFLICT-01"
+      ],
+      "source_ids": [
+        "PHOTO-6823"
+      ]
+    },
+    "B": {
+      "staveThickness": 0.022,
+      "claim_ids": [
+        "CLAIM-0041"
+      ],
+      "conflict_ids": [
+        "CONFLICT-01"
+      ],
+      "source_ids": [
+        "PHOTO-6823"
+      ]
+    }
+  },
+  "variant_note": "A/B vary wall thickness only; historical ring length conflict remains unadjudicated in inspector. No averaged variant."
+}

@@ -1,0 +1,21 @@
+
+> kleines-schaeferrad-research-page@0.1.0 test:workbench
+> node --test tests/workbench.test.mjs
+
+✔ six continuous arms across two planes preserve opposite endpoint labels (1.193233ms)
+✔ separate segmented rims and expected vessel/paddle slots, unique IDs (0.556342ms)
+✔ A/B wall geometries differ without changing source variants or outside dimensions (32.868084ms)
+✔ explosion does not move stationary context; all current dimensions remain null (23.399337ms)
+✔ measurement requires endpoints and uncertainty, unknown observation does not fabricate a zero (0.597293ms)
+✔ lossless import preserves media and deduplicates; same-ID divergence rejects whole import (1.262355ms)
+✔ every mesh maps to an existing ontology family; parameter sources resolve (2.183587ms)
+✔ all 66 historical and expected slots reuse assembly.graph IDs (0.469634ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 244.568444
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.

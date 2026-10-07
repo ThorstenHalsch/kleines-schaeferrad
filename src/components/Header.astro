@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import { href } from '../lib/paths';
 ---
 <header class="site-header">
   <div class="container header-inner">
@@ -16,7 +17,7 @@ import Icon from './Icon.astro';
       <a href="#evidenz">Evidenz</a>
       <a href="#konflikte">Offene Fragen</a>
       <a href="#demontage">Demontage</a>
-      <a class="button button-dark nav-cta" href="#handwerk">Handwerkswissen <Icon name="diagonal" size={16} /></a>
+      <a class="button button-dark nav-cta" href={href('werkstatt/')}>Werkstatt öffnen <Icon name="diagonal" size={16} /></a>
     </nav>
   </div>
 </header>

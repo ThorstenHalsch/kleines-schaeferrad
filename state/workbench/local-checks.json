@@ -1,0 +1,32 @@
+{
+  "executed_at": "2026-10-07T18:25:23.533403+00:00",
+  "checks": [
+    {
+      "check": "unit",
+      "command": "npm run test:workbench",
+      "exit_code": 0
+    },
+    {
+      "check": "astro-check",
+      "command": "npm run check",
+      "exit_code": 0
+    },
+    {
+      "check": "build",
+      "command": "npm run build",
+      "exit_code": 0
+    },
+    {
+      "check": "evidence",
+      "command": "python scripts/verify_evidence.py",
+      "exit_code": 0
+    },
+    {
+      "check": "diff-check",
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "browser": "not executed; environment + push approval blocked",
+  "gate": "pending"
+}

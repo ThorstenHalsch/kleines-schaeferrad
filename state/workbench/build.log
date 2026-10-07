@@ -1,0 +1,55 @@
+
+> kleines-schaeferrad-research-page@0.1.0 build
+> npm run prepare:workbench && astro build
+
+
+> kleines-schaeferrad-research-page@0.1.0 prepare:workbench
+> node scripts/build-workbench.mjs
+
+Prepared 43 raw evidence assets and 5 A3 review sheets from shared geometry.
+13:25:22 [types] Generated 38ms
+13:25:22 [build] output: "static"
+13:25:22 [build] mode: "static"
+13:25:22 [build] directory: /workspace/scratch/535d03b975b5/kleines-schaeferrad/dist/
+13:25:22 [build] Collecting build info...
+13:25:22 [build] ✓ Completed in 70ms.
+13:25:22 [build] Building static entrypoints...
+13:25:23 [vite] ✓ built in 234ms
+13:25:23 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+13:25:23 [vite] ✓ built in 210ms
+13:25:23 [build] Rearranging server assets...
+
+ generating static routes 
+13:25:23   ├─ /werkstatt/index.html (+10ms) 
+13:25:23   ├─ /index.html (+13ms) 
+13:25:23 ✓ Completed in 33ms.
+
+ generating optimized images 
+13:25:23   ▶ /_astro/IMG_6858.BpdSKe7f_Z22Op1M.webp (reused cache entry) (+1ms) (1/17)
+13:25:23   ▶ /_astro/IMG_6831.BZ7QJ-v0_2hU7nG.webp (reused cache entry) (+1ms) (2/17)
+13:25:23   ▶ /_astro/ply-spatial.yYwngt9x_d3DgU.webp (reused cache entry) (+1ms) (3/17)
+13:25:23   ▶ /_astro/IMG_6854.WBDaguuY_ZEU0TU.webp (reused cache entry) (+1ms) (4/17)
+13:25:23   ▶ /_astro/IMG_6861.DT2sdUtb_ZmmrGt.webp (reused cache entry) (+1ms) (5/17)
+13:25:23   ▶ /_astro/ply-spatial.yYwngt9x_Zp7mRq.webp (reused cache entry) (+1ms) (6/17)
+13:25:23   ▶ /_astro/IMG_6858.BpdSKe7f_Z1Unce2.webp (reused cache entry) (+1ms) (7/17)
+13:25:23   ▶ /_astro/IMG_6831.BZ7QJ-v0_Z2swqHL.webp (reused cache entry) (+1ms) (8/17)
+13:25:23   ▶ /_astro/IMG_6854.WBDaguuY_Zlaqcr.webp (reused cache entry) (+1ms) (9/17)
+13:25:23   ▶ /_astro/IMG_6861.DT2sdUtb_Z1KBXoh.webp (reused cache entry) (+1ms) (10/17)
+13:25:23   ▶ /_astro/IMG_6858.BpdSKe7f_PPje9.webp (reused cache entry) (+1ms) (11/17)
+13:25:23   ▶ /_astro/ply-spatial.yYwngt9x_Z1FbNOn.webp (reused cache entry) (+1ms) (12/17)
+13:25:23   ▶ /_astro/IMG_6831.BZ7QJ-v0_ZY5DSM.webp (reused cache entry) (+1ms) (13/17)
+13:25:23   ▶ /_astro/IMG_6854.WBDaguuY_Z1lugBL.webp (reused cache entry) (+1ms) (14/17)
+13:25:23   ▶ /_astro/IMG_6861.DT2sdUtb_130SGW.webp (reused cache entry) (+1ms) (15/17)
+13:25:23   ▶ /_astro/IMG_6858.BpdSKe7f_6R4o5.webp (reused cache entry) (+1ms) (16/17)
+13:25:23   ▶ /_astro/IMG_6861.DT2sdUtb_1k5gwo.webp (reused cache entry) (+1ms) (17/17)
+13:25:23 ✓ Completed in 5ms.
+
+13:25:23 [build] ✓ Completed in 511ms.
+13:25:23 [build] 2 page(s) built in 585ms
+13:25:23 [build] Complete!
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
