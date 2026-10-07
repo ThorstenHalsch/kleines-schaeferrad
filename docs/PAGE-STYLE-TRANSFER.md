@@ -35,3 +35,10 @@ Die Seite kopiert **nicht** die Vereinsinhalte. Sie übersetzt denselben Charakt
 ## Wahrheitsregel
 
 Die Page ist eine Projektion der Baseline und keine zweite Datenbank. Zahlen, Konflikte und GAPs werden beim Build direkt aus den JSON-Artefakten geladen. `null` bleibt unbekannt. Historische Slots werden nicht als aktuelle Teile ausgegeben.
+
+
+## Zweite visuelle Sprache: Werkstattzeichnung
+
+Für technische Inhalte wird die VZO-Optik bewusst unterbrochen. Werkstattblätter orientieren sich an der klassischen Prüfzeichnungssprache aus `garden-torch-connector`: Schwarz/Weiß, A3-Logik, Achsenlinien, Maßketten, Schriftfeld, Revision und sichtbarer Prüfstatus.
+
+Die vollständigen Regeln stehen in `DRAWING-LANGUAGE.md`. Die Page darf schon nichtmaßhaltige Baseline-Blätter zeigen; maßhaltige Projektionen und CAD-Ableitungen bleiben der späteren Astra-Session vorbehalten.
