@@ -216,19 +216,19 @@ a=canvas.Canvas(str(OUT/'KS-Kurzplan-A4.pdf'),pagesize=(aw,ah),invariant=1)
 def aheader(title):
     a.setFillColor(HexColor('#fafbf7')); a.rect(0,0,aw,ah,fill=1,stroke=0)
     a.setFont('KSB',18); a.setFillColor(INK); a.drawString(12*mm,ah-18*mm,title)
-    a.setFont('KS',8); a.setFillColor(MUTED); a.drawString(12*mm,ah-25*mm,'gleiche Aufgaben-IDs wie Web und A3-Plan · keine Demontagefreigabe')
+    a.setFont('KS',8); a.setFillColor(MUTED); a.drawString(12*mm,ah-25*mm,'gleiche Blattkennungen wie Web und A3-Plan · keine Demontagefreigabe')
 aheader('Kleines Schäferrad · Ablauf vor Ort')
 y=ah-37*mm
 for i,t in enumerate(tasks[:12]):
-    a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i+1:02}")
-    a.setFillColor(INK); a.drawString(24*mm,y,t['title'][:68])
+    sheet=guide_by_id[guides_data['task_visual_map'][t['task_id']]]['sheet']; a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i+1:02} · {sheet}")
+    a.setFillColor(INK); a.drawString(38*mm,y,t['title'][:62])
     a.setFont('KS',7); a.setFillColor(MUTED); a.drawRightString(282*mm,y,tasks_data['timing_labels'][t['timing']])
     y-=10*mm
 a.showPage(); aheader('Kleines Schäferrad · Fortsetzung und Abschluss')
 y=ah-37*mm
 for i,t in enumerate(tasks[12:],start=13):
-    a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i:02}")
-    a.setFillColor(INK); a.drawString(24*mm,y,t['title'][:68])
+    sheet=guide_by_id[guides_data['task_visual_map'][t['task_id']]]['sheet']; a.setFont('KSB',8); a.setFillColor(AMBER if t['stop_before_release'] else GREEN); a.drawString(12*mm,y,f"{i:02} · {sheet}")
+    a.setFillColor(INK); a.drawString(38*mm,y,t['title'][:62])
     a.setFont('KS',7); a.setFillColor(MUTED); a.drawRightString(282*mm,y,tasks_data['timing_labels'][t['timing']])
     y-=10*mm
 a.setFont('KSB',8); a.setFillColor(INK); a.drawString(12*mm,24*mm,'Abschluss: Sicherung auf zweitem Gerät geöffnet · Papier/Originalmedien mitgenommen · offene Punkte benannt')
