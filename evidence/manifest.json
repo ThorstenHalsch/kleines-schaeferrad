@@ -1,46 +1,1399 @@
 {
-  "schema": "ks-evidence-manifest/v0.1",
+  "schema": "ks-evidence-manifest/v1",
   "generated_at": "2026-10-07",
-  "object": "Kleines Schäferrad",
-  "raw_asset_count": 33,
-  "notes": [
-    "All listed files are part of the evidence scope.",
-    "Hashes were computed from the raw files available in the ChatGPT project container.",
-    "Repository binary archival remains pending; text manifest is authoritative for bitwise verification."
-  ],
+  "baseline_commit": "806819dc599c640ca6ec9c87e01efc9c322f5892",
+  "raw_asset_count": 43,
+  "scope": "complete recursive /Kleines Schäferrad folder listing (43 items, next_cursor null), 30 turn attachments and identified conversation context; not a claim to have a complete historical chat transcript",
   "assets": [
-    {"id":"PHOTO-6816","filename":"IMG_6816.jpeg","kind":"drawing","bytes":583092,"sha256":"9e200195f64046b7876314a90bfc01614c4a0b18447779b237e56638fe561bcd","description":"Welle/Achse: Skizze mit Querschnitten und Längsmaß; Detailtranskription offen"},
-    {"id":"PHOTO-6817","filename":"IMG_6817.jpeg","kind":"drawing","bytes":585855,"sha256":"fa5665fcc933b75c1c51161edb2eb3f8b2cbd7cbc804022febf00d15ea9e73cf","description":"Welle/Achse: zweite Aufnahme derselben/ähnlichen Skizze"},
-    {"id":"PHOTO-6818","filename":"IMG_6818.jpeg","kind":"drawing","bytes":692267,"sha256":"f54c4ac4b40f8424bc6beccb8313ab8fc292e79bb6edac9e8ff92cf814851df2","description":"Montage-/Reihenfolgeskizze Arme und Krümmlinge, Land-/Wasserseite"},
-    {"id":"PHOTO-6819","filename":"IMG_6819.jpeg","kind":"drawing","bytes":643786,"sha256":"0fcf00112d053c19ccdc4296fa0eddf6b0dd6f135ab50acd14f68db38dc2b285","description":"Montage-/Reihenfolgeskizze Arme und Krümmlinge, alternative Aufnahme"},
-    {"id":"PHOTO-6823","filename":"IMG_6823.jpeg","kind":"notes","bytes":569999,"sha256":"6fc02460e3a496e70ee878fcabe23d5add25b9760ae80764cdb557efebaeb6d1","description":"Handschriftliche Maße/Notizen; Detailtranskription offen"},
-    {"id":"PHOTO-6825","filename":"IMG_6825.jpeg","kind":"notes","bytes":751485,"sha256":"58d1094ae10e4e0f934e9f18a662e1acebcfa280e23145387c9b536c3839c578","description":"Handschriftliche Stück-/Teileliste"},
-    {"id":"PHOTO-6827","filename":"IMG_6827.jpeg","kind":"reference_table","bytes":579107,"sha256":"11d984aa6870b27cf8a5fd48471ba8943cd7176406d96dda12c46c4159739449","description":"Empfohlene Holzmaße/-längen und Holzarten für Wasserräder"},
-    {"id":"PHOTO-6829","filename":"IMG_6829.jpeg","kind":"drawing","bytes":340602,"sha256":"1cceff71a22b40b10a05f4f2b9333689b309312a1d589a092ec096db08be7aea","description":"Längs-/Querschnitt eines Bauteils; Identität noch zu verifizieren"},
-    {"id":"PHOTO-6831","filename":"IMG_6831.jpeg","kind":"drawing","bytes":642742,"sha256":"9683c5254dd8240c57b5993d0acf5ed4e2dec6068bbbfedc98535b7649043666","description":"Montage-/Reihenfolgeskizze Arme und Krümmlinge; klarere Fassung"},
-    {"id":"PHOTO-6833","filename":"IMG_6833.jpeg","kind":"drawing","bytes":632468,"sha256":"10a86c13ddd4d8f634eee4620999ff4d2bb00a481b108521524e4a893bc7f46b","description":"Kumpf-/Befestigungsdetails mit Maßen"},
-    {"id":"PHOTO-6836","filename":"IMG_6836.jpeg","kind":"drawing","bytes":653769,"sha256":"ef92de97534462a32f314ee1d9e59d6977ccc5a3a3e1f6584a9eca5e569fa1fa","description":"Ring-/Biegematrizen-Geometrie"},
-    {"id":"PHOTO-6837","filename":"IMG_6837.jpeg","kind":"drawing","bytes":666758,"sha256":"e6bbb003abcbf6dd78cd89a245a26f3a76030181f6855cfe54e1c30295b60eb1","description":"Ring-/Biegematrizen-Geometrie, alternative Aufnahme"},
-    {"id":"PHOTO-6838","filename":"IMG_6838.jpeg","kind":"drawing","bytes":671013,"sha256":"f3c823e5965934cef5e739cab6eb8a4199570dc3147e06cce556ebbd0e18ef5e","description":"Rad-/Arm-/Kranzgeometrie"},
-    {"id":"PHOTO-6839","filename":"IMG_6839.jpeg","kind":"notes","bytes":520541,"sha256":"0e9b2915c726f0aa35bc84bdb72f61274c9ee011e45b06b8d6a7f36d23c735be","description":"Handschriftliche Maßnotizen"},
-    {"id":"PHOTO-6840","filename":"IMG_6840.jpeg","kind":"drawing","bytes":577720,"sha256":"2d6aea4ea18fabe18048d6503e6e1c33b396baedaea2ce987736a7bff08f3630","description":"Rad-/Arm-/Kranzgeometrie mit ergänzenden Notizen"},
-    {"id":"PHOTO-6841","filename":"IMG_6841.jpeg","kind":"drawing","bytes":570465,"sha256":"6f51119e71a70b38663171f64c34322b5fbf85871ba0f9abba39e39cd899c69e","description":"12-teilige ringförmige Detailskizze; Zuordnung offen"},
-    {"id":"PHOTO-6842","filename":"IMG_6842.jpeg","kind":"technical_drawing","bytes":578855,"sha256":"adc623217a772dc55434364f4d479e7851eb906c65d7724ec1e17366d20148e0","description":"Technische Wellen-/Achsenzeichnung"},
-    {"id":"PHOTO-6844","filename":"IMG_6844.jpeg","kind":"technical_drawing","bytes":572183,"sha256":"b96164631e1c9e01b6013d57ecdd14d8f3387aeaa4d7ddbfb64124753af3dd6f","description":"Technische Wellen-/Achsenzeichnung, alternative Aufnahme"},
-    {"id":"PHOTO-6845","filename":"IMG_6845.jpeg","kind":"drawing","bytes":757953,"sha256":"e085ad5dbd666c04718becbc82ffff259edcaa7a10aca371dbc774c9f2cb1f97","description":"Kumpf-/Befestigungsstreifen mit Maßen"},
-    {"id":"PHOTO-6846","filename":"IMG_6846.jpeg","kind":"drawing","bytes":670869,"sha256":"2997d13245e6c01e8f62369cd65ad4f0b8792de302d599bcdd837879e6b6aad2","description":"Spannringe für Kümpfe: Maße und Lochbilder"},
-    {"id":"PHOTO-6847","filename":"IMG_6847.jpeg","kind":"drawing","bytes":698290,"sha256":"ace60ee58b41dd7d43ab1e0bdb0a384f36b0479ae4dec68c0eda7ec623a0aded","description":"Spannringe für Kümpfe: alternative Aufnahme"},
-    {"id":"PHOTO-6849","filename":"IMG_6849.jpeg","kind":"drawing","bytes":745533,"sha256":"aa94cf45888a828467b1af5c0a351cb9cad6e93a27c1bd00f1a9f2f5c57d7ac5","description":"Radkranz-/Armgeometrie, Detail mit Radien/Teilung"},
-    {"id":"PHOTO-6851","filename":"IMG_6851.jpeg","kind":"drawing","bytes":666537,"sha256":"8ea1fa40ee8720653bc60faab940085e60b1a05c1d841d3eb82ad325564f668b","description":"Krümmling-/Radkranzdetail mit Maßen"},
-    {"id":"PHOTO-6852","filename":"IMG_6852.jpeg","kind":"drawing","bytes":680615,"sha256":"05c97fa50a12a041cf8d454ece9553ebf759f03ea15ee9dd1d80adfa3dd292bd","description":"Radkranz/Kumpf-/Befestigungsdetail mit Markierungen"},
-    {"id":"PHOTO-6855","filename":"IMG_6855.jpeg","kind":"current_photo","bytes":794918,"sha256":"4777898e89fb05b037f3dd9fd9805c8661cb899947e60e6b94c81daa8dfc60dc","description":"Aktueller Bestand: Welle/Nabe/Arme"},
-    {"id":"PHOTO-6856","filename":"IMG_6856.jpeg","kind":"current_photo","bytes":819887,"sha256":"388efbcd532d611e62bb34308b15df2d3e7fc33aebdbddf8fa0cffa011240005","description":"Aktueller Bestand: Welle/Nabe/Arme, alternative Nahaufnahme"},
-    {"id":"PHOTO-6858","filename":"IMG_6858.jpeg","kind":"current_photo","bytes":730724,"sha256":"14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492","description":"Aktueller Bestand: Gesamt-/Seitenansicht"},
-    {"id":"PHOTO-6859","filename":"IMG_6859.jpeg","kind":"current_photo","bytes":728900,"sha256":"89a35e5d667c27fce445f6f3d3611999eb7d2b505b9309c3c9f4c4e170642867","description":"Aktueller Bestand: Gesamt-/Seitenansicht, alternative Aufnahme"},
-    {"id":"PHOTO-6860","filename":"IMG_6860.jpeg","kind":"current_photo","bytes":723424,"sha256":"1ed26a327717e9659cdc82e49c937d97a51c7d70f8798029f3af56ceab55ea65","description":"Aktueller Bestand: Innenansicht Radkranz/Arme/Wasser"},
-    {"id":"PHOTO-6861","filename":"IMG_6861.jpeg","kind":"current_photo","bytes":788482,"sha256":"ae274311aec8d93173a27eb8b830cc7623897c0464706032c1a2033625fd0152","description":"Aktueller Bestand: Innenansicht Welle/Nabe"},
-    {"id":"META-SCANIVERSE-EXPORT","filename":"IMG_6863.png","kind":"capture_metadata","bytes":179991,"sha256":"b5b5e72600dffa646e9d329d1c2a1fb8915145f6d0600228be6efd1cae5fa8cb","description":"Scaniverse-Exportdialog"},
-    {"id":"SCAN-20261007-01-PLY","filename":"Scaniverse 2026-10-07 173556.ply","kind":"pointcloud","bytes":1134521,"sha256":"2eb305cd6fcbf41d5c52d1a959374f66fa4105e3eca08716f4971a42f4cc8c3b","description":"partielle Farbpunktewolke; 75,619 Punkte"},
-    {"id":"SCAN-20261007-01-GLB","filename":"Scaniverse 2026-10-07 173556.glb","kind":"mesh","bytes":7166952,"sha256":"d28c22f282d03aa153f09c6fb1a14032cad8cb6dc20ebd32a3dc3a40ff89da28","description":"Mesh desselben Captures; ca. 56,117 Vertices / 78,043 Faces"}
+    {
+      "id": "PHOTO-6816",
+      "filename": "IMG_6816.jpeg",
+      "bytes": 583092,
+      "sha256": "9e200195f64046b7876314a90bfc01614c4a0b18447779b237e56638fe561bcd",
+      "git_blob_sha1": "13ef66401778207d9f9ce54c4f628132d1b86392",
+      "source_identity": "libfile_7f28d49386808191a7a53e69460d6002",
+      "source_version": 0,
+      "group": "DOC-SHAFT",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6816.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "13ef66401778207d9f9ce54c4f628132d1b86392"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6817",
+      "filename": "IMG_6817.jpeg",
+      "bytes": 585855,
+      "sha256": "fa5665fcc933b75c1c51161edb2eb3f8b2cbd7cbc804022febf00d15ea9e73cf",
+      "git_blob_sha1": "d3a8e5c4bd366969538bc0494b52ac5ef84feaa5",
+      "source_identity": "libfile_b85787ad784081919168cb11fcf45242",
+      "source_version": 0,
+      "group": "DOC-SHAFT",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6817.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "d3a8e5c4bd366969538bc0494b52ac5ef84feaa5"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6818",
+      "filename": "IMG_6818.jpeg",
+      "bytes": 692267,
+      "sha256": "f54c4ac4b40f8424bc6beccb8313ab8fc292e79bb6edac9e8ff92cf814851df2",
+      "git_blob_sha1": "e82355bdece26a1f197ba250b52207be8158f186",
+      "source_identity": "libfile_5900c97b14f88191adcc401f97e9d2a4",
+      "source_version": 0,
+      "group": "DOC-ORDER-OLD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6818.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "e82355bdece26a1f197ba250b52207be8158f186"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6819",
+      "filename": "IMG_6819.jpeg",
+      "bytes": 643786,
+      "sha256": "0fcf00112d053c19ccdc4296fa0eddf6b0dd6f135ab50acd14f68db38dc2b285",
+      "git_blob_sha1": "483e03091402fabb28c8da805aa0ddd77acfd009",
+      "source_identity": "libfile_68255f6430988191a6a2af6fbc8e438b",
+      "source_version": 0,
+      "group": "DOC-ORDER-OLD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6819.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "483e03091402fabb28c8da805aa0ddd77acfd009"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6820",
+      "filename": "IMG_6820.jpeg",
+      "bytes": 664801,
+      "sha256": "552c33f88b5a01f5a89ef64063fb96d8fefab67a633203e6096d6326176a9fda",
+      "git_blob_sha1": "6acc3aabd86aeb7b39dca5787d06cb9044a5bde6",
+      "source_identity": "libfile_1da10150f7688191acde509580d118f1",
+      "source_version": 0,
+      "group": "DOC-MOUNT-OLD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6820.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "6acc3aabd86aeb7b39dca5787d06cb9044a5bde6"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6821",
+      "filename": "IMG_6821.jpeg",
+      "bytes": 652049,
+      "sha256": "7054d12136bcaec5119a71163fba8adf19050a29015c41d5b108cdb767f9a468",
+      "git_blob_sha1": "42284a4b9875decbfbed109c42196bb093cf652f",
+      "source_identity": "libfile_4e4cc7e644f88191820b3b2d6ef0f751",
+      "source_version": 0,
+      "group": "DOC-KUMPF-FIELD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6821.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "42284a4b9875decbfbed109c42196bb093cf652f"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6823",
+      "filename": "IMG_6823.jpeg",
+      "bytes": 569999,
+      "sha256": "6fc02460e3a496e70ee878fcabe23d5add25b9760ae80764cdb557efebaeb6d1",
+      "git_blob_sha1": "411c1438c7ad77721dc9ecef95821ee3d00f484c",
+      "source_identity": "libfile_f6d824e5a374819186d3f62db7fcc1f3",
+      "source_version": 0,
+      "group": "DOC-STAVE-VARIANTS",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6823.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "411c1438c7ad77721dc9ecef95821ee3d00f484c"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6824",
+      "filename": "IMG_6824.jpeg",
+      "bytes": 756961,
+      "sha256": "28fc723a370c644e38c0eef699c935b4fe1cd83d72f80d646781952c7fb7a85e",
+      "git_blob_sha1": "2cbf6e9eb65df2f5daab5252788803d62b61180e",
+      "source_identity": "libfile_2f6a299f973c8191b9fcf43b84c9810e",
+      "source_version": 0,
+      "group": "DOC-FASTENER-LIST",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6824.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "2cbf6e9eb65df2f5daab5252788803d62b61180e"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6825",
+      "filename": "IMG_6825.jpeg",
+      "bytes": 751485,
+      "sha256": "58d1094ae10e4e0f934e9f18a662e1acebcfa280e23145387c9b536c3839c578",
+      "git_blob_sha1": "29b52aded8117e2355aae539b66fe9e363044954",
+      "source_identity": "libfile_b12cd2513a0c81919a03916387dbb3d0",
+      "source_version": 0,
+      "group": "DOC-FASTENER-LIST",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6825.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "29b52aded8117e2355aae539b66fe9e363044954"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6827",
+      "filename": "IMG_6827.jpeg",
+      "bytes": 579107,
+      "sha256": "11d984aa6870b27cf8a5fd48471ba8943cd7176406d96dda12c46c4159739449",
+      "git_blob_sha1": "4c40f2cabec243d8f1a1b481c5bbce7e44eca406",
+      "source_identity": "libfile_fe082eefd9248191bb0ec8febf3a8e63",
+      "source_version": 0,
+      "group": "DOC-STOCK-TABLE",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6827.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "4c40f2cabec243d8f1a1b481c5bbce7e44eca406"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6828",
+      "filename": "IMG_6828.jpeg",
+      "bytes": 336665,
+      "sha256": "26b74a01c7f033a8dfbeef71694d19912ceb53de507e4ad4c1c52272396f30b2",
+      "git_blob_sha1": "aa631a99c7a582993e157d91e071a738e52edf7b",
+      "source_identity": "libfile_6ddbc9d0f72c8191a98d3286413a1be5",
+      "source_version": 0,
+      "group": "DOC-TROUGH",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6828.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "aa631a99c7a582993e157d91e071a738e52edf7b"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6829",
+      "filename": "IMG_6829.jpeg",
+      "bytes": 340602,
+      "sha256": "1cceff71a22b40b10a05f4f2b9333689b309312a1d589a092ec096db08be7aea",
+      "git_blob_sha1": "c6dc2bb5a2982fd0af8bce3f81c917e255925f66",
+      "source_identity": "libfile_d4a4ed852c248191ac53d2d77b06c886",
+      "source_version": 0,
+      "group": "DOC-TROUGH",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6829.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "c6dc2bb5a2982fd0af8bce3f81c917e255925f66"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6830",
+      "filename": "IMG_6830.jpeg",
+      "bytes": 604678,
+      "sha256": "1069788c674d88a8fba0af71d5958f78dbb677ac2eb19ba0d1094a3ca7ff31d1",
+      "git_blob_sha1": "019daa5d35d22b71da6bcc8b3aa92fc929b1f95c",
+      "source_identity": "libfile_20016757ae988191a15ea0d76d9c557d",
+      "source_version": 0,
+      "group": "DOC-RINNE",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6830.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "019daa5d35d22b71da6bcc8b3aa92fc929b1f95c"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6831",
+      "filename": "IMG_6831.jpeg",
+      "bytes": 642742,
+      "sha256": "9683c5254dd8240c57b5993d0acf5ed4e2dec6068bbbfedc98535b7649043666",
+      "git_blob_sha1": "ff50457bc4de17eaacb2e8ccb04d03b8056ead66",
+      "source_identity": "libfile_2cd2b867f3308191adb82c0da105536d",
+      "source_version": 0,
+      "group": "DOC-ORDER-NEW",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6831.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "ff50457bc4de17eaacb2e8ccb04d03b8056ead66"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6833",
+      "filename": "IMG_6833.jpeg",
+      "bytes": 632468,
+      "sha256": "10a86c13ddd4d8f634eee4620999ff4d2bb00a481b108521524e4a893bc7f46b",
+      "git_blob_sha1": "c38e20c553088d53a5ffaf85fa4c48353ebf1e4e",
+      "source_identity": "libfile_83adf4b82d9c8191ba8cac9d56c0e4f1",
+      "source_version": 0,
+      "group": "DOC-CONTACTSTRIPS",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6833.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "c38e20c553088d53a5ffaf85fa4c48353ebf1e4e"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6836",
+      "filename": "IMG_6836.jpeg",
+      "bytes": 653769,
+      "sha256": "ef92de97534462a32f314ee1d9e59d6977ccc5a3a3e1f6584a9eca5e569fa1fa",
+      "git_blob_sha1": "2c223925c481911ea16ab50df39a51fde6d9c0d3",
+      "source_identity": "libfile_e2c72e5d2f9481919489fce272c3b0f7",
+      "source_version": 0,
+      "group": "DOC-BENDING-DIE",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6836.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "2c223925c481911ea16ab50df39a51fde6d9c0d3"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6837",
+      "filename": "IMG_6837.jpeg",
+      "bytes": 666758,
+      "sha256": "e6bbb003abcbf6dd78cd89a245a26f3a76030181f6855cfe54e1c30295b60eb1",
+      "git_blob_sha1": "46348d04cf225ccf6affa290ac16048660880d0e",
+      "source_identity": "libfile_7f1ec24c9cd8819186ed6f8c5c64106c",
+      "source_version": 0,
+      "group": "DOC-BENDING-DIE",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6837.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "46348d04cf225ccf6affa290ac16048660880d0e"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6838",
+      "filename": "IMG_6838.jpeg",
+      "bytes": 671013,
+      "sha256": "f3c823e5965934cef5e739cab6eb8a4199570dc3147e06cce556ebbd0e18ef5e",
+      "git_blob_sha1": "ae0965ba17953c9788efea14708ded56750407d3",
+      "source_identity": "libfile_46a8220bc4688191b1e1978c9c54684e",
+      "source_version": 0,
+      "group": "DOC-LAYOUT-OLD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6838.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "ae0965ba17953c9788efea14708ded56750407d3"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6839",
+      "filename": "IMG_6839.jpeg",
+      "bytes": 520541,
+      "sha256": "0e9b2915c726f0aa35bc84bdb72f61274c9ee011e45b06b8d6a7f36d23c735be",
+      "git_blob_sha1": "b3b5ab8ed6ad31fb734fcab20c195f243fb32f7d",
+      "source_identity": "libfile_230dda7711608191adb3d0d3224e109c",
+      "source_version": 0,
+      "group": "DOC-CIRCULAR-NOTES",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6839.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "b3b5ab8ed6ad31fb734fcab20c195f243fb32f7d"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6840",
+      "filename": "IMG_6840.jpeg",
+      "bytes": 577720,
+      "sha256": "2d6aea4ea18fabe18048d6503e6e1c33b396baedaea2ce987736a7bff08f3630",
+      "git_blob_sha1": "846bd68b79401981b1595b30b527156f4740d18d",
+      "source_identity": "libfile_8e16eb2b513081919480f9705c9507d8",
+      "source_version": 0,
+      "group": "DOC-LAYOUT-OLD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6840.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "846bd68b79401981b1595b30b527156f4740d18d"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6841",
+      "filename": "IMG_6841.jpeg",
+      "bytes": 570465,
+      "sha256": "6f51119e71a70b38663171f64c34322b5fbf85871ba0f9abba39e39cd899c69e",
+      "git_blob_sha1": "0bc70d4aaed9fefb648219f16bc806c4494a03c1",
+      "source_identity": "libfile_e0b76eaf47a48191b12ab7633ee2a852",
+      "source_version": 0,
+      "group": "DOC-POLYGON",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6841.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "0bc70d4aaed9fefb648219f16bc806c4494a03c1"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6842",
+      "filename": "IMG_6842.jpeg",
+      "bytes": 578855,
+      "sha256": "adc623217a772dc55434364f4d479e7851eb906c65d7724ec1e17366d20148e0",
+      "git_blob_sha1": "95e40ea696f7323afc7e2c0eeb11482daa9943b1",
+      "source_identity": "libfile_619c0489288881919f6d12ce625c2ee2",
+      "source_version": 0,
+      "group": "DOC-BOARD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6842.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "95e40ea696f7323afc7e2c0eeb11482daa9943b1"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6843",
+      "filename": "IMG_6843.jpeg",
+      "bytes": 564636,
+      "sha256": "145e4365e4dc17875801acdcb228dd939df874c77cfface80df37601717e7e22",
+      "git_blob_sha1": "c26140715ed0a90de0f2d7402de7a5fe7d838596",
+      "source_identity": "libfile_efded8848db88191ac1bb4902f877757",
+      "source_version": 0,
+      "group": "DOC-BOARD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6843.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "c26140715ed0a90de0f2d7402de7a5fe7d838596"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6844",
+      "filename": "IMG_6844.jpeg",
+      "bytes": 572183,
+      "sha256": "b96164631e1c9e01b6013d57ecdd14d8f3387aeaa4d7ddbfb64124753af3dd6f",
+      "git_blob_sha1": "86570a3699091511d968294501523a2f600bf1e3",
+      "source_identity": "libfile_45bcec6ae02c8191b6f99e152b618a20",
+      "source_version": 0,
+      "group": "DOC-BOARD",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6844.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "86570a3699091511d968294501523a2f600bf1e3"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6845",
+      "filename": "IMG_6845.jpeg",
+      "bytes": 757953,
+      "sha256": "e085ad5dbd666c04718becbc82ffff259edcaa7a10aca371dbc774c9f2cb1f97",
+      "git_blob_sha1": "a505814af31cfc519a15e0f361ad1158f921f4d6",
+      "source_identity": "libfile_eefb7636b1f881918ffe5f4484fcdb13",
+      "source_version": 0,
+      "group": "DOC-CONTACTSTRIPS",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6845.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "a505814af31cfc519a15e0f361ad1158f921f4d6"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6846",
+      "filename": "IMG_6846.jpeg",
+      "bytes": 670869,
+      "sha256": "2997d13245e6c01e8f62369cd65ad4f0b8792de302d599bcdd837879e6b6aad2",
+      "git_blob_sha1": "252805500afba3e46a663952cf3b5c75238c0fc2",
+      "source_identity": "libfile_c8a0629867908191bf13bf9d270aec44",
+      "source_version": 0,
+      "group": "DOC-HOOPS",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6846.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "252805500afba3e46a663952cf3b5c75238c0fc2"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6847",
+      "filename": "IMG_6847.jpeg",
+      "bytes": 698290,
+      "sha256": "ace60ee58b41dd7d43ab1e0bdb0a384f36b0479ae4dec68c0eda7ec623a0aded",
+      "git_blob_sha1": "4e3f54eec0680929ef44ac798da4c04b28899283",
+      "source_identity": "libfile_986aee6bbc3881919186cbfa77991ec3",
+      "source_version": 0,
+      "group": "DOC-HOOPS",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6847.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "4e3f54eec0680929ef44ac798da4c04b28899283"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6848",
+      "filename": "IMG_6848.jpeg",
+      "bytes": 750020,
+      "sha256": "745397683e1685d7bf0f3e0fb4a09ab3b06295e099ea17bb1eaf3a50ccd6cbab",
+      "git_blob_sha1": "a16fa797a17331aa21170157b386e71b15fae038",
+      "source_identity": "libfile_67a2744ceff48191b0e4aa98404693cf",
+      "source_version": 0,
+      "group": "DOC-RIM-DETAILED",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6848.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "a16fa797a17331aa21170157b386e71b15fae038"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6849",
+      "filename": "IMG_6849.jpeg",
+      "bytes": 745533,
+      "sha256": "aa94cf45888a828467b1af5c0a351cb9cad6e93a27c1bd00f1a9f2f5c57d7ac5",
+      "git_blob_sha1": "1c31c634e99c997bb0d5bcf99a6a8ce3a731a2a2",
+      "source_identity": "libfile_4cc66af854c88191bcbc7129990d4d70",
+      "source_version": 0,
+      "group": "DOC-RIM-DETAILED",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6849.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "1c31c634e99c997bb0d5bcf99a6a8ce3a731a2a2"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6850",
+      "filename": "IMG_6850.jpeg",
+      "bytes": 660844,
+      "sha256": "225de36b7ad475fb58fc4b840a5b921f3e1dd73dac81398c57300598bfcb28d2",
+      "git_blob_sha1": "1769b82a491689e60b8e259e7ba16f11fa02a39f",
+      "source_identity": "libfile_bfd694c50e8c81919ad8fb857825f321",
+      "source_version": 0,
+      "group": "DOC-RIM-DETAILED",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6850.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "1769b82a491689e60b8e259e7ba16f11fa02a39f"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6851",
+      "filename": "IMG_6851.jpeg",
+      "bytes": 666537,
+      "sha256": "8ea1fa40ee8720653bc60faab940085e60b1a05c1d841d3eb82ad325564f668b",
+      "git_blob_sha1": "17a1ffe8a5118c55d6481df4aed3c5b01a24180e",
+      "source_identity": "libfile_e9803fee1c3081919304d854bacd5c32",
+      "source_version": 0,
+      "group": "DOC-RIM-DETAILED",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6851.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "17a1ffe8a5118c55d6481df4aed3c5b01a24180e"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6852",
+      "filename": "IMG_6852.jpeg",
+      "bytes": 680615,
+      "sha256": "05c97fa50a12a041cf8d454ece9553ebf759f03ea15ee9dd1d80adfa3dd292bd",
+      "git_blob_sha1": "25774fd3355f043745a5ac0e1f214871888a5cdf",
+      "source_identity": "libfile_41d7fdacda9c8191a9700c3a804e3542",
+      "source_version": 0,
+      "group": "DOC-RIM-DETAILED",
+      "kind": "historical_document_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6852.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "25774fd3355f043745a5ac0e1f214871888a5cdf"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6853",
+      "filename": "IMG_6853.jpeg",
+      "bytes": 896233,
+      "sha256": "97259378a3ac3a4a0f01a556b76cfecde9833827254df8613259d555a2a04f6c",
+      "git_blob_sha1": "927adb9c0400ce63708442b6a222c9dd2d2a851d",
+      "source_identity": "libfile_1dcd38175ca881918b75c2a4b1d153e2",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6853.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "927adb9c0400ce63708442b6a222c9dd2d2a851d"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6854",
+      "filename": "IMG_6854.jpeg",
+      "bytes": 532942,
+      "sha256": "da8c9edc016c7519831ef6e11d9d1fcff3add00c2ba8f5557db477ee61a2a515",
+      "git_blob_sha1": "5363a1b7f1eeabe3076d25a982050798fbc96f16",
+      "source_identity": "libfile_7ab5161c3984819181a5e28791804161",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6854.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "5363a1b7f1eeabe3076d25a982050798fbc96f16"
+      },
+      "prior_manifest_check": {
+        "missing_from_prior_manifest": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6855",
+      "filename": "IMG_6855.jpeg",
+      "bytes": 794918,
+      "sha256": "4777898e89fb05b037f3dd9fd9805c8661cb899947e60e6b94c81daa8dfc60dc",
+      "git_blob_sha1": "d84643472080369ad268d64336eb192c1a89364c",
+      "source_identity": "libfile_442a26ff3da48191a5041f80df1b8c09",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6855.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "d84643472080369ad268d64336eb192c1a89364c"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6856",
+      "filename": "IMG_6856.jpeg",
+      "bytes": 819887,
+      "sha256": "388efbcd532d611e62bb34308b15df2d3e7fc33aebdbddf8fa0cffa011240005",
+      "git_blob_sha1": "b19bf8a9fe5008027a77e702fb4e430c6f83a79e",
+      "source_identity": "libfile_152b73ac97008191a8c6551ff252dd69",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6856.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "b19bf8a9fe5008027a77e702fb4e430c6f83a79e"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6858",
+      "filename": "IMG_6858.jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492",
+      "git_blob_sha1": "caabcece2a9ae5b54e3338e0503ee59477e26066",
+      "source_identity": "libfile_d31f87f46cd48191bf53eab1af41d805",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6858.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "caabcece2a9ae5b54e3338e0503ee59477e26066"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6859",
+      "filename": "IMG_6859.jpeg",
+      "bytes": 728900,
+      "sha256": "89a35e5d667c27fce445f6f3d3611999eb7d2b505b9309c3c9f4c4e170642867",
+      "git_blob_sha1": "306cbd7bce23e22018943ea78eb6ca7a86512bdf",
+      "source_identity": "libfile_876da3dc954081919b9f160ad9edc5dc",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6859.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "306cbd7bce23e22018943ea78eb6ca7a86512bdf"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6860",
+      "filename": "IMG_6860.jpeg",
+      "bytes": 723424,
+      "sha256": "1ed26a327717e9659cdc82e49c937d97a51c7d70f8798029f3af56ceab55ea65",
+      "git_blob_sha1": "29cbc6abcbcb5fcea8ac146480189d7226dd8612",
+      "source_identity": "libfile_51c0a83133c08191a13943005b58dec7",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6860.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "29cbc6abcbcb5fcea8ac146480189d7226dd8612"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "PHOTO-6861",
+      "filename": "IMG_6861.jpeg",
+      "bytes": 788482,
+      "sha256": "ae274311aec8d93173a27eb8b830cc7623897c0464706032c1a2033625fd0152",
+      "git_blob_sha1": "120a8587225dd4a63ccbdbe85b95fbf136a7e309",
+      "source_identity": "libfile_0ef9f8c19bbc81918eec56315df11adb",
+      "source_version": 0,
+      "group": null,
+      "kind": "current_photo",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6861.jpeg",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "120a8587225dd4a63ccbdbe85b95fbf136a7e309"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1152,
+        "height": 1536,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "META-SCANIVERSE-EXPORT",
+      "filename": "IMG_6863.png",
+      "bytes": 179991,
+      "sha256": "b5b5e72600dffa646e9d329d1c2a1fb8915145f6d0600228be6efd1cae5fa8cb",
+      "git_blob_sha1": "d8e0df9085a6f5f940f09d22fb08103c51426058",
+      "source_identity": "libfile_6d391e205838819199c518a113761b43",
+      "source_version": 0,
+      "group": null,
+      "kind": "capture_metadata",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/IMG_6863.png",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "d8e0df9085a6f5f940f09d22fb08103c51426058"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      },
+      "image": {
+        "width": 1170,
+        "height": 2532,
+        "exif_orientation": 1,
+        "exif_datetime": null
+      }
+    },
+    {
+      "id": "SCAN-20261007-01-GLB",
+      "filename": "Scaniverse 2026-10-07 173556.glb",
+      "bytes": 7166952,
+      "sha256": "d28c22f282d03aa153f09c6fb1a14032cad8cb6dc20ebd32a3dc3a40ff89da28",
+      "git_blob_sha1": "13f60c126834f43df052c1d71445b7dc8cfe9f3c",
+      "source_identity": "libfile_b599b5545e588191a70fba343565470b",
+      "source_version": 0,
+      "group": "CAPTURE-01",
+      "kind": "glb",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/Scaniverse 2026-10-07 173556.glb",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "13f60c126834f43df052c1d71445b7dc8cfe9f3c"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      }
+    },
+    {
+      "id": "SCAN-20261007-01-PLY",
+      "filename": "Scaniverse 2026-10-07 173556.ply",
+      "bytes": 1134521,
+      "sha256": "2eb305cd6fcbf41d5c52d1a959374f66fa4105e3eca08716f4971a42f4cc8c3b",
+      "git_blob_sha1": "659ac69024d47a118a401c9ea43020dcaef6fbcb",
+      "source_identity": "libfile_c9af5667de1c819181f89f72f2662998",
+      "source_version": 0,
+      "group": "CAPTURE-01",
+      "kind": "ply",
+      "review_status": "analyzed",
+      "archive": {
+        "path": "evidence/raw/Scaniverse 2026-10-07 173556.ply",
+        "encoding": "original-binary-git-blob",
+        "status": "archived",
+        "git_blob_sha1": "659ac69024d47a118a401c9ea43020dcaef6fbcb"
+      },
+      "prior_manifest_check": {
+        "size_matches": true,
+        "sha256_matches": true
+      }
+    }
+  ],
+  "derived_assets": [
+    {
+      "id": "DERIVED-contact-sheet-01",
+      "path": "evidence/derived/contact-sheet-01.jpg",
+      "sha256": "4451af01e6ee022937bfa9739adc2bd363c1e15ab6b0e248425928c0d15eecd6",
+      "independent_evidence": false,
+      "parents": [
+        "PHOTO-6816",
+        "PHOTO-6817",
+        "PHOTO-6818",
+        "PHOTO-6819",
+        "PHOTO-6820",
+        "PHOTO-6821",
+        "PHOTO-6823",
+        "PHOTO-6824",
+        "PHOTO-6825",
+        "PHOTO-6827"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 338345,
+      "git_blob_sha1": "4e86d7dc109f183c050f9df78c4ebf9c49ffc34c"
+    },
+    {
+      "id": "DERIVED-contact-sheet-02",
+      "path": "evidence/derived/contact-sheet-02.jpg",
+      "sha256": "9b746a4a25d452a147b776c5ffa23dbb2d145ef67b0607663ee0d11297638b01",
+      "independent_evidence": false,
+      "parents": [
+        "PHOTO-6828",
+        "PHOTO-6829",
+        "PHOTO-6830",
+        "PHOTO-6831",
+        "PHOTO-6833",
+        "PHOTO-6836",
+        "PHOTO-6837",
+        "PHOTO-6838",
+        "PHOTO-6839",
+        "PHOTO-6840"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 309462,
+      "git_blob_sha1": "f000a1510c35f75b81b5104c5b8b99b496ec405b"
+    },
+    {
+      "id": "DERIVED-contact-sheet-03",
+      "path": "evidence/derived/contact-sheet-03.jpg",
+      "sha256": "56149883cd520c04e07c475b7e56f91c841b59dddea288c6ec1e59f7cab4efa1",
+      "independent_evidence": false,
+      "parents": [
+        "PHOTO-6841",
+        "PHOTO-6842",
+        "PHOTO-6843",
+        "PHOTO-6844",
+        "PHOTO-6845",
+        "PHOTO-6846",
+        "PHOTO-6847",
+        "PHOTO-6848",
+        "PHOTO-6849",
+        "PHOTO-6850"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 339823,
+      "git_blob_sha1": "ab5ce6e8627904ffeb2850ef629bd6f3202be953"
+    },
+    {
+      "id": "DERIVED-contact-sheet-04",
+      "path": "evidence/derived/contact-sheet-04.jpg",
+      "sha256": "1e4482096b37eeaeaf1bdf3a567f0364a479b086d745c9fa4f2ee20a84ce1bf4",
+      "independent_evidence": false,
+      "parents": [
+        "PHOTO-6851",
+        "PHOTO-6852",
+        "PHOTO-6853",
+        "PHOTO-6854",
+        "PHOTO-6855",
+        "PHOTO-6856",
+        "PHOTO-6858",
+        "PHOTO-6859",
+        "PHOTO-6860",
+        "PHOTO-6861"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 397594,
+      "git_blob_sha1": "2451ffd13c4d525b1b1340cb11f4c1803873f527"
+    },
+    {
+      "id": "DERIVED-export-alignment",
+      "path": "evidence/derived/export-alignment.json",
+      "sha256": "34f6490354f8237572654fd762968375b60fdf2bc0e46cdb30c9feecb0811413",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 479,
+      "git_blob_sha1": "57f707cf958ecac657e7d6f5831357ed33ead1cd"
+    },
+    {
+      "id": "DERIVED-glb-orthographic",
+      "path": "evidence/derived/glb-orthographic.png",
+      "sha256": "acc8428954cce677ce85735fbe779fa357eaacf6d93f88349b0cb4a086fc84ad",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 875942,
+      "git_blob_sha1": "360a82339234eec90ab610ce90a1ec802227b1f0"
+    },
+    {
+      "id": "DERIVED-glb-spatial",
+      "path": "evidence/derived/glb-spatial.png",
+      "sha256": "73888e3fa6563886eec53faf9146ef2f3cc0df3a8a41c510639a2f65442fca71",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 827520,
+      "git_blob_sha1": "d3899ed73917fb1657bf64c84d11196b877b3f11"
+    },
+    {
+      "id": "DERIVED-ply-orthographic",
+      "path": "evidence/derived/ply-orthographic.png",
+      "sha256": "0c4ef260fbd6582dc0c07d7aa184afa5a8566c8ff2c851f3e0378036bd8449aa",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 1294672,
+      "git_blob_sha1": "8e586fac91dfcbb6c80bf897fbcbb00ceb985d9b"
+    },
+    {
+      "id": "DERIVED-ply-spatial",
+      "path": "evidence/derived/ply-spatial.png",
+      "sha256": "ef16f1c9d0200b0c11dd97fd424fdf04c0399eb11b1667646bc73e7c8cd5a0be",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 682548,
+      "git_blob_sha1": "31b9d0aa5d58ef3a675435f016043b5d44e7fb4b"
+    },
+    {
+      "id": "DERIVED-scan-audit",
+      "path": "evidence/derived/scan-audit.json",
+      "sha256": "08917240fde80222752b250324ce62b2a5e00236f709e70798166a29ac707c75",
+      "independent_evidence": false,
+      "parents": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "purpose": "navigation/forensic inspection; no repaired geometry",
+      "bytes": 2783,
+      "git_blob_sha1": "d7b95e717ab87c138a48344ca7e068e6862de224"
+    }
+  ],
+  "context_sources": [
+    {
+      "id": "CTX-USER-20261007",
+      "path": "evidence/context/project-context.md",
+      "kind": "visible-user-instructions"
+    },
+    {
+      "id": "CTX-RETRIEVED-20261007",
+      "path": "evidence/context/project-context.md",
+      "kind": "secondary-conversation-summary"
+    },
+    {
+      "id": "CTX-REPO-806819d",
+      "path": "evidence/audit/prior-manifest-806819d.json",
+      "kind": "prior-assistant-baseline"
+    },
+    {
+      "id": "EXT-VZO-INFO",
+      "url": "https://www.verein-zufriedenheit.com/info.html",
+      "retrieved_at": "2026-10-07",
+      "path": "evidence/context/external-context.md"
+    },
+    {
+      "id": "EXT-VZO",
+      "url": "https://www.verein-zufriedenheit.com/wasserrad.html",
+      "retrieved_at": "2026-10-07",
+      "path": "evidence/context/external-context.md"
+    },
+    {
+      "id": "EXT-GEMEINDE",
+      "url": "https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder",
+      "retrieved_at": "2026-10-07",
+      "path": "evidence/context/external-context.md"
+    }
+  ],
+  "unavailable_derivatives": [
+    "Earlier contact sheets mentioned in conversation: no named file/ID and no repository/folder item found. New sheets regenerated from verified originals; no claim that old derivatives were inspected."
+  ],
+  "future_sources": [
+    "new field measurements",
+    "disassembly captures",
+    "individual-part scans",
+    "Gaussian splats (not present)"
   ]
 }

@@ -1,25 +1,22 @@
 # NEXT WORK SESSION
 
-Current branch: `work/pre-disassembly-baseline-20261007`
+Branch: `work/pre-disassembly-baseline-20261007`. Ausgangspunkt dieser Understanding-Session: `806819dc599c640ca6ec9c87e01efc9c322f5892`; danach den aktuellen Branch-Head und Remote-Archivnachweis prüfen.
 
-## Current gate
-**PRE-DISASSEMBLY BASELINE — IN PROGRESS**
+Gate: **BASELINE UNDERSTANDING READY** nach erfolgreichem Writeback/Archivnachweis. Hier stoppen. Keine automatische Modellierungsfortsetzung.
 
-## Source-of-truth rule
-The project is multi-evidence. Do not privilege the Scaniverse cloud/mesh over photographs, drawings, field knowledge or direct measurements.
+## Exakter Fortsetzungszustand
 
-## Next macro sequence
+43 Rohdateien vollständig inventarisiert/analysiert; zehn zuvor nicht registrierte Fotos aufgenommen. Alle bisherigen 33 Hashes stimmen. Originalbytes unverändert unter `evidence/raw/`; nach Checkout mit `python scripts/verify_evidence.py` prüfen. Alle 40 JPEGs, Screenshot, PLY/GLB wurden individuell geprüft. Frühere Contact Sheets nicht erreichbar; neue vollständige Sheets sind Derivate. Historische Chats nur sichtbarer Auszug + sekundäre Zusammenfassung, kein vollständiges Transkript.
 
-1. Transcribe every photographed drawing/notebook page into structured claims.
-2. Link every claim back to its source photo and visible region.
-3. Inspect all six current-wheel photographs component-by-component.
-4. Forensically segment the PLY into wheel / support / ground-vegetation / likely artifacts.
-5. Register PLY/GLB axes to the wheel's mechanical coordinate system.
-6. Cross-check ring diameter and other drawing dimensions against the point cloud.
-7. Expand `assembly.graph.json` from taxonomy to explicit repeated instances.
-8. Produce `geometry.claims.json` with conflicts and confidence.
-9. Convert the resulting unknowns into the final P0 capture sheet.
-10. Stop only at the human-visible verdict: **PRE-DISASSEMBLY BASELINE READY** or **NOT READY**, with concrete missing captures.
+Claims/Quelle/Gruppen: `data/geometry.claims.json`, `data/source-analyses.json`. Ontologie/Graph: `data/components.json`, `data/assembly.graph.json`. Historische und extern erwartete Slots sind keine aktuellen Teile. Aktuelle physischen Instanzenliste bewusst leer. Welle vs Armzone und durchgehender Arm vs Speichenende nicht wieder vermischen.
 
-## Stop boundary
-Do not beautify the viewer or invent missing geometry before this gate.
+Konflikte: `data/conflicts.json`. Feldframe: `data/reference-system.json`; alle physischen Maße/Transforms null. Scan-Dateistatistik ist measured/digital-artifact-only. Achsenkandidat PLY→GLB unterstützt, mechanische Registrierung ausstehend. Keine Rohgeometrie repariert/segmentiert/modelliert.
+
+## Nächste autorisierte Phase erst nach Human Gate
+
+1. Vier Fragen aus `docs/HUMAN-CALIBRATION.md` beantworten lassen; Antworten mit Person/Datum und Foto-/Teilbezug als eigene Claims führen.
+2. Vor/während der Demontage GAP-01 bis GAP-08 aus `docs/CAPTURE-BEFORE-DISASSEMBLY.md` erfassen. Termine/Seiten/Nummern vor Ort bestätigen.
+3. Neue Messungen und Teilbilder unverändert ingestieren, vollständige physische KS-IDs und Partner-/Ereignisregister anlegen. Zeichnungsvarianten erst nach Gegenprüfung auswählen.
+4. Danach separates Registrierungs-/Rekonstruktions-Gate planen; keinen finalen Viewer, Splats oder ästhetisches Modell vorziehen.
+
+Keine Quelle gewinnt automatisch. Fehlende Werte null halten; Konflikte nicht löschen. Bei neuem Material nur betroffene Claims weiterentwickeln, Originale und frühere Interpretation nachvollziehbar behalten.

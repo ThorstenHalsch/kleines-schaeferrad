@@ -1,0 +1,221 @@
+{
+  "path": "/Kleines Schäferrad",
+  "next_cursor": null,
+  "items": [
+    {
+      "filename": "Scaniverse 2026-10-07 173556.glb",
+      "library_file_id": "libfile_b599b5545e588191a70fba343565470b",
+      "bytes": 7166952
+    },
+    {
+      "filename": "Scaniverse 2026-10-07 173556.ply",
+      "library_file_id": "libfile_c9af5667de1c819181f89f72f2662998",
+      "bytes": 1134521
+    },
+    {
+      "filename": "IMG_6863.png",
+      "library_file_id": "libfile_6d391e205838819199c518a113761b43",
+      "bytes": 179991
+    },
+    {
+      "filename": "IMG_6821.jpeg",
+      "library_file_id": "libfile_4e4cc7e644f88191820b3b2d6ef0f751",
+      "bytes": 652049
+    },
+    {
+      "filename": "IMG_6853.jpeg",
+      "library_file_id": "libfile_1dcd38175ca881918b75c2a4b1d153e2",
+      "bytes": 896233
+    },
+    {
+      "filename": "IMG_6850.jpeg",
+      "library_file_id": "libfile_bfd694c50e8c81919ad8fb857825f321",
+      "bytes": 660844
+    },
+    {
+      "filename": "IMG_6848.jpeg",
+      "library_file_id": "libfile_67a2744ceff48191b0e4aa98404693cf",
+      "bytes": 750020
+    },
+    {
+      "filename": "IMG_6820.jpeg",
+      "library_file_id": "libfile_1da10150f7688191acde509580d118f1",
+      "bytes": 664801
+    },
+    {
+      "filename": "IMG_6854.jpeg",
+      "library_file_id": "libfile_7ab5161c3984819181a5e28791804161",
+      "bytes": 532942
+    },
+    {
+      "filename": "IMG_6843.jpeg",
+      "library_file_id": "libfile_efded8848db88191ac1bb4902f877757",
+      "bytes": 564636
+    },
+    {
+      "filename": "IMG_6824.jpeg",
+      "library_file_id": "libfile_2f6a299f973c8191b9fcf43b84c9810e",
+      "bytes": 756961
+    },
+    {
+      "filename": "IMG_6830.jpeg",
+      "library_file_id": "libfile_20016757ae988191a15ea0d76d9c557d",
+      "bytes": 604678
+    },
+    {
+      "filename": "IMG_6828.jpeg",
+      "library_file_id": "libfile_6ddbc9d0f72c8191a98d3286413a1be5",
+      "bytes": 336665
+    },
+    {
+      "filename": "IMG_6823.jpeg",
+      "library_file_id": "libfile_f6d824e5a374819186d3f62db7fcc1f3",
+      "bytes": 569999
+    },
+    {
+      "filename": "IMG_6816.jpeg",
+      "library_file_id": "libfile_7f28d49386808191a7a53e69460d6002",
+      "bytes": 583092
+    },
+    {
+      "filename": "IMG_6841.jpeg",
+      "library_file_id": "libfile_e0b76eaf47a48191b12ab7633ee2a852",
+      "bytes": 570465
+    },
+    {
+      "filename": "IMG_6859.jpeg",
+      "library_file_id": "libfile_876da3dc954081919b9f160ad9edc5dc",
+      "bytes": 728900
+    },
+    {
+      "filename": "IMG_6845.jpeg",
+      "library_file_id": "libfile_eefb7636b1f881918ffe5f4484fcdb13",
+      "bytes": 757953
+    },
+    {
+      "filename": "IMG_6831.jpeg",
+      "library_file_id": "libfile_2cd2b867f3308191adb82c0da105536d",
+      "bytes": 642742
+    },
+    {
+      "filename": "IMG_6847.jpeg",
+      "library_file_id": "libfile_986aee6bbc3881919186cbfa77991ec3",
+      "bytes": 698290
+    },
+    {
+      "filename": "IMG_6840.jpeg",
+      "library_file_id": "libfile_8e16eb2b513081919480f9705c9507d8",
+      "bytes": 577720
+    },
+    {
+      "filename": "IMG_6817.jpeg",
+      "library_file_id": "libfile_b85787ad784081919168cb11fcf45242",
+      "bytes": 585855
+    },
+    {
+      "filename": "IMG_6849.jpeg",
+      "library_file_id": "libfile_4cc66af854c88191bcbc7129990d4d70",
+      "bytes": 745533
+    },
+    {
+      "filename": "IMG_6856.jpeg",
+      "library_file_id": "libfile_152b73ac97008191a8c6551ff252dd69",
+      "bytes": 819887
+    },
+    {
+      "filename": "IMG_6837.jpeg",
+      "library_file_id": "libfile_7f1ec24c9cd8819186ed6f8c5c64106c",
+      "bytes": 666758
+    },
+    {
+      "filename": "IMG_6846.jpeg",
+      "library_file_id": "libfile_c8a0629867908191bf13bf9d270aec44",
+      "bytes": 670869
+    },
+    {
+      "filename": "IMG_6842.jpeg",
+      "library_file_id": "libfile_619c0489288881919f6d12ce625c2ee2",
+      "bytes": 578855
+    },
+    {
+      "filename": "IMG_6838.jpeg",
+      "library_file_id": "libfile_46a8220bc4688191b1e1978c9c54684e",
+      "bytes": 671013
+    },
+    {
+      "filename": "IMG_6860.jpeg",
+      "library_file_id": "libfile_51c0a83133c08191a13943005b58dec7",
+      "bytes": 723424
+    },
+    {
+      "filename": "IMG_6858.jpeg",
+      "library_file_id": "libfile_d31f87f46cd48191bf53eab1af41d805",
+      "bytes": 730724
+    },
+    {
+      "filename": "IMG_6851.jpeg",
+      "library_file_id": "libfile_e9803fee1c3081919304d854bacd5c32",
+      "bytes": 666537
+    },
+    {
+      "filename": "IMG_6852.jpeg",
+      "library_file_id": "libfile_41d7fdacda9c8191a9700c3a804e3542",
+      "bytes": 680615
+    },
+    {
+      "filename": "IMG_6855.jpeg",
+      "library_file_id": "libfile_442a26ff3da48191a5041f80df1b8c09",
+      "bytes": 794918
+    },
+    {
+      "filename": "IMG_6836.jpeg",
+      "library_file_id": "libfile_e2c72e5d2f9481919489fce272c3b0f7",
+      "bytes": 653769
+    },
+    {
+      "filename": "IMG_6839.jpeg",
+      "library_file_id": "libfile_230dda7711608191adb3d0d3224e109c",
+      "bytes": 520541
+    },
+    {
+      "filename": "IMG_6844.jpeg",
+      "library_file_id": "libfile_45bcec6ae02c8191b6f99e152b618a20",
+      "bytes": 572183
+    },
+    {
+      "filename": "IMG_6827.jpeg",
+      "library_file_id": "libfile_fe082eefd9248191bb0ec8febf3a8e63",
+      "bytes": 579107
+    },
+    {
+      "filename": "IMG_6833.jpeg",
+      "library_file_id": "libfile_83adf4b82d9c8191ba8cac9d56c0e4f1",
+      "bytes": 632468
+    },
+    {
+      "filename": "IMG_6818.jpeg",
+      "library_file_id": "libfile_5900c97b14f88191adcc401f97e9d2a4",
+      "bytes": 692267
+    },
+    {
+      "filename": "IMG_6825.jpeg",
+      "library_file_id": "libfile_b12cd2513a0c81919a03916387dbb3d0",
+      "bytes": 751485
+    },
+    {
+      "filename": "IMG_6829.jpeg",
+      "library_file_id": "libfile_d4a4ed852c248191ac53d2d77b06c886",
+      "bytes": 340602
+    },
+    {
+      "filename": "IMG_6861.jpeg",
+      "library_file_id": "libfile_0ef9f8c19bbc81918eec56315df11adb",
+      "bytes": 788482
+    },
+    {
+      "filename": "IMG_6819.jpeg",
+      "library_file_id": "libfile_68255f6430988191a6a2af6fbc8e438b",
+      "bytes": 643786
+    }
+  ]
+}

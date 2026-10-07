@@ -1,0 +1,438 @@
+{
+  "schema": "ks-conflicts/v1",
+  "selection_policy": "No averaging, no newest-wins, no scan-wins; distinguish untestable comparison from contradiction.",
+  "conflicts": [
+    {
+      "id": "CONFLICT-01",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "COMP-KUMPF-STAVES",
+        "COMP-KUMPF-BASE"
+      ],
+      "claim_ids": [
+        "CLAIM-0040",
+        "CLAIM-0041",
+        "CLAIM-0042",
+        "CLAIM-0043",
+        "CLAIM-0044",
+        "CLAIM-0045",
+        "CLAIM-0046",
+        "CLAIM-0047"
+      ],
+      "conflict_claim": "CLAIM-0344",
+      "sources": [
+        "PHOTO-6823"
+      ],
+      "issue": "24 vs 22 mm Dauben; Nutdurchmesser 244/264 vs 248/268",
+      "possible_explanations": [
+        "explicit construction variants",
+        "repair/replacement version unknown"
+      ],
+      "resolution_capture": "GAP-04",
+      "status": "unresolved",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-02",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "COMP-KUMPF-HOOPS",
+        "COMP-FASTENERS"
+      ],
+      "claim_ids": [
+        "CLAIM-0032",
+        "CLAIM-0033",
+        "CLAIM-0034",
+        "CLAIM-0035",
+        "CLAIM-0036",
+        "CLAIM-0037",
+        "CLAIM-0039",
+        "CLAIM-0225",
+        "CLAIM-0226",
+        "CLAIM-0227",
+        "CLAIM-0228",
+        "CLAIM-0229",
+        "CLAIM-0230",
+        "CLAIM-0231",
+        "CLAIM-0232",
+        "CLAIM-0233"
+      ],
+      "conflict_claim": "CLAIM-0345",
+      "sources": [
+        "PHOTO-6821",
+        "PHOTO-6846"
+      ],
+      "issue": "Ringlängen 780/875/968 vs 784/880/972",
+      "possible_explanations": [
+        "different overlap allowance",
+        "manufacturing revision",
+        "different vessel variants"
+      ],
+      "resolution_capture": "GAP-04",
+      "status": "unresolved",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-03",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "COMP-SHAFT",
+        "REF-Welle"
+      ],
+      "claim_ids": [
+        "CLAIM-0001",
+        "CLAIM-0002",
+        "CLAIM-0003",
+        "CLAIM-0004",
+        "CLAIM-0005",
+        "CLAIM-0006",
+        "CLAIM-0007",
+        "CLAIM-0008",
+        "CLAIM-0009",
+        "CLAIM-0057",
+        "CLAIM-0058",
+        "CLAIM-0059",
+        "CLAIM-0060"
+      ],
+      "conflict_claim": "CLAIM-0346",
+      "sources": [
+        "PHOTO-6816",
+        "PHOTO-6827"
+      ],
+      "issue": "370/37 shaft sketch vs generic stock 4.50 m/50 cm, installation 40 cm",
+      "possible_explanations": [
+        "stock allowance vs installed size",
+        "different wheel or revision",
+        "sketch units unconfirmed"
+      ],
+      "resolution_capture": "GAP-01",
+      "status": "unresolved",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-04",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "COMP-RIMS"
+      ],
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "conflict_claim": "CLAIM-0347",
+      "sources": [
+        "PHOTO-6851",
+        "PHOTO-6849"
+      ],
+      "issue": "14 cm Krümmling-Breite vs radial ring difference 15 (213−198)",
+      "possible_explanations": [
+        "axial width vs radial depth",
+        "rounding",
+        "true revision only if same dimension"
+      ],
+      "resolution_capture": "GAP-03",
+      "status": "semantic-dimension-ambiguity-not-proven-contradiction",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-05",
+      "comparison": "drawing-vs-current",
+      "subjects": [
+        "COMP-ARMS",
+        "COMP-SHAFT"
+      ],
+      "claim_ids": [
+        "CLAIM-0001",
+        "CLAIM-0002",
+        "CLAIM-0003",
+        "CLAIM-0004",
+        "CLAIM-0005",
+        "CLAIM-0006",
+        "CLAIM-0007",
+        "CLAIM-0008",
+        "CLAIM-0009",
+        "CLAIM-0154",
+        "CLAIM-0155",
+        "CLAIM-0156",
+        "CLAIM-0157",
+        "CLAIM-0158",
+        "CLAIM-0253",
+        "CLAIM-0254",
+        "CLAIM-0346"
+      ],
+      "conflict_claim": "CLAIM-0348",
+      "sources": [
+        "PHOTO-6816",
+        "PHOTO-6831",
+        "PHOTO-6853"
+      ],
+      "issue": "historical straight/slanted numbers and three mortise passages cannot be assigned to all current arms",
+      "possible_explanations": [
+        "viewpoint/occlusion",
+        "old marks obscured",
+        "replacement members"
+      ],
+      "resolution_capture": "GAP-02",
+      "status": "unresolved",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-06",
+      "comparison": "drawing-vs-current",
+      "subjects": [
+        "COMP-FASTENERS",
+        "COMP-KUMPF-HOOPS"
+      ],
+      "claim_ids": [
+        "CLAIM-0048",
+        "CLAIM-0049",
+        "CLAIM-0050",
+        "CLAIM-0051",
+        "CLAIM-0052",
+        "CLAIM-0053",
+        "CLAIM-0054",
+        "CLAIM-0055",
+        "CLAIM-0056",
+        "CLAIM-0255",
+        "CLAIM-0256",
+        "CLAIM-0259"
+      ],
+      "conflict_claim": "CLAIM-0349",
+      "sources": [
+        "PHOTO-6825",
+        "PHOTO-6827",
+        "PHOTO-6853",
+        "PHOTO-6854"
+      ],
+      "issue": "historical wooden Bänder/keile versus observed metal shaft band and thin vessel hoops",
+      "possible_explanations": [
+        "different fastener functions",
+        "mixed design",
+        "repair possible but not dated"
+      ],
+      "resolution_capture": "GAP-02/GAP-04",
+      "status": "terminology-and-state-difference-not-proven-contradiction",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-07",
+      "comparison": "drawing-vs-current",
+      "subjects": [
+        "COMP-KUEMPFE",
+        "COMP-PADDLES"
+      ],
+      "claim_ids": [
+        "CLAIM-0274",
+        "CLAIM-0275",
+        "CLAIM-0282",
+        "CLAIM-0283",
+        "CLAIM-0329",
+        "CLAIM-0330",
+        "CLAIM-0331"
+      ],
+      "conflict_claim": "CLAIM-0350",
+      "sources": [
+        "EXT-VZO-INFO",
+        "PHOTO-6858",
+        "PHOTO-6859"
+      ],
+      "issue": "published 24 vessels/24 paddles not fully countable in current views",
+      "possible_explanations": [
+        "occlusion",
+        "parts changed or missing unknown"
+      ],
+      "resolution_capture": "GAP-05",
+      "status": "unverified-multiplicity",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-08",
+      "comparison": "photo-vs-scan",
+      "subjects": [
+        "COMP-KUEMPFE",
+        "COMP-RIMS",
+        "COMP-ARMS"
+      ],
+      "claim_ids": [
+        "CLAIM-0258",
+        "CLAIM-0260",
+        "CLAIM-0262",
+        "CLAIM-0273",
+        "CLAIM-0274",
+        "CLAIM-0280",
+        "CLAIM-0350"
+      ],
+      "conflict_claim": "CLAIM-0351",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6858",
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "issue": "photo-visible surfaces absent/discontinuous in capture",
+      "possible_explanations": [
+        "partial acquisition",
+        "occlusion",
+        "motion",
+        "reflective water",
+        "meshing omissions"
+      ],
+      "resolution_capture": "GAP-01/GAP-05",
+      "status": "capture-deficit-not-proof-of-absent-part",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-09",
+      "comparison": "scan-vs-known-dimensions",
+      "subjects": [
+        "COMP-RIMS"
+      ],
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252",
+        "CLAIM-0347"
+      ],
+      "conflict_claim": "CLAIM-0352",
+      "sources": [
+        "PHOTO-6851",
+        "SCAN-20261007-01-PLY"
+      ],
+      "issue": "drawing interpreted diameter 4.26/3.96 m vs full-cloud extent 6.03/7.03/4.50 export units",
+      "possible_explanations": [
+        "bounding box includes environment",
+        "different axes",
+        "no calibrated scale",
+        "partial rim"
+      ],
+      "resolution_capture": "GAP-01",
+      "status": "not-comparable-without-registration-and-field-scale",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-10",
+      "comparison": "scan-vs-scan",
+      "subjects": [
+        "CAPTURE-01"
+      ],
+      "claim_ids": [
+        "CLAIM-0324"
+      ],
+      "conflict_claim": "CLAIM-0353",
+      "sources": [
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "issue": "different XYZ bounds and vertex sets",
+      "possible_explanations": [
+        "axis rotation",
+        "meshing/resampling",
+        "different retained outliers"
+      ],
+      "resolution_capture": "GAP-01",
+      "status": "axis-candidate-supported-remaining-surface-differences",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-11",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "REF-CONTACTSTRIPS",
+        "REF-BOARD"
+      ],
+      "claim_ids": [
+        "CLAIM-0189",
+        "CLAIM-0217",
+        "CLAIM-0218",
+        "CLAIM-0219",
+        "CLAIM-0220",
+        "CLAIM-0221",
+        "CLAIM-0222",
+        "CLAIM-0223",
+        "CLAIM-0224"
+      ],
+      "conflict_claim": "CLAIM-0354",
+      "sources": [
+        "PHOTO-6833",
+        "PHOTO-6845",
+        "PHOTO-6842"
+      ],
+      "issue": "industrial/contact and board templates previously catalogued as Kumpf fasteners / shaft",
+      "possible_explanations": [
+        "reused industrial sheet with adapted handwritten dimensions",
+        "unrelated binder insertion"
+      ],
+      "resolution_capture": "HUMAN-03",
+      "status": "catalogue-correction-complete-physical-assignment-open",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-12",
+      "comparison": "drawing-vs-drawing",
+      "subjects": [
+        "COMP-TROUGH"
+      ],
+      "claim_ids": [
+        "CLAIM-0130",
+        "CLAIM-0131",
+        "CLAIM-0132",
+        "CLAIM-0133",
+        "CLAIM-0134",
+        "CLAIM-0135",
+        "CLAIM-0136",
+        "CLAIM-0137",
+        "CLAIM-0138",
+        "CLAIM-0139",
+        "CLAIM-0140",
+        "CLAIM-0141"
+      ],
+      "conflict_claim": "CLAIM-0355",
+      "sources": [
+        "PHOTO-6828",
+        "PHOTO-6829"
+      ],
+      "issue": "250 overall dimension and parenthesized 244 coexist",
+      "possible_explanations": [
+        "inside/outside difference",
+        "earlier design",
+        "drawing revision"
+      ],
+      "resolution_capture": "GAP-07",
+      "status": "unresolved",
+      "selected_as_built_value": null
+    }
+  ]
+}

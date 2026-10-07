@@ -43,3 +43,4 @@ Dieses Repository rekonstruiert das **Kleine Schäferrad bei Möhrendorf/Oberndo
 Keine Quelle wird stillschweigend zur Wahrheit erklärt. Jede geometrische Aussage erhält Provenienz und Confidence.
 
 Ziel ist nicht nur ein schönes Mesh, sondern ein **reproduzierbarer Digital Twin mit sichtbarer Unsicherheit**.
+

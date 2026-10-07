@@ -1,0 +1,18 @@
+{
+  "source": "PLY positions to GLB vertex nearest-neighbour; no ICP or scale fit",
+  "hypotheses": {
+    "x,z,-y": {
+      "median": 0.017023975995483553,
+      "p90": 0.038271882472435306,
+      "p95": 0.05024326946852696,
+      "within_005": 0.9494835953926923
+    },
+    "x,z,y": {
+      "median": 0.2678680315425212,
+      "p90": 0.8323611370826669,
+      "p95": 1.0263549624046406,
+      "within_005": 0.16729922374006534
+    }
+  },
+  "adopted_mechanical_transform": null
+}

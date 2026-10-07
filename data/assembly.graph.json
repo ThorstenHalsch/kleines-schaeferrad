@@ -1,27 +1,1272 @@
 {
-  "schema": "ks-assembly-graph/v0.1",
-  "status": "hypothesis",
-  "components": [
-    {"id":"COMP-SHAFT","label":"Welle/Achse","confidence":"O/H"},
-    {"id":"COMP-HUB-LAND","label":"Wellen-/Armzone Landseite","confidence":"O/H"},
-    {"id":"COMP-HUB-WATER","label":"Wellen-/Armzone Wasserseite","confidence":"O/H"},
-    {"id":"COMP-ARMS","label":"Arme/Speichen","confidence":"O/H","multiplicity":"TBD"},
-    {"id":"COMP-RIM-LAND","label":"Radkranz Landseite / Krümmlinge","confidence":"O/H"},
-    {"id":"COMP-RIM-WATER","label":"Radkranz Wasserseite / Krümmlinge","confidence":"O/H"},
-    {"id":"COMP-KUEMPFE","label":"Kümpfe/Schöpfgefäße","confidence":"O/H","multiplicity":24},
-    {"id":"COMP-PADDLES","label":"Schaufeln / strömungswirksame Holzteile","confidence":"O/H","multiplicity":"TBD"},
-    {"id":"COMP-FASTENERS","label":"Keile, Nägel, Streifen, Spannringe und weitere Befestiger","confidence":"H/O"},
-    {"id":"COMP-BEARINGS","label":"Lager und Radstatt","confidence":"O"},
-    {"id":"COMP-TROUGH","label":"Auffang-/Gießtrog und Wasserführung","confidence":"O/X"}
+  "schema": "ks-assembly-graph/v1",
+  "status": "baseline-topology-with-explicit-uncertainty",
+  "nodes": [
+    {
+      "id": "COMP-SHAFT",
+      "kind": "physical-part",
+      "label": "Welle/Achse",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-HUB-LAND",
+      "kind": "region-of-shaft",
+      "label": "landseitige Armzone",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-HUB-WATER",
+      "kind": "region-of-shaft",
+      "label": "wasserseitige Armzone",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-ARMS",
+      "kind": "physical-part-family",
+      "label": "durchgehende Arme mit zwei Speichenenden",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-RIM-LAND",
+      "kind": "assembly",
+      "label": "Landkranz",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-RIM-WATER",
+      "kind": "assembly",
+      "label": "Wasserkranz",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-RIMS",
+      "kind": "assembly-family",
+      "label": "Radkränze gemeinsam",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-KRUEMMLINGE",
+      "kind": "physical-part-family",
+      "label": "Krümmlinge",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-KUEMPFE",
+      "kind": "assembly-family",
+      "label": "Kümpfe/Schöpfgefäße",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-KUMPF-STAVES",
+      "kind": "physical-part-family",
+      "label": "Dauben",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-KUMPF-BASE",
+      "kind": "physical-part-family",
+      "label": "Kumpfböden",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-KUMPF-HOOPS",
+      "kind": "physical-part-family",
+      "label": "Kumpf-Spannringe",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-PADDLES",
+      "kind": "physical-part-family",
+      "label": "Schaufeln/Schetter (mapping to confirm)",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-FASTENERS",
+      "kind": "physical-part-family",
+      "label": "Keile, Holzstifte, Metallbefestiger, Bänder",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-BEARINGS",
+      "kind": "joint-family",
+      "label": "Lager-/Zapfenkontaktzonen",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-RADSTATT",
+      "kind": "fixed-assembly",
+      "label": "Radstatt/Tragwerk",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-TROUGH",
+      "kind": "fixed-assembly",
+      "label": "Schöpftrog/Gießtrog",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "COMP-RINNE",
+      "kind": "fixed-assembly",
+      "label": "Rinne hinter Trog / Ableitung",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "TOOL-BENDING-DIE",
+      "kind": "manufacturing-tool",
+      "label": "Biegematrize",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "REF-BOARD",
+      "kind": "unassigned-reference",
+      "label": "Brett-/Daubenvorlage",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "REF-POLYGON",
+      "kind": "unassigned-reference",
+      "label": "Zwölfeck-Hilfsgeometrie",
+      "scope": "ontology-family-or-region"
+    },
+    {
+      "id": "REF-CONTACTSTRIPS",
+      "kind": "unassigned-industrial-reference",
+      "label": "Kontaktstreifen-Vorlage",
+      "scope": "ontology-family-or-region"
+    }
   ],
   "relations": [
-    {"from":"COMP-ARMS","to":"COMP-SHAFT","type":"joined_to","detail":"mortise/wedge geometry TBD"},
-    {"from":"COMP-ARMS","to":"COMP-RIM-LAND","type":"supports"},
-    {"from":"COMP-ARMS","to":"COMP-RIM-WATER","type":"supports"},
-    {"from":"COMP-KUEMPFE","to":"COMP-RIM-LAND","type":"mounted_on","detail":"exact side/pose to verify from current wheel"},
-    {"from":"COMP-PADDLES","to":"COMP-RIM-LAND","type":"mounted_between_or_on","detail":"exact topology TBD"},
-    {"from":"COMP-PADDLES","to":"COMP-RIM-WATER","type":"mounted_between_or_on","detail":"exact topology TBD"},
-    {"from":"COMP-SHAFT","to":"COMP-BEARINGS","type":"rotates_in"},
-    {"from":"COMP-KUEMPFE","to":"COMP-TROUGH","type":"discharges_into"}
-  ]
+    {
+      "id": "EDGE-001",
+      "from": "COMP-HUB-LAND",
+      "to": "COMP-SHAFT",
+      "type": "region_of",
+      "scope": "historical-side-attribution",
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium",
+      "claim_ids": [],
+      "detail": null
+    },
+    {
+      "id": "EDGE-002",
+      "from": "COMP-HUB-WATER",
+      "to": "COMP-SHAFT",
+      "type": "region_of",
+      "scope": "historical-side-attribution",
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium",
+      "claim_ids": [],
+      "detail": null
+    },
+    {
+      "id": "EDGE-003",
+      "from": "COMP-ARMS",
+      "to": "COMP-SHAFT",
+      "type": "passes_into",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6853",
+        "PHOTO-6861"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0253",
+        "CLAIM-0254",
+        "CLAIM-0297",
+        "CLAIM-0300"
+      ],
+      "detail": "Hidden mortise geometry unknown; no adhesive/fixed-joint assumption."
+    },
+    {
+      "id": "EDGE-004",
+      "from": "COMP-ARMS",
+      "to": "COMP-RIM-LAND",
+      "type": "supports",
+      "scope": "side-attribution-pending",
+      "provenance": [
+        "PHOTO-6860",
+        "PHOTO-6861"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0290",
+        "CLAIM-0297"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-005",
+      "from": "COMP-ARMS",
+      "to": "COMP-RIM-WATER",
+      "type": "supports",
+      "scope": "side-attribution-pending",
+      "provenance": [
+        "PHOTO-6860",
+        "PHOTO-6861"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0290",
+        "CLAIM-0297"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-006",
+      "from": "COMP-KRUEMMLINGE",
+      "to": "COMP-RIMS",
+      "type": "segment_of",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6861"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0296",
+        "CLAIM-0301"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-007",
+      "from": "COMP-KUEMPFE",
+      "to": "COMP-RIM-LAND",
+      "type": "mounted_on",
+      "scope": "land-side-calibration-pending",
+      "provenance": [
+        "PHOTO-6831",
+        "PHOTO-6858"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0152",
+        "CLAIM-0274"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-008",
+      "from": "COMP-KUMPF-STAVES",
+      "to": "COMP-KUEMPFE",
+      "type": "wall_of",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6854"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0258",
+        "CLAIM-0260",
+        "CLAIM-0262"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-009",
+      "from": "COMP-KUMPF-HOOPS",
+      "to": "COMP-KUMPF-STAVES",
+      "type": "encircles",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6854"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0259"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-010",
+      "from": "COMP-KUMPF-BASE",
+      "to": "COMP-KUEMPFE",
+      "type": "bottom_of",
+      "scope": "historical-hidden-joint",
+      "provenance": [
+        "PHOTO-6823"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0042",
+        "CLAIM-0043",
+        "CLAIM-0044",
+        "CLAIM-0045",
+        "CLAIM-0046",
+        "CLAIM-0047"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-011",
+      "from": "COMP-PADDLES",
+      "to": "COMP-RIMS",
+      "type": "spans_ring_regions",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6860"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0289",
+        "CLAIM-0291",
+        "CLAIM-0294"
+      ],
+      "detail": "Exact attachment partners, angular phase and fasteners unknown."
+    },
+    {
+      "id": "EDGE-012",
+      "from": "COMP-FASTENERS",
+      "to": "COMP-ARMS",
+      "type": "wedges_at_shaft",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6853"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0254",
+        "CLAIM-0255",
+        "CLAIM-0256"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-013",
+      "from": "COMP-FASTENERS",
+      "to": "COMP-KUEMPFE",
+      "type": "pins_at_rim",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6854"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0258",
+        "CLAIM-0260",
+        "CLAIM-0262"
+      ],
+      "detail": "Visible heads; hidden insertion/contact not established."
+    },
+    {
+      "id": "EDGE-014",
+      "from": "COMP-SHAFT",
+      "to": "COMP-BEARINGS",
+      "type": "rotates_in",
+      "scope": "external-description",
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0325"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-015",
+      "from": "COMP-BEARINGS",
+      "to": "COMP-RADSTATT",
+      "type": "located_in",
+      "scope": "inferred-occluded-contact",
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "evidence_class": "inferred",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0278",
+        "CLAIM-0279"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-016",
+      "from": "COMP-KUEMPFE",
+      "to": "COMP-TROUGH",
+      "type": "discharges_towards",
+      "scope": "functional-inference",
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "medium",
+      "claim_ids": [
+        "CLAIM-0274",
+        "CLAIM-0276"
+      ],
+      "detail": null
+    },
+    {
+      "id": "EDGE-017",
+      "from": "COMP-TROUGH",
+      "to": "COMP-RINNE",
+      "type": "feeds",
+      "scope": "supported-topology",
+      "provenance": [
+        "PHOTO-6858",
+        "PHOTO-6830"
+      ],
+      "evidence_class": "observed-current",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0142",
+        "CLAIM-0143",
+        "CLAIM-0144",
+        "CLAIM-0145",
+        "CLAIM-0146",
+        "CLAIM-0147",
+        "CLAIM-0148",
+        "CLAIM-0149",
+        "CLAIM-0150",
+        "CLAIM-0151",
+        "CLAIM-0276",
+        "CLAIM-0277"
+      ],
+      "detail": null
+    }
+  ],
+  "instances": [
+    {
+      "id": "HIST-ARM-LAND-1-4",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        1,
+        4
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-ARM-LAND-2-5",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        2,
+        5
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-ARM-LAND-3-6",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        3,
+        6
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-KRU-LAND-01",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 1,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-LAND-02",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 2,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-LAND-03",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 3,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-LAND-04",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 4,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-LAND-05",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 5,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-LAND-06",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 6,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-ARM-WATER-1-4",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        1,
+        4
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-ARM-WATER-2-5",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        2,
+        5
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-ARM-WATER-3-6",
+      "family": "COMP-ARMS",
+      "status": "historical-design-slot-not-current-instance",
+      "end_labels": [
+        3,
+        6
+      ],
+      "provenance": [
+        "PHOTO-6820",
+        "PHOTO-6831"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "high"
+    },
+    {
+      "id": "HIST-KRU-WATER-01",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 1,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-WATER-02",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 2,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-WATER-03",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 3,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-WATER-04",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 4,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-WATER-05",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 5,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "HIST-KRU-WATER-06",
+      "family": "COMP-KRUEMMLINGE",
+      "status": "historical-position-slot-not-current-instance",
+      "ordinal": 6,
+      "provenance": [
+        "PHOTO-6831",
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "historical-drawing",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-01",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 1,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-02",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 2,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-03",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 3,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-04",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 4,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-05",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 5,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-06",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 6,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-07",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 7,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-08",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 8,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-09",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 9,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-10",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 10,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-11",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 11,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-12",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 12,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-13",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 13,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-14",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 14,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-15",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 15,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-16",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 16,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-17",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 17,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-18",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 18,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-19",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 19,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-20",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 20,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-21",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 21,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-22",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 22,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-23",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 23,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-KUM-24",
+      "family": "COMP-KUEMPFE",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 24,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-01",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 1,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-02",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 2,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-03",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 3,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-04",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 4,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-05",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 5,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-06",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 6,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-07",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 7,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-08",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 8,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-09",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 9,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-10",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 10,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-11",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 11,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-12",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 12,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-13",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 13,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-14",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 14,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-15",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 15,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-16",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 16,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-17",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 17,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-18",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 18,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-19",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 19,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-20",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 20,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-21",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 21,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-22",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 22,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-23",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 23,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXPECTED-PAD-24",
+      "family": "COMP-PADDLES",
+      "status": "external-expected-slot-not-identified-current-part",
+      "ordinal": 24,
+      "pose": null,
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "evidence_class": "external-context",
+      "confidence": "medium"
+    }
+  ],
+  "physical_instance_registry": [],
+  "instance_rule": "Expected/historical slots must never be exported as verified current inventory. Preserve old marks and assign new physical IDs only at field capture. Arms are 3 full pieces/6 ends per ring, not 6 assumed independent pieces.",
+  "historical_installation_constraints": [
+    {
+      "before": "arms labelled 1/4",
+      "after": "other arms of same side",
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "scope": "historical-sequence",
+      "current_verified": false
+    }
+  ],
+  "coordinate_system_ref": "data/reference-system.json"
 }

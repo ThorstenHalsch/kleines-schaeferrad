@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "originals": 43,
+  "prior_manifest_exact_matches": 33,
+  "newly_catalogued_originals": 10,
+  "source_analyses": 43,
+  "claims": 355,
+  "components": 22,
+  "assembly_relations": 17,
+  "historical_or_expected_slots": 66,
+  "conflicts": 12,
+  "knowledge_gaps": 8,
+  "checks": [
+    "Original byte size, SHA-256 and Git blob SHA-1",
+    "All originals individually reviewed",
+    "All source/claim/graph/conflict references valid",
+    "Unique original content hashes",
+    "No inferred values promoted to current metric geometry"
+  ],
+  "remote_writeback": "Commit tree must match locally computed tree; branch head verified after update."
+}

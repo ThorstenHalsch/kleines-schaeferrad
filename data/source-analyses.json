@@ -1,0 +1,1168 @@
+{
+  "schema": "ks-source-analyses/v1",
+  "sources": [
+    {
+      "source_id": "PHOTO-6816",
+      "document_group": "DOC-SHAFT",
+      "title": "Wellen-Längsskizze mit drei Arm-Durchtritten je Zone",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0001",
+        "CLAIM-0002",
+        "CLAIM-0003",
+        "CLAIM-0004",
+        "CLAIM-0005",
+        "CLAIM-0006",
+        "CLAIM-0007",
+        "CLAIM-0008",
+        "CLAIM-0009"
+      ],
+      "unresolved": [
+        "Einheiten fehlen auf dem Blatt; Zentimeter sind plausibel, aber nicht als Messwert freigegeben.",
+        "Querschnitt ist schematisch; verdeckte Loch-/Keilform nicht maßhaltig ableiten."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6817",
+      "document_group": "DOC-SHAFT",
+      "title": "Wellen-Längsskizze mit drei Arm-Durchtritten je Zone",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0001",
+        "CLAIM-0002",
+        "CLAIM-0003",
+        "CLAIM-0004",
+        "CLAIM-0005",
+        "CLAIM-0006",
+        "CLAIM-0007",
+        "CLAIM-0008",
+        "CLAIM-0009"
+      ],
+      "unresolved": [
+        "Einheiten fehlen auf dem Blatt; Zentimeter sind plausibel, aber nicht als Messwert freigegeben.",
+        "Querschnitt ist schematisch; verdeckte Loch-/Keilform nicht maßhaltig ableiten."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6818",
+      "document_group": "DOC-ORDER-OLD",
+      "title": "Arme und Krümmling Reihenfolge — gelber Zettel",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0010",
+        "CLAIM-0011",
+        "CLAIM-0012",
+        "CLAIM-0013",
+        "CLAIM-0014",
+        "CLAIM-0015",
+        "CLAIM-0016",
+        "CLAIM-0017"
+      ],
+      "unresolved": [
+        "Spiegelung folgt den verschiedenen Ansichten; keine reale Drehrichtung daraus ableiten.",
+        "Strichmarken sind Kennzeichen, keine zusätzlichen Stückzahlen."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6819",
+      "document_group": "DOC-ORDER-OLD",
+      "title": "Arme und Krümmling Reihenfolge — gelber Zettel",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0010",
+        "CLAIM-0011",
+        "CLAIM-0012",
+        "CLAIM-0013",
+        "CLAIM-0014",
+        "CLAIM-0015",
+        "CLAIM-0016",
+        "CLAIM-0017"
+      ],
+      "unresolved": [
+        "Spiegelung folgt den verschiedenen Ansichten; keine reale Drehrichtung daraus ableiten.",
+        "Strichmarken sind Kennzeichen, keine zusätzlichen Stückzahlen."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6820",
+      "document_group": "DOC-MOUNT-OLD",
+      "title": "Axiale Armfolge und Schlusskeile",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0018",
+        "CLAIM-0019",
+        "CLAIM-0020",
+        "CLAIM-0021",
+        "CLAIM-0022",
+        "CLAIM-0023"
+      ],
+      "unresolved": [
+        "Von welcher axialen Blickrichtung die Reihenfolgeliste zu lesen ist, muss der Monteur zeigen.",
+        "Ausrichten/Kumpfnagel-Maß-Zeile teilweise unscharf; keine Zahlen daraus erfinden."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6821",
+      "document_group": "DOC-KUMPF-FIELD",
+      "title": "Kumpf-/Nagel-/Ringnotizen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0024",
+        "CLAIM-0025",
+        "CLAIM-0026",
+        "CLAIM-0027",
+        "CLAIM-0028",
+        "CLAIM-0029",
+        "CLAIM-0030",
+        "CLAIM-0031",
+        "CLAIM-0032",
+        "CLAIM-0033",
+        "CLAIM-0034",
+        "CLAIM-0035",
+        "CLAIM-0036",
+        "CLAIM-0037",
+        "CLAIM-0038",
+        "CLAIM-0039"
+      ],
+      "unresolved": [
+        "Nagellängen 80/65 und 115/140 sind sichtbar, aber Bezugsflächen und Einheiten nicht durchgehend gesichert.",
+        "Ringwerte weichen von späterem Spannringblatt ab.",
+        "Unterste Skizze ist beschädigt; keine vollständige Geometrie ablesbar."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6823",
+      "document_group": "DOC-STAVE-VARIANTS",
+      "title": "Dauben-/Nutvarianten",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0040",
+        "CLAIM-0041",
+        "CLAIM-0042",
+        "CLAIM-0043",
+        "CLAIM-0044",
+        "CLAIM-0045",
+        "CLAIM-0046",
+        "CLAIM-0047"
+      ],
+      "unresolved": [
+        "Zwei explizite Varianten beibehalten; keine Mittelung.",
+        "Keine Dokumentation, welche Variante 2026 eingebaut ist."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6824",
+      "document_group": "DOC-FASTENER-LIST",
+      "title": "Stückliste Keile, Nägel und Bänder",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0048",
+        "CLAIM-0049",
+        "CLAIM-0050",
+        "CLAIM-0051",
+        "CLAIM-0052",
+        "CLAIM-0053",
+        "CLAIM-0054",
+        "CLAIM-0055",
+        "CLAIM-0056"
+      ],
+      "unresolved": [
+        "Bänder hier nicht automatisch mit den Metall-Spannringen am Kumpf gleichsetzen.",
+        "Bretterskeile und Zwicker: lokale Schreibweise/Funktion vor Ort klären."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6825",
+      "document_group": "DOC-FASTENER-LIST",
+      "title": "Stückliste Keile, Nägel und Bänder",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0048",
+        "CLAIM-0049",
+        "CLAIM-0050",
+        "CLAIM-0051",
+        "CLAIM-0052",
+        "CLAIM-0053",
+        "CLAIM-0054",
+        "CLAIM-0055",
+        "CLAIM-0056"
+      ],
+      "unresolved": [
+        "Bänder hier nicht automatisch mit den Metall-Spannringen am Kumpf gleichsetzen.",
+        "Bretterskeile und Zwicker: lokale Schreibweise/Funktion vor Ort klären."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6827",
+      "document_group": "DOC-STOCK-TABLE",
+      "title": "Empfohlene Holzmaße und -längen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0057",
+        "CLAIM-0058",
+        "CLAIM-0059",
+        "CLAIM-0060",
+        "CLAIM-0061",
+        "CLAIM-0062",
+        "CLAIM-0063",
+        "CLAIM-0064",
+        "CLAIM-0065",
+        "CLAIM-0066",
+        "CLAIM-0067",
+        "CLAIM-0068",
+        "CLAIM-0069",
+        "CLAIM-0070",
+        "CLAIM-0071",
+        "CLAIM-0072",
+        "CLAIM-0073",
+        "CLAIM-0074",
+        "CLAIM-0075",
+        "CLAIM-0076",
+        "CLAIM-0077",
+        "CLAIM-0078",
+        "CLAIM-0079",
+        "CLAIM-0080",
+        "CLAIM-0081",
+        "CLAIM-0082",
+        "CLAIM-0083",
+        "CLAIM-0084",
+        "CLAIM-0085",
+        "CLAIM-0086",
+        "CLAIM-0087",
+        "CLAIM-0088",
+        "CLAIM-0089",
+        "CLAIM-0090",
+        "CLAIM-0091",
+        "CLAIM-0092",
+        "CLAIM-0093",
+        "CLAIM-0094",
+        "CLAIM-0095",
+        "CLAIM-0096",
+        "CLAIM-0097",
+        "CLAIM-0098",
+        "CLAIM-0099",
+        "CLAIM-0100",
+        "CLAIM-0101",
+        "CLAIM-0102",
+        "CLAIM-0103",
+        "CLAIM-0104",
+        "CLAIM-0105",
+        "CLAIM-0106",
+        "CLAIM-0107",
+        "CLAIM-0108",
+        "CLAIM-0109",
+        "CLAIM-0110",
+        "CLAIM-0111",
+        "CLAIM-0112",
+        "CLAIM-0113",
+        "CLAIM-0114",
+        "CLAIM-0115",
+        "CLAIM-0116",
+        "CLAIM-0117",
+        "CLAIM-0118",
+        "CLAIM-0119",
+        "CLAIM-0120",
+        "CLAIM-0121",
+        "CLAIM-0122",
+        "CLAIM-0123",
+        "CLAIM-0124",
+        "CLAIM-0125",
+        "CLAIM-0126",
+        "CLAIM-0127",
+        "CLAIM-0128",
+        "CLAIM-0129"
+      ],
+      "unresolved": [
+        "Allgemeine Beschaffungs-/Empfehlungstabelle für Wasserräder, keine Ist-Stückliste dieses Rades.",
+        "Spalte Durchmesser enthält auch Brettdicken; nicht pauschal als kreisförmigen Durchmesser interpretieren.",
+        "Holzarten am realen Rad sind fotografisch nicht sicher bestimmbar."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6828",
+      "document_group": "DOC-TROUGH",
+      "title": "Schöpftrog Kl. Schäferrad",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0130",
+        "CLAIM-0131",
+        "CLAIM-0132",
+        "CLAIM-0133",
+        "CLAIM-0134",
+        "CLAIM-0135",
+        "CLAIM-0136",
+        "CLAIM-0137",
+        "CLAIM-0138",
+        "CLAIM-0139",
+        "CLAIM-0140",
+        "CLAIM-0141"
+      ],
+      "unresolved": [
+        "Einheiten der linearen Maße fehlen; cm naheliegend, nicht gemessen.",
+        "180/24? im Mittelbereich überlagert; Zusammenhang zum Auslass nicht entscheiden.",
+        "Alternative 244 und 250 nicht stillschweigend korrigieren."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6829",
+      "document_group": "DOC-TROUGH",
+      "title": "Schöpftrog Kl. Schäferrad",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0130",
+        "CLAIM-0131",
+        "CLAIM-0132",
+        "CLAIM-0133",
+        "CLAIM-0134",
+        "CLAIM-0135",
+        "CLAIM-0136",
+        "CLAIM-0137",
+        "CLAIM-0138",
+        "CLAIM-0139",
+        "CLAIM-0140",
+        "CLAIM-0141"
+      ],
+      "unresolved": [
+        "Einheiten der linearen Maße fehlen; cm naheliegend, nicht gemessen.",
+        "180/24? im Mittelbereich überlagert; Zusammenhang zum Auslass nicht entscheiden.",
+        "Alternative 244 und 250 nicht stillschweigend korrigieren."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6830",
+      "document_group": "DOC-RINNE",
+      "title": "Rinne hinter Trog",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0142",
+        "CLAIM-0143",
+        "CLAIM-0144",
+        "CLAIM-0145",
+        "CLAIM-0146",
+        "CLAIM-0147",
+        "CLAIM-0148",
+        "CLAIM-0149",
+        "CLAIM-0150",
+        "CLAIM-0151"
+      ],
+      "unresolved": [
+        "Mehrere Längen referenzieren unterschiedliche Konturen; nicht gleichsetzen.",
+        "25 + 5 cm, 18 und 20–1 Randnotizen nicht vollständig in eine Schnittgeometrie auflösbar."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6831",
+      "document_group": "DOC-ORDER-NEW",
+      "title": "Neufassung Arm-/Krümmling-Reihenfolge",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "related-rewritten-document",
+      "claim_ids": [
+        "CLAIM-0152",
+        "CLAIM-0153",
+        "CLAIM-0154",
+        "CLAIM-0155",
+        "CLAIM-0156",
+        "CLAIM-0157",
+        "CLAIM-0158"
+      ],
+      "unresolved": [
+        "Krümmlingkennzeichen und Armzahlen müssen im realen Bestand erneut zugeordnet werden.",
+        "Neufassung ist ein eigenes Dokument derselben Überlieferung, keine unabhängige Feldmessung."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6833",
+      "document_group": "DOC-CONTACTSTRIPS",
+      "title": "Kontaktstreifen mit handschriftlicher Maßanpassung",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0159",
+        "CLAIM-0160",
+        "CLAIM-0161",
+        "CLAIM-0162",
+        "CLAIM-0163",
+        "CLAIM-0164",
+        "CLAIM-0165",
+        "CLAIM-0166",
+        "CLAIM-0167",
+        "CLAIM-0168",
+        "CLAIM-0169",
+        "CLAIM-0170",
+        "CLAIM-0171",
+        "CLAIM-0172",
+        "CLAIM-0173",
+        "CLAIM-0174",
+        "CLAIM-0175",
+        "CLAIM-0176",
+        "CLAIM-0177",
+        "CLAIM-0178",
+        "CLAIM-0179",
+        "CLAIM-0180",
+        "CLAIM-0181",
+        "CLAIM-0182",
+        "CLAIM-0183",
+        "CLAIM-0184",
+        "CLAIM-0185",
+        "CLAIM-0186",
+        "CLAIM-0187",
+        "CLAIM-0188",
+        "CLAIM-0189"
+      ],
+      "unresolved": [
+        "Original benennt industrielle Kontaktstreifen und Cu/MS63/St-Materialien; Zuordnung zum Wasserrad ist unbewiesen.",
+        "Gelbe Annotationen nicht automatisch als freigegebene Revision oder Kumpf-Befestiger behandeln.",
+        "Alte/annotierte Maße parallel führen; Schriftüberlagerung vorhanden."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6845",
+      "document_group": "DOC-CONTACTSTRIPS",
+      "title": "Kontaktstreifen mit handschriftlicher Maßanpassung",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0159",
+        "CLAIM-0160",
+        "CLAIM-0161",
+        "CLAIM-0162",
+        "CLAIM-0163",
+        "CLAIM-0164",
+        "CLAIM-0165",
+        "CLAIM-0166",
+        "CLAIM-0167",
+        "CLAIM-0168",
+        "CLAIM-0169",
+        "CLAIM-0170",
+        "CLAIM-0171",
+        "CLAIM-0172",
+        "CLAIM-0173",
+        "CLAIM-0174",
+        "CLAIM-0175",
+        "CLAIM-0176",
+        "CLAIM-0177",
+        "CLAIM-0178",
+        "CLAIM-0179",
+        "CLAIM-0180",
+        "CLAIM-0181",
+        "CLAIM-0182",
+        "CLAIM-0183",
+        "CLAIM-0184",
+        "CLAIM-0185",
+        "CLAIM-0186",
+        "CLAIM-0187",
+        "CLAIM-0188",
+        "CLAIM-0189"
+      ],
+      "unresolved": [
+        "Original benennt industrielle Kontaktstreifen und Cu/MS63/St-Materialien; Zuordnung zum Wasserrad ist unbewiesen.",
+        "Gelbe Annotationen nicht automatisch als freigegebene Revision oder Kumpf-Befestiger behandeln.",
+        "Alte/annotierte Maße parallel führen; Schriftüberlagerung vorhanden."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6836",
+      "document_group": "DOC-BENDING-DIE",
+      "title": "Biegematrize, Fertigungshilfsmittel",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0190",
+        "CLAIM-0191",
+        "CLAIM-0192",
+        "CLAIM-0193",
+        "CLAIM-0194",
+        "CLAIM-0195",
+        "CLAIM-0196",
+        "CLAIM-0197",
+        "CLAIM-0198",
+        "CLAIM-0199",
+        "CLAIM-0200"
+      ],
+      "unresolved": [
+        "Schlüsselweiten-Notiz lesbar als 83/96,5/109 SW, erste Zahl mäßig sicher.",
+        "Kein montiertes Radbauteil; Werkzeug ↔ Spannring als mögliche Fertigungsbeziehung, nicht Assembly-Kante."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6837",
+      "document_group": "DOC-BENDING-DIE",
+      "title": "Biegematrize, Fertigungshilfsmittel",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0190",
+        "CLAIM-0191",
+        "CLAIM-0192",
+        "CLAIM-0193",
+        "CLAIM-0194",
+        "CLAIM-0195",
+        "CLAIM-0196",
+        "CLAIM-0197",
+        "CLAIM-0198",
+        "CLAIM-0199",
+        "CLAIM-0200"
+      ],
+      "unresolved": [
+        "Schlüsselweiten-Notiz lesbar als 83/96,5/109 SW, erste Zahl mäßig sicher.",
+        "Kein montiertes Radbauteil; Werkzeug ↔ Spannring als mögliche Fertigungsbeziehung, nicht Assembly-Kante."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6838",
+      "document_group": "DOC-LAYOUT-OLD",
+      "title": "Kreis-/Zwölfeck-Konstruktionsskizze",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0201",
+        "CLAIM-0202",
+        "CLAIM-0203"
+      ],
+      "unresolved": [
+        "Durchgestrichene Werte bleiben als überlieferte Revision sichtbar; keine verlässliche Chronologie.",
+        "Zuordnung zur Kumpf-/Ringfertigung plausibel, nicht zum großen Radkranz erzwingen."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6840",
+      "document_group": "DOC-LAYOUT-OLD",
+      "title": "Kreis-/Zwölfeck-Konstruktionsskizze",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0201",
+        "CLAIM-0202",
+        "CLAIM-0203"
+      ],
+      "unresolved": [
+        "Durchgestrichene Werte bleiben als überlieferte Revision sichtbar; keine verlässliche Chronologie.",
+        "Zuordnung zur Kumpf-/Ringfertigung plausibel, nicht zum großen Radkranz erzwingen."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6839",
+      "document_group": "DOC-CIRCULAR-NOTES",
+      "title": "Kleine und mittlere Kümpfe: Boden-/Deckel-Notizen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0204",
+        "CLAIM-0205",
+        "CLAIM-0206",
+        "CLAIM-0207",
+        "CLAIM-0208",
+        "CLAIM-0209",
+        "CLAIM-0210",
+        "CLAIM-0211"
+      ],
+      "unresolved": [
+        "Einheiten und Kumpfvariante sind unbestätigt.",
+        "Randnotiz 1,5 St... abgeschnitten; keine Stückzahl transkribieren.",
+        "Blatt ist zusätzlich im Foto 6840 sichtbar, nicht doppelt zählen."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6841",
+      "document_group": "DOC-POLYGON",
+      "title": "12-kantige Variante mit zwei Maßsätzen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0212",
+        "CLAIM-0213",
+        "CLAIM-0214",
+        "CLAIM-0215",
+        "CLAIM-0216"
+      ],
+      "unresolved": [
+        "Mögliche Kumpf-/Spannring-Hilfsgeometrie, Identität offen.",
+        "Kein Beleg für zwölf Krümmlinge je Radkranz."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6842",
+      "document_group": "DOC-BOARD",
+      "title": "Brettprofil auf technischer Vorlage",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0217",
+        "CLAIM-0218",
+        "CLAIM-0219",
+        "CLAIM-0220",
+        "CLAIM-0221",
+        "CLAIM-0222",
+        "CLAIM-0223",
+        "CLAIM-0224"
+      ],
+      "unresolved": [
+        "Brett-/Daubenvorlage wahrscheinlich; kein Nachweis einer Welle.",
+        "CAD-Text und handschriftliche Skalierung nicht zusammen als Fertigmaße lesen.",
+        "Titel/Materialfelder sind leer bzw. Vorlage; genaue Verwendung erfordert Human Calibration."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6843",
+      "document_group": "DOC-BOARD",
+      "title": "Brettprofil auf technischer Vorlage",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0217",
+        "CLAIM-0218",
+        "CLAIM-0219",
+        "CLAIM-0220",
+        "CLAIM-0221",
+        "CLAIM-0222",
+        "CLAIM-0223",
+        "CLAIM-0224"
+      ],
+      "unresolved": [
+        "Brett-/Daubenvorlage wahrscheinlich; kein Nachweis einer Welle.",
+        "CAD-Text und handschriftliche Skalierung nicht zusammen als Fertigmaße lesen.",
+        "Titel/Materialfelder sind leer bzw. Vorlage; genaue Verwendung erfordert Human Calibration."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6844",
+      "document_group": "DOC-BOARD",
+      "title": "Brettprofil auf technischer Vorlage",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0217",
+        "CLAIM-0218",
+        "CLAIM-0219",
+        "CLAIM-0220",
+        "CLAIM-0221",
+        "CLAIM-0222",
+        "CLAIM-0223",
+        "CLAIM-0224"
+      ],
+      "unresolved": [
+        "Brett-/Daubenvorlage wahrscheinlich; kein Nachweis einer Welle.",
+        "CAD-Text und handschriftliche Skalierung nicht zusammen als Fertigmaße lesen.",
+        "Titel/Materialfelder sind leer bzw. Vorlage; genaue Verwendung erfordert Human Calibration."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6846",
+      "document_group": "DOC-HOOPS",
+      "title": "Spannringe für Kümpfe",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0225",
+        "CLAIM-0226",
+        "CLAIM-0227",
+        "CLAIM-0228",
+        "CLAIM-0229",
+        "CLAIM-0230",
+        "CLAIM-0231",
+        "CLAIM-0232",
+        "CLAIM-0233"
+      ],
+      "unresolved": [
+        "Einheiten nicht separat ausgewiesen; mm als Fertigungszeichnung plausibel, noch kein Ist-Maß.",
+        "15 Stück je Länge ist Fertigungsauftrag, nicht 15 Kümpfe am eingebauten Rad.",
+        "Materialangabe ist keine sichere Werkstoffidentifikation am Foto."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6847",
+      "document_group": "DOC-HOOPS",
+      "title": "Spannringe für Kümpfe",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "same-sheet-different-photograph",
+      "claim_ids": [
+        "CLAIM-0225",
+        "CLAIM-0226",
+        "CLAIM-0227",
+        "CLAIM-0228",
+        "CLAIM-0229",
+        "CLAIM-0230",
+        "CLAIM-0231",
+        "CLAIM-0232",
+        "CLAIM-0233"
+      ],
+      "unresolved": [
+        "Einheiten nicht separat ausgewiesen; mm als Fertigungszeichnung plausibel, noch kein Ist-Maß.",
+        "15 Stück je Länge ist Fertigungsauftrag, nicht 15 Kümpfe am eingebauten Rad.",
+        "Materialangabe ist keine sichere Werkstoffidentifikation am Foto."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6848",
+      "document_group": "DOC-RIM-DETAILED",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "overlapping-views-of-one-drawing",
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "unresolved": [
+        "426/396 und 213/198 sind wohl cm; Umrechnung zu 4,26/3,96 m ist nur abgeleitete Interpretation.",
+        "14 cm Krümmling-Breite und 15 radialer Unterschied können verschiedene Dimensionen meinen.",
+        "Maßtext 45 kann 4,5 sein; Strich/Komma aus Foto nicht zweifelsfrei.",
+        "Teilungslinien sind noch keine gezählten aktuellen Kümpfe/Schaufeln."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6849",
+      "document_group": "DOC-RIM-DETAILED",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "overlapping-views-of-one-drawing",
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "unresolved": [
+        "426/396 und 213/198 sind wohl cm; Umrechnung zu 4,26/3,96 m ist nur abgeleitete Interpretation.",
+        "14 cm Krümmling-Breite und 15 radialer Unterschied können verschiedene Dimensionen meinen.",
+        "Maßtext 45 kann 4,5 sein; Strich/Komma aus Foto nicht zweifelsfrei.",
+        "Teilungslinien sind noch keine gezählten aktuellen Kümpfe/Schaufeln."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6850",
+      "document_group": "DOC-RIM-DETAILED",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "overlapping-views-of-one-drawing",
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "unresolved": [
+        "426/396 und 213/198 sind wohl cm; Umrechnung zu 4,26/3,96 m ist nur abgeleitete Interpretation.",
+        "14 cm Krümmling-Breite und 15 radialer Unterschied können verschiedene Dimensionen meinen.",
+        "Maßtext 45 kann 4,5 sein; Strich/Komma aus Foto nicht zweifelsfrei.",
+        "Teilungslinien sind noch keine gezählten aktuellen Kümpfe/Schaufeln."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6851",
+      "document_group": "DOC-RIM-DETAILED",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "overlapping-views-of-one-drawing",
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "unresolved": [
+        "426/396 und 213/198 sind wohl cm; Umrechnung zu 4,26/3,96 m ist nur abgeleitete Interpretation.",
+        "14 cm Krümmling-Breite und 15 radialer Unterschied können verschiedene Dimensionen meinen.",
+        "Maßtext 45 kann 4,5 sein; Strich/Komma aus Foto nicht zweifelsfrei.",
+        "Teilungslinien sind noch keine gezählten aktuellen Kümpfe/Schaufeln."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6852",
+      "document_group": "DOC-RIM-DETAILED",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "review": "original image individually visually inspected",
+      "status": "analyzed-with-explicit-legibility-limits",
+      "relation_to_group": "overlapping-views-of-one-drawing",
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252"
+      ],
+      "unresolved": [
+        "426/396 und 213/198 sind wohl cm; Umrechnung zu 4,26/3,96 m ist nur abgeleitete Interpretation.",
+        "14 cm Krümmling-Breite und 15 radialer Unterschied können verschiedene Dimensionen meinen.",
+        "Maßtext 45 kann 4,5 sein; Strich/Komma aus Foto nicht zweifelsfrei.",
+        "Teilungslinien sind noch keine gezählten aktuellen Kümpfe/Schaufeln."
+      ],
+      "current_geometry_authority": false
+    },
+    {
+      "source_id": "PHOTO-6853",
+      "document_group": null,
+      "title": "Beide Armzonen und Wellenband",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0253",
+        "CLAIM-0254",
+        "CLAIM-0255",
+        "CLAIM-0256",
+        "CLAIM-0257"
+      ],
+      "unresolved": [
+        "Mortiseninnenseiten, Durchtrittsreihenfolge und Keiltiefe verdeckt.",
+        "Metallband sichtbar; Zeitpunkt/Funktion als Reparatur unbewiesen."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6854",
+      "document_group": null,
+      "title": "Kümpfe im Detail",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0258",
+        "CLAIM-0259",
+        "CLAIM-0260",
+        "CLAIM-0261",
+        "CLAIM-0262"
+      ],
+      "unresolved": [
+        "Innere Böden/Nuten liegen im Schatten.",
+        "Gefäßzahl, Daubenzahl, Bandmaterial, Kontaktflächen und Lochdurchmesser nicht bestimmen."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6855",
+      "document_group": null,
+      "title": "Ferner Wellen-/Armbereich",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0263",
+        "CLAIM-0264",
+        "CLAIM-0265",
+        "CLAIM-0266",
+        "CLAIM-0267"
+      ],
+      "unresolved": [
+        "Nahe Armzone abgeschnitten; kein vollständiges Lager sichtbar.",
+        "Helle/dunkle Holzbereiche belegen allein weder Reparaturalter noch Holzart."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6856",
+      "document_group": null,
+      "title": "Ferner Wellen-/Armbereich",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0268",
+        "CLAIM-0269",
+        "CLAIM-0270",
+        "CLAIM-0271",
+        "CLAIM-0272"
+      ],
+      "unresolved": [
+        "Nahe Armzone abgeschnitten; kein vollständiges Lager sichtbar.",
+        "Helle/dunkle Holzbereiche belegen allein weder Reparaturalter noch Holzart."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6858",
+      "document_group": null,
+      "title": "Gesamtansicht mit Trog und Radstatt",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0273",
+        "CLAIM-0274",
+        "CLAIM-0275",
+        "CLAIM-0276",
+        "CLAIM-0277",
+        "CLAIM-0278",
+        "CLAIM-0279",
+        "CLAIM-0280"
+      ],
+      "unresolved": [
+        "Keine vollständige aktuelle Zählung möglich.",
+        "Landseite des nahen Rings ist Zuordnung aus Kontext, vor Ort bestätigen.",
+        "Fotos zeigen Einbauzustand, beweisen keine Bewegung."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6859",
+      "document_group": null,
+      "title": "Gesamtansicht mit Trog und Radstatt",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0281",
+        "CLAIM-0282",
+        "CLAIM-0283",
+        "CLAIM-0284",
+        "CLAIM-0285",
+        "CLAIM-0286",
+        "CLAIM-0287",
+        "CLAIM-0288"
+      ],
+      "unresolved": [
+        "Keine vollständige aktuelle Zählung möglich.",
+        "Landseite des nahen Rings ist Zuordnung aus Kontext, vor Ort bestätigen.",
+        "Fotos zeigen Einbauzustand, beweisen keine Bewegung."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6860",
+      "document_group": null,
+      "title": "Innenansicht Ringebenen und Armverbindungen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0289",
+        "CLAIM-0290",
+        "CLAIM-0291",
+        "CLAIM-0292",
+        "CLAIM-0293",
+        "CLAIM-0294",
+        "CLAIM-0295"
+      ],
+      "unresolved": [
+        "Rückseiten der Stöße und Unterwasserbereiche nicht einsehbar.",
+        "III-artige Strichmarke an Arm in 6860 sichtbar; keine belastbare Instanz-ID ohne Gegenansicht.",
+        "Metallköpfe und Holzstifte belegen Mischbefestigung, nicht deren Alter."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "PHOTO-6861",
+      "document_group": null,
+      "title": "Innenansicht Ringebenen und Armverbindungen",
+      "review": "original image individually visually inspected",
+      "status": "analyzed",
+      "claim_ids": [
+        "CLAIM-0296",
+        "CLAIM-0297",
+        "CLAIM-0298",
+        "CLAIM-0299",
+        "CLAIM-0300",
+        "CLAIM-0301",
+        "CLAIM-0302"
+      ],
+      "unresolved": [
+        "Rückseiten der Stöße und Unterwasserbereiche nicht einsehbar.",
+        "III-artige Strichmarke an Arm in 6860 sichtbar; keine belastbare Instanz-ID ohne Gegenansicht.",
+        "Metallköpfe und Holzstifte belegen Mischbefestigung, nicht deren Alter."
+      ],
+      "current_geometry_authority": "visible topology only; uncalibrated image"
+    },
+    {
+      "source_id": "META-SCANIVERSE-EXPORT",
+      "title": "Scaniverse Exportdialog",
+      "document_group": null,
+      "status": "analyzed",
+      "review": "original screenshot individually visually inspected",
+      "claim_ids": [
+        "CLAIM-0303",
+        "CLAIM-0304",
+        "CLAIM-0305",
+        "CLAIM-0306"
+      ],
+      "unresolved": [
+        "Dialog beschreibt Optionen, nicht tatsächlich genutzten Scanmodus oder Sensor. Keine Kalibrierung."
+      ]
+    },
+    {
+      "source_id": "SCAN-20261007-01-PLY",
+      "title": "PLY partial capture",
+      "document_group": "CAPTURE-01",
+      "status": "analyzed",
+      "review": "binary parsing + orthographic/spatial visual inspection",
+      "claim_ids": [
+        "CLAIM-0307",
+        "CLAIM-0308",
+        "CLAIM-0309",
+        "CLAIM-0310",
+        "CLAIM-0311",
+        "CLAIM-0312",
+        "CLAIM-0313"
+      ],
+      "unresolved": [
+        "Acquisition mode, field reference lengths and mechanical registration absent.",
+        "Water reflections, motion, occlusion and meshing may cause absent/distorted geometry; causation not uniquely known."
+      ]
+    },
+    {
+      "source_id": "SCAN-20261007-01-GLB",
+      "title": "GLB partial capture",
+      "document_group": "CAPTURE-01",
+      "status": "analyzed",
+      "review": "binary parsing + orthographic/spatial visual inspection",
+      "claim_ids": [
+        "CLAIM-0314",
+        "CLAIM-0315",
+        "CLAIM-0316",
+        "CLAIM-0317",
+        "CLAIM-0318",
+        "CLAIM-0319",
+        "CLAIM-0320",
+        "CLAIM-0321",
+        "CLAIM-0322",
+        "CLAIM-0323"
+      ],
+      "unresolved": [
+        "Acquisition mode, field reference lengths and mechanical registration absent.",
+        "Water reflections, motion, occlusion and meshing may cause absent/distorted geometry; causation not uniquely known."
+      ]
+    }
+  ]
+}

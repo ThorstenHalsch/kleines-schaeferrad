@@ -1,0 +1,97 @@
+{
+  "schema": "ks-knowledge-gaps/v1",
+  "priority_policy": "Only context/contacts/poses potentially irrecoverable before/during disassembly. Pure later bench dimensions are not separate priority tasks.",
+  "gaps": [
+    {
+      "id": "GAP-01",
+      "priority": "P0-before",
+      "subject": "Räumliche Pose, Ringebenen und permanente Referenzen",
+      "irreversible_loss": "Demontage zerstört den Einbauzusammenhang.",
+      "capture": "Vor erstem Lösen LAND/WATER im Übersichtsbild mit Pfeilen dokumentieren; festen Datumspunkt an verbleibender Radstatt benennen. Zwei unabhängige lange Maßstrecken + dritte Kontrollstrecke anlegen, Endpunkte im Foto. Gegenüberliegende Ringdatenflächen ausdrücklich wählen; axialen Abstand an mindestens drei Umfangsorten messen; Achs-/Lagerlage zum Datum festhalten. Durchmesser in zwei Richtungen und axiale Gesamtbreite als Kontrolle. Alle Werte mit Einheit, Endpunktdefinition, Werkzeug und Messunsicherheit.",
+      "acceptance_evidence": "Übersicht, Messskizze, 3D-Referenzstrecken, Datumfotos",
+      "conflict_ids": [
+        "CONFLICT-03",
+        "CONFLICT-08",
+        "CONFLICT-09",
+        "CONFLICT-10"
+      ]
+    },
+    {
+      "id": "GAP-02",
+      "priority": "P0-during-first-release",
+      "subject": "Mortisen, Keile, Armfolge und Orientierung",
+      "irreversible_loss": "Kontakt-/Einstecktiefen und Keilrichtung verschwinden nach Zerlegung.",
+      "capture": "Beide Armzonen vor Lösen vollständig rundum fotografieren; alte Strichmarken beidseitig aufnehmen. Paar 1/4 nicht aus Perspektive erraten. Jedes physische Armholz, jeden Keil und Partner eindeutig benennen. Vor/nach jedem Keilzug Keilspitze, Auszugsrichtung und Sitzfläche fotografieren. Freigelegte Mortise mit Maßstab, Tiefenmaß, Eintritts-/Austrittsfläche und axialer Position messen. Drei durchgehende Arme vs sechs einzelne Speichen vor Ort klären.",
+      "acceptance_evidence": "Partnerregister, Nahfotos, Mortisen-/Zapfenmaße, Reihenfolgelog",
+      "conflict_ids": [
+        "CONFLICT-05",
+        "CONFLICT-06"
+      ]
+    },
+    {
+      "id": "GAP-03",
+      "priority": "P0-before-and-during",
+      "subject": "Krümmlingstöße und reale Ringform",
+      "irreversible_loss": "Stoßüberlappung und Passflächen verlieren ihre Zuordnung.",
+      "capture": "Jeden Stoß in Einbaupose von beiden Ringseiten und radial fotografieren, L/W und laufende physische IDs markieren. An jedem Stoß Verbindungspartner, Überblattung/Keil/Nagelrichtung, Kontaktflächen und Lochabstände vor und direkt nach Trennung sichern. Radiale Tiefe und axiale Breite getrennt messen. Reparaturverdacht als Beobachtung plus Monteur-Auskunft protokollieren.",
+      "acceptance_evidence": "Stoßkarte, Kontaktflächenpaar, Lochbild/Profilmessung",
+      "conflict_ids": [
+        "CONFLICT-04"
+      ]
+    },
+    {
+      "id": "GAP-04",
+      "priority": "P0-before-and-during",
+      "subject": "Kumpf-Nuten, Aufhängung und Varianten",
+      "irreversible_loss": "Befestigung, Anstellung und Kontaktflächen werden getrennt.",
+      "capture": "Alle Gefäße vor Lösen IDs/Positionen zuordnen; Öffnungsrichtung und Neigung in Seiten- und Stirnbild festhalten. Jeden abweichenden Kumpf dokumentieren, nicht nur einen Vertreter. Beim Lösen beide Nagel-/Stiftkontakte und Keilsitze sichern. Daubendicke 22/24, Außen- und Nutdurchmesser, Bodenlage, drei Ringlängen/Überlappungen jeweils am tatsächlich geöffneten Teil mit Einheit messen. Erhaltene Nuten ohne erzwungene zusätzliche Zerlegung erfassen.",
+      "acceptance_evidence": "Posekarte, Partnerbilder, Variantenprotokoll",
+      "conflict_ids": [
+        "CONFLICT-01",
+        "CONFLICT-02",
+        "CONFLICT-06"
+      ]
+    },
+    {
+      "id": "GAP-05",
+      "priority": "P0-before",
+      "subject": "Kumpf-/Schaufelzählung und Winkelphase",
+      "irreversible_loss": "Nach Ausbau ist die reale Umfangsfolge nicht wiederherstellbar.",
+      "capture": "Gesamten Umfang in einer dokumentierten stillstehenden Pose aufnehmen, verdeckte Bereiche vor ihrem Ausbau ergänzen. Durchgehende Zählung pro Ring, Kumpf und Schaufel; vorhandene/fehlende Positionen unterscheiden. Startteil mit ID und Bezug zur Achse markieren; gleiche Winkelrichtung von EINER definierten Blickseite für beide Ebenen verwenden. Je Schaufel Befestigungspartner und Verhältnis zu benachbartem Kumpf und Krümmling festhalten; Vorder-/Rückseite nicht verlieren.",
+      "acceptance_evidence": "vollständiges Umfangsregister mit eindeutiger Blickrichtung",
+      "conflict_ids": [
+        "CONFLICT-07",
+        "CONFLICT-08"
+      ]
+    },
+    {
+      "id": "GAP-06",
+      "priority": "P0-before-shaft-lift",
+      "subject": "Lagerzentren, Zapfen und Auflagerflächen",
+      "irreversible_loss": "Wellenanhebung entfernt reale Kontakt-/Achsbezüge.",
+      "capture": "Beide Lager im eingebauten Zustand aus zugänglichen Richtungen mit Datum fotografieren, Mittelpunkte und Zapfenlage bestimmen; Abstand, Höhe und axiale Anschläge dokumentieren. Unmittelbar beim Anheben Lagerflächen, Zapfenform, Beilagen und Sitzrichtung erfassen.",
+      "acceptance_evidence": "Lager-/Zapfenregister und Datummaße",
+      "conflict_ids": []
+    },
+    {
+      "id": "GAP-07",
+      "priority": "P0-before",
+      "subject": "Wasserlinie, Trog-/Rinnenlage und Drehrichtung",
+      "irreversible_loss": "Wasserstand und funktionale Lage sind nach Demontage zeitlich verloren.",
+      "capture": "Wasserlinie mit Uhrzeit und festem Datum markieren/fotografieren. Abstand Achse–Wasser und Trogöffnung relativ zur Achse/Scheitel erfassen. Auslauf Trog → Rinne, Fließrichtung und tatsächliche Raddrehung als kurze beschriftete Sequenz festhalten, sofern beobachtbar. Stillstand ausdrücklich vermerken.",
+      "acceptance_evidence": "datierte Lagefotos, funktionale Pfeile und Messskizze",
+      "conflict_ids": [
+        "CONFLICT-12"
+      ]
+    },
+    {
+      "id": "GAP-08",
+      "priority": "P0-throughout",
+      "subject": "Demontagereihenfolge und bleibende Teilidentität",
+      "irreversible_loss": "Lose Keile, Paarungen und lokale Namen verlieren ihren Kontext.",
+      "capture": "Eine Person führt das Ereignislog: laufende Ereignisnummer, Zeit, Teil-ID, Partner-IDs, vorher/nachher Bildnamen, entfernte Befestiger, ursprüngliche Orientierung und Lagerplatz. Historische Nummern bewahren; neues Schema KS-ARM/KRU/KUM/PAD/KEI-NNN zusätzlich verwenden. Reale Ausbaufolge dokumentieren, nicht automatisch umgekehrt als zwingende Montagefolge behaupten.",
+      "acceptance_evidence": "vollständiges Ereignislog ohne unzugeordnete Kleinteile",
+      "conflict_ids": []
+    }
+  ]
+}

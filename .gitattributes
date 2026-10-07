@@ -1,8 +1,4 @@
-*.glb filter=lfs diff=lfs merge=lfs -text
-*.ply filter=lfs diff=lfs merge=lfs -text
-*.spz filter=lfs diff=lfs merge=lfs -text
-*.las filter=lfs diff=lfs merge=lfs -text
-*.laz filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
+# Existing baseline evidence is stored as original binary Git blobs.
+evidence/raw/** -text -filter -diff -merge
+evidence/derived/*.png -text -filter -diff -merge
+evidence/derived/*.jpg -text -filter -diff -merge

@@ -1,0 +1,570 @@
+{
+  "schema": "ks-components/v1",
+  "components": [
+    {
+      "id": "COMP-SHAFT",
+      "label": "Welle/Achse",
+      "kind": "physical-part",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": 1
+      },
+      "provenance": [
+        "PHOTO-6853"
+      ],
+      "claim_ids": [
+        "CLAIM-0001",
+        "CLAIM-0002",
+        "CLAIM-0003",
+        "CLAIM-0004",
+        "CLAIM-0005",
+        "CLAIM-0006",
+        "CLAIM-0007",
+        "CLAIM-0008",
+        "CLAIM-0009",
+        "CLAIM-0253",
+        "CLAIM-0263",
+        "CLAIM-0267",
+        "CLAIM-0268",
+        "CLAIM-0272",
+        "CLAIM-0293",
+        "CLAIM-0300",
+        "CLAIM-0325",
+        "CLAIM-0336"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-HUB-LAND",
+      "label": "landseitige Armzone",
+      "kind": "region-of-shaft",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "claim_ids": [],
+      "confidence": "medium",
+      "note": "Armzone is not a proven separate hub component."
+    },
+    {
+      "id": "COMP-HUB-WATER",
+      "label": "wasserseitige Armzone",
+      "kind": "region-of-shaft",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "claim_ids": [],
+      "confidence": "medium",
+      "note": "Armzone is not a proven separate hub component."
+    },
+    {
+      "id": "COMP-ARMS",
+      "label": "durchgehende Arme mit zwei Speichenenden",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "3 per side (historical/external); current uncounted",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6820"
+      ],
+      "claim_ids": [
+        "CLAIM-0010",
+        "CLAIM-0011",
+        "CLAIM-0012",
+        "CLAIM-0013",
+        "CLAIM-0014",
+        "CLAIM-0017",
+        "CLAIM-0018",
+        "CLAIM-0020",
+        "CLAIM-0021",
+        "CLAIM-0022",
+        "CLAIM-0023",
+        "CLAIM-0154",
+        "CLAIM-0155",
+        "CLAIM-0156",
+        "CLAIM-0157",
+        "CLAIM-0158",
+        "CLAIM-0254",
+        "CLAIM-0265",
+        "CLAIM-0270",
+        "CLAIM-0290",
+        "CLAIM-0297",
+        "CLAIM-0326",
+        "CLAIM-0337"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-RIM-LAND",
+      "label": "Landkranz",
+      "kind": "assembly",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "claim_ids": [
+        "CLAIM-0015",
+        "CLAIM-0038",
+        "CLAIM-0152"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-RIM-WATER",
+      "label": "Wasserkranz",
+      "kind": "assembly",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "claim_ids": [
+        "CLAIM-0016",
+        "CLAIM-0153"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-RIMS",
+      "label": "Radkränze gemeinsam",
+      "kind": "assembly-family",
+      "multiplicity": {
+        "description": "2 visible",
+        "current_verified_count": 2
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [
+        "CLAIM-0234",
+        "CLAIM-0235",
+        "CLAIM-0236",
+        "CLAIM-0237",
+        "CLAIM-0238",
+        "CLAIM-0239",
+        "CLAIM-0240",
+        "CLAIM-0241",
+        "CLAIM-0242",
+        "CLAIM-0243",
+        "CLAIM-0244",
+        "CLAIM-0245",
+        "CLAIM-0246",
+        "CLAIM-0247",
+        "CLAIM-0248",
+        "CLAIM-0249",
+        "CLAIM-0250",
+        "CLAIM-0251",
+        "CLAIM-0252",
+        "CLAIM-0257",
+        "CLAIM-0273",
+        "CLAIM-0280",
+        "CLAIM-0281",
+        "CLAIM-0288",
+        "CLAIM-0289",
+        "CLAIM-0294",
+        "CLAIM-0296",
+        "CLAIM-0301",
+        "CLAIM-0327",
+        "CLAIM-0328",
+        "CLAIM-0338"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-KRUEMMLINGE",
+      "label": "Krümmlinge",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "6 per ring (historical/external)",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6831"
+      ],
+      "claim_ids": [],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-KUEMPFE",
+      "label": "Kümpfe/Schöpfgefäße",
+      "kind": "assembly-family",
+      "multiplicity": {
+        "description": "24 external expected; current uncounted",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6854"
+      ],
+      "claim_ids": [
+        "CLAIM-0024",
+        "CLAIM-0025",
+        "CLAIM-0026",
+        "CLAIM-0027",
+        "CLAIM-0028",
+        "CLAIM-0029",
+        "CLAIM-0030",
+        "CLAIM-0031",
+        "CLAIM-0258",
+        "CLAIM-0260",
+        "CLAIM-0262",
+        "CLAIM-0274",
+        "CLAIM-0282",
+        "CLAIM-0329",
+        "CLAIM-0330",
+        "CLAIM-0339"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-KUMPF-STAVES",
+      "label": "Dauben",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "unknown per vessel",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6823"
+      ],
+      "claim_ids": [
+        "CLAIM-0040",
+        "CLAIM-0041"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-KUMPF-BASE",
+      "label": "Kumpfböden",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "unknown current",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6823"
+      ],
+      "claim_ids": [
+        "CLAIM-0042",
+        "CLAIM-0043",
+        "CLAIM-0044",
+        "CLAIM-0045",
+        "CLAIM-0046",
+        "CLAIM-0047"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-KUMPF-HOOPS",
+      "label": "Kumpf-Spannringe",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "multiple per vessel; exact uncounted",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6846"
+      ],
+      "claim_ids": [
+        "CLAIM-0225",
+        "CLAIM-0226",
+        "CLAIM-0227",
+        "CLAIM-0228",
+        "CLAIM-0229",
+        "CLAIM-0230",
+        "CLAIM-0231",
+        "CLAIM-0232",
+        "CLAIM-0233",
+        "CLAIM-0259"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-PADDLES",
+      "label": "Schaufeln/Schetter (mapping to confirm)",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "24 external expected; current uncounted",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6860"
+      ],
+      "claim_ids": [
+        "CLAIM-0261",
+        "CLAIM-0275",
+        "CLAIM-0283",
+        "CLAIM-0291",
+        "CLAIM-0298",
+        "CLAIM-0331",
+        "CLAIM-0340"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-FASTENERS",
+      "label": "Keile, Holzstifte, Metallbefestiger, Bänder",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "historical subtypes only; current uncounted",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6825"
+      ],
+      "claim_ids": [
+        "CLAIM-0019",
+        "CLAIM-0032",
+        "CLAIM-0033",
+        "CLAIM-0034",
+        "CLAIM-0035",
+        "CLAIM-0036",
+        "CLAIM-0037",
+        "CLAIM-0039",
+        "CLAIM-0048",
+        "CLAIM-0049",
+        "CLAIM-0050",
+        "CLAIM-0051",
+        "CLAIM-0052",
+        "CLAIM-0053",
+        "CLAIM-0054",
+        "CLAIM-0055",
+        "CLAIM-0056",
+        "CLAIM-0255",
+        "CLAIM-0256",
+        "CLAIM-0264",
+        "CLAIM-0269",
+        "CLAIM-0292",
+        "CLAIM-0299"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-BEARINGS",
+      "label": "Lager-/Zapfenkontaktzonen",
+      "kind": "joint-family",
+      "multiplicity": {
+        "description": "2 external expected; current centres unknown",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "EXT-VZO-INFO"
+      ],
+      "claim_ids": [
+        "CLAIM-0279",
+        "CLAIM-0287",
+        "CLAIM-0341"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "COMP-RADSTATT",
+      "label": "Radstatt/Tragwerk",
+      "kind": "fixed-assembly",
+      "multiplicity": {
+        "description": "one",
+        "current_verified_count": 1
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [
+        "CLAIM-0266",
+        "CLAIM-0271",
+        "CLAIM-0278",
+        "CLAIM-0286",
+        "CLAIM-0295",
+        "CLAIM-0302",
+        "CLAIM-0333"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-TROUGH",
+      "label": "Schöpftrog/Gießtrog",
+      "kind": "fixed-assembly",
+      "multiplicity": {
+        "description": "one visible",
+        "current_verified_count": 1
+      },
+      "provenance": [
+        "PHOTO-6858"
+      ],
+      "claim_ids": [
+        "CLAIM-0130",
+        "CLAIM-0131",
+        "CLAIM-0132",
+        "CLAIM-0133",
+        "CLAIM-0134",
+        "CLAIM-0135",
+        "CLAIM-0136",
+        "CLAIM-0137",
+        "CLAIM-0138",
+        "CLAIM-0139",
+        "CLAIM-0140",
+        "CLAIM-0141",
+        "CLAIM-0276",
+        "CLAIM-0284",
+        "CLAIM-0332"
+      ],
+      "confidence": "high",
+      "note": null
+    },
+    {
+      "id": "COMP-RINNE",
+      "label": "Rinne hinter Trog / Ableitung",
+      "kind": "fixed-assembly",
+      "multiplicity": {
+        "description": "one visible; downstream unknown",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6830"
+      ],
+      "claim_ids": [
+        "CLAIM-0142",
+        "CLAIM-0143",
+        "CLAIM-0144",
+        "CLAIM-0145",
+        "CLAIM-0146",
+        "CLAIM-0147",
+        "CLAIM-0148",
+        "CLAIM-0149",
+        "CLAIM-0150",
+        "CLAIM-0151",
+        "CLAIM-0277",
+        "CLAIM-0285"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "TOOL-BENDING-DIE",
+      "label": "Biegematrize",
+      "kind": "manufacturing-tool",
+      "multiplicity": {
+        "description": "3 historical",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6836"
+      ],
+      "claim_ids": [
+        "CLAIM-0190",
+        "CLAIM-0191",
+        "CLAIM-0192",
+        "CLAIM-0193",
+        "CLAIM-0194",
+        "CLAIM-0195",
+        "CLAIM-0196",
+        "CLAIM-0197",
+        "CLAIM-0198",
+        "CLAIM-0199",
+        "CLAIM-0200"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "REF-BOARD",
+      "label": "Brett-/Daubenvorlage",
+      "kind": "unassigned-reference",
+      "multiplicity": {
+        "description": "unknown",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6842"
+      ],
+      "claim_ids": [
+        "CLAIM-0217",
+        "CLAIM-0218",
+        "CLAIM-0219",
+        "CLAIM-0220",
+        "CLAIM-0221",
+        "CLAIM-0222",
+        "CLAIM-0223",
+        "CLAIM-0224"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "REF-POLYGON",
+      "label": "Zwölfeck-Hilfsgeometrie",
+      "kind": "unassigned-reference",
+      "multiplicity": {
+        "description": "unknown",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6841"
+      ],
+      "claim_ids": [
+        "CLAIM-0201",
+        "CLAIM-0202",
+        "CLAIM-0203",
+        "CLAIM-0212",
+        "CLAIM-0213",
+        "CLAIM-0214",
+        "CLAIM-0215",
+        "CLAIM-0216"
+      ],
+      "confidence": "medium",
+      "note": null
+    },
+    {
+      "id": "REF-CONTACTSTRIPS",
+      "label": "Kontaktstreifen-Vorlage",
+      "kind": "unassigned-industrial-reference",
+      "multiplicity": {
+        "description": "3 length variants",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6833"
+      ],
+      "claim_ids": [
+        "CLAIM-0189"
+      ],
+      "confidence": "medium",
+      "note": null
+    }
+  ],
+  "local_term_map": {
+    "Kumpf": "stave vessel",
+    "Daube": "vessel wall segment",
+    "Krümmling": "curved rim segment",
+    "Arm": "through member; two radial ends",
+    "Bänder": "wooden binding per generic table; not automatically metal hoop",
+    "Schetter": "paddle terminology candidate",
+    "Anwelle": "support/bearing timber from generic table; current mapping unverified",
+    "Zwicker/Nasenzwicker/Froschkeil": "local fastener terms; physical function requires calibration"
+  }
+}

@@ -1,24 +1,7 @@
 # Evidence Store
 
-Dieses Verzeichnis ist die Referenz für **alle** Projektquellen, nicht nur 3D-Scans.
+43 Originaldateien, byteverifiziert, vollständig individuell geprüft. Das Manifest trennt Rohdateien, Derivate, Kontext und zukünftige Quellen. Alte Manifestfassung bleibt als Auditbeleg erhalten.
 
-## Aktuell erfasst
+Originalbytes sind unverändert in `raw/` archiviert. Nach Checkout: `python scripts/verify_evidence.py`. Die 40 JPEGs, PNG, PLY und GLB werden gegen Größe, SHA-256 und Git-Blob-Hash geprüft. Rohdaten nicht überschreiben.
 
-- 30 JPEG-Feldaufnahmen (`IMG_6816.jpeg` … `IMG_6861.jpeg`, mit Lücken in der Kameranummerierung),
-- 1 Screenshot der Scaniverse-Exportoptionen (`IMG_6863.png`),
-- 1 Scaniverse-Punktewolke (PLY),
-- 1 Scaniverse-Mesh (GLB),
-- Projektkontext aus dem Feldgespräch.
-
-Die Dateien werden in `manifest.json` mit SHA-256 registriert.
-
-## Wichtiger technischer Status
-
-Die Roh-Binärdateien liegen derzeit im ChatGPT-Projekt/Evidence-Ingest vor und sind dort bitgenau gehasht. Der GitHub-Connector kann Textdateien direkt schreiben, überträgt aber diese lokalen Binärdateien nicht automatisch aus dem Projekt-Dateispeicher in Git.
-
-Darum gilt:
-- **Manifest + Provenienz sind bereits Repository-Baseline.**
-- Die Raw-Binaries müssen anschließend bitgenau in `evidence/raw/` übernommen werden (vorzugsweise Git LFS).
-- Kein Asset gilt als vollständig archiviert, bevor Repository-Datei und SHA-256 gegen das Manifest geprüft wurden.
-
-Die Baseline darf diesen Unterschied nicht verschleiern.
+`derived/`: Contact Sheets und Scanstatistiken/-ansichten. Bildderivate haben ergänzende Base64-Archive zur Wiederherstellung; sie sind keine unabhängige Evidenz. `context/`: begrenzter Gesprächs- und externer Kontext. `audit/`: Ausgangsmanifest und vollständige Quellinventarliste.

@@ -1,0 +1,124 @@
+{
+  "schema": "ks-scan-audit/v1",
+  "ply": {
+    "vertices": 75619,
+    "header": "ply\nformat binary_little_endian 1.0\ncomment Created with Scaniverse - https://scaniverse.com\nelement vertex 75619\nproperty float x\nproperty float y\nproperty float z\nproperty uchar red\nproperty uchar green\nproperty uchar blue\nend_header\n",
+    "payload_bytes": 1134285,
+    "expected_payload_bytes": 1134285,
+    "bounds": {
+      "min": [
+        -2.6911802291870117,
+        -3.4898712635040283,
+        -0.12695865333080292
+      ],
+      "max": [
+        3.3385074138641357,
+        3.544503688812256,
+        4.376166343688965
+      ],
+      "extent": [
+        6.029687881469727,
+        7.034375190734863,
+        4.503125190734863
+      ],
+      "finite": true
+    },
+    "unique_positions": 74405
+  },
+  "glb": {
+    "vertices": 56117,
+    "faces": 78043,
+    "bounds": {
+      "min": [
+        -2.608441114425659,
+        -0.12906122207641602,
+        -3.4280059337615967
+      ],
+      "max": [
+        2.807084560394287,
+        4.472756385803223,
+        3.3810007572174072
+      ],
+      "extent": [
+        5.415525436401367,
+        4.601817607879639,
+        6.809006690979004
+      ],
+      "finite": true
+    },
+    "index_range": [
+      0,
+      56116
+    ],
+    "boundary_edges": 30775,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "nodes": [
+      {
+        "name": "root",
+        "children": [
+          1
+        ]
+      },
+      {
+        "name": "mesh",
+        "mesh": 0
+      }
+    ],
+    "accessors": [
+      {
+        "bufferView": 1,
+        "byteOffset": 0,
+        "max": [
+          2.807084560394287,
+          4.472756385803223,
+          3.3810007572174072
+        ],
+        "min": [
+          -2.608441114425659,
+          -0.12906122207641602,
+          -3.4280059337615967
+        ],
+        "componentType": 5126,
+        "count": 56117,
+        "type": "VEC3"
+      },
+      {
+        "bufferView": 2,
+        "byteOffset": 0,
+        "max": [
+          0.9979400634765625,
+          0.996272087097168
+        ],
+        "min": [
+          0.00207010330632329,
+          0.002068459987640381
+        ],
+        "componentType": 5126,
+        "count": 56117,
+        "type": "VEC2"
+      },
+      {
+        "bufferView": 3,
+        "byteOffset": 0,
+        "max": [
+          56116
+        ],
+        "min": [
+          0
+        ],
+        "componentType": 5125,
+        "count": 234129,
+        "type": "SCALAR"
+      }
+    ],
+    "generator": "Scaniverse (https://scaniverse.com)",
+    "texture_bytes": 5106715
+  },
+  "registration": {
+    "measured_scale": null,
+    "mechanical_transform": null,
+    "ply_to_glb_transform": null,
+    "units": "export coordinate units; expected metric convention is not field calibration"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "ks-reference-system/v1",
+  "status": "mechanical-convention-defined-field-registration-pending",
+  "origin": "intersection of shaft axis with midplane between named rim reference planes; symbolic until measured",
+  "axes": {
+    "x": "along shaft from LAND to WATER; sign requires field side confirmation",
+    "z": "gravity-up projected perpendicular to shaft axis",
+    "y": "z cross x; right-handed x cross y = z"
+  },
+  "cylindrical": {
+    "radius": "distance from shaft axis",
+    "theta_zero": "gravity-up radial ray at recorded stopped pose",
+    "theta_positive": "from +z toward −y, right-hand rotation about +x",
+    "radial_unit": "−sin(theta)*y + cos(theta)*z",
+    "tangent_unit": "−cos(theta)*y − sin(theta)*z",
+    "operating_rotation": "unknown; record independent direction; do not equate with numbering"
+  },
+  "planes": [
+    {
+      "id": "PLANE-LAND",
+      "definition": "chosen land rim datum face at x=xL",
+      "x": null
+    },
+    {
+      "id": "PLANE-WATER",
+      "definition": "chosen water rim datum face at x=xW",
+      "x": null
+    },
+    {
+      "id": "PLANE-MID",
+      "definition": "x=(xL+xW)/2",
+      "x": null
+    },
+    {
+      "id": "PLANE-BEARING-L",
+      "definition": "bearing centre station",
+      "x": null
+    },
+    {
+      "id": "PLANE-BEARING-W",
+      "definition": "bearing centre station",
+      "x": null
+    },
+    {
+      "id": "PLANE-WATERLINE",
+      "definition": "time-stamped field water surface relative to permanent datum; not fixed over time",
+      "offset": null
+    }
+  ],
+  "dimensions": {
+    "ring_plane_distance": null,
+    "shaft_axis_tilt": null,
+    "waterline_axis_offset": null
+  },
+  "scan_registration": {
+    "PLY_to_GLB_candidate": {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "claim_id": "CLAIM-0324"
+    },
+    "PLY_to_mechanical": null,
+    "GLB_to_mechanical": null,
+    "field_scale": null
+  },
+  "required_capture": "GAP-01, GAP-06, GAP-07",
+  "provenance": [
+    "PHOTO-6831",
+    "PHOTO-6858",
+    "PHOTO-6861",
+    "SCAN-20261007-01-PLY",
+    "SCAN-20261007-01-GLB"
+  ]
+}
