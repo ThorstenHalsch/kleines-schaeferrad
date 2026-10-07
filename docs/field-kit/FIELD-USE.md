@@ -1,34 +1,139 @@
-# Vor Ort arbeiten — FK-01
+# Vor Ort arbeiten — Werkstatt- und Aufnahmeplan V2
 
-Die Papiermappe und `/feld/` verwenden dieselben 21 Aufgaben aus `data/field-tasks.json`. Die Werkstatt ist zum Vergleichen da, der Feldmodus zum schrittweisen Aufnehmen. Alle neuen Angaben bleiben ungeprüfte Feldangaben; sie ändern keine Ist-Geometrie.
+Stand: 2026-10-07
+
+Die Anwendung und der Papierplan verwenden weiterhin dieselben 21 kanonischen Arbeitsaufgaben aus `data/field-tasks.json`. Für Menschen werden diese Aufgaben jedoch **nicht mehr als 21 einzelne Formulare oder 21 einzelne Blätter präsentiert**.
+
+Stattdessen führen acht gemeinsame technische Skizzen durch die Baugruppen. Messlinien, Fotostandpunkte, Datumspunkte und Scan-Aufträge stammen aus `data/visual-guides.json` und werden sowohl im Feldmodus als auch im A3-Plan verwendet.
+
+## Die drei Arbeitsmittel
+
+### A3 Werkstatt- und Aufnahmeplan
+
+`KS-Werkstatt-Aufnahmeplan-A3.pdf`
+
+12 Blätter:
+- Ablauf / rote Linie
+- 8 visuelle Baugruppenblätter
+- Teile-/Ereignis-/Lagerregister
+- alte Angaben und offene Varianten
+- Abschlusskontrolle
+
+Primär zum gemeinsamen Zeigen, Einzeichnen und handschriftlichen Arbeiten.
+
+### Vor-Ort-Modus
+
+`/feld/`
+
+Zeigt:
+1. aktuelle Arbeitsphase,
+2. Baugruppenskizze,
+3. hervorgehobene Foto- oder Messposition,
+4. genau den nächsten Handgriff,
+5. erst danach die dafür nötige Eingabe.
+
+Interne TASK-/COMP-/CLAIM-IDs bleiben im gespeicherten Datensatz, aber nicht in der normalen Arbeitsführung.
+
+### Werkstattmodell
+
+`/werkstatt/`
+
+Zum Vergleichen von:
+- Radkörper,
+- stationärem Tragwerk,
+- offenen Stellen,
+- Quellenbildern,
+- Arm-/Wellenvarianten,
+- Punktewolke.
+
+Technische Varianten und Scanparameter sind bewusst eingeklappt. Der Werkstattmodus ist kein Ersatz für den Vor-Ort-Ablauf.
 
 ## Vor dem Einsatz
 
-1. Auf dem tatsächlichen Gerät online `/feld/` öffnen und **Offline bereit** abwarten. Der Vorrat umfasst Seiten, Originalquellen, Scan, Schriften und PDFs (rund 39 MB).
-2. Flugmodus einschalten, die Seite neu laden und eine ausdrücklich als TEST bezeichnete Aufnahme sichern, exportieren und auf einem zweiten Gerät wieder öffnen.
-3. A3-Mappe quer bei 100 % drucken. Die 50-mm-Linie am Blattfuß nachmessen. A4-Kurzplan und Stifte mitnehmen.
-4. Erfahrene Monteure bestimmen Ablauf und Freigaben. Eine erledigte Aufgabe ersetzt keine Freigabe zur Demontage.
+1. Auf dem tatsächlichen Gerät online `/feld/` öffnen und **Offline bereit** abwarten.
+2. Flugmodus einschalten, Seite neu laden und eine ausdrücklich als TEST bezeichnete Aufnahme durchführen.
+3. TEST-Sicherung exportieren und auf einem zweiten Gerät wieder einlesen.
+4. A3-Plan bei 100 % drucken und die 50-mm-Kontrolllinie prüfen.
+5. A4-Kurzplan `KS-Kurzplan-A4.pdf` und Stifte mitnehmen.
+6. Erfahrene Monteure bestimmen Reihenfolge und Freigaben. Ein digitaler Status ersetzt keine Demontagefreigabe.
 
-## Aufnahme
+## Vor Ort
 
-Auftrag lesen, Person/Kürzel angeben, jede angeforderte Fotoansicht zuordnen, Maße mit Endpunkten, Werkzeug und Unsicherheit eintragen. Zusätzliche Messreihen und Skizzen als lesbare Fotos/Papierbelege mit Aufgaben-ID sichern; das Zahlenformular hält eine Messung je Aufgabe. Wörtliche Erklärung und eigene Deutung sind getrennte Felder. Externe Audio-/Videodateien erhalten einen Dateiverweis und müssen separat gesichert werden.
+Die rote Linie bleibt immer:
 
-**Weiß ich nicht / noch nicht zugänglich** verlangt eine Begründung und kennzeichnet die Aufgabe als blockiert. Es ergänzt keinen Befund und hebt keinen STOPP auf. „Aufgenommen“ bedeutet lediglich: die angegebenen Nachweise wurden lokal erfasst und die erfassende Person hat das Fertigkriterium bestätigt. Eine fachliche Prüfung steht weiter aus.
+**orientieren → aufnehmen → erst dann lösen → Partner zuordnen → sichern**
 
-Eine KS-ARM/KRU/KUM/PAD/KEI-ID erst vergeben, wenn das reale Teil gesehen und beschriftet wurde. Historische Marken unverändert abschreiben; Lage, Partner, Zustand, Person, Ausbauereignis und Lagerplatz zuordnen. Es gibt keine vorab erfundenen physischen Instanzen. Modellpositionen und erwartete Stückzahlen sind keine Inventarliste.
+### Fotos
 
-## Sicherung und Grenzen
+Die Skizze zeigt F01, F02 usw. als gewünschte Blickrichtungen.
 
-Originale JPEG/PNG/WebP-Fotos werden ohne Neucodierung als Blobs in IndexedDB gespeichert. Der JSON-Export enthält die Originalbytes und SHA-256-Prüfsummen; Import prüft sie vor dem Speichern. Abweichende Einträge unter derselben ID werden nicht still überschrieben. Im Zweifelsfall Sicherungen getrennt halten und fachlich abgleichen.
+- Übersicht und Detail zusammen aufnehmen.
+- Kontaktpartner möglichst gemeinsam im Bild.
+- Vor und nach dem Öffnen dieselbe Verbindung dokumentieren.
+- Maßstab/Referenz ins Bild, wenn Geometrie erfasst wird.
+- Rohbilder unverändert erhalten.
 
-Der getestete Belastungslauf enthält 28 Bilder und 20.460.272 Originalbytes. Er verwendet ein vorhandenes Originalfoto mehrfach mit SIMULATION-Dateinamen und ist ausdrücklich kein realer Feldversuch. App-Grenzen: 25 MB je Foto, 250 MB Medien je Sitzung, 350 MB je Importdatei. Base64 vergrößert den Export; beim Export/Import benötigt der Browser zusätzlich Arbeitsspeicher. Diese Grenzen sind keine garantierte Geräteleistung.
+### Maße
 
-Browser dürfen lokale Daten bei Speicherknappheit, privatem Modus, gelöschten Websitedaten oder Geräteverlust verlieren. Die Speicheranzeige und eine Persistenzanfrage verhindern das nicht sicher. Nach jedem wichtigen Abschnitt exportieren, auf ein zweites Medium kopieren und die Sicherung öffnen. Offline-Vorrat und persönliche Feldaufnahmen sind getrennte Speicher. Ein vollständiger neuer Vorrat ersetzt alte App-Caches; persönliche Aufnahmen werden dabei nicht gelöscht. Es gibt keinen Server und keine automatische Cloud-Sicherung.
+Die Skizze zeigt M01, M02 usw.
 
-## Vor-Ort-Kalibrierung bleibt offen
+Jeder Messwert braucht:
+- Endpunkt A,
+- Endpunkt B,
+- Einheit,
+- Werkzeug,
+- geschätzte Unsicherheit,
+- Foto der Messstrecke.
 
-- HUMAN-01: Seite A/B mit Land/Wasser, Fluss-/Drehrichtung und Fotos bestätigen.
-- DATUM-A/B/C am verbleibenden Tragwerk, nicht kollinear; Fotos, drei Verbindungsstrecken, Höhenbezug und Unsicherheiten aufnehmen. Achsmarker A/B festlegen.
-- Scan gegen diese Referenzen ausrichten und unabhängig skalieren. `AXIS_NORMALIZED` korrigiert nur Exportachsen; es ist keine mechanische Registrierung. `adopted_mechanical_transform` und `field_scale` bleiben null.
-- Armendpaare, Kröpfung, axiale Reihenfolge und erst nach realer Öffnung sichtbare Verbindungen dokumentieren. Verdeckte Topologie bleibt unbekannt.
-- Aktuelles physisches iPhone/Safari, Menschen der Zielgruppe sowie Tageslicht-/Nässe-/Handschuhbedienung vor dem realen Einsatz prüfen. Emulation ersetzt diese Abnahme nicht.
+Zusätzliche Messungen dürfen auf Papier ergänzt und fotografisch gesichert werden.
+
+### Scans
+
+D-/S-Markierungen kennzeichnen Datum- und Scanbezüge.
+
+- DATUM-A/B/C müssen am verbleibenden Tragwerk gesetzt werden.
+- Marker in neuen LiDAR-/Photogrammetrie-Aufnahmen sichtbar halten.
+- Gaussian Splats sind Oberfläche/Kontext, keine metrische Referenz.
+- Die bestehende Punktewolke ist achsenbezogen dargestellt, aber weiterhin nicht mechanisch registriert.
+
+### Reale Teile
+
+Eine KS-ARM/KRU/KUM/PAD/KEI-ID erst vergeben, wenn ein reales Teil gesehen und beschriftet wurde.
+
+Erhalten:
+- alte Marke,
+- lokaler Name,
+- ursprüngliche Lage,
+- Partner,
+- Zustand,
+- Ausbauereignis,
+- Lagerplatz,
+- Foto.
+
+## Sicherung
+
+Originale JPEG/PNG/WebP werden ohne Neucodierung als Blobs in IndexedDB gespeichert. Der Export enthält Originalbytes und SHA-256-Prüfsummen.
+
+Getestete Simulation:
+- 28 Fotos,
+- rund 20 MB Originalbytes,
+- Offline-Neustart,
+- Export/Import in frischem Browserkontext.
+
+Das ist **kein Ersatz für den physischen iPhone-Test**.
+
+Browserdaten können durch Speicherknappheit, Privatmodus, gelöschte Websitedaten oder Geräteverlust verschwinden. Nach wichtigen Abschnitten exportieren und die Sicherung auf einem zweiten Medium wirklich öffnen.
+
+## Noch offen vor FIELD-VALIDATED
+
+- physisches aktuelles iPhone/Safari,
+- reale Kameradateien,
+- Tageslicht / nasse Hände / ggf. Handschuhe,
+- 60–80-jährige Zielnutzer,
+- Seite A/B → Land/Wasser,
+- Fließ- und Drehrichtung,
+- DATUM-A/B/C + AXIS-A/B,
+- reale Rahmen-/Lagermaße,
+- Armendpaarung, Kröpfung, axiale Reihenfolge und Welleninnengeometrie.
+
+Weitere benötigte Aufnahmen: `docs/PHOTO-CAPTURE-TODO.md`.
