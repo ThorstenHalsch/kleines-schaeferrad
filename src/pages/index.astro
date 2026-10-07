@@ -45,11 +45,11 @@ const craftPrompts = [
 ];
 
 const roadmap = [
-  ['L0','Raw Evidence','Fotos, Zeichnungen, PLY/GLB, spätere Teilscans und Aussagen bleiben unverändert erhalten.'],
-  ['L1','Evidence Normalization','Quellen, Claims, Konflikte, Referenzen und reale Teil-IDs werden zusammengeführt.'],
-  ['L2','Parametric Mechanics','Erst nach Feldmessung entsteht die maßhaltige mechanische Rekonstruktion.'],
-  ['L3','Surface Reality','Reale Holzoberflächen, Reparaturen und Alterung werden auf die Mechanik registriert.'],
-  ['L4','Site Reality','Wasser, Vegetation, Atmosphäre und spätere Splats setzen das Rad wieder in seinen Ort.']
+  ['L0','Rohquellen','Fotos, Zeichnungen, 3D-Aufnahmen und Aussagen bleiben unverändert erhalten.'],
+  ['L1','Ordnen & zuordnen','Quellen, Aussagen, offene Punkte, Referenzen und reale Teil-IDs werden zusammengeführt.'],
+  ['L2','Mechanisches Arbeitsmodell','Mit bestätigten Feldmaßen wird die Geometrie Schritt für Schritt belastbarer.'],
+  ['L3','Oberflächen & Reparaturen','Holzoberflächen, Reparaturen und Alterung werden mit der Mechanik verbunden.'],
+  ['L4','Ort & Umgebung','Wasser, Ufer und Umgebung setzen das Rad wieder in seinen räumlichen Zusammenhang.']
 ];
 ---
 <BaseLayout title="Das Kleine Schäferrad" description="Gemeinsam halten wir fest, wie das Kleine Schäferrad gebaut ist und welches Werkstattwissen darin steckt.">
@@ -71,12 +71,12 @@ const roadmap = [
       <div class="photo-caption">
         <span>Handwerk an der Regnitz</span>
         <strong>Das Kleine Schäferrad.</strong>
-        <a href="#evidenz" class="round-link" aria-label="Zur Evidenz"><Icon name="diagonal" size={23} /></a>
+        <a href="#evidenz" class="round-link" aria-label="Zu den Quellen"><Icon name="diagonal" size={23} /></a>
       </div>
     </div>
   </section>
 
-  <div class="values-strip" aria-label="Baseline Kennzahlen">
+  <div class="values-strip" aria-label="Arbeitsstand in Zahlen">
     <div class="container">
       <div class="value"><strong>{originalCount}</strong><span>Originalquellen gesichert</span></div>
       <div class="value"><strong>{gaps.length}</strong><span>Aufgaben vor und beim Zerlegen</span></div>
@@ -99,7 +99,7 @@ const roadmap = [
       <article class="feature-card">
         <span class="feature-icon"><Icon name="layers" size={27} /></span><span class="feature-number">02</span>
         <h3>Alte Zeichnungen bleiben wertvoll.</h3>
-        <p>{historicalClaims} historische, {currentClaims} aktuelle und {measuredClaims} digital gemessene Claims werden nicht vermischt. Varianten und Reparaturzustände dürfen nebeneinander bestehen.</p>
+        <p>{historicalClaims} historische, {currentClaims} aktuelle und {measuredClaims} digital erfasste Befunde werden nicht vermischt. Varianten und Reparaturzustände dürfen nebeneinander bestehen.</p>
       </article>
       <article class="feature-card feature-card-green">
         <span class="feature-icon"><Icon name="measure" size={27} /></span><span class="feature-number">03</span>
