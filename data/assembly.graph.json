@@ -1,0 +1,27 @@
+{
+  "schema": "ks-assembly-graph/v0.1",
+  "status": "hypothesis",
+  "components": [
+    {"id":"COMP-SHAFT","label":"Welle/Achse","confidence":"O/H"},
+    {"id":"COMP-HUB-LAND","label":"Wellen-/Armzone Landseite","confidence":"O/H"},
+    {"id":"COMP-HUB-WATER","label":"Wellen-/Armzone Wasserseite","confidence":"O/H"},
+    {"id":"COMP-ARMS","label":"Arme/Speichen","confidence":"O/H","multiplicity":"TBD"},
+    {"id":"COMP-RIM-LAND","label":"Radkranz Landseite / Krümmlinge","confidence":"O/H"},
+    {"id":"COMP-RIM-WATER","label":"Radkranz Wasserseite / Krümmlinge","confidence":"O/H"},
+    {"id":"COMP-KUEMPFE","label":"Kümpfe/Schöpfgefäße","confidence":"O/H","multiplicity":24},
+    {"id":"COMP-PADDLES","label":"Schaufeln / strömungswirksame Holzteile","confidence":"O/H","multiplicity":"TBD"},
+    {"id":"COMP-FASTENERS","label":"Keile, Nägel, Streifen, Spannringe und weitere Befestiger","confidence":"H/O"},
+    {"id":"COMP-BEARINGS","label":"Lager und Radstatt","confidence":"O"},
+    {"id":"COMP-TROUGH","label":"Auffang-/Gießtrog und Wasserführung","confidence":"O/X"}
+  ],
+  "relations": [
+    {"from":"COMP-ARMS","to":"COMP-SHAFT","type":"joined_to","detail":"mortise/wedge geometry TBD"},
+    {"from":"COMP-ARMS","to":"COMP-RIM-LAND","type":"supports"},
+    {"from":"COMP-ARMS","to":"COMP-RIM-WATER","type":"supports"},
+    {"from":"COMP-KUEMPFE","to":"COMP-RIM-LAND","type":"mounted_on","detail":"exact side/pose to verify from current wheel"},
+    {"from":"COMP-PADDLES","to":"COMP-RIM-LAND","type":"mounted_between_or_on","detail":"exact topology TBD"},
+    {"from":"COMP-PADDLES","to":"COMP-RIM-WATER","type":"mounted_between_or_on","detail":"exact topology TBD"},
+    {"from":"COMP-SHAFT","to":"COMP-BEARINGS","type":"rotates_in"},
+    {"from":"COMP-KUEMPFE","to":"COMP-TROUGH","type":"discharges_into"}
+  ]
+}
