@@ -4,7 +4,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import { href } from '../lib/paths';
 interface Props { title: string; description?: string; }
-const { title, description = 'Evidenzbasierte digitale Rekonstruktion des Kleinen Schäferrads bei Möhrendorf/Oberndorf.' } = Astro.props;
+const { title, description = 'Gemeinsam dokumentieren wir Aufbau, Maße und Werkstattwissen des Kleinen Schäferrads.' } = Astro.props;
 ---
 <!doctype html>
 <html lang="de">
@@ -31,7 +31,7 @@ const { title, description = 'Evidenzbasierte digitale Rekonstruktion des Kleine
         <div><span class="eyebrow">Status</span><p><strong>Baseline Understanding Ready</strong><br />As-built-Geometrie bewusst noch nicht freigegeben.</p></div>
         <div><span class="eyebrow">Repository</span><a class="text-link" href="https://github.com/jdistlr/kleines-schaeferrad">jdistlr/kleines-schaeferrad ↗</a></div>
       </div>
-      <div class="container footer-bottom">Research Preview · Stand 07.10.2026 · Keine metrische Rekonstruktion behauptet.</div>
+      <div class="container footer-bottom">Gemeinsam dokumentiert · Arbeitsstand vor der Demontage 2026 · Offene Maße bleiben offen.</div>
     </footer>
   </body>
 </html>
