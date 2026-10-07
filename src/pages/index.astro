@@ -30,9 +30,10 @@ const preferredOrder = [
   'COMP-KUEMPFE','COMP-KUMPF-STAVES','COMP-KUMPF-HOOPS','COMP-PADDLES',
   'COMP-FASTENERS','COMP-BEARINGS','COMP-RADSTATT','COMP-TROUGH','COMP-RINNE'
 ];
-const displayComponents = preferredOrder
-  .map((id) => components.find((component) => component.id === id))
-  .filter(Boolean);
+const displayComponents = preferredOrder.flatMap((id) => {
+  const component = components.find((item) => item.id === id);
+  return component ? [component] : [];
+});
 
 const craftPrompts = [
   'Warum sitzt dieser Keil genau in dieser Richtung – und was passiert, wenn er anders herum sitzt?',
