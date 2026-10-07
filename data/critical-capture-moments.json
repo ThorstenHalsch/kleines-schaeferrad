@@ -1,0 +1,843 @@
+{
+  "schema": "ks-critical-capture-moments/v1",
+  "purpose": "Irreversible field moments where one additional movement can destroy evidence. These gates drive web field guidance and the visual work plan.",
+  "default_rule": "Wenn durch den nächsten Handgriff eine bisher verdeckte Lage, Kontaktfläche, Orientierung oder Zuordnung verloren gehen kann: STOPP, nichts weiter bewegen, zuerst aufnehmen.",
+  "conventions": {
+    "photo_views": {
+      "AX_A": "axial entlang der Welle von Seite A",
+      "AX_B": "axial entlang der Welle von Seite B",
+      "Q1": "schräg oben links / erstes Quadrantbild",
+      "Q2": "schräg oben rechts / zweites Quadrantbild",
+      "Q3": "schräg unten rechts / drittes Quadrantbild",
+      "Q4": "schräg unten links / viertes Quadrantbild",
+      "RAD": "radial auf den Kranz / Stoß",
+      "TAN": "tangential entlang des Kranzes",
+      "CONTACT": "beide Partnerflächen gemeinsam",
+      "SCALE": "Detail mit Maßstab und sichtbaren Endpunkten"
+    }
+  },
+  "moments": [
+    {
+      "id": "CM-00",
+      "level": "STOPP",
+      "title": "Bevor überhaupt etwas gelöst wird",
+      "trigger": "Der erste irreversible Handgriff an Rad, Lager, Rahmen, Trog oder Rinne steht bevor.",
+      "do_not": "Noch keinen Keil ziehen, keine Schraube lösen, keine Welle anheben, keinen Rahmen entspannen.",
+      "why": "Der gemeinsame Einbauzustand ist nur einmal vollständig vorhanden.",
+      "tasks": [
+        "TASK-ORIENT",
+        "TASK-DATUM",
+        "TASK-POSE",
+        "TASK-WATER",
+        "TASK-SCAN"
+      ],
+      "guide_ids": [
+        "GUIDE-SYSTEM",
+        "GUIDE-WATER-SCAN",
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P00-1",
+          "view": "AX_A",
+          "instruction": "Gesamtsystem mit Welle, beiden Kränzen und stationärem Tragwerk."
+        },
+        {
+          "id": "P00-2",
+          "view": "AX_B",
+          "instruction": "Gegenansicht mit denselben Referenzpunkten."
+        },
+        {
+          "id": "P00-3",
+          "view": "Q1",
+          "instruction": "Rad + Lager + unteres Tragwerk gemeinsam."
+        },
+        {
+          "id": "P00-4",
+          "view": "Q2",
+          "instruction": "Rad + Trog/Rinne + Wasserbezug gemeinsam."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M00-1",
+          "instruction": "Achsmitte ↔ fester Datumspunkt am verbleibenden Tragwerk."
+        },
+        {
+          "id": "M00-2",
+          "instruction": "Lagerzentrum A ↔ Lagerzentrum B."
+        },
+        {
+          "id": "M00-3",
+          "instruction": "Ringebene A ↔ Ringebene B an mindestens drei Umfangsstellen."
+        },
+        {
+          "id": "M00-4",
+          "instruction": "Achsmitte ↔ aktuelle Wasserlinie mit Uhrzeit."
+        }
+      ],
+      "scan_plan": [
+        "Gesamtscan mit DATUM-A/B/C und Kontrollstrecke sichtbar.",
+        "Optional Splat für Oberflächen-/Standortkontext, nicht als Maßquelle."
+      ],
+      "suspicion_checks": [
+        "Sind Land/Wasser und Drehrichtung wirklich bestätigt oder nur angenommen?",
+        "Sind zusätzliche stationäre Rahmen/Hölzer vorhanden, die im Modell fehlen?"
+      ],
+      "release_when": "Orientierung, drei Datums, Kontrollstrecke, Wasserbezug und Gesamtzustand sind aufgenommen."
+    },
+    {
+      "id": "CM-01",
+      "level": "STOPP",
+      "title": "Vor dem ersten Keilzug an der Welle",
+      "trigger": "Ein Keil, Füllholz, Stift oder Arm an einer Armzone soll erstmals bewegt werden.",
+      "do_not": "Keil nicht lockern, Arm nicht ziehen, Marken nicht reinigen oder abschleifen.",
+      "why": "Keilrichtung, Eintrittslage, alte Marken und Partnerzuordnung können nach dem ersten Millimeter verloren gehen.",
+      "tasks": [
+        "TASK-ARM-BEFORE"
+      ],
+      "guide_ids": [
+        "GUIDE-ARM-BEFORE"
+      ],
+      "photo_plan": [
+        {
+          "id": "P01-1",
+          "view": "AX_A",
+          "instruction": "Armzone axial, alle sichtbaren Armenden und Keile."
+        },
+        {
+          "id": "P01-2",
+          "view": "AX_B",
+          "instruction": "Gegenseite axial, gleiche Orientierung."
+        },
+        {
+          "id": "P01-3",
+          "view": "Q1",
+          "instruction": "Schrägansicht Arm-Eintritte + Keile."
+        },
+        {
+          "id": "P01-4",
+          "view": "Q2",
+          "instruction": "zweite Schrägansicht 90° versetzt."
+        },
+        {
+          "id": "P01-5",
+          "view": "Q3",
+          "instruction": "untere Eintrittsstellen, soweit zugänglich."
+        },
+        {
+          "id": "P01-6",
+          "view": "Q4",
+          "instruction": "vierte Schrägansicht, alte Marken mit im Bild."
+        },
+        {
+          "id": "P01-7",
+          "view": "SCALE",
+          "instruction": "Jeder Keil/Stift einzeln mit Kopf, Spitze, Sitz und Zugrichtung."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M01-1",
+          "instruction": "Axiale Lage jedes sichtbaren Arm-Eintritts relativ zu einer festen Wellenmarke."
+        },
+        {
+          "id": "M01-2",
+          "instruction": "sichtbare Armquerschnitte Breite × Höhe."
+        },
+        {
+          "id": "M01-3",
+          "instruction": "Abstand der Eintrittsebenen zueinander."
+        }
+      ],
+      "scan_plan": [
+        "Nahscan beider Armzonen, solange alle Keile noch in Originalposition sitzen."
+      ],
+      "suspicion_checks": [
+        "H1: drei durchgehende Armhölzer mit je zwei Enden.",
+        "H2: sechs unabhängige Speichen.",
+        "H3: axial gestaffelte Durchführungen / ineinandergreifende Innengeometrie.",
+        "H4: gekröpfte oder versetzte Armprofile."
+      ],
+      "release_when": "Jeder sichtbare Keil und Arm-Eintritt besitzt Foto, Orientierung, Partnerbezug und Lage."
+    },
+    {
+      "id": "CM-02",
+      "level": "GOLD",
+      "title": "Erstmals Sicht in die Welle",
+      "trigger": "Durch das Lösen eines Keils/Arms wird erstmals eine zuvor verdeckte Öffnung, Mortise oder Innenfläche sichtbar.",
+      "do_not": "Nichts weiter ziehen, drehen, herausheben, säubern, ausblasen oder mit Werkzeug in der Öffnung arbeiten.",
+      "why": "Das ist wahrscheinlich der informationsreichste Einzelmoment der gesamten Demontage. Innengeometrie und Spuren können beim nächsten Millimeter Bewegung verändert werden.",
+      "tasks": [
+        "TASK-ARM-RELEASE",
+        "TASK-MORTISE"
+      ],
+      "guide_ids": [
+        "GUIDE-ARM-AFTER"
+      ],
+      "photo_plan": [
+        {
+          "id": "P02-1",
+          "view": "CONTACT",
+          "instruction": "Gesamtübersicht: gelöstes Teil bleibt in exakt der ersten offenen Position."
+        },
+        {
+          "id": "P02-2",
+          "view": "AX_A",
+          "instruction": "Direkt axial in die freigelegte Wellenöffnung."
+        },
+        {
+          "id": "P02-3",
+          "view": "AX_B",
+          "instruction": "Gegenrichtung, wenn sichtbar."
+        },
+        {
+          "id": "P02-4",
+          "view": "Q1",
+          "instruction": "Innenöffnung schräg oben."
+        },
+        {
+          "id": "P02-5",
+          "view": "Q2",
+          "instruction": "Innenöffnung schräg rechts."
+        },
+        {
+          "id": "P02-6",
+          "view": "Q3",
+          "instruction": "Innenöffnung schräg unten."
+        },
+        {
+          "id": "P02-7",
+          "view": "Q4",
+          "instruction": "Innenöffnung schräg links."
+        },
+        {
+          "id": "P02-8",
+          "view": "SCALE",
+          "instruction": "Kontakt-/Druckspuren, Kanten, Loch/Stift, Keilsitz jeweils mit Maßstab."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M02-1",
+          "instruction": "lichte Breite/Höhe der freigelegten Mortise bzw. Öffnung."
+        },
+        {
+          "id": "M02-2",
+          "instruction": "sichtbare Tiefe bis erster Anschlag/Partnerfläche."
+        },
+        {
+          "id": "M02-3",
+          "instruction": "axiale Position der Öffnung relativ zum Wellenende/Datum."
+        },
+        {
+          "id": "M02-4",
+          "instruction": "Orientierung der Innenflächen / eventueller Versatz."
+        },
+        {
+          "id": "M02-5",
+          "instruction": "Stift-/Lochdurchmesser und Abstand zu zwei eindeutig benannten Kanten."
+        }
+      ],
+      "scan_plan": [
+        "Nahbereich LiDAR/Photogrammetrie, wenn Geometrie sichtbar genug und Zugang sicher ist.",
+        "Zusätzlich Makro-Fotogrammetrie der Öffnung, falls LiDAR in der Tiefe versagt."
+      ],
+      "suspicion_checks": [
+        "Läuft das Armholz gerade durch oder endet es in der Welle?",
+        "Ist eine zweite Mortise axial versetzt?",
+        "Sind Kreuzung/Überblattung/Staffelung sichtbar?",
+        "Gibt es Druckpolitur, Quetschspuren oder alte Markierungen, die die ursprüngliche Lage zeigen?",
+        "Ist der Keil radial, axial oder tangential wirksam?"
+      ],
+      "release_when": "360°-Fotosequenz, Maße und Scan/Scan-Verzicht mit Grund sind gesichert und eine zweite Person bestätigt die Vollständigkeit."
+    },
+    {
+      "id": "CM-03",
+      "level": "STOPP",
+      "title": "Bevor ein Arm vollständig aus der Welle kommt",
+      "trigger": "Ein Armholz ist gelöst und soll so weit bewegt werden, dass Eintritts-/Austrittsflächen oder Paarung nicht mehr gleichzeitig sichtbar sind.",
+      "do_not": "Arm noch nicht vollständig herausziehen oder drehen.",
+      "why": "Einstecktiefe, Orientierung, Gegenpartner und reale Endpaarung können nur in dieser Zwischenstellung eindeutig gesichert werden.",
+      "tasks": [
+        "TASK-ARM-RELEASE",
+        "TASK-ARM-PROFILE"
+      ],
+      "guide_ids": [
+        "GUIDE-ARM-AFTER"
+      ],
+      "photo_plan": [
+        {
+          "id": "P03-1",
+          "view": "CONTACT",
+          "instruction": "Arm + Wellenöffnung + zugehörige Keile gemeinsam."
+        },
+        {
+          "id": "P03-2",
+          "view": "SCALE",
+          "instruction": "Einstecktiefe in Zwischenstellung mit sichtbaren Endpunkten."
+        },
+        {
+          "id": "P03-3",
+          "view": "TAN",
+          "instruction": "Armprofil entlang seiner Längsachse zur Erkennung von Kröpfung/Versatz."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M03-1",
+          "instruction": "reale Einstecktiefe."
+        },
+        {
+          "id": "M03-2",
+          "instruction": "Dreh-/Orientierungswinkel des Armquerschnitts."
+        },
+        {
+          "id": "M03-3",
+          "instruction": "Abstand Armachse ↔ Nachbararmachse axial."
+        }
+      ],
+      "scan_plan": [
+        "Nach Ausbau vollständiger Einzelteilscan mit gerader Referenzlatte daneben."
+      ],
+      "suspicion_checks": [
+        "Gegenüberliegendes Ende desselben Holzes identifizieren, nicht aus Position allein annehmen.",
+        "Kröpfung/Biegung gegen gerade Referenz prüfen."
+      ],
+      "release_when": "Paarung, Einstecktiefe und Orientierung sind eindeutig dokumentiert; Arm erhält reale ID."
+    },
+    {
+      "id": "CM-04",
+      "level": "STOPP",
+      "title": "Vor dem ersten Krümmlingstoß",
+      "trigger": "Ein Kranzstoß, Überblattung, Stift, Nagel oder Keil am Ring soll getrennt werden.",
+      "do_not": "Stoß nicht aufspreizen, Stift nicht ziehen, Segment nicht verschieben.",
+      "why": "Überdeckung, Lochbild, Stoßrichtung und reale Segmentfolge werden nach Trennung leicht verwechselt.",
+      "tasks": [
+        "TASK-KRU-BEFORE",
+        "TASK-COUNT"
+      ],
+      "guide_ids": [
+        "GUIDE-RIM"
+      ],
+      "photo_plan": [
+        {
+          "id": "P04-1",
+          "view": "RAD",
+          "instruction": "radial direkt auf den Stoß."
+        },
+        {
+          "id": "P04-2",
+          "view": "TAN",
+          "instruction": "tangential entlang des Kranzes."
+        },
+        {
+          "id": "P04-3",
+          "view": "CONTACT",
+          "instruction": "beide Ringseiten/Partner im selben Bild."
+        },
+        {
+          "id": "P04-4",
+          "view": "SCALE",
+          "instruction": "Lochbild und Befestiger mit Maßstab."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M04-1",
+          "instruction": "axiale Breite des Krümmlings."
+        },
+        {
+          "id": "M04-2",
+          "instruction": "radiale Tiefe separat."
+        },
+        {
+          "id": "M04-3",
+          "instruction": "Lochabstände zu eindeutigen Stoßkanten."
+        },
+        {
+          "id": "M04-4",
+          "instruction": "sichtbare Überdeckungslänge."
+        }
+      ],
+      "scan_plan": [
+        "Optional Detailscan eines repräsentativen Stoßes vor Öffnung."
+      ],
+      "suspicion_checks": [
+        "14 cm axial vs 15 cm radial nicht vermischen.",
+        "Reparaturstück oder historischer Originalstoß?"
+      ],
+      "release_when": "Stoßrichtung, Segment-IDs, Lochbild und beide Messrichtungen sind gesichert."
+    },
+    {
+      "id": "CM-05",
+      "level": "GOLD",
+      "title": "Krümmlingstoß erstmals offen",
+      "trigger": "Die beiden Stoß-/Kontaktflächen sind erstmals voneinander getrennt.",
+      "do_not": "Flächen nicht reinigen, Stifte nicht umsortieren, Partner nicht auseinandertragen.",
+      "why": "Bearbeitungsspuren, Druckflächen, alte Löcher und Reparaturen sind jetzt direkt vergleichbar.",
+      "tasks": [
+        "TASK-KRU-OPEN"
+      ],
+      "guide_ids": [
+        "GUIDE-RIM"
+      ],
+      "photo_plan": [
+        {
+          "id": "P05-1",
+          "view": "CONTACT",
+          "instruction": "beide Partnerflächen nebeneinander, IDs lesbar."
+        },
+        {
+          "id": "P05-2",
+          "view": "SCALE",
+          "instruction": "jede Kontaktfläche orthogonal mit Maßstab."
+        },
+        {
+          "id": "P05-3",
+          "view": "Q1",
+          "instruction": "Schräglicht-/Reliefansicht für Werkzeug- und Druckspuren."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M05-1",
+          "instruction": "Überblattungs-/Zapfentiefe und -länge."
+        },
+        {
+          "id": "M05-2",
+          "instruction": "Loch-/Stiftdurchmesser und Achsabstand."
+        },
+        {
+          "id": "M05-3",
+          "instruction": "Versatz der Kontaktflächen."
+        }
+      ],
+      "scan_plan": [
+        "Detail-Photogrammetrie beider Kontaktflächen bei komplexem Relief."
+      ],
+      "suspicion_checks": [
+        "Welche Fläche trägt tatsächlich?",
+        "Sind unbenutzte Altbohrungen vorhanden?",
+        "Reparatur-/Ersatzsegment erkennbar?"
+      ],
+      "release_when": "Beide Flächen bleiben eindeutig als Paar zugeordnet und sind vermessen."
+    },
+    {
+      "id": "CM-06",
+      "level": "STOPP",
+      "title": "Vor dem ersten Kumpf-Ausbau",
+      "trigger": "Ein Schöpfgefäß soll erstmals von Kranz/Schaufel/Befestigung gelöst werden.",
+      "do_not": "Kumpf nicht verdrehen, Neigung nicht verändern, Befestiger nicht ziehen.",
+      "why": "Öffnungsrichtung, Neigung und die Beziehung zu Schaufel/Kranz sind nach Ausbau schwer rekonstruierbar.",
+      "tasks": [
+        "TASK-KUM-BEFORE"
+      ],
+      "guide_ids": [
+        "GUIDE-KUMPF"
+      ],
+      "photo_plan": [
+        {
+          "id": "P06-1",
+          "view": "TAN",
+          "instruction": "Kumpf seitlich: Öffnung, Neigung und Nachbarn."
+        },
+        {
+          "id": "P06-2",
+          "view": "RAD",
+          "instruction": "Stirnansicht entlang radialer Richtung."
+        },
+        {
+          "id": "P06-3",
+          "view": "CONTACT",
+          "instruction": "beide Befestigungspunkte/Partner gemeinsam."
+        },
+        {
+          "id": "P06-4",
+          "view": "SCALE",
+          "instruction": "Befestiger/Keilsitz im eingebauten Zustand."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M06-1",
+          "instruction": "Kumpfachse/Öffnung relativ zur lokalen Radialen."
+        },
+        {
+          "id": "M06-2",
+          "instruction": "Befestigungspunkte relativ zu eindeutigen Kranzkanten."
+        }
+      ],
+      "scan_plan": [
+        "Optional kurzer Einzelbereichsscan eines eingebauten repräsentativen Kumpfs."
+      ],
+      "suspicion_checks": [
+        "Was legt die Neigung fest?",
+        "Ist der Kumpf direkt am Kranz oder über Zwischenholz/Befestiger gekoppelt?"
+      ],
+      "release_when": "Pose, Öffnungsrichtung, beide Partner und Befestiger sind gesichert."
+    },
+    {
+      "id": "CM-07",
+      "level": "GOLD",
+      "title": "Kumpf-Befestigung / Nut erstmals offen",
+      "trigger": "Kumpf, Ring oder Boden wird so gelöst, dass Nut, Kontaktfläche oder verdeckte Befestigung erstmals sichtbar ist.",
+      "do_not": "Nicht weiter zerlegen als für den normalen Ausbau erforderlich; Nut nicht auskratzen oder reinigen.",
+      "why": "Hier entscheiden sich 22/24-mm-Variante, Nut-/Bodenlage und reale Spannring-/Befestigungslogik.",
+      "tasks": [
+        "TASK-KUM-VARIANT",
+        "TASK-HOOPS"
+      ],
+      "guide_ids": [
+        "GUIDE-KUMPF"
+      ],
+      "photo_plan": [
+        {
+          "id": "P07-1",
+          "view": "CONTACT",
+          "instruction": "Kumpf und gelöster Partner zusammen."
+        },
+        {
+          "id": "P07-2",
+          "view": "SCALE",
+          "instruction": "Daubendicke exakt an zugänglicher Stelle."
+        },
+        {
+          "id": "P07-3",
+          "view": "SCALE",
+          "instruction": "Nut/Bodenlage mit Maßstab und Endpunkten."
+        },
+        {
+          "id": "P07-4",
+          "view": "Q1",
+          "instruction": "Ringüberlappung und Befestigung schräg."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M07-1",
+          "instruction": "Daubendicke am realen Teil, nicht aus Außenmaß rückrechnen."
+        },
+        {
+          "id": "M07-2",
+          "instruction": "Außen- und Nutdurchmesser separat."
+        },
+        {
+          "id": "M07-3",
+          "instruction": "Bodenlage / Nuttiefe."
+        },
+        {
+          "id": "M07-4",
+          "instruction": "Ringlänge/Überlappung je Position getrennt."
+        }
+      ],
+      "scan_plan": [
+        "Einzelteilscan mindestens eines Kumpfs jeder real beobachteten Variante."
+      ],
+      "suspicion_checks": [
+        "22 vs 24 mm Variante?",
+        "Ringlänge ist Rohmateriallänge, Umfang oder Überlappungsmaß?",
+        "Reparaturvariante?"
+      ],
+      "release_when": "Variante, Maße, Nut/Boden und Ringbedeutung sind am konkreten Teil dokumentiert oder explizit offen."
+    },
+    {
+      "id": "CM-08",
+      "level": "STOPP",
+      "title": "Vor dem ersten Schaufel-/Schetter-Ausbau",
+      "trigger": "Eine Schaufel soll von Kranz/Kumpf/Befestigern gelöst werden.",
+      "do_not": "Nicht drehen oder wenden, bevor Vorder-/Rückseite und Nachbarbezug markiert sind.",
+      "why": "Anstellwinkel, Drehrichtung und Beziehung zu Kumpf/Krümmling gehen sonst verloren.",
+      "tasks": [
+        "TASK-PAD",
+        "TASK-KEI"
+      ],
+      "guide_ids": [
+        "GUIDE-PADDLE"
+      ],
+      "photo_plan": [
+        {
+          "id": "P08-1",
+          "view": "RAD",
+          "instruction": "Schaufel eingebaut mit beiden Nachbarn."
+        },
+        {
+          "id": "P08-2",
+          "view": "TAN",
+          "instruction": "Seitenansicht für Anstellung."
+        },
+        {
+          "id": "P08-3",
+          "view": "CONTACT",
+          "instruction": "Befestiger/Keile mit Partnern."
+        },
+        {
+          "id": "P08-4",
+          "view": "SCALE",
+          "instruction": "Befestigungslage und relevante Abstände."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M08-1",
+          "instruction": "Anstellwinkel relativ zu lokaler Radialen/Tangente."
+        },
+        {
+          "id": "M08-2",
+          "instruction": "Befestigungspunkte / Lochabstände."
+        }
+      ],
+      "scan_plan": [
+        "Einzelteilscan bei abweichender Form oder Reparatur."
+      ],
+      "suspicion_checks": [
+        "Welche Seite ist funktionale Vorderseite?",
+        "Was bestimmt den Winkel konstruktiv?"
+      ],
+      "release_when": "Vorder-/Rückseite, Richtung, Partner und Befestigung sind markiert."
+    },
+    {
+      "id": "CM-09",
+      "level": "STOPP",
+      "title": "Bevor die Welle aus dem Lager gehoben wird",
+      "trigger": "Lager wird entlastet oder Welle soll angehoben/verschoben werden.",
+      "do_not": "Welle noch nicht anheben, Beilagen nicht herausnehmen, Anschläge nicht verstellen.",
+      "why": "Zapfenlage, Lagerhöhe, Beilagen und reale Kontaktflächen verlieren ihren eindeutigen Zusammenhang.",
+      "tasks": [
+        "TASK-BEARING"
+      ],
+      "guide_ids": [
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P09-1",
+          "view": "AX_A",
+          "instruction": "Lager A entlang Wellenachse."
+        },
+        {
+          "id": "P09-2",
+          "view": "AX_B",
+          "instruction": "Lager B entlang Wellenachse."
+        },
+        {
+          "id": "P09-3",
+          "view": "Q1",
+          "instruction": "Lager + Lagerstock + Rahmen."
+        },
+        {
+          "id": "P09-4",
+          "view": "SCALE",
+          "instruction": "Anschläge, Beilagen und Zapfen im Sitz."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M09-1",
+          "instruction": "Lagerzentrum A ↔ B."
+        },
+        {
+          "id": "M09-2",
+          "instruction": "Höhe beider Lagerzentren zum Datum."
+        },
+        {
+          "id": "M09-3",
+          "instruction": "axiale Anschlaglage / Zapfenfreistand."
+        }
+      ],
+      "scan_plan": [
+        "Nahscan beider Lagerbereiche vor dem Anheben."
+      ],
+      "suspicion_checks": [
+        "Welche Hölzer sind eigentliche Lagerstöcke, welche nur Rahmen?",
+        "Gibt es Beilagen zur Justage?"
+      ],
+      "release_when": "Beide Lagerzentren, Anschläge und Beilagen sind dokumentiert."
+    },
+    {
+      "id": "CM-10",
+      "level": "GOLD",
+      "title": "Lager-/Zapfenfläche erstmals frei",
+      "trigger": "Die Welle ist so weit angehoben, dass die zuvor belastete Lager-/Zapfenfläche erstmals sichtbar wird.",
+      "do_not": "Zapfen nicht drehen, Lagerfläche nicht reinigen, Beilagen nicht umsortieren.",
+      "why": "Verschleißbild, Tragzone und Justageinformationen sind unmittelbar nach Freilegung am aussagekräftigsten.",
+      "tasks": [
+        "TASK-BEARING"
+      ],
+      "guide_ids": [
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P10-1",
+          "view": "CONTACT",
+          "instruction": "Zapfen und Lagerfläche im selben Zusammenhang."
+        },
+        {
+          "id": "P10-2",
+          "view": "SCALE",
+          "instruction": "Zapfenquerschnitt / Lagerbreite."
+        },
+        {
+          "id": "P10-3",
+          "view": "Q1",
+          "instruction": "Verschleiß-/Druckzone unter Schräglicht."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M10-1",
+          "instruction": "Zapfendurchmesser/-breite."
+        },
+        {
+          "id": "M10-2",
+          "instruction": "Lagerbreite und Tiefe."
+        },
+        {
+          "id": "M10-3",
+          "instruction": "Beilagenstärken separat."
+        }
+      ],
+      "scan_plan": [
+        "Detailscan bei komplexer oder stark verschlissener Lagergeometrie."
+      ],
+      "suspicion_checks": [
+        "Trägt die Welle flächig oder nur in Teilzonen?",
+        "Welche Beilage bestimmt die Achshöhe?"
+      ],
+      "release_when": "Kontaktpaar und Beilagen bleiben eindeutig zugeordnet."
+    },
+    {
+      "id": "CM-11",
+      "level": "STOPP",
+      "title": "Vor dem Lösen stationärer Rahmen / Radstatt",
+      "trigger": "Ein Pfosten, Querbalken, Diagonalholz, Lagerstock, Führungs- oder Auffangrahmen soll gelöst werden.",
+      "do_not": "Rahmen nicht entspannen, Strebe nicht entfernen, Verbindung nicht drehen.",
+      "why": "Topologie und räumliche Funktion der Radstatt sind bislang nur teilweise rekonstruiert.",
+      "tasks": [
+        "TASK-POSE",
+        "TASK-BEARING",
+        "TASK-REGISTER"
+      ],
+      "guide_ids": [
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P11-1",
+          "view": "Q1",
+          "instruction": "gesamte Verbindung mit beiden Nachbarhölzern."
+        },
+        {
+          "id": "P11-2",
+          "view": "Q2",
+          "instruction": "Gegenansicht derselben Verbindung."
+        },
+        {
+          "id": "P11-3",
+          "view": "SCALE",
+          "instruction": "Zapfen/Keil/Stift/Schraube im eingebauten Zustand."
+        }
+      ],
+      "measurements": [
+        {
+          "id": "M11-1",
+          "instruction": "Querschnitt jedes beteiligten Holzes."
+        },
+        {
+          "id": "M11-2",
+          "instruction": "Verbindungsposition zu zwei festen Kanten/Datums."
+        },
+        {
+          "id": "M11-3",
+          "instruction": "Strebenwinkel oder Dreieckskanten, wenn für Lage entscheidend."
+        }
+      ],
+      "scan_plan": [
+        "Kontextscan der Radstatt vor größerem Rahmenabbau; nach jedem wesentlichen Rahmenzustand wiederholen."
+      ],
+      "suspicion_checks": [
+        "Tragend, führend, auffangend oder nur spätere Reparatur?",
+        "Welcher Kraft-/Wasserpfad erklärt die Lage?"
+      ],
+      "release_when": "Verbindung, Funktion/Unklarheit und räumlicher Bezug sind aufgenommen."
+    },
+    {
+      "id": "CM-12",
+      "level": "STOPP",
+      "title": "Bevor ein reales Teil den Einbauort verlässt",
+      "trigger": "Ein ausgebautes Teil soll zum Lagerplatz getragen oder mit anderen Teilen abgelegt werden.",
+      "do_not": "Noch nicht stapeln, Partner nicht trennen, alte Marken nicht überkleben.",
+      "why": "Einbauort, Partner und historische Markierungen sind nach dem Transport schnell verloren.",
+      "tasks": [
+        "TASK-REGISTER",
+        "TASK-KEI"
+      ],
+      "guide_ids": [
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P12-1",
+          "view": "CONTACT",
+          "instruction": "Teil mit ursprünglichem Partner / Einbauort."
+        },
+        {
+          "id": "P12-2",
+          "view": "SCALE",
+          "instruction": "alte Marke + neue KS-ID gemeinsam."
+        },
+        {
+          "id": "P12-3",
+          "view": "Q1",
+          "instruction": "Lagerplatz nach Ablage."
+        }
+      ],
+      "measurements": [],
+      "scan_plan": [
+        "Einzelteilscan vor Einlagerung, wenn dieses Teil für Geometrie/Variante relevant ist."
+      ],
+      "suspicion_checks": [
+        "Ist das Teil wirklich eindeutig identifiziert?",
+        "Gehören lose Keile/Stifte sicher zu diesem Partner?"
+      ],
+      "release_when": "Neue ID, alte Marke, Partner, Ausbauereignis und Lagerplatz sind dokumentiert."
+    },
+    {
+      "id": "CM-13",
+      "level": "STOPP",
+      "title": "Vor dem Verlassen des Standorts",
+      "trigger": "Die Arbeit soll für den Tag beendet werden.",
+      "do_not": "Standort nicht verlassen, bevor Sicherung und offene Zuordnungen geprüft sind.",
+      "why": "Fehlende Bilder, IDs oder Medien lassen sich später oft nicht mehr rekonstruieren.",
+      "tasks": [
+        "TASK-FINAL"
+      ],
+      "guide_ids": [
+        "GUIDE-WATER-SCAN",
+        "GUIDE-CONTEXT"
+      ],
+      "photo_plan": [
+        {
+          "id": "P13-1",
+          "view": "Q1",
+          "instruction": "Übersicht des aktuellen Demontagezustands."
+        },
+        {
+          "id": "P13-2",
+          "view": "Q2",
+          "instruction": "Lager-/Ablageorte mit beschrifteten Teilen."
+        }
+      ],
+      "measurements": [],
+      "scan_plan": [
+        "Optional Zustands-Scan nach Tagesende, wenn sich Geometrie wesentlich verändert hat."
+      ],
+      "suspicion_checks": [
+        "Welche Frage wäre morgen nicht mehr beantwortbar?",
+        "Gibt es unzugeordnete Kleinteile oder Medien?"
+      ],
+      "release_when": "Export auf zweitem Gerät geöffnet; Originalmedien gesichert; offene Punkte und Verantwortliche notiert."
+    }
+  ]
+}
