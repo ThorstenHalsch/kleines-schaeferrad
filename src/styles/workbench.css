@@ -87,3 +87,5 @@ footer{padding:.65rem 0;color:var(--mux-muted)}
 
 /* Let enlarged text reflow the inspector below the model. */
 .workspace{display:flex;flex-wrap:wrap}.workspace>.model-panel{flex:1.85 1 36rem}.workspace>.inspector{flex:.75 1 20rem}
+/* The scan comparison caption replaces the general interaction hint. */
+#viewport:has(#scan-separation:not([hidden])) #render-status{visibility:hidden}
