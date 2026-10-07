@@ -1,0 +1,18 @@
+---
+interface Props { name: 'arrow'|'diagonal'|'wheel'|'layers'|'scan'|'alert'|'measure'|'memory'|'waves'|'source'|'menu'; size?: number; }
+const { name, size = 20 } = Astro.props;
+const paths: Record<Props['name'], string> = {
+  arrow: 'M5 12h14M13 6l6 6-6 6',
+  diagonal: 'M7 17 17 7M9 7h8v8',
+  wheel: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 4v10M7 12h10M8.5 8.5l7 7M15.5 8.5l-7 7',
+  layers: 'm12 3 9 5-9 5-9-5 9-5Zm-9 10 9 5 9-5M3 17l9 5 9-5',
+  scan: 'M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M8 12h8',
+  alert: 'M12 4 3 20h18L12 4Zm0 6v4M12 17h.01',
+  measure: 'M4 17 17 4l3 3L7 20H4v-3Zm8-8 3 3M9 12l3 3',
+  memory: 'M8 3v3M16 3v3M8 18v3M16 18v3M3 8h3M18 8h3M3 16h3M18 16h3M7 7h10v10H7z',
+  waves: 'M3 8c3-3 6 3 9 0s6 3 9 0M3 13c3-3 6 3 9 0s6 3 9 0M3 18c3-3 6 3 9 0s6 3 9 0',
+  source: 'M7 3h10v18H7zM9 7h6M9 11h6M9 15h4',
+  menu: 'M4 8h16M4 16h16'
+};
+---
+<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={paths[name]} /></svg>
