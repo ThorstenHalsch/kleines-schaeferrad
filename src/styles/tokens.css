@@ -1,21 +1,21 @@
 :root{
-  --mux-paper:#f7f5ef;
-  --mux-paper-warm:#f1eee6;
-  --mux-surface:#fffdf8;
-  --mux-ink:#242520;
-  --mux-muted:#66655f;
-  --mux-green:#24463d;
-  --mux-green-2:#365b51;
-  --mux-lime:#ebe5c8;
-  --mux-soft:#eeece5;
-  --mux-soft-2:#f4f1ea;
-  --mux-line:#d8d4ca;
-  --mux-line-strong:#b9b3a8;
+  --mux-paper:#fafbf7;
+  --mux-white:#ffffff;
+  --mux-surface:#ffffff;
+  --mux-ink:#172b25;
+  --mux-muted:#5b6962;
+  --mux-green:#193e35;
+  --mux-green-2:#285749;
+  --mux-lime:#dbe987;
+  --mux-soft:#edf1e7;
+  --mux-soft-2:#f0f3eb;
+  --mux-line:#dce2d9;
+  --mux-line-strong:#b4c1b8;
   --mux-amber:#b06f22;
-  --mux-warning-bg:#fff0cf;
+  --mux-warning-bg:#fff3d8;
   --mux-danger:#9b3b2f;
-  --mux-radius-lg:16px;
-  --mux-radius-md:8px;
-  --mux-max:1320px;
-  --mux-font:'Manrope Variable',system-ui,sans-serif;
+  --mux-radius-story:24px;
+  --mux-radius-work:8px;
+  --mux-max:1240px;
+  --mux-font:'Manrope Variable',sans-serif;
 }
