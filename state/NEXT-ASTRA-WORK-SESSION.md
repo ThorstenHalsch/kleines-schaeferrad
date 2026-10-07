@@ -1,186 +1,199 @@
-# NEXT ASTRA WORK SESSION — Field Reconstruction Workbench Alpha
+# NEXT ASTRA WORK SESSION — Pre-Disassembly Field Kit & UX Refinement
 
-Branch-Ausgangspunkt: `main` nach Research Page Draft 01.
+Branch base: `work/pre-disassembly-field-kit-20261007`
 
 ## Mission
 
-Transformiere die bestehende Research Page von einer primär publizierenden Darstellung in ein **zweischichtiges System aus Story Page + Field Reconstruction Workbench**.
+Bring the current Workbench Alpha from a technically functional research tool to a **pre-disassembly field system** that supports experienced craftspeople, produces a printable technical Field Pack, and preserves unresolved geometry as explicit questions.
 
-Die Baseline bleibt Source of Truth. Historische Werte, aktuelle Beobachtung, Inferenz und Konflikt dürfen nie unmarkiert ineinanderfallen.
+Target gate:
 
-Diese Session darf jetzt ausdrücklich schwere technische Arbeit übernehmen:
-- parametrische Hypothesengeometrie,
-- Three.js,
-- Volumen-/Komponentenmodell,
-- Scan-Overlays und Registrierungsexperimente,
-- Exploded Views,
-- technische Projektionen,
-- datengetriebene Feldinteraktion.
+**PRE-DISASSEMBLY FIELD KIT READY**
 
-## Zuerst lesen
+## Mandatory sources
 
-- `docs/UX-AUDIT-DRAFT-01.md`
-- `docs/FIELD-WORKBENCH-ARCHITECTURE.md`
-- `docs/BASELINE.md`
-- `docs/HUMAN-CALIBRATION.md`
+Read first:
+- `docs/UX-AUDIT-DRAFT-02.md`
+- `docs/TONE-AND-LANGUAGE.md`
+- `docs/MUX-DESIGN-GRAMMAR-V2.md`
+- `docs/SCAN-REGISTRATION-PLAN.md`
+- `docs/ARM-SHAFT-HYPOTHESES.md`
+- `docs/PRE-DISASSEMBLY-FIELD-KIT.md`
+- `docs/CAPTURE-BEFORE-DISASSEMBLY.md`
 - `docs/HANDWERKSWISSEN-CAPTURE.md`
 - `docs/DRAWING-LANGUAGE.md`
-- `docs/CAPTURE-BEFORE-DISASSEMBLY.md`
-- `data/components.json`
-- `data/assembly.graph.json`
-- `data/geometry.claims.json`
-- `data/conflicts.json`
-- `data/knowledge-gaps.json`
-- `data/reference-system.json`
-- `evidence/manifest.json`
+- `docs/workbench/HUMAN-PLAN.md`
+- all current baseline JSON
 
-## Phase A — Workflow before graphics
+## Design contract — one identity, three densities
 
-Definiere zuerst die tatsächlichen Nutzer-/Feldflüsse:
+Keep the shared MUX token system in `src/styles/tokens.css`.
 
-1. Teil finden.
-2. Wissensstand verstehen.
-3. offene Frage sehen.
-4. zeigen / messen / vergleichen / erklären.
-5. Observation Record erzeugen.
-6. Änderung am Knowledge State sichtbar machen.
+- **Story / Intro:** warm, photographic, proud, moderately spacious.
+- **Werkstatt / Analysis:** same identity, much denser and more technical; model, photos and drawings get the space, not cards/chrome.
+- **Field Mode:** same identity, one task per screen and very large controls.
 
-Baue daraus die IA für `/werkstatt/`. Die öffentliche Landing Page bleibt erhalten und verweist prominent dorthin.
+Do not copy marketing-style Astro cards into the workshop. Do not create a separate unrelated design system.
 
-Keine zusätzliche Card-Galerie als Ersatz für Workflow-Design.
+## Phase A — Human-facing language & aesthetic
 
-## Phase B — Parametric Hypothesis Model v0
+Refactor public page and workbench:
+- craftspeople-first German copy,
+- pride, continuity and shared authorship,
+- reduce Research/Claims/Conflict jargon in human UI,
+- keep internal schemas unchanged,
+- use paper/technical-workbench aesthetic,
+- reduce card density and vertical waste,
+- let wheel/photos/model dominate.
 
-Baue ein bewusst unperfektes, aber strukturell brauchbares parametrisches Modell.
+## Phase B — Orientation & scan correctness
 
-Regeln:
-- stabile Component-IDs,
-- drei durchgehende Arme vs. sechs Speichenenden korrekt unterscheiden,
-- zwei Kranzebenen,
-- segmentierte Krümmlinge,
-- Kümpfe/Schaufeln zunächst parametrisch,
-- Lager/Radstatt/Trog als separate stationäre Schicht,
-- historische Dimensionen nur als Hypothesenparameter,
-- alle nicht belegten Maße mit Range/null/provenance,
-- Konflikte als Varianten, nicht durch Mittelwerte auflösen.
+Fix the current scan overlay architecture:
+- normalize GLTF Y-up to mechanical Z-up,
+- verify handedness,
+- show permanent axis triad and orientation legend,
+- distinguish RAW_EXPORT / AXIS_NORMALIZED / ROUGH_ALIGNED / REGISTERED / CALIBRATED,
+- do not fake mechanical registration,
+- store transform as data,
+- prepare 3+ fixed field datum markers,
+- do not assert LAND/WATER before HUMAN-01.
 
-Erzeuge mindestens:
-- assembled hypothesis,
-- exploded hypothesis,
-- land/water orthographic,
-- shaft/arm focus,
-- rim/kruemmling focus,
-- vessel/paddle focus.
+## Phase C — Arm/shaft hypothesis model
 
-## Phase C — Three.js Workbench
+Replace the visually overconfident straight-arm presentation with explicit hypotheses.
 
-Implementiere eine touch-sichere 3D-Arbeitsfläche.
+Support at least:
+- straight/simple placeholder,
+- possible bent/dogleg representation,
+- axial-layer alternatives,
+- visible unknown mortise/interlocking zone.
 
-Pflicht:
-- große feste Standardansichten,
-- Orbit erst nach expliziter Aktivierung,
-- Reset,
-- Component Pick,
-- Layer Toggle: model / scan / historical / questions,
-- Explode,
-- simple section/cut if robust,
-- uncertainty legend,
-- Frage-/Messpins direkt an Komponenten,
-- A/B-Hypothesenvergleich.
+Do not invent hidden joinery. Generate targeted P0++ field questions from these hypotheses.
 
-Keine Fotorealistik als Default.
+## Phase D — Field Mode
 
-## Phase D — Evidence-linked Inspector
+Add a separate `/feld/` or explicit Field Mode.
 
-Für ausgewählte Komponente:
-- IDs / lokale Namen,
-- Quellenbilder,
-- relevante Claims,
-- Konflikte,
-- aktuelle Tasks,
-- historische vs aktuelle vs hypothetische Maße,
-- direkte Aktion: Messen / Foto / Erklärung / A-B-Auswahl.
+Rules:
+- one task per screen,
+- very large controls,
+- minimal free text,
+- next/back,
+- visible persistence,
+- task completion state,
+- supports photo, measurement, explanation and unknown,
+- works without research terminology,
+- analysis workbench remains separately available.
 
-Jeder sichtbare Wert muss bis zur Quelle zurückverfolgbar sein.
+## Phase E — Shared task model
 
-## Phase E — Field Capture Alpha
+Create canonical structured task data used by both Web Field Mode and printable Field Pack.
 
-Definiere und implementiere Observation Records gemäß `FIELD-WORKBENCH-ARCHITECTURE.md`.
+Required fields:
+- task_id
+- component/family/instance
+- timing
+- irreversible_loss
+- instruction
+- photo_views
+- measurement_endpoints
+- tools
+- questions
+- media_requirements
+- acceptance_evidence
+- status
 
-Mindestens:
-- measurement,
-- observation,
-- identification,
-- expert narrative,
-- risk.
+No duplicated handwritten task logic in templates.
 
-Für Alpha darf Speicherung lokal erfolgen (IndexedDB/local storage/file export), sofern Daten verlustarm exportierbar sind. Keine unnötige Backend-Plattform bauen.
+## Phase F — Physical instance register
 
-Foto-/Audio-Capture nur, wenn Browser/API stabil und UX einfach bleibt.
+Prepare schema/UI for:
+- KS-ARM/KRU/KUM/PAD/KEI IDs,
+- historic marks,
+- local name,
+- installed position,
+- partners,
+- condition,
+- removal event,
+- storage location.
 
-## Phase F — Werkstattzeichnung v0
+Do not pre-create unverified physical instances as facts.
 
-Erzeuge aus **derselben parametrischen Geometrie** erste technische Review-Blätter im etablierten 70er/80er-Werkstattstil.
+## Phase G — Printable Field Pack
 
-Noch keine Fertigungsfreigabe.
+Generate a coherent printable PDF in the established classic technical drawing style.
 
-Mindestens:
-- KS-00 Systemübersicht,
-- KS-10 Welle/Arme,
-- KS-20 Kranz/Krümmling,
-- KS-30 Kumpf,
-- KS-60 Zusammenbau / Exploded.
+Target:
+- A3 landscape primary format,
+- readable by 60–80-year-old workshop users,
+- high contrast,
+- large writing fields,
+- STOP cards before irreversible actions,
+- technical sketches where useful,
+- conflict comparisons,
+- arm/shaft P0++ pages,
+- scan/photo instructions,
+- craft-knowledge questions,
+- event and part registers,
+- final completeness checklist.
 
-Offene Maße sichtbar markieren statt erfinden.
+PDF must be generated from the same task/model data as Web Field Mode.
 
-## Phase G — Risk / Craft Knowledge Layer
+## Phase H — Offline robustness
 
-Führe ein erstes strukturiertes Schema für:
-- Quellen/Schwinden,
-- Keil-/Passungsrisiken,
-- Strömungs-/Stoßlasten,
-- Verschleiß,
-- Reparaturpraxis,
-- Warnsignale.
+Before gate:
+- PWA/service-worker offline start,
+- verify after one preload,
+- test 20–50 photo session,
+- storage warning,
+- export while offline,
+- document browser storage limitations.
 
-UI-seitig direkt an Komponenten/Verbindungen anbinden.
+Do not build a backend.
 
-## Phase H — Ergonomic field test
+## Phase I — Acceptance
 
-Die Workbench nicht nur technisch bauen, sondern mit einer simulierten oder realen Feldsequenz prüfen.
+Automated:
+- desktop
+- 320 px
+- iPhone emulation
+- 200 % text
+- offline reload
+- task resume
+- 20+ photo load
+- PDF generation
+- no horizontal overflow
+- ≥44 px frequent touch controls
 
-Prüfen:
-- 320 px und aktuelles iPhone,
-- Desktop,
-- 200 % Textzoom,
-- große Targets,
-- keine hover-only Funktionen,
-- keine hidden-gesture-only Funktionen,
-- unterbrochene Aufgabe kann fortgesetzt werden,
-- Standardansichten funktionieren ohne 3D-Erfahrung.
+Human/manual remaining if unavailable:
+- physical current iPhone Safari
+- actual target users
+- real field daylight/wet-hand test
 
-Wenn reale Nutzer verfügbar sind, mindestens 2–3 Personen aus der tatsächlichen Zielgruppe mit kurzen Tasks testen und Resultate materialisieren.
+## Stop conditions
 
-## Nicht tun
-
-- Baseline-Widersprüche löschen,
-- historische Maße als current as-built ausgeben,
-- Scanlöcher automatisch als reale Geometrie schließen,
-- große Backend-/Account-Plattform aufbauen,
-- UI mit Marketingkarten aufblasen,
-- „fertigen Digital Twin“ behaupten.
+Do not:
+- promote hypothesis to current geometry,
+- repair scan holes,
+- assert LAND/WATER before human confirmation,
+- claim Gaussian Splats as metric evidence,
+- invent arm/mortise topology,
+- build cloud platform/backend.
 
 ## Gate
 
-Stoppe erst bei:
+Stop only at:
 
-**FIELD RECONSTRUCTION WORKBENCH ALPHA READY**
+**PRE-DISASSEMBLY FIELD KIT READY**
 
-Das Gate verlangt:
-- navigierbares Hypothesenmodell,
-- Component ↔ Claim ↔ Evidence ↔ Task-Verknüpfung,
-- mindestens einen vollständigen Capture-Loop,
-- erste technische Review-Blätter,
-- dokumentierte Unsicherheitsdarstellung,
-- ergonomische Testevidenz,
-- klaren nächsten Feld-/Human-Calibration-Plan.
+Deliver:
+- refined public page,
+- refined analysis workbench,
+- field mode,
+- corrected scan coordinate handling,
+- arm/shaft hypothesis layer,
+- canonical task model,
+- printable Field Pack PDF,
+- offline evidence,
+- validation report,
+- remaining human calibration list.
