@@ -108,6 +108,10 @@ footer{padding:1rem 0;font-size:.76rem;color:var(--mux-muted)}
   .selection-panel{border-left:0;border-top:1px solid var(--mux-line);padding:.75rem 0 0}
 }
 @media(max-width:800px){
+  #viewport.scan-active #canvas-host{width:100%;height:50%;bottom:auto}
+  #viewport.scan-active #scan-host{left:0;top:50%;width:100%;height:50%;border-left:0;border-top:1px solid var(--mux-line)}
+  #viewport.scan-active #axis-triad{right:8px;top:8px}
+  #viewport.scan-active #scan-separation{top:50%;left:0;transform:translateY(-100%)}
   .wb-header{grid-template-columns:1fr auto;padding:.5rem .75rem}
   .wb-header strong{display:none}
   .wb-header nav{gap:.5rem}
