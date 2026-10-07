@@ -10,108 +10,105 @@ import anatomy from '../../evidence/raw/IMG_6861.jpeg';
 const routes = {
   workshop: href('werkstatt/'),
   field: href('feld/'),
-  plan: href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf'),
-  shortPlan: href('field-pack/KS-Kurzplan-A4.pdf')
+  plan: href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf')
 };
 
-const phases = [
-  ['01','Vor dem Lösen','Einbaulage, Orientierung, Wasserstand, Referenzpunkte und sichtbare Verbindungen sichern.'],
-  ['02','Beim Öffnen','Vorher/Nachher fotografieren, Keile und Partner zuordnen, neue Innenflächen sofort festhalten.'],
-  ['03','Nach dem Ausbau','Reale Teile beschriften, Profile und Varianten messen, Lagerorte und Partner erhalten.'],
-  ['04','Gemeinsam abschließen','Offene Punkte benennen, Sicherung prüfen und festhalten, was später noch geklärt werden muss.']
+const system = [
+  ['Radkörper','Welle, Arme, Kränze und Krümmlinge'],
+  ['Wasseraufnahme','Kümpfe und Schaufeln'],
+  ['Lagerung','Zapfen, Lager, Lagerstöcke und Auflager'],
+  ['Tragwerk','Radstatt, Querbalken und Rahmen'],
+  ['Wasserführung','Trog, Rinne, Wasserlinie und Fließrichtung']
 ];
 
-const openQuestions = [
-  'Wie liegen und greifen die Arme tatsächlich in der Welle?',
-  'Welche Maße aus den alten Zeichnungen gehören zu welcher realen Variante?',
-  'Wie sind Krümmlinge, Kümpfe, Schaufeln und Keile im heutigen Zustand wirklich verbunden?',
-  'Wie gehören Rad, Lager, Radstatt, Trog, Rinne und weitere Holzrahmen räumlich zusammen?'
+const paths = [
+  {
+    number:'01',
+    title:'Arbeitsplan',
+    text:'Für den Abbau: Skizzen, Messstellen, Fotopositionen und STOPP-Punkte auf Papier.',
+    href:routes.plan,
+    action:'A3-Plan öffnen'
+  },
+  {
+    number:'02',
+    title:'Vor Ort',
+    text:'Eine Aufgabe nach der anderen aufnehmen. Fotos, Maße, Teile und Sicherung bleiben zusammen.',
+    href:routes.field,
+    action:'Vor-Ort-Modus öffnen'
+  },
+  {
+    number:'03',
+    title:'Werkstattmodell',
+    text:'Rad, Tragwerk, Punktewolke und offene Verbindungen gemeinsam ansehen und vergleichen.',
+    href:routes.workshop,
+    action:'Arbeitsmodell öffnen'
+  }
 ];
 ---
-<BaseLayout title="Das Kleine Schäferrad" description="Ein Stück Regnitzgeschichte: gemeinsam Aufbau, Maße und Werkstattwissen des Kleinen Schäferrads erhalten.">
+<BaseLayout title="Das Kleine Schäferrad" description="Ein Stück Regnitzgeschichte: Aufbau, Handwerk und Wissen des Kleinen Schäferrads gemeinsam erhalten.">
   <section class="home-hero container">
     <div class="home-hero-copy">
-      <span class="location-label"><span class="status-dot"></span>Möhrendorf / Oberndorf · an der Regnitz</span>
-      <h1>Das Kleine Schäferrad.<br /><span>Handwerk, das weitergetragen wird.</span></h1>
-      <p class="home-lead">Dieses Rad lebt von Erfahrung: vom Wissen, wie Holz arbeitet, wie Keile sitzen, wie Wasser wirkt und wie viele einzelne Handgriffe am Ende ein funktionierendes Ganzes ergeben. Vor der Demontage halten wir dieses Wissen gemeinsam fest.</p>
+      <span class="location-label"><span class="status-dot"></span>Möhrendorf / Oberndorf · Regnitz</span>
+      <h1>Das Kleine Schäferrad.</h1>
+      <p class="hero-kicker">Handwerk, das weitergetragen wird.</p>
+      <p class="home-lead">Ein Wasserschöpfrad lebt nicht nur von Holz und Wasser, sondern vom Wissen der Menschen, die es aufbauen, pflegen und wieder zerlegen. Dieses Wissen halten wir vor der Demontage gemeinsam fest.</p>
       <div class="home-actions">
-        <a class="button button-dark" href={routes.plan}>Werkstatt- und Aufnahmeplan öffnen <Icon name="diagonal" size={17} /></a>
-        <a class="button button-outline" href={routes.field}>Vor Ort arbeiten</a>
-        <a class="text-link" href={routes.workshop}>Arbeitsmodell ansehen <Icon name="arrow" size={17} /></a>
+        <a class="button button-dark" href={routes.plan}>Arbeitsplan öffnen <Icon name="diagonal" size={16} /></a>
+        <a class="text-link" href={routes.field}>Vor Ort arbeiten <Icon name="arrow" size={16} /></a>
+        <a class="text-link" href={routes.workshop}>Werkstattmodell <Icon name="arrow" size={16} /></a>
       </div>
-      <p class="home-note">Alte Zeichnungen, neue Aufnahmen und das Wissen der Menschen vor Ort gehören zusammen. Offene Stellen bleiben offen, bis sie am echten Rad geklärt sind.</p>
     </div>
     <figure class="home-hero-visual">
       <Image src={hero} alt="Das Kleine Schäferrad im eingebauten Zustand an der Regnitz" widths={[640,960,1280]} sizes="(max-width: 899px) 100vw, 50vw" loading="eager" fetchpriority="high" />
-      <figcaption>Das Rad im eingebauten Zustand · Ausgangspunkt für die gemeinsame Rekonstruktion</figcaption>
+      <figcaption>Das Kleine Schäferrad im eingebauten Zustand.</figcaption>
     </figure>
   </section>
 
   <section id="geschichte" class="home-story">
     <div class="container home-story-grid">
       <div>
-        <span class="eyebrow">Seit Jahrhunderten an der Regnitz</span>
-        <h2>Eine Technik, die nur weiterlebt, wenn Wissen weitergegeben wird.</h2>
+        <span class="eyebrow">Regnitzgeschichte</span>
+        <h2>Seit Jahrhunderten aus Erfahrung gebaut.</h2>
       </div>
       <div class="home-story-copy">
-        <p>Wasserschöpfräder sind an der Regnitz bereits seit dem frühen 15. Jahrhundert belegt. Um 1805 arbeiteten zwischen Fürth und Forchheim noch rund 190 solcher Räder. Das Kleine Schäferrad gehört zu dieser besonderen fränkischen Tradition.</p>
-        <p>Dass sie heute noch zu sehen sind, verdanken sie den Menschen, die sie aufbauen, pflegen, reparieren und am Saisonende wieder zerlegen. Genau dieses Wissen wollen wir gemeinsam bewahren. <a href="https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder" target="_blank" rel="noopener">Quelle: Gemeinde Möhrendorf ↗</a></p>
+        <p>Wasserschöpfräder sind an der Regnitz seit dem frühen 15. Jahrhundert belegt. Um 1805 arbeiteten zwischen Fürth und Forchheim noch rund 190 Räder.</p>
+        <p>Dass diese Technik heute noch sichtbar ist, verdankt sie den Menschen, die sie jedes Jahr aufbauen, pflegen, reparieren und wieder abbauen. Genau dieses praktische Wissen gehört zur Geschichte des Rades. <a href="https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder" target="_blank" rel="noopener">Gemeinde Möhrendorf ↗</a></p>
       </div>
     </div>
   </section>
 
   <section id="aufbau" class="section container home-system">
     <div class="section-heading compact-heading">
-      <div><span class="eyebrow">Das ganze System</span><h2>Nicht nur das Rad.</h2></div>
-      <p>Zur Rekonstruktion gehören auch Lager, Radstatt, Trog, Rinne und die stationären Holzrahmen rund um das Rad. Was noch nicht sicher verstanden ist, wird als Arbeitsannahme gekennzeichnet.</p>
+      <div><span class="eyebrow">Das technische System</span><h2>Mehr als ein Rad.</h2></div>
+      <p>Radkörper, Lagerung, Radstatt und Wasserführung gehören zusammen. Was noch nicht sicher verstanden ist, bleibt als offene Stelle sichtbar.</p>
     </div>
     <div class="home-system-grid">
       <figure class="home-system-image">
         <Image src={anatomy} alt="Innenansicht mit Welle, Armen, Kranz und Tragwerk" widths={[640,960,1280]} sizes="(max-width: 899px) 100vw, 58vw" />
-        <figcaption>Radkörper und Tragwerk müssen als ein technisches System gelesen werden.</figcaption>
+        <figcaption>Welle, Arme und stationäres Tragwerk im Zusammenhang.</figcaption>
       </figure>
       <div class="home-system-list">
-        <div><strong>Radkörper</strong><span>Welle, Arme, Kränze, Krümmlinge</span></div>
-        <div><strong>Wasseraufnahme</strong><span>Kümpfe, Schaufeln / Schetter</span></div>
-        <div><strong>Verbindungen</strong><span>Keile, Stifte, Bänder, Kontaktflächen</span></div>
-        <div><strong>Lagerung</strong><span>Lager, Zapfen, Lagerstöcke, Auflager</span></div>
-        <div><strong>Tragwerk</strong><span>Radstatt, Querbalken, untere und seitliche Rahmen</span></div>
-        <div><strong>Wasserführung</strong><span>Trog, Rinne, Wasserlinie, Fließrichtung</span></div>
+        {system.map(([title,text]) => <div><strong>{title}</strong><span>{text}</span></div>)}
       </div>
     </div>
   </section>
 
-  <section id="arbeit" class="section home-work">
+  <section class="home-paths">
     <div class="container">
       <div class="section-heading compact-heading">
-        <div><span class="eyebrow">Vor und während der Demontage</span><h2>Eine klare Reihenfolge statt eines Cockpits.</h2></div>
-        <p>Die Arbeitsunterlagen führen immer entlang derselben roten Linie: erst orientieren, dann aufnehmen, erst danach lösen.</p>
+        <div><span class="eyebrow">Weiterarbeiten</span><h2>Drei Wege. Ein gemeinsamer Stand.</h2></div>
+        <p>Der Arbeitsplan führt durch den Abbau, der Vor-Ort-Modus hält Befunde fest, das Werkstattmodell hilft beim Verstehen.</p>
       </div>
-      <div class="phase-list">
-        {phases.map(([number,title,text]) => (
-          <div class="phase-row">
-            <span class="phase-number">{number}</span>
-            <div><h3>{title}</h3><p>{text}</p></div>
-          </div>
+      <div class="path-list">
+        {paths.map((item) => (
+          <a href={item.href} class="path-row">
+            <span class="path-number">{item.number}</span>
+            <strong>{item.title}</strong>
+            <span>{item.text}</span>
+            <span class="path-action">{item.action} <Icon name="arrow" size={16} /></span>
+          </a>
         ))}
       </div>
-      <div class="home-work-actions">
-        <a class="button button-dark" href={routes.plan}>A3-Arbeitsplan öffnen</a>
-        <a class="button button-outline" href={routes.shortPlan}>Kurzübersicht öffnen</a>
-      </div>
     </div>
   </section>
-
-  <section id="offen" class="section container home-open">
-    <div class="section-heading compact-heading">
-      <div><span class="eyebrow">Noch nicht geklärt</span><h2>Genau dafür zerlegen wir nicht blind.</h2></div>
-      <p>Einige der wichtigsten Antworten werden erst sichtbar, wenn reale Verbindungen geöffnet werden. Bis dahin bleiben sie bewusst als Fragen im Modell und im Arbeitsplan.</p>
-    </div>
-    <div class="open-lines">
-      {openQuestions.map((question,index) => (
-        <div><span>{String(index+1).padStart(2,'0')}</span><p>{question}</p></div>
-      ))}
-    </div>
-  </section>
-
 </BaseLayout>
