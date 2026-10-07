@@ -1,0 +1,29 @@
+{
+  "tested_commit": "27874181872d51c7055724f5a1d0004e640a2d8d",
+  "run_id": 37681272448,
+  "artifact_id": 11508469659,
+  "artifact_sha256": "sha256:fc8ee5759505334e4ed3796dbf7396d0f50c6e87d50b99caf90c8ee4e018182b",
+  "artifact_expires_at": "2027-01-05T20:20:39Z",
+  "original_pngs": "GitHub Actions artifact",
+  "repository_copies": "WebP review derivatives, max 1280px width / 6000px height, quality 80",
+  "runs": [
+    {
+      "id": 37681280689,
+      "name": "Build and deploy research draft",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 37681280739,
+      "name": "Field workbench acceptance",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37681272448,
+      "name": "Pre-disassembly field kit acceptance",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

@@ -197,3 +197,10 @@ Deliver:
 - offline evidence,
 - validation report,
 - remaining human calibration list.
+
+
+## Abschluss dieser Session — 2026-10-07
+
+**PRE-DISASSEMBLY FIELD KIT READY**. Phasen A–I materialisiert und automatisiert abgenommen. Verbindlicher Abschlussbericht: `docs/field-kit/VALIDATION.md`; Nutzung und menschliche Restkalibrierung: `docs/field-kit/FIELD-USE.md`. Druckunterlagen: `output/pdf/KS-Field-Pack-A3.pdf` und `output/pdf/KS-Einsatzleitung-A4.pdf`. Offline-/Browsernachweise: `state/field-kit/browser/`.
+
+Hier stoppen. Keine neue Designrichtung, keine Ist-Geometrie aus Hypothesen, kein Merge und kein Deploy. Nächster fachlicher Schritt ist die reale Feldaufnahme und menschliche Kalibrierung, nicht eine weitere Modellvermutung.

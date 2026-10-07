@@ -1,0 +1,10 @@
+{
+  "a3_pages": 38,
+  "a3_landscape_all": true,
+  "out_of_page_text": [],
+  "pdf_sha256": {
+    "KS-Field-Pack-A3.pdf": "cf8ac501730e7cfef9bc166df8b4c56d0829e5dc2e635ac059634b9a9c21530a",
+    "KS-Einsatzleitung-A4.pdf": "43c3a01303e9f56be7f498d5d06230fee3901db2367ef362947309ce6e4fc739"
+  },
+  "visual_review": "All 38 A3 pages reviewed as rendered contacts; final arm/shaft sheets, P0++ task, conflict comparison and A4 leader sheet reviewed after corrections. No measured geometry inferred."
+}
