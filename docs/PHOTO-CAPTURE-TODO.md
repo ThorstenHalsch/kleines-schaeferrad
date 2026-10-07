@@ -1,6 +1,129 @@
 # Foto- und Aufnahme-To-do — Kleines Schäferrad
 
-Stand: 2026-10-07  
+## Regel für Fotoanforderungen an Hannes
+
+**Nie nach Dateinamen, IMG-Nummern, PHOTO-IDs oder internen Quellenkennungen fragen.**
+
+Hannes arbeitet aus der iPhone-Fotogalerie. Fotoanforderungen müssen deshalb immer so formuliert sein, dass er sie visuell wiederfinden kann:
+
+- **Perspektive:** von wo wurde fotografiert?
+- **Ausschnitt:** was muss komplett im Bild sein?
+- **erkennbare Merkmale:** welche Hölzer, Lager, Wasserflächen oder Bauteile sollen gleichzeitig sichtbar sein?
+- **technischer Zweck:** was wollen wir aus genau diesem Bild verstehen?
+
+Beispiel:
+
+> Suche bitte ein Foto, auf dem du **von der Wasserseite schräg auf das komplette Rad** schaust und **Rad, beide Lagerbereiche, die vorderen Pfosten, die unteren Querhölzer und möglichst viel Wasserfläche gleichzeitig** siehst. Es darf gern weiter weg aufgenommen sein. Wir brauchen es, um **Rad und Tragwerk räumlich zueinander einzuordnen**.
+
+Wenn ein passendes Bild geliefert wird, übernimmt das Projekt selbst die interne Zuordnung zu Quellen-ID, Dateiname, Baugruppe und Evidenzstatus.
+
+---
+
+## Was als Nächstes visuell in der iPhone-Galerie gesucht werden sollte
+
+### 1. Komplette Wasserseite — höchste Priorität
+
+Suche ein Foto, auf dem:
+- das **gesamte Rad** sichtbar ist,
+- du **von der Wasserseite** darauf schaust,
+- möglichst **alle Holzrahmen rund um das Rad** mit im Bild sind,
+- die **Wasseroberfläche** deutlich sichtbar ist,
+- nichts Wichtiges durch starken Zoom abgeschnitten ist.
+
+Zweck: Gesamtgeometrie von Rad + Tragwerk + Wasser.
+
+### 2. Wasserseite schräg von links
+
+Suche ein Bild, bei dem:
+- du von der Wasserseite **schräg von links** auf das Rad schaust,
+- die Tiefe zwischen vorderen und hinteren Hölzern erkennbar ist,
+- Rad, Pfosten, Querbalken und Wasser gleichzeitig sichtbar sind.
+
+Zweck: räumliche Staffelung des Tragwerks.
+
+### 3. Wasserseite schräg von rechts
+
+Dasselbe von der **anderen Seite**.
+
+Zweck: Gegenprüfung der Rahmengeometrie und verdeckter Bereiche.
+
+### 4. Beide Lagerbereiche
+
+Suche Fotos, auf denen jeweils:
+- das **Ende der Welle**,
+- das **Auflager / der Lagerstock**,
+- angrenzende Pfosten und Balken
+gemeinsam sichtbar sind.
+
+Nicht nur Nahaufnahme des Lagers; mindestens ein Bild soll den Lagerbereich **im Zusammenhang mit dem ganzen Rad** zeigen.
+
+Zweck: Wellenachse, Lagerhöhe und Lastpfad.
+
+### 5. Unterhalb des Rades
+
+Suche Bilder, auf denen man bewusst **unter den Radkörper** bzw. auf den unteren Bereich schaut:
+- untere Querbalken,
+- Stützen,
+- diagonale Hölzer,
+- seitliche Halter,
+- Wasser darunter/dahinter.
+
+Zweck: untere Trag- und Halterahmen verstehen.
+
+### 6. Seitliche Rahmen außerhalb des eigentlichen Rades
+
+Suche Aufnahmen, auf denen Hölzer sichtbar sind, die **nicht direkt Teil des rotierenden Rades** sind:
+- seitliche Führungen,
+- Auffang-/Halterahmen,
+- längs laufende Balken,
+- zusätzliche Pfosten oder Streben.
+
+Zweck: stationären Kontext vollständig machen.
+
+### 7. Trog und Rinne im Zusammenhang
+
+Suche ein Foto, auf dem möglichst gleichzeitig zu erkennen sind:
+- Rad,
+- Schöpftrog/Gießtrog,
+- anschließende Rinne,
+- angrenzendes Tragwerk.
+
+Ein weiteres Detailfoto darf näher sein.
+
+Zweck: Wasserweg nach der Aufnahme verstehen.
+
+### 8. Weite Standortübersicht
+
+Suche ein Bild, das weiter weg aufgenommen wurde und zeigt:
+- Fluss,
+- Ufer,
+- komplettes Rad,
+- Tragwerk,
+- möglichst Umgebung links und rechts.
+
+Zweck: Standortorientierung, Fließrichtung und spätere Szene.
+
+### 9. Entlang der Wellenachse
+
+Suche Bilder, bei denen die Kamera ungefähr **in Richtung der Welle** schaut:
+- einmal von der einen Seite,
+- einmal von der anderen.
+
+Zweck: Kranzabstand, Armversatz und Lagerausrichtung.
+
+### 10. Welle und Arme möglichst frei sichtbar
+
+Suche Nah- oder Mittelaufnahmen, auf denen:
+- die Welle,
+- mehrere Arme gleichzeitig,
+- deren Eintritt in die Welle,
+- möglichst historische Markierungen / Keile
+zu sehen sind.
+
+Zweck: Armform, axiale Versetzung und spätere Interlocking-Hypothesen.
+
+---
+
 Status: Arbeitsliste für nächste Vor-Ort-Aufnahmen und Demontage.
 
 ## P0 — vor dem ersten Lösen
