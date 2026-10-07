@@ -38,3 +38,12 @@ Erster möglicher Astra-Gate:
 `PARAMETRIC RECONSTRUCTION FOUNDATION READY`
 
 Vorher Human Calibration und möglichst GAP-01…GAP-08 erfassen.
+
+
+## Drawing-language reference
+
+The classical drawing layer is frozen in `docs/DRAWING-LANGUAGE.md`, derived from the prior `garden-torch-connector` review drawing practice. The current `TechnicalPlate.astro` is deliberately schematic and non-metric. Replace it only after real field calibration; do not silently promote historical values.
+
+## Current page foundation
+
+Astro scaffold, VZO visual grammar, data-driven baseline metrics, anatomy/evidence/conflict/demolition/craft sections and the workshop drawing shell are now present. CI must pass before the page foundation is handed to Astra.
