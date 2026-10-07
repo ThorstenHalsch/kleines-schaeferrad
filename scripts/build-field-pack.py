@@ -32,7 +32,7 @@ SOFT=HexColor('#edf1e7'); WATER=HexColor('#7396a4')
 
 W,H=landscape(A3); M=13*mm
 manifest_pages=[]; page_no=0
-c=canvas.Canvas(str(OUT/'KS-Field-Pack-A3.pdf'),pagesize=(W,H),invariant=1)
+c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=(W,H),invariant=1)
 c.setTitle('Kleines Schäferrad - Werkstatt- und Aufnahmeplan V2')
 c.setAuthor('Kleines Schäferrad - gemeinsam dokumentiert')
 
@@ -212,7 +212,7 @@ c.save()
 
 # compact A4 running plan: two pages maximum
 aw,ah=landscape(A4)
-a=canvas.Canvas(str(OUT/'KS-Einsatzleitung-A4.pdf'),pagesize=(aw,ah),invariant=1)
+a=canvas.Canvas(str(OUT/'KS-Kurzplan-A4.pdf'),pagesize=(aw,ah),invariant=1)
 def aheader(title):
     a.setFillColor(HexColor('#fafbf7')); a.rect(0,0,aw,ah,fill=1,stroke=0)
     a.setFont('KSB',18); a.setFillColor(INK); a.drawString(12*mm,ah-18*mm,title)
@@ -250,4 +250,7 @@ manifest={
 }
 (ROOT/'docs/field-kit/field-pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 for p in OUT.glob('*.pdf'): shutil.copyfile(p,PUBLIC/p.name)
+# Compatibility aliases for earlier published links; human-facing UI uses German names.
+shutil.copyfile(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf',PUBLIC/'KS-Field-Pack-A3.pdf')
+shutil.copyfile(OUT/'KS-Kurzplan-A4.pdf',PUBLIC/'KS-Einsatzleitung-A4.pdf')
 print('Generated',page_no,'A3 pages and 2 A4 pages from',len(guides),'visual guides /',len(tasks),'canonical tasks')
