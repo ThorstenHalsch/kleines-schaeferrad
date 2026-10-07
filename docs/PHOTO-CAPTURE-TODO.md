@@ -1,5 +1,9 @@
 # Foto- und Aufnahme-To-do — Kleines Schäferrad
 
+> **Für den tatsächlichen Abbau am Samstag gilt als primäre Vor-Ort-Liste:**  
+> [SAMSTAG-ABBAU-AUFNAHMEPLAN.md](SAMSTAG-ABBAU-AUFNAHMEPLAN.md)  
+> Dort stehen alle noch benötigten Motive nach Zeitpunkt, Perspektive, Bildinhalt und technischem Zweck geordnet.
+
 ## Regel für Fotoanforderungen an Hannes
 
 **Nie nach Dateinamen, IMG-Nummern, PHOTO-IDs oder internen Quellenkennungen fragen.**
