@@ -296,13 +296,35 @@ Status: Arbeitsliste für nächste Vor-Ort-Aufnahmen und Demontage.
 - Vor jedem irreversiblen Schritt: **erst fotografieren, dann lösen**.
 - Bei Unsicherheit zusätzlich fotografieren — nicht aussortieren.
 
-## Noch zu sammeln
+## Galerie-Ingest 2026-10-08 — bereits wesentlich besser abgedeckt
 
-Besonders fehlen aktuell:
-- weitere Wasserseiten-Ansichten,
-- seitliche Ansichten der vollständigen Rahmenkonstruktion,
-- untere Trag-/Halterahmen,
-- Lagerstöcke und Wellenauflager,
-- Trog/Rinne im räumlichen Zusammenhang,
-- weite Standortübersichten mit Fluss/Ufer/Rad,
-- Innenaufnahmen erst nach dem Öffnen.
+Durch die neue Serie sind jetzt deutlich besser dokumentiert:
+- Gesamt- und Schrägansichten des Rades mit Tragwerk,
+- Welle und mehrere Arm-Eintrittsstellen,
+- untere und seitliche Rahmenhölzer,
+- Kumpf-/Schaufelbereich,
+- historische Radkreis-/Krümmlinggeometrie,
+- historische Radstatt mit Land-/Wasserseite,
+- historischer gekröpfter Armverlauf.
+
+## Noch zu sammeln — visuell suchen
+
+### Höchste Priorität
+
+- **Lagerkontakt der Welle:** Suche ein Foto, auf dem man wirklich sieht, **wo die dicke Welle aufliegt oder sich dreht**. Achsstummel/Zapfen, Lagerholz/Metall und angrenzender Pfosten sollen gemeinsam sichtbar sein.
+- **Eine Arm-Eintrittsstelle extrem nah:** Die dicke Welle soll das Bild dominieren. Ein Arm, die Keile/Füllstücke und die Kanten der Öffnung vollständig zeigen.
+- **Krümmlingstoß:** Zwei gebogene Hölzer des Radkranzes treffen sich sichtbar. Nah genug für Lochbild, Stift/Nagel, Überlappung oder Reparatur.
+- **Kumpfbefestigung:** Einen einzelnen Holzkübel von hinten oder schräg seitlich, so dass sein tragendes Holz, Schaufel und Befestiger gemeinsam sichtbar sind.
+- **Wasserübergabe oben:** Ein Kumpf nahe dem oberen Trog, idealerweise beim Ausschütten.
+- **Trog → Rinne:** Beide Bauteile und ihre Anschlussstelle in einem Bild.
+- **Unterste Rahmenlage:** Bewusst nach unten/unter das Rad fotografiert; Querhölzer, Pfostenfüße, Auflager und Wasser gemeinsam.
+- **Gegenblick entlang der Wellenachse:** ungefähr exakt von der gegenüberliegenden Seite der bereits vorhandenen axialen Wellenansicht.
+
+### Erst bei Demontage möglich
+
+- Innenaufnahmen nach jeder Arm-/Keilfreigabe,
+- beide Partnerflächen jeder geöffneten Verbindung,
+- reale Arm-Endpaarung,
+- Mortisen/Zapfen/Schlitze und Einstecktiefen,
+- Kontaktflächen und Befestigung eines ausgebauten Kumpfs,
+- Lagerkontakt nach Entlastung/Anheben der Welle.
