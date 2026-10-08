@@ -262,14 +262,18 @@
       "type": "wall_of",
       "scope": "supported-topology",
       "provenance": [
-        "PHOTO-6854"
+        "PHOTO-6854",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "PHOTO-1000046420",
+        "PHOTO-1000046422"
       ],
       "evidence_class": "observed-current",
       "confidence": "high",
       "claim_ids": [
         "CLAIM-0258",
         "CLAIM-0260",
-        "CLAIM-0262"
+        "CLAIM-0262",
+        "CLAIM-0356"
       ],
       "detail": null
     },
@@ -280,35 +284,43 @@
       "type": "encircles",
       "scope": "supported-topology",
       "provenance": [
-        "PHOTO-6854"
+        "PHOTO-6854",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "PHOTO-1000046423"
       ],
       "evidence_class": "observed-current",
       "confidence": "high",
       "claim_ids": [
-        "CLAIM-0259"
+        "CLAIM-0259",
+        "CLAIM-0359"
       ],
-      "detail": null
+      "detail": "Three metal hoops bind the photographed reference Kumpf; exact band dimensions vary historically."
     },
     {
       "id": "EDGE-010",
       "from": "COMP-KUMPF-BASE",
       "to": "COMP-KUEMPFE",
       "type": "bottom_of",
-      "scope": "historical-hidden-joint",
+      "scope": "local-expert-supported-hidden-joint",
       "provenance": [
-        "PHOTO-6823"
+        "PHOTO-6823",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "PHOTO-1000046420",
+        "PHOTO-1000046422"
       ],
-      "evidence_class": "historical-drawing",
-      "confidence": "medium",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
       "claim_ids": [
         "CLAIM-0042",
         "CLAIM-0043",
         "CLAIM-0044",
         "CLAIM-0045",
         "CLAIM-0046",
-        "CLAIM-0047"
+        "CLAIM-0047",
+        "CLAIM-0357",
+        "CLAIM-0358"
       ],
-      "detail": null
+      "detail": "Reference Kumpf base is retained by a groove in the staves; exact groove dimensions remain unmeasured."
     },
     {
       "id": "EDGE-011",
@@ -356,13 +368,13 @@
         "PHOTO-6854"
       ],
       "evidence_class": "observed-current",
-      "confidence": "high",
+      "confidence": "medium",
       "claim_ids": [
         "CLAIM-0258",
         "CLAIM-0260",
         "CLAIM-0262"
       ],
-      "detail": "Visible heads; hidden insertion/contact not established."
+      "detail": "Generic visible fastener heads remain; Kumpfnägel are now modeled as a distinct expert-confirmed attachment family in EDGE-018/019."
     },
     {
       "id": "EDGE-014",
@@ -441,6 +453,76 @@
         "CLAIM-0277"
       ],
       "detail": null
+    },
+    {
+      "id": "EDGE-018",
+      "from": "COMP-KUMPF-NAILS",
+      "to": "COMP-KUMPF-STAVES",
+      "type": "passes_through_drilled_staves",
+      "scope": "local-expert-supported-topology",
+      "provenance": [
+        "NARRATIVE-TH-KUMPF-20261008-02",
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0362",
+        "CLAIM-0363",
+        "CLAIM-0364",
+        "CLAIM-0365",
+        "CLAIM-0366"
+      ],
+      "detail": "Two of twelve staves have two holes each; exact mapping of two nails through four hole positions remains open."
+    },
+    {
+      "id": "EDGE-019",
+      "from": "COMP-KUMPF-NAILS",
+      "to": "COMP-KRUEMMLINGE",
+      "type": "fastens_kumpf_to",
+      "scope": "local-expert-supported-topology",
+      "provenance": [
+        "NARRATIVE-TH-KUMPF-20261008-02"
+      ],
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0364"
+      ],
+      "detail": "Kumpfnägel fasten the Kumpf to the Krümmling; exact path/contact geometry remains open."
+    },
+    {
+      "id": "EDGE-020",
+      "from": "COMP-KUEMPFE",
+      "to": "COMP-KUEMPFE",
+      "type": "overlaps_neighbor",
+      "scope": "local-expert-supported-circumference-topology",
+      "provenance": [
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0367",
+        "CLAIM-0368"
+      ],
+      "detail": "Directed overlap is expert-confirmed as the reason for unequal Kumpfnagel lengths; overlap direction and amount remain to capture."
+    },
+    {
+      "id": "EDGE-021",
+      "from": "COMP-PADDLES",
+      "to": "COMP-RIMS",
+      "type": "orientation_constraint",
+      "scope": "local-expert-correction",
+      "provenance": [
+        "NARRATIVE-TH-PADDLE-20261008-01"
+      ],
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "claim_ids": [
+        "CLAIM-0369"
+      ],
+      "detail": "Expert states 90° to the wheel. Exact geometric reference (wheel plane vs radial/tangential relation) requires explicit scan/photo definition before changing current geometry."
     }
   ],
   "instances": [
