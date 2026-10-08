@@ -1,0 +1,395 @@
+{
+  "schema": "ks-expert-contribution/v1",
+  "id": "EXPERT-KUMPF-20261008-01",
+  "recorded_date": "2026-10-08",
+  "source": {
+    "id": "NARRATIVE-TH-KUMPF-20261008-01",
+    "person": "ThorstenHalsch",
+    "role": "Fachkenner (Selbstauskunft)",
+    "verbatim": "Die Bilder zeigen einen Kumpf aus verschiedenen Richtungen und teilweise zerlegt, damit du verstehst, wie so ein Kumpf ausgebaut, aufgebaut ist. Der Kumpf selbst besteht aus zwölf Dauben und einem Kumpfboden. In den Dauben ist unten eine Einfräsung, in der sich der Boden einsetzt, wenn der Kumpf zusammengebaut wird. Der Kumpf selbst wird dann mit drei Metallbändern gehalten. Für die Metallbänder hast du auch schon Zeichnungen in deinem Repository, die du damit verknüpfen könntest. Aufpassen: Bei den Metallbändern gibt es mehrere Zeichnungen mit unterschiedlichen Maßen, da sind damals unterschiedliche Derivate gefertigt worden. Das, was du hier siehst, ist aber das mit dem richtigen Maß. Das heißt, die Metallbandlänge kannst du dir aus dem Umfang des Kumpfes mit seinen Bemaßungen abschätzen."
+  },
+  "scope": "photographed-reference-kumpf",
+  "physical_instance_id": null,
+  "capture_date": null,
+  "status": "archived-for-reconciliation",
+  "assets": [
+    {
+      "id": "PHOTO-1000046420",
+      "original_filename": "1000046420.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046420.jpg"
+      },
+      "bytes": 151269,
+      "sha256": "a76cb11e6a27d3fa6db341408698925cd4f1b446475dbb4bbb64276db60acb22",
+      "git_blob_sha1": "b0651050bf59b8aa21a56c0cb722fa938b2bbd5e",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046421",
+      "original_filename": "1000046421.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046421.jpg"
+      },
+      "bytes": 144185,
+      "sha256": "83278627dc3b96e7f15d9290ea5dcf96575c30104d1bea7b904783f4e2a955da",
+      "git_blob_sha1": "7f7203bb40887c389e3cab2b8fc9e9a5de0e5957",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046422",
+      "original_filename": "1000046422.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046422.jpg"
+      },
+      "bytes": 133763,
+      "sha256": "b07a4a00163dfa629c0655b6e7cc261a74f93434a2b969c5938aed4089fb0da4",
+      "git_blob_sha1": "0e8e2fa39bfbe51018595a8f4b98f0efedf253ff",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046423",
+      "original_filename": "1000046423.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046423.jpg"
+      },
+      "bytes": 163254,
+      "sha256": "836b49ff126fccba4ec495660554870e52f5394649d8e03fdacf7be9f0e9f396",
+      "git_blob_sha1": "e74348814ac8cdac0cea7d08e782c74c796d0c86",
+      "original_bytes_preserved": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "EXPERT-KUMPF-20261008-STAVE-COUNT",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "staves_per_vessel",
+      "value": 12,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-BASE-COUNT",
+      "subject": "COMP-KUMPF-BASE",
+      "predicate": "bases_per_vessel",
+      "value": 1,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-BASE-GROOVE",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "base_retention",
+      "value": "Einfräsung unten in den Dauben nimmt den Kumpfboden beim Zusammenbau auf.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOOP-COUNT",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "hoops_per_vessel",
+      "value": 3,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOOP-VARIANTS",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "manufactured_variants",
+      "value": "Unterschiedliche Derivate mit unterschiedlichen Maßen wurden gefertigt.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-REFERENCE",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "expert_designated_dimension_reference",
+      "value": "Der fotografierte Kumpf ist laut Fachkenner der mit dem richtigen Maß.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-DRILLED-STAVES",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "drilled_staves_per_vessel",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOLES-PER-DRILLED-STAVE",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "holes_per_drilled_stave",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-ATTACHMENT",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nail_function",
+      "value": "Kumpfnägel werden durch die Daubenlöcher gesteckt und befestigen den Kumpf am Krümmling.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-COUNT",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nails_per_attachment",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-LENGTH-PAIR",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nail_length_pair",
+      "value": "Ein längerer und ein kürzerer Kumpfnagel.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-VESSEL-OVERLAP",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "neighboring_vessels_overlap",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-LENGTH-REASON",
+      "subject": "COMP-FASTENERS",
+      "predicate": "unequal_kumpf_nail_lengths_reason",
+      "value": "Die Überlappung benachbarter Kümpfe erfordert einen längeren und einen kürzeren Kumpfnagel.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    }
+  ],
+  "related": {
+    "conflict_ids": [
+      "CONFLICT-02"
+    ],
+    "gap_ids": [
+      "GAP-04"
+    ],
+    "drawing_sources": [
+      "PHOTO-6821",
+      "PHOTO-6846",
+      "PHOTO-6847"
+    ],
+    "drawing_paths": [
+      "evidence/raw/IMG_6821.jpeg",
+      "evidence/raw/IMG_6846.jpeg",
+      "evidence/raw/IMG_6847.jpeg"
+    ],
+    "claim_ids": [
+      "CLAIM-0032",
+      "CLAIM-0033",
+      "CLAIM-0034",
+      "CLAIM-0225",
+      "CLAIM-0226",
+      "CLAIM-0227"
+    ],
+    "interpretation": "Fachauskunft belegt gefertigte Varianten; numerische Auswahl der passenden Längenreihe bleibt offen.",
+    "component_ids": [
+      "COMP-KUEMPFE",
+      "COMP-KUMPF-STAVES",
+      "COMP-KUMPF-BASE",
+      "COMP-KUMPF-HOOPS",
+      "COMP-FASTENERS",
+      "COMP-KRUEMMLINGE"
+    ],
+    "fastener_evidence": {
+      "photo_paths": [
+        "evidence/raw/IMG_6822.jpeg",
+        "evidence/raw/IMG_6832.jpeg"
+      ],
+      "photo_reference_basis": "docs/reconstruction/SOURCE-RECONCILIATION.md",
+      "wheel_scan_paths": [
+        "evidence/raw/Scaniverse 2026-10-07 173556.ply",
+        "evidence/raw/Scaniverse 2026-10-07 173556.glb"
+      ],
+      "wheel_scan_use": "Überlappung laut Fachkenner sichtbar; gezielter Scanabgleich steht aus.",
+      "dedicated_nail_point_cloud": {
+        "reported_available": true,
+        "archive_path": null,
+        "status": "not-yet-identified-in-current-repository-tree"
+      },
+      "hypothesis_file": "data/kumpf-fastener-hypotheses.json",
+      "hypothesis_reconciliation": [
+        {
+          "id": "KFS-H1",
+          "assessment": "Lang-/Kurzpaar durch direkte Fachauskunft bestätigt."
+        },
+        {
+          "id": "KFS-H2",
+          "assessment": "Neigungs-/Verdrehungsfunktion nicht durch diesen Nachtrag bestätigt; erklärte Ursache ist Überlappung."
+        },
+        {
+          "id": "KFS-H4",
+          "assessment": "Reparaturerklärung angesichts konstruktiver Fachbegründung neu bewerten."
+        }
+      ]
+    }
+  },
+  "band_length_estimation": {
+    "evidence_class": "inferred",
+    "status": "method-documented-numeric-readout-pending",
+    "method": "Außenumfang separat je Bandsitz; Abwicklungslänge = Umfang + Überlappung, ggf. Banddickenkorrektur.",
+    "historical_overlap": {
+      "value": 4,
+      "unit": "cm",
+      "source_claim": "CLAIM-0033",
+      "confirmed_for_reference": false
+    },
+    "selected_lengths": null,
+    "reason": "Außenquerschnitte je Bandsitz und Verschlussüberlappung noch nicht eindeutig abgelesen oder gemessen."
+  },
+  "handoff": {
+    "document": "docs/FACHBEITRAG-KUMPF-20261008.md",
+    "next_steps": [
+      "Stückzahlen und Bodenaufnahme in Komponentenmodell abgleichen.",
+      "CONFLICT-02 um Fachauskunft zu gefertigten Varianten ergänzen.",
+      "Fotoreferenz zur passenden Maßvariante verwenden; numerische Bandlängen separat abschätzen.",
+      "Zwei Dauben mit je zwei Löchern sowie Befestigung Kumpf–Kumpfnägel–Krümmling im Bauteil-/Verbindungsmodell berücksichtigen; Zwei Nägel (lang/kurz) fachlich bestätigt; Lochpaarung und konkrete Einbaulage getrennt klären.",
+      "Lang-/Kurzpaar wegen Überlappung benachbarter Kümpfe berücksichtigen; Fotos und Radscan gezielt abgleichen, separate Nagel-Punktewolke identifizieren; keine Neigungsfunktion daraus erfinden."
+    ],
+    "baseline_unchanged": true
+  },
+  "supplementary_sources": [
+    {
+      "id": "NARRATIVE-TH-KUMPF-20261008-02",
+      "person": "ThorstenHalsch",
+      "role": "Fachkenner (Selbstauskunft)",
+      "recorded_date": "2026-10-08",
+      "verbatim": "Einen Detail habe ich noch vergessen. Jeweils zwei Tauben haben zwei Löcher, durch die später die Kumpfnägel gesteckt werden, um das Ganze am Krümmling zu befestigen.",
+      "terminology_normalization": {
+        "Tauben": "Dauben"
+      },
+      "interpretation": "Zwei der zwölf Dauben haben jeweils zwei Löcher. Diese Lesart ergibt vier Löcher; eine Nagelzahl oder Lochpaarung wird daraus nicht abgeleitet."
+    },
+    {
+      "id": "NARRATIVE-TH-KUMPF-20261008-03",
+      "person": "ThorstenHalsch",
+      "role": "Fachkenner (Selbstauskunft)",
+      "recorded_date": "2026-10-08",
+      "verbatim": "zu den Kümpfen gibt es auch noch eine weitere Information. Es gibt zwei Kumpfnägel, die unterschiedliche Längen haben. Die zwei Kumpfnägel sind auch als Punktewolke und Bilder dokumentiert worden. Zudem kann man aus der Punktewolke, die am Rad selbst entstanden sind, auch sehen, wie die Kümpfe einander überlappen und dass dadurch ein längerer und ein kürzerer Kumpfnagel benötigt wird."
+    }
+  ]
+}
