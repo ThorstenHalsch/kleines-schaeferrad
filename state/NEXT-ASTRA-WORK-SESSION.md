@@ -1,572 +1,368 @@
-# NEXT ASTRA WORK SESSION — Recovery + Brute-Force Functional Reconstruction V2
+# NEXT ASTRA WORK SESSION — Baseline V3 Model Calibration + Perfection Loop
 
-Branch: `work/bruteforce-functional-reconstruction-v2-20261008`
-Base: deployed `main` at `5cc016325f8bf8a5da88edf7c3719937636c1f34`
+Branch: `work/model-calibration-loop-v3-20261008`
+Base: `main@558626019c6f85c6061467727f54122a793b15bd`
 
-Status: **COMPLETED — BRUTE-FORCE FUNCTIONAL RECONSTRUCTION READY**
+Status: **READY FOR ASTRA WORK SESSION**
 
-Abschluss: `state/reconstruction/GATE.md` und `docs/reconstruction/VALIDATION-REPORT.md`. Geprüfter Implementierungscommit: `96132aec62fdb8c4f391b60ce483c3867fe1fc94`. GitHub-Push durch automatische Freigabeprüfung blockiert; keine Veröffentlichung ausgeführt.
+Read first:
+- `state/baseline/BASELINE-V3-THORSTEN.md`
+- `data/evidence-authority.json`
+- `state/reconstruction-loop/PROTOCOL.md`
+- `docs/reconstruction/SOURCE-RECONCILIATION.md`
+- `evidence/contributions/kumpf-20261008.json`
+- `evidence/contributions/schaufelstellung-20261008.json`
+- `data/reconstruction-evidence-map.json`
+- `data/assembly.graph.json`
+- `data/kumpf-fastener-hypotheses.json`
+- `data/knowledge-gaps.json`
 
-## Why this is a rebuild, not a patch
-
-The current deployed product is a functional evidence/workflow prototype, but it has failed the intended quality bar in three coupled ways:
-
-1. **Geometry:** too many primitive approximation meshes; current photos and historical drawings are not yet reconstructed into a convincing machine.
-2. **UX:** visual hierarchy, language, color, scan comparison and navigation are still inconsistent and sometimes worse after incremental patches.
-3. **Field drawings:** current schematic sketches are too trivial to guide real dismantling work.
-
-Astra must therefore treat the current presentation geometry and current visual composition as **disposable implementation**, while preserving validated data, provenance, offline capture semantics and evidence contracts.
-
-Do **not** optimize the existing primitive meshes or beautify the existing schematic drawings. Reconstruct the system coherently.
+Use the currently deployed V2 reconstruction as implementation starting point, but do not protect any geometry that conflicts with Baseline V3.
 
 ---
 
 # Mission
 
-Build the strongest technically plausible, evidence-traceable reconstruction currently possible of the **complete Kleines Schäferrad system at the Regnitz**, then rebuild the human experience around that reconstruction.
+Perform the first full **Truth Model ↔ Brute-Force Model calibration iteration** on Baseline V3.
 
-Target gate:
+The purpose is not merely to add Thorsten's notes into metadata.
 
-# **BRUTE-FORCE FUNCTIONAL RECONSTRUCTION READY**
+You must:
+1. materially correct the serious model where Baseline V3 now constrains it,
+2. re-rank and rebuild the Brute-Force model around the new local expert knowledge,
+3. deepen the geometry beyond V2 where the new evidence allows it,
+4. regenerate technical views where geometry changes,
+5. recalibrate water/operation where Kumpf or paddle geometry changes,
+6. produce a canonical render package for a separate truth-critic session.
 
-The result should make it possible to understand:
-- what the machine is,
-- how the parts relate,
-- how it is supported,
-- how it rotates,
-- how water is captured and handed to the trough/rinne,
-- what is known,
-- what is historically documented,
-- what is technically reconstructed,
-- and what Saturday's dismantling still must decide.
+Stop only at:
 
----
-
-# Mandatory source hierarchy
-
-Read and reconcile before implementation:
-
-## Current multi-evidence baseline
-- all `evidence/raw/` photographs and scans,
-- current PLY and GLB,
-- historical drawings and notes,
-- all `data/*.json` geometry/claims/components/relations/conflicts,
-- `docs/NEW-EVIDENCE-20261008.md`,
-- `docs/CONTEXT-EVIDENCE-6875-6876.md`,
-- `data/arm-hypotheses.json`,
-- `data/kumpf-fastener-hypotheses.json`,
-- `data/scan-transforms.json`,
-- `docs/SAMSTAG-ABBAU-AUFNAHMEPLAN.md`,
-- `docs/PHOTO-CAPTURE-TODO.md`.
-
-## Human/UX contracts
-- `docs/HUMAN-UX-QUALITY-CONTRACT.md`,
-- `docs/MUX-DESIGN-GRAMMAR-V2.md`,
-- `docs/TONE-AND-LANGUAGE.md`,
-- `docs/DRAWING-LANGUAGE.md`.
-
-## Important new evidence to exploit
-- historical drawing showing a **cropped/dogleg arm profile** rather than a purely straight arm,
-- historical Radstatt drawings explicitly identifying **Landseite / Wasserseite** and frame/lager dimension chains,
-- current axial and oblique shaft/arm photographs,
-- current lower and side frame photographs,
-- current Kumpf/paddle photographs,
-- long/short curved wooden Kumpf fasteners shown physically,
-- waterside/context photographs showing the wheel as part of a larger stationary timber system.
-
-Do not reduce these new sources back into the old simplified model.
+# **CALIBRATION ITERATION READY FOR TRUTH CRITIC**
 
 ---
 
-# Phase A — Evidence reconstruction before geometry
+# A. Reconstruct the reference Kumpf at component level
 
-Reconstruct the evidence map around real mechanical questions.
+The reference Kumpf is now a high-priority local construction source.
 
-For every major component, produce:
-- observed features,
-- historical geometry,
-- current photo constraints,
-- scan constraints,
-- field narrative,
-- unresolved conflicts,
-- candidate geometry,
-- confidence.
+Mandatory baseline:
+- 12 staves,
+- 1 base,
+- base retained in a groove / Einfräsung in the staves,
+- 3 metal hoops,
+- 2 drilled staves,
+- 2 holes in each drilled stave,
+- 2 Kumpfnägel: one long, one short,
+- Kumpfnägel fasten the Kumpf to the Krümmling,
+- neighboring Kümpfe overlap.
 
-Explicitly separate:
-- current as-built,
-- historical reference,
-- reconstructed best candidate,
-- alternative candidate,
-- unknown.
+Use the four Thorsten reference photos:
+- `evidence/raw/1000046420.jpg`
+- `evidence/raw/1000046421.jpg`
+- `evidence/raw/1000046422.jpg`
+- `evidence/raw/1000046423.jpg`
 
-Do not silently promote old drawing dimensions to current geometry.
+Do not keep a generic barrel approximation if these images support a more faithful shape.
 
----
+Extract as much as defensibly possible:
+- stave count and angular spacing,
+- external profile,
+- taper if visible,
+- base position,
+- groove position,
+- hoop positions,
+- drilled-stave positions,
+- likely hole spacing,
+- local asymmetry.
 
-# Phase B — External construction research
+Where scale readout is possible from visible rulers, record the measurement method and uncertainty.
+Do not invent unreadable values.
 
-Conduct targeted public research into:
-- Möhrendorf/Oberndorf Regnitz water-lifting wheels,
-- historic Radstatt construction,
-- timber shaft/spoke/arm joints,
-- keyed / wedged / pinned timber machinery,
-- Kumpf mounting and local terminology,
-- wooden pin / Nagelholz / fastener practice,
-- trough and discharge channel geometry,
-- seasonal assembly and dismantling,
-- comparable surviving Franconian wheels.
-
-Store:
-- source,
-- relevant construction pattern,
-- transferability to this wheel,
-- confidence,
-- whether it is evidence or analogy.
-
-Research is allowed to expand candidate space, never to overwrite local evidence.
+Output:
+- improved Truth candidate for the reference Kumpf,
+- updated Brute-Force production Kumpf geometry,
+- orthographic + section drawings,
+- annotated source-photo comparison.
 
 ---
 
-# Phase C — Canonical coordinate and registration architecture
+# B. Rebuild Kumpfnagel geometry and function
 
-The scan comparison must be rebuilt cleanly.
+Previous V2 assumptions are no longer equal candidates.
 
-## Requirements
-- one canonical mechanical coordinate frame,
-- explicit world origin,
-- explicit shaft axis,
-- explicit Z/up,
-- explicit Land/Wasser direction only when supported,
-- PLY and GLB export transforms preserved separately,
-- no free-floating scan beside the model in normal mode.
+Promote the local expert functional baseline:
+- two Kumpfnägel,
+- one long + one short,
+- attachment through drilled staves to Krümmling,
+- unequal length required by neighboring-Kumpf overlap.
 
-## Scan workflow
-1. RAW_EXPORT
-2. AXIS_NORMALIZED
-3. ROUGH_ALIGNED
-4. MECHANICALLY_REGISTERED
-5. METRICALLY_CALIBRATED
+Deprioritize:
+- “long/short primarily sets tilt/twist”
+unless new geometry independently requires it.
 
-Until Saturday datums exist:
-- do not call 3 or 4 registration truth,
-- provide a dedicated scan-alignment workspace,
-- normal Werkstatt view should not be polluted by a drifting point cloud.
+Model explicit candidate nail paths through:
+- four hole positions,
+- two drilled staves,
+- Krümmling contact.
 
-After field datums:
-- solve transform from DATUM-A/B/C and AXIS-A/B,
-- validate using independent control distance,
-- report residual error.
+Generate several geometrically possible mappings if necessary.
 
----
-
-# Phase D — Throw away primitive core geometry and reconstruct the machine
-
-Existing Three.js boxes/cylinders are not sacred.
-
-Rebuild geometry with proper component hierarchy.
-
-## D1 Welle
-Model:
-- actual shaft body profile from photo/drawing constraints,
-- visible ends,
-- bearing journals/candidates,
-- arm-entry regions,
-- internal unknown zones.
-
-## D2 Arms
-Use the historical dogleg drawing as a real geometric constraint.
-
-Generate candidate families:
-- historically doglegged,
-- straight/repair variant if still needed,
-- axial layer alternatives,
-- actual current-photo-compatible profile.
-
-Do not model six unrelated independent sticks if evidence supports continuous paired arms.
-
-## D3 Arm/shaft hidden joinery
-Generate several candidates:
-- independent mortises,
-- staggered mortises,
-- crossing/interlocking candidates,
-- wedge/pin candidates.
-
-Evaluate:
-- collision,
-- insertion/removal path,
-- force path,
-- photo entry points,
-- historical plausibility,
+Rank them by:
+- source-photo compatibility,
+- collision-free insertion,
+- overlap compatibility,
+- plausible withdrawal during dismantling,
 - minimum unsupported assumptions.
 
-## D4 Rim / Krümmlinge
-Model:
-- two actual rim planes,
-- segmented curved members,
-- candidate joints,
-- hole/pin geometry,
-- historical radii and current-photo proportions separately.
-
-## D5 Kumpf
-Model real barrel-like construction:
-- staves,
-- bottom,
-- metal hoops,
-- tilt,
-- mounting contact,
-- pin seats.
-
-## D6 Long/short wooden Kumpf fasteners
-Treat as first-class mechanical components.
-
-Generate and compare hypotheses:
-- paired long/short canonical mounting,
-- geometry-setting pair,
-- securing-only pair,
-- repair-history variants.
-
-Model curvature/head/shaft form from current photographs.
-Do not finalize function before Saturday evidence.
-
-## D7 Paddles
-Model:
-- actual board geometry,
-- orientation,
-- connection to rim/Kumpf context,
-- phase around circumference.
-
-## D8 Bearings / Radstatt / frame
-This is mandatory, not decorative context.
-
-Reconstruct:
-- bearing stands,
-- bearing supports,
-- major cross beams,
-- lower frames,
-- braces,
-- side frames,
-- walk/work boards,
-- trough support,
-- channel support.
-
-Use historical Radstatt drawings + current photos together.
-
-## D9 Trough / Rinne
-Model:
-- collection trough,
-- inlet geometry,
-- discharge channel,
-- relative height to top Kumpf,
-- support structure.
+Output:
+- candidate A/B/C if still ambiguous,
+- visible long/short mapping,
+- exploded nail/stave/Krümmling detail,
+- explicit list of what Saturday must decide.
 
 ---
 
-# Phase E — Site and water model
+# C. Model neighboring-Kumpf overlap as real topology
 
-Build the wheel as a machine in its real operating environment.
+Do not treat each Kumpf as an isolated radial duplicate.
 
-Required:
-- river surface,
-- bank/context geometry,
-- plausible water level,
-- flow direction,
-- wheel immersion,
-- Radstatt relation to water,
-- trough/rinne discharge path.
+Create at least a 3-Kumpf local cluster.
 
-Do not pretend full CFD.
+Investigate:
+- overlap direction,
+- leading/trailing relation,
+- long/short nail side,
+- whether overlap implies a preferred circumferential assembly direction,
+- relation to paddle position.
 
-But provide a physically plausible real-time functional simulation:
-- wheel rotation,
-- Kumpf path,
-- fill state approximation,
-- lifting,
-- tipping/discharge window,
-- water transfer to trough,
-- trough/rinne flow visualization,
-- flow direction,
-- configurable speed/water level.
+Keep multiple overlap orientations if current evidence does not determine direction.
 
-Astra may use particles/shaders/mesh-water techniques for presentation, provided the simulation is clearly labeled as functional visualization rather than measured fluid dynamics.
+Truth Model:
+- overlap existence may be treated as local expert-supported topology.
 
-Target: the viewer should make the operating principle immediately understandable.
+Brute-Force Model:
+- select and rank the best directed overlap candidate.
+
+Output:
+- 3-Kumpf cluster canonical render,
+- exploded overlap view,
+- candidate assembly sequence,
+- field decision points.
 
 ---
 
-# Phase F — Technical drawing system
+# D. Resolve Thorsten's 90° paddle correction properly
 
-This phase is mandatory before the final field PDF.
+This is a priority expert correction.
 
-Read and obey `docs/DRAWING-LANGUAGE.md`.
+Do NOT simply rotate paddles by 90°.
 
-## Absolute rule
-No final operational page may use the current primitive schematic sketches.
+First define the geometry:
+- wheel/rim plane,
+- shaft axis,
+- local radial direction,
+- local tangent,
+- paddle board plane,
+- paddle normal.
 
-Every operational visual must be either:
+Then interpret “90° zum Rad” into explicit vector/plane relationships.
 
-### 1. Real photo + technical overlay
-Use for real installed context.
+Use:
+- current photos,
+- existing PLY/GLB,
+- any identifiable paddle region,
+- V2 geometry,
+- Thorsten narrative.
 
-or
+If the current code is mathematically perpendicular to the rim plane but visually/functionally still wrong, identify the actual mismatch:
+- radial/tangential pitch,
+- local rotation,
+- axial position,
+- front/back orientation,
+- connection point,
+- phase.
 
-### 2. Technical projection from reconstructed geometry
-Use for geometry, parts, joints, sections and measurements.
+Generate a clear before/after comparison.
 
-or
+If scan evidence is insufficient:
+- preserve expert correction as Truth constraint,
+- keep exact angular implementation as ranked candidate,
+- do not pretend verification.
 
-### 3. Comparative candidate drawing
-Use for unresolved geometry.
-
-Required drawing families:
-- KS-00 system/site,
-- KS-10 shaft/arms,
-- KS-20 rim/Krümmlinge,
-- KS-30 Kumpf + long/short wooden fasteners,
-- KS-40 paddle,
-- KS-50 bearings/Radstatt/trough/channel,
-- KS-60 assembly/exploded,
-- KS-70 Saturday dismantling capture.
-
-Include real:
-- orthographic views,
-- sections,
-- details,
-- exploded views,
-- measurement endpoints,
-- photo directions,
-- partner relationships.
-
-No emoji arrows.
-No Unicode decorative symbols standing in for technical drafting.
-Use SVG/vector technical symbols.
+Output:
+- coordinate explanation,
+- candidate orientation,
+- photo/scan comparison,
+- updated paddle technical drawing.
 
 ---
 
-# Phase G — Rebuild the field pack from those drawings
+# E. Recalibrate the full Kumpf + paddle + rim assembly
 
-The current 12-sheet concept may remain compact, but every sheet must be visually useful.
+After A–D, rebuild the circumference assembly.
 
-Goal:
-- 8–12 A3 sheets,
-- large technical visual area,
-- minimal prose,
-- obvious measurement/photo locations,
-- handwriting space,
-- STOPP only for irreversible loss.
+Verify:
+- Kumpf overlap does not collide,
+- nail paths remain possible,
+- paddles do not collide with Kümpfe / rims,
+- correct partner relation to Krümmling,
+- plausible assembly/disassembly path.
 
-Use the Saturday capture plan as operational truth.
-
-A craftsman should understand the requested action by looking at the page before reading paragraphs.
+Do not assume 24 identical perfect copies if local evidence implies variants.
+Retain a canonical repeated family plus variant capability.
 
 ---
 
-# Phase H — UX recovery from the original reference stylekit
+# F. Recalibrate water function
 
-Do not preserve the currently deployed composition merely because it exists.
+Only after Kumpf and paddle corrections.
 
-Use the source reference:
-`https://thorstenhalsch.github.io/Webpage-preview/`
+Re-evaluate:
+- entry angle into water,
+- Kumpf opening orientation,
+- approximate fill window,
+- lift path,
+- retention,
+- top discharge window,
+- trough interception,
+- paddle drag orientation.
 
-Reinspect its real CSS/tokens and visual rhythm.
+This is still a functional visualization, not CFD.
 
-## Required UX principles
+But the animation must now be mechanically consistent with the updated geometry.
 
-### Language
-All human-facing UI is German.
+Generate:
+- slow operating animation/view,
+- one full Kumpf cycle,
+- water pickup,
+- lift,
+- discharge into trough,
+- trough/rinne continuation.
 
-No:
-- Research,
-- Evidence,
-- Claims,
-- Conflict Matrix,
-- Field Pack,
-- Hypothesis,
-- internal TASK/COMP/CLAIM IDs,
-unless inside explicitly technical/developer detail views.
-
-### Icons
-- no emojis,
-- no Unicode arrows as interface decoration,
-- use a consistent SVG icon set,
-- technical arrows are SVG/vector drafting marks.
-
-### Color
-The current tannengrün dominance is rejected.
-
-Astra may retune the palette beyond the source tokens.
-
-Retain the reference page's family resemblance through:
-- typography,
-- paper/white hierarchy,
-- soft surfaces,
-- fine borders,
-- restrained radius,
-- rhythm.
-
-Use deep green only as a controlled identity accent if it still works.
-
-For 3D components, build a **separate technical component palette**:
-- wood/sand/oak families,
-- graphite/metal,
-- muted blue-gray for water/scan,
-- restrained amber for unresolved geometry,
-- selected highlight distinct from semantic status.
-
-Do not color the entire application according to the component palette.
-
-### Start page
-Must be substantially shorter than the current product.
-
-Purpose:
-1. pride/history,
-2. one strong explanation of what is being preserved,
-3. three obvious paths.
-
-No duplicate project status.
-No long uncertainty list.
-No field workflow repeated on the story page.
-
-### Werkstatt
-Model first.
-
-Above fold:
-- compact identity/navigation,
-- model/site viewer,
-- very small set of obvious actions.
-
-Do not expose advanced scan transforms, variant controls, data capture forms and research detail at once.
-
-Use progressive disclosure.
-
-### Vor Ort
-One physical job at a time.
-
-Primary:
-- annotated photo or technical drawing,
-- current action,
-- capture/measurement,
-- next.
-
-Do not present a dashboard.
+If a function depends on unresolved orientation, expose a parameter/candidate switch instead of hiding the uncertainty.
 
 ---
 
-# Phase I — High-fidelity interactive viewer
+# G. Refine the serious Truth Model
 
-Build a polished scene hierarchy.
+Apply Baseline V3 changes to the evidence-constrained model.
 
-Required modes:
-- Gesamtanlage,
-- Radkörper,
-- Tragwerk,
-- Welle/Arme,
-- Kranz,
-- Kumpf/Schaufel,
-- Lager,
-- Trog/Rinne,
-- Betrieb,
-- Exploded,
-- Schnitt,
-- Evidenz,
-- Scan-Abgleich.
+The serious model should become visibly different from V2 where new evidence justifies it.
 
-But do not expose all modes as equal permanent buttons.
+Mandatory:
+- reference Kumpf structure,
+- Kumpfnagel family,
+- Kumpf→Krümmling relationship,
+- overlap topology,
+- paddle orientation constraint,
+- updated source/provenance states.
 
-Use context-aware mode selection.
-
-Interactions:
-- smooth camera transitions,
-- part isolation,
-- ghost surrounding structure,
-- cut plane,
-- exploded factor,
-- candidate geometry switch,
-- current/historical/synthetic comparison,
-- water/rotation toggle,
-- labels only when useful.
+Do not add cinematic site detail to Truth unless supported.
 
 ---
 
-# Phase J — QA / adversarial visual audit
+# H. Push the Brute-Force model further
 
-Automated tests are necessary but not sufficient.
+After Truth calibration, use the improved constraints to increase synthetic completeness.
 
-Required visual QA:
-- desktop,
-- iPhone 13 class,
-- 320 px,
-- 200 % text,
-- workshop with scan,
-- workshop with exploded/cut,
-- field task with photo overlay,
-- field task with technical drawing,
-- all A3 pages rendered to PNG contact sheet.
+Improve where possible:
+- all Kumpf instances,
+- overlap rhythm,
+- nail placement,
+- paddle geometry,
+- rim relationships,
+- frame/contact plausibility,
+- trough relation,
+- water cycle,
+- materials and wet/dry appearance,
+- site/water integration,
+- lighting and camera composition.
 
-Adversarial audit questions:
-- Is any English visible to a craftsman?
-- Is any emoji visible?
-- Is any internal ID visible by default?
-- Is there any duplicate information?
-- Is there any large empty marketing card?
-- Is green dominating?
-- Can the main action be identified in <3 seconds?
-- Does every field visual refer to real geometry/evidence?
-- Can scan mode be turned on/off without breaking model navigation?
-- Are technical drawings actually construction-level, not decorative?
+Target visual ambition:
+**a convincing digital museum reconstruction of the wheel operating in the Regnitz**, while keeping synthetic status inspectable.
 
-Materialize screenshots and audit results in the repository.
+Do not trade mechanical clarity for cinematic appearance.
 
 ---
 
-# Phase K — stop gate
+# I. Technical drawing refresh
 
-Do not stop after "functionality implemented".
+Regenerate only from updated geometry.
 
-Stop only when all of these pass:
+Mandatory updated sheets/details:
+- Kumpf section with 12 staves and base groove,
+- drilled-stave / 4-hole diagram,
+- long/short Kumpfnagel candidate paths,
+- 3-Kumpf overlap view,
+- Kumpf→Krümmling exploded detail,
+- paddle orientation vector/plane diagram,
+- Kumpf/paddle/rim local assembly,
+- operating path around water/trough.
 
-## GEOMETRY
-- coherent complete system model,
-- primitive placeholders removed from primary view,
-- new evidence incorporated,
-- candidate hidden joinery ranked.
+No primitive symbolic sketches.
 
-## SCAN
-- dedicated coherent scan workflow,
-- no drifting/half-overlay confusion,
-- explicit registration state.
+Use:
+- real-photo overlays when installed context matters,
+- geometry-derived orthographic/section/exploded views when construction matters.
 
-## DRAWINGS
-- **TECHNICAL DRAWING QUALITY PASS**,
-- no primitive final sketches,
-- real photo overlays or geometry-derived drawings.
+---
 
-## UX
-- **HUMAN UX QUALITY PASS**,
-- German only in normal UI,
-- no emoji,
-- no cockpit,
-- no dominant tannengrün,
-- source-stylekit family resemblance,
-- compact start page,
-- model-first workshop,
-- action-first field mode.
+# J. Canonical render package
 
-## FUNCTION
-- working rotation/water visualization,
-- water pickup/discharge understandable,
-- site/Radstatt context present.
+Produce all 16 canonical views from `state/reconstruction-loop/PROTOCOL.md`.
 
-## TRACEABILITY
-- evidence/current/historical/synthetic/alternative/unknown remain distinct.
+For every view:
+- Truth Model render,
+- Brute-Force render,
+- same camera,
+- component/status legend,
+- iteration identifier.
 
-Final gate:
+Add special comparison plates:
+1. V2 Kumpf vs Baseline V3 Kumpf
+2. old nail hypothesis vs expert-reconciled nail candidates
+3. V2 paddle vs corrected paddle candidate
+4. isolated Kumpf vs 3-Kumpf overlap cluster
+5. old operating cycle vs recalibrated operating cycle
 
-# **BRUTE-FORCE FUNCTIONAL RECONSTRUCTION READY**
+---
 
-At the gate, provide:
-- exact commit,
-- full validation report,
-- screenshots,
-- technical drawing contact sheet,
-- remaining Saturday-only unknowns,
-- explicit recommendation whether to deploy.
+# K. Adversarial pass
+
+Before stopping, perform one internal adversarial pass.
+
+Ask:
+- Does any V2 assumption survive only because it was already coded?
+- Does any external analogy override Thorsten without stronger local evidence?
+- Is the Kumpf still too generic compared with the reference photos?
+- Are four holes represented?
+- Do two nails have a plausible path?
+- Does overlap actually explain unequal nail length geometrically?
+- Is the paddle visibly/functionally consistent with the expert correction?
+- Does the water simulation still rely on the old Kumpf/paddle pose?
+- Have any synthetic values accidentally entered Truth?
+
+Correct P0/P1 issues that can be resolved from existing evidence.
+Leave evidence-limited issues explicit.
+
+---
+
+# L. Iteration outputs
+
+Write:
+- `state/reconstruction-loop/ITER-001/ITERATION-REPORT.md`
+- `state/reconstruction-loop/ITER-001/CONSTRAINT-DELTA.json`
+- `state/reconstruction-loop/ITER-001/MODEL-DELTA.json`
+- `state/reconstruction-loop/ITER-001/SCORECARD.json`
+- `state/reconstruction-loop/ITER-001/CRITIQUE-READY.md`
+- canonical render set
+- updated Truth export
+- updated Brute-Force export
+- updated technical drawing contact sheet
+- remaining Saturday-only questions
+
+Do not merge automatically.
+
+Stop at exactly:
+
+# **CALIBRATION ITERATION READY FOR TRUTH CRITIC**
