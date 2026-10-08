@@ -1163,6 +1163,137 @@
         "Acquisition mode, field reference lengths and mechanical registration absent.",
         "Water reflections, motion, occlusion and meshing may cause absent/distorted geometry; causation not uniquely known."
       ]
+    },
+    {
+      "source_id": "PHOTO-1000046420",
+      "document_group": "TH-KUMPF-REF",
+      "title": "Teilweise zerlegter Referenz-Kumpf",
+      "review": "original photo contributed by local expert; visual details documented in FACHBEITRAG-KUMPF-20261008.md",
+      "status": "expert-contribution-analyzed",
+      "claim_ids": [
+        "CLAIM-0356",
+        "CLAIM-0357",
+        "CLAIM-0358"
+      ],
+      "unresolved": [
+        "Maßstab noch nicht metrisch ausgelesen.",
+        "Loch-/Nagelwege nicht vollständig zugeordnet."
+      ],
+      "current_geometry_authority": "visible reference-part topology; metric readout pending"
+    },
+    {
+      "source_id": "PHOTO-1000046421",
+      "document_group": "TH-KUMPF-REF",
+      "title": "Referenz-Kumpf Stirn/Boden mit Maßstab",
+      "review": "original photo contributed by local expert",
+      "status": "expert-contribution-analyzed",
+      "claim_ids": [
+        "CLAIM-0356",
+        "CLAIM-0357"
+      ],
+      "unresolved": [
+        "Bezugskanten/Skalenwerte noch nicht kalibriert ausgelesen."
+      ],
+      "current_geometry_authority": "visible reference-part topology; metric readout pending"
+    },
+    {
+      "source_id": "PHOTO-1000046422",
+      "document_group": "TH-KUMPF-REF",
+      "title": "Referenz-Kumpf Innenansicht",
+      "review": "original photo contributed by local expert",
+      "status": "expert-contribution-analyzed",
+      "claim_ids": [
+        "CLAIM-0358",
+        "CLAIM-0362",
+        "CLAIM-0363"
+      ],
+      "unresolved": [
+        "Sichtbare Hölzer noch nicht eindeutig einzelnen Kumpfnagelpositionen zugeordnet."
+      ],
+      "current_geometry_authority": "visible reference-part topology; hidden path unresolved"
+    },
+    {
+      "source_id": "PHOTO-1000046423",
+      "document_group": "TH-KUMPF-REF",
+      "title": "Referenz-Kumpf Außenansicht mit drei Metallbändern",
+      "review": "original photo contributed by local expert",
+      "status": "expert-contribution-analyzed",
+      "claim_ids": [
+        "CLAIM-0359",
+        "CLAIM-0360",
+        "CLAIM-0361"
+      ],
+      "unresolved": [
+        "Bandumfänge/-überlappungen noch nicht metrisch ausgewertet."
+      ],
+      "current_geometry_authority": "visible reference-part topology; metric readout pending"
+    },
+    {
+      "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+      "document_group": "TH-KUMPF-REF",
+      "title": "ThorstenHalsch Fachauskunft Kumpfaufbau",
+      "review": "verbatim local expert contribution",
+      "status": "high-priority-local-expert",
+      "claim_ids": [
+        "CLAIM-0356",
+        "CLAIM-0357",
+        "CLAIM-0358",
+        "CLAIM-0359",
+        "CLAIM-0360",
+        "CLAIM-0361"
+      ],
+      "unresolved": [
+        "Übertragbarkeit aller Referenzmerkmale auf sämtliche aktuellen Kümpfe prüfen."
+      ],
+      "current_geometry_authority": "high for construction/function; not metric authority"
+    },
+    {
+      "source_id": "NARRATIVE-TH-KUMPF-20261008-02",
+      "document_group": "TH-KUMPF-REF",
+      "title": "ThorstenHalsch Fachauskunft gelochte Dauben / Kumpfnägel",
+      "review": "verbatim local expert contribution",
+      "status": "high-priority-local-expert",
+      "claim_ids": [
+        "CLAIM-0362",
+        "CLAIM-0363",
+        "CLAIM-0364"
+      ],
+      "unresolved": [
+        "Konkrete Zuordnung vier Löcher ↔ zwei Nägel offen."
+      ],
+      "current_geometry_authority": "high for topology/function; exact path unmeasured"
+    },
+    {
+      "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+      "document_group": "TH-KUMPF-REF",
+      "title": "ThorstenHalsch Fachauskunft Lang-/Kurz-Kumpfnagel und Überlappung",
+      "review": "verbatim local expert contribution",
+      "status": "high-priority-local-expert",
+      "claim_ids": [
+        "CLAIM-0365",
+        "CLAIM-0366",
+        "CLAIM-0367",
+        "CLAIM-0368"
+      ],
+      "unresolved": [
+        "Überlappungsrichtung, Maß und Nagellängen offen; dedizierte Nagel-Punktewolke noch nicht identifiziert."
+      ],
+      "current_geometry_authority": "high for function/topology; not metric authority"
+    },
+    {
+      "source_id": "NARRATIVE-TH-PADDLE-20261008-01",
+      "document_group": "TH-PADDLE-CORRECTION",
+      "title": "ThorstenHalsch Fachkorrektur Schaufelstellung 90°",
+      "review": "verbatim local expert correction",
+      "status": "high-priority-local-expert-correction",
+      "claim_ids": [
+        "CLAIM-0369"
+      ],
+      "unresolved": [
+        "Geometrischen Bezug von 90° explizit definieren.",
+        "Dedizierten Schaufelscan identifizieren/prüfen."
+      ],
+      "current_geometry_authority": "high correction priority; exact geometric interpretation pending scan/photo definition"
     }
   ]
 }
