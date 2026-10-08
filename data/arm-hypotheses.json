@@ -3,7 +3,7 @@
   "status": "UNVERIFIED",
   "current_geometry": null,
   "hidden_joinery": null,
-  "default": "unknown",
+  "default": "dogleg",
   "shapes": [
     {
       "id": "unknown",
@@ -15,16 +15,17 @@
     },
     {
       "id": "straight",
-      "label": "Gerader Platzhalter",
+      "label": "Gerade Reparaturvariante",
       "provenance": [
         "H-ARM-01"
       ]
     },
     {
       "id": "dogleg",
-      "label": "Mögliche Kröpfung",
+      "label": "Historisch gekröpft",
       "provenance": [
-        "H-ARM-01"
+        "V2-IMG_6798",
+        "V2-IMG_6799"
       ]
     }
   ],
@@ -43,14 +44,16 @@
     }
   ],
   "display_only": {
-    "dogleg_offset": 0.18,
+    "dogleg_offset": 0.22,
     "unknown_zone_radius": 0.34,
-    "note": "Arbitrary visualization values, not field measurements or fabrication geometry"
+    "note": "Arbitrary visualization values, not field measurements or fabrication geometry",
+    "central_layer_spacing": 0.17
   },
   "task_ids": [
     "TASK-ARM-BEFORE",
     "TASK-ARM-RELEASE",
     "TASK-MORTISE",
     "TASK-ARM-PROFILE"
-  ]
+  ],
+  "default_scope": "historical best candidate; current geometry remains unknown"
 }

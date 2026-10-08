@@ -1,0 +1,30 @@
+✔ canonical tasks have complete field contract and valid baseline refs (1.681855ms)
+✔ axis normalization maps Y-up to Z-up, is invertible and does not reflect or register (1.271969ms)
+✔ arm candidates expose different centre topology and preserve historical same-side tips (252.540632ms)
+✔ task completion cannot hide missing views or missing measurement; unknown remains reasoned (0.415924ms)
+✔ physical instances require observation; merges reject divergent evidence (0.658673ms)
+✔ compact PDF keeps canonical task parity through shared visual sheets (1.994637ms)
+✔ no water can be lifted when the wheel never enters water (4.403244ms)
+✔ phase follows positive-X rigid rotation and holding/discharge mouth pose (0.640156ms)
+✔ registration validates known similarity, residuals, axis position and independent metric control (1.402291ms)
+✔ registration rejects invalid, infinite and degenerate datum/axis/control inputs (0.387152ms)
+✔ water mouth faces the outboard trough at discharge and retains water while lifting (0.298291ms)
+✔ all six paired arms meet their own rim plane at both ends (96.12623ms)
+✔ major machine groups and unique identities are preserved in all joinery variants (161.277194ms)
+✔ all newly attached originals resolve byte-for-byte in the repository archive (0.461251ms)
+✔ six continuous arms across two planes preserve opposite endpoint labels (1.153514ms)
+✔ separate segmented rims and expected vessel/paddle slots stay independent from stationary context (0.395775ms)
+✔ A/B wall geometries differ without changing source variants or outside dimensions (68.265294ms)
+✔ explosion does not move stationary context; all current dimensions remain null (61.97568ms)
+✔ measurement requires endpoints and uncertainty, unknown observation does not fabricate a zero (0.576772ms)
+✔ lossless import preserves media and deduplicates; same-ID divergence rejects whole import (0.496733ms)
+✔ every mesh maps to an existing ontology family; parameter sources resolve (6.432302ms)
+✔ all 66 historical and expected slots reuse assembly.graph IDs (0.787473ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 526.225716

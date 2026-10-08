@@ -2,3 +2,9 @@
 evidence/raw/** -text -filter -diff -merge
 evidence/derived/*.png -text -filter -diff -merge
 evidence/derived/*.jpg -text -filter -diff -merge
+
+*.pdf binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.gz binary

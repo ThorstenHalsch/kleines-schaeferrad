@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "glb_bytes": 2048132,
+  "sha256": "6477e7cc21605086c206b676ae8db59736c2d769ce41735c1c8d14eada8cf0b5",
+  "mesh_count": 279,
+  "node_count": 296,
+  "root": "Kleines Schaefferrad - reconstruction candidate",
+  "mechanical_up": "Z",
+  "gltf_up": "Y through explicit root rotation",
+  "as_built": false,
+  "root_matrix": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    2.220446049250313e-16,
+    -1,
+    0,
+    0,
+    1,
+    2.220446049250313e-16,
+    0,
+    0,
+    0,
+    0,
+    1
+  ]
+}

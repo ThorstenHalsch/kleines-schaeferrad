@@ -1,0 +1,462 @@
+{
+  "session": {
+    "schema": "ks-field-session/v1",
+    "id": "SESSION-156db8b4-c5fb-49d8-96b9-496d91d37318",
+    "created_at": "2026-10-08T05:46:28.368Z",
+    "task_index": 0,
+    "step": 1,
+    "responses": {
+      "TASK-ORIENT": {
+        "task_id": "TASK-ORIENT",
+        "status": "IN_PROGRESS",
+        "person": "SIMULATION TEST",
+        "media": [
+          {
+            "id": "MEDIA-043f5a8e-3e55-4ead-bcd2-8ba1bf252fce",
+            "name": "SIMULATION-Übersicht von A.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-f50f7c1f-a633-4913-b4b7-e7a3f4c182c4",
+            "name": "SIMULATION-Übersicht von B.jpeg",
+            "view": "Übersicht von B",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-c3115089-516d-43cf-a553-c7a1e36d0e26",
+            "name": "SIMULATION-Pfeile und Person im Bild.jpeg",
+            "view": "Pfeile und Person im Bild",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-8156f45c-8a17-45c7-95b5-46847957fd3e",
+            "name": "SIMULATION-LOAD-0.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-3f686fcc-7fe2-47b4-9092-7e15b54c8df7",
+            "name": "SIMULATION-LOAD-1.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-7b7dc7b4-935c-4336-911b-3372ea08f48d",
+            "name": "SIMULATION-LOAD-2.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-78f8c56b-7774-4e72-9cbb-72f23ea3c44b",
+            "name": "SIMULATION-LOAD-3.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-40c4cec6-70e6-4111-a1d4-dbdbcb54c55d",
+            "name": "SIMULATION-LOAD-4.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-649ceb47-4404-4e60-a7ee-a7a55801e853",
+            "name": "SIMULATION-LOAD-5.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-1f267f0c-0483-4cf4-8ee7-747d1d732901",
+            "name": "SIMULATION-LOAD-6.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-d17b9247-7195-48ee-bbcd-8d867977d2ef",
+            "name": "SIMULATION-LOAD-7.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-602c3da9-83bd-4de2-afc1-3adc88a1c04f",
+            "name": "SIMULATION-LOAD-8.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-047ab6fd-3a5a-4b46-8611-2c59b89fa475",
+            "name": "SIMULATION-LOAD-9.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-f05c6ca2-cbd0-4696-9823-e8faaa9e337e",
+            "name": "SIMULATION-LOAD-10.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-43e9b695-e87f-4948-81ce-54ab237f4002",
+            "name": "SIMULATION-LOAD-11.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-c3ce4c24-1cd8-4a96-a4ed-bf22d578135a",
+            "name": "SIMULATION-LOAD-12.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-4ad5563b-52c0-4bd8-ad28-0251656a15f4",
+            "name": "SIMULATION-LOAD-13.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-c2d4ac07-7ace-4705-8326-3dedd1b1d81e",
+            "name": "SIMULATION-LOAD-14.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-43fab35d-fdce-4ace-8d22-11e9e0401ec4",
+            "name": "SIMULATION-LOAD-15.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-ac187542-0f52-4efe-9dc4-dab438ff1c50",
+            "name": "SIMULATION-LOAD-16.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-328b7810-6aa5-44c1-b201-e6a8ef455b0d",
+            "name": "SIMULATION-LOAD-17.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-f698aa76-91a9-40f2-bdb9-32e267ebc1ae",
+            "name": "SIMULATION-LOAD-18.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-3321e8fa-3be2-4e34-83ea-82af936f5bd1",
+            "name": "SIMULATION-LOAD-19.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-778357d0-8b3a-496e-9b0f-8e8b58dce144",
+            "name": "SIMULATION-LOAD-20.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-5b170a2d-e04c-4561-b75b-7e75726b95d0",
+            "name": "SIMULATION-LOAD-21.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-7174bfb1-95d0-4cc7-ab63-fd1c9b2c8729",
+            "name": "SIMULATION-LOAD-22.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-b29d174d-fa7a-418e-bd91-c87a5442e218",
+            "name": "SIMULATION-LOAD-23.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          },
+          {
+            "id": "MEDIA-9cb24169-bc1f-4d4e-b23b-f58107ec6777",
+            "name": "SIMULATION-LOAD-24.jpeg",
+            "view": "Übersicht von A",
+            "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+          }
+        ],
+        "measurement": {
+          "a": "Achsmitte",
+          "b": "fester Punkt am Tragwerk",
+          "unit": "mm"
+        },
+        "unknown": false,
+        "reason": "",
+        "quote": "SIMULATION - kein reales Feldwissen",
+        "interpretation": "",
+        "reviewed": false,
+        "updated_at": "2026-10-08T05:46:30.309Z",
+        "captured_at": "2026-10-08T05:46:30.352Z"
+      },
+      "TASK-DATUM": {
+        "task_id": "TASK-DATUM",
+        "status": "OPEN",
+        "person": "SIMULATION TEST",
+        "media": [],
+        "measurement": {
+          "a": "DATUM-A / DATUM-B / DATUM-C",
+          "b": "jeweils Gegenpunkt, gleiche Markenmitte",
+          "unit": "mm"
+        },
+        "unknown": false,
+        "reason": "",
+        "quote": "",
+        "interpretation": "",
+        "reviewed": false
+      },
+      "TASK-ARM-RELEASE": {
+        "task_id": "TASK-ARM-RELEASE",
+        "status": "OPEN",
+        "person": "SIMULATION TEST",
+        "media": [],
+        "measurement": {
+          "a": "Eintrittsfläche",
+          "b": "Ende der Einstecktiefe",
+          "unit": "mm"
+        },
+        "unknown": false,
+        "reason": "",
+        "quote": "",
+        "interpretation": "",
+        "reviewed": false
+      }
+    },
+    "instances": [
+      {
+        "id": "KS-ARM-001",
+        "local_name": "SIMULATION Arm",
+        "historic_marks": "",
+        "installed_position": "TEST A",
+        "partners": [
+          "KS-KEI-001"
+        ],
+        "condition": "TEST",
+        "removal_event": "EVT-SIM-001",
+        "storage_location": "TEST Lager",
+        "person": "SIMULATION",
+        "media_ids": [],
+        "observed": true,
+        "timestamp": "2026-10-08T05:47:28.756Z"
+      }
+    ],
+    "events": [
+      {
+        "id": "EVT-SIM-001-KS-ARM-001",
+        "event_number": "EVT-SIM-001",
+        "instance_id": "KS-ARM-001",
+        "partners": [
+          "KS-KEI-001"
+        ],
+        "storage_location": "TEST Lager",
+        "timestamp": "2026-10-08T05:47:28.756Z",
+        "person": "SIMULATION",
+        "media_ids": []
+      }
+    ],
+    "person": "SIMULATION TEST",
+    "draft_instance": {}
+  },
+  "media": [
+    {
+      "id": "MEDIA-043f5a8e-3e55-4ead-bcd2-8ba1bf252fce",
+      "name": "SIMULATION-Übersicht von A.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-047ab6fd-3a5a-4b46-8611-2c59b89fa475",
+      "name": "SIMULATION-LOAD-9.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-1f267f0c-0483-4cf4-8ee7-747d1d732901",
+      "name": "SIMULATION-LOAD-6.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-328b7810-6aa5-44c1-b201-e6a8ef455b0d",
+      "name": "SIMULATION-LOAD-17.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-3321e8fa-3be2-4e34-83ea-82af936f5bd1",
+      "name": "SIMULATION-LOAD-19.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-3f686fcc-7fe2-47b4-9092-7e15b54c8df7",
+      "name": "SIMULATION-LOAD-1.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-40c4cec6-70e6-4111-a1d4-dbdbcb54c55d",
+      "name": "SIMULATION-LOAD-4.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-43e9b695-e87f-4948-81ce-54ab237f4002",
+      "name": "SIMULATION-LOAD-11.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-43fab35d-fdce-4ace-8d22-11e9e0401ec4",
+      "name": "SIMULATION-LOAD-15.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-4ad5563b-52c0-4bd8-ad28-0251656a15f4",
+      "name": "SIMULATION-LOAD-13.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-5b170a2d-e04c-4561-b75b-7e75726b95d0",
+      "name": "SIMULATION-LOAD-21.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-602c3da9-83bd-4de2-afc1-3adc88a1c04f",
+      "name": "SIMULATION-LOAD-8.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-649ceb47-4404-4e60-a7ee-a7a55801e853",
+      "name": "SIMULATION-LOAD-5.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-7174bfb1-95d0-4cc7-ab63-fd1c9b2c8729",
+      "name": "SIMULATION-LOAD-22.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-778357d0-8b3a-496e-9b0f-8e8b58dce144",
+      "name": "SIMULATION-LOAD-20.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-78f8c56b-7774-4e72-9cbb-72f23ea3c44b",
+      "name": "SIMULATION-LOAD-3.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-7b7dc7b4-935c-4336-911b-3372ea08f48d",
+      "name": "SIMULATION-LOAD-2.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-8156f45c-8a17-45c7-95b5-46847957fd3e",
+      "name": "SIMULATION-LOAD-0.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-9cb24169-bc1f-4d4e-b23b-f58107ec6777",
+      "name": "SIMULATION-LOAD-24.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-ac187542-0f52-4efe-9dc4-dab438ff1c50",
+      "name": "SIMULATION-LOAD-16.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-b29d174d-fa7a-418e-bd91-c87a5442e218",
+      "name": "SIMULATION-LOAD-23.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-c2d4ac07-7ace-4705-8326-3dedd1b1d81e",
+      "name": "SIMULATION-LOAD-14.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-c3115089-516d-43cf-a553-c7a1e36d0e26",
+      "name": "SIMULATION-Pfeile und Person im Bild.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-c3ce4c24-1cd8-4a96-a4ed-bf22d578135a",
+      "name": "SIMULATION-LOAD-12.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-d17b9247-7195-48ee-bbcd-8d867977d2ef",
+      "name": "SIMULATION-LOAD-7.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-f05c6ca2-cbd0-4696-9823-e8faaa9e337e",
+      "name": "SIMULATION-LOAD-10.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-f50f7c1f-a633-4913-b4b7-e7a3f4c182c4",
+      "name": "SIMULATION-Übersicht von B.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    },
+    {
+      "id": "MEDIA-f698aa76-91a9-40f2-bdb9-32e267ebc1ae",
+      "name": "SIMULATION-LOAD-18.jpeg",
+      "type": "image/jpeg",
+      "bytes": 730724,
+      "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+    }
+  ]
+}

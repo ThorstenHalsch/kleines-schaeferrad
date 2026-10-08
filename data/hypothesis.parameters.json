@@ -69,14 +69,14 @@
       "note": "37 without unit; cm interpretation only"
     },
     "armWidth": {
-      "value": 0.16,
+      "value": 0.14,
       "current_value": null,
       "range": null,
       "provenance": [
         "GAP-02"
       ],
       "status": "hypothesis-only",
-      "note": "display placeholder, no metric authority"
+      "note": "Historical profile convention 0.14 m; no current measurement."
     },
     "armDepth": {
       "value": 0.12,
@@ -86,7 +86,7 @@
         "GAP-02"
       ],
       "status": "hypothesis-only",
-      "note": "display placeholder; axial staggering not verified"
+      "note": "Candidate 0.12 m; axial central spacing 0.17 m with common rim endpoints."
     },
     "vesselRadius": {
       "value": 0.16,
@@ -96,7 +96,7 @@
         "GAP-04"
       ],
       "status": "hypothesis-only",
-      "note": "schematic vessel radius, not inferred field dimension"
+      "note": "Curved stave reconstruction, radius varies 0.15 to 0.175 m; no measured current scale."
     },
     "vesselHeight": {
       "value": 0.44,
@@ -106,7 +106,7 @@
         "GAP-04"
       ],
       "status": "hypothesis-only",
-      "note": "schematic height; orientation and attachment unknown"
+      "note": "0.44 m reconstruction candidate; tangential pose 110 degrees and outboard tilt 0.45 rad, both unmeasured."
     },
     "vesselCount": {
       "value": 24,
@@ -150,7 +150,7 @@
         "CLAIM-0240"
       ],
       "status": "hypothesis-only",
-      "note": "expected sectors, joint detail intentionally omitted"
+      "note": "Six documented expected sectors with candidate butt/pin geometry; as-built joint not confirmed."
     },
     "stationaryContext": {
       "value": null,
@@ -161,7 +161,7 @@
         "GAP-07"
       ],
       "status": "hypothesis-only",
-      "note": "all supports, trough, bearing positions are diagrammatic placeholders"
+      "note": "Photo-constrained member topology, unmeasured coordinates. Historical asymmetry not yet metrically resolved."
     },
     "jointGeometry": {
       "value": null,
@@ -173,7 +173,7 @@
         "GAP-04"
       ],
       "status": "hypothesis-only",
-      "note": "no invented mortises, joinery or hidden contact surfaces"
+      "note": "Explicit alternative joinery envelopes, not verified cut surfaces; no claim of manufacturing or structural validation."
     }
   },
   "variants": {

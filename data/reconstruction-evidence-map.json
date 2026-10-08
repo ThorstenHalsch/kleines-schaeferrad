@@ -1,0 +1,319 @@
+{
+  "schema": "ks-reconstruction-evidence-map/v2",
+  "rules": [
+    "Alle Modellkoordinaten sind ungemessene Rekonstruktionskoordinaten.",
+    "Historische Maße und aktuelle Maße bleiben getrennt.",
+    "IMG_6875/6876 nur sekundäre Kontextbeschreibung; Originale fehlen."
+  ],
+  "components": [
+    {
+      "component": "COMP-SHAFT",
+      "label": "Welle",
+      "observed_features": "Facettierter Holzkörper; sichtbare Armöffnungen und Keile.",
+      "historical_geometry": "370 / 37; gesonderte Rohholzangaben widersprechen direkter Gleichsetzung.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "PHOTO-6816",
+        "PHOTO-6855",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-03"
+      ],
+      "candidate_geometry": "Facettiert, verjüngte Enden und getrennte Zapfenkandidaten.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "370 / 37; gesonderte Rohholzangaben widersprechen direkter Gleichsetzung.",
+      "reconstructed_best_candidate": "Facettiert, verjüngte Enden und getrennte Zapfenkandidaten.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Zapfenmaß, Innenöffnungen und tatsächliche Kontaktflächen."
+    },
+    {
+      "component": "COMP-ARMS",
+      "label": "Arme",
+      "observed_features": "Mehrere Eintrittsstellen axial gestaffelt; durchgehende Paarung innen nicht sichtbar.",
+      "historical_geometry": "6798/6799: symmetrisch gekröpft; Notationen 455/395/50/30/14.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808",
+        "PHOTO-6831"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-05"
+      ],
+      "candidate_geometry": "Drei durchgehende gekröpfte Profile je Kranz; gerade und axial umgekehrt als Alternativen.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "6798/6799: symmetrisch gekröpft; Notationen 455/395/50/30/14.",
+      "reconstructed_best_candidate": "Drei durchgehende gekröpfte Profile je Kranz; gerade und axial umgekehrt als Alternativen.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Endpaarung, Kröpfung, Welleninnenraum, Einstecktiefe und Keilsitz."
+    },
+    {
+      "component": "COMP-KRUEMMLINGE",
+      "label": "Kranz und Krümmlinge",
+      "observed_features": "Gebogene segmentierte Kränze; Holzstifte/Anschlüsse nicht rundum sichtbar.",
+      "historical_geometry": "Radien 198/213; Breite 14 cm; Notationsrichtung getrennt halten.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6790",
+        "PHOTO-6849",
+        "PHOTO-6851",
+        "V2-IMG_6804"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-04"
+      ],
+      "candidate_geometry": "Zwei Ebenen aus sechs gekrümmten Segmenten; Stoß mit Bohrungs-/Stiftalternative.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Radien 198/213; Breite 14 cm; Notationsrichtung getrennt halten.",
+      "reconstructed_best_candidate": "Zwei Ebenen aus sechs gekrümmten Segmenten; Stoß mit Bohrungs-/Stiftalternative.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Reale Stoßüberlappung, Lochbild, radiale Tiefe, axiale Breite."
+    },
+    {
+      "component": "COMP-KUEMPFE",
+      "label": "Kümpfe",
+      "observed_features": "Dauben, Boden, Metallreifen und schräge Einbaulage.",
+      "historical_geometry": "22/24 mm Dauben; jeweils eigene Nutmaße. Zwölfeck ist historische Referenz, kein heutiger Zählnachweis.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-01"
+      ],
+      "candidate_geometry": "Offener Daubenkörper, eigener Boden, drei Reifen; 24 erwartete Positionen.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "22/24 mm Dauben; jeweils eigene Nutmaße. Zwölfeck ist historische Referenz, kein heutiger Zählnachweis.",
+      "reconstructed_best_candidate": "Offener Daubenkörper, eigener Boden, drei Reifen; 24 erwartete Positionen.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Ist-Neigung, Daubenzahl, Nut/Boden, heute vorhandene Zahl."
+    },
+    {
+      "component": "COMP-FASTENERS",
+      "label": "Holzstifte und Keile",
+      "observed_features": "Zwei lose Stifte mit unterschiedlicher Länge, gekrümmtem Schaft und verdicktem Kopf.",
+      "historical_geometry": "Inventar nennt verschiedene Keile und Kumpfnägel; nicht alle Funktionen gesichert.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-06"
+      ],
+      "candidate_geometry": "Lang-/Kurzpaar mit gekrümmtem Schaft; Keile an Armregionen. Varianten: neigungsbestimmend, sichernd, reparaturbedingt.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Inventar nennt verschiedene Keile und Kumpfnägel; nicht alle Funktionen gesichert.",
+      "reconstructed_best_candidate": "Lang-/Kurzpaar mit gekrümmtem Schaft; Keile an Armregionen. Varianten: neigungsbestimmend, sichernd, reparaturbedingt.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Sitze im eingebauten Zustand, Einführrichtung und Funktion an mindestens drei Kümpfen."
+    },
+    {
+      "component": "COMP-PADDLES",
+      "label": "Schaufeln",
+      "observed_features": "Bretter verbinden den Umfang zwischen den Radseiten; Kümpfe liegen daneben.",
+      "historical_geometry": "Schaufeln/Schetter und Bänder begrifflich noch abzugleichen.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-07"
+      ],
+      "candidate_geometry": "Geformte Bretter zwischen beiden Kranzebenen; halbe Umfangsteilung als Kandidat.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Schaufeln/Schetter und Bänder begrifflich noch abzugleichen.",
+      "reconstructed_best_candidate": "Geformte Bretter zwischen beiden Kranzebenen; halbe Umfangsteilung als Kandidat.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Anstellung, Befestigung, Kopplung zu Kumpf und reale Umfangsphase."
+    },
+    {
+      "component": "COMP-BEARINGS",
+      "label": "Lager",
+      "observed_features": "Wellenende im Rahmenkontext sichtbar; Kontaktfläche nicht eindeutig freigelegt.",
+      "historical_geometry": "Radstattpläne enthalten Lager- und Pfostenbezüge.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6804",
+        "V2-IMG_6808",
+        "V2-IMG_6792",
+        "V2-IMG_6795"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-03"
+      ],
+      "candidate_geometry": "Offener Sitz und Zapfen; Material/Spiel sind unbestätigte Alternativen.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Radstattpläne enthalten Lager- und Pfostenbezüge.",
+      "reconstructed_best_candidate": "Offener Sitz und Zapfen; Material/Spiel sind unbestätigte Alternativen.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Kontakt vor Entlastung, Zapfenprofil und beide Kontaktflächen."
+    },
+    {
+      "component": "COMP-RADSTATT",
+      "label": "Radstatt",
+      "observed_features": "Pfosten, Tragbalken, untere Hölzer, Streben und Laufbohlen sind sichtbar.",
+      "historical_geometry": "Land-/Wasserseite mit asymmetrischen Maßketten; Modell nutzt noch ungemessene Koordinaten.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-09"
+      ],
+      "candidate_geometry": "Zwei stationäre Seitenrahmen, Lagerstöcke, Diagonalen, Grund- und Querhölzer sowie Arbeitsbohlen.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Land-/Wasserseite mit asymmetrischen Maßketten; Modell nutzt noch ungemessene Koordinaten.",
+      "reconstructed_best_candidate": "Zwei stationäre Seitenrahmen, Lagerstöcke, Diagonalen, Grund- und Querhölzer sowie Arbeitsbohlen.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Pfostenfüße, genaue Knotentopologie, vollständige Wasserseite und metrische Asymmetrie."
+    },
+    {
+      "component": "COMP-TROUGH",
+      "label": "Trog",
+      "observed_features": "Oberer Sammelbereich im Kontext; Wasserübergabe nicht als Nahaufnahme dokumentiert.",
+      "historical_geometry": "250 / (244) sind konkurrierende alte Trognotizen.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6812",
+        "PHOTO-6829"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-12"
+      ],
+      "candidate_geometry": "Offener, leicht geneigter Sammelquerschnitt außerhalb der Kumpfbahn.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "250 / (244) sind konkurrierende alte Trognotizen.",
+      "reconstructed_best_candidate": "Offener, leicht geneigter Sammelquerschnitt außerhalb der Kumpfbahn.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Trogmündung relativ zum Kumpfmund, Seitenzuordnung, Anschluss und Höhen."
+    },
+    {
+      "component": "COMP-RINNE",
+      "label": "Rinne",
+      "observed_features": "Ausleitung ist im Gesamtzusammenhang, nicht durchgehend metrisch aufgenommen.",
+      "historical_geometry": "Regionale Beschreibungen belegen aufgeständerte Ableitung, nicht die aktuelle exakte Form.",
+      "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
+      "sources": [
+        "V2-IMG_6812"
+      ],
+      "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
+      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "unresolved_conflicts": [
+        "CONFLICT-12"
+      ],
+      "candidate_geometry": "Offener Querschnitt mit Gefälle und eigenen Stützen zum angenommenen Ufer.",
+      "confidence": {
+        "existence": "documented-or-observed",
+        "candidate_metric": "low",
+        "hidden_joinery": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Regionale Beschreibungen belegen aufgeständerte Ableitung, nicht die aktuelle exakte Form.",
+      "reconstructed_best_candidate": "Offener Querschnitt mit Gefälle und eigenen Stützen zum angenommenen Ufer.",
+      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
+      "unknown": "Realer Verlauf, Auslauf, Gefälle, Auflager und Troganschluss."
+    }
+  ]
+}

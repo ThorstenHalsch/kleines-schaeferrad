@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kleines-schaeferrad-research-page@0.1.0 check
+> astro check
+
+00:46:30 [types] Generated 57ms
+00:46:30 [check] Getting diagnostics for Astro files in /workspace/scratch/535d03b975b5/reconstruction-v2...
+Result (32 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

@@ -8,3 +8,5 @@ test-results/
 
 public/field-pack/
 tmp/
+
+/node_modules

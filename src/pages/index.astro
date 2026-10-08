@@ -5,7 +5,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
 
 import hero from '../../evidence/raw/IMG_6858.jpeg';
-import anatomy from '../../evidence/raw/IMG_6861.jpeg';
 
 const routes = {
   workshop: href('werkstatt/'),
@@ -13,37 +12,6 @@ const routes = {
   plan: href('field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf')
 };
 
-const system = [
-  ['Radkörper','Welle, Arme, Kränze und Krümmlinge'],
-  ['Wasseraufnahme','Kümpfe und Schaufeln'],
-  ['Lagerung','Zapfen, Lager, Lagerstöcke und Auflager'],
-  ['Tragwerk','Radstatt, Querbalken und Rahmen'],
-  ['Wasserführung','Trog, Rinne, Wasserlinie und Fließrichtung']
-];
-
-const paths = [
-  {
-    number:'01',
-    title:'Arbeitsplan',
-    text:'Für den Abbau: Skizzen, Messstellen, Fotopositionen und STOPP-Punkte auf Papier.',
-    href:routes.plan,
-    action:'A3-Plan öffnen'
-  },
-  {
-    number:'02',
-    title:'Vor Ort',
-    text:'Eine Aufgabe nach der anderen aufnehmen. Fotos, Maße, Teile und Sicherung bleiben zusammen.',
-    href:routes.field,
-    action:'Vor-Ort-Modus öffnen'
-  },
-  {
-    number:'03',
-    title:'Werkstattmodell',
-    text:'Rad, Tragwerk, Punktewolke und offene Verbindungen gemeinsam ansehen und vergleichen.',
-    href:routes.workshop,
-    action:'Arbeitsmodell öffnen'
-  }
-];
 ---
 <BaseLayout title="Das Kleine Schäferrad" description="Ein Stück Regnitzgeschichte: Aufbau, Handwerk und Wissen des Kleinen Schäferrads gemeinsam erhalten.">
   <section class="home-hero container">
@@ -72,43 +40,9 @@ const paths = [
       </div>
       <div class="home-story-copy">
         <p>Wasserschöpfräder sind an der Regnitz seit dem frühen 15. Jahrhundert belegt. Um 1805 arbeiteten zwischen Fürth und Forchheim noch rund 190 Räder.</p>
-        <p>Dass diese Technik heute noch sichtbar ist, verdankt sie den Menschen, die sie jedes Jahr aufbauen, pflegen, reparieren und wieder abbauen. Genau dieses praktische Wissen gehört zur Geschichte des Rades. <a href="https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder" target="_blank" rel="noopener">Gemeinde Möhrendorf ↗</a></p>
+        <p>Dass diese Technik heute noch sichtbar ist, verdankt sie den Menschen, die sie jedes Jahr aufbauen, pflegen, reparieren und wieder abbauen. Genau dieses praktische Wissen gehört zur Geschichte des Rades. <a href="https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder" target="_blank" rel="noopener">Gemeinde Möhrendorf</a></p>
       </div>
     </div>
   </section>
 
-  <section id="aufbau" class="section container home-system">
-    <div class="section-heading compact-heading">
-      <div><span class="eyebrow">Das technische System</span><h2>Mehr als ein Rad.</h2></div>
-      <p>Radkörper, Lagerung, Radstatt und Wasserführung gehören zusammen. Was noch nicht sicher verstanden ist, bleibt als offene Stelle sichtbar.</p>
-    </div>
-    <div class="home-system-grid">
-      <figure class="home-system-image">
-        <Image src={anatomy} alt="Innenansicht mit Welle, Armen, Kranz und Tragwerk" widths={[640,960,1280]} sizes="(max-width: 899px) 100vw, 58vw" />
-        <figcaption>Welle, Arme und stationäres Tragwerk im Zusammenhang.</figcaption>
-      </figure>
-      <div class="home-system-list">
-        {system.map(([title,text]) => <div><strong>{title}</strong><span>{text}</span></div>)}
-      </div>
-    </div>
-  </section>
-
-  <section class="home-paths">
-    <div class="container">
-      <div class="section-heading compact-heading">
-        <div><span class="eyebrow">Weiterarbeiten</span><h2>Drei Wege. Ein gemeinsamer Stand.</h2></div>
-        <p>Der Arbeitsplan führt durch den Abbau, der Vor-Ort-Modus hält Befunde fest, das Werkstattmodell hilft beim Verstehen.</p>
-      </div>
-      <div class="path-list">
-        {paths.map((item) => (
-          <a href={item.href} class="path-row">
-            <span class="path-number">{item.number}</span>
-            <strong>{item.title}</strong>
-            <span>{item.text}</span>
-            <span class="path-action">{item.action} <Icon name="arrow" size={16} /></span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
 </BaseLayout>
