@@ -55,21 +55,25 @@
         "CLAIM-0230",
         "CLAIM-0231",
         "CLAIM-0232",
-        "CLAIM-0233"
+        "CLAIM-0233",
+        "CLAIM-0360",
+        "CLAIM-0361"
       ],
       "conflict_claim": "CLAIM-0345",
       "sources": [
         "PHOTO-6821",
-        "PHOTO-6846"
+        "PHOTO-6846",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "PHOTO-1000046423"
       ],
-      "issue": "Ringlängen 780/875/968 vs 784/880/972",
+      "issue": "Historische Ringlängen 780/875/968 vs 784/880/972: Fachauskunft bestätigt gefertigte Maßvarianten; Zuordnung der Zahlenreihe zum fotografierten Referenz-Kumpf bleibt offen.",
       "possible_explanations": [
-        "different overlap allowance",
-        "manufacturing revision",
-        "different vessel variants"
+        "confirmed manufactured derivative variants",
+        "band-seat-dependent circumference",
+        "different overlap allowance"
       ],
       "resolution_capture": "GAP-04",
-      "status": "unresolved",
+      "status": "variant-family-confirmed-numeric-mapping-unresolved",
       "selected_as_built_value": null
     },
     {
@@ -212,23 +216,29 @@
         "CLAIM-0056",
         "CLAIM-0255",
         "CLAIM-0256",
-        "CLAIM-0259"
+        "CLAIM-0259",
+        "CLAIM-0364",
+        "CLAIM-0365",
+        "CLAIM-0366",
+        "CLAIM-0368"
       ],
       "conflict_claim": "CLAIM-0349",
       "sources": [
         "PHOTO-6825",
         "PHOTO-6827",
         "PHOTO-6853",
-        "PHOTO-6854"
+        "PHOTO-6854",
+        "NARRATIVE-TH-KUMPF-20261008-02",
+        "NARRATIVE-TH-KUMPF-20261008-03"
       ],
-      "issue": "historical wooden Bänder/keile versus observed metal shaft band and thin vessel hoops",
+      "issue": "Fastener terminology/functions were mixed. Kumpfnägel are now a distinct expert-confirmed wooden fastener family for Kumpf→Krümmling attachment; other wedges/bands remain separate.",
       "possible_explanations": [
         "different fastener functions",
-        "mixed design",
-        "repair possible but not dated"
+        "mixed materials by component",
+        "repair history may still affect other fasteners"
       ],
       "resolution_capture": "GAP-02/GAP-04",
-      "status": "terminology-and-state-difference-not-proven-contradiction",
+      "status": "partially-resolved-kumpfnagel-function-confirmed",
       "selected_as_built_value": null
     },
     {
@@ -432,6 +442,37 @@
       ],
       "resolution_capture": "GAP-07",
       "status": "unresolved",
+      "selected_as_built_value": null
+    },
+    {
+      "id": "CONFLICT-13",
+      "comparison": "expert-vs-model",
+      "subjects": [
+        "COMP-PADDLES"
+      ],
+      "claim_ids": [
+        "CLAIM-0369",
+        "CLAIM-0261",
+        "CLAIM-0291",
+        "CLAIM-0298"
+      ],
+      "conflict_claim": null,
+      "sources": [
+        "NARRATIVE-TH-PADDLE-20261008-01",
+        "PHOTO-6854",
+        "PHOTO-6860",
+        "PHOTO-6861",
+        "SCAN-20261007-01-PLY",
+        "SCAN-20261007-01-GLB"
+      ],
+      "issue": "Fachkenner korrigiert sichtbare Schaufelstellung auf 90° zum Rad; aktueller Code ist formal senkrecht zur Kranzebene, kann aber lokale radial/tangentiale Anstellung, Position oder Anschluss falsch darstellen.",
+      "possible_explanations": [
+        "ambiguous reference behind '90° zum Rad'",
+        "local radial/tangential orientation wrong despite plane normal",
+        "model placement/connection rather than abstract plane angle is wrong"
+      ],
+      "resolution_capture": "GAP-09",
+      "status": "expert-correction-priority-scan-definition-pending",
       "selected_as_built_value": null
     }
   ]
