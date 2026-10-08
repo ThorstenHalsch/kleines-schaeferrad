@@ -1,0 +1,130 @@
+{
+  "schema": "ks-approximation-scorecard/v1",
+  "iteration": "ITER-001",
+  "scale": "0–5 qualitative navigation, not accuracy or completion percentage",
+  "prior": "retrospective qualitative V2 assessment; no prior numeric scorecard existed",
+  "truthConfidence": [
+    {
+      "component": "shaft",
+      "before": 2,
+      "after": 2,
+      "reason": "No new shaft metric or hidden-joint evidence"
+    },
+    {
+      "component": "arms",
+      "before": 2,
+      "after": 2,
+      "reason": "Historical profile retained, current hidden pairing unresolved"
+    },
+    {
+      "component": "rims / Krümmlinge",
+      "before": 2,
+      "after": 2,
+      "reason": "Historical radii and observed topology; real joint still unknown"
+    },
+    {
+      "component": "Kümpfe",
+      "before": 2,
+      "after": 3,
+      "reason": "Four new expert reference photos, explicit 12-stave groove construction"
+    },
+    {
+      "component": "Kumpfnägel",
+      "before": 1,
+      "after": 2,
+      "reason": "Expert confirms function and long/short overlap rationale; paths remain candidate"
+    },
+    {
+      "component": "paddles",
+      "before": 1,
+      "after": 2,
+      "reason": "Expert plane constraint; radial pitch candidate from photo/function, no scan angle"
+    },
+    {
+      "component": "bearings",
+      "before": 1,
+      "after": 1,
+      "reason": "No exposed contacts"
+    },
+    {
+      "component": "Radstatt",
+      "before": 1,
+      "after": 1,
+      "reason": "No new dimensions"
+    },
+    {
+      "component": "trough / channel",
+      "before": 1,
+      "after": 1,
+      "reason": "Receiving pose is synthetic"
+    },
+    {
+      "component": "scan registration",
+      "before": 0,
+      "after": 0,
+      "reason": "No field datum / scale / signed side match"
+    },
+    {
+      "component": "waterline / operation",
+      "before": 1,
+      "after": 1,
+      "reason": "No measured current operating video"
+    }
+  ],
+  "syntheticCompleteness": [
+    {
+      "component": "whole-system geometry",
+      "before": 2,
+      "after": 3,
+      "reason": "Explicit stave assembly; candidate frame retained"
+    },
+    {
+      "component": "hidden joinery",
+      "before": 1,
+      "after": 2,
+      "reason": "Bored staves and contact / withdrawal sampling; rim bores unresolved"
+    },
+    {
+      "component": "site context",
+      "before": 1,
+      "after": 2,
+      "reason": "Water plane and workbench bank; no surveyed terrain"
+    },
+    {
+      "component": "water function",
+      "before": 1,
+      "after": 3,
+      "reason": "Pose-derived cycle, losses, ballistic receiving path"
+    },
+    {
+      "component": "material realism",
+      "before": 1,
+      "after": 2,
+      "reason": "Flat metal bands, timber shading and wet zone"
+    },
+    {
+      "component": "lighting",
+      "before": 1,
+      "after": 2,
+      "reason": "Stable two-sided offscreen lighting"
+    },
+    {
+      "component": "animation",
+      "before": 1,
+      "after": 3,
+      "reason": "Full revolution, selected K01 and streams / channel continuation"
+    },
+    {
+      "component": "exploded / section views",
+      "before": 2,
+      "after": 3,
+      "reason": "Component-level groove and exploded assemblies"
+    },
+    {
+      "component": "technical drawing coverage",
+      "before": 2,
+      "after": 3,
+      "reason": "Eight refreshed mandatory topics plus reference orthographics"
+    }
+  ]
+}

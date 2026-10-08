@@ -3,7 +3,9 @@
 Branch: `work/model-calibration-loop-v3-20261008`
 Base: `main@558626019c6f85c6061467727f54122a793b15bd`
 
-Status: **READY FOR ASTRA WORK SESSION**
+Status: **CALIBRATION ITERATION READY FOR TRUTH CRITIC**
+
+Completed: `ITER-001` · 2026-10-08. Handoff: [CRITIQUE-READY.md](reconstruction-loop/ITER-001/CRITIQUE-READY.md). The task below is preserved as the iteration specification. No merge performed.
 
 Read first:
 - `state/baseline/BASELINE-V3-THORSTEN.md`

@@ -1,0 +1,134 @@
+{
+  "schema": "ks-calibration/v3",
+  "iteration": "ITER-001",
+  "baseline": "558626019c6f85c6061467727f54122a793b15bd",
+  "sourceHead": "22c29d1b737e507da947182f690c470e771d6e81",
+  "reference": {
+    "height": 0.6,
+    "baseRadius": 0.15,
+    "mouthRadius": 0.11,
+    "thickness": 0.024,
+    "grooveDepth": 0.008,
+    "grooveWidth": 0.014,
+    "baseOffset": 0.045,
+    "hoopOffsets": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "holeOffsets": [
+      0.19,
+      0.45
+    ],
+    "holeRadius": 0.012,
+    "staves": 12,
+    "drilledStaves": [
+      0,
+      6
+    ],
+    "sources": [
+      "PHOTO-1000046420",
+      "PHOTO-1000046421",
+      "PHOTO-1000046422",
+      "PHOTO-1000046423"
+    ],
+    "metricStatus": "photo-readout-reference-only-not-current-installed-measurement",
+    "intervals": {
+      "height": [
+        0.58,
+        0.62
+      ],
+      "baseDiameter": [
+        0.28,
+        0.32
+      ],
+      "mouthDiameter": [
+        0.21,
+        0.24
+      ],
+      "holeOffsets": [
+        [
+          0.18,
+          0.21
+        ],
+        [
+          0.43,
+          0.47
+        ]
+      ],
+      "hoopOffsets": [
+        [
+          0.085,
+          0.115
+        ],
+        [
+          0.285,
+          0.315
+        ],
+        [
+          0.485,
+          0.515
+        ]
+      ]
+    },
+    "unmeasured": [
+      "thickness",
+      "grooveDepth",
+      "grooveWidth",
+      "holeRadius",
+      "opposedDrilledStaveIndices"
+    ],
+    "scope": "one expert-designated reference vessel; no all-vessel metric promotion"
+  },
+  "production": {
+    "radius": 2.095,
+    "centerX": -0.94,
+    "pitchDeg": 125,
+    "yawDeg": 60,
+    "overlapDirection": 1,
+    "nailMapping": "A",
+    "paddlePitchDeg": 0,
+    "paddleHeight": 0.43,
+    "paddleThickness": 0.055,
+    "paddleRadius": 2.23,
+    "paddlePhaseSlots": 0.45,
+    "waterLevel": -1.95,
+    "troughX": -1.45,
+    "troughHalfWidth": 0.16,
+    "troughZ": 1.4,
+    "troughY": [
+      -1.15,
+      1.25
+    ],
+    "variants": {},
+    "status": "ranked-synthetic-candidate-not-as-built",
+    "paddleAxialOverhang": 0.07,
+    "jetSpeed": 1.8,
+    "rotationRPM": 2.2
+  },
+  "truth": {
+    "currentInstalledMetricGeometry": null,
+    "exactNailPaths": null,
+    "directedOverlap": null,
+    "paddlePlaneNormalDotShaft": 0,
+    "paddleRadialPitchDeg": null,
+    "renderPolicy": "Reference shape and historical/observed topology are non-metric display realizations; no candidate hidden joinery, site or water animation in Truth. Every mesh carries metric/pose status; empty regions remain unresolved.",
+    "expertTopology": {
+      "staves": 12,
+      "base": 1,
+      "baseRetention": "groove",
+      "hoops": 3,
+      "drilledStaves": 2,
+      "holesPerDrilledStave": 2,
+      "nails": 2,
+      "nailFamily": [
+        "long",
+        "short"
+      ],
+      "nailFunction": "fastens-kumpf-to-kruemmling",
+      "lengthReason": "neighbor-overlap",
+      "neighborOverlap": true,
+      "scope": "expert-reference-only"
+    }
+  }
+}

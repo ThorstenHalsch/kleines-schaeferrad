@@ -1,0 +1,8 @@
+{
+  "schema": "ks-stationary-sweep/v1",
+  "samples": 53424,
+  "stepDegrees": 5,
+  "hits": {},
+  "method": "every sixth vertex of one representative moving cluster, 72 rotation positions, triangle-ray parity inside stationary meshes after AABB broad phase",
+  "limit": "Sampled validation, not continuous collision certification"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "evidence/raw/1000046420.jpg",
+    "sha256": "a76cb11e6a27d3fa6db341408698925cd4f1b446475dbb4bbb64276db60acb22",
+    "annotations": [
+      [
+        250,
+        164,
+        740,
+        194,
+        "Nut: Existenz sichtbar; genaue Tiefe offen"
+      ],
+      [
+        561,
+        326,
+        645,
+        771,
+        "zwei Lochlagen in einer Daube"
+      ]
+    ],
+    "status": "visual-readout-unrectified-reference-only"
+  },
+  {
+    "source": "evidence/raw/1000046421.jpg",
+    "sha256": "83278627dc3b96e7f15d9290ea5dcf96575c30104d1bea7b904783f4e2a955da",
+    "annotations": [
+      [
+        128,
+        830,
+        849,
+        391,
+        "äußere Ablesung ungefähr 30 cm ± 2 cm"
+      ]
+    ],
+    "status": "visual-readout-unrectified-reference-only"
+  },
+  {
+    "source": "evidence/raw/1000046422.jpg",
+    "sha256": "b07a4a00163dfa629c0655b6e7cc261a74f93434a2b969c5938aed4089fb0da4",
+    "annotations": [
+      [
+        487,
+        217,
+        569,
+        1000,
+        "Mündungs-Ø ungefähr 22–24 cm"
+      ]
+    ],
+    "status": "visual-readout-unrectified-reference-only"
+  },
+  {
+    "source": "evidence/raw/1000046423.jpg",
+    "sha256": "836b49ff126fccba4ec495660554870e52f5394649d8e03fdacf7be9f0e9f396",
+    "annotations": [
+      [
+        46,
+        370,
+        1210,
+        352,
+        "Länge ungefähr 60 cm ± 2 cm"
+      ],
+      [
+        415,
+        325,
+        945,
+        325,
+        "Lochlagen ungefähr 19 / 45 cm; Bezug prüfen"
+      ]
+    ],
+    "status": "visual-readout-unrectified-reference-only"
+  }
+]

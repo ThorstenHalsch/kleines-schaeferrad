@@ -1,7 +1,7 @@
 {
   "schema": "ks-field-pack/v2",
   "task_source": "data/field-tasks.json",
-  "task_source_sha256": "20d41aa86110cec20717e439289b3385482e744e59298423cb04e04a90f4f361",
+  "task_source_sha256": "f36bcca8006c5a40c040a01af92304d196c295c02713cc9570b3a4b274a1f74d",
   "visual_source": "data/visual-guides.json",
   "visual_source_sha256": "8852b38aaee569a5e147bb6a447a266c1ad5d37885d1fe2c12fcf64f17c7ef1f",
   "task_ids": [
@@ -56,82 +56,81 @@
       "code": "KS-00",
       "title": "Gesamtsystem und Standort",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 2,
       "code": "KS-10",
       "title": "Welle und gekröpfte Arme",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 3,
       "code": "KS-11",
       "title": "Innenverbindungen vergleichen",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 4,
       "code": "KS-20",
       "title": "Kranz und Krümmlingstoß",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 5,
       "code": "KS-30",
       "title": "Kumpf · Dauben, Boden, Reifen",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 6,
       "code": "KS-31",
       "title": "Langer und kurzer Holzstift",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 7,
       "code": "KS-40",
       "title": "Schaufel und Nachbarn",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 8,
       "code": "KS-50",
       "title": "Lager, Radstatt und unterer Rahmen",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 9,
       "code": "KS-51",
       "title": "Wasserweg · Kumpf, Trog, Rinne",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 10,
       "code": "KS-60",
       "title": "Baugruppen und Zusammenbau",
       "visual": "shared-mesh-projection / original-photo",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     },
     {
       "page": 11,
       "code": "KS-70",
       "title": "Fünf unersetzbare Aufnahmeereignisse",
       "visual": "five-original-photo-event-panels",
-      "status": "VISUALLY_REVIEWED"
+      "status": "REVIEW_REQUIRED"
     }
   ],
   "format": "A3 landscape",
   "physical_instances_precreated": 0,
-  "geometry_sha256": "026df25b8d796b938bb7418fd1d378f33ccf25238721fc157cf17256f0f0719a",
-  "quality_gate": "TECHNICAL DRAWING QUALITY PASS",
-  "review": "state/reconstruction/quality-review.json"
+  "geometry_sha256": "8f3446174a002a7282e2c445a3655632f08450db95fb6dd388d48b570025e385",
+  "quality_gate": "PENDING_VISUAL_AUDIT"
 }

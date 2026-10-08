@@ -18,7 +18,7 @@ T=json.loads((ROOT/'data/field-tasks.json').read_text());G=json.loads((ROOT/'dat
 for name,file in [('KS','DejaVuSans.ttf'),('KSB','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
 W,H=420,297
 c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=landscape(A3),invariant=1)
-c.setTitle('Kleines Schäferrad · Technischer Aufnahmeplan V2');c.setAuthor('Kleines Schäferrad')
+c.setTitle('Kleines Schäferrad · Technischer Aufnahmeplan ITER-001');c.setAuthor('Kleines Schäferrad')
 def line(a,b,color='#333333',width=.3,dash=None):
  c.setStrokeColor(color);c.setLineWidth(width*mm);c.setDash(*([1.7*mm,1*mm] if dash else []));c.line(a[0]*mm,a[1]*mm,b[0]*mm,b[1]*mm);c.setDash()
 def text(s,x,y,size=3.4,bold=False,color='#292d2d'):
@@ -88,7 +88,7 @@ for i,s in enumerate(sheets):
    wrap(before,xx,yy+20,125,3.1);wrap(after,xx,yy+11,125,3.0)
   text('Je Ereignis festhalten',280,112,4,True)
   for k,tx in enumerate(['Teil / Partner: __________________','Foto vorher: __________________','Foto danach: __________________','Maß / Werkzeug: ______________','Person / Reihenfolge: __________','Sicherung geprüft: _____________']):text(tx,280,99-k*11,3.2)
-  line((13,19),(407,19),'#9da5a0',.25);text(f'V2 · {i+1:02}/{len(sheets)} · A3 quer · Aufnahmebereiche, keine Perspektivmaße',13,13,2.7);text('Originalfotos / Samstagplan · tatsächliche Kontaktstellen nah ergänzen',13,7,2.7)
+  line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · Aufnahmebereiche, keine Perspektivmaße',13,13,2.7);text('Originalfotos / Samstagplan · tatsächliche Kontaktstellen nah ergänzen',13,7,2.7)
   pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'five-original-photo-event-panels','status':'REVIEW_REQUIRED'})
   continue
  n=len(s['views']);ww=394/n
@@ -106,7 +106,7 @@ for i,s in enumerate(sheets):
  for note in s['notes']:yy=wrap(note,note_x,yy,note_w,3.4)-2
  text('Teil / Partner: ___________________    Maß / Werkzeug: ___________________',note_x,max(yy-3,37),3.2)
  line((note_x,29),(407,29),'#bcc1bc',.2);text('Person / Datum / Reihenfolge: __________________________________________',note_x,24,3)
- line((13,19),(407,19),'#9da5a0',.25);text(f'V2 · {i+1:02}/{len(sheets)} · A3 quer · 08.10.2026 · nicht maßhaltig',13,13,2.7)
+ line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · 08.10.2026 · nicht maßhaltig',13,13,2.7)
  text('REKONSTRUIERT / OFFEN · keine Fertigungs- oder Demontagefreigabe',190,13,2.7)
  wrap(s['source'],13,7,390,2.3)
  pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'shared-mesh-projection / original-photo','status':'REVIEW_REQUIRED'})

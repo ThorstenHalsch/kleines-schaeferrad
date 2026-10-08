@@ -1,0 +1,24 @@
+{
+  "originalCommit": "924a647d4425ec18e2be13578c8683381be57b62",
+  "file": "full-cycle.gif",
+  "bytes": 22216599,
+  "sha256": "8e0241ccd7704308cb3b134e9fdf181ef17b887e39d45ec348859e3bb14552bf",
+  "reason": "GitHub connector request limit 16 MiB; byte-identical lossless transport parts",
+  "parts": [
+    {
+      "name": "full-cycle.gif.part01",
+      "bytes": 7500000,
+      "sha256": "7232f57cc049852285bc0b501b35e091e9188551d8e8bacfe3c5b89288569cc6"
+    },
+    {
+      "name": "full-cycle.gif.part02",
+      "bytes": 7500000,
+      "sha256": "828fb3f59e66d2c975862d0661f6e707b709d2f847ecdc237adacf5df9cfde23"
+    },
+    {
+      "name": "full-cycle.gif.part03",
+      "bytes": 7216599,
+      "sha256": "d7af7e81b5c08e4826edcb02cfb6a84d32dbd0e5911a9a480194882e42a231ec"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "ks-constraint-delta/v1",
+  "iteration": "ITER-001",
+  "baseline": "558626019c6f85c6061467727f54122a793b15bd",
+  "truthPromotion": "non-metric facts only; photo metrics kept separate",
+  "constraints": [
+    {
+      "id": "K01",
+      "claim": "12 staves / 1 base / groove / 3 hoops",
+      "sources": [
+        "NARRATIVE-TH-KUMPF-20261008-01"
+      ],
+      "scope": "photographed-reference",
+      "confidence": "high",
+      "models": "both",
+      "type": "topology",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K02",
+      "claim": "2 drilled staves, each with 2 holes",
+      "sources": [
+        "NARRATIVE-TH-KUMPF-20261008-02"
+      ],
+      "scope": "reference-attachment",
+      "confidence": "high",
+      "models": "both",
+      "type": "topology",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K03",
+      "claim": "2 nails, one long / one short; attachment to Krümmling",
+      "sources": [
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "scope": "reference-attachment",
+      "confidence": "high",
+      "models": "both",
+      "type": "assembly",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K04",
+      "claim": "Neighbor overlap explains unequal nail lengths",
+      "sources": [
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "scope": "neighbor-topology",
+      "confidence": "high",
+      "models": "both",
+      "type": "function",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K05",
+      "claim": "Paddle plane perpendicular to wheel plane; local pitch unresolved",
+      "sources": [
+        "NARRATIVE-TH-PADDLE-20261008-01"
+      ],
+      "scope": "paddle-orientation",
+      "confidence": "high-for-statement",
+      "models": "both",
+      "type": "orientation",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K06",
+      "claim": "Straight tapered polygonal body, larger base / smaller mouth",
+      "sources": [
+        "PHOTO-1000046420",
+        "PHOTO-1000046421",
+        "PHOTO-1000046422",
+        "PHOTO-1000046423"
+      ],
+      "scope": "reference-shape",
+      "confidence": "medium",
+      "models": "both",
+      "type": "non-metric-shape",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K07",
+      "claim": "Photo scale estimates: length 0.60±0.02; base D0.30±0.02; mouth D0.225±0.015m",
+      "sources": [
+        "PHOTO-1000046421",
+        "PHOTO-1000046422",
+        "PHOTO-1000046423"
+      ],
+      "scope": "reference-only",
+      "confidence": "low-to-medium",
+      "models": "brute",
+      "type": "photo-estimate-not-installed-metric",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K08",
+      "claim": "Opposed drilled staves and same-level hole pairing",
+      "sources": [
+        "PHOTO-1000046420",
+        "PHOTO-1000046422"
+      ],
+      "scope": "candidate-A",
+      "confidence": "low",
+      "models": "brute",
+      "type": "hidden-geometry-candidate",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K09",
+      "claim": "No adopted scan registration; no dedicated paddle or nail scan identified",
+      "sources": [
+        "evidence/derived/scan-audit.json"
+      ],
+      "scope": "available-scan-inventory",
+      "confidence": "high",
+      "models": "both",
+      "type": "promotion-limit",
+      "currentInstalledMetric": null
+    },
+    {
+      "id": "K10",
+      "claim": "Water depends on geometric mouth height, capacity and explicit jet parameter",
+      "sources": [
+        "src/workbench/calibration.mjs"
+      ],
+      "scope": "functional-visualization",
+      "confidence": "implementation-only",
+      "models": "brute",
+      "type": "water-kinematics",
+      "currentInstalledMetric": null
+    }
+  ]
+}

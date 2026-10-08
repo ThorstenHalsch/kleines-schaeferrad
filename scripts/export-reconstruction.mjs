@@ -4,7 +4,7 @@ import {makeModel,disposeModel} from '../src/workbench/geometry.mjs';
 import {MECHANICAL_FRAME} from '../src/workbench/mechanics.mjs';
 // Node has Blob but no browser FileReader. No images/textures are included in this mechanical export.
 globalThis.FileReader=class{readAsArrayBuffer(blob){blob.arrayBuffer().then(r=>{this.result=r;this.onloadend?.()})}readAsDataURL(blob){blob.arrayBuffer().then(r=>{this.result=`data:${blob.type};base64,${Buffer.from(r).toString('base64')}`;this.onloadend?.()})}};
-const model=makeModel(),root=new T.Group();root.name='Kleines Schaefferrad - reconstruction candidate';root.rotation.x=-Math.PI/2;
+const model=makeModel('A',0,{calibration:false}),root=new T.Group();root.name='Kleines Schaefferrad - reconstruction candidate';root.rotation.x=-Math.PI/2;
 root.userData={mechanicalFrame:MECHANICAL_FRAME,units:'metre candidate coordinates; no measured scale',conversion:'root Rx(-90 degrees) maps mechanical Z-up to glTF Y-up',asBuilt:false,geometrySHA256:crypto.createHash('sha256').update(fs.readFileSync('src/workbench/geometry.mjs')).digest('hex')};
 const moving=new T.Group(),fixed=new T.Group();moving.name='Radkoerper';fixed.name='Radstatt und Wasserweg';root.add(moving,fixed);const families=new Map(),register=[];
 const map=JSON.parse(fs.readFileSync('data/reconstruction-evidence-map.json')).components;

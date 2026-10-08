@@ -1,7 +1,8 @@
 {
   "schema": "ks-technical-projections/v2",
+  "iteration": "ITER-001",
   "geometry": "src/workbench/geometry.mjs",
-  "geometry_sha256": "026df25b8d796b938bb7418fd1d378f33ccf25238721fc157cf17256f0f0719a",
+  "geometry_sha256": "8f3446174a002a7282e2c445a3655632f08450db95fb6dd388d48b570025e385",
   "sheets": [
     {
       "id": "KS-00",

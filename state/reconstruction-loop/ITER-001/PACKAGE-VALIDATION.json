@@ -1,0 +1,13 @@
+{
+  "iteration": "ITER-001",
+  "status": "PASS",
+  "canonicalViews": 32,
+  "pairedCameras": 16,
+  "decodedImages": 66,
+  "decodedFrames": 137,
+  "animationFrames": 72,
+  "separateModelExports": 2,
+  "verifiedSourceAttachments": 30,
+  "mandatoryTechnicalSubjects": 8,
+  "limitations": "Integrity and sampled geometry checks; no new measured dimensions, continuous collision proof or browser playback verification."
+}
