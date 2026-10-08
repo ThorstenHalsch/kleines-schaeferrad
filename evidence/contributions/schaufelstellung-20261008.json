@@ -1,0 +1,61 @@
+{
+  "schema": "ks-expert-contribution/v1",
+  "id": "EXPERT-PADDLE-20261008-01",
+  "recorded_date": "2026-10-08",
+  "status": "expert-correction-recorded-scan-review-pending",
+  "source": {
+    "id": "NARRATIVE-TH-PADDLE-20261008-01",
+    "person": "ThorstenHalsch",
+    "role": "Fachkenner",
+    "verbatim": "Ich habe noch eine zusätzliche Information, die mit den Kumpfen nichts zu tun hat. In deinem Modell, das du erstellt hast, sind die Schaufelbretter parallel zum Radkranz. Die Schaufelbretter stehen aber im 90-Grad-Winkel zum Rad. Überprüfe das anhand einer Punktewolke. Ich hatte ein Schaufelrad explizit gescannt. Daran solltest du das erkennen. Gegebenenfalls kannst du auch schauen, ob du bezüglich der Kumpfbefestigung in der Punktewolke was erkennen kannst und daraus nochmal Insights als Markdown generieren."
+  },
+  "claims": [
+    {
+      "id": "EXPERT-PADDLE-20261008-ANGLE",
+      "subject": "COMP-PADDLES",
+      "predicate": "expert_reported_angle_to_wheel",
+      "value": 90,
+      "unit": "deg",
+      "evidence_class": "expert-narrative",
+      "scope": "expert-described-paddle-arrangement",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-PADDLE-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; geometrischer Bezug und Scanabgleich noch zu klären.",
+      "as_built_eligible": false
+    }
+  ],
+  "scan_review": {
+    "status": "not-performed",
+    "reason": "Binärdatei erfordert zusätzlichen Netzwerkzugriff in der Rechenumgebung; Fachkenner erklärt diesen für den aktuellen Stand als nicht notwendig.",
+    "reported_dedicated_scan": {
+      "filename": null,
+      "identified": false
+    },
+    "candidate_paths": [
+      "evidence/raw/Scaniverse 2026-10-07 173556.ply",
+      "evidence/raw/Scaniverse 2026-10-07 173556.glb"
+    ]
+  },
+  "code_review": {
+    "path": "src/workbench/geometry.mjs",
+    "basis_commit": "eb18aa6ba90ea4d95412e90edefefc81300e719f",
+    "finding": "Brettfläche spannt in der aktuellen Konstruktion X (Wellenachse) und lokale Umfangstangente auf; radialer Normalenvektor. Idealisierte Brettfläche damit senkrecht zur Kranzebene YZ. Reale Anstellung noch nicht scanverifiziert.",
+    "evidence_class": "inferred",
+    "does_not_resolve_expert_complaint": true
+  },
+  "related": {
+    "component_ids": [
+      "COMP-PADDLES",
+      "COMP-KUEMPFE",
+      "COMP-FASTENERS",
+      "COMP-KRUEMMLINGE"
+    ],
+    "kumpf_contribution": "evidence/contributions/kumpf-20261008.json",
+    "document": "docs/SCHAUFELSTELLUNG-SCAN-PRUEFAUFTRAG-20261008.md"
+  },
+  "baseline_unchanged": true
+}

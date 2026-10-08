@@ -11,3 +11,5 @@ Originalbytes sind unverändert in `raw/` archiviert. Nach Checkout: `python scr
 - 2026-10-08: [Aufbau eines Kumpfes — Fachauskunft von ThorstenHalsch](../docs/FACHBEITRAG-KUMPF-20261008.md), mit vier unveränderten Originalfotos. [Ergänzendes Quellenmanifest und atomare Fachangaben](contributions/kumpf-20261008.json).
 
 Fachbeiträge sind ergänzende Quellen für den späteren Abgleich. Das ursprüngliche 43-Dateien-Manifest bleibt als historische Baseline erhalten; der bestehende Prüflauf prüft diese neuen Beiträge noch nicht.
+
+- 2026-10-08: [Schaufelstellung und Kumpfbefestigung — fachlicher Prüfauftrag](../docs/SCHAUFELSTELLUNG-SCAN-PRUEFAUFTRAG-20261008.md). Fachliche 90°-Korrektur, vorläufiger Codebefund und offene direkte Scanprüfung; [maschinenlesbare Quelle](contributions/schaufelstellung-20261008.json).
