@@ -289,11 +289,11 @@ Mindestens drei verschiedene Stöße aufnehmen.
 
 ---
 
-## D3 — Langer und kurzer hölzerner Sicherungsstift noch eingebaut
+## D3 — Langer und kurzer Kumpfnagel noch eingebaut
 
 **Wichtig neue Hypothese.**
 
-Wenn wirklich pro Kumpf ein **langer und ein kurzer Holzstift** verwendet werden:
+Wenn wirklich pro Kumpf ein **langer und ein kurzer Kumpfnagel** verwendet werden:
 
 **Fotografiere beide noch im Sitz**, möglichst im selben Bild.
 
@@ -303,7 +303,7 @@ Zusätzlich:
 - welche Seite des Kumpfs berühren sie?
 - welche Schaufel/Kranzstelle liegt daneben?
 
-**Warum:** prüfen, ob das Paar Neigung/Verdrehung des Kumpfs bestimmt oder nur sichert.
+**Warum:** Thorstens Fachauskunft bestätigt die Befestigung am Krümmling und erklärt lang/kurz durch die Überlappung benachbarter Kümpfe. Jetzt müssen Nagelweg, Überlappungsrichtung und genaue Einbaulage geometrisch gesichert werden.
 
 **STOPP:** unbedingt vor Herausziehen.
 
@@ -350,7 +350,7 @@ Foto:
 - Kranz/Schaufel als Orientierung,
 - Maßstab.
 
-**Warum:** bestimmen, ob die Stifte tragen, klemmen, neigen oder nur sichern.
+**Warum:** den exakten Weg der zwei Kumpfnägel durch vier Lochpositionen zum Krümmling dokumentieren und Thorstens Funktionsbeschreibung geometrisch verankern.
 
 ---
 
@@ -358,7 +358,7 @@ Foto:
 
 Mindestens drei vollständige Paare dokumentieren.
 
-**Warum:** prüfen, ob lang/kurz systematisch ist oder nur Reparatur-/Einzelvariante.
+**Warum:** prüfen, ob das fachlich beschriebene Lang-/Kurz-Paar und die Überlappungslogik an mehreren Kümpfen systematisch wiederkehren.
 
 ---
 
@@ -368,7 +368,7 @@ Mindestens drei vollständige Paare dokumentieren.
 
 **Nach Ausbau:** erneut am Teil.
 
-**Warum:** Zusammenhang zwischen Neigung und langem/kurzem Sicherungsstift testen.
+**Warum:** Kumpfneigung weiterhin messen, aber nicht mehr als primäre Erklärung für die Nagellängendifferenz behandeln; Lochlage, Krümmlingkontakt und Überlappung als geometrische Ursachen getrennt erfassen.
 
 ---
 
@@ -628,7 +628,7 @@ Bei Welle, Kumpf, Kranz, Lager und Trog jeweils einen erfahrenen Kollegen fragen
 
 - „Woran erkennt ihr, dass dieses Teil richtig sitzt?“
 - „Was darf man auf keinen Fall zuerst lösen?“
-- „Warum ist dieser Keil/Stift länger oder kürzer?“
+- „Zeig uns bitte genau, wie langer und kurzer Kumpfnagel durch die gelochten Dauben zum Krümmling laufen und wo die Kumpfüberlappung den Längenunterschied erzwingt.“
 - „Was bestimmt die Neigung des Kumpfs?“
 - „Welche Teile sind absichtlich locker?“
 - „Was quillt im Wasser auf?“
@@ -661,7 +661,7 @@ Wörtliche Erklärung und unsere technische Interpretation getrennt halten.
 ## Die fünf Aufnahmen, die wir auf keinen Fall verpassen dürfen
 
 1. **Welle innen direkt nach Freigabe der ersten Arme.**
-2. **Langer + kurzer Kumpf-Sicherungsstift noch eingebaut und direkt danach als zugeordnetes Paar.**
+2. **Langer + kurzer Kumpfnagel noch eingebaut, Überlappung des Nachbarkumpfs im selben Zusammenhang und direkt danach beide Nagelwege/Lochpositionen.**
 3. **Eigentlicher Lagerkontakt der Welle vor und nach Entlastung.**
 4. **Beide Kontaktflächen eines geöffneten Krümmlingstoßes.**
 5. **Wasserübergabe Kumpf → Trog → Rinne, wenn das Rad noch läuft.**
