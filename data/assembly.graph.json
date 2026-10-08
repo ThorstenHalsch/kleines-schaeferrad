@@ -87,6 +87,12 @@
       "scope": "ontology-family-or-region"
     },
     {
+      "id": "COMP-KUMPF-NAILS",
+      "kind": "physical-part-family",
+      "label": "Kumpfnägel (lang / kurz)",
+      "scope": "ontology-family-or-region"
+    },
+    {
       "id": "COMP-BEARINGS",
       "kind": "joint-family",
       "label": "Lager-/Zapfenkontaktzonen",
