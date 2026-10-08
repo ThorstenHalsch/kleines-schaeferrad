@@ -230,39 +230,55 @@
         "CLAIM-0282",
         "CLAIM-0329",
         "CLAIM-0330",
-        "CLAIM-0339"
+        "CLAIM-0339",
+        "CLAIM-0361",
+        "CLAIM-0367"
       ],
       "confidence": "high",
-      "note": null
+      "note": "Referenz-Kumpf durch ThorstenHalsch fachlich beschrieben: 12 Dauben, 1 Nutboden, 3 Metallbänder; benachbarte Kümpfe überlappen. Aktuelle Gesamtzahl/Einbaupose weiterhin vor Ort zu verifizieren."
     },
     {
       "id": "COMP-KUMPF-STAVES",
       "label": "Dauben",
       "kind": "physical-part-family",
       "multiplicity": {
-        "description": "unknown per vessel",
+        "description": "12 per photographed reference Kumpf (expert-confirmed); all-vessel equivalence to verify",
         "current_verified_count": null
       },
       "provenance": [
-        "PHOTO-6823"
+        "PHOTO-6823",
+        "PHOTO-1000046420",
+        "PHOTO-1000046421",
+        "PHOTO-1000046422",
+        "PHOTO-1000046423",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "NARRATIVE-TH-KUMPF-20261008-02"
       ],
       "claim_ids": [
         "CLAIM-0040",
-        "CLAIM-0041"
+        "CLAIM-0041",
+        "CLAIM-0356",
+        "CLAIM-0358",
+        "CLAIM-0362",
+        "CLAIM-0363"
       ],
-      "confidence": "medium",
-      "note": null
+      "confidence": "high",
+      "note": "Zwei der zwölf Dauben besitzen laut Fachauskunft je zwei Löcher für Kumpfnägel. Boden sitzt in einer Einfräsung der Dauben."
     },
     {
       "id": "COMP-KUMPF-BASE",
       "label": "Kumpfböden",
       "kind": "physical-part-family",
       "multiplicity": {
-        "description": "unknown current",
+        "description": "1 per photographed reference Kumpf (expert-confirmed)",
         "current_verified_count": null
       },
       "provenance": [
-        "PHOTO-6823"
+        "PHOTO-6823",
+        "PHOTO-1000046420",
+        "PHOTO-1000046421",
+        "PHOTO-1000046422",
+        "NARRATIVE-TH-KUMPF-20261008-01"
       ],
       "claim_ids": [
         "CLAIM-0042",
@@ -270,21 +286,25 @@
         "CLAIM-0044",
         "CLAIM-0045",
         "CLAIM-0046",
-        "CLAIM-0047"
+        "CLAIM-0047",
+        "CLAIM-0357",
+        "CLAIM-0358"
       ],
-      "confidence": "medium",
-      "note": null
+      "confidence": "high",
+      "note": "Referenzboden sitzt laut Fachauskunft in einer Einfräsung der Dauben; exakte Nut-/Bodengeometrie bleibt zu messen."
     },
     {
       "id": "COMP-KUMPF-HOOPS",
       "label": "Kumpf-Spannringe",
       "kind": "physical-part-family",
       "multiplicity": {
-        "description": "multiple per vessel; exact uncounted",
+        "description": "3 metal hoops per photographed reference Kumpf (expert-confirmed); historical dimension variants exist",
         "current_verified_count": null
       },
       "provenance": [
-        "PHOTO-6846"
+        "PHOTO-6846",
+        "PHOTO-1000046423",
+        "NARRATIVE-TH-KUMPF-20261008-01"
       ],
       "claim_ids": [
         "CLAIM-0225",
@@ -296,21 +316,24 @@
         "CLAIM-0231",
         "CLAIM-0232",
         "CLAIM-0233",
-        "CLAIM-0259"
+        "CLAIM-0259",
+        "CLAIM-0359",
+        "CLAIM-0360"
       ],
-      "confidence": "medium",
-      "note": null
+      "confidence": "high",
+      "note": "Drei Metallbänder am Referenz-Kumpf; historische Zeichnungen zeigen gefertigte Maßvarianten, deren numerische Zuordnung noch offen ist."
     },
     {
       "id": "COMP-PADDLES",
-      "label": "Schaufeln/Schetter (mapping to confirm)",
+      "label": "Schaufeln / Schetter",
       "kind": "physical-part-family",
       "multiplicity": {
         "description": "24 external expected; current uncounted",
         "current_verified_count": null
       },
       "provenance": [
-        "PHOTO-6860"
+        "PHOTO-6860",
+        "NARRATIVE-TH-PADDLE-20261008-01"
       ],
       "claim_ids": [
         "CLAIM-0261",
@@ -319,10 +342,11 @@
         "CLAIM-0291",
         "CLAIM-0298",
         "CLAIM-0331",
-        "CLAIM-0340"
+        "CLAIM-0340",
+        "CLAIM-0369"
       ],
       "confidence": "high",
-      "note": null
+      "note": "ThorstenHalsch korrigiert die Schaufelstellung fachlich auf 90° zum Rad. Exakter geometrischer Bezugsbegriff und Scanabgleich sind noch zu klären; keine pauschale Drehung ohne Referenzdefinition."
     },
     {
       "id": "COMP-FASTENERS",
@@ -358,10 +382,37 @@
         "CLAIM-0264",
         "CLAIM-0269",
         "CLAIM-0292",
-        "CLAIM-0299"
+        "CLAIM-0299",
+        "CLAIM-0364",
+        "CLAIM-0365",
+        "CLAIM-0366",
+        "CLAIM-0368"
       ],
       "confidence": "medium",
-      "note": null
+      "note": "Enthält mehrere Fastener-Familien. Kumpfnägel werden ab Baseline v3 als eigene Unterfamilie geführt; ihre Lang-/Kurzfunktion ist fachlich durch Kumpfüberlappung erklärt."
+    },
+    {
+      "id": "COMP-KUMPF-NAILS",
+      "label": "Kumpfnägel (lang / kurz)",
+      "kind": "physical-part-family",
+      "multiplicity": {
+        "description": "2 per photographed reference Kumpf attachment: one long, one short (expert-confirmed); current all-vessel equivalence to verify",
+        "current_verified_count": null
+      },
+      "provenance": [
+        "PHOTO-6822",
+        "PHOTO-6832",
+        "NARRATIVE-TH-KUMPF-20261008-02",
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "claim_ids": [
+        "CLAIM-0364",
+        "CLAIM-0365",
+        "CLAIM-0366",
+        "CLAIM-0368"
+      ],
+      "confidence": "high",
+      "note": "Fachlich bestätigte Funktion: Befestigung des Kumpfs am Krümmling durch gelochte Dauben. Unterschiedliche Länge wird durch Überlappung benachbarter Kümpfe erklärt. Exakter Nagelweg, Längen und Sitze bleiben metrisch offen."
     },
     {
       "id": "COMP-BEARINGS",
@@ -625,6 +676,7 @@
     "Bänder": "wooden binding per generic table; not automatically metal hoop",
     "Schetter": "paddle terminology candidate",
     "Anwelle": "support/bearing timber from generic table; current mapping unverified",
-    "Zwicker/Nasenzwicker/Froschkeil": "local fastener terms; physical function requires calibration"
+    "Zwicker/Nasenzwicker/Froschkeil": "local fastener terms; physical function requires calibration",
+    "Kumpfnagel": "wooden Kumpf fastening pin; local expert term; one long + one short at reference attachment"
   }
 }
