@@ -3,7 +3,8 @@
   "rules": [
     "Alle Modellkoordinaten sind ungemessene Rekonstruktionskoordinaten.",
     "Historische Maße und aktuelle Maße bleiben getrennt.",
-    "IMG_6875/6876 nur sekundäre Kontextbeschreibung; Originale fehlen."
+    "IMG_6875/6876 nur sekundäre Kontextbeschreibung; Originale fehlen.",
+    "Lokale Fachauskunft eines direkt beteiligten Wasserrad-Mitinitiators hat Vorrang vor externen Analogien und unbelegten Modellannahmen für Funktion/Terminologie; metrische Geometrie bleibt messpflichtig."
   ],
   "components": [
     {
@@ -103,7 +104,7 @@
     {
       "component": "COMP-KUEMPFE",
       "label": "Kümpfe",
-      "observed_features": "Dauben, Boden, Metallreifen und schräge Einbaulage.",
+      "observed_features": "Dauben, Boden, Metallreifen und schräge Einbaulage; vier neue Referenzfotos zeigen einen teilweise zerlegten Kumpf mit Maßstab.",
       "historical_geometry": "22/24 mm Dauben; jeweils eigene Nutmaße. Zwölfeck ist historische Referenz, kein heutiger Zählnachweis.",
       "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
       "sources": [
@@ -111,30 +112,37 @@
         "PHOTO-6841",
         "V2-IMG_6809",
         "V2-IMG_6810",
-        "V2-IMG_6811"
+        "V2-IMG_6811",
+        "PHOTO-1000046420",
+        "PHOTO-1000046421",
+        "PHOTO-1000046422",
+        "PHOTO-1000046423",
+        "NARRATIVE-TH-KUMPF-20261008-01",
+        "NARRATIVE-TH-KUMPF-20261008-03"
       ],
       "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
-      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "field_narrative": "ThorstenHalsch (Wasserrad-Mitinitiator/Fachkenner) bestätigt für den fotografierten Referenz-Kumpf: 12 Dauben, 1 Boden in Daubennut, 3 Metallbänder; benachbarte Kümpfe überlappen.",
       "unresolved_conflicts": [
         "CONFLICT-01"
       ],
-      "candidate_geometry": "Offener Daubenkörper, eigener Boden, drei Reifen; 24 erwartete Positionen.",
+      "candidate_geometry": "Referenz-Kumpf: 12 Dauben, Nutboden, drei Metallbänder. Umfangsmodell muss gerichtete Überlappung benachbarter Kümpfe zulassen; 24 Positionen bleiben externe Erwartung.",
       "confidence": {
         "existence": "documented-or-observed",
         "candidate_metric": "low",
-        "hidden_joinery": "unknown"
+        "hidden_joinery": "unknown",
+        "construction_topology": "high-local-expert"
       },
       "current_as_built": {
         "measured_dimensions": null
       },
       "historical_reference": "22/24 mm Dauben; jeweils eigene Nutmaße. Zwölfeck ist historische Referenz, kein heutiger Zählnachweis.",
-      "reconstructed_best_candidate": "Offener Daubenkörper, eigener Boden, drei Reifen; 24 erwartete Positionen.",
+      "reconstructed_best_candidate": "12-Dauben-Referenzkörper mit Nutboden und drei Metallbändern; Nachbarüberlappung als Topologie-Constraint. Exakte Maße aus Referenzfoto/Handmaß noch abzuleiten.",
       "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
-      "unknown": "Ist-Neigung, Daubenzahl, Nut/Boden, heute vorhandene Zahl."
+      "unknown": "Ist-Neigung, aktuelle Gesamtzahl, Überlappungsrichtung/-maß, all-vessel equivalence und metrische Außenquerschnitte."
     },
     {
       "component": "COMP-FASTENERS",
-      "label": "Holzstifte und Keile",
+      "label": "Holzstifte, Kumpfnägel und Keile",
       "observed_features": "Zwei lose Stifte mit unterschiedlicher Länge, gekrümmtem Schaft und verdicktem Kopf.",
       "historical_geometry": "Inventar nennt verschiedene Keile und Kumpfnägel; nicht alle Funktionen gesichert.",
       "current_photo_constraints": "Sichtbare Form/Topologie gemäß Quellen; verdeckte Flächen nicht ergänzt als Befund.",
@@ -142,26 +150,61 @@
         "V2-IMG_6822",
         "V2-IMG_6832",
         "PHOTO-6825",
-        "V2-IMG_6808"
+        "V2-IMG_6808",
+        "NARRATIVE-TH-KUMPF-20261008-02",
+        "NARRATIVE-TH-KUMPF-20261008-03"
       ],
       "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
-      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "field_narrative": "Kumpfnägel sind fachlich als zwei hölzerne Befestiger (ein lang, ein kurz) beschrieben, die durch gelochte Dauben den Kumpf am Krümmling befestigen. Unterschiedliche Länge wird durch Nachbarüberlappung erklärt.",
       "unresolved_conflicts": [
         "CONFLICT-06"
       ],
-      "candidate_geometry": "Lang-/Kurzpaar mit gekrümmtem Schaft; Keile an Armregionen. Varianten: neigungsbestimmend, sichernd, reparaturbedingt.",
+      "candidate_geometry": "Kumpfnagelpaar lang/kurz mit fotografisch beobachteter gekrümmter Form; Einbau muss vier Lochpositionen in zwei Befestigungsdauben und Krümmlingkontakt geometrisch erfüllen. Neigungs-Hypothese ist nicht mehr primär.",
       "confidence": {
         "existence": "documented-or-observed",
         "candidate_metric": "low",
-        "hidden_joinery": "unknown"
+        "hidden_joinery": "unknown",
+        "function": "high-local-expert"
       },
       "current_as_built": {
         "measured_dimensions": null
       },
       "historical_reference": "Inventar nennt verschiedene Keile und Kumpfnägel; nicht alle Funktionen gesichert.",
-      "reconstructed_best_candidate": "Lang-/Kurzpaar mit gekrümmtem Schaft; Keile an Armregionen. Varianten: neigungsbestimmend, sichernd, reparaturbedingt.",
-      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
-      "unknown": "Sitze im eingebauten Zustand, Einführrichtung und Funktion an mindestens drei Kümpfen."
+      "reconstructed_best_candidate": "Lang-/Kurz-Kumpfnagelpaar als Kumpf→Krümmling-Befestigung, Längendifferenz durch Nachbarüberlappung. Exakter Nagelweg bleibt offen.",
+      "alternative_candidate": "Reparaturvarianten einzelner Nägel bleiben möglich; 'Nagellänge stellt Neigung ein' ist nachrangig und derzeit nicht durch Fachauskunft gestützt.",
+      "unknown": "Nagelweg durch vier Lochpositionen, Einführrichtung, Kopfseite, Längen, Querschnitte, Krümmung und reale Sitze."
+    },
+    {
+      "component": "COMP-KUMPF-NAILS",
+      "label": "Kumpfnägel",
+      "observed_features": "Zwei lose, unterschiedlich lange, gekrümmte Holzstifte mit verdicktem Kopf sind fotografiert.",
+      "historical_geometry": "Historische/ältere Unterlagen nennen Kumpfnägel, konkrete heutige Nagelwege waren bislang offen.",
+      "current_photo_constraints": "Form von langem/kurzem Stift sichtbar; eingebauter vollständiger Nagelweg im aktuellen Fotobestand noch nicht eindeutig isoliert.",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "NARRATIVE-TH-KUMPF-20261008-02",
+        "NARRATIVE-TH-KUMPF-20261008-03"
+      ],
+      "scan_constraints": "Radscan kann Nachbarüberlappung prüfen; separate Nagel-Punktewolke laut Fachauskunft vorhanden, aber noch nicht im Repository identifiziert.",
+      "field_narrative": "Zwei Kumpfnägel (lang/kurz) befestigen den Kumpf durch zwei gelochte Dauben am Krümmling. Die Überlappung benachbarter Kümpfe erklärt die unterschiedliche Länge.",
+      "unresolved_conflicts": [
+        "CONFLICT-06"
+      ],
+      "candidate_geometry": "Zwei gekrümmte Holznägel mit unterschiedlichen Längen durch vier Lochpositionen in zwei Befestigungsdauben zum Krümmling.",
+      "confidence": {
+        "existence": "high-observed-and-expert",
+        "function": "high-local-expert",
+        "candidate_metric": "low",
+        "exact_path": "unknown"
+      },
+      "current_as_built": {
+        "measured_dimensions": null
+      },
+      "historical_reference": "Kumpfnagel-Terminologie/Zeichnungen im Bestand; genaue heutige Maße offen.",
+      "reconstructed_best_candidate": "Lang-/Kurzpaar mit Überlappungsbegründung und Kumpf→Krümmling-Funktion.",
+      "alternative_candidate": "Einzelne Reparaturvarianten möglich; Neigungsfunktion nachrangig.",
+      "unknown": "Vier-Loch-Zuordnung zu zwei Nägeln, Kopfseite, Einsteckrichtung, Durchtritt im Krümmling und Maße."
     },
     {
       "component": "COMP-PADDLES",
@@ -172,26 +215,30 @@
       "sources": [
         "V2-IMG_6811",
         "V2-IMG_6809",
-        "PHOTO-6861"
+        "PHOTO-6861",
+        "NARRATIVE-TH-PADDLE-20261008-01"
       ],
       "scan_constraints": "PLY/GLB unregistriert; nur Sichtbarkeits- und Formvergleich, kein metrischer Zwang.",
-      "field_narrative": "Werkstatterklärung separat als wörtlichen Befund aufnehmen; keine geometrische Bestätigung daraus ableiten.",
+      "field_narrative": "ThorstenHalsch korrigiert die Schaufelstellung fachlich: Schaufelbretter stehen im 90°-Winkel zum Rad. Der geometrische Bezug ('Rad' = Radebene vs lokale Radial-/Tangentialrichtung) muss explizit definiert und im Scan geprüft werden.",
       "unresolved_conflicts": [
-        "CONFLICT-07"
+        "CONFLICT-07",
+        "CONFLICT-13"
       ],
-      "candidate_geometry": "Geformte Bretter zwischen beiden Kranzebenen; halbe Umfangsteilung als Kandidat.",
+      "candidate_geometry": "Schaufelgeometrie muss die 90°-Fachkorrektur sichtbar erfüllen; bis zur Bezugsdefinition mehrere radial/tangentiale Orientierungsvarianten gegen Foto/Scan vergleichen.",
       "confidence": {
         "existence": "documented-or-observed",
         "candidate_metric": "low",
-        "hidden_joinery": "unknown"
+        "hidden_joinery": "unknown",
+        "expert_orientation": "high",
+        "metric_orientation": "pending-scan-definition"
       },
       "current_as_built": {
         "measured_dimensions": null
       },
       "historical_reference": "Schaufeln/Schetter und Bänder begrifflich noch abzugleichen.",
-      "reconstructed_best_candidate": "Geformte Bretter zwischen beiden Kranzebenen; halbe Umfangsteilung als Kandidat.",
-      "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
-      "unknown": "Anstellung, Befestigung, Kopplung zu Kumpf und reale Umfangsphase."
+      "reconstructed_best_candidate": "Noch kein automatischer Ersatz: bestehende Brettfläche wird gegen die fachliche 90°-Korrektur mit explizitem Koordinatenbezug neu kalibriert.",
+      "alternative_candidate": "Varianten unterscheiden Ebenenwinkel von radial/tangentialer Anstellung; keine ungeprüfte pauschale 90°-Drehung.",
+      "unknown": "Exakter Referenzbezug, reale lokale Anstellung, Anschluss und Phase; dedizierter Schaufelscan noch nicht identifiziert."
     },
     {
       "component": "COMP-BEARINGS",
