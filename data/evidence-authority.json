@@ -1,0 +1,59 @@
+{
+  "schema": "ks-evidence-authority/v1",
+  "date": "2026-10-08",
+  "purpose": "Resolve reconstruction inputs by source authority without collapsing evidence classes.",
+  "precedence": [
+    {
+      "rank": 1,
+      "class": "direct-measurement-or-registered-geometry",
+      "rule": "Direct current measurement or mechanically/metric registered geometry governs current as-built dimensions when provenance and residuals are valid."
+    },
+    {
+      "rank": 2,
+      "class": "current-observation",
+      "rule": "Direct current photos/video/visible part observation governs visible topology and state; perspective images alone do not create metric truth."
+    },
+    {
+      "rank": 3,
+      "class": "local-expert-narrative",
+      "rule": "Direct technical statements from people materially involved with this wheel have priority over external analogies and unsupported reconstruction assumptions for function, terminology, assembly logic and intended construction."
+    },
+    {
+      "rank": 4,
+      "class": "historical-local-drawing",
+      "rule": "Local historical drawings govern documented historical design, but are not silently promoted to current as-built geometry."
+    },
+    {
+      "rank": 5,
+      "class": "local-scan-unregistered",
+      "rule": "Unregistered local scan supports form/visibility comparison but not mechanical location or metric truth."
+    },
+    {
+      "rank": 6,
+      "class": "external-analogy",
+      "rule": "Comparable water-wheel construction expands candidate space only and cannot override local evidence."
+    },
+    {
+      "rank": 7,
+      "class": "synthetic-reconstruction",
+      "rule": "Brute-force or engineering candidates remain hypotheses until promoted by stronger evidence."
+    }
+  ],
+  "expert_sources": {
+    "ThorstenHalsch": {
+      "role": "Wasserrad-Mitinitiator / Fachkenner",
+      "authority": "high-local-expert",
+      "scope": [
+        "local terminology",
+        "Kumpf construction",
+        "Kumpf attachment",
+        "Kumpfnagel function",
+        "neighbor overlap",
+        "paddle orientation",
+        "assembly/maintenance practice where explicitly stated"
+      ],
+      "caveat": "Expert authority outranks analogy and unsupported model assumptions, but does not replace direct current measurement for metric geometry."
+    }
+  },
+  "promotion_rule": "Synthetic geometry may enter the Truth Model only when supported by current observation/measurement or by explicit expert construction knowledge for the claimed non-metric property. Metric values still require metric evidence."
+}

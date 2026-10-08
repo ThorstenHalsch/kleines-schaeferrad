@@ -490,12 +490,12 @@
       "timing": "BEFORE_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Neigung und Befestigung sind nach Ausbau unklar.",
-      "instruction": "Jeden Kumpf in Einbaulage benennen; Öffnung, Neigung und beide Befestigungspartner zeigen. Wenn langer/kurzer hölzerner Sicherungsstift vorhanden: beide gemeinsam noch im Sitz, Kopfseite und Einsteckrichtung fotografieren. Abweichende Gefäße einzeln erfassen.",
+      "instruction": "Jeden Kumpf in Einbaulage benennen; Öffnung, Neigung, Überlappung zum Nachbarkumpf und Befestigung am Krümmling zeigen. Langen und kurzen Kumpfnagel gemeinsam noch im Sitz, Kopfseite und Einsteckrichtung fotografieren. Abweichende Kümpfe einzeln erfassen.",
       "photo_views": [
         "Seitenbild",
         "Stirnbild",
         "beide Kontakte",
-        "langer/kurzer Sicherungsstift gemeinsam im Sitz"
+        "langer/kurzer Kumpfnagel gemeinsam im Sitz"
       ],
       "measurement_endpoints": [
         "Kumpfboden / Öffnung",
@@ -507,9 +507,9 @@
       ],
       "questions": [
         "Welche Kümpfe sind anders und warum?",
-        "Wie nennt ihr diese hölzernen Stifte wirklich?",
-        "Gibt es pro Kumpf systematisch einen langen und einen kurzen?",
-        "Bestimmen sie Neigung/Verdrehung oder sichern sie nur?"
+        "Liegt die Überlappung der Nachbarkümpfe überall in derselben Umfangsrichtung?",
+        "Welcher Nagel ist an der Überlappungsseite lang bzw. kurz?",
+        "Durch welche der vier Lochpositionen laufen die beiden Kumpfnägel genau?"
       ],
       "media_requirements": {
         "photos": 4,
@@ -517,11 +517,11 @@
           "Seitenbild",
           "Stirnbild",
           "beide Kontakte",
-          "langer/kurzer Sicherungsstift gemeinsam im Sitz"
+          "langer/kurzer Kumpfnagel gemeinsam im Sitz"
         ],
         "explanation": false
       },
-      "acceptance_evidence": "Pose, reale ID, Partner und Varianten gesichert; vorhandenes lang/kurz-Stiftpaar vor dem Lösen gemeinsam dokumentiert oder ausdrücklich als nicht vorhanden markiert.",
+      "acceptance_evidence": "Pose, reale ID, Nachbarüberlappung, Krümmlingpartner und lang/kurz-Kumpfnagelpaar vor dem Lösen dokumentiert; exakter Nagelweg nach Öffnung nacherfasst.",
       "status": "OPEN",
       "source_refs": [
         "GAP-04"
@@ -667,17 +667,17 @@
     {
       "task_id": "TASK-KEI",
       "title": "Kleinteile behalten ihren Partner",
-      "component": "COMP-FASTENERS",
-      "family": "COMP-FASTENERS",
+      "component": "COMP-KUMPF-NAILS",
+      "family": "COMP-KUMPF-NAILS",
       "instance": null,
       "timing": "DURING_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Lose Keile und Befestiger werden unzuordenbar.",
-      "instruction": "Jeden ausgebauten Keil/Befestiger sofort mit eigener ID und Partner versehen; Richtung und Sitz fotografieren; beschriftet ablegen. Hölzerne Kumpf-Sicherungsstifte niemals mischen: lang/kurz als Paar beim zugehörigen Kumpf halten, direkt nach Ausbau nebeneinander mit Maßstab fotografieren.",
+      "instruction": "Jeden ausgebauten Keil/Befestiger sofort mit Partner versehen. Kumpfnägel niemals mischen: langen und kurzen Nagel als Paar beim zugehörigen Kumpf halten, Einsteckrichtung und vier Lochpositionen dokumentieren und direkt nach Ausbau nebeneinander mit Maßstab fotografieren.",
       "photo_views": [
         "Befestiger im Sitz",
         "ausgebaut mit Partneretikett",
-        "lang/kurz-Stiftpaar ausgebaut mit Kumpf-ID",
+        "lang/kurz-Kumpfnagelpaar ausgebaut mit Kumpf-ID",
         "leere Sitze direkt nach Ausbau"
       ],
       "measurement_endpoints": [
@@ -690,22 +690,22 @@
         "Maßstab"
       ],
       "questions": [
-        "Trocken locker oder fest?",
-        "Was passiert beim Quellen?",
-        "Welche Funktion hat der lange gegenüber dem kurzen hölzernen Stift?",
-        "Ist lang/kurz bei allen Kümpfen gleich oder reparaturbedingt?"
+        "Welche zwei der vier Lochpositionen nutzt der lange und welche der kurze Kumpfnagel?",
+        "Wie verläuft jeder Nagel zum Krümmling?",
+        "Ist die Lang-/Kurz-Zuordnung an mindestens drei Nachbarpaaren identisch?",
+        "Erzwingt die Überlappungsrichtung eine bestimmte Montagefolge?"
       ],
       "media_requirements": {
         "photos": 4,
         "photo_labels": [
           "Befestiger im Sitz",
           "ausgebaut mit Partneretikett",
-          "lang/kurz-Stiftpaar ausgebaut mit Kumpf-ID",
+          "lang/kurz-Kumpfnagelpaar ausgebaut mit Kumpf-ID",
           "leere Sitze direkt nach Ausbau"
         ],
         "explanation": false
       },
-      "acceptance_evidence": "Keine unbenannten Kleinteile; Partner, Richtung und Lagerort dokumentiert. Hölzerne Kumpf-Stifte bleiben als lang/kurz-Paar beim realen Kumpf und ihre Sitze sind vor/nach Ausbau dokumentiert.",
+      "acceptance_evidence": "Keine unzugeordneten Kumpfnägel; lang/kurz-Paar, Kumpf-ID, vier Lochpositionen, Einsteckrichtung, Krümmlingpartner und Lagerort dokumentiert.",
       "status": "OPEN",
       "source_refs": [
         "GAP-08",

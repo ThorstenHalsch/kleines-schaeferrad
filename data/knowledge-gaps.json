@@ -42,10 +42,10 @@
     {
       "id": "GAP-04",
       "priority": "P0-before-and-during",
-      "subject": "Kumpf-Nuten, Aufhängung und Varianten",
+      "subject": "Kumpf-Nut, Kumpfnagelwege, Überlappung und Varianten",
       "irreversible_loss": "Befestigung, Anstellung und Kontaktflächen werden getrennt.",
-      "capture": "Alle Gefäße vor Lösen IDs/Positionen zuordnen; Öffnungsrichtung und Neigung in Seiten- und Stirnbild festhalten. Jeden abweichenden Kumpf dokumentieren, nicht nur einen Vertreter. Beim Lösen beide Nagel-/Stiftkontakte und Keilsitze sichern. Daubendicke 22/24, Außen- und Nutdurchmesser, Bodenlage, drei Ringlängen/Überlappungen jeweils am tatsächlich geöffneten Teil mit Einheit messen. Erhaltene Nuten ohne erzwungene zusätzliche Zerlegung erfassen.",
-      "acceptance_evidence": "Posekarte, Partnerbilder, Variantenprotokoll",
+      "capture": "Referenzwissen festhalten statt erneut grundsätzlich zu fragen: 12 Dauben, 1 Nutboden, 3 Metallbänder, 2 gelochte Dauben, 2 Kumpfnägel lang/kurz und Befestigung am Krümmling sind fachlich beschrieben. Vor dem Lösen mindestens drei benachbarte Kümpfe gemeinsam fotografieren: Überlappungsrichtung, lang/kurz-Nagelposition, Kopfseite und Einsteckrichtung. Direkt nach Ausbau beide Nagelwege, vier Lochpositionen, Krümmlingkontakt, Nut/Boden und Partnerflächen dokumentieren. Daubendicke, Außenquerschnitt an allen drei Bandsitzen, Bandüberlappung und Nagelmaße mit Einheit messen.",
+      "acceptance_evidence": "mindestens drei Kumpf-Nachbarschaften vor Ausbau; lang/kurz-Nagelzuordnung; vier Lochpositionen; Nut/Boden; drei Bandlagen; reale Partnerbilder und Maße",
       "conflict_ids": [
         "CONFLICT-01",
         "CONFLICT-02",
@@ -57,7 +57,7 @@
       "priority": "P0-before",
       "subject": "Kumpf-/Schaufelzählung und Winkelphase",
       "irreversible_loss": "Nach Ausbau ist die reale Umfangsfolge nicht wiederherstellbar.",
-      "capture": "Gesamten Umfang in einer dokumentierten stillstehenden Pose aufnehmen, verdeckte Bereiche vor ihrem Ausbau ergänzen. Durchgehende Zählung pro Ring, Kumpf und Schaufel; vorhandene/fehlende Positionen unterscheiden. Startteil mit ID und Bezug zur Achse markieren; gleiche Winkelrichtung von EINER definierten Blickseite für beide Ebenen verwenden. Je Schaufel Befestigungspartner und Verhältnis zu benachbartem Kumpf und Krümmling festhalten; Vorder-/Rückseite nicht verlieren.",
+      "capture": "Gesamten Umfang in einer dokumentierten stillstehenden Pose aufnehmen, verdeckte Bereiche vor ihrem Ausbau ergänzen. Durchgehende Zählung pro Ring, Kumpf und Schaufel; vorhandene/fehlende Positionen unterscheiden. Startteil mit ID und Bezug zur Achse markieren; gleiche Winkelrichtung von EINER definierten Blickseite für beide Ebenen verwenden. Je Schaufel Befestigungspartner und Verhältnis zu benachbartem Kumpf und Krümmling festhalten; Vorder-/Rückseite nicht verlieren. Zusätzlich Überlappungsrichtung benachbarter Kümpfe als gerichtete Umfangsfolge erfassen (welcher Kumpf liegt über/unter welchem Nachbarn). Dadurch mögliche Montagefolge und Lang-/Kurz-Nagelseite prüfen.",
       "acceptance_evidence": "vollständiges Umfangsregister mit eindeutiger Blickrichtung",
       "conflict_ids": [
         "CONFLICT-07",
@@ -92,6 +92,17 @@
       "capture": "Eine Person führt das Ereignislog: laufende Ereignisnummer, Zeit, Teil-ID, Partner-IDs, vorher/nachher Bildnamen, entfernte Befestiger, ursprüngliche Orientierung und Lagerplatz. Historische Nummern bewahren; neues Schema KS-ARM/KRU/KUM/PAD/KEI-NNN zusätzlich verwenden. Reale Ausbaufolge dokumentieren, nicht automatisch umgekehrt als zwingende Montagefolge behaupten.",
       "acceptance_evidence": "vollständiges Ereignislog ohne unzugeordnete Kleinteile",
       "conflict_ids": []
+    },
+    {
+      "id": "GAP-09",
+      "priority": "P0-before",
+      "subject": "Schaufelstellung 90° — geometrischen Bezug fachlich und im Scan definieren",
+      "irreversible_loss": "Nach Ausbau geht der reale lokale Bezug Schaufel ↔ Kranz ↔ Kumpf verloren; eine abstrakte 90°-Aussage kann danach unterschiedlich interpretiert werden.",
+      "capture": "An mindestens drei eingebauten Schaufeln je ein Bild/Scan aufnehmen, das Schaufelfläche, lokalen Kranz, Wellenachse und benachbarten Kumpf gemeinsam zeigt. Thorstens Fachkorrektur '90° zum Rad' als Zielvorgabe behandeln. Im registrierten Scan Brettfläche und Rad-/Kranzebene bzw. lokale Radial-/Tangentialrichtungen explizit bestimmen; Ebenenwinkel plus radiale/tangentiale Anstellung getrennt protokollieren. Keine pauschale 90°-Drehung ohne Bezugsdefinition.",
+      "acceptance_evidence": "drei eindeutig zugeordnete Schaufeln mit definiertem Bezugssystem, Foto/Scan-Overlay und Winkel-/Orientierungsprotokoll",
+      "conflict_ids": [
+        "CONFLICT-13"
+      ]
     }
   ]
 }

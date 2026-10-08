@@ -5,6 +5,7 @@
     "observed-current",
     "historical-drawing",
     "external-context",
+    "expert-narrative",
     "inferred",
     "conflicting",
     "unknown"
@@ -7741,6 +7742,272 @@
       ],
       "as_built_eligible": false,
       "note": null
+    },
+    {
+      "id": "CLAIM-0356",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "reference_vessel_stave_count",
+      "value": 12,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft eines Wasserrad-Mitinitiators zum fotografierten Referenz-Kumpf.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Gilt sicher für den fotografierten Referenz-Kumpf; Gleichheit aller eingebauten Kümpfe separat prüfen."
+    },
+    {
+      "id": "CLAIM-0357",
+      "subject": "COMP-KUMPF-BASE",
+      "predicate": "reference_vessel_base_count",
+      "value": 1,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": null
+    },
+    {
+      "id": "CLAIM-0358",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "base_retained_in_stave_groove",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft plus geöffneter Referenz-Kumpf fotografisch dokumentiert.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Nutgeometrie und Maße bleiben ungemessen."
+    },
+    {
+      "id": "CLAIM-0359",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "reference_vessel_hoop_count",
+      "value": 3,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; Außenfoto zeigt drei Bänder gemeinsam.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": null
+    },
+    {
+      "id": "CLAIM-0360",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "manufactured_dimension_variants_exist",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft zu historisch gefertigten Derivaten.",
+      "scope": "historical-manufacturing-family",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Erklärt konkurrierende Bandzeichnungen als Variantenfamilie; numerische Zuordnung noch offen."
+    },
+    {
+      "id": "CLAIM-0361",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "expert_designated_reference_vessel_for_correct_dimension_family",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Kein pauschaler Beweis, dass alle Kümpfe identisch sind."
+    },
+    {
+      "id": "CLAIM-0362",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "drilled_staves_per_reference_vessel",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkter Fachnachtrag.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": null
+    },
+    {
+      "id": "CLAIM-0363",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "holes_per_drilled_stave",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkter Fachnachtrag.",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Ergibt vier Lochpositionen; konkrete Nagel-Loch-Paarung bleibt offen."
+    },
+    {
+      "id": "CLAIM-0364",
+      "subject": "COMP-KUMPF-NAILS",
+      "predicate": "function",
+      "value": "Kumpfnägel werden durch die gelochten Dauben geführt und befestigen den Kumpf am Krümmling.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft eines Wasserrad-Mitinitiators.",
+      "scope": "reference-kumpf-attachment",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Exakter Nagelweg durch vier Lochpositionen bleibt geometrisch zu prüfen."
+    },
+    {
+      "id": "CLAIM-0365",
+      "subject": "COMP-KUMPF-NAILS",
+      "predicate": "nails_per_reference_attachment",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft.",
+      "scope": "reference-kumpf-attachment",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": null
+    },
+    {
+      "id": "CLAIM-0366",
+      "subject": "COMP-KUMPF-NAILS",
+      "predicate": "length_pair",
+      "value": "one-long-one-short",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; lose Stifte fotografisch sichtbar.",
+      "scope": "reference-kumpf-attachment",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": null
+    },
+    {
+      "id": "CLAIM-0367",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "neighboring_vessels_overlap",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft.",
+      "scope": "installed-circumference-topology",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Richtung und geometrisches Überlappungsmaß bleiben zu erfassen."
+    },
+    {
+      "id": "CLAIM-0368",
+      "subject": "COMP-KUMPF-NAILS",
+      "predicate": "unequal_length_reason",
+      "value": "neighboring-vessel-overlap",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte fachliche Erklärung.",
+      "scope": "reference-kumpf-attachment",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Priorisierte Funktionsaussage; ersetzt die frühere unbestätigte Neigungs-Hypothese."
+    },
+    {
+      "id": "CLAIM-0369",
+      "subject": "COMP-PADDLES",
+      "predicate": "expert_reported_orientation_to_wheel",
+      "value": 90,
+      "unit": "deg",
+      "evidence_class": "expert-narrative",
+      "confidence": "high",
+      "confidence_basis": "Direkte fachliche Korrektur durch Wasserrad-Mitinitiator.",
+      "scope": "expert-described-paddle-arrangement",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-PADDLE-20261008-01",
+          "region": "ThorstenHalsch Fachbeitrag 2026-10-08"
+        }
+      ],
+      "as_built_eligible": false,
+      "note": "Exakter geometrischer Bezug von 'zum Rad' ist noch gegen Foto/Scan zu definieren; keine blinde 90°-Rotation."
     }
   ]
 }
