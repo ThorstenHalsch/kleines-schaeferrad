@@ -136,9 +136,12 @@
         "measured_dimensions": null
       },
       "historical_reference": "22/24 mm Dauben; jeweils eigene Nutmaße. Zwölfeck ist historische Referenz, kein heutiger Zählnachweis.",
-      "reconstructed_best_candidate": "12-Dauben-Referenzkörper mit Nutboden und drei Metallbändern; Nachbarüberlappung als Topologie-Constraint. Exakte Maße aus Referenzfoto/Handmaß noch abzuleiten.",
+      "reconstructed_best_candidate": "ITER-001: straight tapered 12-stave reference body, grooved base, three flat bands, four actual bores; directed three-neighbor cluster remains synthetic.",
       "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
-      "unknown": "Ist-Neigung, aktuelle Gesamtzahl, Überlappungsrichtung/-maß, all-vessel equivalence und metrische Außenquerschnitte."
+      "unknown": "Ist-Neigung, aktuelle Gesamtzahl, Überlappungsrichtung/-maß, all-vessel equivalence und metrische Außenquerschnitte.",
+      "calibration_iteration": "ITER-001",
+      "calibration_parameters": "data/calibration-v3.json",
+      "calibration_report": "state/reconstruction-loop/ITER-001/ITERATION-REPORT.md"
     },
     {
       "component": "COMP-FASTENERS",
@@ -202,9 +205,12 @@
         "measured_dimensions": null
       },
       "historical_reference": "Kumpfnagel-Terminologie/Zeichnungen im Bestand; genaue heutige Maße offen.",
-      "reconstructed_best_candidate": "Lang-/Kurzpaar mit Überlappungsbegründung und Kumpf→Krümmling-Funktion.",
+      "reconstructed_best_candidate": "ITER-001 A: same-level opposed holes and common rim exit plane; B reverse insertion, C cross pairing retained. No exact route promoted to Truth.",
       "alternative_candidate": "Einzelne Reparaturvarianten möglich; Neigungsfunktion nachrangig.",
-      "unknown": "Vier-Loch-Zuordnung zu zwei Nägeln, Kopfseite, Einsteckrichtung, Durchtritt im Krümmling und Maße."
+      "unknown": "Vier-Loch-Zuordnung zu zwei Nägeln, Kopfseite, Einsteckrichtung, Durchtritt im Krümmling und Maße.",
+      "calibration_iteration": "ITER-001",
+      "calibration_parameters": "data/calibration-v3.json",
+      "calibration_report": "state/reconstruction-loop/ITER-001/ITERATION-REPORT.md"
     },
     {
       "component": "COMP-PADDLES",
@@ -236,9 +242,12 @@
         "measured_dimensions": null
       },
       "historical_reference": "Schaufeln/Schetter und Bänder begrifflich noch abzugleichen.",
-      "reconstructed_best_candidate": "Noch kein automatischer Ersatz: bestehende Brettfläche wird gegen die fachliche 90°-Korrektur mit explizitem Koordinatenbezug neu kalibriert.",
+      "reconstructed_best_candidate": "ITER-001: X + local radial plane, tangent normal. Both V2 and V3 perpendicular to wheel plane; change is radial/tangential pitch plus phase and axial overhang.",
       "alternative_candidate": "Varianten unterscheiden Ebenenwinkel von radial/tangentialer Anstellung; keine ungeprüfte pauschale 90°-Drehung.",
-      "unknown": "Exakter Referenzbezug, reale lokale Anstellung, Anschluss und Phase; dedizierter Schaufelscan noch nicht identifiziert."
+      "unknown": "Exakter Referenzbezug, reale lokale Anstellung, Anschluss und Phase; dedizierter Schaufelscan noch nicht identifiziert.",
+      "calibration_iteration": "ITER-001",
+      "calibration_parameters": "data/calibration-v3.json",
+      "calibration_report": "state/reconstruction-loop/ITER-001/ITERATION-REPORT.md"
     },
     {
       "component": "COMP-BEARINGS",
@@ -332,7 +341,10 @@
       "historical_reference": "250 / (244) sind konkurrierende alte Trognotizen.",
       "reconstructed_best_candidate": "Offener, leicht geneigter Sammelquerschnitt außerhalb der Kumpfbahn.",
       "alternative_candidate": "Siehe Variantenraum und zugehörige Konflikte; keine automatische Auswahl als Ist.",
-      "unknown": "Trogmündung relativ zum Kumpfmund, Seitenzuordnung, Anschluss und Höhen."
+      "unknown": "Trogmündung relativ zum Kumpfmund, Seitenzuordnung, Anschluss und Höhen.",
+      "calibration_iteration": "ITER-001",
+      "calibration_parameters": "data/calibration-v3.json",
+      "calibration_report": "state/reconstruction-loop/ITER-001/ITERATION-REPORT.md"
     },
     {
       "component": "COMP-RINNE",

@@ -1,6 +1,6 @@
 {
   "schema": "ks-kumpf-fastener-hypotheses/v1",
-  "status": "EXPERT-RECONCILED-GEOMETRY-PENDING",
+  "status": "ITER-001-GEOMETRIC-CANDIDATES-CRITIQUE-PENDING",
   "human_term_candidate": "Kumpfnägel",
   "canonical_working_label": "Kumpfnägel",
   "evidence": [
@@ -58,8 +58,40 @@
     "Keep each removed pair physically associated with its Kumpf ID.",
     "Measure total length, section, bend/offset and head geometry of each removed pin.",
     "Photograph empty seats/holes immediately after removal.",
-    "Measure Kumpf inclination before removal and compare against long/short pair orientation.",
-    "Ask experienced craftsperson what local term is correct and what functional difference long vs short has."
+    "Map the four labeled holes to the two installed nail routes and show how neighbor overlap requires the longer route.",
+    "Map the four labeled holes to the two installed nail routes and show how neighbor overlap requires the longer route."
   ],
-  "promotion_rule": "Pair existence, terminology, attachment function and overlap-based length rationale are promoted as local expert baseline for the photographed reference construction. Exact nail paths, dimensions, installed orientation and all-vessel equivalence still require current photo/measurement/scan evidence."
+  "promotion_rule": "Pair existence, terminology, attachment function and overlap-based length rationale are promoted as local expert baseline for the photographed reference construction. Exact nail paths, dimensions, installed orientation and all-vessel equivalence still require current photo/measurement/scan evidence.",
+  "geometric_candidates": [
+    {
+      "id": "A",
+      "rank": 1,
+      "mapping": [
+        "HA1-HB1",
+        "HA2-HB2"
+      ],
+      "reason": "Fewest extra bends, both rim contacts sampled, withdrawal sweep clear in chosen phase",
+      "limits": "Reference metrics and posed relation not measured"
+    },
+    {
+      "id": "B",
+      "rank": 2,
+      "mapping": [
+        "HB1-HA1",
+        "HB2-HA2"
+      ],
+      "reason": "Same hole pairing, reversed head/access side",
+      "limits": "Opposite rim approach not established; access behind wheel may be blocked"
+    },
+    {
+      "id": "C",
+      "rank": 3,
+      "mapping": [
+        "HA1-HB2",
+        "HA2-HB1"
+      ],
+      "reason": "Explicit cross-pairing alternative",
+      "limits": "Does not clear assumed straight round bores; would need unsupported oblique drilling/bending. Not production choice"
+    }
+  ]
 }

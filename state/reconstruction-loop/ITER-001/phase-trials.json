@@ -1,0 +1,128 @@
+[
+  {
+    "phase": 0.25,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  },
+  {
+    "phase": 0.35,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  },
+  {
+    "phase": 0.45,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  },
+  {
+    "phase": 0.55,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 46,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  },
+  {
+    "phase": 0.65,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 8,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  },
+  {
+    "phase": 0.75,
+    "stats": {
+      "vesselNeighbor": 0,
+      "vesselPaddle": 0,
+      "vesselRim": 0,
+      "samples": 9152
+    },
+    "sweep": [
+      {
+        "id": "V3-KUM-01-NAIL-LONG",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      },
+      {
+        "id": "V3-KUM-01-NAIL-SHORT",
+        "collisionSamples": 0,
+        "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+      }
+    ]
+  }
+]

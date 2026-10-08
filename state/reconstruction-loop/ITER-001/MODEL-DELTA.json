@@ -1,0 +1,140 @@
+{
+  "schema": "ks-model-delta/v1",
+  "iteration": "ITER-001",
+  "truth": {
+    "promoted": {
+      "staves": 12,
+      "base": 1,
+      "baseRetention": "groove",
+      "hoops": 3,
+      "drilledStaves": 2,
+      "holesPerDrilledStave": 2,
+      "nails": 2,
+      "nailFamily": [
+        "long",
+        "short"
+      ],
+      "nailFunction": "fastens-kumpf-to-kruemmling",
+      "lengthReason": "neighbor-overlap",
+      "neighborOverlap": true,
+      "scope": "expert-reference-only"
+    },
+    "referenceShape": "non-metric display with explicit unmeasured dimensions",
+    "excluded": [
+      "directed installed overlap",
+      "nail routes",
+      "exact paddle pitch",
+      "uniform 24-vessel inventory",
+      "bearing contacts",
+      "Radstatt completion",
+      "water animation"
+    ],
+    "acceptedInstalledMetrics": null
+  },
+  "brute": {
+    "old": {
+      "height": 0.44,
+      "profile": "bilged generic barrel",
+      "hoops": "torus",
+      "holes": 0,
+      "nailPaths": "free local curves without stave bores",
+      "paddle": "shaft+tangent plane",
+      "water": "fixed phase windows"
+    },
+    "new": {
+      "height": 0.6,
+      "profile": "12 flat tapered staves with real groove and four bores",
+      "hoops": "three flat metal bands",
+      "nailPaths": [
+        {
+          "id": "V3-KUM-01-NAIL-LONG",
+          "length": 0.7263529495174786,
+          "holeMapping": [
+            "HA1",
+            "HB1"
+          ],
+          "rimHits": [
+            {
+              "id": "HIST-KRU-LAND-01",
+              "distance": 0.5535227974135233
+            },
+            {
+              "id": "HIST-KRU-LAND-01",
+              "distance": 0.7148309397434898
+            }
+          ],
+          "start": [
+            -1.1254047142107346,
+            -0.019469783649515196,
+            2.088183555360649
+          ],
+          "end": [
+            -0.495,
+            -0.36000529649259994,
+            1.9689607888002303
+          ]
+        },
+        {
+          "id": "V3-KUM-01-NAIL-SHORT",
+          "length": 0.5948792239124243,
+          "holeMapping": [
+            "HA2",
+            "HB2"
+          ],
+          "rimHits": [
+            {
+              "id": "HIST-KRU-LAND-01",
+              "distance": 0.4568399244350659
+            },
+            {
+              "id": "HIST-KRU-LAND-01",
+              "distance": 0.5833572141384357
+            }
+          ],
+          "start": [
+            -1.0112981266745602,
+            0.20163612163455696,
+            2.1655935661719434
+          ],
+          "end": [
+            -0.49500000000000005,
+            -0.07726066226270319,
+            2.067950750938291
+          ]
+        }
+      ],
+      "production": {
+        "radius": 2.095,
+        "centerX": -0.94,
+        "pitchDeg": 125,
+        "yawDeg": 60,
+        "overlapDirection": 1,
+        "nailMapping": "A",
+        "paddlePitchDeg": 0,
+        "paddleHeight": 0.43,
+        "paddleThickness": 0.055,
+        "paddleRadius": 2.23,
+        "paddlePhaseSlots": 0.45,
+        "waterLevel": -1.95,
+        "troughX": -1.45,
+        "troughHalfWidth": 0.16,
+        "troughZ": 1.4,
+        "troughY": [
+          -1.15,
+          1.25
+        ],
+        "variants": {},
+        "status": "ranked-synthetic-candidate-not-as-built",
+        "paddleAxialOverhang": 0.07,
+        "jetSpeed": 1.8,
+        "rotationRPM": 2.2
+      },
+      "water": "pose-derived holding capacity and ballistic outflow with visible misses"
+    },
+    "variantCapability": "production.variants[slot] overrides reference dimensions per expected slot; no physical IDs created"
+  },
+  "exports": [
+    "output/calibration/ITER-001/truth-ITER-001.glb",
+    "output/calibration/ITER-001/brute-ITER-001.glb"
+  ]
+}

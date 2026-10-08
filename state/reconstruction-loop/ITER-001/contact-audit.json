@@ -1,0 +1,28 @@
+{
+  "schema": "ks-contact-sampling/v1",
+  "stats": {
+    "vesselNeighbor": 0,
+    "vesselPaddle": 0,
+    "vesselRim": 0,
+    "samples": 9152
+  },
+  "sweep": [
+    {
+      "id": "V3-KUM-01-NAIL-LONG",
+      "collisionSamples": 0,
+      "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+    },
+    {
+      "id": "V3-KUM-01-NAIL-SHORT",
+      "collisionSamples": 0,
+      "method": "41 withdrawal steps of 20mm; 41 longitudinal samples; center and four 9mm offsets; own drilled vessel and intended rim penetration excluded"
+    }
+  ],
+  "projectedCircumferentialOverlapRadians": 0.04711615173986827,
+  "limits": [
+    "Deterministic surface / swept-envelope sampling, not continuous collision certification",
+    "No actual holes are asserted in Krümmlinge; intended nail penetration remains joinery candidate",
+    "Stationary contact sweep is evaluated separately",
+    "Uniform candidate only; per-instance variants need their own check"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "schema": "ks-canonical-cameras/v1",
+  "frozenIn": "ITER-001",
+  "frame": "X shaft, Y transverse, Z up; land/water assignment provisional",
+  "projection": "orthographic",
+  "imageSize": [
+    1440,
+    1040
+  ],
+  "views": [
+    {
+      "id": "01",
+      "title": "Gesamtanlage · Landseite",
+      "eye": [
+        -9,
+        -2,
+        2
+      ],
+      "target": [
+        -0.7,
+        0,
+        0
+      ],
+      "height": 6.8,
+      "filter": "all"
+    },
+    {
+      "id": "02",
+      "title": "Gesamtanlage · Wasserseite",
+      "eye": [
+        9,
+        2,
+        2
+      ],
+      "target": [
+        -0.7,
+        0,
+        0
+      ],
+      "height": 6.8,
+      "filter": "all"
+    },
+    {
+      "id": "03",
+      "title": "Schräg Land",
+      "eye": [
+        -7,
+        -8,
+        5
+      ],
+      "target": [
+        -0.7,
+        0,
+        0
+      ],
+      "height": 7.4,
+      "filter": "all"
+    },
+    {
+      "id": "04",
+      "title": "Schräg Wasser",
+      "eye": [
+        7,
+        -8,
+        5
+      ],
+      "target": [
+        -0.7,
+        0,
+        0
+      ],
+      "height": 7.4,
+      "filter": "all"
+    },
+    {
+      "id": "05",
+      "title": "Axial entlang Welle A",
+      "eye": [
+        -10,
+        0,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "height": 5.6,
+      "filter": "moving"
+    },
+    {
+      "id": "06",
+      "title": "Axial entlang Welle B",
+      "eye": [
+        10,
+        0,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "height": 5.6,
+      "filter": "moving"
+    },
+    {
+      "id": "07",
+      "title": "Welle / Arme · Schnitt Y=0",
+      "eye": [
+        3,
+        -8,
+        3
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "height": 5.3,
+      "filter": "shaft-arms",
+      "clip": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Lager Landseite",
+      "eye": [
+        -4,
+        -4,
+        2
+      ],
+      "target": [
+        -1.74,
+        0,
+        -0.12
+      ],
+      "height": 1.15,
+      "filter": "bearing-land"
+    },
+    {
+      "id": "09",
+      "title": "Lager Wasserseite",
+      "eye": [
+        4,
+        -4,
+        2
+      ],
+      "target": [
+        1.74,
+        0,
+        -0.12
+      ],
+      "height": 1.15,
+      "filter": "bearing-water"
+    },
+    {
+      "id": "10",
+      "title": "Krümmlingstoß",
+      "eye": [
+        -4,
+        -3,
+        4
+      ],
+      "target": [
+        -0.575,
+        0,
+        2.07
+      ],
+      "height": 0.95,
+      "filter": "rim-detail"
+    },
+    {
+      "id": "11",
+      "title": "Kumpf + Schaufel + Kumpfnägel",
+      "eye": [
+        -4,
+        -4,
+        4
+      ],
+      "target": [
+        -0.55,
+        -0.25,
+        2.08
+      ],
+      "height": 1.65,
+      "filter": "local"
+    },
+    {
+      "id": "12",
+      "title": "Drei Kümpfe · Überlappung",
+      "eye": [
+        -5,
+        -4,
+        3
+      ],
+      "target": [
+        -0.72,
+        -0.5,
+        1.99
+      ],
+      "height": 1.9,
+      "filter": "cluster"
+    },
+    {
+      "id": "13",
+      "title": "Radstatt · Unterbau",
+      "eye": [
+        -7,
+        -7,
+        3
+      ],
+      "target": [
+        0,
+        0,
+        -1.1
+      ],
+      "height": 5.3,
+      "filter": "frame"
+    },
+    {
+      "id": "14",
+      "title": "Trog / Rinne / Übergabepunkt",
+      "eye": [
+        -5,
+        -6,
+        4
+      ],
+      "target": [
+        -1.7,
+        0.45,
+        1.62
+      ],
+      "height": 3.4,
+      "filter": "trough"
+    },
+    {
+      "id": "15",
+      "title": "Exploded View",
+      "eye": [
+        -7,
+        -8,
+        5
+      ],
+      "target": [
+        -0.7,
+        0,
+        0
+      ],
+      "height": 8.1,
+      "filter": "all",
+      "exploded": true
+    },
+    {
+      "id": "16",
+      "title": "Betrieb mit Wasser",
+      "eye": [
+        -7,
+        -8,
+        4
+      ],
+      "target": [
+        -0.7,
+        0,
+        -0.2
+      ],
+      "height": 7.3,
+      "filter": "all",
+      "operation": true,
+      "angle": 0.2
+    }
+  ]
+}

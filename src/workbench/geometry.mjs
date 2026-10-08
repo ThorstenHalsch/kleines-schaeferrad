@@ -1,3 +1,4 @@
+import {calibrateModel} from './calibration.mjs';
 import * as T from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import config from '../../data/hypothesis.parameters.json' with {type:'json'};
@@ -70,7 +71,8 @@ export function makeModel(variant='A',explode=0,options={}){
  channel('CAND-CHANNEL',[-1.18,1.25,1.73],[-3.8,1.25,1.57],.32,.14);
  for(const y of[-1,1]){add(`CTX-TROUGH-POST-${y}`,'COMP-FRAME-SIDE',beam([-1.24,y,-.4],[-1.24,y,1.8],.14),[0,0,0],[0,0,0],true,palette.frame);add(`CTX-TROUGH-BRACE-${y}`,'COMP-FRAME-SIDE',beam([-1.58,y,-.2],[-1.24,y,1.3],.1),[0,0,0],[0,0,0],true,palette.frame)}
  for(const x of[-2.1,-3.6]){const top=1.73-(Math.abs(x)-1.18)*.16/2.62;add(`CTX-CHANNEL-SUPPORT-${x}`,'COMP-FRAME-SIDE',beam([x,1.25,-2.05],[x,1.25,top],.14),[0,0,0],[0,0,0],true,palette.frame)}
+ if(options.calibration!==false)calibrateModel(group,p,{...options,referenceThickness:config.variants[variant].staveThickness},explode);
  group.updateMatrixWorld(true);return group;
 }
-export function matchesFamily(mesh,selected){const f=mesh.userData.family;if(selected==='ALL')return true;if(['COMP-RIMS','COMP-RIM-LAND','COMP-RIM-WATER'].includes(selected))return f==='COMP-KRUEMMLINGE'&&(!selected.endsWith('LAND')||mesh.userData.id.includes('LAND'))&&(!selected.endsWith('WATER')||mesh.userData.id.includes('WATER'));if(selected==='COMP-KUEMPFE')return ['COMP-KUEMPFE','COMP-KUMPF-BASE','COMP-KUMPF-HOOPS'].includes(f)||mesh.userData.fastenerCandidate;if(selected.startsWith('COMP-HUB-'))return f==='COMP-SHAFT'||f==='COMP-ARMS';return f===selected;}
+export function matchesFamily(mesh,selected){const f=mesh.userData.family;if(selected==='ALL')return true;if(['COMP-RIMS','COMP-RIM-LAND','COMP-RIM-WATER'].includes(selected))return f==='COMP-KRUEMMLINGE'&&(!selected.endsWith('LAND')||mesh.userData.id.includes('LAND'))&&(!selected.endsWith('WATER')||mesh.userData.id.includes('WATER'));if(selected==='COMP-KUEMPFE')return ['COMP-KUEMPFE','COMP-KUMPF-BASE','COMP-KUMPF-HOOPS','COMP-KUMPF-NAILS'].includes(f)||mesh.userData.fastenerCandidate;if(selected.startsWith('COMP-HUB-'))return f==='COMP-SHAFT'||f==='COMP-ARMS';return f===selected;}
 export function disposeModel(model){model.traverse(o=>{o.geometry?.dispose();for(const m of[].concat(o.material||[]))m.dispose()})}
