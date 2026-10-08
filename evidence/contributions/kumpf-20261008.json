@@ -1,0 +1,214 @@
+{
+  "schema": "ks-expert-contribution/v1",
+  "id": "EXPERT-KUMPF-20261008-01",
+  "recorded_date": "2026-10-08",
+  "source": {
+    "id": "NARRATIVE-TH-KUMPF-20261008-01",
+    "person": "ThorstenHalsch",
+    "role": "Fachkenner (Selbstauskunft)",
+    "verbatim": "Die Bilder zeigen einen Kumpf aus verschiedenen Richtungen und teilweise zerlegt, damit du verstehst, wie so ein Kumpf ausgebaut, aufgebaut ist. Der Kumpf selbst besteht aus zwölf Dauben und einem Kumpfboden. In den Dauben ist unten eine Einfräsung, in der sich der Boden einsetzt, wenn der Kumpf zusammengebaut wird. Der Kumpf selbst wird dann mit drei Metallbändern gehalten. Für die Metallbänder hast du auch schon Zeichnungen in deinem Repository, die du damit verknüpfen könntest. Aufpassen: Bei den Metallbändern gibt es mehrere Zeichnungen mit unterschiedlichen Maßen, da sind damals unterschiedliche Derivate gefertigt worden. Das, was du hier siehst, ist aber das mit dem richtigen Maß. Das heißt, die Metallbandlänge kannst du dir aus dem Umfang des Kumpfes mit seinen Bemaßungen abschätzen."
+  },
+  "scope": "photographed-reference-kumpf",
+  "physical_instance_id": null,
+  "capture_date": null,
+  "status": "archived-for-reconciliation",
+  "assets": [
+    {
+      "id": "PHOTO-1000046420",
+      "original_filename": "1000046420.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046420.jpg"
+      },
+      "bytes": 151269,
+      "sha256": "a76cb11e6a27d3fa6db341408698925cd4f1b446475dbb4bbb64276db60acb22",
+      "git_blob_sha1": "b0651050bf59b8aa21a56c0cb722fa938b2bbd5e",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046421",
+      "original_filename": "1000046421.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046421.jpg"
+      },
+      "bytes": 144185,
+      "sha256": "83278627dc3b96e7f15d9290ea5dcf96575c30104d1bea7b904783f4e2a955da",
+      "git_blob_sha1": "7f7203bb40887c389e3cab2b8fc9e9a5de0e5957",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046422",
+      "original_filename": "1000046422.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046422.jpg"
+      },
+      "bytes": 133763,
+      "sha256": "b07a4a00163dfa629c0655b6e7cc261a74f93434a2b969c5938aed4089fb0da4",
+      "git_blob_sha1": "0e8e2fa39bfbe51018595a8f4b98f0efedf253ff",
+      "original_bytes_preserved": true
+    },
+    {
+      "id": "PHOTO-1000046423",
+      "original_filename": "1000046423.jpg",
+      "archive": {
+        "path": "evidence/raw/1000046423.jpg"
+      },
+      "bytes": 163254,
+      "sha256": "836b49ff126fccba4ec495660554870e52f5394649d8e03fdacf7be9f0e9f396",
+      "git_blob_sha1": "e74348814ac8cdac0cea7d08e782c74c796d0c86",
+      "original_bytes_preserved": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "EXPERT-KUMPF-20261008-STAVE-COUNT",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "staves_per_vessel",
+      "value": 12,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-BASE-COUNT",
+      "subject": "COMP-KUMPF-BASE",
+      "predicate": "bases_per_vessel",
+      "value": 1,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-BASE-GROOVE",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "base_retention",
+      "value": "Einfräsung unten in den Dauben nimmt den Kumpfboden beim Zusammenbau auf.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOOP-COUNT",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "hoops_per_vessel",
+      "value": 3,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOOP-VARIANTS",
+      "subject": "COMP-KUMPF-HOOPS",
+      "predicate": "manufactured_variants",
+      "value": "Unterschiedliche Derivate mit unterschiedlichen Maßen wurden gefertigt.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-REFERENCE",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "expert_designated_dimension_reference",
+      "value": "Der fotografierte Kumpf ist laut Fachkenner der mit dem richtigen Maß.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-01"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
+      "as_built_eligible": false
+    }
+  ],
+  "related": {
+    "conflict_ids": [
+      "CONFLICT-02"
+    ],
+    "gap_ids": [
+      "GAP-04"
+    ],
+    "drawing_sources": [
+      "PHOTO-6821",
+      "PHOTO-6846",
+      "PHOTO-6847"
+    ],
+    "drawing_paths": [
+      "evidence/raw/IMG_6821.jpeg",
+      "evidence/raw/IMG_6846.jpeg",
+      "evidence/raw/IMG_6847.jpeg"
+    ],
+    "claim_ids": [
+      "CLAIM-0032",
+      "CLAIM-0033",
+      "CLAIM-0034",
+      "CLAIM-0225",
+      "CLAIM-0226",
+      "CLAIM-0227"
+    ],
+    "interpretation": "Fachauskunft belegt gefertigte Varianten; numerische Auswahl der passenden Längenreihe bleibt offen."
+  },
+  "band_length_estimation": {
+    "evidence_class": "inferred",
+    "status": "method-documented-numeric-readout-pending",
+    "method": "Außenumfang separat je Bandsitz; Abwicklungslänge = Umfang + Überlappung, ggf. Banddickenkorrektur.",
+    "historical_overlap": {
+      "value": 4,
+      "unit": "cm",
+      "source_claim": "CLAIM-0033",
+      "confirmed_for_reference": false
+    },
+    "selected_lengths": null,
+    "reason": "Außenquerschnitte je Bandsitz und Verschlussüberlappung noch nicht eindeutig abgelesen oder gemessen."
+  },
+  "handoff": {
+    "document": "docs/FACHBEITRAG-KUMPF-20261008.md",
+    "next_steps": [
+      "Stückzahlen und Bodenaufnahme in Komponentenmodell abgleichen.",
+      "CONFLICT-02 um Fachauskunft zu gefertigten Varianten ergänzen.",
+      "Fotoreferenz zur passenden Maßvariante verwenden; numerische Bandlängen separat abschätzen."
+    ],
+    "baseline_unchanged": true
+  }
+}
