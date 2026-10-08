@@ -211,6 +211,74 @@
       "confidence": "high",
       "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
       "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-COUNT",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nails_per_attachment",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-LENGTH-PAIR",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nail_length_pair",
+      "value": "Ein längerer und ein kürzerer Kumpfnagel.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-VESSEL-OVERLAP",
+      "subject": "COMP-KUEMPFE",
+      "predicate": "neighboring_vessels_overlap",
+      "value": true,
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-LENGTH-REASON",
+      "subject": "COMP-FASTENERS",
+      "predicate": "unequal_kumpf_nail_lengths_reason",
+      "value": "Die Überlappung benachbarter Kümpfe erfordert einen längeren und einen kürzeren Kumpfnagel.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "kumpf-attachment-and-neighbor-overlap",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-03"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Direkte Fachauskunft; genaue Scanregion und Nagelwege noch nicht eigenständig geprüft.",
+      "as_built_eligible": false
     }
   ],
   "related": {
@@ -246,7 +314,39 @@
       "COMP-KUMPF-HOOPS",
       "COMP-FASTENERS",
       "COMP-KRUEMMLINGE"
-    ]
+    ],
+    "fastener_evidence": {
+      "photo_paths": [
+        "evidence/raw/IMG_6822.jpeg",
+        "evidence/raw/IMG_6832.jpeg"
+      ],
+      "photo_reference_basis": "docs/reconstruction/SOURCE-RECONCILIATION.md",
+      "wheel_scan_paths": [
+        "evidence/raw/Scaniverse 2026-10-07 173556.ply",
+        "evidence/raw/Scaniverse 2026-10-07 173556.glb"
+      ],
+      "wheel_scan_use": "Überlappung laut Fachkenner sichtbar; gezielter Scanabgleich steht aus.",
+      "dedicated_nail_point_cloud": {
+        "reported_available": true,
+        "archive_path": null,
+        "status": "not-yet-identified-in-current-repository-tree"
+      },
+      "hypothesis_file": "data/kumpf-fastener-hypotheses.json",
+      "hypothesis_reconciliation": [
+        {
+          "id": "KFS-H1",
+          "assessment": "Lang-/Kurzpaar durch direkte Fachauskunft bestätigt."
+        },
+        {
+          "id": "KFS-H2",
+          "assessment": "Neigungs-/Verdrehungsfunktion nicht durch diesen Nachtrag bestätigt; erklärte Ursache ist Überlappung."
+        },
+        {
+          "id": "KFS-H4",
+          "assessment": "Reparaturerklärung angesichts konstruktiver Fachbegründung neu bewerten."
+        }
+      ]
+    }
   },
   "band_length_estimation": {
     "evidence_class": "inferred",
@@ -267,7 +367,8 @@
       "Stückzahlen und Bodenaufnahme in Komponentenmodell abgleichen.",
       "CONFLICT-02 um Fachauskunft zu gefertigten Varianten ergänzen.",
       "Fotoreferenz zur passenden Maßvariante verwenden; numerische Bandlängen separat abschätzen.",
-      "Zwei Dauben mit je zwei Löchern sowie Befestigung Kumpf–Kumpfnägel–Krümmling im Bauteil-/Verbindungsmodell berücksichtigen; Nagelanzahl, Lochpaarung und konkrete Einbaulage getrennt klären."
+      "Zwei Dauben mit je zwei Löchern sowie Befestigung Kumpf–Kumpfnägel–Krümmling im Bauteil-/Verbindungsmodell berücksichtigen; Zwei Nägel (lang/kurz) fachlich bestätigt; Lochpaarung und konkrete Einbaulage getrennt klären.",
+      "Lang-/Kurzpaar wegen Überlappung benachbarter Kümpfe berücksichtigen; Fotos und Radscan gezielt abgleichen, separate Nagel-Punktewolke identifizieren; keine Neigungsfunktion daraus erfinden."
     ],
     "baseline_unchanged": true
   },
@@ -282,6 +383,13 @@
         "Tauben": "Dauben"
       },
       "interpretation": "Zwei der zwölf Dauben haben jeweils zwei Löcher. Diese Lesart ergibt vier Löcher; eine Nagelzahl oder Lochpaarung wird daraus nicht abgeleitet."
+    },
+    {
+      "id": "NARRATIVE-TH-KUMPF-20261008-03",
+      "person": "ThorstenHalsch",
+      "role": "Fachkenner (Selbstauskunft)",
+      "recorded_date": "2026-10-08",
+      "verbatim": "zu den Kümpfen gibt es auch noch eine weitere Information. Es gibt zwei Kumpfnägel, die unterschiedliche Längen haben. Die zwei Kumpfnägel sind auch als Punktewolke und Bilder dokumentiert worden. Zudem kann man aus der Punktewolke, die am Rad selbst entstanden sind, auch sehen, wie die Kümpfe einander überlappen und dass dadurch ein längerer und ein kürzerer Kumpfnagel benötigt wird."
     }
   ]
 }

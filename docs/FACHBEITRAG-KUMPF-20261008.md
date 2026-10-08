@@ -6,7 +6,7 @@ Erfasst am 2026-10-08. Quelle: ThorstenHalsch, in der Rolle als Fachkenner, mit 
 
 Der gezeigte Kumpf besteht aus **zwölf Dauben und einem Kumpfboden**. Eine Einfräsung unten in den Dauben nimmt beim Zusammenbau den Boden auf. **Drei Metallbänder** halten den Kumpf zusammen.
 
-Nachtrag des Fachkenners: **Zwei der zwölf Dauben haben jeweils zwei Löcher**. Durch diese Löcher werden später die **Kumpfnägel** gesteckt, um den Kumpf am **Krümmling** zu befestigen. „Tauben“ in der Originalaussage wird im Fachtext als „Dauben“ wiedergegeben. Die Lesart ergibt insgesamt vier Löcher; Anzahl und genaue Wege der eingesetzten Nägel werden daraus noch nicht abgeleitet.
+Nachtrag des Fachkenners: **Zwei der zwölf Dauben haben jeweils zwei Löcher**. Durch diese Löcher werden später die **Kumpfnägel** gesteckt, um den Kumpf am **Krümmling** zu befestigen. „Tauben“ in der Originalaussage wird im Fachtext als „Dauben“ wiedergegeben. Die Lesart ergibt insgesamt vier Löcher. Der weitere Nachtrag bestätigt zwei Kumpfnägel, einen längeren und einen kürzeren; die genaue Zuordnung der Löcher zu den Nagelwegen ist noch nicht beschrieben.
 
 Die Bilder zeigen denselben Kumpf aus verschiedenen Richtungen und teilweise zerlegt zur Erläuterung des Aufbaus. Die Zuordnung als derselbe Kumpf stammt vom Fachkenner; eine inventarisierte physische Teil-ID liegt noch nicht vor.
 
@@ -38,6 +38,28 @@ Sichtbar sind Dauben, innerer Boden, ein Maßstab und durch die Wand reichende H
 
 Drei Metallbänder sind gemeinsam sichtbar. Eine Längenskala und zwei aus der Wand ragende Hölzer ergänzen den Einbaukontext; der Nachtrag erklärt die Befestigung durch Kumpfnägel am Krümmling. Die einzelnen sichtbaren Hölzer sind noch nicht eindeutig den beschriebenen Löchern zugeordnet.
 
+## Kumpfnägel und Überlappung benachbarter Kümpfe
+
+Weiterer Nachtrag des Fachkenners: Es gibt **zwei Kumpfnägel unterschiedlicher Länge**, einen längeren und einen kürzeren. Die **Überlappung benachbarter Kümpfe am Rad erfordert diese unterschiedlichen Längen**. Damit ist der funktionale Zusammenhang als direkte Fachauskunft benannt.
+
+Nach seiner Aussage sind die beiden Kumpfnägel in Bildern und als Punktewolke dokumentiert; auch die am Rad entstandene Punktewolke zeigt die Überlappung. Diese Hinweise sind Quellenverweise des Fachkenners, noch keine in dieser Sitzung eigenständig durchgeführte Scanprüfung.
+
+### Quellen zum Abgleich
+
+- [IMG_6822.jpeg](../evidence/raw/IMG_6822.jpeg): laut vorhandenem Quellenabgleich zwei unterschiedlich lange, gekrümmte Holzstifte nebeneinander.
+- [IMG_6832.jpeg](../evidence/raw/IMG_6832.jpeg): laut vorhandenem Quellenabgleich ein langer Holzstift mit Kopf in der Hand.
+- [Quellenabgleich V2](reconstruction/SOURCE-RECONCILIATION.md): bisherige Bildbeschreibung.
+- [Rad-Punktewolke Scaniverse 2026-10-07 173556.ply](../evidence/raw/Scaniverse%202026-10-07%20173556.ply) und [zugehöriger GLB-Export](../evidence/raw/Scaniverse%202026-10-07%20173556.glb): vorhandener Radscan, als Abgleichsquelle für die Überlappung. Zwei Exportfassungen desselben Captures, keine unabhängigen Bestätigungen.
+- Eine **separate Punktewolke der Kumpfnägel** ist nach Fachauskunft vorhanden, konnte im aktuellen Dateibaum aber noch keiner eindeutig benannten Datei zugeordnet werden. Dateireferenz bleibt offen.
+
+### Bedeutung für die bisherigen Hypothesen
+
+In [kumpf-fastener-hypotheses.json](../data/kumpf-fastener-hypotheses.json) war das Lang-/Kurzpaar bisher nur eine unbestätigte Möglichkeit (KFS-H1). Die direkte Fachauskunft bestätigt nun das Paar und erklärt die unterschiedlichen Längen durch die Überlappung.
+
+Die bisherige Vermutung, der Längenunterschied bestimme Neigung oder Verdrehung (KFS-H2), wird damit **nicht** bestätigt. Auch eine reine Reparaturerklärung (KFS-H4) soll Astra angesichts der genannten konstruktiven Begründung neu bewerten. Die alten Hypothesen bleiben als bisheriger Wissensstand erhalten; dieser Nachtrag liefert die fachliche Einordnung.
+
+Für die geometrische Umsetzung sind noch der genaue Verlauf beider Nägel durch Dauben und Krümmling, ihre Position relativ zur Überlappung sowie die Längen zu bestimmen. Diese offenen geometrischen Angaben ändern die fachlich erklärte Funktion nicht.
+
 ## Verknüpfung mit vorhandenen Zeichnungen
 
 - [IMG_6821.jpeg](../evidence/raw/IMG_6821.jpeg): bisher transkribierte Längenreihe **780 / 875 / 968**, außerdem **4 cm Überlappung** und drei Nieten. Die Längenreihe hat im strukturierten Bestand keine bestätigte Einheit.
@@ -61,7 +83,7 @@ Noch kein Zahlenwert wird als direkte Messung oder Fertigungsmaß ausgegeben. Zu
 
 ## Übergabe an Astra
 
-Die fachlich bestätigten Angaben 12 Dauben, 1 Boden, Bodenaufnahme in der Einfräsung, 3 Metallbänder sowie zwei Dauben mit je zwei Löchern für die Kumpfnägel zur Befestigung am Krümmling als neue expert-narrative-Quelle berücksichtigen. Insbesondere die bisher offenen Stückzahlen in data/components.json gezielt abgleichen. Die Fotos stützen Aufbau und sichtbare Details; nicht jedes Maß ist damit kalibriert.
+Die fachlich bestätigten Angaben 12 Dauben, 1 Boden, Bodenaufnahme in der Einfräsung, 3 Metallbänder sowie zwei Dauben mit je zwei Löchern für die Kumpfnägel zur Befestigung am Krümmling sowie das Lang-/Kurzpaar wegen der Überlappung benachbarter Kümpfe als neue expert-narrative-Quelle berücksichtigen. Insbesondere die bisher offenen Stückzahlen in data/components.json gezielt abgleichen. Die Fotos stützen Aufbau und sichtbare Details; nicht jedes Maß ist damit kalibriert.
 
 Die Erklärung zu gefertigten Bandvarianten bei CONFLICT-02 berücksichtigen und den fotografierten Kumpf als vom Fachkenner benannte passende Referenz nutzen. Historische Maße, fachliche Bestätigung, visuelle Beobachtung und rechnerische Schätzung getrennt führen.
 
