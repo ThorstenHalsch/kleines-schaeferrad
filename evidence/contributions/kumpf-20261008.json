@@ -160,6 +160,57 @@
       "confidence": "high",
       "confidence_basis": "Explizite Fachauskunft; keine unabhängige Maßprüfung.",
       "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-DRILLED-STAVES",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "drilled_staves_per_vessel",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-HOLES-PER-DRILLED-STAVE",
+      "subject": "COMP-KUMPF-STAVES",
+      "predicate": "holes_per_drilled_stave",
+      "value": 2,
+      "unit": "count",
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
+    },
+    {
+      "id": "EXPERT-KUMPF-20261008-NAIL-ATTACHMENT",
+      "subject": "COMP-FASTENERS",
+      "predicate": "kumpf_nail_function",
+      "value": "Kumpfnägel werden durch die Daubenlöcher gesteckt und befestigen den Kumpf am Krümmling.",
+      "unit": null,
+      "evidence_class": "expert-narrative",
+      "scope": "photographed-reference-kumpf",
+      "provenance": [
+        {
+          "source_id": "NARRATIVE-TH-KUMPF-20261008-02"
+        }
+      ],
+      "confidence": "high",
+      "confidence_basis": "Explizite Fachauskunft; Lesart der Lochanzahl im Nachtrag dokumentiert.",
+      "as_built_eligible": false
     }
   ],
   "related": {
@@ -187,7 +238,15 @@
       "CLAIM-0226",
       "CLAIM-0227"
     ],
-    "interpretation": "Fachauskunft belegt gefertigte Varianten; numerische Auswahl der passenden Längenreihe bleibt offen."
+    "interpretation": "Fachauskunft belegt gefertigte Varianten; numerische Auswahl der passenden Längenreihe bleibt offen.",
+    "component_ids": [
+      "COMP-KUEMPFE",
+      "COMP-KUMPF-STAVES",
+      "COMP-KUMPF-BASE",
+      "COMP-KUMPF-HOOPS",
+      "COMP-FASTENERS",
+      "COMP-KRUEMMLINGE"
+    ]
   },
   "band_length_estimation": {
     "evidence_class": "inferred",
@@ -207,8 +266,22 @@
     "next_steps": [
       "Stückzahlen und Bodenaufnahme in Komponentenmodell abgleichen.",
       "CONFLICT-02 um Fachauskunft zu gefertigten Varianten ergänzen.",
-      "Fotoreferenz zur passenden Maßvariante verwenden; numerische Bandlängen separat abschätzen."
+      "Fotoreferenz zur passenden Maßvariante verwenden; numerische Bandlängen separat abschätzen.",
+      "Zwei Dauben mit je zwei Löchern sowie Befestigung Kumpf–Kumpfnägel–Krümmling im Bauteil-/Verbindungsmodell berücksichtigen; Nagelanzahl, Lochpaarung und konkrete Einbaulage getrennt klären."
     ],
     "baseline_unchanged": true
-  }
+  },
+  "supplementary_sources": [
+    {
+      "id": "NARRATIVE-TH-KUMPF-20261008-02",
+      "person": "ThorstenHalsch",
+      "role": "Fachkenner (Selbstauskunft)",
+      "recorded_date": "2026-10-08",
+      "verbatim": "Einen Detail habe ich noch vergessen. Jeweils zwei Tauben haben zwei Löcher, durch die später die Kumpfnägel gesteckt werden, um das Ganze am Krümmling zu befestigen.",
+      "terminology_normalization": {
+        "Tauben": "Dauben"
+      },
+      "interpretation": "Zwei der zwölf Dauben haben jeweils zwei Löcher. Diese Lesart ergibt vier Löcher; eine Nagelzahl oder Lochpaarung wird daraus nicht abgeleitet."
+    }
+  ]
 }

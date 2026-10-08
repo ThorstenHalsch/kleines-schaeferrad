@@ -6,6 +6,8 @@ Erfasst am 2026-10-08. Quelle: ThorstenHalsch, in der Rolle als Fachkenner, mit 
 
 Der gezeigte Kumpf besteht aus **zwölf Dauben und einem Kumpfboden**. Eine Einfräsung unten in den Dauben nimmt beim Zusammenbau den Boden auf. **Drei Metallbänder** halten den Kumpf zusammen.
 
+Nachtrag des Fachkenners: **Zwei der zwölf Dauben haben jeweils zwei Löcher**. Durch diese Löcher werden später die **Kumpfnägel** gesteckt, um den Kumpf am **Krümmling** zu befestigen. „Tauben“ in der Originalaussage wird im Fachtext als „Dauben“ wiedergegeben. Die Lesart ergibt insgesamt vier Löcher; Anzahl und genaue Wege der eingesetzten Nägel werden daraus noch nicht abgeleitet.
+
 Die Bilder zeigen denselben Kumpf aus verschiedenen Richtungen und teilweise zerlegt zur Erläuterung des Aufbaus. Die Zuordnung als derselbe Kumpf stammt vom Fachkenner; eine inventarisierte physische Teil-ID liegt noch nicht vor.
 
 Der Fachkenner erklärt ausdrücklich: Bei den vorhandenen Bandzeichnungen wurden damals unterschiedliche Derivate mit unterschiedlichen Maßen gefertigt. Der hier fotografierte Kumpf hat nach seiner Aussage das richtige Maß und soll die Maßreferenz für diese Zuordnung sein. Daraus folgt keine pauschale Ungültigkeit der anderen Zeichnungen oder die Gleichheit sämtlicher Kümpfe am Rad.
@@ -28,13 +30,13 @@ Boden, Daubenstirnflächen und eine über den Querschnitt gelegte Skala sind sic
 
 ![Blick in den Kumpf](../evidence/raw/1000046422.jpg)
 
-Sichtbar sind Dauben, innerer Boden, ein Maßstab und durch die Wand reichende Hölzer. Deren konkrete Funktion, Befestigung und Benennung werden durch diesen Beitrag noch nicht erklärt.
+Sichtbar sind Dauben, innerer Boden, ein Maßstab und durch die Wand reichende Hölzer. Der Nachtrag erklärt die Funktion der Kumpfnägel als Befestigung am Krümmling. Welche der hier sichtbaren Hölzer jeweils welcher Nagelposition entspricht, ist noch nicht einzeln zugeordnet.
 
 ### 1000046423.jpg — Außenansicht
 
 ![Außenansicht mit drei Bändern](../evidence/raw/1000046423.jpg)
 
-Drei Metallbänder sind gemeinsam sichtbar. Eine Längenskala und zwei aus der Wand ragende Hölzer ergänzen den Einbaukontext; deren Funktion bleibt bis zur fachlichen Erklärung offen.
+Drei Metallbänder sind gemeinsam sichtbar. Eine Längenskala und zwei aus der Wand ragende Hölzer ergänzen den Einbaukontext; der Nachtrag erklärt die Befestigung durch Kumpfnägel am Krümmling. Die einzelnen sichtbaren Hölzer sind noch nicht eindeutig den beschriebenen Löchern zugeordnet.
 
 ## Verknüpfung mit vorhandenen Zeichnungen
 
@@ -59,7 +61,7 @@ Noch kein Zahlenwert wird als direkte Messung oder Fertigungsmaß ausgegeben. Zu
 
 ## Übergabe an Astra
 
-Die fachlich bestätigten Angaben 12 Dauben, 1 Boden, Bodenaufnahme in der Einfräsung und 3 Metallbänder als neue expert-narrative-Quelle berücksichtigen. Insbesondere die bisher offenen Stückzahlen in data/components.json gezielt abgleichen. Die Fotos stützen Aufbau und sichtbare Details; nicht jedes Maß ist damit kalibriert.
+Die fachlich bestätigten Angaben 12 Dauben, 1 Boden, Bodenaufnahme in der Einfräsung, 3 Metallbänder sowie zwei Dauben mit je zwei Löchern für die Kumpfnägel zur Befestigung am Krümmling als neue expert-narrative-Quelle berücksichtigen. Insbesondere die bisher offenen Stückzahlen in data/components.json gezielt abgleichen. Die Fotos stützen Aufbau und sichtbare Details; nicht jedes Maß ist damit kalibriert.
 
 Die Erklärung zu gefertigten Bandvarianten bei CONFLICT-02 berücksichtigen und den fotografierten Kumpf als vom Fachkenner benannte passende Referenz nutzen. Historische Maße, fachliche Bestätigung, visuelle Beobachtung und rechnerische Schätzung getrennt führen.
 
