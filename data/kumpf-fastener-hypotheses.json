@@ -1,8 +1,8 @@
 {
   "schema": "ks-kumpf-fastener-hypotheses/v1",
-  "status": "UNVERIFIED",
-  "human_term_candidate": "Nagelhölzer",
-  "canonical_working_label": "hölzerne Kumpf-Sicherungsstifte",
+  "status": "EXPERT-RECONCILED-GEOMETRY-PENDING",
+  "human_term_candidate": "Kumpfnägel",
+  "canonical_working_label": "Kumpfnägel",
   "evidence": [
     {
       "type": "current-photo",
@@ -12,28 +12,44 @@
       "type": "field-narrative",
       "description": "Reported workshop explanation: possibly two per Kumpf, one long and one short, potentially used to establish or secure twist/inclination.",
       "confidence": "unverified-hearsay"
+    },
+    {
+      "type": "local-expert-narrative",
+      "source_id": "NARRATIVE-TH-KUMPF-20261008-03",
+      "description": "ThorstenHalsch confirms two Kumpfnägel, one long and one short, and explains unequal lengths by overlap of neighboring Kümpfe.",
+      "confidence": "high-local-expert"
     }
   ],
   "candidates": [
     {
       "id": "KFS-H1",
       "statement": "Each Kumpf uses a paired long and short wooden securing pin.",
-      "confidence": "plausible-unverified"
+      "confidence": "expert-confirmed-for-reference-attachment",
+      "assessment": "Promote pair existence and long/short distinction into baseline; exact all-vessel scope remains to verify."
     },
     {
       "id": "KFS-H2",
       "statement": "The length/curvature difference contributes to Kumpf inclination or twist.",
-      "confidence": "plausible-unverified"
+      "confidence": "deprioritized-not-supported",
+      "assessment": "Expert explanation attributes length difference to neighboring-vessel overlap, not primarily tilt/twist."
     },
     {
       "id": "KFS-H3",
-      "statement": "The pins primarily secure the Kumpf and do not set its geometry.",
-      "confidence": "alternative"
+      "statement": "The Kumpfnägel fasten the Kumpf through drilled staves to the Krümmling; exact structural load path and geometry remain open.",
+      "confidence": "partially-confirmed",
+      "assessment": "Function as attachment is expert-confirmed."
     },
     {
       "id": "KFS-H4",
       "statement": "Long/short pairs vary by repair history rather than being a canonical pair.",
-      "confidence": "alternative"
+      "confidence": "deprioritized-alternative",
+      "assessment": "Repair-only explanation no longer primary because a systematic construction reason was provided."
+    },
+    {
+      "id": "KFS-H5",
+      "statement": "The long/short length difference accommodates directed overlap of neighboring Kümpfe around the circumference.",
+      "confidence": "expert-confirmed-functional-explanation",
+      "assessment": "New primary functional explanation; exact overlap direction and nail paths remain geometric verification tasks."
     }
   ],
   "saturday_acceptance": [
@@ -45,5 +61,5 @@
     "Measure Kumpf inclination before removal and compare against long/short pair orientation.",
     "Ask experienced craftsperson what local term is correct and what functional difference long vs short has."
   ],
-  "promotion_rule": "Do not promote pair count or inclination-setting function to current geometry until installed evidence and craft explanation agree."
+  "promotion_rule": "Pair existence, terminology, attachment function and overlap-based length rationale are promoted as local expert baseline for the photographed reference construction. Exact nail paths, dimensions, installed orientation and all-vessel equivalence still require current photo/measurement/scan evidence."
 }
