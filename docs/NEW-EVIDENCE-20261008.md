@@ -1,6 +1,6 @@
 # Neue Evidenzserie — Galerie-Ingest 2026-10-08
 
-Status: **inhaltlich aufgenommen, Rohdateien noch separat zu archivieren**.
+Status: **inhaltlich aufgenommen und als Originalbytes archiviert; siehe evidence/additions-v2.json**.
 
 Diese Serie enthält aktuelle Fotos des eingebauten Rades sowie ältere Werkstattzeichnungen. Die Dateien werden intern nach Dateiname/Hash zugeordnet; für Hannes werden Anforderungen ausschließlich visuell beschrieben.
 

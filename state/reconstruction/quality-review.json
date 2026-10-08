@@ -1,0 +1,90 @@
+{
+  "schema": "ks-quality-review/v2",
+  "date": "2026-10-08",
+  "implementation_commit": "96132aec62fdb8c4f391b60ce483c3867fe1fc94",
+  "reviewer": "Primary implementation agent: direct image review; no independent human approval claimed",
+  "drawing_verdict": "TECHNICAL DRAWING QUALITY PASS",
+  "human_ux_verdict": "HUMAN UX QUALITY PASS",
+  "pdf_sha256": "55332d89a1cb3ca160ed0856c43577f67ed0d759adba0361e19a4583de80f0c8",
+  "geometry_sha256": "026df25b8d796b938bb7418fd1d378f33ccf25238721fc157cf17256f0f0719a",
+  "scope": "Unmeasured reconstruction and pre-disassembly capture sheets; no manufacturing, structural or dismantling approval",
+  "page_review": [
+    {
+      "page": 1,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Whole system, waterline and axis-to-water endpoints visible."
+    },
+    {
+      "page": 2,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Paired arms and same-side dogleg; historical notations separate from measurement blanks."
+    },
+    {
+      "page": 3,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Three core alternatives, consistent bounds; material hatch and open areas legible."
+    },
+    {
+      "page": 4,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Segment and enlarged joint/pin alternative; radial measurement direction explicit."
+    },
+    {
+      "page": 5,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Staves, floor, hoops and section; hollow interior stays unhatched."
+    },
+    {
+      "page": 6,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Real long/short photo plus curved pin candidates at same frame."
+    },
+    {
+      "page": 7,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Board, rim and vessel together; enlarged connection area."
+    },
+    {
+      "page": 8,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Stationary frame plus journal/bearing detail; unverified contact stated."
+    },
+    {
+      "page": 9,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Collector and sloping discharge channel; sectional material and open flow path."
+    },
+    {
+      "page": 10,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Exploded rotor and stationary partners; actual sequence left to observation."
+    },
+    {
+      "page": 11,
+      "verdict": "PASS",
+      "review": "Full-page PNG at 1.2 rendering scale and reduced contact sheet inspected",
+      "finding": "Five original-photo events; specific regions and before/after capture instructions."
+    }
+  ],
+  "closed_findings": [
+    "Stave cavity no longer hatched as solid; source mesh containment clips hatch.",
+    "Rim and water event photo markers point to their own regions.",
+    "Journal candidate shown in bearing detail with candidate contact.",
+    "Arm profile dimension endpoints match rim endpoints.",
+    "Mobile overall scene fits 320px viewport.",
+    "Custom German file selectors replace browser-locale-dependent native text.",
+    "Story duplicate routes/status removed.",
+    "Source comparison and scan workspace are progressively disclosed.",
+    "200% text check doubles every computed HTML font, not merely root rem size."
+  ]
+}

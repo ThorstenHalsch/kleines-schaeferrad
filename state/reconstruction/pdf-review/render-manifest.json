@@ -1,0 +1,105 @@
+{
+  "pdf_sha256": "55332d89a1cb3ca160ed0856c43577f67ed0d759adba0361e19a4583de80f0c8",
+  "pages": [
+    {
+      "page": 1,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "01.png",
+      "text_characters": 769
+    },
+    {
+      "page": 2,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "02.png",
+      "text_characters": 730
+    },
+    {
+      "page": 3,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "03.png",
+      "text_characters": 782
+    },
+    {
+      "page": 4,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "04.png",
+      "text_characters": 764
+    },
+    {
+      "page": 5,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "05.png",
+      "text_characters": 720
+    },
+    {
+      "page": 6,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "06.png",
+      "text_characters": 811
+    },
+    {
+      "page": 7,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "07.png",
+      "text_characters": 737
+    },
+    {
+      "page": 8,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "08.png",
+      "text_characters": 734
+    },
+    {
+      "page": 9,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "09.png",
+      "text_characters": 759
+    },
+    {
+      "page": 10,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "10.png",
+      "text_characters": 696
+    },
+    {
+      "page": 11,
+      "size_points": [
+        1190.55,
+        841.89
+      ],
+      "render": "11.png",
+      "text_characters": 958
+    }
+  ],
+  "visual_review": "requires human or agent image inspection; not inferred from rendering"
+}

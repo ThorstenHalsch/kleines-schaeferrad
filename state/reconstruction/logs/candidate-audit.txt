@@ -1,0 +1,5 @@
+[
+  { candidate: 'staggered', overlap: 0, rank: 1 },
+  { candidate: 'independent', overlap: 0, rank: 2 },
+  { candidate: 'crossing', overlap: 420, rank: 3 }
+]

@@ -1,0 +1,38 @@
+name: Reconstruction V2 acceptance
+on:
+  push:
+    branches: ['work/bruteforce-functional-reconstruction-v2-20261008']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install reportlab==4.4.3 pymupdf==1.26.4 cairosvg==2.8.2
+      - run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build && npm run check && npm run test:workbench && npm run test:field && npm run test:reconstruction && npm run prepare:model
+      - run: python scripts/verify_evidence.py
+      - run: npm install --no-save --package-lock=false playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - run: node tests/browser-reconstruction.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reconstruction-v2-evidence
+          path: |
+            test-results/reconstruction/
+            state/field-kit/
+            state/reconstruction/
+            output/pdf/
+            output/model/

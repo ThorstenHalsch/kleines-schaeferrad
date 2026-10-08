@@ -1,0 +1,50 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kleines-schaeferrad-research-page@0.1.0 build
+> npm run prepare:workbench && npm run prepare:field && astro build && node scripts/build-offline.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kleines-schaeferrad-research-page@0.1.0 prepare:workbench
+> node scripts/build-workbench.mjs
+
+Prepared original evidence including all 19 new sources and 11 technical sheets.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> kleines-schaeferrad-research-page@0.1.0 prepare:field
+> node scripts/build-field-sketches.mjs && python scripts/build-field-pack.py
+
+Verified shared technical projection set: 11
+Generated 11 A3 technical sheets, 2 A4 route pages and 8 evidence-based field visuals.
+00:45:42 [types] Generated 44ms
+00:45:42 [build] output: "static"
+00:45:42 [build] mode: "static"
+00:45:42 [build] directory: /workspace/scratch/535d03b975b5/reconstruction-v2/dist/
+00:45:42 [build] Collecting build info...
+00:45:42 [build] ✓ Completed in 90ms.
+00:45:42 [build] Building static entrypoints...
+00:45:43 [vite] ✓ built in 243ms
+00:45:43 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+00:45:43 [vite] ✓ built in 252ms
+00:45:43 [build] Rearranging server assets...
+
+ generating static routes 
+00:45:43   ├─ /feld/index.html (+11ms) 
+00:45:43   ├─ /werkstatt/index.html (+3ms) 
+00:45:43   ├─ /index.html (+9ms) 
+00:45:43 ✓ Completed in 33ms.
+
+ generating optimized images 
+00:45:43   ▶ /_astro/IMG_6858.BpdSKe7f_ZSXckl.webp (reused cache entry) (+1ms) (1/3)
+00:45:43   ▶ /_astro/IMG_6858.BpdSKe7f_PPje9.webp (reused cache entry) (+0ms) (2/3)
+00:45:43   ▶ /_astro/IMG_6858.BpdSKe7f_6R4o5.webp (reused cache entry) (+2ms) (3/3)
+00:45:43 ✓ Completed in 4ms.
+
+00:45:43 [build] ✓ Completed in 562ms.
+00:45:43 [build] 3 page(s) built in 657ms
+00:45:43 [build] Complete!
+Offline shell: 119 files, 80283036 bytes

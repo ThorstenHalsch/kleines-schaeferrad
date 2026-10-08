@@ -1,0 +1,67 @@
+{
+  "schema": "ks-external-construction-research/v1",
+  "retrieved": "2026-10-08",
+  "rule": "External sources expand candidate space; they never promote local current geometry.",
+  "sources": [
+    {
+      "id": "EXT-VZO",
+      "url": "https://www.verein-zufriedenheit.com/info.html",
+      "title": "Kleines Schäferrad — Verein Zufriedenheit Oberndorf",
+      "kind": "operator-primary",
+      "pattern": "Eichenwelle mit Stahlzapfen; zwei Kränze mit je drei durchgehenden Armen/sechs Speichen und sechs Krümmlingen; 24 landseitige Kümpfe, 24 Schaufeln; Trog/Rinne; Radstatt und Grundbaum bleiben im Fluss.",
+      "transferability": "Direkte Betreiberbeschreibung dieses Rades; kein 2026-Aufmaß. Counts sind dokumentierte Erwartung, nicht gezähltes Inventar.",
+      "confidence": "high documentary; current geometry unmeasured",
+      "classification": "local-documentary-evidence"
+    },
+    {
+      "id": "EXT-CONSTRUCTION",
+      "url": "https://www.schoepfraeder.de/german/construc.htm",
+      "title": "Historische Wasserschöpfräder — Konstruktion",
+      "kind": "documentary-primary-with-author-drawings",
+      "pattern": "Radstatt mit sechs Pfählen und tragenden Querbalken; gekrümmt gewachsenes Holz für Kranz; Holzverbindungen durch Zapfen, Keile und Bänder; oberer Gießtrog leitet in aufgeständerte Rinne.",
+      "transferability": "Regionale Bauweise als Kandidatenraum. Zahl und Positionen der Pfosten lokal mit Fotos/Plänen abgleichen; keine Innenverbindung daraus bestätigen.",
+      "confidence": "medium regional analogy",
+      "classification": "analogy"
+    },
+    {
+      "id": "EXT-ASSEMBLY",
+      "url": "https://www.schoepfraeder.de/german/assembly.htm",
+      "title": "Historische Wasserschöpfräder — Montage",
+      "kind": "photographic-process-primary",
+      "pattern": "Bebilderte Folge: Welle/Arme/Krümmlinge, Kümpfe, Schaufeln, Flügel, Gießtrog/Rinne. Holzkeile halten Arme. Wasserabgabe nahe oberem Scheitel, Tropfwasserschmierung beschrieben.",
+      "transferability": "Unterstützt Funktions- und Montagevergleich. Dort genannte 26 Kümpfe widersprechen Betreiberquelle24; NICHT übernehmen. Vorgehen ist keine örtliche Demontagefreigabe.",
+      "confidence": "medium; count conflict",
+      "classification": "analogy"
+    },
+    {
+      "id": "EXT-SEASON",
+      "url": "https://www.schoepfraeder.de/downloads/die-letzten-wasserschoepfraeder.pdf",
+      "title": "Die letzten Wasserschöpfräder Europas — Stand Frühjahr2000",
+      "kind": "historic-operator-process-account",
+      "pattern": "Kumpfnägel aus jungen Eichentrieben geschnitzt; Schaufelbänder aus Eichenästen gekocht und gebogen; saisonaler Ausbau, Trocknen und Ersatz beschädigter Teile.",
+      "transferability": "Material/Herstellpraxis stützt gekrümmte Holzstifte und reversible Keilverbindungen. Keine Belegung kanonischer Lang-/Kurzpaarfunktion am aktuellen Rad.",
+      "confidence": "medium historical analogy",
+      "classification": "analogy"
+    },
+    {
+      "id": "EXT-MUSEUM",
+      "url": "https://stadtmuseum-erlangen.de/de/das-museum/hingucker/regnitz-nagel",
+      "title": "Regnitz-Nagel — Stadtmuseum Erlangen",
+      "kind": "museum-object-primary",
+      "pattern": "Große hölzerne Nadeln verankern das Strömungswehr im Flussgrund; Kümpfe geben an hölzerne Rinne und Gräben ab.",
+      "transferability": "Negativabgrenzung: Wehrnadeln nicht mit Kumpfstiften gleichsetzen. Formähnlichkeit allein bestimmt Funktion nicht.",
+      "confidence": "high object-context, low direct transfer",
+      "classification": "analogy"
+    },
+    {
+      "id": "EXT-MUNICIPAL",
+      "url": "https://www.moehrendorf.de/ortsinfo-freizeit-vereine/sehenswertes-historie/wasserschoepfraeder",
+      "title": "Möhrendorfer Wasserschöpfräder — Gemeinde",
+      "kind": "municipal-primary",
+      "pattern": "Saisonaler Aufbau, Wartung, Abbau und Einlagerung durch ehrenamtliche Helfer; historische Wiesenbewässerung.",
+      "transferability": "Kontext und menschlicher Betrieb; keine geometrischen Detailwerte.",
+      "confidence": "high context",
+      "classification": "context"
+    }
+  ]
+}

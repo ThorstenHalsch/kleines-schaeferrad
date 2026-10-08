@@ -1,0 +1,3713 @@
+{
+  "schema": "ks-model-export/v2",
+  "mechanicalFrame": {
+    "origin": "shaft-axis / rim-midplane",
+    "shaftAxis": [
+      1,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "transverse": [
+      0,
+      1,
+      0
+    ],
+    "sideAssignment": null
+  },
+  "units": "metre candidate coordinates; no measured scale",
+  "conversion": "root Rx(-90 degrees) maps mechanical Z-up to glTF Y-up",
+  "asBuilt": false,
+  "geometrySHA256": "026df25b8d796b938bb7418fd1d378f33ccf25238721fc157cf17256f0f0719a",
+  "meshes": 279,
+  "components": [
+    {
+      "id": "HYP-SHAFT",
+      "family": "COMP-SHAFT",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6853",
+        "PHOTO-6855",
+        "PHOTO-6816",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-JOURNAL--1",
+      "family": "COMP-SHAFT",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "EXT-VZO"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-JOURNAL-1",
+      "family": "COMP-SHAFT",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "EXT-VZO"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-LAND-1-4",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-0--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-0-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-LAND-2-5",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-1--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-1-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-LAND-3-6",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-2--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-LAND-2-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-01",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-0--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-0-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-02",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-1--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-1-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-03",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-2--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-2-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-04",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-3--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-3-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-05",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-4--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-4-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-LAND-06",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-5--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-LAND-5-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-WATER-1-4",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-0--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-0-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-WATER-2-5",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-1--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-1-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-ARM-WATER-3-6",
+      "family": "COMP-ARMS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6820",
+        "PHOTO-6855",
+        "V2-IMG_6798",
+        "V2-IMG_6799",
+        "V2-IMG_6800",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-2--1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-WEDGE-WATER-2-1",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-01",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-0--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-0-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-02",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-1--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-1-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-03",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-2--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-2-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-04",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-3--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-3-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-05",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-4--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-4-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HIST-KRU-WATER-06",
+      "family": "COMP-KRUEMMLINGE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6849",
+        "PHOTO-6851"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-5--0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-RIM-PIN-WATER-5-0.03",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832",
+        "PHOTO-6825",
+        "V2-IMG_6808"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-01",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-01",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-01-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-01-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-01-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-01-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-01-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-01",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-02",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-02",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-02-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-02-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-02-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-02-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-02-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-02",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-03",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-03",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-03-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-03-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-03-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-03-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-03-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-03",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-04",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-04",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-04-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-04-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-04-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-04-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-04-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-04",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-05",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-05",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-05-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-05-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-05-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-05-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-05-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-05",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-06",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-06",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-06-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-06-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-06-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-06-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-06-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-06",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-07",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-07",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-07-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-07-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-07-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-07-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-07-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-07",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-08",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-08",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-08-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-08-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-08-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-08-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-08-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-08",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-09",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-09",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-09-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-09-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-09-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-09-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-09-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-09",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-10",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-10",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-10-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-10-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-10-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-10-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-10-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-10",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-11",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-11",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-11-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-11-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-11-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-11-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-11-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-11",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-12",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-12",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-12-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-12-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-12-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-12-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-12-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-12",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-13",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-13",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-13-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-13-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-13-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-13-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-13-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-13",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-14",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-14",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-14-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-14-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-14-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-14-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-14-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-14",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-15",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-15",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-15-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-15-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-15-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-15-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-15-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-15",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-16",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-16",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-16-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-16-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-16-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-16-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-16-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-16",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-17",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-17",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-17-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-17-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-17-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-17-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-17-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-17",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-18",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-18",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-18-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-18-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-18-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-18-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-18-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-18",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-19",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-19",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-19-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-19-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-19-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-19-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-19-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-19",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-20",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-20",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-20-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-20-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-20-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-20-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-20-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-20",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-21",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-21",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-21-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-21-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-21-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-21-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-21-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-21",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-22",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-22",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-22-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-22-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-22-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-22-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-22-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-22",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-23",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-23",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-23-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-23-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-23-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-23-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-23-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-23",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-KUM-24",
+      "family": "COMP-KUEMPFE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6854",
+        "PHOTO-6823",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-BASE-24",
+      "family": "COMP-KUMPF-BASE",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-24-0",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-24-1",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-HOOP-24-2",
+      "family": "COMP-KUMPF-HOOPS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "PHOTO-6823",
+        "PHOTO-6841",
+        "V2-IMG_6809",
+        "V2-IMG_6810",
+        "V2-IMG_6811"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-24-LONG",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-KUM-PIN-24-SHORT",
+      "family": "COMP-FASTENERS",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6822",
+        "V2-IMG_6832"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "EXPECTED-PAD-24",
+      "family": "COMP-PADDLES",
+      "stationary": false,
+      "status": "reconstructed-candidate",
+      "sources": [
+        "V2-IMG_6811",
+        "V2-IMG_6809",
+        "PHOTO-6861"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-POST--1--1.85",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-POST--1-1.85",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-RAIL--1--2.48",
+      "family": "COMP-FRAME-LOWER",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-RAIL--1--0.34",
+      "family": "COMP-FRAME-LOWER",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BRACE--1--1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BRACE--1-1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BEARING-STAND--1",
+      "family": "COMP-BEARING-STANDS",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HYP-BEARING--1",
+      "family": "COMP-BEARINGS",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6804",
+        "V2-IMG_6808",
+        "V2-IMG_6792",
+        "V2-IMG_6795"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-POST-1--1.85",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-POST-1-1.85",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-RAIL-1--2.48",
+      "family": "COMP-FRAME-LOWER",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-RAIL-1--0.34",
+      "family": "COMP-FRAME-LOWER",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BRACE-1--1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BRACE-1-1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-BEARING-STAND-1",
+      "family": "COMP-BEARING-STANDS",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "HYP-BEARING-1",
+      "family": "COMP-BEARINGS",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6804",
+        "V2-IMG_6808",
+        "V2-IMG_6792",
+        "V2-IMG_6795"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-CROSS--2.25",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-CROSS-2.25",
+      "family": "COMP-FRAME-MAIN",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-WALK-0",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-WALK-1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-WALK-2",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-WALK-3",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-TROUGH",
+      "family": "COMP-TROUGH",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6812",
+        "PHOTO-6829"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CAND-CHANNEL",
+      "family": "COMP-TROUGH",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6812",
+        "PHOTO-6829"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-TROUGH-POST--1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-TROUGH-BRACE--1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-TROUGH-POST-1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-TROUGH-BRACE-1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-CHANNEL-SUPPORT--2.1",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    },
+    {
+      "id": "CTX-CHANNEL-SUPPORT--3.6",
+      "family": "COMP-FRAME-SIDE",
+      "stationary": true,
+      "status": "context-hypothesis",
+      "sources": [
+        "V2-IMG_6792",
+        "V2-IMG_6793",
+        "V2-IMG_6794",
+        "V2-IMG_6795",
+        "V2-IMG_6797",
+        "V2-IMG_6804",
+        "V2-IMG_6812"
+      ],
+      "physical_instance": null
+    }
+  ]
+}

@@ -1,114 +1,227 @@
-# Zeichnungssprache für das Kleine Schäferrad
+# Zeichnungs- und Arbeitsblatt-Qualitätsvertrag V4
 
-Stand: 2026-10-07  
-Referenzprojekt: `jdistlr/garden-torch-connector`, klassische Prüfzeichnungen D02/D-V03.
+Stand: 2026-10-08
+Status: **verbindlich für den Astra Brute-Force Reconstruction Run**
 
-## Zielgruppe
+## Zweck
 
-Die technischen Blätter sollen nicht wie moderne Infografiken aussehen, sondern wie vertraute Werkstattunterlagen für Menschen, die seit Jahrzehnten mit Holzbau, Montage und Reparatur arbeiten.
+Die bisherigen schematischen Feldskizzen sind als finale Arbeitsunterlage verworfen.
 
-Die moderne GitHub Page und die Werkstattzeichnungen bilden deshalb bewusst **zwei visuelle Sprachen**:
+Sie sind zu abstrakt, zu generisch und zeigen weder reale Bauteilgeometrie noch reale Einbausituationen ausreichend. Im finalen Werkstatt- und Aufnahmeplan dürfen sie nicht als Ersatz für technische Konstruktion verwendet werden.
 
-- Website: weich, zugänglich, modern, VZO-Stil.
-- Zeichnung: schwarz/weiß, technisch, dicht, papierfähig, konservativ lesbar.
+## Harte Grundregel
 
-## Darstellungsregeln
+**Jede visuelle Arbeitsanweisung muss entweder auf realer fotografischer Evidenz oder auf echter rekonstruierter Geometrie beruhen.**
 
-Aus dem früheren Projekt übernehmen wir als Leitlinie:
+Nicht zulässig als finale Darstellung:
+- vereinfachte Kästchen/Kreise/Linien ohne reale Geometriebeziehung,
+- symbolische Rad-/Wellen-Skizzen,
+- generische Pfeildiagramme,
+- pseudo-technische Zeichnungen ohne Schnitte/Ansichten/Bezug,
+- illustrative Platzhalter, die wie technische Wahrheit wirken.
 
-- sichtbare Kanten ungefähr 0,5 mm,
-- Maßlinien ungefähr 0,25 mm,
-- Achsen und verdeckte Kanten ungefähr 0,18 mm,
-- Achsen als Strich-Punkt,
-- verdeckte Kanten gestrichelt,
+## Darstellungsmodus A — Foto + technische Überzeichnung
+
+Verwenden, wenn die reale Einbausituation entscheidend ist.
+
+Beispiele:
+- Lagerkontakt vor dem Anheben,
+- Arm-Eintrittsstelle vor dem Keilzug,
+- Kumpf mit langem/kurzem Sicherungsstift noch eingebaut,
+- Krümmlingstoß vor dem Trennen,
+- Kumpf → Trog Wasserübergabe,
+- stationärer Rahmenknoten.
+
+Pflicht:
+- reales Foto bleibt visuell dominant,
+- geometrisch saubere SVG/Vektor-Overlays,
+- Maßpfeile mit klaren Endpunkten,
+- Foto-/Blickrichtungssymbole als echte SVG-Icons,
+- nummerierte Callouts,
+- Schnitt-/Detailfenster,
+- STOPP-Markierung nur dort, wo ein irreversibler Verlust droht,
+- eindeutige Partner-/Bauteilbezüge,
+- keinerlei Emoji-/Unicode-Pfeile als UI- oder Zeichnungselement.
+
+Wenn ein Foto perspektivisch stark verzerrt ist:
+- keine scheinbar maßhaltige Maßlinie hineinlegen,
+- stattdessen nur Messstrecke/Endpunkte markieren,
+- tatsächlicher Messwert kommt aus Handmaß oder registrierter Geometrie.
+
+## Darstellungsmodus B — technische Zeichnung aus Rekonstruktionsgeometrie
+
+Verwenden für:
+- Einzelteilform,
+- Profil,
+- Querschnitt,
+- Verbindung,
+- Exploded View,
+- Montage-/Demontagebeziehung,
+- Maßaufnahme.
+
+Pflichtansichten nach Bedarf:
+- Vorderansicht,
+- Seitenansicht,
+- Draufsicht,
+- isometrische Übersicht,
+- Schnitt A–A / B–B,
+- Detail X/Y,
+- Explosionsansicht.
+
+Pflichtelemente:
+- sichtbare Kanten,
+- verdeckte Kanten,
+- Achsen/Mittellinien,
+- Schnittlinien,
+- Maßhilfslinien,
 - geschlossene Maßpfeile,
-- Millimeter als Standard,
 - Ø / R / Winkel explizit,
-- Maßhilfslinien sauber getrennt von Bauteilkanten,
-- klare Blickrichtung je Ansicht,
-- Schnitte mit eindeutiger Schnittbezeichnung,
-- Schriftfeld mit Zeichnungsnummer, Revision, Blatt, Maßstab, Datum, Status,
-- Stückliste auf Zusammenbauzeichnungen,
-- Druckkontrollstrecke auf finalen PDF-Blättern.
+- Bezugsflächen und Messendpunkte,
+- Maßstab bzw. „nicht maßhaltig“,
+- Blattnummer / Revision / Status,
+- Provenienzstatus jeder kritischen Geometrie.
 
-## Blattformat
+## Darstellungsmodus C — konkurrierende technische Kandidaten
 
-Bevorzugt **A3 quer** für Werkstatt-/Montageblätter. Für große Übersichten des vollständigen Rads können spätere A2/A1-Derivate sinnvoll sein, aber A3 bleibt die transportable Basis.
+Wenn Geometrie nicht entschieden ist:
+
+Nicht einfach „?“ zeichnen.
+
+Stattdessen:
+- Variante A / B / C als echte Geometriekandidaten,
+- identische Blickrichtung und Maßstab,
+- Unterschiede visuell hervorgehoben,
+- kurze Begründung je Kandidat,
+- welche Feldaufnahme den Kandidaten entscheidet.
+
+Beispiel Welle/Arme:
+- gerade,
+- historisch gekröpft,
+- axial versetzt,
+- alternative Innenverriegelungen,
+- Keil-/Mortisenvarianten.
+
+## Zeichnungsniveau
+
+Ziel ist **echtes technisches Zeichnungsniveau**, nicht Infografik-Niveau.
+
+Orientierung:
+- klassische europäische/DIN-nahe Werkstattzeichnung,
+- sichtbare Kanten ca. 0,5 mm,
+- Maßlinien ca. 0,25 mm,
+- Achsen/verdeckte Kanten ca. 0,18 mm,
+- Achsen Strich-Punkt,
+- verdeckte Kanten gestrichelt,
+- saubere Schnittschraffur,
+- eindeutige Pfeil- und Maßsprache,
+- A3 quer als primäres mobiles Werkstattformat.
+
+Keine formale Normkonformität behaupten, solange diese nicht geprüft wurde.
 
 ## Statussprache
 
-Solange reale 2026er Maße fehlen:
+Jede kritische Geometrie muss einer Klasse angehören:
 
-> PRÜFZEICHNUNG · NICHT ZUR FERTIGUNG / NICHT MASSHALTIG
+- **2026 GEMESSEN**
+- **2026 BEOBACHTET**
+- **HISTORISCHE ZEICHNUNG**
+- **AUS FOTO / SCAN ABGELEITET**
+- **TECHNISCH PLAUSIBEL REKONSTRUIERT**
+- **ALTERNATIVE**
+- **NOCH OFFEN**
 
-Historische Zahlen werden sichtbar als solche markiert, z. B.:
+Synthetische Geometrie darf optisch nie mit gemessener Geometrie verwechselt werden.
 
-- `HIST. ZEICHNUNG`
-- `2026 GEMESSEN`
-- `AUS FOTO ABGELEITET`
-- `UNGEKLÄRT`
-- `MONTEUR-AUSSAGE`
+## Pflichtblätter
 
-Nie soll eine Zahl allein durch ihre Position auf einem technischen Blatt wie eine bestätigte Fertigungsdimension wirken.
+### KS-00 — System und Standort
+- gesamtes Rad,
+- Radstatt,
+- Lager,
+- Trog/Rinne,
+- Wasserlinie,
+- Land-/Wasserseite,
+- Fließrichtung,
+- Referenzsystem.
 
-## Geplante Zeichnungssätze
+### KS-10 — Welle / Arme
+- echte Wellengeometrie,
+- historisch gekröpfter Arm,
+- aktueller Fotoabgleich,
+- axiale Ebenen,
+- Eintrittsstellen,
+- Schnitt-/Innenkandidaten,
+- Keil-/Verriegelungsvarianten.
 
-Nach Human Calibration und Feldmessung:
+### KS-20 — Kranz / Krümmlinge
+- reale Kranzsegmentierung,
+- Stoßdetail,
+- Lochbilder,
+- Überlappung,
+- Innen-/Außenradius,
+- Ringebenen.
 
-1. **KS-00 Systemübersicht**
-   - Gesamtansicht,
-   - Land-/Wasserseite,
-   - Referenzsystem,
-   - Hauptbaugruppen.
+### KS-30 — Kumpf
+- Dauben,
+- Boden,
+- Reifen,
+- Neigung,
+- Befestigung,
+- langer/kurzer hölzerner Sicherungsstift,
+- Sitz-/Lochgeometrie,
+- Varianten.
 
-2. **KS-10 Welle / Armzonen**
-   - Welle,
-   - Mortisen,
-   - durchgehende Armhölzer,
-   - Keile,
-   - Lagerzapfen.
+### KS-40 — Schaufeln
+- Profil,
+- Anstellung,
+- Partner zum Kumpf,
+- Befestigung,
+- Umfangsphase.
 
-3. **KS-20 Kränze / Krümmlinge**
-   - Segmentierung,
-   - Stöße,
-   - Lochbilder,
-   - Kranzebenenabstand.
+### KS-50 — Lager / Radstatt / Trog / Rinne
+- beide Lagerbereiche,
+- Lagerkontakt,
+- Lagerstöcke,
+- Rahmenknoten,
+- Wasserweg,
+- historische Radstattzeichnung vs aktuelle Rekonstruktion.
 
-4. **KS-30 Kümpfe**
-   - Dauben,
-   - Boden,
-   - Spannringe,
-   - Aufhängung,
-   - Varianten.
+### KS-60 — Zusammenbau
+- Exploded View,
+- Bauteilgruppen,
+- Partnerbeziehungen,
+- Montage-/Demontagefolge.
 
-5. **KS-40 Schaufeln**
-   - Geometrie,
-   - Anstellwinkel,
-   - Befestigung,
-   - Umfangsphase.
+### KS-70 — Samstag / irreversibler Abbau
+- ausschließlich reale Foto-Overlays oder aus Modell erzeugte technische Detailzeichnungen,
+- Mess-/Fotopunkte,
+- Vorher/Nachher,
+- STOPP-Zonen,
+- fünf unverzichtbare Aufnahmeereignisse.
 
-6. **KS-50 Radstatt / Lager / Trog / Rinne**
-   - stationäre Bezüge,
-   - Achshöhen,
-   - Wasserlinie,
-   - funktionale Lage.
+## PDF-Regel
 
-7. **KS-60 Zusammenbau**
-   - Explosions-/Montageübersicht,
-   - Stückliste,
-   - Teil-IDs,
-   - Einbaureihenfolge.
+Der neue A3-Plan wird erst freigegeben, wenn jede Seite die Frage beantwortet:
 
-8. **KS-70 Demontage-/Prüfblätter**
-   - reale Ereignisfolge,
-   - Kontaktflächen,
-   - Messstellen,
-   - Prüfpunkte.
+> Kann ein erfahrener Monteur ohne langen Begleittext erkennen, welches reale Teil gemeint ist, wo er hinschauen muss, wo er messen muss und was nach dem Lösen verloren geht?
 
-## Nicht behauptete Normkonformität
+Wenn nein: Blatt nicht akzeptieren.
 
-Der Stil orientiert sich an klassischer europäischer/DIN-naher Zeichenpraxis der 1970er/1980er Jahre, wie sie der Zielgruppe vertraut ist. Ohne vollständige Prüfung historischer Normausgaben wird **keine formale Normkonformität** behauptet.
+## Verbotene Abkürzungen
 
-## Astra-Grenze
+Astra darf zur Fertigstellung **nicht**:
+- die bisherigen generischen SVG-Skizzen lediglich verschönern,
+- symbolische Kästchen in „CAD-Look“ umstylen,
+- technische Zeichnungsoptik ohne reale Geometrie vortäuschen,
+- Maßlinien auf perspektivische Fotos legen und dadurch Genauigkeit suggerieren,
+- für fehlende Geometrie eine einzige unbelegte Form erfinden.
 
-Die Blattvorlage und visuelle Grammatik werden in der Page vorbereitet. Maßhaltige Projektionen, Schnitte, CAD-Geometrie, Exploded Views und generierte PDF-Zeichnungssätze gehören ausdrücklich in die spätere Astra-Work-Session.
+## Gate
+
+**TECHNICAL DRAWING QUALITY PASS** bedeutet:
+- Foto-Overlay oder echte Geometrie auf jedem operativen Blatt,
+- kein primitives Platzhalterschema,
+- technische Ansichten/Schnitte dort, wo sie konstruktiv notwendig sind,
+- Feldmesspunkte aus derselben Geometrie wie Viewer/CAD,
+- druckbare A3-Qualität,
+- visueller Review aller Seiten bei 100 % und verkleinertem Überblick.

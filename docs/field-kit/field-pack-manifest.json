@@ -1,8 +1,9 @@
 {
-  "schema": "ks-field-pack/v1",
+  "schema": "ks-field-pack/v2",
   "task_source": "data/field-tasks.json",
-  "task_source_sha256": "75098f14d036878a20331fb31d5ee3ead4cd4765b02377a12e4299f140ab72c5",
-  "model_source": "src/workbench/geometry.mjs",
+  "task_source_sha256": "20d41aa86110cec20717e439289b3385482e744e59298423cb04e04a90f4f361",
+  "visual_source": "data/visual-guides.json",
+  "visual_source_sha256": "8852b38aaee569a5e147bb6a447a266c1ad5d37885d1fe2c12fcf64f17c7ef1f",
   "task_ids": [
     "TASK-ORIENT",
     "TASK-DATUM",
@@ -26,199 +27,111 @@
     "TASK-REGISTER",
     "TASK-FINAL"
   ],
+  "task_to_sheet": {
+    "TASK-ORIENT": "KS-00",
+    "TASK-DATUM": "KS-00",
+    "TASK-POSE": "KS-00",
+    "TASK-ARM-BEFORE": "KS-10",
+    "TASK-ARM-RELEASE": "KS-11",
+    "TASK-MORTISE": "KS-11",
+    "TASK-ARM-PROFILE": "KS-11",
+    "TASK-KRU-BEFORE": "KS-20",
+    "TASK-KRU-OPEN": "KS-20",
+    "TASK-COUNT": "KS-20",
+    "TASK-KUM-BEFORE": "KS-30",
+    "TASK-KUM-VARIANT": "KS-30",
+    "TASK-HOOPS": "KS-30",
+    "TASK-PAD": "KS-40",
+    "TASK-KEI": "KS-40",
+    "TASK-BEARING": "KS-50",
+    "TASK-REGISTER": "KS-50",
+    "TASK-WATER": "KS-51",
+    "TASK-SCAN": "KS-51",
+    "TASK-CRAFT": "KS-51",
+    "TASK-FINAL": "KS-51"
+  },
   "pages": [
     {
       "page": 1,
-      "code": "FK-00",
-      "title": "Wissen erhalten. Gemeinsam weitergeben."
+      "code": "KS-00",
+      "title": "Gesamtsystem und Standort",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 2,
-      "code": "FK-01",
-      "title": "Rollen und gemeinsamer Ablauf"
+      "code": "KS-10",
+      "title": "Welle und gekröpfte Arme",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 3,
-      "code": "FK-02",
-      "title": "Orientierung: Seite A / B bleiben vorläufig"
+      "code": "KS-11",
+      "title": "Innenverbindungen vergleichen",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 4,
-      "code": "TASK-ORIENT",
-      "title": "Blickseiten gemeinsam benennen"
+      "code": "KS-20",
+      "title": "Kranz und Krümmlingstoß",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 5,
-      "code": "TASK-DATUM",
-      "title": "Drei bleibende Referenzpunkte setzen"
+      "code": "KS-30",
+      "title": "Kumpf · Dauben, Boden, Reifen",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 6,
-      "code": "TASK-POSE",
-      "title": "Einbaumaße vor dem Lösen sichern"
+      "code": "KS-31",
+      "title": "Langer und kurzer Holzstift",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 7,
-      "code": "TASK-ARM-BEFORE",
-      "title": "STOPP: Armzonen vor dem ersten Keilzug"
+      "code": "KS-40",
+      "title": "Schaufel und Nachbarn",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 8,
-      "code": "TASK-ARM-RELEASE",
-      "title": "Jeden Keilzug und jede Freigabe festhalten"
+      "code": "KS-50",
+      "title": "Lager, Radstatt und unterer Rahmen",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 9,
-      "code": "TASK-MORTISE",
-      "title": "Geöffnete Wellenzone ohne Deutung aufnehmen"
+      "code": "KS-51",
+      "title": "Wasserweg · Kumpf, Trog, Rinne",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 10,
-      "code": "TASK-ARM-PROFILE",
-      "title": "Ausgebauten Arm vollständig erfassen"
+      "code": "KS-60",
+      "title": "Baugruppen und Zusammenbau",
+      "visual": "shared-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 11,
-      "code": "TASK-KRU-BEFORE",
-      "title": "STOPP: Kranzstoß vor der Trennung"
-    },
-    {
-      "page": 12,
-      "code": "TASK-KRU-OPEN",
-      "title": "Beide Stoßflächen zusammen dokumentieren"
-    },
-    {
-      "page": 13,
-      "code": "TASK-COUNT",
-      "title": "Umfangsfolge vor Ausbau sichern"
-    },
-    {
-      "page": 14,
-      "code": "TASK-KUM-BEFORE",
-      "title": "STOPP: Kumpf samt Aufhängung"
-    },
-    {
-      "page": 15,
-      "code": "TASK-KUM-VARIANT",
-      "title": "22 oder 24 mm - oder ein anderes Maß?"
-    },
-    {
-      "page": 16,
-      "code": "TASK-HOOPS",
-      "title": "Spannringe und Überlappung vergleichen"
-    },
-    {
-      "page": 17,
-      "code": "TASK-PAD",
-      "title": "Schaufel mit Nachbarn und Vorderseite"
-    },
-    {
-      "page": 18,
-      "code": "TASK-KEI",
-      "title": "Kleinteile behalten ihren Partner"
-    },
-    {
-      "page": 19,
-      "code": "TASK-BEARING",
-      "title": "STOPP: vor dem Anheben der Welle"
-    },
-    {
-      "page": 20,
-      "code": "TASK-WATER",
-      "title": "Wasserlinie, Trog und Drehrichtung"
-    },
-    {
-      "page": 21,
-      "code": "TASK-SCAN",
-      "title": "Scans mit Referenzen verbinden"
-    },
-    {
-      "page": 22,
-      "code": "TASK-CRAFT",
-      "title": "Erfahrung direkt am Teil weitergeben"
-    },
-    {
-      "page": 23,
-      "code": "TASK-REGISTER",
-      "title": "Reales Teil und Lagerplatz eintragen"
-    },
-    {
-      "page": 24,
-      "code": "TASK-FINAL",
-      "title": "Vor dem Verlassen gemeinsam prüfen"
-    },
-    {
-      "page": 25,
-      "code": "FK-H-OPEN",
-      "title": "Arm / Welle - alternative Arbeitsdarstellung"
-    },
-    {
-      "page": 26,
-      "code": "FK-H-STRAIGHT",
-      "title": "Arm / Welle - alternative Arbeitsdarstellung"
-    },
-    {
-      "page": 27,
-      "code": "FK-H-DOGLEG",
-      "title": "Arm / Welle - alternative Arbeitsdarstellung"
-    },
-    {
-      "page": 28,
-      "code": "FK-H-COPLANAR",
-      "title": "Arm / Welle - alternative Arbeitsdarstellung"
-    },
-    {
-      "page": 29,
-      "code": "FK-H-REVERSE",
-      "title": "Arm / Welle - alternative Arbeitsdarstellung"
-    },
-    {
-      "page": 30,
-      "code": "FK-V-1",
-      "title": "Alte Angaben vergleichen - offen lassen"
-    },
-    {
-      "page": 31,
-      "code": "FK-V-2",
-      "title": "Alte Angaben vergleichen - offen lassen"
-    },
-    {
-      "page": 32,
-      "code": "FK-V-3",
-      "title": "Alte Angaben vergleichen - offen lassen"
-    },
-    {
-      "page": 33,
-      "code": "FK-V-4",
-      "title": "Alte Angaben vergleichen - offen lassen"
-    },
-    {
-      "page": 34,
-      "code": "FK-R1",
-      "title": "Reale Teile / historische Marken"
-    },
-    {
-      "page": 35,
-      "code": "FK-R2",
-      "title": "Ereignisse beim Öffnen"
-    },
-    {
-      "page": 36,
-      "code": "FK-R3",
-      "title": "Lagerorte / bleibende Zuordnung"
-    },
-    {
-      "page": 37,
-      "code": "FK-R4",
-      "title": "Offene Punkte / nächste Verantwortung"
-    },
-    {
-      "page": 38,
-      "code": "FK-END",
-      "title": "Aufgabenstand am Ende gemeinsam abgleichen"
+      "code": "KS-70",
+      "title": "Fünf unersetzbare Aufnahmeereignisse",
+      "visual": "five-original-photo-event-panels",
+      "status": "VISUALLY_REVIEWED"
     }
   ],
   "format": "A3 landscape",
-  "minimum_task_body_pt": 16,
-  "physical_instances_precreated": 0
+  "physical_instances_precreated": 0,
+  "geometry_sha256": "026df25b8d796b938bb7418fd1d378f33ccf25238721fc157cf17256f0f0719a",
+  "quality_gate": "TECHNICAL DRAWING QUALITY PASS",
+  "review": "state/reconstruction/quality-review.json"
 }

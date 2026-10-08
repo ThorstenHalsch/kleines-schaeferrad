@@ -12,967 +12,150 @@
     {
       "id": "GUIDE-SYSTEM",
       "title": "Gesamtsystem und Orientierung",
-      "sheet": "KS-A01",
+      "sheet": "KS-00",
       "tasks": [
         "TASK-ORIENT",
         "TASK-DATUM",
         "TASK-POSE"
       ],
-      "primitives": [
-        {
-          "type": "circle",
-          "cx": 50,
-          "cy": 48,
-          "r": 24,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 25,
-          "y1": 48,
-          "x2": 75,
-          "y2": 48,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 8,
-          "y1": 78,
-          "x2": 92,
-          "y2": 78,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 12,
-          "y": 52,
-          "w": 6,
-          "h": 28,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 82,
-          "y": 52,
-          "w": 6,
-          "h": 28,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 12,
-          "y1": 52,
-          "x2": 88,
-          "y2": 52,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 0,
-          "y1": 86,
-          "x2": 100,
-          "y2": 86,
-          "style": "water"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Gesamtes Rad und Tragwerk",
+        "2 · Wasserlinie mit Achsbezug",
+        "3 · Feste Referenzen am Rahmen"
       ],
-      "callouts": [
-        {
-          "type": "photo",
-          "id": "F01",
-          "x": 8,
-          "y": 35,
-          "tx": 34,
-          "ty": 45,
-          "label": "Übersicht Seite A"
-        },
-        {
-          "type": "photo",
-          "id": "F02",
-          "x": 92,
-          "y": 35,
-          "tx": 66,
-          "ty": 45,
-          "label": "Übersicht Seite B"
-        },
-        {
-          "type": "measure",
-          "id": "M01",
-          "x1": 26,
-          "y1": 22,
-          "x2": 74,
-          "y2": 22,
-          "label": "Raddurchmesser"
-        },
-        {
-          "type": "measure",
-          "id": "M02",
-          "x1": 25,
-          "y1": 48,
-          "x2": 75,
-          "y2": 48,
-          "label": "Wellen-/Kranzbezug"
-        },
-        {
-          "type": "datum",
-          "id": "D-A",
-          "x": 18,
-          "y": 76,
-          "label": "DATUM-A"
-        },
-        {
-          "type": "datum",
-          "id": "D-B",
-          "x": 50,
-          "y": 76,
-          "label": "DATUM-B"
-        },
-        {
-          "type": "datum",
-          "id": "D-C",
-          "x": 84,
-          "y": 76,
-          "label": "DATUM-C"
-        }
-      ],
-      "note": "Seite A/B, Land/Wasser, Fluss und Drehrichtung erst vor Ort bestätigen."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6812.jpeg",
+      "visual_asset": "field-visuals/GUIDE-SYSTEM.svg"
     },
     {
       "id": "GUIDE-ARM-BEFORE",
       "title": "Welle und Arme - vor dem ersten Lösen",
-      "sheet": "KS-A02",
+      "sheet": "KS-10",
       "tasks": [
         "TASK-ARM-BEFORE"
       ],
-      "primitives": [
-        {
-          "type": "rect",
-          "x": 34,
-          "y": 39,
-          "w": 32,
-          "h": 22,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 12,
-          "y1": 50,
-          "x2": 88,
-          "y2": 50,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 22,
-          "y1": 16,
-          "x2": 78,
-          "y2": 84,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 22,
-          "y1": 84,
-          "x2": 78,
-          "y2": 16,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 50,
-          "y1": 8,
-          "x2": 50,
-          "y2": 92,
-          "style": "solid"
-        },
-        {
-          "type": "rect",
-          "x": 38,
-          "y": 42,
-          "w": 24,
-          "h": 16,
-          "style": "unknown"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Welle und Eintrittsstelle",
+        "2 · Axiale Armstaffelung",
+        "3 · Lagerumfeld; Kontakt zusätzlich nah"
       ],
-      "callouts": [
-        {
-          "type": "photo",
-          "id": "F03",
-          "x": 8,
-          "y": 50,
-          "tx": 34,
-          "ty": 50,
-          "label": "axial Seite A"
-        },
-        {
-          "type": "photo",
-          "id": "F04",
-          "x": 92,
-          "y": 50,
-          "tx": 66,
-          "ty": 50,
-          "label": "axial Seite B"
-        },
-        {
-          "type": "photo",
-          "id": "F05",
-          "x": 18,
-          "y": 14,
-          "tx": 34,
-          "ty": 34,
-          "label": "Schrägansicht"
-        },
-        {
-          "type": "photo",
-          "id": "F06",
-          "x": 82,
-          "y": 86,
-          "tx": 66,
-          "ty": 66,
-          "label": "Schrägansicht"
-        },
-        {
-          "type": "measure",
-          "id": "M03",
-          "x1": 32,
-          "y1": 68,
-          "x2": 68,
-          "y2": 68,
-          "label": "axiale Eintrittslagen"
-        },
-        {
-          "type": "unknown",
-          "id": "?",
-          "x": 50,
-          "y": 50,
-          "label": "Innenverbindung offen"
-        }
-      ],
-      "note": "Endpaarung und innere Verbindung nicht voraussetzen. Erst fotografieren, dann Keil lösen."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6808-upload2.jpeg",
+      "visual_asset": "field-visuals/GUIDE-ARM-BEFORE.svg"
     },
     {
       "id": "GUIDE-ARM-AFTER",
       "title": "Welle und Arme - nach dem Öffnen",
-      "sheet": "KS-A03",
+      "sheet": "KS-11",
       "tasks": [
         "TASK-ARM-RELEASE",
         "TASK-MORTISE",
         "TASK-ARM-PROFILE"
       ],
-      "primitives": [
-        {
-          "type": "rect",
-          "x": 12,
-          "y": 18,
-          "w": 34,
-          "h": 64,
-          "style": "solid"
-        },
-        {
-          "type": "rect",
-          "x": 20,
-          "y": 34,
-          "w": 18,
-          "h": 30,
-          "style": "unknown"
-        },
-        {
-          "type": "polyline",
-          "points": [
-            [
-              58,
-              78
-            ],
-            [
-              70,
-              58
-            ],
-            [
-              66,
-              40
-            ],
-            [
-              84,
-              18
-            ]
-          ],
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 56,
-          "y1": 84,
-          "x2": 88,
-          "y2": 84,
-          "style": "ghost"
-        }
+      "note": "Geometrische Kandidaten; keine bestätigte Innenverbindung.",
+      "labels": [
+        "Drei geometrische Innenkandidaten im gleichen Blick",
+        "Nach Öffnung: beide Partnerflächen und Einstecktiefe",
+        "Aktuellen Arm mit gerader Latte vollständig aufnehmen"
       ],
-      "callouts": [
-        {
-          "type": "photo",
-          "id": "F07",
-          "x": 6,
-          "y": 34,
-          "tx": 18,
-          "ty": 44,
-          "label": "Eintritt"
-        },
-        {
-          "type": "photo",
-          "id": "F08",
-          "x": 6,
-          "y": 66,
-          "tx": 18,
-          "ty": 56,
-          "label": "Austritt"
-        },
-        {
-          "type": "measure",
-          "id": "M04",
-          "x1": 20,
-          "y1": 30,
-          "x2": 38,
-          "y2": 30,
-          "label": "Einstecktiefe"
-        },
-        {
-          "type": "measure",
-          "id": "M05",
-          "x1": 58,
-          "y1": 84,
-          "x2": 84,
-          "y2": 18,
-          "label": "Armprofil / Kröpfung"
-        },
-        {
-          "type": "scan",
-          "id": "S01",
-          "x": 78,
-          "y": 66,
-          "label": "Einzelteilscan"
-        }
-      ],
-      "note": "Kontaktflächen paarweise dokumentieren. Verdeckte Bereiche bleiben als unbekannt markiert."
+      "visual_kind": "shared-geometry-projection",
+      "visual_asset": "field-visuals/GUIDE-ARM-AFTER.svg"
     },
     {
       "id": "GUIDE-RIM",
       "title": "Kranz und Krümmlingstoß",
-      "sheet": "KS-A04",
+      "sheet": "KS-20",
       "tasks": [
         "TASK-KRU-BEFORE",
         "TASK-KRU-OPEN",
         "TASK-COUNT"
       ],
-      "primitives": [
-        {
-          "type": "arc",
-          "cx": 50,
-          "cy": 55,
-          "r": 31,
-          "a0": 205,
-          "a1": 335,
-          "style": "solid"
-        },
-        {
-          "type": "arc",
-          "cx": 50,
-          "cy": 55,
-          "r": 23,
-          "a0": 205,
-          "a1": 335,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 23,
-          "y1": 70,
-          "x2": 30,
-          "y2": 64,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 70,
-          "y1": 64,
-          "x2": 77,
-          "y2": 70,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 44,
-          "y": 63,
-          "w": 12,
-          "h": 7,
-          "style": "unknown"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Kranzstöße beidseitig aufnehmen",
+        "2 · Radiale Tiefe / axiale Breite trennen",
+        "3 · Orientierung zur Welle halten"
       ],
-      "callouts": [
-        {
-          "type": "measure",
-          "id": "M10",
-          "x1": 43,
-          "y1": 74,
-          "x2": 57,
-          "y2": 74,
-          "label": "axiale Breite"
-        },
-        {
-          "type": "measure",
-          "id": "M11",
-          "x1": 50,
-          "y1": 24,
-          "x2": 50,
-          "y2": 32,
-          "label": "radiale Tiefe"
-        },
-        {
-          "type": "measure",
-          "id": "M12",
-          "x1": 42,
-          "y1": 66,
-          "x2": 58,
-          "y2": 66,
-          "label": "Lochabstand"
-        },
-        {
-          "type": "photo",
-          "id": "F10",
-          "x": 20,
-          "y": 46,
-          "tx": 44,
-          "ty": 62,
-          "label": "Ringseite A"
-        },
-        {
-          "type": "photo",
-          "id": "F11",
-          "x": 80,
-          "y": 46,
-          "tx": 56,
-          "ty": 62,
-          "label": "Ringseite B"
-        },
-        {
-          "type": "photo",
-          "id": "F12",
-          "x": 50,
-          "y": 92,
-          "tx": 50,
-          "ty": 70,
-          "label": "nach Öffnung"
-        }
-      ],
-      "note": "14 cm und 15 cm können unterschiedliche Messrichtungen beschreiben - getrennt aufnehmen."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6804.jpeg",
+      "visual_asset": "field-visuals/GUIDE-RIM.svg"
     },
     {
       "id": "GUIDE-KUMPF",
       "title": "Kumpf, Dauben und Spannringe",
-      "sheet": "KS-A05",
+      "sheet": "KS-30",
       "tasks": [
         "TASK-KUM-BEFORE",
         "TASK-KUM-VARIANT",
         "TASK-HOOPS"
       ],
-      "primitives": [
-        {
-          "type": "trapezoid",
-          "points": [
-            [
-              35,
-              22
-            ],
-            [
-              65,
-              22
-            ],
-            [
-              60,
-              78
-            ],
-            [
-              40,
-              78
-            ]
-          ],
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 36,
-          "y1": 40,
-          "x2": 64,
-          "y2": 40,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 38,
-          "y1": 58,
-          "x2": 62,
-          "y2": 58,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 40,
-          "y1": 73,
-          "x2": 60,
-          "y2": 73,
-          "style": "ghost"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Dauben und Reifen",
+        "2 · Sichtbaren Holzkopf und Gegenseite aufnehmen",
+        "3 · Benachbarte Schaufel mit im Bild"
       ],
-      "callouts": [
-        {
-          "type": "measure",
-          "id": "M20",
-          "x1": 40,
-          "y1": 28,
-          "x2": 44,
-          "y2": 28,
-          "label": "Daubendicke 22/24?"
-        },
-        {
-          "type": "measure",
-          "id": "M21",
-          "x1": 35,
-          "y1": 18,
-          "x2": 65,
-          "y2": 18,
-          "label": "Außen-/Nutdurchmesser"
-        },
-        {
-          "type": "measure",
-          "id": "M22",
-          "x1": 50,
-          "y1": 70,
-          "x2": 50,
-          "y2": 78,
-          "label": "Bodenlage"
-        },
-        {
-          "type": "measure",
-          "id": "M23",
-          "x1": 34,
-          "y1": 40,
-          "x2": 66,
-          "y2": 40,
-          "label": "Ring oben"
-        },
-        {
-          "type": "measure",
-          "id": "M24",
-          "x1": 36,
-          "y1": 58,
-          "x2": 64,
-          "y2": 58,
-          "label": "Ring Mitte"
-        },
-        {
-          "type": "measure",
-          "id": "M25",
-          "x1": 38,
-          "y1": 73,
-          "x2": 62,
-          "y2": 73,
-          "label": "Ring unten"
-        },
-        {
-          "type": "photo",
-          "id": "F20",
-          "x": 18,
-          "y": 52,
-          "tx": 38,
-          "ty": 52,
-          "label": "Einbaulage"
-        },
-        {
-          "type": "photo",
-          "id": "F21",
-          "x": 82,
-          "y": 52,
-          "tx": 62,
-          "ty": 52,
-          "label": "Befestigung"
-        },
-        {
-          "type": "photo",
-          "id": "F22",
-          "x": 20,
-          "y": 28,
-          "tx": 39,
-          "ty": 36,
-          "label": "langer + kurzer Holzstift noch im Sitz"
-        },
-        {
-          "type": "photo",
-          "id": "F23",
-          "x": 80,
-          "y": 28,
-          "tx": 61,
-          "ty": 36,
-          "label": "Stiftpaar nach Ausbau + Kumpf-ID"
-        },
-        {
-          "type": "measure",
-          "id": "M26",
-          "x1": 28,
-          "y1": 88,
-          "x2": 72,
-          "y2": 88,
-          "label": "Stiftlänge / Kröpfung / Querschnitt"
-        }
-      ],
-      "note": "Kumpfneigung, Aufhängung und lang/kurz-Stiftpaar gemeinsam sichern. Funktion der hölzernen Stifte bis zur Feldbestätigung offen lassen; alte Maßvarianten nicht mitteln."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6809.jpeg",
+      "visual_asset": "field-visuals/GUIDE-KUMPF.svg"
     },
     {
       "id": "GUIDE-PADDLE",
       "title": "Schaufel / Schetter und Nachbarn",
-      "sheet": "KS-A06",
+      "sheet": "KS-40",
       "tasks": [
         "TASK-PAD",
         "TASK-KEI"
       ],
-      "primitives": [
-        {
-          "type": "line",
-          "x1": 20,
-          "y1": 35,
-          "x2": 80,
-          "y2": 35,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 20,
-          "y1": 65,
-          "x2": 80,
-          "y2": 65,
-          "style": "solid"
-        },
-        {
-          "type": "rect",
-          "x": 42,
-          "y": 30,
-          "w": 16,
-          "h": 40,
-          "style": "solid"
-        },
-        {
-          "type": "circle",
-          "cx": 32,
-          "cy": 50,
-          "r": 9,
-          "style": "ghost"
-        },
-        {
-          "type": "circle",
-          "cx": 68,
-          "cy": 50,
-          "r": 9,
-          "style": "ghost"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Schaufel mit Kumpf",
+        "2 · Befestigung und Orientierung",
+        "3 · Kranz als Bezug halten"
       ],
-      "callouts": [
-        {
-          "type": "measure",
-          "id": "M30",
-          "x1": 44,
-          "y1": 26,
-          "x2": 56,
-          "y2": 20,
-          "label": "Anstellung"
-        },
-        {
-          "type": "measure",
-          "id": "M31",
-          "x1": 42,
-          "y1": 72,
-          "x2": 58,
-          "y2": 72,
-          "label": "Befestigungslage"
-        },
-        {
-          "type": "photo",
-          "id": "F30",
-          "x": 10,
-          "y": 50,
-          "tx": 42,
-          "ty": 50,
-          "label": "eingebaut"
-        },
-        {
-          "type": "photo",
-          "id": "F31",
-          "x": 90,
-          "y": 50,
-          "tx": 58,
-          "ty": 50,
-          "label": "Vorder-/Rückseite"
-        },
-        {
-          "type": "unknown",
-          "id": "?",
-          "x": 50,
-          "y": 50,
-          "label": "Partner / Keile zuordnen"
-        }
-      ],
-      "note": "Vorderseite, Nachbarkumpf und Krümmling immer gemeinsam dokumentieren."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6811.jpeg",
+      "visual_asset": "field-visuals/GUIDE-PADDLE.svg"
     },
     {
       "id": "GUIDE-CONTEXT",
       "title": "Lager, Radstatt und stationäres Tragwerk",
-      "sheet": "KS-A07",
+      "sheet": "KS-50",
       "tasks": [
         "TASK-BEARING",
         "TASK-REGISTER"
       ],
-      "primitives": [
-        {
-          "type": "circle",
-          "cx": 50,
-          "cy": 45,
-          "r": 22,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 18,
-          "y1": 66,
-          "x2": 82,
-          "y2": 66,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 16,
-          "y": 44,
-          "w": 7,
-          "h": 38,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 77,
-          "y": 44,
-          "w": 7,
-          "h": 38,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 31,
-          "y": 50,
-          "w": 6,
-          "h": 32,
-          "style": "ghost"
-        },
-        {
-          "type": "rect",
-          "x": 63,
-          "y": 50,
-          "w": 6,
-          "h": 32,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 16,
-          "y1": 82,
-          "x2": 84,
-          "y2": 82,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 18,
-          "y1": 66,
-          "x2": 31,
-          "y2": 50,
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 82,
-          "y1": 66,
-          "x2": 69,
-          "y2": 50,
-          "style": "ghost"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Wellenauflager: näher fotografieren",
+        "2 · Untere Rahmenverbindung",
+        "3 · Pfosten / Strebe / Grundholz gemeinsam"
       ],
-      "callouts": [
-        {
-          "type": "photo",
-          "id": "F50",
-          "x": 8,
-          "y": 50,
-          "tx": 22,
-          "ty": 56,
-          "label": "Lagerstock / Rahmen"
-        },
-        {
-          "type": "photo",
-          "id": "F51",
-          "x": 92,
-          "y": 50,
-          "tx": 78,
-          "ty": 56,
-          "label": "Gegenseite"
-        },
-        {
-          "type": "measure",
-          "id": "M50",
-          "x1": 36,
-          "y1": 45,
-          "x2": 64,
-          "y2": 45,
-          "label": "Lagerzentren / Welle"
-        },
-        {
-          "type": "unknown",
-          "id": "?",
-          "x": 50,
-          "y": 76,
-          "label": "untere Rahmen / Halter"
-        },
-        {
-          "type": "unknown",
-          "id": "?",
-          "x": 23,
-          "y": 72,
-          "label": "seitliche Führungen"
-        }
-      ],
-      "note": "Stationäre Rahmen nur ghosted darstellen, bis Lage und Funktion vor Ort bestätigt sind."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6804.jpeg",
+      "visual_asset": "field-visuals/GUIDE-CONTEXT.svg"
     },
     {
       "id": "GUIDE-WATER-SCAN",
       "title": "Wasserführung, Trog, Rinne und Scans",
-      "sheet": "KS-A08",
+      "sheet": "KS-51",
       "tasks": [
         "TASK-WATER",
         "TASK-SCAN",
         "TASK-CRAFT",
         "TASK-FINAL"
       ],
-      "primitives": [
-        {
-          "type": "circle",
-          "cx": 35,
-          "cy": 42,
-          "r": 18,
-          "style": "solid"
-        },
-        {
-          "type": "line",
-          "x1": 0,
-          "y1": 66,
-          "x2": 100,
-          "y2": 66,
-          "style": "water"
-        },
-        {
-          "type": "rect",
-          "x": 54,
-          "y": 36,
-          "w": 28,
-          "h": 8,
-          "style": "ghost"
-        },
-        {
-          "type": "polyline",
-          "points": [
-            [
-              82,
-              40
-            ],
-            [
-              92,
-              46
-            ],
-            [
-              96,
-              58
-            ]
-          ],
-          "style": "ghost"
-        },
-        {
-          "type": "line",
-          "x1": 15,
-          "y1": 78,
-          "x2": 86,
-          "y2": 78,
-          "style": "ghost"
-        }
+      "note": "Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.",
+      "labels": [
+        "1 · Übergabe oben und Trog gesondert filmen",
+        "2 · Wasserlinie zur Achse messen",
+        "3 · Drei bleibende Referenzen und Kontrollmaß"
       ],
-      "callouts": [
-        {
-          "type": "measure",
-          "id": "M40",
-          "x1": 35,
-          "y1": 42,
-          "x2": 35,
-          "y2": 66,
-          "label": "Achse - Wasser"
-        },
-        {
-          "type": "measure",
-          "id": "M41",
-          "x1": 54,
-          "y1": 32,
-          "x2": 82,
-          "y2": 32,
-          "label": "Trogöffnung"
-        },
-        {
-          "type": "measure",
-          "id": "M42",
-          "x1": 82,
-          "y1": 44,
-          "x2": 96,
-          "y2": 58,
-          "label": "Trog - Rinne"
-        },
-        {
-          "type": "photo",
-          "id": "F40",
-          "x": 12,
-          "y": 64,
-          "tx": 35,
-          "ty": 62,
-          "label": "Wasserlinie"
-        },
-        {
-          "type": "scan",
-          "id": "D-A",
-          "x": 20,
-          "y": 78,
-          "label": "DATUM-A"
-        },
-        {
-          "type": "scan",
-          "id": "D-B",
-          "x": 50,
-          "y": 78,
-          "label": "DATUM-B"
-        },
-        {
-          "type": "scan",
-          "id": "D-C",
-          "x": 80,
-          "y": 78,
-          "label": "DATUM-C"
-        },
-        {
-          "type": "scan",
-          "id": "S10",
-          "x": 88,
-          "y": 22,
-          "label": "LiDAR / Photogrammetrie"
-        }
-      ],
-      "note": "Splats für Oberfläche und Kontext; Maßbezug über Handmaß/Referenzen."
+      "visual_kind": "current-photo-overlay",
+      "photo_source": "IMG_6812.jpeg",
+      "visual_asset": "field-visuals/GUIDE-WATER-SCAN.svg"
     }
   ],
   "task_visual_map": {

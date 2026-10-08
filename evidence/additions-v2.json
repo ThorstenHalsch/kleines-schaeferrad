@@ -1,0 +1,207 @@
+{
+  "schema": "ks-evidence-additions/v1",
+  "ingested_at": "2026-10-08",
+  "baseline_manifest": "evidence/manifest.json",
+  "assets": [
+    {
+      "id": "V2-IMG_6790",
+      "uploaded_name": "IMG_6790.jpeg",
+      "archive_path": "evidence/raw/IMG_6790.jpeg",
+      "sha256": "ebda0d5488546fe5b197914c58da6b77579c669809e452fcc8bf93124e0054e6",
+      "bytes": 697816,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6792",
+      "uploaded_name": "IMG_6792.jpeg",
+      "archive_path": "evidence/raw/IMG_6792.jpeg",
+      "sha256": "84375bbc12673ba188e4f6fa5ba25e46d74ab518b239c3a2bed6fdc4ef3ad8ad",
+      "bytes": 636432,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6793",
+      "uploaded_name": "IMG_6793.jpeg",
+      "archive_path": "evidence/raw/IMG_6793.jpeg",
+      "sha256": "e8999eaae15ce78042aa0ae48ce961917d96d9b3291669e4d77b922d12681be1",
+      "bytes": 643412,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6794",
+      "uploaded_name": "IMG_6794.jpeg",
+      "archive_path": "evidence/raw/IMG_6794.jpeg",
+      "sha256": "1871fb48607087f15b362915b66adc1227085c9b86503fc0efa3a1d6ca154e7f",
+      "bytes": 644026,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6795",
+      "uploaded_name": "IMG_6795.jpeg",
+      "archive_path": "evidence/raw/IMG_6795.jpeg",
+      "sha256": "00df562b9860d2685cf3f63414362b3cc78a0d858af1e91d801737c534b43d27",
+      "bytes": 661919,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6797",
+      "uploaded_name": "IMG_6797.jpeg",
+      "archive_path": "evidence/raw/IMG_6797.jpeg",
+      "sha256": "65652fc9ed636c371988213928f1a8acdb4ee034f29407cec0886e307c184ff5",
+      "bytes": 591715,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6798",
+      "uploaded_name": "IMG_6798.jpeg",
+      "archive_path": "evidence/raw/IMG_6798.jpeg",
+      "sha256": "71d66f4d9f37b4646803867c78feccf3187993e35535336eaa65224cdafa580a",
+      "bytes": 624476,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6799",
+      "uploaded_name": "IMG_6799.jpeg",
+      "archive_path": "evidence/raw/IMG_6799.jpeg",
+      "sha256": "58d29aa43057d3070b1e576030382944abb2f37ea52597c470d35e75ac316aca",
+      "bytes": 644845,
+      "duplicate_of": null,
+      "evidence_class": "historical-drawing",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6800",
+      "uploaded_name": "IMG_6800.jpeg",
+      "archive_path": "evidence/raw/IMG_6800.jpeg",
+      "sha256": "7ae6527e0d57c568cf5eec915efff8c181b3414cd518e3508d90b40f5781d912",
+      "bytes": 889040,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6801",
+      "uploaded_name": "IMG_6801.jpeg",
+      "archive_path": "evidence/raw/IMG_6801.jpeg",
+      "sha256": "4241659c6d3bf3185003e675cb08f61f76ac27b2e75f99845ae23cadac81d37e",
+      "bytes": 867812,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6803-upload2",
+      "uploaded_name": "IMG_6803(1).jpeg",
+      "archive_path": "evidence/raw/IMG_6803-upload2.jpeg",
+      "sha256": "7c42459558f402f601958bf2ea332da1a5061e694c827401c622f8aa93dcd048",
+      "bytes": 881427,
+      "duplicate_of": "evidence/raw/IMG_6803-upload2.jpeg",
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6803",
+      "uploaded_name": "IMG_6803.jpeg",
+      "archive_path": "evidence/raw/IMG_6803-upload2.jpeg",
+      "sha256": "7c42459558f402f601958bf2ea332da1a5061e694c827401c622f8aa93dcd048",
+      "bytes": 881427,
+      "duplicate_of": "evidence/raw/IMG_6803-upload2.jpeg",
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6804",
+      "uploaded_name": "IMG_6804.jpeg",
+      "archive_path": "evidence/raw/IMG_6804.jpeg",
+      "sha256": "a419e3de7d485b4ea5cb342626ef43aa4d5493582bb99a19739364bb9c6a3b3a",
+      "bytes": 903302,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6808-upload2",
+      "uploaded_name": "IMG_6808(1).jpeg",
+      "archive_path": "evidence/raw/IMG_6808-upload2.jpeg",
+      "sha256": "195078732527b5eb75e4a437e40ed2e426d3a26a64ef6a511e31b6b4b4649f6d",
+      "bytes": 791892,
+      "duplicate_of": "evidence/raw/IMG_6808-upload2.jpeg",
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6809",
+      "uploaded_name": "IMG_6809.jpeg",
+      "archive_path": "evidence/raw/IMG_6809.jpeg",
+      "sha256": "ac5890e0ac1e7f00a2d518fe2a45c794c56a748339234faf5904585a3bc2d62f",
+      "bytes": 678661,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6810",
+      "uploaded_name": "IMG_6810.jpeg",
+      "archive_path": "evidence/raw/IMG_6810.jpeg",
+      "sha256": "bf37f78ce1b05250a73a5a683714fcf124c0f6c6e7017c6e73762f3882749233",
+      "bytes": 734269,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6811",
+      "uploaded_name": "IMG_6811.jpeg",
+      "archive_path": "evidence/raw/IMG_6811.jpeg",
+      "sha256": "1f586f0bb350bd626e014e2efc437c9054ff144148fae7420b0e406aad47bcf8",
+      "bytes": 816407,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6812",
+      "uploaded_name": "IMG_6812.jpeg",
+      "archive_path": "evidence/raw/IMG_6812.jpeg",
+      "sha256": "f848cd958b6e12ee5eb383dcdad623d43e781faccfda9cc0db010be1a7e93a51",
+      "bytes": 559161,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6822",
+      "uploaded_name": "IMG_6822.jpeg",
+      "archive_path": "evidence/raw/IMG_6822.jpeg",
+      "sha256": "71a1636063c91dab52297e37e3b0eb44d98e37d8e68408e88abb4d72038a361f",
+      "bytes": 1017003,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    },
+    {
+      "id": "V2-IMG_6832",
+      "uploaded_name": "IMG_6832.jpeg",
+      "archive_path": "evidence/raw/IMG_6832.jpeg",
+      "sha256": "8d332c0429b392e7a4b460be68f5e58cd0bec6b6b8be24fb436910cd814b46a0",
+      "bytes": 973243,
+      "duplicate_of": null,
+      "evidence_class": "observed-current",
+      "metric_status": "unmeasured-photo; historical annotations are not current dimensions"
+    }
+  ]
+}

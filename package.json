@@ -11,7 +11,9 @@
     "prepare:workbench": "node scripts/build-workbench.mjs",
     "test:workbench": "node --test tests/workbench.test.mjs",
     "prepare:field": "node scripts/build-field-sketches.mjs && python scripts/build-field-pack.py",
-    "test:field": "node --test tests/field-kit.test.mjs"
+    "test:field": "node --test tests/field-kit.test.mjs",
+    "prepare:model": "node scripts/export-reconstruction.mjs",
+    "test:reconstruction": "node --test tests/mechanics.test.mjs tests/reconstruction-geometry.test.mjs && node scripts/audit-candidates.mjs"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "5.3.0",

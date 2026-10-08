@@ -1,0 +1,21 @@
+{
+  "source": "https://thorstenhalsch.github.io/Webpage-preview/",
+  "css_url": "https://thorstenhalsch.github.io/Webpage-preview/_astro/BaseLayout.DpxsZCv5.css",
+  "css_sha256": "e143134c1a94de3c18b62f69ce7b717a5d5189ddd805c8d2482c9e5636f37fd4",
+  "retrieved": "2026-10-08",
+  "tokens": {
+    "paper": "#fafbf7",
+    "white": "#fff",
+    "ink": "#172b25",
+    "muted": "#5b6962",
+    "green": "#193e35",
+    "lime": "#dbe987",
+    "soft": "#edf1e7",
+    "line": "#dce2d9",
+    "radius": "24px",
+    "max": "1240px"
+  },
+  "typography": "Manrope Variable",
+  "rhythm": "thin header rule; centered1240px width;40px viewport inset;16px grid gaps;52px minimum pill buttons; large photo/short editorial title",
+  "recovery_decision": "Preserve typography/paper/fine borders/rhythm, change dominant green to graphite with restrained identity accent per latest user instruction; keep component wood/water palette separate."
+}
