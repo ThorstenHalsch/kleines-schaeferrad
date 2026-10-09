@@ -19,11 +19,11 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/ux-tools" playwright@1.56.1
           "$RUNNER_TEMP/ux-tools/node_modules/.bin/playwright" install --with-deps chromium
-      - name: Observe deployed site; no site build or deployment
+      - name: Observe targeted follow-up; no site build or deployment
         env:
           UX_PLAYWRIGHT: ${{ runner.temp }}/ux-tools/node_modules/playwright/index.mjs
           UX_OUTPUT: test-results/ux-recovery
-        run: node tests/ux-recovery/browser-audit.mjs
+        run: node tests/ux-recovery/followup.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
