@@ -1,0 +1,144 @@
+[
+  {
+    "name": "KS-Werkstatt-Aufnahmeplan-A3.pdf",
+    "committed_sha256": "9127cc19eea3e96d20f0ed6273eb17a94f92d11230494ea83c919b7f4d3b18dc",
+    "deployed_sha256": "0e1a176dc6ba1dbac39790afdd08ba2a3ac022de33754eb585d95196a51311bf",
+    "pages": [
+      {
+        "page": 1,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Aktuelle Gesamtansicht und Radstattpl\u00e4ne; Lage und Ma\u00dfe sind rekonstruiert.",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Historisches Armprofil 6798/6799; aktuelle Wellenansichten 6800/6808.",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "pixels_equal_to_committed_pdf": false,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Quellen: evidence/raw/IMG_6856.jpeg, output/calibration/ITER-001/canonical/07-truth.png",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 4,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Historischer Radkreis 6790, 6849/6851; Stiftbild ist Kandidat.",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "pixels_equal_to_committed_pdf": false,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Quellen: evidence/raw/1000046420.jpg, evidence/raw/1000046421.jpg, evidence/raw/1000046422.jpg",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 6,
+        "pixels_equal_to_committed_pdf": false,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Quellen: evidence/raw/IMG_6809.jpeg, output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 7,
+        "pixels_equal_to_committed_pdf": false,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Quellen: evidence/raw/IMG_6854.jpeg, output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Historische Radstatt 6792\u20136797; aktuelle Rahmenansichten 6800/6804/6808.",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 9,
+        "pixels_equal_to_committed_pdf": false,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Quellen: evidence/raw/IMG_6812.jpeg, output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 10,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 6.519684791564941,
+        "small_text_examples": [
+          {
+            "text": "Gemeinsame Rekonstruktionsgeometrie; Explosionsabst\u00e4nde sind nur Darstellungsabst\u00e4nde.",
+            "pt": 6.519684791564941
+          }
+        ]
+      },
+      {
+        "page": 11,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 7.370079040527344,
+        "small_text_examples": []
+      }
+    ]
+  },
+  {
+    "name": "KS-Kurzplan-A4.pdf",
+    "committed_sha256": "ae9a27f1c62c2d491845284bc24822aad180ea0945fd02bbb9289a8da3936f80",
+    "deployed_sha256": "8ae78897cb5cb8473577f11be738b92e3113cc64bc4718985378cbc2a9b4b424",
+    "pages": [
+      {
+        "page": 1,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 7.0,
+        "small_text_examples": []
+      },
+      {
+        "page": 2,
+        "pixels_equal_to_committed_pdf": true,
+        "minimum_text_pt": 7.0,
+        "small_text_examples": []
+      }
+    ]
+  }
+]

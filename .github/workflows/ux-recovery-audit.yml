@@ -1,0 +1,32 @@
+name: UX recovery evidence only
+on:
+  push:
+    branches: ['work/ux-audit-semantic-contract-20261009']
+    paths: ['tests/ux-recovery/**', '.github/workflows/ux-recovery-audit.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install isolated audit browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/ux-tools" playwright@1.56.1
+          "$RUNNER_TEMP/ux-tools/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Observe targeted follow-up; no site build or deployment
+        env:
+          UX_PLAYWRIGHT: ${{ runner.temp }}/ux-tools/node_modules/playwright/index.mjs
+          UX_OUTPUT: test-results/ux-recovery
+        run: node tests/ux-recovery/followup.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-recovery-browser-evidence
+          path: test-results/ux-recovery/
+          retention-days: 14

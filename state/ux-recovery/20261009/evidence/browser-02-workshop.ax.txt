@@ -1,0 +1,63 @@
+Browser tab: 1, Title: "Werkstatt · Kleines Schäferrad", URL: "https://jdistlr.github.io/kleines-schaeferrad/werkstatt/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 9, 70, 93
++		117 text Lokal gesichert · 0 Einträge · noch nicht gemeinsam geprüfte Einträge
++				118 text 3D nicht verfügbar. Alle Aufgaben bleiben über Teilfinder, Quellen und Zeichnungen erreichbar.
++				119 container part-list
++					120 checkbox Welle/Achse, Value: 1
++					121 checkbox Armzone Seite A, Value: 0
++					122 checkbox Armzone Seite B, Value: 0
++					123 checkbox Arme · Endpaarung noch offen, Value: 0
++					124 checkbox Kranz Seite A, Value: 0
++					125 checkbox Kranz Seite B, Value: 0
++					126 checkbox Radkränze gemeinsam, Value: 0
++					127 checkbox Krümmlinge, Value: 0
++					128 checkbox Kümpfe/Schöpfgefäße, Value: 0
++					129 checkbox Dauben, Value: 0
++					130 checkbox Kumpfböden, Value: 0
++					131 checkbox Kumpf-Spannringe, Value: 0
++					132 checkbox Schaufeln / Schetter · Zuordnung offen, Value: 0
++					133 checkbox Keile, Holzstifte, Metallbefestiger, Bänder, Value: 0
++					134 checkbox Kumpfnägel (lang / kurz), Value: 0
++					135 checkbox Lager-/Zapfenkontaktzonen, Value: 0
++					136 checkbox Radstatt/Tragwerk, Value: 0
++					137 checkbox Schöpftrog/Gießtrog, Value: 0
++					138 checkbox Rinne hinter Trog / Ableitung, Value: 0
++					139 checkbox Biegematrize, Value: 0
++					140 checkbox Brett-/Daubenvorlage, Value: 0
++					141 checkbox Zwölfeck-Hilfsgeometrie, Value: 0
++					142 checkbox Kontaktstreifen-Vorlage, Value: 0
++					143 checkbox Lagerstöcke / Wellenauflager, Value: 0
++					144 checkbox Tragbalken / Pfostenrahmen, Value: 0
++					145 checkbox untere Trag- und Halterahmen, Value: 0
++					146 checkbox seitliche Führungs- / Auffangrahmen, Value: 0
++			147 container selection
++				148 text AUSGEWÄHLT
++				149 heading Welle/Achse, Value: 3
++					150 text Welle/Achse
++				151 text Form und aktuelle Maße sind noch nicht nachgemessen.
++				152 text 0 eigene Einträge
++				153 text ALS NÄCHSTES KLÄREN
++				154 text Räumliche Pose, Ringebenen und permanente Referenzen
++				155 text Vor erstem Lösen Land- und Wasserseite im Übersichtsbild mit Pfeilen dokumentieren; festen Bezugspunkt an verbleibender Radstatt benennen. Zwei unabhängige lange Maßstrecken + dritte Kontrollstrecke anlegen, Endpunkte im Foto. Gegenüberliegende Ringdatenflächen ausdrücklich wählen; axialen Abstand an mindestens drei Umfangsorten messen; Achs-/Lagerlage zum Bezugspunkt festhalten. Durchmesser in zwei Richtungen und axiale Gesamtbreite als Kontrolle. Alle Werte mit Einheit, Endpunktdefinition, Werkzeug und Messunsicherheit.
++				156 link Description: Befund dazu festhalten, Value: jdistlr.github.io/kleines-schaeferrad/werkstatt/#capture
++				157 link Description: Quellenbild Foto öffnen, Value: jdistlr.github.io/kleines-schaeferrad/evidence/raw/IMG_6816.jpeg
++				158 link Description: Quellenbild Foto öffnen, Value: jdistlr.github.io/kleines-schaeferrad/evidence/raw/IMG_6855.jpeg
++				159 link Description: Quellenbild Foto öffnen, Value: jdistlr.github.io/kleines-schaeferrad/evidence/raw/IMG_6800.jpeg
++				160 link Description: Quellenbild Foto öffnen, Value: jdistlr.github.io/kleines-schaeferrad/evidence/raw/IMG_6853.jpeg
++				161 link Description: Quellenbild Foto öffnen, Value: jdistlr.github.io/kleines-schaeferrad/evidence/raw/IMG_6817.jpeg
++				162 button (collapsed) Beobachtung und Rekonstruktion, Secondary Actions: Expand
++					163 text Beobachtung und Rekonstruktion
++				164 button (collapsed) Noch ungeklärt (2), Secondary Actions: Expand
++					165 text Noch ungeklärt (2)
++				166 button (collapsed) Technische Quelldaten (19), Secondary Actions: Expand
++					167 text Technische Quelldaten (19)
++				168 button (collapsed) Technische Verbindungsdaten, Secondary Actions: Expand
++					169 text Technische Verbindungsdaten
++				170 button (collapsed) Fragen an die Werkstatt, Secondary Actions: Expand
++					171 text Fragen an die Werkstatt
++				172 button (collapsed) Technische Details, Secondary Actions: Expand
++					173 text Technische Details
++				174 text 0
++			175 text Noch kein Eintrag. Wähle ein Teil und erfasse die erste Beobachtung.
+The focused UI element is 1 AXWebArea Werkstatt · Kleines Schäferrad, URL: jdistlr.github.io/kleines-schaeferrad/werkstatt/

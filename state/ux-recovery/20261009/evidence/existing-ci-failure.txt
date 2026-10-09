@@ -1,0 +1,7 @@
+Existing initial PR10 CI, before UX audit changes.
+Run https://github.com/jdistlr/kleines-schaeferrad/actions/runs/37894488501
+Job 113702604643, Field workbench acceptance.
+2026-10-09T06:39:58.6783665Z page.goto: Timeout 30000ms exceeded.
+Navigating to http://127.0.0.1:4321/kleines-schaeferrad/werkstatt/, waiting until load.
+at tests/browser-field.mjs:27:84
+Failure precedes our audit commits; underlying cause not diagnosed by this UX-only task.

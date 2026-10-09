@@ -1,0 +1,632 @@
+[
+  {
+    "url": "/kleines-schaeferrad/",
+    "bytes": 6583,
+    "sha256": "3c77e88cf7ea58b15b7011ef8881acbabb8cde1ea5cc0ece59a104c556824a5e"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/IMG_6858.BpdSKe7f_6R4o5.webp",
+    "bytes": 284006,
+    "sha256": "f42fdfa53f62de5e52dccf855ed1a00cbc9137c5ceac1d38ed265324c0d4bf26"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/IMG_6858.BpdSKe7f_PPje9.webp",
+    "bytes": 205544,
+    "sha256": "b2faab20077864210b3e6ec5068a76cfb32da10a94e41de4457752a1f17f87f2"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/IMG_6858.BpdSKe7f_ZSXckl.webp",
+    "bytes": 102186,
+    "sha256": "0528ff9b0412bbfabeb64b244607bf7ed3145a402b554252f7374760dfcf9b2b"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/components.CwOctcfa.js",
+    "bytes": 11755,
+    "sha256": "deb5041411810742c62c8e387b120af191c515195b34b47606e5a4ba43bf7ea8"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/feld.BQCZCCtA.css",
+    "bytes": 10239,
+    "sha256": "3673a27ab5f54c73e89022c331dd4af98c76e5177c6a31c56dfb9687d5f24929"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/feld.astro_astro_type_script_index_0_lang.Dcy4sLyQ.js",
+    "bytes": 53616,
+    "sha256": "a5396972d1456c70b304319a6c85d1f39961565d1c576afdfa2cbfaa105438e1"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/index.Lw8Lp2BA.css",
+    "bytes": 7529,
+    "sha256": "e71b96707978627ade57abc200d5101c4ddf3aa852e2e34196db9e67e03a1a73"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/manrope-cyrillic-wght-normal.Dvxsihut.woff2",
+    "bytes": 14500,
+    "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/manrope-greek-wght-normal.DL7QRZyv.woff2",
+    "bytes": 9444,
+    "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/manrope-latin-ext-wght-normal.Ch3YOpNY.woff2",
+    "bytes": 15120,
+    "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/manrope-latin-wght-normal.DHIcAJRg.woff2",
+    "bytes": 24836,
+    "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/manrope-vietnamese-wght-normal.usUDDRr7.woff2",
+    "bytes": 8520,
+    "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/paths.xHReAN7e.css",
+    "bytes": 5242,
+    "sha256": "b534813981bfd87b5b897d4de3ae2fa9fd68136954ad484a1734f65457ad9936"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/werkstatt.Bg6CG69p.css",
+    "bytes": 12067,
+    "sha256": "65cf413f0698bb79dfdbb225198c46e3aac3f4aa88be35d625a9e46063daf112"
+  },
+  {
+    "url": "/kleines-schaeferrad/_astro/werkstatt.astro_astro_type_script_index_0_lang.DyxRXjLY.js",
+    "bytes": 929047,
+    "sha256": "3d2707b17eed7a199cf909d3e8c507c196eb48f286668dae1403b74395c2e49d"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-00.svg",
+    "bytes": 7722039,
+    "sha256": "254b585965954d3e8fc00a596fe36f8c992645a7e8d458477e283d9943efac64"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-10.svg",
+    "bytes": 92763,
+    "sha256": "81ced8efed3d5ea737be9dea9d0909ef74ddb3a225bf45586d8698692f77353c"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-11.svg",
+    "bytes": 57838,
+    "sha256": "25891e5176ef93fd9e23f0b205da6d56f0840a102b4525d11b75cdaa9a778e68"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-20.svg",
+    "bytes": 224444,
+    "sha256": "3d599fddf1b1c36527d303b0ad275c075ffd273a90566eb5804db7e137ce4c93"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-30.svg",
+    "bytes": 382177,
+    "sha256": "4fc18269b85cfb3c63178ffea28c83932c454a01302e16aec67c67cb29fa5a75"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-31.svg",
+    "bytes": 312832,
+    "sha256": "6496387b9b77b1a701afc4b494b44e4f771712b48439e9bfd3acef7f0bc40c18"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-40.svg",
+    "bytes": 282161,
+    "sha256": "f9c342c4d8809ed6741149b9f426aa7edd7949acab31b5b3f19774c5623c9793"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-50.svg",
+    "bytes": 253630,
+    "sha256": "e4a581e9e6a547682d37ab296282161c9cc943f40c8d45154b478f0182249523"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-51.svg",
+    "bytes": 180275,
+    "sha256": "65d9a2cca0eb057264008f86b2558121b7cbbdf6c9daf03b23bc6500c31b7a78"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-60.svg",
+    "bytes": 3914138,
+    "sha256": "bb2653b6abb44a92d402a784d871954bc8fc534b5de931df3287a1758ba0d8b4"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/KS-70.svg",
+    "bytes": 342537,
+    "sha256": "52d7d701ce9baf33edc17364ebd11ff790d67baa0eed81fe13dbf3aaec78c942"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/geometry-provenance.json",
+    "bytes": 6112,
+    "sha256": "fdd78852ca7ec24180044da47d86f3694ee8e4c08a6424700e509d999a2ba168"
+  },
+  {
+    "url": "/kleines-schaeferrad/drawings/index.html",
+    "bytes": 929,
+    "sha256": "7323057ba44f8802f0005bb4877397d23200876b95c1e5b6196d34ee16ef0061"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/additions-v2.json",
+    "bytes": 8380,
+    "sha256": "e008303de376a524925bf32b3faf94dbf040d9179b2f3195c26340a82f61d9e0"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/manifest.json",
+    "bytes": 45828,
+    "sha256": "672bf6b3faaadb9d9de5e241323422e661942735d64816d478abd38e02866fdd"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/1000046420.jpg",
+    "bytes": 151269,
+    "sha256": "a76cb11e6a27d3fa6db341408698925cd4f1b446475dbb4bbb64276db60acb22"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/1000046421.jpg",
+    "bytes": 144185,
+    "sha256": "83278627dc3b96e7f15d9290ea5dcf96575c30104d1bea7b904783f4e2a955da"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/1000046422.jpg",
+    "bytes": 133763,
+    "sha256": "b07a4a00163dfa629c0655b6e7cc261a74f93434a2b969c5938aed4089fb0da4"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/1000046423.jpg",
+    "bytes": 163254,
+    "sha256": "836b49ff126fccba4ec495660554870e52f5394649d8e03fdacf7be9f0e9f396"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6790.jpeg",
+    "bytes": 697816,
+    "sha256": "ebda0d5488546fe5b197914c58da6b77579c669809e452fcc8bf93124e0054e6"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6792.jpeg",
+    "bytes": 636432,
+    "sha256": "84375bbc12673ba188e4f6fa5ba25e46d74ab518b239c3a2bed6fdc4ef3ad8ad"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6793.jpeg",
+    "bytes": 643412,
+    "sha256": "e8999eaae15ce78042aa0ae48ce961917d96d9b3291669e4d77b922d12681be1"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6794.jpeg",
+    "bytes": 644026,
+    "sha256": "1871fb48607087f15b362915b66adc1227085c9b86503fc0efa3a1d6ca154e7f"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6795.jpeg",
+    "bytes": 661919,
+    "sha256": "00df562b9860d2685cf3f63414362b3cc78a0d858af1e91d801737c534b43d27"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6797.jpeg",
+    "bytes": 591715,
+    "sha256": "65652fc9ed636c371988213928f1a8acdb4ee034f29407cec0886e307c184ff5"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6798.jpeg",
+    "bytes": 624476,
+    "sha256": "71d66f4d9f37b4646803867c78feccf3187993e35535336eaa65224cdafa580a"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6799.jpeg",
+    "bytes": 644845,
+    "sha256": "58d29aa43057d3070b1e576030382944abb2f37ea52597c470d35e75ac316aca"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6800.jpeg",
+    "bytes": 889040,
+    "sha256": "7ae6527e0d57c568cf5eec915efff8c181b3414cd518e3508d90b40f5781d912"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6801.jpeg",
+    "bytes": 867812,
+    "sha256": "4241659c6d3bf3185003e675cb08f61f76ac27b2e75f99845ae23cadac81d37e"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6803-upload2.jpeg",
+    "bytes": 881427,
+    "sha256": "7c42459558f402f601958bf2ea332da1a5061e694c827401c622f8aa93dcd048"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6804.jpeg",
+    "bytes": 903302,
+    "sha256": "a419e3de7d485b4ea5cb342626ef43aa4d5493582bb99a19739364bb9c6a3b3a"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6808-upload2.jpeg",
+    "bytes": 791892,
+    "sha256": "195078732527b5eb75e4a437e40ed2e426d3a26a64ef6a511e31b6b4b4649f6d"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6809.jpeg",
+    "bytes": 678661,
+    "sha256": "ac5890e0ac1e7f00a2d518fe2a45c794c56a748339234faf5904585a3bc2d62f"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6810.jpeg",
+    "bytes": 734269,
+    "sha256": "bf37f78ce1b05250a73a5a683714fcf124c0f6c6e7017c6e73762f3882749233"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6811.jpeg",
+    "bytes": 816407,
+    "sha256": "1f586f0bb350bd626e014e2efc437c9054ff144148fae7420b0e406aad47bcf8"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6812.jpeg",
+    "bytes": 559161,
+    "sha256": "f848cd958b6e12ee5eb383dcdad623d43e781faccfda9cc0db010be1a7e93a51"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6816.jpeg",
+    "bytes": 583092,
+    "sha256": "9e200195f64046b7876314a90bfc01614c4a0b18447779b237e56638fe561bcd"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6817.jpeg",
+    "bytes": 585855,
+    "sha256": "fa5665fcc933b75c1c51161edb2eb3f8b2cbd7cbc804022febf00d15ea9e73cf"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6818.jpeg",
+    "bytes": 692267,
+    "sha256": "f54c4ac4b40f8424bc6beccb8313ab8fc292e79bb6edac9e8ff92cf814851df2"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6819.jpeg",
+    "bytes": 643786,
+    "sha256": "0fcf00112d053c19ccdc4296fa0eddf6b0dd6f135ab50acd14f68db38dc2b285"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6820.jpeg",
+    "bytes": 664801,
+    "sha256": "552c33f88b5a01f5a89ef64063fb96d8fefab67a633203e6096d6326176a9fda"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6821.jpeg",
+    "bytes": 652049,
+    "sha256": "7054d12136bcaec5119a71163fba8adf19050a29015c41d5b108cdb767f9a468"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6822.jpeg",
+    "bytes": 1017003,
+    "sha256": "71a1636063c91dab52297e37e3b0eb44d98e37d8e68408e88abb4d72038a361f"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6823.jpeg",
+    "bytes": 569999,
+    "sha256": "6fc02460e3a496e70ee878fcabe23d5add25b9760ae80764cdb557efebaeb6d1"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6824.jpeg",
+    "bytes": 756961,
+    "sha256": "28fc723a370c644e38c0eef699c935b4fe1cd83d72f80d646781952c7fb7a85e"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6825.jpeg",
+    "bytes": 751485,
+    "sha256": "58d1094ae10e4e0f934e9f18a662e1acebcfa280e23145387c9b536c3839c578"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6827.jpeg",
+    "bytes": 579107,
+    "sha256": "11d984aa6870b27cf8a5fd48471ba8943cd7176406d96dda12c46c4159739449"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6828.jpeg",
+    "bytes": 336665,
+    "sha256": "26b74a01c7f033a8dfbeef71694d19912ceb53de507e4ad4c1c52272396f30b2"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6829.jpeg",
+    "bytes": 340602,
+    "sha256": "1cceff71a22b40b10a05f4f2b9333689b309312a1d589a092ec096db08be7aea"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6830.jpeg",
+    "bytes": 604678,
+    "sha256": "1069788c674d88a8fba0af71d5958f78dbb677ac2eb19ba0d1094a3ca7ff31d1"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6831.jpeg",
+    "bytes": 642742,
+    "sha256": "9683c5254dd8240c57b5993d0acf5ed4e2dec6068bbbfedc98535b7649043666"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6832.jpeg",
+    "bytes": 973243,
+    "sha256": "8d332c0429b392e7a4b460be68f5e58cd0bec6b6b8be24fb436910cd814b46a0"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6833.jpeg",
+    "bytes": 632468,
+    "sha256": "10a86c13ddd4d8f634eee4620999ff4d2bb00a481b108521524e4a893bc7f46b"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6836.jpeg",
+    "bytes": 653769,
+    "sha256": "ef92de97534462a32f314ee1d9e59d6977ccc5a3a3e1f6584a9eca5e569fa1fa"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6837.jpeg",
+    "bytes": 666758,
+    "sha256": "e6bbb003abcbf6dd78cd89a245a26f3a76030181f6855cfe54e1c30295b60eb1"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6838.jpeg",
+    "bytes": 671013,
+    "sha256": "f3c823e5965934cef5e739cab6eb8a4199570dc3147e06cce556ebbd0e18ef5e"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6839.jpeg",
+    "bytes": 520541,
+    "sha256": "0e9b2915c726f0aa35bc84bdb72f61274c9ee011e45b06b8d6a7f36d23c735be"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6840.jpeg",
+    "bytes": 577720,
+    "sha256": "2d6aea4ea18fabe18048d6503e6e1c33b396baedaea2ce987736a7bff08f3630"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6841.jpeg",
+    "bytes": 570465,
+    "sha256": "6f51119e71a70b38663171f64c34322b5fbf85871ba0f9abba39e39cd899c69e"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6842.jpeg",
+    "bytes": 578855,
+    "sha256": "adc623217a772dc55434364f4d479e7851eb906c65d7724ec1e17366d20148e0"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6843.jpeg",
+    "bytes": 564636,
+    "sha256": "145e4365e4dc17875801acdcb228dd939df874c77cfface80df37601717e7e22"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6844.jpeg",
+    "bytes": 572183,
+    "sha256": "b96164631e1c9e01b6013d57ecdd14d8f3387aeaa4d7ddbfb64124753af3dd6f"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6845.jpeg",
+    "bytes": 757953,
+    "sha256": "e085ad5dbd666c04718becbc82ffff259edcaa7a10aca371dbc774c9f2cb1f97"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6846.jpeg",
+    "bytes": 670869,
+    "sha256": "2997d13245e6c01e8f62369cd65ad4f0b8792de302d599bcdd837879e6b6aad2"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6847.jpeg",
+    "bytes": 698290,
+    "sha256": "ace60ee58b41dd7d43ab1e0bdb0a384f36b0479ae4dec68c0eda7ec623a0aded"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6848.jpeg",
+    "bytes": 750020,
+    "sha256": "745397683e1685d7bf0f3e0fb4a09ab3b06295e099ea17bb1eaf3a50ccd6cbab"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6849.jpeg",
+    "bytes": 745533,
+    "sha256": "aa94cf45888a828467b1af5c0a351cb9cad6e93a27c1bd00f1a9f2f5c57d7ac5"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6850.jpeg",
+    "bytes": 660844,
+    "sha256": "225de36b7ad475fb58fc4b840a5b921f3e1dd73dac81398c57300598bfcb28d2"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6851.jpeg",
+    "bytes": 666537,
+    "sha256": "8ea1fa40ee8720653bc60faab940085e60b1a05c1d841d3eb82ad325564f668b"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6852.jpeg",
+    "bytes": 680615,
+    "sha256": "05c97fa50a12a041cf8d454ece9553ebf759f03ea15ee9dd1d80adfa3dd292bd"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6853.jpeg",
+    "bytes": 896233,
+    "sha256": "97259378a3ac3a4a0f01a556b76cfecde9833827254df8613259d555a2a04f6c"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6854.jpeg",
+    "bytes": 532942,
+    "sha256": "da8c9edc016c7519831ef6e11d9d1fcff3add00c2ba8f5557db477ee61a2a515"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6855.jpeg",
+    "bytes": 794918,
+    "sha256": "4777898e89fb05b037f3dd9fd9805c8661cb899947e60e6b94c81daa8dfc60dc"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6856.jpeg",
+    "bytes": 819887,
+    "sha256": "388efbcd532d611e62bb34308b15df2d3e7fc33aebdbddf8fa0cffa011240005"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6858.jpeg",
+    "bytes": 730724,
+    "sha256": "14931a3c2b10d1e9ba6d6121db1d434d7a63d790d15f099d9b2928ace9a1a492"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6859.jpeg",
+    "bytes": 728900,
+    "sha256": "89a35e5d667c27fce445f6f3d3611999eb7d2b505b9309c3c9f4c4e170642867"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6860.jpeg",
+    "bytes": 723424,
+    "sha256": "1ed26a327717e9659cdc82e49c937d97a51c7d70f8798029f3af56ceab55ea65"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6861.jpeg",
+    "bytes": 788482,
+    "sha256": "ae274311aec8d93173a27eb8b830cc7623897c0464706032c1a2033625fd0152"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/IMG_6863.png",
+    "bytes": 179991,
+    "sha256": "b5b5e72600dffa646e9d329d1c2a1fb8915145f6d0600228be6efd1cae5fa8cb"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/Scaniverse%202026-10-07%20173556.glb",
+    "bytes": 7166952,
+    "sha256": "d28c22f282d03aa153f09c6fb1a14032cad8cb6dc20ebd32a3dc3a40ff89da28"
+  },
+  {
+    "url": "/kleines-schaeferrad/evidence/raw/Scaniverse%202026-10-07%20173556.ply",
+    "bytes": 1134521,
+    "sha256": "2eb305cd6fcbf41d5c52d1a959374f66fa4105e3eca08716f4971a42f4cc8c3b"
+  },
+  {
+    "url": "/kleines-schaeferrad/favicon.svg",
+    "bytes": 286,
+    "sha256": "e3dc3ade10117c0c19ea045b1b09527de013b6b5ec23849c7117a581e78d8652"
+  },
+  {
+    "url": "/kleines-schaeferrad/feld/",
+    "bytes": 5940,
+    "sha256": "cd6fc3d71ea5d7f71397ec7573711b2f1a4a13716bfff22b68396a29a63eb08b"
+  },
+  {
+    "url": "/kleines-schaeferrad/feld/index.html",
+    "bytes": 5940,
+    "sha256": "cd6fc3d71ea5d7f71397ec7573711b2f1a4a13716bfff22b68396a29a63eb08b"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-pack/KS-Einsatzleitung-A4.pdf",
+    "bytes": 46360,
+    "sha256": "8ae78897cb5cb8473577f11be738b92e3113cc64bc4718985378cbc2a9b4b424"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-pack/KS-Field-Pack-A3.pdf",
+    "bytes": 7128844,
+    "sha256": "0e1a176dc6ba1dbac39790afdd08ba2a3ac022de33754eb585d95196a51311bf"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-pack/KS-Kurzplan-A4.pdf",
+    "bytes": 46360,
+    "sha256": "8ae78897cb5cb8473577f11be738b92e3113cc64bc4718985378cbc2a9b4b424"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf",
+    "bytes": 7128844,
+    "sha256": "0e1a176dc6ba1dbac39790afdd08ba2a3ac022de33754eb585d95196a51311bf"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-pack/einsatzkarte-20261009.html",
+    "bytes": 5816,
+    "sha256": "7650102d2dd05dd8e9a129812a8247311b3f5a52f0362db84bc8581b00035bfb"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-ARM-AFTER.svg",
+    "bytes": 57838,
+    "sha256": "25891e5176ef93fd9e23f0b205da6d56f0840a102b4525d11b75cdaa9a778e68"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-ARM-BEFORE.jpg",
+    "bytes": 272123,
+    "sha256": "fe7c1d8f4759134274ee4dc2d2e418861464aa0ed8ff607a7ad4a2f8091a7562"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-ARM-BEFORE.svg",
+    "bytes": 726582,
+    "sha256": "e859e8bf53e2d0118043677cd9801d520a44a7cc90f12adc365edd08ce4874d2"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-CONTEXT.jpg",
+    "bytes": 466909,
+    "sha256": "f22c1e7401ac9e0f172518dd44cea792a8ac054de4f55343e6eb33807be91468"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-CONTEXT.svg",
+    "bytes": 1246066,
+    "sha256": "b6fa2bd7769bd42e0bb2549e1c2848f422686ba3280518759dae82640667dd58"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-KUMPF.jpg",
+    "bytes": 228256,
+    "sha256": "1658f0e36ddb81fd7624798715382ecb9d298e56624fa7238b7d0db4934f11bb"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-KUMPF.svg",
+    "bytes": 609596,
+    "sha256": "8d9343b30c7e0251b3a86e4df2cc29057e1703f813133367f056bb53e6fcdd26"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-PADDLE.jpg",
+    "bytes": 276449,
+    "sha256": "cda2cd072bdbe084a3e9acf7e832fee33b7316949032009762a5a87beac4000f"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-PADDLE.svg",
+    "bytes": 738090,
+    "sha256": "1af025b07bc937c629b589dd9748f9658b131afe1aa20adbfd7aefd158f7554b"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-RIM.jpg",
+    "bytes": 466909,
+    "sha256": "f22c1e7401ac9e0f172518dd44cea792a8ac054de4f55343e6eb33807be91468"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-RIM.svg",
+    "bytes": 1246026,
+    "sha256": "b99456a8975e7a9fea0d9bc6384f25ec4f7804f05e5e9ee7c4804bf3b2b8b3d5"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-SYSTEM.jpg",
+    "bytes": 283158,
+    "sha256": "7fbe572c119d662ea603590ab5646a8a36ff031cddc69cdeb80376ac8059acf5"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-SYSTEM.svg",
+    "bytes": 756044,
+    "sha256": "aae467cbdbc444dda59cb26af596e676c3689420bec5ffbd40dcefc41cea0d8e"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-WATER-SCAN.jpg",
+    "bytes": 283158,
+    "sha256": "7fbe572c119d662ea603590ab5646a8a36ff031cddc69cdeb80376ac8059acf5"
+  },
+  {
+    "url": "/kleines-schaeferrad/field-visuals/GUIDE-WATER-SCAN.svg",
+    "bytes": 756075,
+    "sha256": "8a2ffc49aefbe0f68f0c6d3d6992925501fded8cbcf6ad9a6860e635da399d7f"
+  },
+  {
+    "url": "/kleines-schaeferrad/index.html",
+    "bytes": 6583,
+    "sha256": "3c77e88cf7ea58b15b7011ef8881acbabb8cde1ea5cc0ece59a104c556824a5e"
+  },
+  {
+    "url": "/kleines-schaeferrad/manifest.webmanifest",
+    "bytes": 357,
+    "sha256": "cc2f707b12ca4ea4181b8a76bf813fcee14fd3e76bc3a1abb4393c11de3b3eaf"
+  },
+  {
+    "url": "/kleines-schaeferrad/offline-manifest.json",
+    "bytes": 7286,
+    "sha256": "fb4c0fdc2aba575251d0e8f146f9fa2f682451384deb071a0973523787d934c8"
+  },
+  {
+    "url": "/kleines-schaeferrad/sw.js",
+    "bytes": 7567,
+    "sha256": "9bf68372395965307ebb60234c679c297de97961090864a1269c2d036723f988"
+  },
+  {
+    "url": "/kleines-schaeferrad/werkstatt/",
+    "bytes": 18607,
+    "sha256": "f3385bce25b055a6cf821f6a18b754e3480b46fbf2dee1256cf2e0e5d1436030"
+  },
+  {
+    "url": "/kleines-schaeferrad/werkstatt/index.html",
+    "bytes": 18607,
+    "sha256": "f3385bce25b055a6cf821f6a18b754e3480b46fbf2dee1256cf2e0e5d1436030"
+  }
+]
