@@ -1,0 +1,23 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+07:57:41 [types] Generated 111ms
+07:57:41 [check] Getting diagnostics for Astro files in /workspace/scratch/eaf9b25b33fe/kleines-schaeferrad...
+[96mscripts/build-workbench.mjs[0m:[93m4[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'T' is declared but its value is never read.
+
+[7m4[0m import * as T from 'three';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/export-calibration.mjs[0m:[93m5[0m:[93m24[0m - [93mwarning[0m[90m ts(6133): [0m'cfg' is declared but its value is never read.
+
+[7m5[0m import {referenceKumpf,cfg,calibratedCycle} from '../src/workbench/calibration.mjs';
+[7m [0m [93m                       ~~~[0m
+
+[96msrc/workbench/calibration.mjs[0m:[93m37[0m:[93m54[0m - [93mwarning[0m[90m ts(6133): [0m'delta' is declared but its value is never read.
+
+[7m37[0m  const va=new T.Vector3(...a),vb=new T.Vector3(...b),delta=vb.clone().sub(va),mid=va.clone().lerp(vb,.72).add(new T.Vector3(0,.003,0));
+[7m  [0m [93m                                                     ~~~~~[0m
+
+Result (39 files): 
+- 0 errors
+- 0 warnings
+- 3 hints
+

@@ -1,7 +1,7 @@
 {
   "schema": "ks-field-pack/v2",
   "task_source": "data/field-tasks.json",
-  "task_source_sha256": "f36bcca8006c5a40c040a01af92304d196c295c02713cc9570b3a4b274a1f74d",
+  "task_source_sha256": "5240fac418bfc81c049bed6fdb8ae425daf31a02b91c955441070b7f8f446baa",
   "visual_source": "data/visual-guides.json",
   "visual_source_sha256": "8852b38aaee569a5e147bb6a447a266c1ad5d37885d1fe2c12fcf64f17c7ef1f",
   "task_ids": [
@@ -50,87 +50,95 @@
     "TASK-CRAFT": "KS-51",
     "TASK-FINAL": "KS-51"
   },
+  "task_additional_sheets": {
+    "TASK-KUM-BEFORE": [
+      "KS-31"
+    ]
+  },
+  "evidence_gate_source": "data/pre-disassembly-evidence-gate.json",
+  "evidence_gate_sha256": "3210c2f6d336eba56908439ed77d4afd4d38283e70083c7aaa7b5ca9aaf9ecb2",
   "pages": [
     {
       "page": 1,
       "code": "KS-00",
       "title": "Gesamtsystem und Standort",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "frozen-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 2,
       "code": "KS-10",
       "title": "Welle und gekröpfte Arme",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "frozen-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 3,
       "code": "KS-11",
       "title": "Innenverbindungen vergleichen",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "existing-source-and-candidate-decision-view",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 4,
       "code": "KS-20",
       "title": "Kranz und Krümmlingstoß",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "frozen-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 5,
       "code": "KS-30",
       "title": "Kumpf · Dauben, Boden, Reifen",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "existing-source-and-candidate-decision-view",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 6,
       "code": "KS-31",
-      "title": "Langer und kurzer Holzstift",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "title": "Kumpfnägel: Wege und Nachbarüberlappung",
+      "visual": "existing-source-and-candidate-decision-view",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 7,
       "code": "KS-40",
       "title": "Schaufel und Nachbarn",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "existing-source-and-candidate-decision-view",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 8,
       "code": "KS-50",
       "title": "Lager, Radstatt und unterer Rahmen",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "frozen-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 9,
       "code": "KS-51",
       "title": "Wasserweg · Kumpf, Trog, Rinne",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "existing-source-and-candidate-decision-view",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 10,
       "code": "KS-60",
       "title": "Baugruppen und Zusammenbau",
-      "visual": "shared-mesh-projection / original-photo",
-      "status": "REVIEW_REQUIRED"
+      "visual": "frozen-mesh-projection / original-photo",
+      "status": "VISUALLY_REVIEWED"
     },
     {
       "page": 11,
       "code": "KS-70",
       "title": "Fünf unersetzbare Aufnahmeereignisse",
       "visual": "five-original-photo-event-panels",
-      "status": "REVIEW_REQUIRED"
+      "status": "VISUALLY_REVIEWED"
     }
   ],
   "format": "A3 landscape",
   "physical_instances_precreated": 0,
   "geometry_sha256": "8f3446174a002a7282e2c445a3655632f08450db95fb6dd388d48b570025e385",
-  "quality_gate": "PENDING_VISUAL_AUDIT"
+  "quality_gate": "EVIDENCE CAPTURE LAYOUT REVIEWED",
+  "review": "state/reconstruction-loop/ITER-001/truth-critic/pdf-visual-review.json"
 }

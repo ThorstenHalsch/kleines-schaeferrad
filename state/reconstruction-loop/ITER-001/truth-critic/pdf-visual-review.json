@@ -1,0 +1,9 @@
+{
+  "verdict": "VISUAL REVIEW PASS",
+  "pdf_sha256": "9127cc19eea3e96d20f0ed6273eb17a94f92d11230494ea83c919b7f4d3b18dc",
+  "a4_sha256": "ae9a27f1c62c2d491845284bc24822aad180ea0945fd02bbb9289a8da3936f80",
+  "pages_reviewed": 11,
+  "a4_pages_reviewed": 2,
+  "method": "All pages rendered and visually inspected; lossless stream encoding change then verified pixel-identical to inspected renders.",
+  "scope": "Layout/readability/source labels only; no expert acceptance or physical field-device validation."
+}

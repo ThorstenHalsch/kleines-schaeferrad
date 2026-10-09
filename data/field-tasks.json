@@ -1,7 +1,7 @@
 {
   "schema": "ks-field-tasks/v1",
-  "revision": "FK-01",
-  "source_head": "69b26eb4037c0eacdf0554819bb0e35f0cc36819",
+  "revision": "FK-02-ITER001-TRUTH-CRITIC",
+  "source_head": "e92bebd1201fe49bf2f0f598584cfd2832a48b96",
   "status_codes": [
     "OPEN",
     "IN_PROGRESS",
@@ -60,18 +60,31 @@
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 1
+      "order": 1,
+      "capture_priority": {
+        "rank": 2,
+        "task_id": "TASK-ORIENT",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 5,
+        "window": "Vor jeder Änderung",
+        "action": "Blickseite, Fluss, Drehung und Seitenbezeichnung gemeinsam festlegen.",
+        "finding": "TC-01",
+        "sheet": "KS-00"
+      }
     },
     {
       "task_id": "TASK-DATUM",
-      "title": "Drei bleibende Referenzpunkte setzen",
+      "title": "Bleibende Referenzen und Kontrollmaß setzen",
       "component": "COMP-RADSTATT",
       "family": "COMP-RADSTATT",
       "instance": null,
       "timing": "BEFORE_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Nach dem Abbau fehlt der gemeinsame räumliche Bezug.",
-      "instruction": "DATUM-A, B und C am verbleibenden Tragwerk vorsehen, nicht auf einer Geraden. Punkte beschreiben, fotografieren und alle drei Verbindungsstrecken sowie Höhenbezug messen.",
+      "instruction": "DATUM-A/B/C nicht kollinear am verbleibenden Tragwerk setzen; Markenmitten beschreiben. Alle drei Abstände, Höhenbezug und unabhängigen vierten Prüfpunkt samt Kontrollstrecke aufnehmen. AXIS-A/B separat festlegen. Endpunkte, Einheit, Werkzeug, Unsicherheit und Messfoto für jede Strecke. Neue Marker allein registrieren den alten Scan nicht: wiedererkennbare alte Oberflächen ergänzen.",
       "photo_views": [
         "Jeder Marker nah",
         "alle Marker im Zusammenhang"
@@ -96,14 +109,27 @@
         ],
         "explanation": false
       },
-      "acceptance_evidence": "3 markierte Punkte, 3 Strecken mit Einheit/Unsicherheit und Skizze; Lage nicht kollinear.",
+      "acceptance_evidence": "Drei bleibende Marken, drei Strecken, unabhängiger vierter Prüfpunkt, AXIS-A/B, Einheiten und Unsicherheiten; alte Scan-Korrespondenz offen, falls nicht belegt.",
       "status": "OPEN",
       "source_refs": [
         "GAP-01"
       ],
       "stop_before_release": true,
       "measurement_required": true,
-      "order": 2
+      "order": 2,
+      "capture_priority": {
+        "rank": 3,
+        "task_id": "TASK-DATUM",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 15,
+        "window": "Vor jeder Änderung",
+        "action": "Drei bleibende, nicht kollineare Marken; unabhängiger vierter Prüfpunkt; AXIS-A/B und Höhenbezug.",
+        "finding": "TC-08",
+        "sheet": "KS-00"
+      }
     },
     {
       "task_id": "TASK-POSE",
@@ -147,7 +173,20 @@
       ],
       "stop_before_release": true,
       "measurement_required": true,
-      "order": 3
+      "order": 3,
+      "capture_priority": {
+        "rank": 4,
+        "task_id": "TASK-POSE",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 15,
+        "window": "Vor jedem Lösen",
+        "action": "Ringebenen, Achse und Rahmen vor Verlagerung verbinden.",
+        "finding": "TC-09",
+        "sheet": "KS-00"
+      }
     },
     {
       "task_id": "TASK-ARM-BEFORE",
@@ -198,7 +237,20 @@
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 4
+      "order": 4,
+      "capture_priority": {
+        "rank": 9,
+        "task_id": "TASK-ARM-BEFORE",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 12,
+        "window": "Vor erstem Keilzug",
+        "action": "Beide Armzonen, alte Marken, Endpaarung, axiale Reihenfolge und Keilrichtung sichern.",
+        "finding": "TC-09",
+        "sheet": "KS-10"
+      }
     },
     {
       "task_id": "TASK-ARM-RELEASE",
@@ -246,7 +298,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 5
+      "order": 5,
+      "capture_priority": {
+        "rank": 12,
+        "task_id": "TASK-ARM-RELEASE",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 5,
+        "window": "Bei jeder fachlich freigegebenen Öffnung",
+        "action": "Ein Ereignis pro Keil/Freigabe, vorher/nachher und Partner.",
+        "finding": "TC-09",
+        "sheet": "KS-11"
+      }
     },
     {
       "task_id": "TASK-MORTISE",
@@ -294,7 +359,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": true,
-      "order": 6
+      "order": 6,
+      "capture_priority": {
+        "rank": 13,
+        "task_id": "TASK-MORTISE",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 10,
+        "window": "Sofort nach Öffnung",
+        "action": "Eintritt, Austritt, Tiefe, Schulter und Restholz; ohne vorweggenommene Kandidatenzuordnung.",
+        "finding": "TC-09",
+        "sheet": "KS-11"
+      }
     },
     {
       "task_id": "TASK-ARM-PROFILE",
@@ -344,7 +422,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": true,
-      "order": 7
+      "order": 7,
+      "capture_priority": {
+        "rank": 21,
+        "task_id": "TASK-ARM-PROFILE",
+        "priority": "P1",
+        "information_gain": 4,
+        "irreversibility": 2,
+        "disassembly_evidence_risk": 2,
+        "effort_minutes_estimate": 12,
+        "window": "Nach gesichertem Ausbau",
+        "action": "Profil und Kröpfung am beschrifteten Arm mit Latte und definierten Endpunkten.",
+        "finding": "TC-09",
+        "sheet": "KS-11"
+      }
     },
     {
       "task_id": "TASK-KRU-BEFORE",
@@ -389,7 +480,20 @@
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 8
+      "order": 8,
+      "capture_priority": {
+        "rank": 11,
+        "task_id": "TASK-KRU-BEFORE",
+        "priority": "P0",
+        "information_gain": 4,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 10,
+        "window": "Vor Stoßtrennung",
+        "action": "Beide Stoßpartner und deren Orientierung markieren.",
+        "finding": "TC-09",
+        "sheet": "KS-20"
+      }
     },
     {
       "task_id": "TASK-KRU-OPEN",
@@ -433,7 +537,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 9
+      "order": 9,
+      "capture_priority": {
+        "rank": 14,
+        "task_id": "TASK-KRU-OPEN",
+        "priority": "P0",
+        "information_gain": 4,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 8,
+        "window": "Sofort nach Stoßtrennung",
+        "action": "Beide frischen Kontaktflächen, Bohrungen und Beschädigungen als Paar.",
+        "finding": "TC-09",
+        "sheet": "KS-20"
+      }
     },
     {
       "task_id": "TASK-COUNT",
@@ -479,23 +596,36 @@
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 10
+      "order": 10,
+      "capture_priority": {
+        "rank": 5,
+        "task_id": "TASK-COUNT",
+        "priority": "P0",
+        "information_gain": 4,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 4,
+        "effort_minutes_estimate": 10,
+        "window": "Vor erstem Kumpfausbau",
+        "action": "Vollständige reale Umfangsfolge einschließlich Fehlstellen und Reparaturen.",
+        "finding": "TC-04",
+        "sheet": "KS-20"
+      }
     },
     {
       "task_id": "TASK-KUM-BEFORE",
-      "title": "STOPP: Kumpf samt Aufhängung",
+      "title": "STOPP: drei Kümpfe und beide Nagelwege",
       "component": "COMP-KUEMPFE",
       "family": "COMP-KUEMPFE",
       "instance": null,
       "timing": "BEFORE_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Neigung und Befestigung sind nach Ausbau unklar.",
-      "instruction": "Jeden Kumpf in Einbaulage benennen; Öffnung, Neigung, Überlappung zum Nachbarkumpf und Befestigung am Krümmling zeigen. Langen und kurzen Kumpfnagel gemeinsam noch im Sitz, Kopfseite und Einsteckrichtung fotografieren. Abweichende Kümpfe einzeln erfassen.",
+      "instruction": "Vor jedem Nagelzug drei benachbarte Kümpfe gemeinsam beschriften: Mündung/Boden, Blickseite, Drehrichtung, über/unter und Krümmlingpartner. Vier sichtbare Lochpositionen vor Ort HA1/HA2/HB1/HB2 zuordnen. Jeden langen/kurzen Nagel mit Kopfseite bis zum Sitz verfolgen; nach Ausbau Partnerflächen und vollständigen Nagel mit Maßstab sichern. Falls ein Weg verdeckt bleibt: unbekannt protokollieren, keine Modellroute übernehmen.",
       "photo_views": [
-        "Seitenbild",
-        "Stirnbild",
-        "beide Kontakte",
-        "langer/kurzer Kumpfnagel gemeinsam im Sitz"
+        "Drei Nachbarn mit Richtung und IDs",
+        "Vier Lochpositionen und beide Köpfe",
+        "Krümmlingpartner und verdeckter Weg / offen",
+        "Nach Ausbau: Paar und Kontaktflächen"
       ],
       "measurement_endpoints": [
         "Kumpfboden / Öffnung",
@@ -514,32 +644,45 @@
       "media_requirements": {
         "photos": 4,
         "photo_labels": [
-          "Seitenbild",
-          "Stirnbild",
-          "beide Kontakte",
-          "langer/kurzer Kumpfnagel gemeinsam im Sitz"
+          "Drei Nachbarn mit Richtung und IDs",
+          "Vier Lochpositionen und beide Köpfe",
+          "Krümmlingpartner und verdeckter Weg / offen",
+          "Nach Ausbau: Paar und Kontaktflächen"
         ],
         "explanation": false
       },
-      "acceptance_evidence": "Pose, reale ID, Nachbarüberlappung, Krümmlingpartner und lang/kurz-Kumpfnagelpaar vor dem Lösen dokumentiert; exakter Nagelweg nach Öffnung nacherfasst.",
+      "acceptance_evidence": "Gerichtete Nachbarschaft; vier Loch-Labels; zwei vollständige Wege oder dokumentierte Verdeckung; reale Partner und Vorher-/Nachher-Aufnahmen.",
       "status": "OPEN",
       "source_refs": [
         "GAP-04"
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 11
+      "order": 11,
+      "capture_priority": {
+        "rank": 6,
+        "task_id": "TASK-KUM-BEFORE",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 20,
+        "window": "Vor erstem Nagelzug",
+        "action": "Drei benachbarte Kümpfe gemeinsam; vier Löcher, beide Nagelköpfe, Krümmlingpartner und Überlappung.",
+        "finding": "TC-03",
+        "sheet": "KS-31"
+      }
     },
     {
       "task_id": "TASK-KUM-VARIANT",
-      "title": "22 oder 24 mm - oder ein anderes Maß?",
+      "title": "Referenz-Kumpf: Enden und Maße aufnehmen",
       "component": "COMP-KUMPF-STAVES",
       "family": "COMP-KUMPF-STAVES",
       "instance": null,
       "timing": "AFTER_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Daubenkontakt und Nuten könnten später verdeckt sein.",
-      "instruction": "Am zugänglichen realen Teil Daubendicke messen. Alte Varianten 22/24 mm getrennt lassen. Außen-/Nutdurchmesser und Bodenlage nur dort messen, wo ohne erzwungene Zerlegung zugänglich.",
+      "instruction": "Mündung, Nut und tatsächlichen Boden am Original identifizieren; Bezugende des Zollstocks bestätigen. Länge, beide äußeren Endquerschnitte in zwei Richtungen, Daubendicke, Nutbreite/-tiefe, Bodenrücksprung und Lochmitten messen. Reales Teil, Referenzvariante und installierte Varianten getrennt halten; keine vorgegebenen Modellmaße bestätigen.",
       "photo_views": [
         "Messstelle",
         "Nut mit Maßstab",
@@ -572,7 +715,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": true,
-      "order": 12
+      "order": 12,
+      "capture_priority": {
+        "rank": 19,
+        "task_id": "TASK-KUM-VARIANT",
+        "priority": "P1",
+        "information_gain": 5,
+        "irreversibility": 2,
+        "disassembly_evidence_risk": 2,
+        "effort_minutes_estimate": 15,
+        "window": "Am zugeordneten ausgebauten Referenzteil",
+        "action": "Mündung/Boden/Nut identifizieren; tatsächliche Maße ohne Sollwertvorgabe.",
+        "finding": "TC-02",
+        "sheet": "KS-30"
+      }
     },
     {
       "task_id": "TASK-HOOPS",
@@ -617,18 +773,31 @@
       ],
       "stop_before_release": false,
       "measurement_required": true,
-      "order": 13
+      "order": 13,
+      "capture_priority": {
+        "rank": 20,
+        "task_id": "TASK-HOOPS",
+        "priority": "P1",
+        "information_gain": 3,
+        "irreversibility": 2,
+        "disassembly_evidence_risk": 2,
+        "effort_minutes_estimate": 8,
+        "window": "Am zugeordneten ausgebauten Teil",
+        "action": "Jeden Bandsitz, Umfang, Banddicke, Stoß/Überlappung und Variante messen.",
+        "finding": "TC-02",
+        "sheet": "KS-30"
+      }
     },
     {
       "task_id": "TASK-PAD",
-      "title": "Schaufel mit Nachbarn und Vorderseite",
+      "title": "Schaufel: Radbezug und Pitch trennen",
       "component": "COMP-PADDLES",
       "family": "COMP-PADDLES",
       "instance": null,
       "timing": "DURING_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Anstellung und Vorder-/Rückseite gehen verloren.",
-      "instruction": "Vor Ausbau Vorderseite, Nachbarkumpf, Krümmling und Befestiger sichern. Nach Lösen Gegenflächen mit IDs aufnehmen.",
+      "instruction": "Drei beschriftete Schaufeln mit Nachbarkumpf, Kranzebene und Wellenachse aufnehmen. Thorstens 90 Grad durch Zeigen der Bezugsflächen konkretisieren. Radialen Pitch, Umfangsphase und axialen Überstand separat messen; Vorder-/Rückseite und tatsächliche Drehrichtung sichern.",
       "photo_views": [
         "eingebaut mit Nachbarn",
         "Vorder-/Rückseite",
@@ -662,7 +831,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 14
+      "order": 14,
+      "capture_priority": {
+        "rank": 7,
+        "task_id": "TASK-PAD",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 4,
+        "effort_minutes_estimate": 12,
+        "window": "Vor Ausbau der Nachbarschaft",
+        "action": "Drei reale Schaufeln mit Wellenachse und Kranzebene; radialen Pitch getrennt messen.",
+        "finding": "TC-05",
+        "sheet": "KS-40"
+      }
     },
     {
       "task_id": "TASK-KEI",
@@ -713,7 +895,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 15
+      "order": 15,
+      "capture_priority": {
+        "rank": 15,
+        "task_id": "TASK-KEI",
+        "priority": "P0",
+        "information_gain": 4,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 4,
+        "effort_minutes_estimate": 3,
+        "window": "Bei jedem entfernten Kleinteil",
+        "action": "Nagel/Keil/Kopf behalten Partner und Einsteckrichtung; keine Sammelkiste ohne IDs.",
+        "finding": "TC-03",
+        "sheet": "KS-40"
+      }
     },
     {
       "task_id": "TASK-BEARING",
@@ -758,18 +953,31 @@
       ],
       "stop_before_release": true,
       "measurement_required": true,
-      "order": 16
+      "order": 16,
+      "capture_priority": {
+        "rank": 10,
+        "task_id": "TASK-BEARING",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 5,
+        "effort_minutes_estimate": 12,
+        "window": "Vor Entlastung und sofort danach",
+        "action": "Beide Lagerzentren zum Datum, Beilagen und reale Kontaktflächen erhalten.",
+        "finding": "TC-09",
+        "sheet": "KS-50"
+      }
     },
     {
       "task_id": "TASK-WATER",
-      "title": "Wasserlinie, Trog und Drehrichtung",
+      "title": "VOR STILLSETZEN: Wasserübergabe aufnehmen",
       "component": "COMP-TROUGH",
       "family": "COMP-TROUGH",
       "instance": null,
       "timing": "BEFORE_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Wasserstand und funktionale Lage sind zeitabhängig.",
-      "instruction": "Wasserlinie mit Uhrzeit zum festen Datum sichern. Achse, Trogöffnung und Rinnenauslauf zeigen. Beobachtete Fließ-/Drehrichtung einzeichnen; Stillstand ausdrücklich vermerken.",
+      "instruction": "Solange das Rad regulär läuft: mindestens eine vollständige Umdrehung mit Wiederholung filmen, gewählten Kumpf verfolgen, reale Drehrichtung und Zeit erfassen. Übersicht und Nahsicht der Mündung/Trogöffnung synchronisieren; Verluste mitfilmen. Wasserlinie mit Uhrzeit zum Datum, beide Trogkanten, Achse und Rinnengefälle messen. Bei Stillstand fehlende Betriebsevidenz vermerken; für die Aufnahme keinen Betrieb improvisieren.",
       "photo_views": [
         "Wasserlinie",
         "Trog zur Achse",
@@ -803,18 +1011,31 @@
       ],
       "stop_before_release": true,
       "measurement_required": true,
-      "order": 17
+      "order": 17,
+      "capture_priority": {
+        "rank": 1,
+        "task_id": "TASK-WATER",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 4,
+        "effort_minutes_estimate": 10,
+        "window": "Vor Stillsetzen",
+        "action": "Betrieb, Wasserstand und Trog relativ zu Datum/Achse sichern; Stillstand ausdrücklich als fehlende Betriebsevidenz erfassen.",
+        "finding": "TC-07",
+        "sheet": "KS-51"
+      }
     },
     {
       "task_id": "TASK-SCAN",
-      "title": "Scans mit Referenzen verbinden",
+      "title": "Scan-Datei und reale Referenzen zuordnen",
       "component": "COMP-RADSTATT",
       "family": "COMP-RADSTATT",
       "instance": null,
       "timing": "BEFORE_RELEASE",
       "priority": "P0",
       "irreversible_loss": "Scans ohne gemeinsame Marken bleiben räumlich lose.",
-      "instruction": "Alle drei bleibenden Marken und eine unabhängige Kontrollstrecke in jedem neuen Scan sichtbar halten. Geometrie: Handmaß/LiDAR/Photogrammetrie. Splats nur für Oberfläche und Kontext.",
+      "instruction": "Thorsten nach genauer Datei und Region der Schaufel-/Nagelaufnahme fragen. Originalscan erhalten; neue Aufnahme zeigt Datum-Marken, AXIS-A/B und unabhängige Kontrollstrecke. Alte Aufnahme zusätzlich über wiedererkennbare bleibende Geometrie verbinden. Fit-Punkte und separate Kontrollpunkte unterscheiden; keine automatische metrische Freigabe.",
       "photo_views": [
         "drei Marker",
         "Kontrollstrecke",
@@ -850,7 +1071,20 @@
       ],
       "stop_before_release": true,
       "measurement_required": false,
-      "order": 18
+      "order": 18,
+      "capture_priority": {
+        "rank": 8,
+        "task_id": "TASK-SCAN",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 3,
+        "effort_minutes_estimate": 15,
+        "window": "Nach Datum, vor Verlagerung",
+        "action": "Scan-Dateien zuordnen; bleibende Marken und unabhängige Kontrollstrecke mit erfassen.",
+        "finding": "TC-08",
+        "sheet": "KS-51"
+      }
     },
     {
       "task_id": "TASK-CRAFT",
@@ -895,7 +1129,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 19
+      "order": 19,
+      "capture_priority": {
+        "rank": 18,
+        "task_id": "TASK-CRAFT",
+        "priority": "P1",
+        "information_gain": 4,
+        "irreversibility": 4,
+        "disassembly_evidence_risk": 2,
+        "effort_minutes_estimate": 8,
+        "window": "Solange Fachperson am Teil ist",
+        "action": "Wortlaut getrennt von Interpretation; Geltungsbereich und Unsicherheit bestätigen.",
+        "finding": "TC-01",
+        "sheet": "KS-51"
+      }
     },
     {
       "task_id": "TASK-REGISTER",
@@ -939,18 +1186,31 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 20
+      "order": 20,
+      "capture_priority": {
+        "rank": 16,
+        "task_id": "TASK-REGISTER",
+        "priority": "P0",
+        "information_gain": 4,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 4,
+        "effort_minutes_estimate": 3,
+        "window": "Bei jedem Ausbauereignis",
+        "action": "Reale ID, alte Marke, Partner, Vorher-/Nachher-Fotos, Lagerplatz und Person.",
+        "finding": "TC-10",
+        "sheet": "KS-50"
+      }
     },
     {
       "task_id": "TASK-FINAL",
-      "title": "Vor dem Verlassen gemeinsam prüfen",
+      "title": "P0-Lücken und zweite Sicherung prüfen",
       "component": "COMP-RADSTATT",
       "family": "COMP-RADSTATT",
       "instance": null,
       "timing": "AFTER_REMOVAL",
       "priority": "P0",
       "irreversible_loss": "Ungesicherte Medien und offene Zuordnungen werden vergessen.",
-      "instruction": "Aufgabenliste, Teile, Ereignisse und Lagerplätze abgleichen. Fehlende Angaben offen markieren. Export auf zweitem Gerät einlesen; Papier und Originalmedien getrennt sichern.",
+      "instruction": "Vor dem Verlassen und nach jeder kritischen Öffnung: Originale exportieren, Sicherung auf zweitem Gerät öffnen, Foto-IDs/Teilpartner abgleichen. Jede offene P0-Aufgabe mit Grund, verlorener Gelegenheit und Zuständigkeit übergeben. CAPTURED_UNREVIEWED bedeutet aufgenommen, nicht fachlich bestätigt.",
       "photo_views": [
         "Übersicht Lagerorte",
         "beschriftete Teile"
@@ -981,7 +1241,20 @@
       ],
       "stop_before_release": false,
       "measurement_required": false,
-      "order": 21
+      "order": 21,
+      "capture_priority": {
+        "rank": 17,
+        "task_id": "TASK-FINAL",
+        "priority": "P0",
+        "information_gain": 5,
+        "irreversibility": 5,
+        "disassembly_evidence_risk": 3,
+        "effort_minutes_estimate": 10,
+        "window": "Vor Verlassen und an Haltepunkten",
+        "action": "Originale exportieren und auf zweitem Gerät öffnen; offene P0 ausdrücklich übergeben.",
+        "finding": "TC-10",
+        "sheet": "KS-51"
+      }
     }
   ]
 }
