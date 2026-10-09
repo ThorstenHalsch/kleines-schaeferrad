@@ -1,0 +1,6 @@
+{
+  "status": "NOT_EXECUTED_ENVIRONMENT_BLOCKED",
+  "reason": "No Chromium executable in this runtime. Playwright download returned invalid/truncated ZIP (End of central directory record signature not found).",
+  "substitute_evidence": ["Astro check: zero errors, three existing hints", "Astro static build passed", "All six existing field-contract tests passed", "All eleven A3 and two A4 pages visually inspected"],
+  "not_claimed": ["Browser layout acceptance for this revision", "Physical iPhone/Safari validation", "New full offline acceptance"]
+}

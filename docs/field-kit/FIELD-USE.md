@@ -1,3 +1,7 @@
+> Aktualisierung 09.10.2026: ITER-001 Truth Critic. Vor Stillsetzen zuerst Wasseraufnahme; fünf Entscheidungsansichten auf KS-11/30/31/40/51. [Priorisierter Aufnahmeplan](../../state/reconstruction-loop/ITER-001/truth-critic/CAPTURE-PLAN.md) und [unabhängiger Audit](../../state/reconstruction-loop/ITER-001/truth-critic/AUDIT.md). Das Evidenzvorbereitungs-Gate ist keine FIELD-VALIDATED-, Ist-Modell- oder Demontagefreigabe.
+
+> Mehrfachmessungen: zusätzliche Werte mit Endpunkten, Einheit, Werkzeug und Unsicherheit auf Messblatt aufnehmen und fotografieren; das digitale Formular besitzt ein Messfeld pro Aufgabe. Video im Original separat sichern und Dateiname/Zeit/Teil-ID im Erklärungsfeld notieren. KS-31 ergänzt TASK-KUM-BEFORE. IDs und digitale Aufgabenpositionen bleiben für bestehende Sitzungen erhalten.
+
 # Vor Ort arbeiten — Werkstatt- und Aufnahmeplan V2
 
 Stand: 2026-10-07

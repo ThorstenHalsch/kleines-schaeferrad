@@ -1,0 +1,416 @@
+{
+  "schema": "ks-pre-disassembly-evidence-gate/v1",
+  "base_commit": "e92bebd1201fe49bf2f0f598584cfd2832a48b96",
+  "iteration": "ITER-001",
+  "audit_verdict": "CONDITIONAL GO — evidence capture preparation only",
+  "stop_gate": "PRE-DISASSEMBLY EVIDENCE READY",
+  "as_built_release": false,
+  "disassembly_authorization": false,
+  "priority_policy": "Ordinal 1–5 judgments; rank follows capture-loss windows, not arithmetic accuracy or mechanical release order. Effort is person-minutes per initial set/event; repeat events add time.",
+  "priorities": [
+    {
+      "rank": 1,
+      "task_id": "TASK-WATER",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 4,
+      "effort_minutes_estimate": 10,
+      "window": "Vor Stillsetzen",
+      "action": "Betrieb, Wasserstand und Trog relativ zu Datum/Achse sichern; Stillstand ausdrücklich als fehlende Betriebsevidenz erfassen.",
+      "finding": "TC-07",
+      "sheet": "KS-51"
+    },
+    {
+      "rank": 2,
+      "task_id": "TASK-ORIENT",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 5,
+      "window": "Vor jeder Änderung",
+      "action": "Blickseite, Fluss, Drehung und Seitenbezeichnung gemeinsam festlegen.",
+      "finding": "TC-01",
+      "sheet": "KS-00"
+    },
+    {
+      "rank": 3,
+      "task_id": "TASK-DATUM",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 15,
+      "window": "Vor jeder Änderung",
+      "action": "Drei bleibende, nicht kollineare Marken; unabhängiger vierter Prüfpunkt; AXIS-A/B und Höhenbezug.",
+      "finding": "TC-08",
+      "sheet": "KS-00"
+    },
+    {
+      "rank": 4,
+      "task_id": "TASK-POSE",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 15,
+      "window": "Vor jedem Lösen",
+      "action": "Ringebenen, Achse und Rahmen vor Verlagerung verbinden.",
+      "finding": "TC-09",
+      "sheet": "KS-00"
+    },
+    {
+      "rank": 5,
+      "task_id": "TASK-COUNT",
+      "priority": "P0",
+      "information_gain": 4,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 4,
+      "effort_minutes_estimate": 10,
+      "window": "Vor erstem Kumpfausbau",
+      "action": "Vollständige reale Umfangsfolge einschließlich Fehlstellen und Reparaturen.",
+      "finding": "TC-04",
+      "sheet": "KS-20"
+    },
+    {
+      "rank": 6,
+      "task_id": "TASK-KUM-BEFORE",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 20,
+      "window": "Vor erstem Nagelzug",
+      "action": "Drei benachbarte Kümpfe gemeinsam; vier Löcher, beide Nagelköpfe, Krümmlingpartner und Überlappung.",
+      "finding": "TC-03",
+      "sheet": "KS-31"
+    },
+    {
+      "rank": 7,
+      "task_id": "TASK-PAD",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 4,
+      "effort_minutes_estimate": 12,
+      "window": "Vor Ausbau der Nachbarschaft",
+      "action": "Drei reale Schaufeln mit Wellenachse und Kranzebene; radialen Pitch getrennt messen.",
+      "finding": "TC-05",
+      "sheet": "KS-40"
+    },
+    {
+      "rank": 8,
+      "task_id": "TASK-SCAN",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 3,
+      "effort_minutes_estimate": 15,
+      "window": "Nach Datum, vor Verlagerung",
+      "action": "Scan-Dateien zuordnen; bleibende Marken und unabhängige Kontrollstrecke mit erfassen.",
+      "finding": "TC-08",
+      "sheet": "KS-51"
+    },
+    {
+      "rank": 9,
+      "task_id": "TASK-ARM-BEFORE",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 12,
+      "window": "Vor erstem Keilzug",
+      "action": "Beide Armzonen, alte Marken, Endpaarung, axiale Reihenfolge und Keilrichtung sichern.",
+      "finding": "TC-09",
+      "sheet": "KS-10"
+    },
+    {
+      "rank": 10,
+      "task_id": "TASK-BEARING",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 12,
+      "window": "Vor Entlastung und sofort danach",
+      "action": "Beide Lagerzentren zum Datum, Beilagen und reale Kontaktflächen erhalten.",
+      "finding": "TC-09",
+      "sheet": "KS-50"
+    },
+    {
+      "rank": 11,
+      "task_id": "TASK-KRU-BEFORE",
+      "priority": "P0",
+      "information_gain": 4,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 10,
+      "window": "Vor Stoßtrennung",
+      "action": "Beide Stoßpartner und deren Orientierung markieren.",
+      "finding": "TC-09",
+      "sheet": "KS-20"
+    },
+    {
+      "rank": 12,
+      "task_id": "TASK-ARM-RELEASE",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 5,
+      "window": "Bei jeder fachlich freigegebenen Öffnung",
+      "action": "Ein Ereignis pro Keil/Freigabe, vorher/nachher und Partner.",
+      "finding": "TC-09",
+      "sheet": "KS-11"
+    },
+    {
+      "rank": 13,
+      "task_id": "TASK-MORTISE",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 10,
+      "window": "Sofort nach Öffnung",
+      "action": "Eintritt, Austritt, Tiefe, Schulter und Restholz; ohne vorweggenommene Kandidatenzuordnung.",
+      "finding": "TC-09",
+      "sheet": "KS-11"
+    },
+    {
+      "rank": 14,
+      "task_id": "TASK-KRU-OPEN",
+      "priority": "P0",
+      "information_gain": 4,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 5,
+      "effort_minutes_estimate": 8,
+      "window": "Sofort nach Stoßtrennung",
+      "action": "Beide frischen Kontaktflächen, Bohrungen und Beschädigungen als Paar.",
+      "finding": "TC-09",
+      "sheet": "KS-20"
+    },
+    {
+      "rank": 15,
+      "task_id": "TASK-KEI",
+      "priority": "P0",
+      "information_gain": 4,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 4,
+      "effort_minutes_estimate": 3,
+      "window": "Bei jedem entfernten Kleinteil",
+      "action": "Nagel/Keil/Kopf behalten Partner und Einsteckrichtung; keine Sammelkiste ohne IDs.",
+      "finding": "TC-03",
+      "sheet": "KS-40"
+    },
+    {
+      "rank": 16,
+      "task_id": "TASK-REGISTER",
+      "priority": "P0",
+      "information_gain": 4,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 4,
+      "effort_minutes_estimate": 3,
+      "window": "Bei jedem Ausbauereignis",
+      "action": "Reale ID, alte Marke, Partner, Vorher-/Nachher-Fotos, Lagerplatz und Person.",
+      "finding": "TC-10",
+      "sheet": "KS-50"
+    },
+    {
+      "rank": 17,
+      "task_id": "TASK-FINAL",
+      "priority": "P0",
+      "information_gain": 5,
+      "irreversibility": 5,
+      "disassembly_evidence_risk": 3,
+      "effort_minutes_estimate": 10,
+      "window": "Vor Verlassen und an Haltepunkten",
+      "action": "Originale exportieren und auf zweitem Gerät öffnen; offene P0 ausdrücklich übergeben.",
+      "finding": "TC-10",
+      "sheet": "KS-51"
+    },
+    {
+      "rank": 18,
+      "task_id": "TASK-CRAFT",
+      "priority": "P1",
+      "information_gain": 4,
+      "irreversibility": 4,
+      "disassembly_evidence_risk": 2,
+      "effort_minutes_estimate": 8,
+      "window": "Solange Fachperson am Teil ist",
+      "action": "Wortlaut getrennt von Interpretation; Geltungsbereich und Unsicherheit bestätigen.",
+      "finding": "TC-01",
+      "sheet": "KS-51"
+    },
+    {
+      "rank": 19,
+      "task_id": "TASK-KUM-VARIANT",
+      "priority": "P1",
+      "information_gain": 5,
+      "irreversibility": 2,
+      "disassembly_evidence_risk": 2,
+      "effort_minutes_estimate": 15,
+      "window": "Am zugeordneten ausgebauten Referenzteil",
+      "action": "Mündung/Boden/Nut identifizieren; tatsächliche Maße ohne Sollwertvorgabe.",
+      "finding": "TC-02",
+      "sheet": "KS-30"
+    },
+    {
+      "rank": 20,
+      "task_id": "TASK-HOOPS",
+      "priority": "P1",
+      "information_gain": 3,
+      "irreversibility": 2,
+      "disassembly_evidence_risk": 2,
+      "effort_minutes_estimate": 8,
+      "window": "Am zugeordneten ausgebauten Teil",
+      "action": "Jeden Bandsitz, Umfang, Banddicke, Stoß/Überlappung und Variante messen.",
+      "finding": "TC-02",
+      "sheet": "KS-30"
+    },
+    {
+      "rank": 21,
+      "task_id": "TASK-ARM-PROFILE",
+      "priority": "P1",
+      "information_gain": 4,
+      "irreversibility": 2,
+      "disassembly_evidence_risk": 2,
+      "effort_minutes_estimate": 12,
+      "window": "Nach gesichertem Ausbau",
+      "action": "Profil und Kröpfung am beschrifteten Arm mit Latte und definierten Endpunkten.",
+      "finding": "TC-09",
+      "sheet": "KS-11"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "title": "Referenz-Kumpf: welches Ende ist welches?",
+      "sheet": "KS-30",
+      "question": "Bitte am Original Mündung, tatsächlichen Nutboden und Bezugende des Zollstocks zeigen. Ist die unten lose sichtbare Scheibe in 6420 der eingesetzte Boden oder nur abgelegt? Welche Maße gehören zu dieser Variante?",
+      "sources": [
+        "evidence/raw/1000046420.jpg",
+        "evidence/raw/1000046421.jpg",
+        "evidence/raw/1000046422.jpg",
+        "evidence/raw/1000046423.jpg"
+      ],
+      "finding": "TC-02",
+      "status": "UNANSWERED",
+      "answer": null,
+      "respondent": null,
+      "physical_ids": [],
+      "evidence_files": []
+    },
+    {
+      "id": "D2",
+      "title": "Nagelweg und Nachbarüberlappung",
+      "sheet": "KS-31",
+      "question": "Welcher Nagel läuft durch welche der vier Öffnungen zu welchem Krümmling? Durchquert der lange Nagel einen weiteren Nachbarn/Kontakt oder überbrückt er mehr Abstand? A/B/C dürfen alle falsch sein.",
+      "sources": [
+        "evidence/raw/IMG_6809.jpeg",
+        "evidence/raw/IMG_6822.jpeg",
+        "output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png"
+      ],
+      "finding": "TC-03",
+      "status": "UNANSWERED",
+      "answer": null,
+      "respondent": null,
+      "physical_ids": [],
+      "evidence_files": []
+    },
+    {
+      "id": "D3",
+      "title": "90 Grad: welche Flächen und welche Anstellung?",
+      "sheet": "KS-40",
+      "question": "Bitte Wellenachse, Rad-/Kranzebene und Brettfläche am realen Teil zeigen. Steht die Brettfläche radial, tangential oder schräg? Welche Seite läuft im Wasser voraus?",
+      "sources": [
+        "evidence/raw/IMG_6854.jpeg",
+        "evidence/raw/IMG_6861.jpeg",
+        "output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png"
+      ],
+      "finding": "TC-05",
+      "status": "UNANSWERED",
+      "answer": null,
+      "respondent": null,
+      "physical_ids": [],
+      "evidence_files": []
+    },
+    {
+      "id": "D4",
+      "title": "Welle: durchgehende Arme und reale Kontakte",
+      "sheet": "KS-11",
+      "question": "Welche Enden gehören zum selben Holz, in welcher axialen Reihenfolge? Welche Kontaktfläche wird als erste sichtbar? Bitte tatsächliche Freigabefolge erzählen, nicht aus dem Modell ableiten.",
+      "sources": [
+        "evidence/raw/IMG_6818.jpeg",
+        "evidence/raw/IMG_6831.jpeg",
+        "evidence/raw/IMG_6856.jpeg",
+        "output/calibration/ITER-001/canonical/07-truth.png"
+      ],
+      "finding": "TC-09",
+      "status": "UNANSWERED",
+      "answer": null,
+      "respondent": null,
+      "physical_ids": [],
+      "evidence_files": []
+    },
+    {
+      "id": "D5",
+      "title": "Wasserübergabe und fehlende Scans",
+      "sheet": "KS-51",
+      "question": "Kann die reale Wasserübergabe vor Stillsetzen beobachtet werden? Welche genaue Datei/Region zeigt die separat erwähnte Schaufel-/Nagelaufnahme? Falls nicht verfügbar: offen lassen.",
+      "sources": [
+        "evidence/raw/IMG_6812.jpeg",
+        "output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg",
+        "data/scan-transforms.json"
+      ],
+      "finding": "TC-07",
+      "status": "UNANSWERED",
+      "answer": null,
+      "respondent": null,
+      "physical_ids": [],
+      "evidence_files": []
+    }
+  ],
+  "sheet_notes": {
+    "KS-00": [
+      "P0: Blickseiten, Fluss/Drehung und AXIS-A/B benennen. DATUM-A/B/C bleiben am Tragwerk.",
+      "Drei Datumstrecken + unabhängiger Prüfpunkt; Endpunkte, Einheit, Werkzeug, Unsicherheit und Foto."
+    ],
+    "KS-10": [
+      "Vor erstem Keilzug beide Armzonen und alte Marken sichern. Endpaarung nicht aus Perspektive erraten.",
+      "Historische Armform ist Dokumentevidenz, kein vermessenes Ist-Teil. AXIS-A/B und axiale Reihenfolge erfassen."
+    ],
+    "KS-11": [
+      "D4: Welche Enden gehören zum selben Holz? Alle drei Innenkandidaten dürfen falsch sein.",
+      "Pro Öffnung: vorher/nachher, Partner, Eintritt/Austritt, Tiefe, Restholz und tatsächlich gewählte Freigabefolge."
+    ],
+    "KS-20": [
+      "P0: Umfangsfolge mit Start-ID und Blickrichtung sichern; 24 Modellplätze sind keine gezählten Ist-Teile.",
+      "Vor/nach Stoßtrennung beide Partnerflächen, radiale Tiefe, axiale Breite und reale Lochabstände aufnehmen."
+    ],
+    "KS-30": [
+      "D1: Mündung, Nut und Boden am Original zeigen. Lose Scheibe und eingesetzten Nutboden unterscheiden.",
+      "Länge, beide Endquerschnitte, Nut, Daubendicke und Bandsitze messen; Referenz und Einbauvarianten trennen."
+    ],
+    "KS-31": [
+      "D2: Drei Nachbarn vor Nagelzug markieren. HA1/HA2/HB1/HB2 sind erst vor Ort zuzuordnende Foto-Labels.",
+      "Jeden Weg bis zum Krümmling verfolgen; Kopf, Krümmung, Kontakt und Auszugsraum sichern. A/B/C bleiben offen."
+    ],
+    "KS-40": [
+      "D3: 90 Grad zur Radebene bestimmt den radialen Pitch nicht. Wellenachse und Brettfläche gemeinsam zeigen.",
+      "Drei Schaufeln: Vorderseite, Pitch, Phase und Überstand getrennt; unbekannte Winkel nicht aus Fotos ablesen."
+    ],
+    "KS-50": [
+      "Vor Entlastung: beide Lager zum Datum; nach Anheben: Kontaktflächen, Zapfen, Beilagen und Anschläge.",
+      "Teil-ID, alte Marke, Partner, Ereignis, Foto und Lagerplatz führen. Synthetische Lagersitze sind keine Vorlage."
+    ],
+    "KS-51": [
+      "P0 VOR STILLSETZEN: Wasserstand + Uhrzeit, reale Drehung, Mündung, Trog und Rinne im selben Ablauf filmen.",
+      "Trogkanten/Achse/Datum messen; Scan-Datei + Marker zuordnen. Bei Stillstand bleibt Betrieb unbestätigt."
+    ],
+    "KS-60": [
+      "Aufnahmefolge ist keine Demontageanweisung. Freigabe und Sicherung bestimmt das erfahrene Team vor Ort.",
+      "An jedem Haltepunkt Originale sichern; Aufnahme vollständig bedeutet noch nicht Hypothese fachlich akzeptiert."
+    ]
+  }
+}

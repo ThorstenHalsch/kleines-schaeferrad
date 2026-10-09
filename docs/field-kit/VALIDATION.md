@@ -1,3 +1,5 @@
+> Aktuelle Revision 09.10.2026: [Truth-Critic-Gate und aktuelle Prüfnachweise](../../state/reconstruction-loop/ITER-001/truth-critic/GATE.md). Die nachfolgenden älteren Nachweise bleiben historisch; insbesondere gelten frühere Browserprüfungen nicht automatisch für die neue Revision.
+
 # Pre-Disassembly Field Kit — Abnahme FK-01
 
 Stand: 2026-10-07. Ausgangspunkt: `69b26eb4037c0eacdf0554819bb0e35f0cc36819` auf `work/pre-disassembly-field-kit-20261007`.

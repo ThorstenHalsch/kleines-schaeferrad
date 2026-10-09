@@ -4,6 +4,8 @@ import json, hashlib, shutil, math, io, base64, gzip
 from xml.sax.saxutils import escape
 from PIL import Image, ImageOps
 from reportlab.pdfgen import canvas
+from reportlab import rl_config
+rl_config.useA85=0
 from reportlab.lib.pagesizes import A3,A4,landscape
 from reportlab.lib.units import mm
 from reportlab.lib.utils import ImageReader
@@ -15,9 +17,13 @@ PUBLIC=ROOT/'public/field-pack';PUBLIC.mkdir(parents=True,exist_ok=True)
 VIS=ROOT/'public/field-visuals';VIS.mkdir(parents=True,exist_ok=True)
 D=json.loads(gzip.decompress((ROOT/'docs/field-kit/model-projections.json.gz').read_bytes()));sheets=D['sheets']
 T=json.loads((ROOT/'data/field-tasks.json').read_text());G=json.loads((ROOT/'data/visual-guides.json').read_text())
+E=json.loads((ROOT/'data/pre-disassembly-evidence-gate.json').read_text())
+for sheet in sheets:
+ if sheet['id'] in E['sheet_notes']:sheet['notes']=E['sheet_notes'][sheet['id']]
+ if sheet['id']=='KS-31':sheet['title']='Kumpfnägel: Wege und Nachbarüberlappung'
 for name,file in [('KS','DejaVuSans.ttf'),('KSB','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
 W,H=420,297
-c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=landscape(A3),invariant=1)
+c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=landscape(A3),invariant=1,pageCompression=1)
 c.setTitle('Kleines Schäferrad · Technischer Aufnahmeplan ITER-001');c.setAuthor('Kleines Schäferrad')
 def line(a,b,color='#333333',width=.3,dash=None):
  c.setStrokeColor(color);c.setLineWidth(width*mm);c.setDash(*([1.7*mm,1*mm] if dash else []));c.line(a[0]*mm,a[1]*mm,b[0]*mm,b[1]*mm);c.setDash()
@@ -44,6 +50,7 @@ photo_locations={
 def photo(name,rect,overlay=False,locations=None):
  if name not in photos:
   p=ROOT/'evidence/raw'/name
+  if not p.exists():p=ROOT/name
   if not p.exists():raise FileNotFoundError(p)
   im=ImageOps.exif_transpose(Image.open(p)).convert('RGB');im.thumbnail((1600,1600));photos[name]=im
  im=photos[name];x,y,w,h=rect;scale=min(w/im.width,h/im.height);iw,ih=im.width*scale,im.height*scale;px=x+(w-iw)/2;py=y+(h-ih)/2
@@ -81,7 +88,7 @@ for i,s in enumerate(sheets):
  if i:c.showPage()
  text('KLEINES SCHÄFERRAD',13,283,3.3,True);text(s['id'],370,283,4.2,True);text(s['title'],13,269,7,True);wrap(s['action'],13,257,394,3.5)
  if s['id']=='KS-70':
-  events=[('Welle innen','IMG_6808-upload2.jpeg','STOPP vor erstem Keilzug','Danach: Innenraum, Eintritt / Austritt und Tiefe.'),('Stiftpaar am Kumpf','IMG_6809.jpeg','STOPP vor Herausziehen','Danach: lang / kurz als Paar; Sitze und Neigung.'),('Lagerkontakt','IMG_6804.jpeg','STOPP vor Entlastung','Danach: Zapfen und Kontaktfläche, beidseitig.'),('Krümmlingstoß','IMG_6804.jpeg','STOPP vor Trennen','Danach: beide Stoßflächen, Löcher und Partner.'),('Wasserübergabe','IMG_6812.jpeg','Vor Stillsetzen filmen','Aufnahme unten, Heben, Trog und Rinne gemeinsam.')]
+  events=[('Welle innen','IMG_6808-upload2.jpeg','STOPP vor erstem Keilzug','Danach: Innenraum, Eintritt / Austritt und Tiefe.'),('Kumpfnägel / Nachbarn','IMG_6809.jpeg','STOPP vor Herausziehen','Danach: beide Wege, Köpfe, Sitze und Partner.'),('Lagerkontakt','IMG_6804.jpeg','STOPP vor Entlastung','Danach: Zapfen und Kontaktfläche, beidseitig.'),('Krümmlingstoß','IMG_6804.jpeg','STOPP vor Trennen','Danach: beide Stoßflächen, Löcher und Partner.'),('Wasserübergabe','IMG_6812.jpeg','Vor Stillsetzen filmen','Aufnahme unten, Heben, Trog und Rinne gemeinsam.')]
   for k,(title,file,before,after) in enumerate(events):
    col=k%3;row=k//3;xx=13+col*133;yy=143-row*107
    text(f'{k+1} · {title}',xx,yy+91,3.8,True);photo(file,(xx,yy+26,125,60),True,{'Krümmlingstoß':[(.51,.12),(.67,.33)],'Wasserübergabe':[(.64,.29),(.51,.85)]}.get(title))
@@ -92,8 +99,23 @@ for i,s in enumerate(sheets):
   pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'five-original-photo-event-panels','status':'REVIEW_REQUIRED'})
   continue
  n=len(s['views']);ww=394/n
- # A photographed fastener pair is the primary visual on its dedicated sheet.
- for j,v in enumerate(s['views']):
+ # Existing source and canonical images only: no new geometry or reconstruction render.
+ decision_images={
+  'KS-11':['evidence/raw/IMG_6856.jpeg','output/calibration/ITER-001/canonical/07-truth.png'],
+  'KS-30':['evidence/raw/1000046420.jpg','evidence/raw/1000046421.jpg','evidence/raw/1000046422.jpg'],
+  'KS-31':['evidence/raw/IMG_6809.jpeg','output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png'],
+  'KS-40':['evidence/raw/IMG_6854.jpeg','output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png'],
+  'KS-51':['evidence/raw/IMG_6812.jpeg','output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg']}
+ imgs=decision_images.get(s['id'])
+ if imgs:
+  for k,img in enumerate(imgs):
+   xx=13+k*394/len(imgs);wwi=394/len(imgs)-6
+   text(('ORIGINALQUELLE' if img.startswith('evidence/') else 'SYNTHESE - UNBESTÄTIGT'),xx,242,3.4,True)
+   photo(img,(xx,100,wwi,135));wrap(Path(img).name,xx,96,wwi,2.5)
+  text('Entscheidung offen: am realen Teil zeigen und mit Messreferenz aufnehmen.',13,84,3.3,True)
+ # Retain existing frozen projections on other pages.
+
+ for j,v in enumerate([] if imgs else s['views']):
   xx=13+j*ww;text(v['label'],xx,243,3.5,True)
   if s['id']=='KS-31' and j==0:
    photo(s['photo'],(xx,91,ww-6,145));text('Beobachtetes Stiftpaar · unbemaßte Originalaufnahme',xx,86,3)
@@ -106,10 +128,10 @@ for i,s in enumerate(sheets):
  for note in s['notes']:yy=wrap(note,note_x,yy,note_w,3.4)-2
  text('Teil / Partner: ___________________    Maß / Werkzeug: ___________________',note_x,max(yy-3,37),3.2)
  line((note_x,29),(407,29),'#bcc1bc',.2);text('Person / Datum / Reihenfolge: __________________________________________',note_x,24,3)
- line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · 08.10.2026 · nicht maßhaltig',13,13,2.7)
- text('REKONSTRUIERT / OFFEN · keine Fertigungs- oder Demontagefreigabe',190,13,2.7)
- wrap(s['source'],13,7,390,2.3)
- pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'shared-mesh-projection / original-photo','status':'REVIEW_REQUIRED'})
+ line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · 09.10.2026 · nicht maßhaltig',13,13,2.7)
+ text('TRUTH CRITIC · OFFEN · keine Demontagefreigabe',190,13,2.7)
+ wrap(('Quellen: '+', '.join(imgs)) if imgs else s['source'],13,7,390,2.3)
+ pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'existing-source-and-candidate-decision-view' if imgs else 'frozen-mesh-projection / original-photo','status':'REVIEW_REQUIRED'})
 c.save()
 # Guides retain task identity but discard obsolete primitives and their unrelated coordinates.
 photo_specs={
@@ -130,27 +152,39 @@ for g in G['guides']:
   svg+='</svg>';(VIS/(g['id']+'.svg')).write_text(svg)
   g['labels']=labels;g['visual_kind']='current-photo-overlay';g['photo_source']=file
  else:
-  shutil.copyfile(ROOT/'public/drawings'/f'{g["sheet"]}.svg',VIS/(g['id']+'.svg'));g['labels']=['Drei geometrische Innenkandidaten im gleichen Blick','Nach Öffnung: beide Partnerflächen und Einstecktiefe','Aktuellen Arm mit gerader Latte vollständig aufnehmen'];g['visual_kind']='shared-geometry-projection'
+  # Preserve checked-in frozen field projection; do not trigger geometry export.
+  frozen=VIS/(g['id']+'.svg')
+  if not frozen.exists():raise FileNotFoundError(frozen)
+  g['labels']=['Drei geometrische Innenkandidaten im gleichen Blick','Nach Öffnung: beide Partnerflächen und Einstecktiefe','Aktuellen Arm mit gerader Latte vollständig aufnehmen'];g['visual_kind']='shared-geometry-projection'
  g['visual_asset']='field-visuals/'+g['id']+'.svg';g['note']='Aufnahmepunkte markieren Arbeitsbereiche, keine fotogrammetrischen Maße.' if name else 'Geometrische Kandidaten; keine bestätigte Innenverbindung.'
  g.pop('primitives',None);g.pop('callouts',None)
 (ROOT/'data/visual-guides.json').write_text(json.dumps(G,ensure_ascii=False,indent=2)+'\n')
 # Two-page concise A4 route, same task-to-sheet mapping.
-A=canvas.Canvas(str(OUT/'KS-Kurzplan-A4.pdf'),pagesize=landscape(A4),invariant=1);gmap={g['id']:g for g in G['guides']}
+A=canvas.Canvas(str(OUT/'KS-Kurzplan-A4.pdf'),pagesize=landscape(A4),invariant=1,pageCompression=1);gmap={g['id']:g for g in G['guides']}
+route=[next(t for t in T['tasks'] if t['task_id']==p['task_id']) for p in E['priorities']]
 for page in range(2):
  if page:A.showPage()
  A.setFont('KSB',17);A.drawString(12*mm,191*mm,'Kleines Schäferrad · Aufnahmefolge')
  A.setFont('KS',8);A.drawString(12*mm,181*mm,'Reihenfolge mit den Monteuren abstimmen. Erst aufnehmen, dann lösen.')
- for j,t in enumerate(T['tasks'][page*11:(page+1)*11]):
-  yy=(167-j*12)*mm;A.setFont('KSB',9);A.drawString(12*mm,yy,gmap[G['task_visual_map'][t['task_id']]]['sheet']);A.setFont('KS',9);A.drawString(38*mm,yy,t['title'][:82])
+ for j,t in enumerate(route[page*11:(page+1)*11]):
+  yy=(167-j*12)*mm;A.setFont('KSB',9);A.drawString(12*mm,yy,('KS-30/31' if t['task_id']=='TASK-KUM-BEFORE' else gmap[G['task_visual_map'][t['task_id']]]['sheet']));A.setFont('KS',9);A.drawString(38*mm,yy,(t['capture_priority']['priority']+' '+t['title'])[:78])
+  A.setFont('KS',7);A.drawString(38*mm,yy-4*mm,t['capture_priority']['window']+' | '+t['task_id'])
  A.setFont('KS',8);A.drawString(12*mm,20*mm,'Abschluss: Partner zugeordnet · Originale gesichert · Sicherung auf zweitem Gerät geöffnet')
 A.save()
-manifest={'schema':'ks-field-pack/v2','task_source':'data/field-tasks.json','task_source_sha256':hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest(),'visual_source':'data/visual-guides.json','visual_source_sha256':hashlib.sha256((ROOT/'data/visual-guides.json').read_bytes()).hexdigest(),'task_ids':[t['task_id'] for t in T['tasks']],'task_to_sheet':{tid:gmap[gid]['sheet'] for tid,gid in G['task_visual_map'].items()},'pages':pages,'format':'A3 landscape','physical_instances_precreated':0,'geometry_sha256':D['geometry_sha256'],'quality_gate':'PENDING_VISUAL_AUDIT'}
+manifest={'schema':'ks-field-pack/v2','task_source':'data/field-tasks.json','task_source_sha256':hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest(),'visual_source':'data/visual-guides.json','visual_source_sha256':hashlib.sha256((ROOT/'data/visual-guides.json').read_bytes()).hexdigest(),'task_ids':[t['task_id'] for t in T['tasks']],'task_to_sheet':{tid:gmap[gid]['sheet'] for tid,gid in G['task_visual_map'].items()},'task_additional_sheets':{'TASK-KUM-BEFORE':['KS-31']},'evidence_gate_source':'data/pre-disassembly-evidence-gate.json','evidence_gate_sha256':hashlib.sha256((ROOT/'data/pre-disassembly-evidence-gate.json').read_bytes()).hexdigest(),'pages':pages,'format':'A3 landscape','physical_instances_precreated':0,'geometry_sha256':D['geometry_sha256'],'quality_gate':'PENDING_VISUAL_AUDIT'}
 review_path=ROOT/'state/reconstruction/quality-review.json'
 if review_path.exists():
  review=json.loads(review_path.read_text())
  if review.get('pdf_sha256')==hashlib.sha256((OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf').read_bytes()).hexdigest() and review.get('geometry_sha256')==D['geometry_sha256'] and review.get('drawing_verdict')=='TECHNICAL DRAWING QUALITY PASS':
   manifest['quality_gate']='TECHNICAL DRAWING QUALITY PASS'
   manifest['review']='state/reconstruction/quality-review.json'
+  for page in manifest['pages']:page['status']='VISUALLY_REVIEWED'
+critic_review=ROOT/'state/reconstruction-loop/ITER-001/truth-critic/pdf-visual-review.json'
+if critic_review.exists():
+ review=json.loads(critic_review.read_text())
+ if review.get('pdf_sha256')==hashlib.sha256((OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf').read_bytes()).hexdigest() and review.get('a4_sha256')==hashlib.sha256((OUT/'KS-Kurzplan-A4.pdf').read_bytes()).hexdigest() and review.get('verdict')=='VISUAL REVIEW PASS':
+  manifest['quality_gate']='EVIDENCE CAPTURE LAYOUT REVIEWED'
+  manifest['review']='state/reconstruction-loop/ITER-001/truth-critic/pdf-visual-review.json'
   for page in manifest['pages']:page['status']='VISUALLY_REVIEWED'
 (ROOT/'docs/field-kit/field-pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 for name in['KS-Werkstatt-Aufnahmeplan-A3.pdf','KS-Kurzplan-A4.pdf']:shutil.copyfile(OUT/name,PUBLIC/name)
