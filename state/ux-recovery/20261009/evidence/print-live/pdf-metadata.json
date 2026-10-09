@@ -1,0 +1,105 @@
+[
+  {
+    "path": "/tmp/ux-deployed/field-pack/KS-Werkstatt-Aufnahmeplan-A3.pdf",
+    "sha256": "0e1a176dc6ba1dbac39790afdd08ba2a3ac022de33754eb585d95196a51311bf",
+    "pages": [
+      {
+        "page": 1,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 780,
+        "synthetic_label": false
+      },
+      {
+        "page": 2,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 767,
+        "synthetic_label": false
+      },
+      {
+        "page": 3,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 835,
+        "synthetic_label": true
+      },
+      {
+        "page": 4,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 794,
+        "synthetic_label": true
+      },
+      {
+        "page": 5,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 895,
+        "synthetic_label": false
+      },
+      {
+        "page": 6,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 930,
+        "synthetic_label": false
+      },
+      {
+        "page": 7,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 897,
+        "synthetic_label": false
+      },
+      {
+        "page": 8,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 785,
+        "synthetic_label": true
+      },
+      {
+        "page": 9,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 914,
+        "synthetic_label": false
+      },
+      {
+        "page": 10,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 764,
+        "synthetic_label": false
+      },
+      {
+        "page": 11,
+        "width_pt": 1190.551025390625,
+        "height_pt": 841.8897705078125,
+        "text_chars": 964,
+        "synthetic_label": false
+      }
+    ]
+  },
+  {
+    "path": "/tmp/ux-deployed/field-pack/KS-Kurzplan-A4.pdf",
+    "sha256": "8ae78897cb5cb8473577f11be738b92e3113cc64bc4718985378cbc2a9b4b424",
+    "pages": [
+      {
+        "page": 1,
+        "width_pt": 841.8897705078125,
+        "height_pt": 595.2755737304688,
+        "text_chars": 1098,
+        "synthetic_label": false
+      },
+      {
+        "page": 2,
+        "width_pt": 841.8897705078125,
+        "height_pt": 595.2755737304688,
+        "text_chars": 1135,
+        "synthetic_label": false
+      }
+    ]
+  }
+]

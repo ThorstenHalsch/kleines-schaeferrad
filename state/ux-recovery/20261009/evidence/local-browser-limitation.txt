@@ -1,0 +1,1 @@
+Chrome for Testing 145.0.7632.6 installed from official Google distribution. Launch failed before page load: FATAL process_singleton_posix.cc:297 socket() failed: Operation not permitted (1). No local browser acceptance claimed. Cloud browser desktop interaction possible but WebGL context unavailable; CI Chromium used for full matrix.

@@ -1,0 +1,3 @@
+Browser tab: 1, Title: "Das Kleine Schäferrad · Kleines Schäferrad", URL: "https://jdistlr.github.io/kleines-schaeferrad/".
+There has been no change in the accessibility tree.
+The focused UI element is 0 AXWebArea Das Kleine Schäferrad · Kleines Schäferrad, URL: jdistlr.github.io/kleines-schaeferrad/

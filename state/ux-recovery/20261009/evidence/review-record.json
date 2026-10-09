@@ -1,0 +1,15 @@
+{
+  "reviewer": "Independent Codex visual/function audit; not a field expert release",
+  "matrix": "21 full screenshots captured; first-viewport overviews inspected for all profiles, task/source/forms separately inspected in journey screenshots",
+  "print": "All 11 A3 and 2 A4 published pages inspected in color and grayscale overviews; detailed decision plate and native text metadata checked",
+  "synthetic_test_data": true,
+  "actual_device_tests": false,
+  "physical_print_tests": false,
+  "original_production_changes": [],
+  "image_decode_check": {
+    "images": 89,
+    "passed": true
+  },
+  "negative_results_preserved": true,
+  "scope_note": "Reduced-motion frame pair proves continuing visible changes after a 3-second delay, not a measured camera-settling threshold. Audit workflow success means evidence collection completed."
+}

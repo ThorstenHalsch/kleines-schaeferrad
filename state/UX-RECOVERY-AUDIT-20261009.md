@@ -26,3 +26,7 @@ All findings above are hypotheses grounded in code structure and previous audit 
 
 ## Sequencing
 Until demolition capture is secured: avoid risky field UI changes. After evidence intake: small UX PRs, beginning with mode separation and capture-window navigation. Preserve existing MUX tokens, human-language contract and three density levels.
+
+## Independent executed follow-up — 2026-10-09
+
+The initial UX-01–10 above remain the historical code-review hypotheses. The executed browser/print audit, including counterevidence, is now [ux-recovery/20261009/AUDIT.md](ux-recovery/20261009/AUDIT.md). In particular the water entry is CSS-hidden, not merely understated; the published synthetic print plates are brightened and generally distinguishable. Five P1 and nine P2 findings are recorded with screenshots. [Recovery plan](ux-recovery/20261009/RECOVERY-PLAN.md), [evidence](ux-recovery/20261009/EVIDENCE.md), [review gate](ux-recovery/20261009/GATE.md). No production UX implementation or reconstruction changes.
