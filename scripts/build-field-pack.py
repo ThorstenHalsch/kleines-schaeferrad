@@ -2,7 +2,7 @@
 from pathlib import Path
 import json, hashlib, shutil, math, io, base64, gzip
 from xml.sax.saxutils import escape
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageEnhance
 from reportlab.pdfgen import canvas
 from reportlab import rl_config
 rl_config.useA85=0
@@ -52,7 +52,12 @@ def photo(name,rect,overlay=False,locations=None):
   p=ROOT/'evidence/raw'/name
   if not p.exists():p=ROOT/name
   if not p.exists():raise FileNotFoundError(p)
-  im=ImageOps.exif_transpose(Image.open(p)).convert('RGB');im.thumbnail((1600,1600));photos[name]=im
+  im=ImageOps.exif_transpose(Image.open(p)).convert('RGB');im.thumbnail((1600,1600))
+  # Print-only exposure compensation for dark synthetic render plates; originals unchanged.
+  if name.startswith('output/calibration/'):
+   im=ImageEnhance.Brightness(im).enhance(1.42)
+   im=ImageEnhance.Contrast(im).enhance(1.08)
+  photos[name]=im
  im=photos[name];x,y,w,h=rect;scale=min(w/im.width,h/im.height);iw,ih=im.width*scale,im.height*scale;px=x+(w-iw)/2;py=y+(h-ih)/2
  buf=io.BytesIO();im.save(buf,format='JPEG',quality=88);buf.seek(0);c.drawImage(ImageReader(buf),px*mm,py*mm,iw*mm,ih*mm)
  if overlay:
@@ -110,7 +115,7 @@ for i,s in enumerate(sheets):
  if imgs:
   for k,img in enumerate(imgs):
    xx=13+k*394/len(imgs);wwi=394/len(imgs)-6
-   text(('ORIGINALQUELLE' if img.startswith('evidence/') else 'SYNTHESE - UNBESTÄTIGT'),xx,242,3.4,True)
+   text(('ORIGINALQUELLE' if img.startswith('evidence/') else 'SYNTHESE - AUFGEHELLT / UNBESTÄTIGT'),xx,242,3.2,True)
    photo(img,(xx,100,wwi,135));wrap(Path(img).name,xx,96,wwi,2.5)
   text('Entscheidung offen: am realen Teil zeigen und mit Messreferenz aufnehmen.',13,84,3.3,True)
  # Retain existing frozen projections on other pages.
