@@ -72,8 +72,46 @@
     "width_profile_mm": null,
     "thickness_profile_mm": null,
     "taper_angle_deg": null,
-    "status": "OPEN_TO_MEASURE",
-    "note": "Ruler photos retained as measurement references; no exact dimensions adopted in this intake."
+    "status": "PHOTO_READOUTS_AVAILABLE_EXACT_PROFILE_OPEN",
+    "note": "Length and local widths have approximate photo readouts; exact dimensions are not user-confirmed. Thickness profile and taper angle remain unresolved.",
+    "photo_readouts": [
+      {
+        "property": "overall_length",
+        "approx_mm": 440,
+        "rough_range_mm": [
+          430,
+          450
+        ],
+        "source": "evidence/raw/Welle/IMG20261010124805.jpg",
+        "status": "approximate-photo-readout",
+        "limitation": "perspective and damaged end contour"
+      },
+      {
+        "property": "local_width_near_photographed_end",
+        "approx_mm": 65,
+        "rough_range_mm": [
+          60,
+          70
+        ],
+        "source": "evidence/raw/Welle/IMG20261010124820.jpg",
+        "cross_check": "evidence/raw/Welle/IMG20261010124813.jpg",
+        "status": "approximate-photo-readout",
+        "reference": "upper broad-face edges at the ruler location"
+      },
+      {
+        "property": "local_width_in_broader_region",
+        "approx_mm": 80,
+        "rough_range_mm": [
+          70,
+          90
+        ],
+        "source": "evidence/raw/Welle/IMG20261010124828.jpg",
+        "status": "approximate-photo-readout",
+        "reference": "upper broad-face edges at the photographed ruler location; not a complete profile"
+      }
+    ],
+    "thickness_note": "Side faces are visible, but ruler is not directly placed across thickness; apparent projection is insufficient for reliable thickness readout.",
+    "taper_note": "Define whether angle refers to width or thickness taper before calculating."
   },
   "assembly": {
     "relationship": "shaft + inserted arms + Wellenkeil + additional external wedges",

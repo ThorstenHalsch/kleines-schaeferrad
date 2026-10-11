@@ -24,18 +24,28 @@ Die fünf JPEGs stammen unverändert aus dem Nutzer-Commit [8f56195 – Add resi
 | [IMG20261010124820.jpg](IMG20261010124820.jpg) | Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock |
 | [IMG20261010124828.jpg](IMG20261010124828.jpg) | Breitfläche und Seitenkante mit quer angelegtem Zollstock |
 
-Sichtbar ist ein ausgebautes Holzteil mit breiten Flächen und einer zum Ende hin verjüngten Kontur. Die Zollstockaufnahmen dienen als Referenzen zur späteren Maßauswertung. Formbeobachtung und Nutzerzuordnung werden getrennt von exakten Maßen erfasst.
+Sichtbar ist ein ausgebautes Holzteil mit breiten Flächen und einer zum Ende hin verjüngten Kontur. Die Zollstockaufnahmen liefern bereits ungefähre Längen- und Breitenmaße. Diese Fotoablesungen werden von bestätigten Fertigungsmaßen getrennt erfasst.
 
-## Offen – auszumessen beziehungsweise zuzuordnen
+## Vorhandene Maßinformationen aus den Zollstockbildern
 
-- Länge und Breitenverlauf.
-- Dickenverlauf und Keilwinkel.
+| Maß | Ungefähre Fotoablesung | Quelle / Bezug |
+|---|---|---|
+| Gesamtlänge | **ca. 44 cm**, grober Bereich 43–45 cm | Gesamtansicht IMG20261010124805.jpg, längs angelegter Zollstock; beschädigte Endkontur |
+| Breite am nah fotografierten Ende | **ca. 6,5 cm**, grober Bereich 6–7 cm | IMG20261010124820.jpg, Querablesung über die obere Breitfläche; Gegenansicht IMG20261010124813.jpg |
+| Breite im breiteren Bereich | **ca. 8 cm**, grober Bereich 7–9 cm | IMG20261010124828.jpg, Querablesung an der abgebildeten Stelle; kein vollständiger Breitenverlauf |
+
+Status: **ungefähre Fotoablesungen vorhanden**, keine bestätigten Fertigungsmaße. Bereiche sind grobe Ablesespannen, keine statistischen Unsicherheitsintervalle. Perspektive und abgenutzte Kanten begrenzen die Genauigkeit. Für Länge und diese lokalen Breiten sind bereits verwertbare Aufnahmen vorhanden; sie nicht pauschal als fehlend behandeln oder erneut anfordern.
+
+## Verbleibende Unsicherheiten
+
+- Genauer Dickenverlauf, insbesondere an beiden Enden: Seitenflächen sind sichtbar, der Zollstock liegt dort aber nicht direkt über die Dicke. Die Projektion der Seitenfläche auf eine auf der Breitfläche liegende Skala ist keine zuverlässige Dickenmessung.
+- Keilwinkel: geometrischer Bezug (Verjüngung der Breite oder Dicke) und zugehörige Endmaße vor einer Berechnung festlegen.
 - Einbaulage und Einschlagrichtung relativ zur Welle und den Armen.
 - Kontaktflächen zu den jeweiligen Armhölzern und der Welle.
 - Anzahl der Wellenkeile je Armzone und Zuordnung des fotografierten Einzelteils.
 - Anzahl, Lage und Maße der zusätzlichen äußeren Keile sowie die genaue Montagefolge.
 
-Für diese Punkte wurden keine Zahlen oder Einbaupositionen geraten. Die vorhandenen Maßstabbilder zuerst auswerten, bevor weitere Aufnahmen angefordert werden.
+Die Einbauinformationen bleiben von den vorhandenen Fotoablesungen getrennt. Die vorhandenen Maßstabbilder weiter nutzen, bevor zusätzliche Aufnahmen angefordert werden.
 
 ## Verknüpfung
 
