@@ -48,3 +48,23 @@ Weitere Bezüge in anderen Ordnern:
 - [image-1791542327774.jpg](../Radstadt/image-1791542327774.jpg) (Radstadt)
 - [image-1791542342950.jpg](../Radstadt/image-1791542342950.jpg) (Radstadt)
 - [image-1791543053651.jpg](../Radstadt/image-1791543053651.jpg) (Radstadt)
+
+## Neue Wellenaufnahmen – verkleinerte Fassungen
+
+Die großen Ausgangsdateien wurden auf Nutzerwunsch aus den Branch-Verläufen entfernt. Die folgenden JPEGs sind die verbleibenden Referenzbilder (1600 × 1200 Pixel, Qualität 80); keine unveränderten Kameraoriginale. Für feine Maßablesungen ist ihre geringere Auflösung zu berücksichtigen.
+
+| Datei | Größe |
+|---|---:|
+| [IMG20261010133248.jpg](IMG20261010133248.jpg) | 645 KB |
+| [IMG20261010133257.jpg](IMG20261010133257.jpg) | 594 KB |
+| [IMG20261010133344.jpg](IMG20261010133344.jpg) | 716 KB |
+| [IMG20261010133349.jpg](IMG20261010133349.jpg) | 621 KB |
+| [IMG20261010133352.jpg](IMG20261010133352.jpg) | 624 KB |
+| [IMG20261010133404.jpg](IMG20261010133404.jpg) | 694 KB |
+| [IMG20261010133412.jpg](IMG20261010133412.jpg) | 708 KB |
+| [IMG20261010133424.jpg](IMG20261010133424.jpg) | 549 KB |
+| [IMG20261010133430.jpg](IMG20261010133430.jpg) | 562 KB |
+| [IMG20261010133433.jpg](IMG20261010133433.jpg) | 633 KB |
+| [IMG20261010133518.jpg](IMG20261010133518.jpg) | 684 KB |
+
+[Komprimierung und Prüfsummen](../../derived/welle-compression.json) · [Weitere Bilder vorbereiten](../../PHOTO-UPLOADS.md)

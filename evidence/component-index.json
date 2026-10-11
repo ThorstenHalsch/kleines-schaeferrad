@@ -1,7 +1,7 @@
 {
   "schema": "ks-evidence-component-index/v1",
   "base_commit": "feb8cd78c70f5966093cf457b27577a677be8134",
-  "note": "Editorial component filing only. Original bytes, filenames, source IDs and measurement authority unchanged. previous_path resolves historical records.",
+  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json.",
   "assets": [
     {
       "filename": "1000046420.jpg",
@@ -1851,6 +1851,204 @@
       "related_components": [
         "Rinne"
       ]
+    },
+    {
+      "filename": "IMG20261010133248.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133248.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133248.jpg",
+      "git_blob_sha1": "4f23cac187470e7eb3d5cfcf73542ebb88723905",
+      "bytes": 644506,
+      "sha256": "d06f538b20196dc2b7a44d2bd55d4cc99e1056e302685abac2f36acbe579edce",
+      "source_id": "PHOTO-WELLE-20261010133248",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133257.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133257.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133257.jpg",
+      "git_blob_sha1": "6ea4426e4a27edfdcc51d517010076a18b3ead06",
+      "bytes": 593866,
+      "sha256": "a1d905bb920d90bdbce9166d4ab154857e4a32ee0e712291c2fcc711b564fa20",
+      "source_id": "PHOTO-WELLE-20261010133257",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133344.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133344.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133344.jpg",
+      "git_blob_sha1": "c5182f1fc0751a696eef5dbd795236e7194c1d0d",
+      "bytes": 715504,
+      "sha256": "12ac639a758333e173311fb6c333fd9c6001c7a729df04194450f8acabc6e0c1",
+      "source_id": "PHOTO-WELLE-20261010133344",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133349.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133349.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133349.jpg",
+      "git_blob_sha1": "2804bcc363149dbad7f82e9a115086499665e6b6",
+      "bytes": 621432,
+      "sha256": "323cf8551756db1252130d0477e5c6786e15207a8dce40b1da1e09ac3170d64d",
+      "source_id": "PHOTO-WELLE-20261010133349",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133352.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133352.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133352.jpg",
+      "git_blob_sha1": "b907df37fb36e48cddf7e28b4089ba915ab5da8f",
+      "bytes": 624458,
+      "sha256": "9ef8ec4500298f7183448594eb63327f967ea7639eebddd7aa4a9c0bf4812201",
+      "source_id": "PHOTO-WELLE-20261010133352",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133404.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133404.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133404.jpg",
+      "git_blob_sha1": "20db0d43cefe2a6cb964a679c4afbca282c9057a",
+      "bytes": 694329,
+      "sha256": "99f6bce6c65419d6f7516929d094b10c52d6219b5c53ff4412027dd3ddf26c45",
+      "source_id": "PHOTO-WELLE-20261010133404",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133412.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133412.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133412.jpg",
+      "git_blob_sha1": "c1097b17a27046a0e3b2aef2fb36d54d80a14195",
+      "bytes": 708418,
+      "sha256": "9b873fd3c3e0ebaca1512cfdb12811815805178576188160746c1a312bda4cda",
+      "source_id": "PHOTO-WELLE-20261010133412",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133424.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133424.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133424.jpg",
+      "git_blob_sha1": "04f65a4c7b5603fe1504e3586a139ed3970e5b27",
+      "bytes": 549118,
+      "sha256": "c8c16617ef5dc5185686296a63e587f9c34c3db6f246b61c5fee01a06ef59d7d",
+      "source_id": "PHOTO-WELLE-20261010133424",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133430.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133430.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133430.jpg",
+      "git_blob_sha1": "dd8a65338d5e80ad95508b30968d9ac966353cc4",
+      "bytes": 562068,
+      "sha256": "9aa216fa9f7885b114a893979fcdfb50dd8a3b2a7c8c852dfbb2adf7ff654071",
+      "source_id": "PHOTO-WELLE-20261010133430",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133433.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133433.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133433.jpg",
+      "git_blob_sha1": "10b7001197e21e70edda65b7813c44d3246d02cd",
+      "bytes": 632625,
+      "sha256": "bc5d350886072e1b8ea916d0d1ad04dc3525868585829f781b40bd033a9eaa33",
+      "source_id": "PHOTO-WELLE-20261010133433",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133518.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133518.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133518.jpg",
+      "git_blob_sha1": "463cebd1b28c82b5fd52864cf020ddd5670b3d91",
+      "bytes": 683553,
+      "sha256": "565ac19a61fcd3f6dcbfad1b6c91f7d208d2993703dda6df43ae5d59ce542b03",
+      "source_id": "PHOTO-WELLE-20261010133518",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
     }
   ]
 }
