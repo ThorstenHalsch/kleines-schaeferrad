@@ -1,6 +1,6 @@
 # Welle
 
-[Alle Komponenten](../README.md) · [Quellenverzeichnis](../../component-index.json) · [Bestätigte Angaben und offene Schellenmaße](BEFUND.md)
+[Alle Komponenten](../README.md) · [Quellenverzeichnis](../../component-index.json) · [Bestätigte Angaben und offene Schellenmaße](BEFUND.md) · [Wellenkeil als eigenständiges Bauteil](WELLENKEIL.md)
 
 Originalfotos und fotografierte Zeichnungen. Die Ablage ändert weder Messstatus noch Modellgeometrie. Unter Arbeitsunterlagen sind Vorlagen mit ungesicherter Bauteilzuordnung gesammelt.
 
@@ -68,3 +68,15 @@ Die großen Ausgangsdateien wurden auf Nutzerwunsch aus den Branch-Verläufen en
 | [IMG20261010133518.jpg](IMG20261010133518.jpg) | 684 KB |
 
 [Komprimierung und Prüfsummen](../../derived/welle-compression.json) · [Weitere Bilder vorbereiten](../../PHOTO-UPLOADS.md)
+
+## Wellenkeil – neue Einzelteilaufnahmen
+
+Der Nutzer benennt das dargestellte Teil als **Wellenkeil**. Dieser sichert die eingesteckten Arme gemeinsam mit zusätzlichen äußeren Keilen. Als eigenständiges Informationsobjekt unter [WELLENKEIL.md](WELLENKEIL.md) erfasst; keine 3D-Umsetzung.
+
+| Bild | Beschreibung |
+|---|---|
+| [IMG20261010124805.jpg](IMG20261010124805.jpg) | Gesamtansicht des ausgebauten Wellenkeils mit längs angelegtem Zollstock |
+| [IMG20261010124808.jpg](IMG20261010124808.jpg) | Detail des verjüngten Endbereichs und der Seitenkante mit Zollstock |
+| [IMG20261010124813.jpg](IMG20261010124813.jpg) | Gegenüberliegender Endbereich mit quer angelegtem Zollstock |
+| [IMG20261010124820.jpg](IMG20261010124820.jpg) | Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock |
+| [IMG20261010124828.jpg](IMG20261010124828.jpg) | Breitfläche und Seitenkante mit quer angelegtem Zollstock |

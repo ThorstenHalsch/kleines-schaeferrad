@@ -1,0 +1,94 @@
+{
+  "schema": "ks-component-intake/v1",
+  "recorded_date": "2026-10-11",
+  "mode": "information-gathering-only",
+  "runtime_consumed": false,
+  "component": {
+    "id": "COMP-WELLENKEIL",
+    "name": "Wellenkeil",
+    "parent_component": "COMP-SHAFT",
+    "distinct_from": [
+      "additional-external-arm-wedges"
+    ],
+    "type": "separate-wooden-fastener",
+    "identification_status": "user-confirmed",
+    "physical_instance_id": null
+  },
+  "expert_statement": {
+    "source": "user conversation, 2026-10-11",
+    "source_excerpt": "Wenn die Arme in die Welle eingesteckt werden, werden diese nachher mit dem Wellenkeil und zusätzlichen Keilen von außen, die man auf anderen Bildern schon gesehen hat, befestigt.",
+    "function": "Secures the inserted arms in the shaft together with additional external wedges.",
+    "evidence_class": "expert-narrative"
+  },
+  "observations": {
+    "evidence_class": "observed-current",
+    "description": "Detached wooden component with broad faces and a tapering end contour; longitudinal and transverse ruler references shown.",
+    "identification_basis": "user names the pictured component Wellenkeil; exact assembled pose is not established by detached views"
+  },
+  "sources": [
+    {
+      "path": "evidence/raw/Welle/IMG20261010124805.jpg",
+      "git_blob_sha1": "0dbe68d7f0558ffe3f50473cd27a457e1da7b078",
+      "bytes": 474311,
+      "description": "Gesamtansicht des ausgebauten Wellenkeils mit längs angelegtem Zollstock",
+      "source_repository": "ThorstenHalsch/kleines-schaeferrad",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010124808.jpg",
+      "git_blob_sha1": "c54dfaccd90028765c9051ad6cc0913f19b9498c",
+      "bytes": 550776,
+      "description": "Detail des verjüngten Endbereichs und der Seitenkante mit Zollstock",
+      "source_repository": "ThorstenHalsch/kleines-schaeferrad",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010124813.jpg",
+      "git_blob_sha1": "baf34e3f82aff213a58efcdb6f53394dde9e54a5",
+      "bytes": 437659,
+      "description": "Gegenüberliegender Endbereich mit quer angelegtem Zollstock",
+      "source_repository": "ThorstenHalsch/kleines-schaeferrad",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010124820.jpg",
+      "git_blob_sha1": "f0ecccc4a08c93fa8aee4d351a306091f54f7a60",
+      "bytes": 453688,
+      "description": "Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock",
+      "source_repository": "ThorstenHalsch/kleines-schaeferrad",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010124828.jpg",
+      "git_blob_sha1": "b09c785c8bc22a27c35fa616ead44fa418d6b4cc",
+      "bytes": 467529,
+      "description": "Breitfläche und Seitenkante mit quer angelegtem Zollstock",
+      "source_repository": "ThorstenHalsch/kleines-schaeferrad",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    }
+  ],
+  "dimensions": {
+    "length_mm": null,
+    "width_profile_mm": null,
+    "thickness_profile_mm": null,
+    "taper_angle_deg": null,
+    "status": "OPEN_TO_MEASURE",
+    "note": "Ruler photos retained as measurement references; no exact dimensions adopted in this intake."
+  },
+  "assembly": {
+    "relationship": "shaft + inserted arms + Wellenkeil + additional external wedges",
+    "sequence_confirmed": "Arms are inserted, then secured using Wellenkeil and additional external wedges.",
+    "insertion_direction": null,
+    "installed_pose": null,
+    "contact_faces": null,
+    "quantity_per_arm_zone": null,
+    "external_wedge_count": null,
+    "status": "function confirmed; exact seating, counts and detailed driving sequence open"
+  },
+  "implementation": {
+    "geometry_created": false,
+    "model_parameters_changed": false,
+    "rendering_performed": false,
+    "note": "Independent informational component record only; future model implementation requires a separate task."
+  }
+}

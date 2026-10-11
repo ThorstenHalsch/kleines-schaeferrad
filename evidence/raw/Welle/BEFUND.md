@@ -11,6 +11,7 @@ Stand: 11.10.2026. Quellen: Nutzerklärungen im Gespräch, technische Zeichnung 
 - Nur unter der Annahme eines regelmäßigen Zwölfecks ergibt sich daraus ein Abstand gegenüberliegender Flächen von rund **35,74 cm**; dies ist berechnet, nicht zusätzlich gemessen.
 - Zeichnungsmaße: Länge **370 cm**, Endbezug der mittleren Armöffnung **90 cm**, äußere Öffnungen jeweils **25 cm** axial gegenüber der mittleren versetzt; Armöffnungen **16 × 9 cm**. Maßbezüge aus der Zeichnung übernehmen.
 - Armquerschnitte **14 × 6,5 cm**. Der Nutzer bestätigt, dass die größeren Öffnungen den Platz für die **Verkeilung** bereitstellen. Die Differenz ist kein Widerspruch und nicht automatisch ein gleichmäßig umlaufender Spalt.
+- **Wellenkeil als eigenständiges Bauteil:** Nach dem Einstecken werden die Arme mit dem [Wellenkeil](WELLENKEIL.md) und zusätzlichen äußeren Keilen befestigt. Funktion nutzerbestätigt; Einbaulage, Anzahl und genaue Keilgeometrie offen.
 - Je zwei Metallschellen pro Wellenende, vier insgesamt. Maße und Verschraubungsdetails der Schellen sind durch diese Zeichnungsfestlegung nicht automatisch bestätigt.
 
 ## Metallschellen – Fotobefund
