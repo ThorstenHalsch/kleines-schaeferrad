@@ -72,8 +72,8 @@
     "width_profile_mm": null,
     "thickness_profile_mm": null,
     "taper_angle_deg": null,
-    "status": "PHOTO_READOUTS_AVAILABLE_EXACT_PROFILE_OPEN",
-    "note": "Length and local widths have approximate photo readouts; exact dimensions are not user-confirmed. Thickness profile and taper angle remain unresolved.",
+    "status": "APPROXIMATE_DIMENSIONS_AND_END_THICKNESS_AVAILABLE_EXACT_PROFILE_OPEN",
+    "note": "Approximate length and local transverse photo readouts are available. User identifies approximately 55 mm end thickness. Earlier end-width axis assignment is provisional. Exact opposite-end thickness, intermediate thickness stations and taper angle have not been reliably derived.",
     "photo_readouts": [
       {
         "property": "overall_length",
@@ -87,7 +87,7 @@
         "limitation": "perspective and damaged end contour"
       },
       {
-        "property": "local_width_near_photographed_end",
+        "property": "local_transverse_span_near_photographed_end",
         "approx_mm": 65,
         "rough_range_mm": [
           60,
@@ -95,8 +95,9 @@
         ],
         "source": "evidence/raw/Welle/IMG20261010124820.jpg",
         "cross_check": "evidence/raw/Welle/IMG20261010124813.jpg",
-        "status": "approximate-photo-readout",
-        "reference": "upper broad-face edges at the ruler location"
+        "status": "provisional-axis-assignment",
+        "reference": "upper broad-face edges at the ruler location",
+        "limitation": "Earlier interpretation as a separate end width is not established; do not combine with user-reported 55 mm thickness as a confirmed cross section."
       },
       {
         "property": "local_width_in_broader_region",
@@ -110,8 +111,15 @@
         "reference": "upper broad-face edges at the photographed ruler location; not a complete profile"
       }
     ],
-    "thickness_note": "Side faces are visible, but ruler is not directly placed across thickness; apparent projection is insufficient for reliable thickness readout.",
-    "taper_note": "Define whether angle refers to width or thickness taper before calculating."
+    "thickness_note": "Partly evidenced by user-reported approximately 55 mm end thickness and visible side contours. Existing views support approximate contour assessment; no verified numerical thickness profile or linear taper established. Do not request replacement photos merely because exact reconstruction remains uncertain.",
+    "taper_note": "Define whether angle refers to width or thickness taper before calculating.",
+    "expert_reported_end_thickness": {
+      "approx_mm": 55,
+      "status": "expert-reported-approximate",
+      "source": "user conversation, 2026-10-11",
+      "source_excerpt": "Es gibt explizit ein Foto, was den Zollstock am Ende des Keils zeigt. Das sind ungefähr 5,5 Zentimeter",
+      "reference": "Thickness at the end identified by the user; exact photo and end assignment not independently established."
+    }
   },
   "assembly": {
     "relationship": "shaft + inserted arms + Wellenkeil + additional external wedges",

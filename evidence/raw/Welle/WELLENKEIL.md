@@ -24,21 +24,22 @@ Die fünf JPEGs stammen unverändert aus dem Nutzer-Commit [8f56195 – Add resi
 | [IMG20261010124820.jpg](IMG20261010124820.jpg) | Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock |
 | [IMG20261010124828.jpg](IMG20261010124828.jpg) | Breitfläche und Seitenkante mit quer angelegtem Zollstock |
 
-Sichtbar ist ein ausgebautes Holzteil mit breiten Flächen und einer zum Ende hin verjüngten Kontur. Die Zollstockaufnahmen liefern bereits ungefähre Längen- und Breitenmaße. Diese Fotoablesungen werden von bestätigten Fertigungsmaßen getrennt erfasst.
+Sichtbar ist ein ausgebautes Holzteil mit breiten Flächen und einer zum Ende hin verjüngten Kontur. Die Zollstockaufnahmen liefern bereits ungefähre Längen- und Quermaße. Der Nutzer ergänzt ausdrücklich eine Dicke am Keilende von ungefähr 5,5 cm. Nutzerangaben und Fotoabschätzungen werden mit ihrem jeweiligen Maßbezug getrennt erfasst.
 
 ## Vorhandene Maßinformationen aus den Zollstockbildern
 
-| Maß | Ungefähre Fotoablesung | Quelle / Bezug |
+| Maß | Vorläufiger Wert | Quelle / Bezug |
 |---|---|---|
 | Gesamtlänge | **ca. 44 cm**, grober Bereich 43–45 cm | Gesamtansicht IMG20261010124805.jpg, längs angelegter Zollstock; beschädigte Endkontur |
-| Breite am nah fotografierten Ende | **ca. 6,5 cm**, grober Bereich 6–7 cm | IMG20261010124820.jpg, Querablesung über die obere Breitfläche; Gegenansicht IMG20261010124813.jpg |
+| Dicke am Keilende | **ca. 5,5 cm (55 mm)** | Nutzerklärung vom 11.10.2026 zum Zollstockfoto am Ende; ausdrücklich als Dicke bezeichnet. Keine unabhängig bestätigte millimetergenaue Fotoablesung. |
+| Frühere Querablesung am nah fotografierten Ende | ca. 6,5 cm, grober Bereich 6–7 cm; **Achsenbezug vorläufig** | IMG20261010124820.jpg und IMG20261010124813.jpg. Die frühere Bezeichnung als separate Endbreite ist nicht gesichert; nicht zusätzlich zur nutzerbestätigten Enddicke als festes Querschnittsmaß verwenden. |
 | Breite im breiteren Bereich | **ca. 8 cm**, grober Bereich 7–9 cm | IMG20261010124828.jpg, Querablesung an der abgebildeten Stelle; kein vollständiger Breitenverlauf |
 
-Status: **ungefähre Fotoablesungen vorhanden**, keine bestätigten Fertigungsmaße. Bereiche sind grobe Ablesespannen, keine statistischen Unsicherheitsintervalle. Perspektive und abgenutzte Kanten begrenzen die Genauigkeit. Für Länge und diese lokalen Breiten sind bereits verwertbare Aufnahmen vorhanden; sie nicht pauschal als fehlend behandeln oder erneut anfordern.
+Status: **ungefähre Fotoablesungen und nutzerbestätigte ungefähre Enddicke vorhanden**, keine millimetergenauen Fertigungsmaße. Bereiche sind grobe Ablesespannen, keine statistischen Unsicherheitsintervalle. Perspektive und abgenutzte Kanten begrenzen die Genauigkeit. Die vorhandenen Aufnahmen reichen zusammen mit der Nutzerklärung für eine vorläufige Beschreibung des Einzelteils. Grundmaße nicht pauschal als fehlend behandeln oder erneut anfordern.
 
 ## Verbleibende Unsicherheiten
 
-- Genauer Dickenverlauf, insbesondere an beiden Enden: Seitenflächen sind sichtbar, der Zollstock liegt dort aber nicht direkt über die Dicke. Die Projektion der Seitenfläche auf eine auf der Breitfläche liegende Skala ist keine zuverlässige Dickenmessung.
+- Der Dickenverlauf ist **teilweise belegt**: ca. 55 mm am vom Nutzer bezeichneten Ende sowie sichtbare Seitenkonturen in den Gesamt- und Detailansichten. Die frühere pauschale Aussage, es gebe keinen verwertbaren Dickenbezug, wird zurückgenommen. Die Fotos erlauben eine ungefähre Konturabschätzung; ein durchgehend linearer Verlauf, eine numerische Dicke am anderen Ende oder millimetergenaue Zwischenwerte sind bisher nicht zuverlässig hergeleitet. Diese Werte bleiben Rekonstruktionsunsicherheiten und sind keine pauschale Aufforderung zu weiteren Fotos.
 - Keilwinkel: geometrischer Bezug (Verjüngung der Breite oder Dicke) und zugehörige Endmaße vor einer Berechnung festlegen.
 - Einbaulage und Einschlagrichtung relativ zur Welle und den Armen.
 - Kontaktflächen zu den jeweiligen Armhölzern und der Welle.
