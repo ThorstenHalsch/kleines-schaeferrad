@@ -4,6 +4,10 @@
 
 Originalfotos und fotografierte Zeichnungen. Die Ablage ändert weder Messstatus noch Modellgeometrie. Unter Arbeitsunterlagen sind Vorlagen mit ungesicherter Bauteilzuordnung gesammelt.
 
+## Verbindung und Bezeichnung
+
+Die Holznägel der Schetternbrett-Verbindungen heißen **Schetternägel** (Schreibweise mit tt). Vier Nägel pro Verbindung werden abwechselnd aus beiden Richtungen durchgesteckt und auf der Gegenseite verkeilt. Zusätzlich wird der Spalt zwischen benachbarten Krümmlingen mit einem Stoßkeil geschlossen; laut Fachauskunft erzeugt dies Druck auf die Schetternägel und verspannt den Kranz. Siehe [Krümmlingbefund vom 11.10.2026](../Kruemmlinge/BEFUND.md#stoßspalt-keil-und-verspannung).
+
 | Datei | Quellennummer | Beschreibung / weiterer Bezug |
 |---|---|---|
 | [1000046530.jpg](1000046530.jpg) | PHOTO-TH-20261009-1000046530 | Foto / Originalquelle; Kruemmlinge |

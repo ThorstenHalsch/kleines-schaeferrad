@@ -4,6 +4,10 @@
 
 Originalfotos und fotografierte Zeichnungen. Die Ablage ändert weder Messstatus noch Modellgeometrie. Unter Arbeitsunterlagen sind Vorlagen mit ungesicherter Bauteilzuordnung gesammelt.
 
+## Aktueller Fachbefund
+
+[Seitenzuordnung und Verspannung des Kranzes](BEFUND.md): Landseitig jeweils zwei zusätzliche Bohrungen zur Kumpfbefestigung; wasserseitig keine Kumpfbohrungen. An jedem Krümmlingstoß bleibt ein kleiner Spalt, der durch einen Keil geschlossen wird. Laut Fachauskunft erzeugt dies Druck auf die Schetternägel und verspannt den Kranz. Nutzerbestätigt am 11.10.2026.
+
 | Datei | Quellennummer | Beschreibung / weiterer Bezug |
 |---|---|---|
 | [IMG_6848.jpeg](IMG_6848.jpeg) | PHOTO-6848 | Radkranzdetail — überlappende Aufnahmen eines Blatts |

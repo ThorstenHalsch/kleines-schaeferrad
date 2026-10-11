@@ -1,7 +1,7 @@
 {
   "schema": "ks-evidence-component-index/v1",
   "base_commit": "feb8cd78c70f5966093cf457b27577a677be8134",
-  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json.",
+  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json. Five further resized Wellenkeil reference photos added by user in commit 8f56195; component identification is user-confirmed, exact dimensions and pose remain open. Twenty-one existing dismantled-arm JPEGs copied unchanged from fork snapshot 52578f5 and linked to the 2026-10-11 Astra handoff; user-confirmed joint principles are documented separately, exact recess geometry remains unresolved.",
   "assets": [
     {
       "filename": "1000046420.jpg",
@@ -2049,6 +2049,422 @@
       ],
       "derivation_manifest": "evidence/derived/welle-compression.json",
       "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010124805.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124805.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "0dbe68d7f0558ffe3f50473cd27a457e1da7b078",
+      "bytes": 474311,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124805",
+      "title": "Gesamtansicht des ausgebauten Wellenkeils mit längs angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124808.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124808.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "c54dfaccd90028765c9051ad6cc0913f19b9498c",
+      "bytes": 550776,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124808",
+      "title": "Detail des verjüngten Endbereichs und der Seitenkante mit Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124813.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124813.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "baf34e3f82aff213a58efcdb6f53394dde9e54a5",
+      "bytes": 437659,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124813",
+      "title": "Gegenüberliegender Endbereich mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124820.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124820.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "f0ecccc4a08c93fa8aee4d351a306091f54f7a60",
+      "bytes": 453688,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124820",
+      "title": "Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124828.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124828.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "b09c785c8bc22a27c35fa616ead44fa418d6b4cc",
+      "bytes": 467529,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124828",
+      "title": "Breitfläche und Seitenkante mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010123515.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010123515.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "9c12fbdcd2cd6e7b84d8ee67ad8ccb78a722b099",
+      "bytes": 340213,
+      "source_id": "PHOTO-ARME-IMG20261010123515",
+      "title": "Ausgebauter Armbereich / Endverbindung",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010124418.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010124418.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "0551aac62f0a73848899a584c5eda2a6e5f38554",
+      "bytes": 508756,
+      "source_id": "PHOTO-ARME-IMG20261010124418",
+      "title": "Einbau-/Ausbaubezug der Arme und Sicherung",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010124442.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010124442.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "0400e0f2fd67bf1964ea32bbab137a452deea7f7",
+      "bytes": 172471,
+      "source_id": "PHOTO-ARME-IMG20261010124442",
+      "title": "Endbereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010124447.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010124447.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "3d2a9d67fd372dfe288591649437b58b54e9e107",
+      "bytes": 185877,
+      "source_id": "PHOTO-ARME-IMG20261010124447",
+      "title": "Quermaß am Endbereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010124455.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010124455.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "6f89794cf3b5adcaab18286cb8b5dea24c7cbcfc",
+      "bytes": 254007,
+      "source_id": "PHOTO-ARME-IMG20261010124455",
+      "title": "Weiterer Endbereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010124459.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010124459.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "712c8ae72b1d1decc80c38dbe5bb876c722deb70",
+      "bytes": 321251,
+      "source_id": "PHOTO-ARME-IMG20261010124459",
+      "title": "Armquerschnitt mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125010.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125010.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "6d07347e9c433b2b5e64981ab76ebc9b9b6868c9",
+      "bytes": 745816,
+      "source_id": "PHOTO-ARME-IMG20261010125010",
+      "title": "Ausarbeitung im mittleren Bereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125016.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125016.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "ca35278e4a3dd19bcfc0f49d59495714c0cd7132",
+      "bytes": 720416,
+      "source_id": "PHOTO-ARME-IMG20261010125016",
+      "title": "Weitere Ansicht der mittleren Ausarbeitung mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125020.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125020.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "1d4fd0cd1c95fe4c53becec8cd93ec2a8165c133",
+      "bytes": 766242,
+      "source_id": "PHOTO-ARME-IMG20261010125020",
+      "title": "Längsbezug der mittleren Ausarbeitung mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125104.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125104.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "f20015e4f8294b1359d9466288e1dbd14514f90c",
+      "bytes": 864936,
+      "source_id": "PHOTO-ARME-IMG20261010125104",
+      "title": "Endbereiche / Zapfen mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125215.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125215.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "59f035d3685d861e678bd36e12008fbbb4d7652b",
+      "bytes": 801459,
+      "source_id": "PHOTO-ARME-IMG20261010125215",
+      "title": "Vergleich ausgebauter Armhölzer",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125246.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125246.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "ffc2ce987462529e6525c0ece488fbeb3a9b3d9e",
+      "bytes": 798789,
+      "source_id": "PHOTO-ARME-IMG20261010125246",
+      "title": "Weitere Vergleichsansicht der Armhölzer",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125251.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125251.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "5d412d73a661f0593712373c2ec108363475bb5b",
+      "bytes": 769246,
+      "source_id": "PHOTO-ARME-IMG20261010125251",
+      "title": "Weitere Vergleichsansicht mit Aussparungen",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125320.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125320.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "c5acc3314633f0fac35ce619ed7e5dbb44910044",
+      "bytes": 783643,
+      "source_id": "PHOTO-ARME-IMG20261010125320",
+      "title": "Längenbezüge am ausgebauten Arm mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125334.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125334.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "cb35aee7ae0c5bfde5cf2bb7e7ec62b94de31481",
+      "bytes": 772798,
+      "source_id": "PHOTO-ARME-IMG20261010125334",
+      "title": "Weitere Ansicht der Längenbezüge mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125824.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125824.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "702047ef2df44856b6bb823544e0669fe51e555e",
+      "bytes": 757642,
+      "source_id": "PHOTO-ARME-IMG20261010125824",
+      "title": "Vom Nutzer identifizierter Außenarm; diagonale Aussparung",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010125949.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010125949.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "b1f95182d3ede9f8b4bbe461bcd4ab21b677fc26",
+      "bytes": 748165,
+      "source_id": "PHOTO-ARME-IMG20261010125949",
+      "title": "Gedrehter Arm / Verbindungsbereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010130112.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010130112.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "c0db12c762a0d5d8d4ebec9cd5b5e28d05dea8e5",
+      "bytes": 737156,
+      "source_id": "PHOTO-ARME-IMG20261010130112",
+      "title": "Querbezug im Verbindungsbereich mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010130123.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010130123.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "56e6fc5beb5193bd22fb00d8ea116ff715b092f3",
+      "bytes": 757059,
+      "source_id": "PHOTO-ARME-IMG20261010130123",
+      "title": "Weitere Ansicht des Verbindungsbereichs mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010130129.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010130129.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "af966083f66ff6f676d4d374b5992813bdffb9ab",
+      "bytes": 785694,
+      "source_id": "PHOTO-ARME-IMG20261010130129",
+      "title": "Längsbezug der Aussparung mit Zollstock",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
+    },
+    {
+      "filename": "IMG20261010130138.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG20261010130138.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "e523a5415c25d8c09da99ca0c845c49cf02b72ad",
+      "bytes": 772274,
+      "source_id": "PHOTO-ARME-IMG20261010130138",
+      "title": "Nutzerzuordnung: unten Mittelarm, oben zusätzlich ausgearbeiteter Außenarm",
+      "classification": "reference-photo; measurements-require-targeted-review; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ],
+      "source_commit": "52578f5c3d774c21783eb43798d45ecb067dd842"
     }
   ]
 }
