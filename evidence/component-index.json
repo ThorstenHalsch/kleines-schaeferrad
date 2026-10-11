@@ -1,7 +1,7 @@
 {
   "schema": "ks-evidence-component-index/v1",
   "base_commit": "feb8cd78c70f5966093cf457b27577a677be8134",
-  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json.",
+  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json. Five further resized Wellenkeil reference photos added by user in commit 8f56195; component identification is user-confirmed, exact dimensions and pose remain open.",
   "assets": [
     {
       "filename": "1000046420.jpg",
@@ -2049,6 +2049,86 @@
       ],
       "derivation_manifest": "evidence/derived/welle-compression.json",
       "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010124805.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124805.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "0dbe68d7f0558ffe3f50473cd27a457e1da7b078",
+      "bytes": 474311,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124805",
+      "title": "Gesamtansicht des ausgebauten Wellenkeils mit längs angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124808.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124808.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "c54dfaccd90028765c9051ad6cc0913f19b9498c",
+      "bytes": 550776,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124808",
+      "title": "Detail des verjüngten Endbereichs und der Seitenkante mit Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124813.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124813.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "baf34e3f82aff213a58efcdb6f53394dde9e54a5",
+      "bytes": 437659,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124813",
+      "title": "Gegenüberliegender Endbereich mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124820.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124820.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "f0ecccc4a08c93fa8aee4d351a306091f54f7a60",
+      "bytes": 453688,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124820",
+      "title": "Nahaufnahme eines Endbereichs mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
+    },
+    {
+      "filename": "IMG20261010124828.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010124828.jpg",
+      "previous_path": null,
+      "git_blob_sha1": "b09c785c8bc22a27c35fa616ead44fa418d6b4cc",
+      "bytes": 467529,
+      "source_id": "PHOTO-WELLENKEIL-IMG20261010124828",
+      "title": "Breitfläche und Seitenkante mit quer angelegtem Zollstock",
+      "classification": "resized-reference; user-confirmed Wellenkeil identification; dimensions-and-pose-open",
+      "related_components": [
+        "Arme"
+      ],
+      "component_object_id": "COMP-WELLENKEIL",
+      "source_commit": "8f561958ef4c8b08318f2f5162a0be4fbb86c842"
     }
   ]
 }
