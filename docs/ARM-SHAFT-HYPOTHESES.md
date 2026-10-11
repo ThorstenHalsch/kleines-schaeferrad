@@ -3,6 +3,8 @@
 Stand: 2026-10-07  
 Status: OPEN HYPOTHESES — keine aktuelle Geometriefreigabe.
 
+> **Ergänzung vom 11.10.2026 — aktueller Informationsstand:** [Arme-Übergabe für Astra](../evidence/raw/Arme/ASTRA-HANDOFF.md) vor einer Rekonstruktion lesen. Der Nutzer bestätigt einen geraden Mittelarm und zwei gegensinnig gekröpfte Außenarme, jeweils zweimal im Rad, sowie die **direkte Verschränkung** über die realen Aussparungen. Mittelarm: zwei gegensinnig diagonale Ausarbeitungen; Außenarme: einer einfach diagonal, der andere mit zusätzlicher diagonaler Ausarbeitung. Die bisherigen Chat-Skizzen sind verworfen. Maße, Kontaktflächen und räumliche Passung bleiben zu prüfen; zuerst die vorhandenen Zollstockbilder auswerten. Die unten dokumentierten Grundsatzfragen von 07.10. sind teilweise beantwortet und dürfen nicht unverändert als aktueller Messbedarf übernommen werden.
+
 ## Baseline
 
 Historische Evidenz stützt drei durchgehende Armhölzer mit sechs radialen Enden pro Kranzebene.
@@ -13,7 +15,9 @@ Die aktuelle Workbench rendert diese Arme als gerade Quader mit schematischem ax
 
 ### H-ARM-01 — gekröpfte / gebogene Arme
 
-Die Armhölzer könnten nicht geradlinig sein, sondern eine Bogen-/Kröpfungsform besitzen.
+**Aktualisierung 11.10.2026:** Die Grundformen sind vom Nutzer bestätigt: gerader Mittelarm und zwei gegensinnig gekröpfte Außenarme. Geometrische Einzelheiten bleiben offen; siehe [Übergabe und Quellen](../evidence/raw/Arme/ASTRA-HANDOFF.md).
+
+Historischer Stand 07.10.2026: Die Armhölzer könnten nicht geradlinig sein, sondern eine Bogen-/Kröpfungsform besitzen.
 
 Zu prüfen:
 - Verlauf über gesamte Länge,
@@ -35,7 +39,9 @@ Zu prüfen:
 
 ### H-ARM-03 — ineinandergreifende Arm-/Mortisenstruktur
 
-Die Mortisen könnten so angeordnet sein, dass sich die Armhölzer innerhalb der Welle räumlich ergänzen oder verriegeln.
+**Aktualisierung 11.10.2026:** Direkte Verschränkung der drei Arme über ihre Aussparungen ist vom Nutzer bestätigt, auch als frei zusammengelegter Stern ohne Welle. Die genaue Schnitt- und Kontaktgeometrie sowie Montagefolge sind weiterhin offen. IMG20261010125824 und IMG20261010130138 sind ausdrücklich erklärte Schlüsselfotos; siehe [Übergabe](../evidence/raw/Arme/ASTRA-HANDOFF.md).
+
+Historischer Stand 07.10.2026: Die Mortisen könnten so angeordnet sein, dass sich die Armhölzer innerhalb der Welle räumlich ergänzen oder verriegeln.
 
 Zu prüfen:
 - vollständige Innengeometrie nach Freilegung,
