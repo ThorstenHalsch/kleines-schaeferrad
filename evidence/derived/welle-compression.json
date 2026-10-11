@@ -1,0 +1,293 @@
+{
+  "schema": "ks-evidence-image-compression/v1",
+  "date": "2026-10-11",
+  "authorization": "User explicitly requested removal of the eleven large shaft originals from the repository and Git history.",
+  "images": [
+    {
+      "path": "evidence/raw/Welle/IMG20261010133248.jpg",
+      "bytes": 644506,
+      "sha256": "d06f538b20196dc2b7a44d2bd55d4cc99e1056e302685abac2f36acbe579edce",
+      "git_blob_sha1": "4f23cac187470e7eb3d5cfcf73542ebb88723905",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 10983286,
+        "sha256": "718b99174468fea7f606abe144f835cd30914a4f63696fdd626b94c9bc92f1bd",
+        "git_blob_sha1": "10d3f415472b12bf29299bc9a338929b214deee6",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133257.jpg",
+      "bytes": 593866,
+      "sha256": "a1d905bb920d90bdbce9166d4ab154857e4a32ee0e712291c2fcc711b564fa20",
+      "git_blob_sha1": "6ea4426e4a27edfdcc51d517010076a18b3ead06",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 12720250,
+        "sha256": "e864711cf953abde89de2812b8b3d3accb6ccf35890f12efc5b5568df512464e",
+        "git_blob_sha1": "0473234e366b87e6326ca96c67e06b9ec8518a75",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133344.jpg",
+      "bytes": 715504,
+      "sha256": "12ac639a758333e173311fb6c333fd9c6001c7a729df04194450f8acabc6e0c1",
+      "git_blob_sha1": "c5182f1fc0751a696eef5dbd795236e7194c1d0d",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 14556425,
+        "sha256": "33e5b1c736b096fba806c4c41ae13f82a7be6ee2481779ea2d8eb5259272d9aa",
+        "git_blob_sha1": "a7dc028754b8ae795aa9b77676c92504c82c5cf3",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133349.jpg",
+      "bytes": 621432,
+      "sha256": "323cf8551756db1252130d0477e5c6786e15207a8dce40b1da1e09ac3170d64d",
+      "git_blob_sha1": "2804bcc363149dbad7f82e9a115086499665e6b6",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 13491759,
+        "sha256": "04745c8a3e8a74e99ccef1576646ce3d0c960fed56d3bdfac95d91304d4a851d",
+        "git_blob_sha1": "a785556433a3e0b98fb5a1026b360bfc2dde9623",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133352.jpg",
+      "bytes": 624458,
+      "sha256": "9ef8ec4500298f7183448594eb63327f967ea7639eebddd7aa4a9c0bf4812201",
+      "git_blob_sha1": "b907df37fb36e48cddf7e28b4089ba915ab5da8f",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 13374840,
+        "sha256": "258fcc677e3aee4f16c4be623af9575f52792364a1f3bc654c9ecd1af6144e75",
+        "git_blob_sha1": "95f85fd66e415b1e219ff9867edd7fca53066bcb",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133404.jpg",
+      "bytes": 694329,
+      "sha256": "99f6bce6c65419d6f7516929d094b10c52d6219b5c53ff4412027dd3ddf26c45",
+      "git_blob_sha1": "20db0d43cefe2a6cb964a679c4afbca282c9057a",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 14477960,
+        "sha256": "a46be4c62e4122810dd287d139d43f07cd27e960b8e4154084dfff8d6c0dcf89",
+        "git_blob_sha1": "4d10c10128c70ae242de64775178427dd85f1be6",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133412.jpg",
+      "bytes": 708418,
+      "sha256": "9b873fd3c3e0ebaca1512cfdb12811815805178576188160746c1a312bda4cda",
+      "git_blob_sha1": "c1097b17a27046a0e3b2aef2fb36d54d80a14195",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 14741784,
+        "sha256": "3e09a2794db8dc1c3db2fbc9e331c894e6e7f67673a47a7a2c39ca850413d22b",
+        "git_blob_sha1": "d7300db1340587836db559a00581b58c18ef26d1",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133424.jpg",
+      "bytes": 549118,
+      "sha256": "c8c16617ef5dc5185686296a63e587f9c34c3db6f246b61c5fee01a06ef59d7d",
+      "git_blob_sha1": "04f65a4c7b5603fe1504e3586a139ed3970e5b27",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "removed_original": {
+        "bytes": 11914149,
+        "sha256": "6a229add40d910ebe7eb44e0470fdb8174f975209635a6cdf3fc6c888446c820",
+        "git_blob_sha1": "658be894fbef3c87590c505e8f3f4c84c43c4fe0",
+        "dimensions": [
+          3072,
+          4096
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133430.jpg",
+      "bytes": 562068,
+      "sha256": "9aa216fa9f7885b114a893979fcdfb50dd8a3b2a7c8c852dfbb2adf7ff654071",
+      "git_blob_sha1": "dd8a65338d5e80ad95508b30968d9ac966353cc4",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 12033402,
+        "sha256": "ab72f0825061d8c6a1f79d9731ba33f82517df2dfbc94c1717c3dbdeeed3962d",
+        "git_blob_sha1": "4a588b6badbb2cd7af68682404efffc767ec528c",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133433.jpg",
+      "bytes": 632625,
+      "sha256": "bc5d350886072e1b8ea916d0d1ad04dc3525868585829f781b40bd033a9eaa33",
+      "git_blob_sha1": "10b7001197e21e70edda65b7813c44d3246d02cd",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 13010308,
+        "sha256": "32deed9f340dd1171d59c49143bb4e4c307905115893cf221dd31583c228ca7d",
+        "git_blob_sha1": "1674bcbd9e883adf6408b832d0222b0843c80081",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    },
+    {
+      "path": "evidence/raw/Welle/IMG20261010133518.jpg",
+      "bytes": 683553,
+      "sha256": "565ac19a61fcd3f6dcbfad1b6c91f7d208d2993703dda6df43ae5d59ce542b03",
+      "git_blob_sha1": "463cebd1b28c82b5fd52864cf020ddd5670b3d91",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "removed_original": {
+        "bytes": 11378681,
+        "sha256": "54c0049fbfd5fc44b2db722acc28b4e2911f700477225269e851246eb1276534",
+        "git_blob_sha1": "d58e03affd1183ecd3989fd2c725577ce0f8591e",
+        "dimensions": [
+          4096,
+          3072
+        ],
+        "repository_status": "removed-at-user-request"
+      },
+      "method": {
+        "max_edge": 1600,
+        "jpeg_quality": 80,
+        "exif_orientation_applied": true
+      },
+      "status": "resized-reference-image; original not retained in repository"
+    }
+  ]
+}

@@ -18,8 +18,8 @@ Für die spätere geometrische Prüfung muss „zum Rad“ auf einen eindeutigen
 
 Im durchgesehenen Dateibaum des Forks liegt ein Rohcapture mit zwei Exporten:
 
-- [Scaniverse 2026-10-07 173556.ply](../evidence/raw/Scaniverse%202026-10-07%20173556.ply), SCAN-20261007-01-PLY.
-- [Scaniverse 2026-10-07 173556.glb](../evidence/raw/Scaniverse%202026-10-07%20173556.glb), SCAN-20261007-01-GLB.
+- [Scaniverse 2026-10-07 173556.ply](../evidence/raw/Gesamtansichten/Scaniverse%202026-10-07%20173556.ply), SCAN-20261007-01-PLY.
+- [Scaniverse 2026-10-07 173556.glb](../evidence/raw/Gesamtansichten/Scaniverse%202026-10-07%20173556.glb), SCAN-20261007-01-GLB.
 
 Das sind zwei Fassungen desselben Captures. Der vom Fachkenner genannte ausdrücklich erstellte Schaufelradscan konnte keiner separaten Datei zugeordnet werden. Der Fachkenner kennt den Dateinamen nicht. Der vorhandene Radscan ist eine mögliche Abgleichsquelle, aber noch nicht als der gemeinte Detailscan bestätigt.
 
@@ -47,7 +47,7 @@ Der [Kumpf-Fachbeitrag](FACHBEITRAG-KUMPF-20261008.md) enthält bereits die dire
 - Benachbarte Kümpfe überlappen; diese Überlappung erfordert die unterschiedlichen Nagellängen.
 - Der Fachkenner verweist auf Nagelfotos, eine Nagel-Punktewolke und den Radscan als Dokumentation.
 
-[IMG_6822.jpeg](../evidence/raw/IMG_6822.jpeg) und [IMG_6832.jpeg](../evidence/raw/IMG_6832.jpeg) sind durch den vorhandenen [Quellenabgleich](reconstruction/SOURCE-RECONCILIATION.md) als Bilder der unterschiedlich langen Stifte bzw. eines langen Stifts beschrieben. Die separate Nagel-Punktewolke ist noch nicht eindeutig im Fork identifiziert.
+[IMG_6822.jpeg](../evidence/raw/Kumpf/IMG_6822.jpeg) und [IMG_6832.jpeg](../evidence/raw/Kumpf/IMG_6832.jpeg) sind durch den vorhandenen [Quellenabgleich](reconstruction/SOURCE-RECONCILIATION.md) als Bilder der unterschiedlich langen Stifte bzw. eines langen Stifts beschrieben. Die separate Nagel-Punktewolke ist noch nicht eindeutig im Fork identifiziert.
 
 Der wichtige neue funktionale Zusammenhang ist **Überlappung → unterschiedliche erforderliche Nagellängen**. Daraus folgt noch nicht, dass das Lang-/Kurzpaar die Neigung des Kumpfes erzeugt. Die tatsächlichen Nagelwege durch die beschriebenen Löcher und den Krümmling bleiben eine gezielte Prüfaufgabe.
 

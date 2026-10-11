@@ -1,0 +1,2054 @@
+{
+  "schema": "ks-evidence-component-index/v1",
+  "base_commit": "feb8cd78c70f5966093cf457b27577a677be8134",
+  "note": "Component filing only. Existing original sources unchanged; eleven new shaft sources intentionally resized and original bytes removed at user request. See evidence/derived/welle-compression.json.",
+  "assets": [
+    {
+      "filename": "1000046420.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/1000046420.jpg",
+      "previous_path": "evidence/raw/1000046420.jpg",
+      "git_blob_sha1": "b0651050bf59b8aa21a56c0cb722fa938b2bbd5e",
+      "bytes": 151269,
+      "source_id": "PHOTO-1000046420",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "1000046421.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/1000046421.jpg",
+      "previous_path": "evidence/raw/1000046421.jpg",
+      "git_blob_sha1": "7f7203bb40887c389e3cab2b8fc9e9a5de0e5957",
+      "bytes": 144185,
+      "source_id": "PHOTO-1000046421",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "1000046422.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/1000046422.jpg",
+      "previous_path": "evidence/raw/1000046422.jpg",
+      "git_blob_sha1": "0e8e2fa39bfbe51018595a8f4b98f0efedf253ff",
+      "bytes": 133763,
+      "source_id": "PHOTO-1000046422",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "1000046423.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/1000046423.jpg",
+      "previous_path": "evidence/raw/1000046423.jpg",
+      "git_blob_sha1": "e74348814ac8cdac0cea7d08e782c74c796d0c86",
+      "bytes": 163254,
+      "source_id": "PHOTO-1000046423",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6790.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6790.jpeg",
+      "previous_path": "evidence/raw/IMG_6790.jpeg",
+      "git_blob_sha1": "7fbc4bbd84047ceb9abbf22cea8e547a415a7db1",
+      "bytes": 697816,
+      "source_id": "V2-IMG_6790",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6792.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6792.jpeg",
+      "previous_path": "evidence/raw/IMG_6792.jpeg",
+      "git_blob_sha1": "166af32766b6f51d700b537f50fd5670d5fe818c",
+      "bytes": 636432,
+      "source_id": "V2-IMG_6792",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6793.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6793.jpeg",
+      "previous_path": "evidence/raw/IMG_6793.jpeg",
+      "git_blob_sha1": "0484741c4e62c0c48d352b0da83247cfb8401e56",
+      "bytes": 643412,
+      "source_id": "V2-IMG_6793",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6794.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6794.jpeg",
+      "previous_path": "evidence/raw/IMG_6794.jpeg",
+      "git_blob_sha1": "ba0bb956d374203a4459ae18a0402048ebe965f3",
+      "bytes": 644026,
+      "source_id": "V2-IMG_6794",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6795.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6795.jpeg",
+      "previous_path": "evidence/raw/IMG_6795.jpeg",
+      "git_blob_sha1": "a4d842967bed7b2d4f8d18ee609342940b1d2fec",
+      "bytes": 661919,
+      "source_id": "V2-IMG_6795",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6797.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6797.jpeg",
+      "previous_path": "evidence/raw/IMG_6797.jpeg",
+      "git_blob_sha1": "c369e2bc4f5deb00d9ac0026a74da7e5cb9766f9",
+      "bytes": 591715,
+      "source_id": "V2-IMG_6797",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6798.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6798.jpeg",
+      "previous_path": "evidence/raw/IMG_6798.jpeg",
+      "git_blob_sha1": "990e5d6f09e94b3c929db5de28e0cc87a5294c66",
+      "bytes": 624476,
+      "source_id": "V2-IMG_6798",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6799.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6799.jpeg",
+      "previous_path": "evidence/raw/IMG_6799.jpeg",
+      "git_blob_sha1": "ad90e9a1c0c08b025943c418c4fe2966e027813f",
+      "bytes": 644845,
+      "source_id": "V2-IMG_6799",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6800.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6800.jpeg",
+      "previous_path": "evidence/raw/IMG_6800.jpeg",
+      "git_blob_sha1": "e2305667cbfbb722c0c5f280ed48702fc3c28a3b",
+      "bytes": 889040,
+      "source_id": "V2-IMG_6800",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6801.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6801.jpeg",
+      "previous_path": "evidence/raw/IMG_6801.jpeg",
+      "git_blob_sha1": "512e57f2d6dd9ef91c1e237df14eca69aee136e9",
+      "bytes": 867812,
+      "source_id": "V2-IMG_6801",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6803-upload2.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6803-upload2.jpeg",
+      "previous_path": "evidence/raw/IMG_6803-upload2.jpeg",
+      "git_blob_sha1": "5f09605cb55cb3f325d750e4daec342ace2d6a45",
+      "bytes": 881427,
+      "source_id": "V2-IMG_6803-upload2",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6804.jpeg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/IMG_6804.jpeg",
+      "previous_path": "evidence/raw/IMG_6804.jpeg",
+      "git_blob_sha1": "0c1492fd7522d3d31597eca7c8783f4a4d95b4d7",
+      "bytes": 903302,
+      "source_id": "V2-IMG_6804",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG_6808-upload2.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6808-upload2.jpeg",
+      "previous_path": "evidence/raw/IMG_6808-upload2.jpeg",
+      "git_blob_sha1": "047a8de67da9be0168386328483f8134be9805f3",
+      "bytes": 791892,
+      "source_id": "V2-IMG_6808-upload2",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6809.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6809.jpeg",
+      "previous_path": "evidence/raw/IMG_6809.jpeg",
+      "git_blob_sha1": "60a102a31c53aefea3e96d3f685cd88bf46a5eb3",
+      "bytes": 678661,
+      "source_id": "V2-IMG_6809",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6810.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6810.jpeg",
+      "previous_path": "evidence/raw/IMG_6810.jpeg",
+      "git_blob_sha1": "d76b281e900764b73d403db8c002559987820068",
+      "bytes": 734269,
+      "source_id": "V2-IMG_6810",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6811.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6811.jpeg",
+      "previous_path": "evidence/raw/IMG_6811.jpeg",
+      "git_blob_sha1": "04c105a9fca8e83da1273d8d271ea93a84dbdc4b",
+      "bytes": 816407,
+      "source_id": "V2-IMG_6811",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6812.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6812.jpeg",
+      "previous_path": "evidence/raw/IMG_6812.jpeg",
+      "git_blob_sha1": "35e74d084115bdd5c11108f86479843fc843a2f3",
+      "bytes": 559161,
+      "source_id": "V2-IMG_6812",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6816.jpeg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG_6816.jpeg",
+      "previous_path": "evidence/raw/IMG_6816.jpeg",
+      "git_blob_sha1": "13ef66401778207d9f9ce54c4f628132d1b86392",
+      "bytes": 583092,
+      "source_id": "PHOTO-6816",
+      "title": "Wellen-Längsskizze mit drei Arm-Durchtritten je Zone",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6817.jpeg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG_6817.jpeg",
+      "previous_path": "evidence/raw/IMG_6817.jpeg",
+      "git_blob_sha1": "d3a8e5c4bd366969538bc0494b52ac5ef84feaa5",
+      "bytes": 585855,
+      "source_id": "PHOTO-6817",
+      "title": "Wellen-Längsskizze mit drei Arm-Durchtritten je Zone",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6818.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6818.jpeg",
+      "previous_path": "evidence/raw/IMG_6818.jpeg",
+      "git_blob_sha1": "e82355bdece26a1f197ba250b52207be8158f186",
+      "bytes": 692267,
+      "source_id": "PHOTO-6818",
+      "title": "Arme und Krümmling Reihenfolge — gelber Zettel",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6819.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6819.jpeg",
+      "previous_path": "evidence/raw/IMG_6819.jpeg",
+      "git_blob_sha1": "483e03091402fabb28c8da805aa0ddd77acfd009",
+      "bytes": 643786,
+      "source_id": "PHOTO-6819",
+      "title": "Arme und Krümmling Reihenfolge — gelber Zettel",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6820.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6820.jpeg",
+      "previous_path": "evidence/raw/IMG_6820.jpeg",
+      "git_blob_sha1": "6acc3aabd86aeb7b39dca5787d06cb9044a5bde6",
+      "bytes": 664801,
+      "source_id": "PHOTO-6820",
+      "title": "Axiale Armfolge und Schlusskeile",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6821.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6821.jpeg",
+      "previous_path": "evidence/raw/IMG_6821.jpeg",
+      "git_blob_sha1": "42284a4b9875decbfbed109c42196bb093cf652f",
+      "bytes": 652049,
+      "source_id": "PHOTO-6821",
+      "title": "Kumpf-/Nagel-/Ringnotizen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6822.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6822.jpeg",
+      "previous_path": "evidence/raw/IMG_6822.jpeg",
+      "git_blob_sha1": "dba053acefca742db05b9a1ab2fa8a80eb46ebf3",
+      "bytes": 1017003,
+      "source_id": "V2-IMG_6822",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6823.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6823.jpeg",
+      "previous_path": "evidence/raw/IMG_6823.jpeg",
+      "git_blob_sha1": "411c1438c7ad77721dc9ecef95821ee3d00f484c",
+      "bytes": 569999,
+      "source_id": "PHOTO-6823",
+      "title": "Dauben-/Nutvarianten",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6824.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6824.jpeg",
+      "previous_path": "evidence/raw/IMG_6824.jpeg",
+      "git_blob_sha1": "2cbf6e9eb65df2f5daab5252788803d62b61180e",
+      "bytes": 756961,
+      "source_id": "PHOTO-6824",
+      "title": "Stückliste Keile, Nägel und Bänder",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6825.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6825.jpeg",
+      "previous_path": "evidence/raw/IMG_6825.jpeg",
+      "git_blob_sha1": "29b52aded8117e2355aae539b66fe9e363044954",
+      "bytes": 751485,
+      "source_id": "PHOTO-6825",
+      "title": "Stückliste Keile, Nägel und Bänder",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6827.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6827.jpeg",
+      "previous_path": "evidence/raw/IMG_6827.jpeg",
+      "git_blob_sha1": "4c40f2cabec243d8f1a1b481c5bbce7e44eca406",
+      "bytes": 579107,
+      "source_id": "PHOTO-6827",
+      "title": "Empfohlene Holzmaße und -längen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6828.jpeg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/IMG_6828.jpeg",
+      "previous_path": "evidence/raw/IMG_6828.jpeg",
+      "git_blob_sha1": "aa631a99c7a582993e157d91e071a738e52edf7b",
+      "bytes": 336665,
+      "source_id": "PHOTO-6828",
+      "title": "Schöpftrog Kl. Schäferrad",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "IMG_6829.jpeg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/IMG_6829.jpeg",
+      "previous_path": "evidence/raw/IMG_6829.jpeg",
+      "git_blob_sha1": "c6dc2bb5a2982fd0af8bce3f81c917e255925f66",
+      "bytes": 340602,
+      "source_id": "PHOTO-6829",
+      "title": "Schöpftrog Kl. Schäferrad",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "IMG_6830.jpeg",
+      "component": "Rinne",
+      "path": "evidence/raw/Rinne/IMG_6830.jpeg",
+      "previous_path": "evidence/raw/IMG_6830.jpeg",
+      "git_blob_sha1": "019daa5d35d22b71da6bcc8b3aa92fc929b1f95c",
+      "bytes": 604678,
+      "source_id": "PHOTO-6830",
+      "title": "Rinne hinter Trog",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6831.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6831.jpeg",
+      "previous_path": "evidence/raw/IMG_6831.jpeg",
+      "git_blob_sha1": "ff50457bc4de17eaacb2e8ccb04d03b8056ead66",
+      "bytes": 642742,
+      "source_id": "PHOTO-6831",
+      "title": "Neufassung Arm-/Krümmling-Reihenfolge",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6832.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6832.jpeg",
+      "previous_path": "evidence/raw/IMG_6832.jpeg",
+      "git_blob_sha1": "cd62e4c635db8a7a9750b6ab318f8f38c73a3b61",
+      "bytes": 973243,
+      "source_id": "V2-IMG_6832",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6833.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6833.jpeg",
+      "previous_path": "evidence/raw/IMG_6833.jpeg",
+      "git_blob_sha1": "c38e20c553088d53a5ffaf85fa4c48353ebf1e4e",
+      "bytes": 632468,
+      "source_id": "PHOTO-6833",
+      "title": "Kontaktstreifen mit handschriftlicher Maßanpassung",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6836.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6836.jpeg",
+      "previous_path": "evidence/raw/IMG_6836.jpeg",
+      "git_blob_sha1": "2c223925c481911ea16ab50df39a51fde6d9c0d3",
+      "bytes": 653769,
+      "source_id": "PHOTO-6836",
+      "title": "Biegematrize, Fertigungshilfsmittel",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6837.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6837.jpeg",
+      "previous_path": "evidence/raw/IMG_6837.jpeg",
+      "git_blob_sha1": "46348d04cf225ccf6affa290ac16048660880d0e",
+      "bytes": 666758,
+      "source_id": "PHOTO-6837",
+      "title": "Biegematrize, Fertigungshilfsmittel",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6838.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6838.jpeg",
+      "previous_path": "evidence/raw/IMG_6838.jpeg",
+      "git_blob_sha1": "ae0965ba17953c9788efea14708ded56750407d3",
+      "bytes": 671013,
+      "source_id": "PHOTO-6838",
+      "title": "Kreis-/Zwölfeck-Konstruktionsskizze",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6839.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6839.jpeg",
+      "previous_path": "evidence/raw/IMG_6839.jpeg",
+      "git_blob_sha1": "b3b5ab8ed6ad31fb734fcab20c195f243fb32f7d",
+      "bytes": 520541,
+      "source_id": "PHOTO-6839",
+      "title": "Kleine und mittlere Kümpfe: Boden-/Deckel-Notizen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6840.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6840.jpeg",
+      "previous_path": "evidence/raw/IMG_6840.jpeg",
+      "git_blob_sha1": "846bd68b79401981b1595b30b527156f4740d18d",
+      "bytes": 577720,
+      "source_id": "PHOTO-6840",
+      "title": "Kreis-/Zwölfeck-Konstruktionsskizze",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6841.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6841.jpeg",
+      "previous_path": "evidence/raw/IMG_6841.jpeg",
+      "git_blob_sha1": "0bc70d4aaed9fefb648219f16bc806c4494a03c1",
+      "bytes": 570465,
+      "source_id": "PHOTO-6841",
+      "title": "12-kantige Variante mit zwei Maßsätzen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6842.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6842.jpeg",
+      "previous_path": "evidence/raw/IMG_6842.jpeg",
+      "git_blob_sha1": "95e40ea696f7323afc7e2c0eeb11482daa9943b1",
+      "bytes": 578855,
+      "source_id": "PHOTO-6842",
+      "title": "Brettprofil auf technischer Vorlage",
+      "classification": "component association unresolved; see source analysis",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6843.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6843.jpeg",
+      "previous_path": "evidence/raw/IMG_6843.jpeg",
+      "git_blob_sha1": "c26140715ed0a90de0f2d7402de7a5fe7d838596",
+      "bytes": 564636,
+      "source_id": "PHOTO-6843",
+      "title": "Brettprofil auf technischer Vorlage",
+      "classification": "component association unresolved; see source analysis",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6844.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6844.jpeg",
+      "previous_path": "evidence/raw/IMG_6844.jpeg",
+      "git_blob_sha1": "86570a3699091511d968294501523a2f600bf1e3",
+      "bytes": 572183,
+      "source_id": "PHOTO-6844",
+      "title": "Brettprofil auf technischer Vorlage",
+      "classification": "component association unresolved; see source analysis",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6845.jpeg",
+      "component": "Arbeitsunterlagen",
+      "path": "evidence/raw/Arbeitsunterlagen/IMG_6845.jpeg",
+      "previous_path": "evidence/raw/IMG_6845.jpeg",
+      "git_blob_sha1": "a505814af31cfc519a15e0f361ad1158f921f4d6",
+      "bytes": 757953,
+      "source_id": "PHOTO-6845",
+      "title": "Kontaktstreifen mit handschriftlicher Maßanpassung",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6846.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6846.jpeg",
+      "previous_path": "evidence/raw/IMG_6846.jpeg",
+      "git_blob_sha1": "252805500afba3e46a663952cf3b5c75238c0fc2",
+      "bytes": 670869,
+      "source_id": "PHOTO-6846",
+      "title": "Spannringe für Kümpfe",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6847.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6847.jpeg",
+      "previous_path": "evidence/raw/IMG_6847.jpeg",
+      "git_blob_sha1": "4e3f54eec0680929ef44ac798da4c04b28899283",
+      "bytes": 698290,
+      "source_id": "PHOTO-6847",
+      "title": "Spannringe für Kümpfe",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6848.jpeg",
+      "component": "Kruemmlinge",
+      "path": "evidence/raw/Kruemmlinge/IMG_6848.jpeg",
+      "previous_path": "evidence/raw/IMG_6848.jpeg",
+      "git_blob_sha1": "a16fa797a17331aa21170157b386e71b15fae038",
+      "bytes": 750020,
+      "source_id": "PHOTO-6848",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6849.jpeg",
+      "component": "Kruemmlinge",
+      "path": "evidence/raw/Kruemmlinge/IMG_6849.jpeg",
+      "previous_path": "evidence/raw/IMG_6849.jpeg",
+      "git_blob_sha1": "1c31c634e99c997bb0d5bcf99a6a8ce3a731a2a2",
+      "bytes": 745533,
+      "source_id": "PHOTO-6849",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6850.jpeg",
+      "component": "Kruemmlinge",
+      "path": "evidence/raw/Kruemmlinge/IMG_6850.jpeg",
+      "previous_path": "evidence/raw/IMG_6850.jpeg",
+      "git_blob_sha1": "1769b82a491689e60b8e259e7ba16f11fa02a39f",
+      "bytes": 660844,
+      "source_id": "PHOTO-6850",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6851.jpeg",
+      "component": "Kruemmlinge",
+      "path": "evidence/raw/Kruemmlinge/IMG_6851.jpeg",
+      "previous_path": "evidence/raw/IMG_6851.jpeg",
+      "git_blob_sha1": "17a1ffe8a5118c55d6481df4aed3c5b01a24180e",
+      "bytes": 666537,
+      "source_id": "PHOTO-6851",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6852.jpeg",
+      "component": "Kruemmlinge",
+      "path": "evidence/raw/Kruemmlinge/IMG_6852.jpeg",
+      "previous_path": "evidence/raw/IMG_6852.jpeg",
+      "git_blob_sha1": "25774fd3355f043745a5ac0e1f214871888a5cdf",
+      "bytes": 680615,
+      "source_id": "PHOTO-6852",
+      "title": "Radkranzdetail — überlappende Aufnahmen eines Blatts",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6853.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6853.jpeg",
+      "previous_path": "evidence/raw/IMG_6853.jpeg",
+      "git_blob_sha1": "927adb9c0400ce63708442b6a222c9dd2d2a851d",
+      "bytes": 896233,
+      "source_id": "PHOTO-6853",
+      "title": "Beide Armzonen und Wellenband",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6854.jpeg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/IMG_6854.jpeg",
+      "previous_path": "evidence/raw/IMG_6854.jpeg",
+      "git_blob_sha1": "5363a1b7f1eeabe3076d25a982050798fbc96f16",
+      "bytes": 532942,
+      "source_id": "PHOTO-6854",
+      "title": "Kümpfe im Detail",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "IMG_6855.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6855.jpeg",
+      "previous_path": "evidence/raw/IMG_6855.jpeg",
+      "git_blob_sha1": "d84643472080369ad268d64336eb192c1a89364c",
+      "bytes": 794918,
+      "source_id": "PHOTO-6855",
+      "title": "Ferner Wellen-/Armbereich",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6856.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6856.jpeg",
+      "previous_path": "evidence/raw/IMG_6856.jpeg",
+      "git_blob_sha1": "b19bf8a9fe5008027a77e702fb4e430c6f83a79e",
+      "bytes": 819887,
+      "source_id": "PHOTO-6856",
+      "title": "Ferner Wellen-/Armbereich",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6858.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6858.jpeg",
+      "previous_path": "evidence/raw/IMG_6858.jpeg",
+      "git_blob_sha1": "caabcece2a9ae5b54e3338e0503ee59477e26066",
+      "bytes": 730724,
+      "source_id": "PHOTO-6858",
+      "title": "Gesamtansicht mit Trog und Radstatt",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6859.jpeg",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6859.jpeg",
+      "previous_path": "evidence/raw/IMG_6859.jpeg",
+      "git_blob_sha1": "306cbd7bce23e22018943ea78eb6ca7a86512bdf",
+      "bytes": 728900,
+      "source_id": "PHOTO-6859",
+      "title": "Gesamtansicht mit Trog und Radstatt",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "IMG_6860.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6860.jpeg",
+      "previous_path": "evidence/raw/IMG_6860.jpeg",
+      "git_blob_sha1": "29cbc6abcbcb5fcea8ac146480189d7226dd8612",
+      "bytes": 723424,
+      "source_id": "PHOTO-6860",
+      "title": "Innenansicht Ringebenen und Armverbindungen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6861.jpeg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/IMG_6861.jpeg",
+      "previous_path": "evidence/raw/IMG_6861.jpeg",
+      "git_blob_sha1": "120a8587225dd4a63ccbdbe85b95fbf136a7e309",
+      "bytes": 788482,
+      "source_id": "PHOTO-6861",
+      "title": "Innenansicht Ringebenen und Armverbindungen",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "IMG_6863.png",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/IMG_6863.png",
+      "previous_path": "evidence/raw/IMG_6863.png",
+      "git_blob_sha1": "d8e0df9085a6f5f940f09d22fb08103c51426058",
+      "bytes": 179991,
+      "source_id": "META-SCANIVERSE-EXPORT",
+      "title": "Scaniverse Exportdialog",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "Scaniverse 2026-10-07 173556.glb",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.glb",
+      "previous_path": "evidence/raw/Scaniverse 2026-10-07 173556.glb",
+      "git_blob_sha1": "13f60c126834f43df052c1d71445b7dc8cfe9f3c",
+      "bytes": 7166952,
+      "source_id": "SCAN-20261007-01-GLB",
+      "title": "GLB partial capture",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "Scaniverse 2026-10-07 173556.ply",
+      "component": "Gesamtansichten",
+      "path": "evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.ply",
+      "previous_path": "evidence/raw/Scaniverse 2026-10-07 173556.ply",
+      "git_blob_sha1": "659ac69024d47a118a401c9ea43020dcaef6fbcb",
+      "bytes": 1134521,
+      "source_id": "SCAN-20261007-01-PLY",
+      "title": "PLY partial capture",
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "1000046530.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046530.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046530.jpg",
+      "git_blob_sha1": "498efb0c490f8015385f435f1a98dc109c063e71",
+      "bytes": 242467,
+      "source_id": "PHOTO-TH-20261009-1000046530",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046531.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046531.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046531.jpg",
+      "git_blob_sha1": "2fb33b25d491999544142aab710b574fc041548c",
+      "bytes": 292200,
+      "source_id": "PHOTO-TH-20261009-1000046531",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046532.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046532.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046532.jpg",
+      "git_blob_sha1": "c0d7bd820ea1847be88445aed849f2c15247c8d6",
+      "bytes": 335851,
+      "source_id": "PHOTO-TH-20261009-1000046532",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046533.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046533.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046533.jpg",
+      "git_blob_sha1": "fa8beac0d94874ff25a48831ed004a403d1351f7",
+      "bytes": 331468,
+      "source_id": "PHOTO-TH-20261009-1000046533",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046534.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046534.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046534.jpg",
+      "git_blob_sha1": "1cbb996c8805a41bc720100200c0b0abdaab47f4",
+      "bytes": 292658,
+      "source_id": "PHOTO-TH-20261009-1000046534",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046535.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046535.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046535.jpg",
+      "git_blob_sha1": "0f688d3683b45871e49db39113609a3ea4fb9f82",
+      "bytes": 327223,
+      "source_id": "PHOTO-TH-20261009-1000046535",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046536.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046536.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046536.jpg",
+      "git_blob_sha1": "1dc79e23bbc55e629d9830846539de08b3387dbe",
+      "bytes": 293099,
+      "source_id": "PHOTO-TH-20261009-1000046536",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046537.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046537.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046537.jpg",
+      "git_blob_sha1": "02a1189b43d0d71966e7253b3d81fb12c7bc15c7",
+      "bytes": 186043,
+      "source_id": "PHOTO-TH-20261009-1000046537",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046538.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046538.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046538.jpg",
+      "git_blob_sha1": "b1c28b15c688fffda1a232d5fe7e3d293797d0b6",
+      "bytes": 322499,
+      "source_id": "PHOTO-TH-20261009-1000046538",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046539.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046539.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046539.jpg",
+      "git_blob_sha1": "705513c5eff9bb63bd038e2e27e7ab8498bebb28",
+      "bytes": 329532,
+      "source_id": "PHOTO-TH-20261009-1000046539",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046540.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046540.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046540.jpg",
+      "git_blob_sha1": "7ef4a7c4d9307ff9d662fec0ae6bc5d2e1e99537",
+      "bytes": 341153,
+      "source_id": "PHOTO-TH-20261009-1000046540",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046541.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046541.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046541.jpg",
+      "git_blob_sha1": "a0b9073849cf395457ffaa77af3be80422abe8a9",
+      "bytes": 334217,
+      "source_id": "PHOTO-TH-20261009-1000046541",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "1000046542.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/1000046542.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/1000046542.jpg",
+      "git_blob_sha1": "d8a311cb47610d29e2f19eadecfac70703d73243",
+      "bytes": 361786,
+      "source_id": "PHOTO-TH-20261009-1000046542",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791540525839.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/image-1791540525839.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791540525839.jpg",
+      "git_blob_sha1": "bc9477494d832f6854cd7cdc963ece1b5956d001",
+      "bytes": 317227,
+      "source_id": "PHOTO-TH-20261009-image-1791540525839",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791540649435.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/image-1791540649435.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791540649435.jpg",
+      "git_blob_sha1": "2948ccfe8f44218223c5d246cb11e0a02104bedb",
+      "bytes": 287631,
+      "source_id": "PHOTO-TH-20261009-image-1791540649435",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791540668918.jpg",
+      "component": "Arme",
+      "path": "evidence/raw/Arme/image-1791540668918.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791540668918.jpg",
+      "git_blob_sha1": "139f08c134dcbc431018fd559dd7ceda2dcb7e47",
+      "bytes": 332811,
+      "source_id": "PHOTO-TH-20261009-image-1791540668918",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791540812566.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/image-1791540812566.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791540812566.jpg",
+      "git_blob_sha1": "2fb33b25d491999544142aab710b574fc041548c",
+      "bytes": 292200,
+      "source_id": "PHOTO-TH-20261009-image-1791540812566",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791540831514.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/image-1791540831514.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791540831514.jpg",
+      "git_blob_sha1": "c0d7bd820ea1847be88445aed849f2c15247c8d6",
+      "bytes": 335851,
+      "source_id": "PHOTO-TH-20261009-image-1791540831514",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541084264.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/image-1791541084264.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541084264.jpg",
+      "git_blob_sha1": "7f0ac8eb58d9a3c6b0496f4b3b333e461961d7d2",
+      "bytes": 291692,
+      "source_id": "PHOTO-TH-20261009-image-1791541084264",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541209669.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541209669.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541209669.jpg",
+      "git_blob_sha1": "a29a6a8b77676605e00aee2437093dbd95f04717",
+      "bytes": 348719,
+      "source_id": "PHOTO-TH-20261009-image-1791541209669",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541224562.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541224562.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541224562.jpg",
+      "git_blob_sha1": "00f1aa3dbb2c8d8849f6204b15d396f065df4891",
+      "bytes": 318470,
+      "source_id": "PHOTO-TH-20261009-image-1791541224562",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541247032.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541247032.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541247032.jpg",
+      "git_blob_sha1": "97c928fe65cef7e61342ac938e0a3d4e45eb7b8b",
+      "bytes": 327924,
+      "source_id": "PHOTO-TH-20261009-image-1791541247032",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541265923.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541265923.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541265923.jpg",
+      "git_blob_sha1": "d755659bce4c25578b07002a9ac358f8e2ae524e",
+      "bytes": 342420,
+      "source_id": "PHOTO-TH-20261009-image-1791541265923",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541278244.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541278244.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541278244.jpg",
+      "git_blob_sha1": "345c95e9479f85d763f0c6a1c9ef8f8e5e70909f",
+      "bytes": 355844,
+      "source_id": "PHOTO-TH-20261009-image-1791541278244",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541421696.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541421696.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541421696.jpg",
+      "git_blob_sha1": "3298e753ce5a08a88d0f991a2735c49f608442d6",
+      "bytes": 308383,
+      "source_id": "PHOTO-TH-20261009-image-1791541421696",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541435456.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541435456.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541435456.jpg",
+      "git_blob_sha1": "de9a02ff78f7084cda074e986c466d5e4d457bf4",
+      "bytes": 369346,
+      "source_id": "PHOTO-TH-20261009-image-1791541435456",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541442395.jpg",
+      "component": "Fluegelbretter",
+      "path": "evidence/raw/Fluegelbretter/image-1791541442395.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541442395.jpg",
+      "git_blob_sha1": "51bbd2f04278eeffd59a42092d267f3fbfe3e251",
+      "bytes": 274164,
+      "source_id": "PHOTO-TH-20261009-image-1791541442395",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791541554648.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/image-1791541554648.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541554648.jpg",
+      "git_blob_sha1": "c4c0d6b2ecfb22dbe8e9080f9bf4c8f7fc7f1fdf",
+      "bytes": 260923,
+      "source_id": "PHOTO-TH-20261009-image-1791541554648",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541561160.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/image-1791541561160.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541561160.jpg",
+      "git_blob_sha1": "3406f3d6a43b195dcef6922b49b29ac03187b929",
+      "bytes": 331795,
+      "source_id": "PHOTO-TH-20261009-image-1791541561160",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541576861.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/image-1791541576861.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541576861.jpg",
+      "git_blob_sha1": "3324305bf15fd70d4b7c5c1e75aa4a679a49e9b7",
+      "bytes": 282750,
+      "source_id": "PHOTO-TH-20261009-image-1791541576861",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541641609.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/image-1791541641609.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541641609.jpg",
+      "git_blob_sha1": "b7a9a4e661c418dcc70674a15d882ad97f7d7ab9",
+      "bytes": 270094,
+      "source_id": "PHOTO-TH-20261009-image-1791541641609",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541666129.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/image-1791541666129.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541666129.jpg",
+      "git_blob_sha1": "d4e7b9b8ba6f9ec7bf01b716db299b22e9c140e0",
+      "bytes": 252206,
+      "source_id": "PHOTO-TH-20261009-image-1791541666129",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541735045.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791541735045.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541735045.jpg",
+      "git_blob_sha1": "c207a96a244aa9b9a0b8504d9864d2c1f3192616",
+      "bytes": 362748,
+      "source_id": "PHOTO-TH-20261009-image-1791541735045",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791541761724.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791541761724.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541761724.jpg",
+      "git_blob_sha1": "24d4631685e31fcd325bf53e5d9973910e6b2a61",
+      "bytes": 363655,
+      "source_id": "PHOTO-TH-20261009-image-1791541761724",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791541781288.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791541781288.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541781288.jpg",
+      "git_blob_sha1": "d9ffaa11b849f7f9fee65b50ce6fc48bcab2f3e9",
+      "bytes": 337396,
+      "source_id": "PHOTO-TH-20261009-image-1791541781288",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791541790124.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791541790124.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541790124.jpg",
+      "git_blob_sha1": "6ddeca107fece73b936d9bb8b9ea0261339c0ebb",
+      "bytes": 354671,
+      "source_id": "PHOTO-TH-20261009-image-1791541790124",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791541863916.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791541863916.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541863916.jpg",
+      "git_blob_sha1": "4be2d7c53e7d6908b01c7bffb98653d75118f303",
+      "bytes": 339364,
+      "source_id": "PHOTO-TH-20261009-image-1791541863916",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791541887655.jpg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/image-1791541887655.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541887655.jpg",
+      "git_blob_sha1": "a6a5317af8363c4f976d261d8c689fe06dc40e88",
+      "bytes": 327639,
+      "source_id": "PHOTO-TH-20261009-image-1791541887655",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "image-1791541908195.jpg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/image-1791541908195.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541908195.jpg",
+      "git_blob_sha1": "e55b864f8593dfd3ba50b33c39008e4ecc2fd876",
+      "bytes": 185100,
+      "source_id": "PHOTO-TH-20261009-image-1791541908195",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "image-1791541920559.jpg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/image-1791541920559.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541920559.jpg",
+      "git_blob_sha1": "03cb2944314f725e7e180fe8da9572d956639794",
+      "bytes": 191883,
+      "source_id": "PHOTO-TH-20261009-image-1791541920559",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "image-1791541961389.jpg",
+      "component": "Rinne",
+      "path": "evidence/raw/Rinne/image-1791541961389.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541961389.jpg",
+      "git_blob_sha1": "3aa60137bc3d29ae20d6fda1353b97076eeb4ed8",
+      "bytes": 226153,
+      "source_id": "PHOTO-TH-20261009-image-1791541961389",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541967728.jpg",
+      "component": "Rinne",
+      "path": "evidence/raw/Rinne/image-1791541967728.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541967728.jpg",
+      "git_blob_sha1": "91a13d3e6f57a808307fde91bfe79b0e98115312",
+      "bytes": 364473,
+      "source_id": "PHOTO-TH-20261009-image-1791541967728",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791541979278.jpg",
+      "component": "Rinne",
+      "path": "evidence/raw/Rinne/image-1791541979278.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791541979278.jpg",
+      "git_blob_sha1": "5c186b4b495780f09d87293c62b1d9e898f4db20",
+      "bytes": 301064,
+      "source_id": "PHOTO-TH-20261009-image-1791541979278",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": []
+    },
+    {
+      "filename": "image-1791542028869.jpg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/image-1791542028869.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542028869.jpg",
+      "git_blob_sha1": "911ba7bcb1a4d3cf2bc65ebdb8cc97081989788f",
+      "bytes": 231141,
+      "source_id": "PHOTO-TH-20261009-image-1791542028869",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "image-1791542045602.jpg",
+      "component": "Auffangtrog",
+      "path": "evidence/raw/Auffangtrog/image-1791542045602.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542045602.jpg",
+      "git_blob_sha1": "e9a96cbd2722eac1f78adb8abcaebf34d02e7468",
+      "bytes": 290045,
+      "source_id": "PHOTO-TH-20261009-image-1791542045602",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne",
+        "Gesamtansichten"
+      ]
+    },
+    {
+      "filename": "image-1791542108092.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542108092.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542108092.jpg",
+      "git_blob_sha1": "175548be68255ac45401e030b4bf3a9019af2dfa",
+      "bytes": 353775,
+      "source_id": "PHOTO-TH-20261009-image-1791542108092",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542120355.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542120355.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542120355.jpg",
+      "git_blob_sha1": "8485f7027dea1b251460025aa0c90442772bdd78",
+      "bytes": 312348,
+      "source_id": "PHOTO-TH-20261009-image-1791542120355",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542146990.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542146990.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542146990.jpg",
+      "git_blob_sha1": "541684ac89016f70daba7234eb0d304fddb190f6",
+      "bytes": 259681,
+      "source_id": "PHOTO-TH-20261009-image-1791542146990",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542161221.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542161221.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542161221.jpg",
+      "git_blob_sha1": "4c6215ea747050fd8a970bd31ba656f8a54aa927",
+      "bytes": 249870,
+      "source_id": "PHOTO-TH-20261009-image-1791542161221",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542172733.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542172733.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542172733.jpg",
+      "git_blob_sha1": "fa0958b2e6511386fbca134e385f549e831ef31c",
+      "bytes": 337941,
+      "source_id": "PHOTO-TH-20261009-image-1791542172733",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542237069.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542237069.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542237069.jpg",
+      "git_blob_sha1": "71679ffc5947ca6e046f811321ca09caab336abc",
+      "bytes": 301102,
+      "source_id": "PHOTO-TH-20261009-image-1791542237069",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542257101.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542257101.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542257101.jpg",
+      "git_blob_sha1": "e778d45e142fe76d1fd6d287c389e5e8c5cfbeec",
+      "bytes": 239643,
+      "source_id": "PHOTO-TH-20261009-image-1791542257101",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542327774.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542327774.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542327774.jpg",
+      "git_blob_sha1": "c0a7575c8af12cf545c49540812529d1ac984160",
+      "bytes": 231556,
+      "source_id": "PHOTO-TH-20261009-image-1791542327774",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542342950.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791542342950.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542342950.jpg",
+      "git_blob_sha1": "3e84ab9ca84b25aada540964494693c02fba4146",
+      "bytes": 229417,
+      "source_id": "PHOTO-TH-20261009-image-1791542342950",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791542499680.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791542499680.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542499680.jpg",
+      "git_blob_sha1": "f34afc2876c95f03359572a2ccab9170b327037a",
+      "bytes": 359161,
+      "source_id": "PHOTO-TH-20261009-image-1791542499680",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791542573592.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791542573592.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542573592.jpg",
+      "git_blob_sha1": "9b23b1d0656b63b759bb5eada8c6ad2c49fd3a70",
+      "bytes": 280745,
+      "source_id": "PHOTO-TH-20261009-image-1791542573592",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791542586169.jpg",
+      "component": "Kumpf",
+      "path": "evidence/raw/Kumpf/image-1791542586169.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542586169.jpg",
+      "git_blob_sha1": "59a2b21586884d178251bec501dd4fc429f62137",
+      "bytes": 329463,
+      "source_id": "PHOTO-TH-20261009-image-1791542586169",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge",
+        "Fluegelbretter"
+      ]
+    },
+    {
+      "filename": "image-1791542766365.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/image-1791542766365.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542766365.jpg",
+      "git_blob_sha1": "e3ff50a366882aee699b6e56d4adadced285535d",
+      "bytes": 279641,
+      "source_id": "PHOTO-TH-20261009-image-1791542766365",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791542778932.jpg",
+      "component": "Schetternbretter",
+      "path": "evidence/raw/Schetternbretter/image-1791542778932.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791542778932.jpg",
+      "git_blob_sha1": "b637b3db3af69e9fd2df855c13b533a8779a36f5",
+      "bytes": 305735,
+      "source_id": "PHOTO-TH-20261009-image-1791542778932",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Kruemmlinge"
+      ]
+    },
+    {
+      "filename": "image-1791543053651.jpg",
+      "component": "Radstadt",
+      "path": "evidence/raw/Radstadt/image-1791543053651.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543053651.jpg",
+      "git_blob_sha1": "82a5e31c53ac9b5d07be687433769ad51344726a",
+      "bytes": 306377,
+      "source_id": "PHOTO-TH-20261009-image-1791543053651",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Welle",
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791543487137.jpg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/image-1791543487137.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543487137.jpg",
+      "git_blob_sha1": "4d903f68b852413dc01fa3314889336e3833a2c4",
+      "bytes": 350021,
+      "source_id": "PHOTO-TH-20261009-image-1791543487137",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791543497527.jpg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/image-1791543497527.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543497527.jpg",
+      "git_blob_sha1": "8453c697c66298aa7d543d471e9cb0919c269f13",
+      "bytes": 296171,
+      "source_id": "PHOTO-TH-20261009-image-1791543497527",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791543505768.jpg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/image-1791543505768.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543505768.jpg",
+      "git_blob_sha1": "55c1911c9ba0addb586600452409ecfed8cbbf95",
+      "bytes": 364027,
+      "source_id": "PHOTO-TH-20261009-image-1791543505768",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791543574540.jpg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/image-1791543574540.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543574540.jpg",
+      "git_blob_sha1": "3043486920ebcd671e86345d10a3dd4a0314a12b",
+      "bytes": 299447,
+      "source_id": "PHOTO-TH-20261009-image-1791543574540",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "image-1791543757351.jpg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/image-1791543757351.jpg",
+      "previous_path": "evidence/raw/thorsten-20261009/image-1791543757351.jpg",
+      "git_blob_sha1": "c0f237138830839811c6ed52d29da9fe9d6dcf2e",
+      "bytes": 372519,
+      "source_id": "PHOTO-TH-20261009-image-1791543757351",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg",
+      "component": "A-Bock",
+      "path": "evidence/raw/A-Bock/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg",
+      "previous_path": "evidence/raw/torsten-20261010/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg",
+      "git_blob_sha1": "462e0cedb9ea09f09a76a8fa2f36721084beb799",
+      "bytes": 559904,
+      "source_id": "PHOTO-TORSTEN-20261010-TH37-ANNOTATED",
+      "title": null,
+      "classification": "editorial-filing-only; not geometry authority",
+      "related_components": [
+        "Rinne"
+      ]
+    },
+    {
+      "filename": "IMG20261010133248.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133248.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133248.jpg",
+      "git_blob_sha1": "4f23cac187470e7eb3d5cfcf73542ebb88723905",
+      "bytes": 644506,
+      "sha256": "d06f538b20196dc2b7a44d2bd55d4cc99e1056e302685abac2f36acbe579edce",
+      "source_id": "PHOTO-WELLE-20261010133248",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133257.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133257.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133257.jpg",
+      "git_blob_sha1": "6ea4426e4a27edfdcc51d517010076a18b3ead06",
+      "bytes": 593866,
+      "sha256": "a1d905bb920d90bdbce9166d4ab154857e4a32ee0e712291c2fcc711b564fa20",
+      "source_id": "PHOTO-WELLE-20261010133257",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133344.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133344.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133344.jpg",
+      "git_blob_sha1": "c5182f1fc0751a696eef5dbd795236e7194c1d0d",
+      "bytes": 715504,
+      "sha256": "12ac639a758333e173311fb6c333fd9c6001c7a729df04194450f8acabc6e0c1",
+      "source_id": "PHOTO-WELLE-20261010133344",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133349.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133349.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133349.jpg",
+      "git_blob_sha1": "2804bcc363149dbad7f82e9a115086499665e6b6",
+      "bytes": 621432,
+      "sha256": "323cf8551756db1252130d0477e5c6786e15207a8dce40b1da1e09ac3170d64d",
+      "source_id": "PHOTO-WELLE-20261010133349",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133352.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133352.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133352.jpg",
+      "git_blob_sha1": "b907df37fb36e48cddf7e28b4089ba915ab5da8f",
+      "bytes": 624458,
+      "sha256": "9ef8ec4500298f7183448594eb63327f967ea7639eebddd7aa4a9c0bf4812201",
+      "source_id": "PHOTO-WELLE-20261010133352",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133404.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133404.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133404.jpg",
+      "git_blob_sha1": "20db0d43cefe2a6cb964a679c4afbca282c9057a",
+      "bytes": 694329,
+      "sha256": "99f6bce6c65419d6f7516929d094b10c52d6219b5c53ff4412027dd3ddf26c45",
+      "source_id": "PHOTO-WELLE-20261010133404",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133412.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133412.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133412.jpg",
+      "git_blob_sha1": "c1097b17a27046a0e3b2aef2fb36d54d80a14195",
+      "bytes": 708418,
+      "sha256": "9b873fd3c3e0ebaca1512cfdb12811815805178576188160746c1a312bda4cda",
+      "source_id": "PHOTO-WELLE-20261010133412",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133424.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133424.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133424.jpg",
+      "git_blob_sha1": "04f65a4c7b5603fe1504e3586a139ed3970e5b27",
+      "bytes": 549118,
+      "sha256": "c8c16617ef5dc5185686296a63e587f9c34c3db6f246b61c5fee01a06ef59d7d",
+      "source_id": "PHOTO-WELLE-20261010133424",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133430.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133430.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133430.jpg",
+      "git_blob_sha1": "dd8a65338d5e80ad95508b30968d9ac966353cc4",
+      "bytes": 562068,
+      "sha256": "9aa216fa9f7885b114a893979fcdfb50dd8a3b2a7c8c852dfbb2adf7ff654071",
+      "source_id": "PHOTO-WELLE-20261010133430",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133433.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133433.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133433.jpg",
+      "git_blob_sha1": "10b7001197e21e70edda65b7813c44d3246d02cd",
+      "bytes": 632625,
+      "sha256": "bc5d350886072e1b8ea916d0d1ad04dc3525868585829f781b40bd033a9eaa33",
+      "source_id": "PHOTO-WELLE-20261010133433",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    },
+    {
+      "filename": "IMG20261010133518.jpg",
+      "component": "Welle",
+      "path": "evidence/raw/Welle/IMG20261010133518.jpg",
+      "previous_path": "evidence/raw/Welle/IMG20261010133518.jpg",
+      "git_blob_sha1": "463cebd1b28c82b5fd52864cf020ddd5670b3d91",
+      "bytes": 683553,
+      "sha256": "565ac19a61fcd3f6dcbfad1b6c91f7d208d2993703dda6df43ae5d59ce542b03",
+      "source_id": "PHOTO-WELLE-20261010133518",
+      "title": "Verkleinerte Wellenaufnahme; große Ausgangsdatei auf Nutzerwunsch entfernt",
+      "classification": "resized-reference-image; not geometry authority",
+      "related_components": [
+        "Arme",
+        "Radstadt"
+      ],
+      "derivation_manifest": "evidence/derived/welle-compression.json",
+      "original_retained_in_repository": false
+    }
+  ]
+}

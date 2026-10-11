@@ -1,3 +1,5 @@
+> **Aktueller Auftrag — 09.10.2026:** Zuerst [ASTRA-ABGLEICH-20261009.md](ASTRA-ABGLEICH-20261009.md) und den [neuen Fachbeitrag](../docs/FACHBEITRAG-KONSTRUKTION-20261009.md) lesen. Neue explizite Maße und Befestigungsbeschreibungen korrigieren die unten erhaltene historische ITER-001-Spezifikation. Die folgende abgeschlossene Iteration nicht erneut als aktuellen Auftrag starten.
+
 # NEXT ASTRA WORK SESSION — Baseline V3 Model Calibration + Perfection Loop
 
 Branch: `work/model-calibration-loop-v3-20261008`
@@ -59,10 +61,10 @@ Mandatory baseline:
 - neighboring Kümpfe overlap.
 
 Use the four Thorsten reference photos:
-- `evidence/raw/1000046420.jpg`
-- `evidence/raw/1000046421.jpg`
-- `evidence/raw/1000046422.jpg`
-- `evidence/raw/1000046423.jpg`
+- `evidence/raw/Kumpf/1000046420.jpg`
+- `evidence/raw/Kumpf/1000046421.jpg`
+- `evidence/raw/Kumpf/1000046422.jpg`
+- `evidence/raw/Kumpf/1000046423.jpg`
 
 Do not keep a generic barrel approximation if these images support a more faithful shape.
 

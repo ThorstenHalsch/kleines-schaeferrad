@@ -1,21 +1,22 @@
-# Next UX Work Session — R1 and R4 implementation only
+# NEXT WORK SESSION — UX R1/R4 Recovery
 
-Base: main after PR #10 merge 36ea5c01d57ee1c0017f99941034a76adbe4790e.
-Read: state/ux-recovery/20261009/AUDIT.md, RECOVERY-PLAN.md, GATE.md; docs/HUMAN-UX-QUALITY-CONTRACT.md.
+**Start condition:** PR #17 reviewed and merged to main **only after** Torsten's annotated photo has been stored with verified SHA-256 and the final CI matrix is green. If the original transfer remains blocked, stop and report `SOURCE TRANSFER PENDING`; do not infer a green evidence gate. Independently confirm current main SHA before work. PR #16 at `129a9a9` is the audit reference, not automatically merged.
 
-## Scope
-- R1: reveal urgent water capture, offer compact capture-window navigation using existing task IDs, make original-video and extra-paper-measurement fallback visible at relevant steps. Deep-link/reload return must preserve task and draft.
-- R4: fix 200%-text hero collision via intrinsic wrapping, preserving current visual grammar.
-- No R2 measurement schema migration, no R3 workbench redesign, no P2 backlog sweep, no geometry or model changes.
-- Preserve task array indices and existing v1 saved records. No changes to source originals or expert authority.
+## Mission
+Implement bounded R1/R4 UX recovery against current main. The goal is a usable, calmer field/workbench experience, **not** a new platform, reconstruction or schema migration.
 
-## Timing and release
-Real dismantling evidence capture is the operational priority. Implement on this isolated branch, not main. No automatic merge or production deployment until real capture is safely backed up and user reviews results. Current printed field kit/native camera remains fallback.
+## Required changes
+1. Make urgent water-intake action visible and accessible within two visible actions; link source-video and measurement guidance without implying unavailable archive originals exist.
+2. Fix hero/photo collision at 200% computed text size using intrinsic layout/reflow, not hidden content.
+3. On 320/390/768 px prioritize task question → selected component → sketch/photo → open property → record observation; progressively disclose technical variants without deleting expert controls.
+4. Preserve deep-link/resume and component/property context across discover → inspect → record.
+5. Respect existing MUX design grammar; keep all 21 task IDs and order, v1 import semantics, original media and model geometry untouched.
 
-## Required verification
-- Screenshot and interactions at 1440, 768, 390, 320 and 1280 with 200% text.
-- R1: water capture in first meaningful view, at most two actions to TASK-WATER, all 21 task IDs and order unchanged, reload/deep-link preserves input step, no false video upload.
-- R4: no headline/photo collision at 200% text, no horizontal overflow, keyboard focus intact.
-- Existing workbench/field tests, Astro check/build, export/import/offline regression.
-- If physical Safari or printer not available, mark as unverified, not passed.
-- Document before/after screenshots and rollback, commit/push branch and open review PR. Stop at UX R1+R4 REVIEW READY.
+## Verification and evidence
+- Baseline screenshots and after screenshots for desktop, 768, 390, 320 and 200% text; keyboard and reduced-motion journeys.
+- Exercise field intake, workbench, import/export conflict and tampered hash rejection, return-to-task, WebGL fallback, offline behavior. Label proxy/SSL blockers separately from actual product defects.
+- Run build, Node, browser integration/reconstruction/field/field-kit at final HEAD; bind each result to exact SHA.
+- Record unresolved real iPhone/Safari, second-device and print/physical acceptance as open; do not fabricate.
+
+## Stop
+Open a separate UX PR with reviewable diffs and evidence. Stop at `UX R1+R4 REVIEW READY`. No merge, deployment, new geometry, F02/F03 edits, fabricated measures or source promotion.
