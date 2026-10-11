@@ -4,6 +4,10 @@
 
 Originalfotos und fotografierte Zeichnungen. Die Ablage ändert weder Messstatus noch Modellgeometrie. Unter Arbeitsunterlagen sind Vorlagen mit ungesicherter Bauteilzuordnung gesammelt.
 
+## Aktueller Fachbefund
+
+[Land-/Wasserseite und Bohrungszuordnung](BEFUND.md): Landseitig jeweils zwei zusätzliche Bohrungen zur Kumpfbefestigung; wasserseitig keine Kumpfbohrungen. Die Schetternbrett-Verbindungen sind getrennt davon zu behandeln. Nutzerbestätigt am 11.10.2026.
+
 | Datei | Quellennummer | Beschreibung / weiterer Bezug |
 |---|---|---|
 | [IMG_6848.jpeg](IMG_6848.jpeg) | PHOTO-6848 | Radkranzdetail — überlappende Aufnahmen eines Blatts |
