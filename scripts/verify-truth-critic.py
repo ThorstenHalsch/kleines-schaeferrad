@@ -1,5 +1,6 @@
 """Read existing evidence; never re-export, fit, or render reconstruction geometry."""
 from pathlib import Path
+from evidence_paths import evidence_path
 import hashlib,json,struct,subprocess
 from PIL import Image
 R=Path(__file__).resolve().parent.parent
@@ -25,17 +26,17 @@ for mode in ['truth','brute']:
 # Attached copies are optional when verifying this repository on another machine.
 attachments=[]
 for p in sorted((R.parent/'project_sources').glob('*')):
- name=p.name.split('-',1)[-1];q=R/'evidence/raw'/name
+ name=p.name.split('-',1)[-1];q=evidence_path(R,name)
  attachments.append({'file':name,'sha256':sha(p),'archive_match':q.exists() and sha(p)==sha(q)})
 assert not attachments or len(attachments)==30 and all(a['archive_match'] for a in attachments)
 scan=read('data/scan-transforms.json');assert scan['adopted_mechanical_transform'] is None and scan['field_scale'] is None
-with (R/'evidence/raw/Scaniverse 2026-10-07 173556.ply').open('rb') as f:
+with (R/'evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.ply').open('rb') as f:
  header=[]
  while True:
   s=f.readline().decode('ascii').strip();header.append(s)
   if s=='end_header':break
 assert 'element vertex 75619' in header
-scanbytes=(R/'evidence/raw/Scaniverse 2026-10-07 173556.glb').read_bytes()
+scanbytes=(R/'evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.glb').read_bytes()
 scann=struct.unpack_from('<I',scanbytes,12)[0];scandoc=json.loads(scanbytes[20:20+scann])
 primitives=[p for m in scandoc['meshes'] for p in m['primitives']]
 scan_geometry={'position_accessor_vertices':sum(scandoc['accessors'][i]['count'] for i in {p['attributes']['POSITION'] for p in primitives}), 'indexed_triangles':sum(scandoc['accessors'][p['indices']]['count']//3 for p in primitives if 'indices' in p and p.get('mode',4)==4),'scope':'Binary accessor/header inspection; no fit or mechanical registration'}

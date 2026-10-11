@@ -10,7 +10,7 @@
   "images": [
     {
       "id": "PHOTO-TH-20261009-image-1791543053651",
-      "path": "evidence/raw/thorsten-20261009/image-1791543053651.jpg",
+      "path": "evidence/raw/Radstadt/image-1791543053651.jpg",
       "original_filename": "image-1791543053651.jpg",
       "bytes": 306377,
       "sha256": "dee729e5c90c558e2e921b955d170ecdaf967a982a93c1b8db5b28e5cc121af9",
@@ -22,7 +22,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791540525839",
-      "path": "evidence/raw/thorsten-20261009/image-1791540525839.jpg",
+      "path": "evidence/raw/Arme/image-1791540525839.jpg",
       "original_filename": "image-1791540525839.jpg",
       "bytes": 317227,
       "sha256": "c4de9636a619bcf9ef9655a6a50e07951f137c92f6b50edf5c5288c3a75e7934",
@@ -34,7 +34,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541666129",
-      "path": "evidence/raw/thorsten-20261009/image-1791541666129.jpg",
+      "path": "evidence/raw/Welle/image-1791541666129.jpg",
       "original_filename": "image-1791541666129.jpg",
       "bytes": 252206,
       "sha256": "86b50adfc4af2137709577382b48bd4aeec48a10b4ac2ae4dd385b5d85e74408",
@@ -46,7 +46,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541735045",
-      "path": "evidence/raw/thorsten-20261009/image-1791541735045.jpg",
+      "path": "evidence/raw/Kumpf/image-1791541735045.jpg",
       "original_filename": "image-1791541735045.jpg",
       "bytes": 362748,
       "sha256": "186af15f1e3c60f23159b8dd1360c58bafcef78aab154e1c5e61a69800b61531",
@@ -58,7 +58,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541761724",
-      "path": "evidence/raw/thorsten-20261009/image-1791541761724.jpg",
+      "path": "evidence/raw/Kumpf/image-1791541761724.jpg",
       "original_filename": "image-1791541761724.jpg",
       "bytes": 363655,
       "sha256": "2b96ce5b4bf8e558378bd5cfaefe2b295d79d579daac0f742847ca6f84f5af49",
@@ -70,7 +70,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541781288",
-      "path": "evidence/raw/thorsten-20261009/image-1791541781288.jpg",
+      "path": "evidence/raw/Kumpf/image-1791541781288.jpg",
       "original_filename": "image-1791541781288.jpg",
       "bytes": 337396,
       "sha256": "0b35e69d946862e58a4a5599b977d660a718dfbc44167fa8afe6c818851d3b04",
@@ -82,7 +82,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541790124",
-      "path": "evidence/raw/thorsten-20261009/image-1791541790124.jpg",
+      "path": "evidence/raw/Kumpf/image-1791541790124.jpg",
       "original_filename": "image-1791541790124.jpg",
       "bytes": 354671,
       "sha256": "e66560021b07a6637dca43c3e87d91a727561e00834dfbc203f59ec33e498f1e",
@@ -94,7 +94,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542327774",
-      "path": "evidence/raw/thorsten-20261009/image-1791542327774.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542327774.jpg",
       "original_filename": "image-1791542327774.jpg",
       "bytes": 231556,
       "sha256": "da0c80a39cd7ff77505adb8061221ba67e5463970d545181a2dc6177c21f796c",
@@ -106,7 +106,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542342950",
-      "path": "evidence/raw/thorsten-20261009/image-1791542342950.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542342950.jpg",
       "original_filename": "image-1791542342950.jpg",
       "bytes": 229417,
       "sha256": "a625cf25913e2ea98b5bb80b818c3dd33dd3eaeeac9aba25ba6accd6ff4d5408",
@@ -118,7 +118,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046540",
-      "path": "evidence/raw/thorsten-20261009/1000046540.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046540.jpg",
       "original_filename": "1000046540.jpg",
       "bytes": 341153,
       "sha256": "a53b46cbad89e0691b0b3be8747f173f09ccdf46a1503b0bd3327ff53049db99",
@@ -130,7 +130,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046539",
-      "path": "evidence/raw/thorsten-20261009/1000046539.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046539.jpg",
       "original_filename": "1000046539.jpg",
       "bytes": 329532,
       "sha256": "4a40597815d0bba9e30da3d7c5b41136abd8cc1d1eb667d2490c3768d28ad31f",
@@ -142,7 +142,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046538",
-      "path": "evidence/raw/thorsten-20261009/1000046538.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046538.jpg",
       "original_filename": "1000046538.jpg",
       "bytes": 322499,
       "sha256": "534934111869c11bee477ff10cf97a8b2997f219c6f41cca9686ae33858cf43c",
@@ -154,7 +154,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046537",
-      "path": "evidence/raw/thorsten-20261009/1000046537.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046537.jpg",
       "original_filename": "1000046537.jpg",
       "bytes": 186043,
       "sha256": "0a80a5bccacf65f042e5b11b006e6156f024b49389b34b926e3e47b9b50a16f1",
@@ -166,7 +166,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046536",
-      "path": "evidence/raw/thorsten-20261009/1000046536.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046536.jpg",
       "original_filename": "1000046536.jpg",
       "bytes": 293099,
       "sha256": "d081fd7b8d53d054fd13a40e1fc09130de74802dce4adbcc865157273b521528",
@@ -178,7 +178,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542028869",
-      "path": "evidence/raw/thorsten-20261009/image-1791542028869.jpg",
+      "path": "evidence/raw/Auffangtrog/image-1791542028869.jpg",
       "original_filename": "image-1791542028869.jpg",
       "bytes": 231141,
       "sha256": "0814241f60ecf8e1b13d13b71e8177daacdd50791952b41d4eee17b34357208c",
@@ -190,7 +190,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542045602",
-      "path": "evidence/raw/thorsten-20261009/image-1791542045602.jpg",
+      "path": "evidence/raw/Auffangtrog/image-1791542045602.jpg",
       "original_filename": "image-1791542045602.jpg",
       "bytes": 290045,
       "sha256": "b8c7196ebec45a92d1841e1c446f0ec9fbbf398036dd712457f6fcbc3359bcd6",
@@ -202,7 +202,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542499680",
-      "path": "evidence/raw/thorsten-20261009/image-1791542499680.jpg",
+      "path": "evidence/raw/Kumpf/image-1791542499680.jpg",
       "original_filename": "image-1791542499680.jpg",
       "bytes": 359161,
       "sha256": "0ac25c5745d57c204803c322785c391ee164ef504fe4f0f61739f905355b927a",
@@ -214,7 +214,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542573592",
-      "path": "evidence/raw/thorsten-20261009/image-1791542573592.jpg",
+      "path": "evidence/raw/Kumpf/image-1791542573592.jpg",
       "original_filename": "image-1791542573592.jpg",
       "bytes": 280745,
       "sha256": "5444ee608bcf9b72f75f8cc52e68e8b85c94b2d8be3b15f3e85545cff0433dae",
@@ -226,7 +226,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542586169",
-      "path": "evidence/raw/thorsten-20261009/image-1791542586169.jpg",
+      "path": "evidence/raw/Kumpf/image-1791542586169.jpg",
       "original_filename": "image-1791542586169.jpg",
       "bytes": 329463,
       "sha256": "037791182f76ade13880752412d45116e1c4e74fe294c64fb177dc6d4ce2a4ab",
@@ -238,7 +238,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542766365",
-      "path": "evidence/raw/thorsten-20261009/image-1791542766365.jpg",
+      "path": "evidence/raw/Schetternbretter/image-1791542766365.jpg",
       "original_filename": "image-1791542766365.jpg",
       "bytes": 279641,
       "sha256": "81dcf9c01f7ab91efe2c1890edb66969182513233e1cec98e62bddd3ac6c852b",
@@ -250,7 +250,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542778932",
-      "path": "evidence/raw/thorsten-20261009/image-1791542778932.jpg",
+      "path": "evidence/raw/Schetternbretter/image-1791542778932.jpg",
       "original_filename": "image-1791542778932.jpg",
       "bytes": 305735,
       "sha256": "d196e748949bc8b726f7c9cc98b61bc45a50dca6f8a3ff471b57480bbe555924",
@@ -262,7 +262,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046530",
-      "path": "evidence/raw/thorsten-20261009/1000046530.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046530.jpg",
       "original_filename": "1000046530.jpg",
       "bytes": 242467,
       "sha256": "83aa5193e313b3c6f361c279602f4e27592a587577c6534fd5903fd9546703a0",
@@ -274,7 +274,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791540812566",
-      "path": "evidence/raw/thorsten-20261009/image-1791540812566.jpg",
+      "path": "evidence/raw/Schetternbretter/image-1791540812566.jpg",
       "original_filename": "image-1791540812566.jpg",
       "bytes": 292200,
       "sha256": "b7a6db38d432445b1f3cfd29a1d39295db7592e550f915b7ae011a8efbf8bbba",
@@ -288,7 +288,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791540831514",
-      "path": "evidence/raw/thorsten-20261009/image-1791540831514.jpg",
+      "path": "evidence/raw/Schetternbretter/image-1791540831514.jpg",
       "original_filename": "image-1791540831514.jpg",
       "bytes": 335851,
       "sha256": "e0d2d5d56e09c6a1f5975cd35c26fa181c83e692da56c0c0b97d9486a04ad31d",
@@ -302,7 +302,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046542",
-      "path": "evidence/raw/thorsten-20261009/1000046542.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046542.jpg",
       "original_filename": "1000046542.jpg",
       "bytes": 361786,
       "sha256": "4f27c1dea527935ac3fcfe638dd51dda88dbd4391e7471476ece794721e548bc",
@@ -314,7 +314,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046541",
-      "path": "evidence/raw/thorsten-20261009/1000046541.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046541.jpg",
       "original_filename": "1000046541.jpg",
       "bytes": 334217,
       "sha256": "2f5feae4e75886ca70ce85d916cbfb86d045d10a3ab4362483fe7783f8d8aa4d",
@@ -326,7 +326,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541554648",
-      "path": "evidence/raw/thorsten-20261009/image-1791541554648.jpg",
+      "path": "evidence/raw/Welle/image-1791541554648.jpg",
       "original_filename": "image-1791541554648.jpg",
       "bytes": 260923,
       "sha256": "14f650e9b1807ea51edd5bf03d26c57d0480f1740cb6e5f7a618c7701395b832",
@@ -338,7 +338,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541561160",
-      "path": "evidence/raw/thorsten-20261009/image-1791541561160.jpg",
+      "path": "evidence/raw/Welle/image-1791541561160.jpg",
       "original_filename": "image-1791541561160.jpg",
       "bytes": 331795,
       "sha256": "5cce006b53cb33dad54f354d0d9295261f365a3f36f089914f51252165ce12cb",
@@ -350,7 +350,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541576861",
-      "path": "evidence/raw/thorsten-20261009/image-1791541576861.jpg",
+      "path": "evidence/raw/Welle/image-1791541576861.jpg",
       "original_filename": "image-1791541576861.jpg",
       "bytes": 282750,
       "sha256": "7242c19b0bf6e05cd2769980d546ba83bdedc5e3648de5adc691e60d59ad1808",
@@ -362,7 +362,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541863916",
-      "path": "evidence/raw/thorsten-20261009/image-1791541863916.jpg",
+      "path": "evidence/raw/Kumpf/image-1791541863916.jpg",
       "original_filename": "image-1791541863916.jpg",
       "bytes": 339364,
       "sha256": "6352771c6c97c23ca9c90aaed57a0446e18fec3002fe4ec8a18b079501e7d3ca",
@@ -374,7 +374,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791540649435",
-      "path": "evidence/raw/thorsten-20261009/image-1791540649435.jpg",
+      "path": "evidence/raw/Arme/image-1791540649435.jpg",
       "original_filename": "image-1791540649435.jpg",
       "bytes": 287631,
       "sha256": "6eb151a5011be1f92073cb4fb5ef1b12ee6570b8df41deb5d0f85bd38119279a",
@@ -386,7 +386,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791540668918",
-      "path": "evidence/raw/thorsten-20261009/image-1791540668918.jpg",
+      "path": "evidence/raw/Arme/image-1791540668918.jpg",
       "original_filename": "image-1791540668918.jpg",
       "bytes": 332811,
       "sha256": "b1181c97f50a4b558803e52d5a75f9d67bbec683c52109ab9bc18c26245eda30",
@@ -398,7 +398,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791543487137",
-      "path": "evidence/raw/thorsten-20261009/image-1791543487137.jpg",
+      "path": "evidence/raw/A-Bock/image-1791543487137.jpg",
       "original_filename": "image-1791543487137.jpg",
       "bytes": 350021,
       "sha256": "4349aec17dbb5a0ad1dba27131b41568e799138974d984665fa87e27273d66eb",
@@ -410,7 +410,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791543497527",
-      "path": "evidence/raw/thorsten-20261009/image-1791543497527.jpg",
+      "path": "evidence/raw/A-Bock/image-1791543497527.jpg",
       "original_filename": "image-1791543497527.jpg",
       "bytes": 296171,
       "sha256": "92224580f6685d154b062c1b9901df70ec27b81f20cfff5fc8b8f373ee0046da",
@@ -422,7 +422,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791543505768",
-      "path": "evidence/raw/thorsten-20261009/image-1791543505768.jpg",
+      "path": "evidence/raw/A-Bock/image-1791543505768.jpg",
       "original_filename": "image-1791543505768.jpg",
       "bytes": 364027,
       "sha256": "b90476f286447b9e13da7fa34d59d5b0933710314d774b2f7c2eb268e63ce176",
@@ -434,7 +434,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791543574540",
-      "path": "evidence/raw/thorsten-20261009/image-1791543574540.jpg",
+      "path": "evidence/raw/A-Bock/image-1791543574540.jpg",
       "original_filename": "image-1791543574540.jpg",
       "bytes": 299447,
       "sha256": "924b2b3f50c1c2cba2befafc618aec9a11da44643da69099b0a80e763cffe823",
@@ -446,7 +446,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046535",
-      "path": "evidence/raw/thorsten-20261009/1000046535.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046535.jpg",
       "original_filename": "1000046535.jpg",
       "bytes": 327223,
       "sha256": "812017b2d831a1d877853cd3fce5cf5f9474c3bbef4aaa3a8edeee0befe89d74",
@@ -458,7 +458,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046534",
-      "path": "evidence/raw/thorsten-20261009/1000046534.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046534.jpg",
       "original_filename": "1000046534.jpg",
       "bytes": 292658,
       "sha256": "ddeb6a95cb734dcd3ceca7fd1c3b358771e9337aac532da434a0acc0eb90522d",
@@ -470,7 +470,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046533",
-      "path": "evidence/raw/thorsten-20261009/1000046533.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046533.jpg",
       "original_filename": "1000046533.jpg",
       "bytes": 331468,
       "sha256": "852d7a4760c916b797a050f89e324e9a7218ca5d9fb7f9b6fb5c2d82af4a831c",
@@ -482,7 +482,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046532",
-      "path": "evidence/raw/thorsten-20261009/1000046532.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046532.jpg",
       "original_filename": "1000046532.jpg",
       "bytes": 335851,
       "sha256": "e0d2d5d56e09c6a1f5975cd35c26fa181c83e692da56c0c0b97d9486a04ad31d",
@@ -496,7 +496,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-1000046531",
-      "path": "evidence/raw/thorsten-20261009/1000046531.jpg",
+      "path": "evidence/raw/Schetternbretter/1000046531.jpg",
       "original_filename": "1000046531.jpg",
       "bytes": 292200,
       "sha256": "b7a6db38d432445b1f3cfd29a1d39295db7592e550f915b7ae011a8efbf8bbba",
@@ -510,7 +510,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542237069",
-      "path": "evidence/raw/thorsten-20261009/image-1791542237069.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542237069.jpg",
       "original_filename": "image-1791542237069.jpg",
       "bytes": 301102,
       "sha256": "c96325b80bf23e89b9abd7ff8e30663cb3f3b57ced0da114a48a0f505522def2",
@@ -522,7 +522,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542257101",
-      "path": "evidence/raw/thorsten-20261009/image-1791542257101.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542257101.jpg",
       "original_filename": "image-1791542257101.jpg",
       "bytes": 239643,
       "sha256": "0676c259faec0a0290a5a4392a998d2180a0f38f4fb3d16afda81847521dc6a2",
@@ -534,7 +534,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541961389",
-      "path": "evidence/raw/thorsten-20261009/image-1791541961389.jpg",
+      "path": "evidence/raw/Rinne/image-1791541961389.jpg",
       "original_filename": "image-1791541961389.jpg",
       "bytes": 226153,
       "sha256": "388f8a1636162e5f535019133fe81cb385ffb750e765208ad5f672b7977fe159",
@@ -546,7 +546,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541967728",
-      "path": "evidence/raw/thorsten-20261009/image-1791541967728.jpg",
+      "path": "evidence/raw/Rinne/image-1791541967728.jpg",
       "original_filename": "image-1791541967728.jpg",
       "bytes": 364473,
       "sha256": "6c2c6620293f19e7de0dc79722c6498b16afbd0de34ce4fbd3da2340ef093e77",
@@ -558,7 +558,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541979278",
-      "path": "evidence/raw/thorsten-20261009/image-1791541979278.jpg",
+      "path": "evidence/raw/Rinne/image-1791541979278.jpg",
       "original_filename": "image-1791541979278.jpg",
       "bytes": 301064,
       "sha256": "d7607cec1a76614c69925531d38d483aa0a4c2e4a40a288a1b2800089760b6d7",
@@ -570,7 +570,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791543757351",
-      "path": "evidence/raw/thorsten-20261009/image-1791543757351.jpg",
+      "path": "evidence/raw/A-Bock/image-1791543757351.jpg",
       "original_filename": "image-1791543757351.jpg",
       "bytes": 372519,
       "sha256": "8ee188a8539df9b489422bb920e6fa3785a0905af3e4556d4368befc5012c2e4",
@@ -582,7 +582,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541887655",
-      "path": "evidence/raw/thorsten-20261009/image-1791541887655.jpg",
+      "path": "evidence/raw/Auffangtrog/image-1791541887655.jpg",
       "original_filename": "image-1791541887655.jpg",
       "bytes": 327639,
       "sha256": "69732cdc8ee7717916381dbb8c34678b624c498ec5e3b7569fe1ab08ef2ffa39",
@@ -594,7 +594,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541908195",
-      "path": "evidence/raw/thorsten-20261009/image-1791541908195.jpg",
+      "path": "evidence/raw/Auffangtrog/image-1791541908195.jpg",
       "original_filename": "image-1791541908195.jpg",
       "bytes": 185100,
       "sha256": "92ea65a445bb8377329f2b59d5b5f87d1ef2aa6187dedec8a2c9a1027b7d074c",
@@ -606,7 +606,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541920559",
-      "path": "evidence/raw/thorsten-20261009/image-1791541920559.jpg",
+      "path": "evidence/raw/Auffangtrog/image-1791541920559.jpg",
       "original_filename": "image-1791541920559.jpg",
       "bytes": 191883,
       "sha256": "ea9a40215adc55058d4618a36604e847b333435971d22aa15d4394be4804af1e",
@@ -618,7 +618,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542108092",
-      "path": "evidence/raw/thorsten-20261009/image-1791542108092.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542108092.jpg",
       "original_filename": "image-1791542108092.jpg",
       "bytes": 353775,
       "sha256": "acb1483330d86f92758db13cdb35dced4a7b46d1d0bf25255247f716fe836990",
@@ -630,7 +630,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542120355",
-      "path": "evidence/raw/thorsten-20261009/image-1791542120355.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542120355.jpg",
       "original_filename": "image-1791542120355.jpg",
       "bytes": 312348,
       "sha256": "e6883de4b3dc7b31f6cc71f84eb3ac70ba39559920f83d77f5b55911cc1126e6",
@@ -642,7 +642,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542146990",
-      "path": "evidence/raw/thorsten-20261009/image-1791542146990.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542146990.jpg",
       "original_filename": "image-1791542146990.jpg",
       "bytes": 259681,
       "sha256": "9f5e7841d82f013c6af11312047f2da01834ca2d477f1293d4b7945fc677ad2b",
@@ -654,7 +654,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542161221",
-      "path": "evidence/raw/thorsten-20261009/image-1791542161221.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542161221.jpg",
       "original_filename": "image-1791542161221.jpg",
       "bytes": 249870,
       "sha256": "b9db5743141dc7ba48ab2bc3beda966a21bf4127c7c368562138d9361894829e",
@@ -666,7 +666,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791542172733",
-      "path": "evidence/raw/thorsten-20261009/image-1791542172733.jpg",
+      "path": "evidence/raw/Radstadt/image-1791542172733.jpg",
       "original_filename": "image-1791542172733.jpg",
       "bytes": 337941,
       "sha256": "253f53a6203f5d26d01c2b4046ff16f264b23b6186884324a282c4fd85afc5c9",
@@ -678,7 +678,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541209669",
-      "path": "evidence/raw/thorsten-20261009/image-1791541209669.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541209669.jpg",
       "original_filename": "image-1791541209669.jpg",
       "bytes": 348719,
       "sha256": "a2cdfa1e9531288d4a37e98d804369a6d0d1f38baa9f2b54afb88690d332d4b9",
@@ -690,7 +690,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541224562",
-      "path": "evidence/raw/thorsten-20261009/image-1791541224562.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541224562.jpg",
       "original_filename": "image-1791541224562.jpg",
       "bytes": 318470,
       "sha256": "f0bbc33cbdb05467556a49a982a88af1f1f6b2ccf1899cb00ed90e2308f393cb",
@@ -702,7 +702,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541247032",
-      "path": "evidence/raw/thorsten-20261009/image-1791541247032.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541247032.jpg",
       "original_filename": "image-1791541247032.jpg",
       "bytes": 327924,
       "sha256": "7e58415a72780b6a32268152727f2be3e4c23fdb8c2e4b6c5eb40d0226ab3f00",
@@ -714,7 +714,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541265923",
-      "path": "evidence/raw/thorsten-20261009/image-1791541265923.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541265923.jpg",
       "original_filename": "image-1791541265923.jpg",
       "bytes": 342420,
       "sha256": "c268e429c95cfa09bb175da9d37cb7bcf1062c4e97d8368852989db27f833325",
@@ -726,7 +726,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541278244",
-      "path": "evidence/raw/thorsten-20261009/image-1791541278244.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541278244.jpg",
       "original_filename": "image-1791541278244.jpg",
       "bytes": 355844,
       "sha256": "508418eb1e64357dad8c2efe560912c7afac36b49403a2d2262f0e1e37fcc0eb",
@@ -738,7 +738,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541421696",
-      "path": "evidence/raw/thorsten-20261009/image-1791541421696.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541421696.jpg",
       "original_filename": "image-1791541421696.jpg",
       "bytes": 308383,
       "sha256": "96c1c1137f1bc73f5b3fde8ca9b85208c4af4746b175323b9c358c3b7e46df80",
@@ -750,7 +750,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541435456",
-      "path": "evidence/raw/thorsten-20261009/image-1791541435456.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541435456.jpg",
       "original_filename": "image-1791541435456.jpg",
       "bytes": 369346,
       "sha256": "619d4c63be07f3d7f1c92e62a5a03345d92fb174511a400c34ecea190ab1a49a",
@@ -762,7 +762,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541442395",
-      "path": "evidence/raw/thorsten-20261009/image-1791541442395.jpg",
+      "path": "evidence/raw/Fluegelbretter/image-1791541442395.jpg",
       "original_filename": "image-1791541442395.jpg",
       "bytes": 274164,
       "sha256": "3fb530f585a99d056b4c590adc81379bbf91badb2dbf163b42730c30ffef14d1",
@@ -774,7 +774,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541641609",
-      "path": "evidence/raw/thorsten-20261009/image-1791541641609.jpg",
+      "path": "evidence/raw/Welle/image-1791541641609.jpg",
       "original_filename": "image-1791541641609.jpg",
       "bytes": 270094,
       "sha256": "d4cf564f8da16be38e547f7216a01d430e414cc7ba33fda6e9e6f39c14f38069",
@@ -786,7 +786,7 @@
     },
     {
       "id": "PHOTO-TH-20261009-image-1791541084264",
-      "path": "evidence/raw/thorsten-20261009/image-1791541084264.jpg",
+      "path": "evidence/raw/Schetternbretter/image-1791541084264.jpg",
       "original_filename": "image-1791541084264.jpg",
       "bytes": 291692,
       "sha256": "d9ad3be087381446693600ca32fe2387ba0240fa4f7c8e50e83a9a5925bd3795",

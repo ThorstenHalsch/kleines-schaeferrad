@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 root=Path(__file__).resolve().parents[1]
 raw=root/'evidence/raw'
 out=root/'evidence/derived';out.mkdir(parents=True,exist_ok=True)
-ply=next(raw.glob('*.ply')).read_bytes()
+ply=next(raw.rglob('*.ply')).read_bytes()
 offset=ply.index(b'end_header\n')+len(b'end_header\n')
 header=ply[:offset].decode();n=int(header.split('element vertex ')[1].splitlines()[0])
 dtype=np.dtype([('xyz','<f4',(3,)),('rgb','u1',(3,))])
 p=np.frombuffer(ply, dtype=dtype,offset=offset,count=n)
 xyz=p['xyz'];rgb=p['rgb']/255
-glb=next(raw.glob('*.glb')).read_bytes()
+glb=next(raw.rglob('*.glb')).read_bytes()
 assert struct.unpack_from('<III',glb)==(0x46546c67,2,len(glb))
 chunks=[];o=12
 while o<len(glb):
