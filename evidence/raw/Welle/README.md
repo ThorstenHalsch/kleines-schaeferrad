@@ -1,6 +1,6 @@
 # Welle
 
-[Alle Komponenten](../README.md) · [Quellenverzeichnis](../../component-index.json)
+[Alle Komponenten](../README.md) · [Quellenverzeichnis](../../component-index.json) · [Bestätigte Angaben und offene Schellenmaße](BEFUND.md)
 
 Originalfotos und fotografierte Zeichnungen. Die Ablage ändert weder Messstatus noch Modellgeometrie. Unter Arbeitsunterlagen sind Vorlagen mit ungesicherter Bauteilzuordnung gesammelt.
 
