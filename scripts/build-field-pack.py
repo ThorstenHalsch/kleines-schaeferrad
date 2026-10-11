@@ -1,5 +1,6 @@
 """A3 technical capture pack: mesh-derived projections plus original-photo overlays."""
 from pathlib import Path
+from evidence_paths import evidence_path
 import json, hashlib, shutil, math, io, base64, gzip
 from xml.sax.saxutils import escape
 from PIL import Image, ImageOps, ImageEnhance
@@ -49,9 +50,7 @@ photo_locations={
 }
 def photo(name,rect,overlay=False,locations=None):
  if name not in photos:
-  p=ROOT/'evidence/raw'/name
-  if not p.exists():p=ROOT/name
-  if not p.exists():raise FileNotFoundError(p)
+  p=evidence_path(ROOT,name)
   im=ImageOps.exif_transpose(Image.open(p)).convert('RGB');im.thumbnail((1600,1600))
   # Print-only exposure compensation for dark synthetic render plates; originals unchanged.
   if name.startswith('output/calibration/'):
@@ -106,11 +105,11 @@ for i,s in enumerate(sheets):
  n=len(s['views']);ww=394/n
  # Existing source and canonical images only: no new geometry or reconstruction render.
  decision_images={
-  'KS-11':['evidence/raw/IMG_6856.jpeg','output/calibration/ITER-001/canonical/07-truth.png'],
-  'KS-30':['evidence/raw/1000046420.jpg','evidence/raw/1000046421.jpg','evidence/raw/1000046422.jpg'],
-  'KS-31':['evidence/raw/IMG_6809.jpeg','output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png'],
-  'KS-40':['evidence/raw/IMG_6854.jpeg','output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png'],
-  'KS-51':['evidence/raw/IMG_6812.jpeg','output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg']}
+  'KS-11':['evidence/raw/Arme/IMG_6856.jpeg','output/calibration/ITER-001/canonical/07-truth.png'],
+  'KS-30':['evidence/raw/Kumpf/1000046420.jpg','evidence/raw/Kumpf/1000046421.jpg','evidence/raw/Kumpf/1000046422.jpg'],
+  'KS-31':['evidence/raw/Kumpf/IMG_6809.jpeg','output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png'],
+  'KS-40':['evidence/raw/Kumpf/IMG_6854.jpeg','output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png'],
+  'KS-51':['evidence/raw/Gesamtansichten/IMG_6812.jpeg','output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg']}
  imgs=decision_images.get(s['id'])
  if imgs:
   for k,img in enumerate(imgs):
@@ -150,7 +149,7 @@ photo_specs={
 for g in G['guides']:
  name=photo_specs.get(g['id'])
  if name:
-  file,markers,labels=name;im=ImageOps.exif_transpose(Image.open(ROOT/'evidence/raw'/file)).convert('RGB');im.thumbnail((1400,1100));im.save(VIS/(g['id']+'.jpg'),quality=88);ww,hh=im.size;encoded=base64.b64encode((VIS/(g['id']+'.jpg')).read_bytes()).decode('ascii');data_url='data:image/jpeg;base64,'+encoded
+  file,markers,labels=name;im=ImageOps.exif_transpose(Image.open(evidence_path(ROOT,file))).convert('RGB');im.thumbnail((1400,1100));im.save(VIS/(g['id']+'.jpg'),quality=88);ww,hh=im.size;encoded=base64.b64encode((VIS/(g['id']+'.jpg')).read_bytes()).decode('ascii');data_url='data:image/jpeg;base64,'+encoded
   svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {ww} {hh}" role="img"><title>{escape(g["title"])}</title><image href="{data_url}" xlink:href="{data_url}" width="{ww}" height="{hh}"/>'
   for u,v,num in markers:
    x,y=u*ww,v*hh;r=max(16,ww*.018);svg+=f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff8e8" stroke="#93601b" stroke-width="3"/><text x="{x}" y="{y+r*.34}" text-anchor="middle" font-family="sans-serif" font-size="{r*1.1}" font-weight="bold">{num}</text>'

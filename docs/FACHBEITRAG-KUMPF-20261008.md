@@ -16,25 +16,25 @@ Der Fachkenner erklärt ausdrücklich: Bei den vorhandenen Bandzeichnungen wurde
 
 ### 1000046420.jpg — teilweise zerlegter Kumpf
 
-![Teilweise zerlegter Kumpf](../evidence/raw/1000046420.jpg)
+![Teilweise zerlegter Kumpf](../evidence/raw/Kumpf/1000046420.jpg)
 
 Die geöffneten Dauben zeigen die innere Einfräsung deutlich; ein runder Boden und eine Längenskala sind sichtbar. „Unten“ in der Erklärung bezeichnet die funktionale Bodenposition, unabhängig von der Ausrichtung des Demonstrationsstücks im Foto. Ein sichtbares Band in dieser Teilansicht widerlegt die fachlich genannte Gesamtzahl drei nicht.
 
 ### 1000046421.jpg — Stirnansicht mit Boden und Maßstab
 
-![Stirnansicht mit Boden](../evidence/raw/1000046421.jpg)
+![Stirnansicht mit Boden](../evidence/raw/Kumpf/1000046421.jpg)
 
 Boden, Daubenstirnflächen und eine über den Querschnitt gelegte Skala sind sichtbar. Für ein Maß müssen beide Bezugskanten und deren Skalenwerte bestimmt werden; die höchste sichtbare Skalenmarke allein ist kein Durchmesser.
 
 ### 1000046422.jpg — Blick in den Kumpf
 
-![Blick in den Kumpf](../evidence/raw/1000046422.jpg)
+![Blick in den Kumpf](../evidence/raw/Kumpf/1000046422.jpg)
 
 Sichtbar sind Dauben, innerer Boden, ein Maßstab und durch die Wand reichende Hölzer. Der Nachtrag erklärt die Funktion der Kumpfnägel als Befestigung am Krümmling. Welche der hier sichtbaren Hölzer jeweils welcher Nagelposition entspricht, ist noch nicht einzeln zugeordnet.
 
 ### 1000046423.jpg — Außenansicht
 
-![Außenansicht mit drei Bändern](../evidence/raw/1000046423.jpg)
+![Außenansicht mit drei Bändern](../evidence/raw/Kumpf/1000046423.jpg)
 
 Drei Metallbänder sind gemeinsam sichtbar. Eine Längenskala und zwei aus der Wand ragende Hölzer ergänzen den Einbaukontext; der Nachtrag erklärt die Befestigung durch Kumpfnägel am Krümmling. Die einzelnen sichtbaren Hölzer sind noch nicht eindeutig den beschriebenen Löchern zugeordnet.
 
@@ -46,10 +46,10 @@ Nach seiner Aussage sind die beiden Kumpfnägel in Bildern und als Punktewolke d
 
 ### Quellen zum Abgleich
 
-- [IMG_6822.jpeg](../evidence/raw/IMG_6822.jpeg): laut vorhandenem Quellenabgleich zwei unterschiedlich lange, gekrümmte Holzstifte nebeneinander.
-- [IMG_6832.jpeg](../evidence/raw/IMG_6832.jpeg): laut vorhandenem Quellenabgleich ein langer Holzstift mit Kopf in der Hand.
+- [IMG_6822.jpeg](../evidence/raw/Kumpf/IMG_6822.jpeg): laut vorhandenem Quellenabgleich zwei unterschiedlich lange, gekrümmte Holzstifte nebeneinander.
+- [IMG_6832.jpeg](../evidence/raw/Kumpf/IMG_6832.jpeg): laut vorhandenem Quellenabgleich ein langer Holzstift mit Kopf in der Hand.
 - [Quellenabgleich V2](reconstruction/SOURCE-RECONCILIATION.md): bisherige Bildbeschreibung.
-- [Rad-Punktewolke Scaniverse 2026-10-07 173556.ply](../evidence/raw/Scaniverse%202026-10-07%20173556.ply) und [zugehöriger GLB-Export](../evidence/raw/Scaniverse%202026-10-07%20173556.glb): vorhandener Radscan, als Abgleichsquelle für die Überlappung. Zwei Exportfassungen desselben Captures, keine unabhängigen Bestätigungen.
+- [Rad-Punktewolke Scaniverse 2026-10-07 173556.ply](../evidence/raw/Gesamtansichten/Scaniverse%202026-10-07%20173556.ply) und [zugehöriger GLB-Export](../evidence/raw/Gesamtansichten/Scaniverse%202026-10-07%20173556.glb): vorhandener Radscan, als Abgleichsquelle für die Überlappung. Zwei Exportfassungen desselben Captures, keine unabhängigen Bestätigungen.
 - Eine **separate Punktewolke der Kumpfnägel** ist nach Fachauskunft vorhanden, konnte im aktuellen Dateibaum aber noch keiner eindeutig benannten Datei zugeordnet werden. Dateireferenz bleibt offen.
 
 ### Bedeutung für die bisherigen Hypothesen
@@ -62,8 +62,8 @@ Für die geometrische Umsetzung sind noch der genaue Verlauf beider Nägel durch
 
 ## Verknüpfung mit vorhandenen Zeichnungen
 
-- [IMG_6821.jpeg](../evidence/raw/IMG_6821.jpeg): bisher transkribierte Längenreihe **780 / 875 / 968**, außerdem **4 cm Überlappung** und drei Nieten. Die Längenreihe hat im strukturierten Bestand keine bestätigte Einheit.
-- [IMG_6846.jpeg](../evidence/raw/IMG_6846.jpeg) und [IMG_6847.jpeg](../evidence/raw/IMG_6847.jpeg): transkribierte Längen **972 / 880 / 784**, ebenfalls ohne bestätigte Einheit in den Claims.
+- [IMG_6821.jpeg](../evidence/raw/Kumpf/IMG_6821.jpeg): bisher transkribierte Längenreihe **780 / 875 / 968**, außerdem **4 cm Überlappung** und drei Nieten. Die Längenreihe hat im strukturierten Bestand keine bestätigte Einheit.
+- [IMG_6846.jpeg](../evidence/raw/Kumpf/IMG_6846.jpeg) und [IMG_6847.jpeg](../evidence/raw/Kumpf/IMG_6847.jpeg): transkribierte Längen **972 / 880 / 784**, ebenfalls ohne bestätigte Einheit in den Claims.
 - [Bestehende Variantenfrage CONFLICT-02](../data/conflicts.json): bisher offen, mit möglichen Erklärungen Überlappung, Fertigungsänderung und Gefäßvarianten.
 - Betroffene Familien: COMP-KUEMPFE, COMP-KUMPF-STAVES, COMP-KUMPF-BASE, COMP-KUMPF-HOOPS.
 

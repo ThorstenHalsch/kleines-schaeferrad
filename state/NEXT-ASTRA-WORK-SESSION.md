@@ -61,10 +61,10 @@ Mandatory baseline:
 - neighboring Kümpfe overlap.
 
 Use the four Thorsten reference photos:
-- `evidence/raw/1000046420.jpg`
-- `evidence/raw/1000046421.jpg`
-- `evidence/raw/1000046422.jpg`
-- `evidence/raw/1000046423.jpg`
+- `evidence/raw/Kumpf/1000046420.jpg`
+- `evidence/raw/Kumpf/1000046421.jpg`
+- `evidence/raw/Kumpf/1000046422.jpg`
+- `evidence/raw/Kumpf/1000046423.jpg`
 
 Do not keep a generic barrel approximation if these images support a more faithful shape.
 

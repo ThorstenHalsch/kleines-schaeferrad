@@ -32,7 +32,7 @@ Die letzte Formulierung wurde im Fachreview Torstens Auskunft zugeordnet; ein ei
 
 Original-Anhangsname: `5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg`; erneuter Upload mit Dateinamenzusatz `(1)`.
 
-[Unverändertes annotiertes JPEG](../raw/torsten-20261010/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg) und [Transfermanifest](torsten-20261010-original.json). Frisch verifiziert: 559904 Bytes; SHA-256 `048708cdf56fd72025b12c1bc1e0bd4bc8c201dc74654c4fb2c55ed45fe23eb5` stimmt exakt mit dem erwarteten Original überein. Herkunftskette: Torsten → WhatsApp → Johannes → Projektchat → Evidenzarchiv. Keine Rekonstruktion oder Bildbearbeitung.
+[Unverändertes annotiertes JPEG](../raw/A-Bock/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg) und [Transfermanifest](torsten-20261010-original.json). Frisch verifiziert: 559904 Bytes; SHA-256 `048708cdf56fd72025b12c1bc1e0bd4bc8c201dc74654c4fb2c55ed45fe23eb5` stimmt exakt mit dem erwarteten Original überein. Herkunftskette: Torsten → WhatsApp → Johannes → Projektchat → Evidenzarchiv. Keine Rekonstruktion oder Bildbearbeitung.
 
 ## Bedeutung
 

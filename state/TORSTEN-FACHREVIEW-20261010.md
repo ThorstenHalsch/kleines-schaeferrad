@@ -21,7 +21,7 @@ Vom Nutzer übermittelte wörtliche Antworten Torstens:
 - Vom Nutzer in dieser Chat-Unterhaltung übermitteltes JPEG mit roter Markierung; zugeschrieben Torsten.
 - Original-Anhangsname in dieser Sitzung: `5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg`.
 - Lokale SHA-256-Prüfsumme der empfangenen Datei: `048708cdf56fd72025b12c1bc1e0bd4bc8c201dc74654c4fb2c55ed45fe23eb5`; Dateigröße 559904 Bytes.
-- **SOURCE TRANSFER VERIFIED — 2026-10-10:** Erneut vom Nutzer überliefertes JPEG unverändert unter [evidence/raw/torsten-20261010/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg](../evidence/raw/torsten-20261010/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg) archiviert. Frische Prüfung: 559904 Bytes, SHA-256 `048708cdf56fd72025b12c1bc1e0bd4bc8c201dc74654c4fb2c55ed45fe23eb5`, identisch zum erwarteten Original. Der Upload-Zusatz `(1)` betrifft nur den Dateinamen. Die rote Annotation bleibt unverändert Bestandteil der Quelle. [Transfermanifest](../evidence/contributions/torsten-20261010-original.json).
+- **SOURCE TRANSFER VERIFIED — 2026-10-10:** Erneut vom Nutzer überliefertes JPEG unverändert unter [evidence/raw/A-Bock/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg](../evidence/raw/A-Bock/5f0dbdce-2f7a-40c3-9b75-c66153bb40fd.jpeg) archiviert. Frische Prüfung: 559904 Bytes, SHA-256 `048708cdf56fd72025b12c1bc1e0bd4bc8c201dc74654c4fb2c55ed45fe23eb5`, identisch zum erwarteten Original. Der Upload-Zusatz `(1)` betrifft nur den Dateinamen. Die rote Annotation bleibt unverändert Bestandteil der Quelle. [Transfermanifest](../evidence/contributions/torsten-20261010-original.json).
 - Herkunft vom Nutzer ausdrücklich bestätigt: **Torsten → WhatsApp → Johannes → Projektchat → Evidenzarchiv**. Die vorherige Transfersperre ist damit aufgehoben.
 
 ## Grenzen
