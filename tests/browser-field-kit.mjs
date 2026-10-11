@@ -4,7 +4,7 @@ const server=http.createServer((req,res)=>{let p=decodeURIComponent(new URL(req.
 const browser=await chromium.launch({headless:true,executablePath:process.env.KS_CHROMIUM_PATH||undefined,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}),base='http://127.0.0.1:4322/kleines-schaeferrad/';
 const result={scope:'automated emulation, no human or physical Safari evidence',started_at:new Date().toISOString(),profiles:[],checks:[],status:'running'};let active;
 async function layout(page,name){const o=await page.evaluate(()=>({w:innerWidth,scroll:document.documentElement.scrollWidth}));assert.ok(o.scroll<=o.w+1,`${name} overflow ${JSON.stringify(o)}`);const small=await page.locator('button:visible').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect();return r.width<44||r.height<44}).map(n=>n.textContent));assert.deepEqual(small,[],`${name} touch controls`)}
-const image=fs.readFileSync('evidence/raw/IMG_6858.jpeg'),sha=crypto.createHash('sha256').update(image).digest('hex');
+const image=fs.readFileSync('evidence/raw/Gesamtansichten/IMG_6858.jpeg'),sha=crypto.createHash('sha256').update(image).digest('hex');
 try{
  for(const profile of [{name:'desktop',viewport:{width:1440,height:1000}},{name:'320px',viewport:{width:320,height:740}},{name:'iphone13-emulation',...devices['iPhone 13 Pro']},{name:'text200',viewport:{width:1280,height:1000},zoom:true}]){
   const {name,zoom,...opts}=profile,ctx=await browser.newContext(opts),page=await ctx.newPage();active=page;page.setDefaultTimeout(30000);const errors=[];page.on('pageerror',e=>errors.push(e.message));

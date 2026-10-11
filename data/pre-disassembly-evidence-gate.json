@@ -289,10 +289,10 @@
       "sheet": "KS-30",
       "question": "Bitte am Original Mündung, tatsächlichen Nutboden und Bezugende des Zollstocks zeigen. Ist die unten lose sichtbare Scheibe in 6420 der eingesetzte Boden oder nur abgelegt? Welche Maße gehören zu dieser Variante?",
       "sources": [
-        "evidence/raw/1000046420.jpg",
-        "evidence/raw/1000046421.jpg",
-        "evidence/raw/1000046422.jpg",
-        "evidence/raw/1000046423.jpg"
+        "evidence/raw/Kumpf/1000046420.jpg",
+        "evidence/raw/Kumpf/1000046421.jpg",
+        "evidence/raw/Kumpf/1000046422.jpg",
+        "evidence/raw/Kumpf/1000046423.jpg"
       ],
       "finding": "TC-02",
       "status": "UNANSWERED",
@@ -307,8 +307,8 @@
       "sheet": "KS-31",
       "question": "Welcher Nagel läuft durch welche der vier Öffnungen zu welchem Krümmling? Durchquert der lange Nagel einen weiteren Nachbarn/Kontakt oder überbrückt er mehr Abstand? A/B/C dürfen alle falsch sein.",
       "sources": [
-        "evidence/raw/IMG_6809.jpeg",
-        "evidence/raw/IMG_6822.jpeg",
+        "evidence/raw/Kumpf/IMG_6809.jpeg",
+        "evidence/raw/Kumpf/IMG_6822.jpeg",
         "output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png"
       ],
       "finding": "TC-03",
@@ -324,8 +324,8 @@
       "sheet": "KS-40",
       "question": "Bitte Wellenachse, Rad-/Kranzebene und Brettfläche am realen Teil zeigen. Steht die Brettfläche radial, tangential oder schräg? Welche Seite läuft im Wasser voraus?",
       "sources": [
-        "evidence/raw/IMG_6854.jpeg",
-        "evidence/raw/IMG_6861.jpeg",
+        "evidence/raw/Kumpf/IMG_6854.jpeg",
+        "evidence/raw/Arme/IMG_6861.jpeg",
         "output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png"
       ],
       "finding": "TC-05",
@@ -341,9 +341,9 @@
       "sheet": "KS-11",
       "question": "Welche Enden gehören zum selben Holz, in welcher axialen Reihenfolge? Welche Kontaktfläche wird als erste sichtbar? Bitte tatsächliche Freigabefolge erzählen, nicht aus dem Modell ableiten.",
       "sources": [
-        "evidence/raw/IMG_6818.jpeg",
-        "evidence/raw/IMG_6831.jpeg",
-        "evidence/raw/IMG_6856.jpeg",
+        "evidence/raw/Arme/IMG_6818.jpeg",
+        "evidence/raw/Arme/IMG_6831.jpeg",
+        "evidence/raw/Arme/IMG_6856.jpeg",
         "output/calibration/ITER-001/canonical/07-truth.png"
       ],
       "finding": "TC-09",
@@ -359,7 +359,7 @@
       "sheet": "KS-51",
       "question": "Kann die reale Wasserübergabe vor Stillsetzen beobachtet werden? Welche genaue Datei/Region zeigt die separat erwähnte Schaufel-/Nagelaufnahme? Falls nicht verfügbar: offen lassen.",
       "sources": [
-        "evidence/raw/IMG_6812.jpeg",
+        "evidence/raw/Gesamtansichten/IMG_6812.jpeg",
         "output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg",
         "data/scan-transforms.json"
       ],

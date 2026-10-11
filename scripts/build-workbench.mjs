@@ -5,7 +5,7 @@ import * as T from 'three';
 import {makeModel,disposeModel,config,p} from '../src/workbench/geometry.mjs';
 import {projectMeshes,projectPoint,hatchSection,sectionMaterial} from '../src/workbench/projection.mjs';
 const geometryDependencies=Object.fromEntries(['src/workbench/geometry.mjs','src/workbench/calibration.mjs','src/workbench/expert-corrections.mjs','data/hypothesis.parameters.json','data/calibration-v3.json','data/reconstruction-constraints.json'].map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')]));
-const out='public/drawings';fs.mkdirSync(out,{recursive:true});fs.mkdirSync('public/evidence',{recursive:true});fs.cpSync('evidence/raw','public/evidence/raw',{recursive:true});fs.cpSync('evidence/contributions','public/evidence/contributions',{recursive:true});for(const f of['manifest.json','additions-v2.json'])fs.copyFileSync('evidence/'+f,'public/evidence/'+f);
+const out='public/drawings';fs.mkdirSync(out,{recursive:true});fs.mkdirSync('public/evidence',{recursive:true});fs.rmSync('public/evidence/raw',{recursive:true,force:true});fs.cpSync('evidence/raw','public/evidence/raw',{recursive:true});fs.cpSync('evidence/contributions','public/evidence/contributions',{recursive:true});for(const f of['manifest.json','additions-v2.json','component-index.json'])fs.copyFileSync('evidence/'+f,'public/evidence/'+f);
 const family=(...fs)=>m=>fs.includes(m.userData.family),ids=(...is)=>m=>is.includes(m.userData.id),wheel=m=>!m.userData.stationary,stationary=m=>m.userData.stationary;
 const arm=ids('HIST-ARM-LAND-1-4'),shaftArms=family('COMP-SHAFT','COMP-ARMS'),vessel=m=>m.userData.slot===0&&m.userData.family!=='COMP-PADDLES';
 const sheets=[

@@ -82,8 +82,8 @@ Achsensymmetrie wurde im unmittelbaren Kontext dieser Konstruktion erklärt. Ach
 ### Auffangtrog, zweiteilige Rinne und A-Bock
 
 Technische Zeichnungen sind bereits vorhanden:
-- `evidence/raw/IMG_6828.jpeg`, `IMG_6829.jpeg`: Schöpftrog Kl. Schäferrad, Claims 0130–0141.
-- `evidence/raw/IMG_6830.jpeg`: Rinne hinter Trog, Claims 0142–0151.
+- `evidence/raw/Auffangtrog/IMG_6828.jpeg`, `IMG_6829.jpeg`: Schöpftrog Kl. Schäferrad, Claims 0130–0141.
+- `evidence/raw/Rinne/IMG_6830.jpeg`: Rinne hinter Trog, Claims 0142–0151.
 
 Das aktuelle Modell hat nur synthetische Kanäle; Quellenanalyse ist noch keine Umsetzung. Zeichnungsunklarheiten 244/250, Mittelbereich 180/24 und verschiedene Rinnenkonturen getrennt behandeln.
 
@@ -124,98 +124,98 @@ Die bisherigen Foto-/Messpläne sind weiter nützlich, enthalten aber inzwischen
 
 ### arm-kruemmling
 
-- [image-1791540525839.jpg](../evidence/raw/thorsten-20261009/image-1791540525839.jpg)
-- [image-1791540649435.jpg](../evidence/raw/thorsten-20261009/image-1791540649435.jpg)
-- [image-1791540668918.jpg](../evidence/raw/thorsten-20261009/image-1791540668918.jpg)
+- [image-1791540525839.jpg](../evidence/raw/Arme/image-1791540525839.jpg)
+- [image-1791540649435.jpg](../evidence/raw/Arme/image-1791540649435.jpg)
+- [image-1791540668918.jpg](../evidence/raw/Arme/image-1791540668918.jpg)
 
 ### schetternbretter
 
-- [1000046530.jpg](../evidence/raw/thorsten-20261009/1000046530.jpg)
-- [image-1791540812566.jpg](../evidence/raw/thorsten-20261009/image-1791540812566.jpg)
-- [image-1791540831514.jpg](../evidence/raw/thorsten-20261009/image-1791540831514.jpg)
-- [1000046531.jpg](../evidence/raw/thorsten-20261009/1000046531.jpg)
-- [1000046532.jpg](../evidence/raw/thorsten-20261009/1000046532.jpg)
-- [1000046533.jpg](../evidence/raw/thorsten-20261009/1000046533.jpg)
-- [1000046534.jpg](../evidence/raw/thorsten-20261009/1000046534.jpg)
-- [1000046535.jpg](../evidence/raw/thorsten-20261009/1000046535.jpg)
-- [1000046536.jpg](../evidence/raw/thorsten-20261009/1000046536.jpg)
-- [1000046537.jpg](../evidence/raw/thorsten-20261009/1000046537.jpg)
-- [1000046538.jpg](../evidence/raw/thorsten-20261009/1000046538.jpg)
-- [1000046539.jpg](../evidence/raw/thorsten-20261009/1000046539.jpg)
-- [1000046540.jpg](../evidence/raw/thorsten-20261009/1000046540.jpg)
-- [1000046541.jpg](../evidence/raw/thorsten-20261009/1000046541.jpg)
-- [1000046542.jpg](../evidence/raw/thorsten-20261009/1000046542.jpg)
-- [image-1791541084264.jpg](../evidence/raw/thorsten-20261009/image-1791541084264.jpg)
-- [image-1791542766365.jpg](../evidence/raw/thorsten-20261009/image-1791542766365.jpg)
-- [image-1791542778932.jpg](../evidence/raw/thorsten-20261009/image-1791542778932.jpg)
+- [1000046530.jpg](../evidence/raw/Schetternbretter/1000046530.jpg)
+- [image-1791540812566.jpg](../evidence/raw/Schetternbretter/image-1791540812566.jpg)
+- [image-1791540831514.jpg](../evidence/raw/Schetternbretter/image-1791540831514.jpg)
+- [1000046531.jpg](../evidence/raw/Schetternbretter/1000046531.jpg)
+- [1000046532.jpg](../evidence/raw/Schetternbretter/1000046532.jpg)
+- [1000046533.jpg](../evidence/raw/Schetternbretter/1000046533.jpg)
+- [1000046534.jpg](../evidence/raw/Schetternbretter/1000046534.jpg)
+- [1000046535.jpg](../evidence/raw/Schetternbretter/1000046535.jpg)
+- [1000046536.jpg](../evidence/raw/Schetternbretter/1000046536.jpg)
+- [1000046537.jpg](../evidence/raw/Schetternbretter/1000046537.jpg)
+- [1000046538.jpg](../evidence/raw/Schetternbretter/1000046538.jpg)
+- [1000046539.jpg](../evidence/raw/Schetternbretter/1000046539.jpg)
+- [1000046540.jpg](../evidence/raw/Schetternbretter/1000046540.jpg)
+- [1000046541.jpg](../evidence/raw/Schetternbretter/1000046541.jpg)
+- [1000046542.jpg](../evidence/raw/Schetternbretter/1000046542.jpg)
+- [image-1791541084264.jpg](../evidence/raw/Schetternbretter/image-1791541084264.jpg)
+- [image-1791542766365.jpg](../evidence/raw/Schetternbretter/image-1791542766365.jpg)
+- [image-1791542778932.jpg](../evidence/raw/Schetternbretter/image-1791542778932.jpg)
 
 ### fluegelbretter
 
-- [image-1791541209669.jpg](../evidence/raw/thorsten-20261009/image-1791541209669.jpg)
-- [image-1791541224562.jpg](../evidence/raw/thorsten-20261009/image-1791541224562.jpg)
-- [image-1791541247032.jpg](../evidence/raw/thorsten-20261009/image-1791541247032.jpg)
-- [image-1791541265923.jpg](../evidence/raw/thorsten-20261009/image-1791541265923.jpg)
-- [image-1791541278244.jpg](../evidence/raw/thorsten-20261009/image-1791541278244.jpg)
+- [image-1791541209669.jpg](../evidence/raw/Fluegelbretter/image-1791541209669.jpg)
+- [image-1791541224562.jpg](../evidence/raw/Fluegelbretter/image-1791541224562.jpg)
+- [image-1791541247032.jpg](../evidence/raw/Fluegelbretter/image-1791541247032.jpg)
+- [image-1791541265923.jpg](../evidence/raw/Fluegelbretter/image-1791541265923.jpg)
+- [image-1791541278244.jpg](../evidence/raw/Fluegelbretter/image-1791541278244.jpg)
 
 ### holzbaender
 
-- [image-1791541421696.jpg](../evidence/raw/thorsten-20261009/image-1791541421696.jpg)
-- [image-1791541435456.jpg](../evidence/raw/thorsten-20261009/image-1791541435456.jpg)
-- [image-1791541442395.jpg](../evidence/raw/thorsten-20261009/image-1791541442395.jpg)
+- [image-1791541421696.jpg](../evidence/raw/Fluegelbretter/image-1791541421696.jpg)
+- [image-1791541435456.jpg](../evidence/raw/Fluegelbretter/image-1791541435456.jpg)
+- [image-1791541442395.jpg](../evidence/raw/Fluegelbretter/image-1791541442395.jpg)
 
 ### welle-schellen
 
-- [image-1791541554648.jpg](../evidence/raw/thorsten-20261009/image-1791541554648.jpg)
-- [image-1791541561160.jpg](../evidence/raw/thorsten-20261009/image-1791541561160.jpg)
-- [image-1791541576861.jpg](../evidence/raw/thorsten-20261009/image-1791541576861.jpg)
-- [image-1791541641609.jpg](../evidence/raw/thorsten-20261009/image-1791541641609.jpg)
+- [image-1791541554648.jpg](../evidence/raw/Welle/image-1791541554648.jpg)
+- [image-1791541561160.jpg](../evidence/raw/Welle/image-1791541561160.jpg)
+- [image-1791541576861.jpg](../evidence/raw/Welle/image-1791541576861.jpg)
+- [image-1791541641609.jpg](../evidence/raw/Welle/image-1791541641609.jpg)
 
 ### dorn-lager
 
-- [image-1791541666129.jpg](../evidence/raw/thorsten-20261009/image-1791541666129.jpg)
+- [image-1791541666129.jpg](../evidence/raw/Welle/image-1791541666129.jpg)
 
 ### kumpf-einbau
 
-- [image-1791541735045.jpg](../evidence/raw/thorsten-20261009/image-1791541735045.jpg)
-- [image-1791541761724.jpg](../evidence/raw/thorsten-20261009/image-1791541761724.jpg)
-- [image-1791541781288.jpg](../evidence/raw/thorsten-20261009/image-1791541781288.jpg)
-- [image-1791541790124.jpg](../evidence/raw/thorsten-20261009/image-1791541790124.jpg)
-- [image-1791541863916.jpg](../evidence/raw/thorsten-20261009/image-1791541863916.jpg)
+- [image-1791541735045.jpg](../evidence/raw/Kumpf/image-1791541735045.jpg)
+- [image-1791541761724.jpg](../evidence/raw/Kumpf/image-1791541761724.jpg)
+- [image-1791541781288.jpg](../evidence/raw/Kumpf/image-1791541781288.jpg)
+- [image-1791541790124.jpg](../evidence/raw/Kumpf/image-1791541790124.jpg)
+- [image-1791541863916.jpg](../evidence/raw/Kumpf/image-1791541863916.jpg)
 
 ### kumpfnaegel
 
-- [image-1791542499680.jpg](../evidence/raw/thorsten-20261009/image-1791542499680.jpg)
-- [image-1791542573592.jpg](../evidence/raw/thorsten-20261009/image-1791542573592.jpg)
-- [image-1791542586169.jpg](../evidence/raw/thorsten-20261009/image-1791542586169.jpg)
+- [image-1791542499680.jpg](../evidence/raw/Kumpf/image-1791542499680.jpg)
+- [image-1791542573592.jpg](../evidence/raw/Kumpf/image-1791542573592.jpg)
+- [image-1791542586169.jpg](../evidence/raw/Kumpf/image-1791542586169.jpg)
 
 ### trog-rinne
 
-- [image-1791541887655.jpg](../evidence/raw/thorsten-20261009/image-1791541887655.jpg)
-- [image-1791541908195.jpg](../evidence/raw/thorsten-20261009/image-1791541908195.jpg)
-- [image-1791541920559.jpg](../evidence/raw/thorsten-20261009/image-1791541920559.jpg)
-- [image-1791541961389.jpg](../evidence/raw/thorsten-20261009/image-1791541961389.jpg)
-- [image-1791541967728.jpg](../evidence/raw/thorsten-20261009/image-1791541967728.jpg)
-- [image-1791541979278.jpg](../evidence/raw/thorsten-20261009/image-1791541979278.jpg)
-- [image-1791542028869.jpg](../evidence/raw/thorsten-20261009/image-1791542028869.jpg)
-- [image-1791542045602.jpg](../evidence/raw/thorsten-20261009/image-1791542045602.jpg)
+- [image-1791541887655.jpg](../evidence/raw/Auffangtrog/image-1791541887655.jpg)
+- [image-1791541908195.jpg](../evidence/raw/Auffangtrog/image-1791541908195.jpg)
+- [image-1791541920559.jpg](../evidence/raw/Auffangtrog/image-1791541920559.jpg)
+- [image-1791541961389.jpg](../evidence/raw/Rinne/image-1791541961389.jpg)
+- [image-1791541967728.jpg](../evidence/raw/Rinne/image-1791541967728.jpg)
+- [image-1791541979278.jpg](../evidence/raw/Rinne/image-1791541979278.jpg)
+- [image-1791542028869.jpg](../evidence/raw/Auffangtrog/image-1791542028869.jpg)
+- [image-1791542045602.jpg](../evidence/raw/Auffangtrog/image-1791542045602.jpg)
 
 ### bock-radstadt
 
-- [image-1791542108092.jpg](../evidence/raw/thorsten-20261009/image-1791542108092.jpg)
-- [image-1791542120355.jpg](../evidence/raw/thorsten-20261009/image-1791542120355.jpg)
-- [image-1791542146990.jpg](../evidence/raw/thorsten-20261009/image-1791542146990.jpg)
-- [image-1791542161221.jpg](../evidence/raw/thorsten-20261009/image-1791542161221.jpg)
-- [image-1791542172733.jpg](../evidence/raw/thorsten-20261009/image-1791542172733.jpg)
-- [image-1791542237069.jpg](../evidence/raw/thorsten-20261009/image-1791542237069.jpg)
-- [image-1791542257101.jpg](../evidence/raw/thorsten-20261009/image-1791542257101.jpg)
-- [image-1791542327774.jpg](../evidence/raw/thorsten-20261009/image-1791542327774.jpg)
-- [image-1791542342950.jpg](../evidence/raw/thorsten-20261009/image-1791542342950.jpg)
-- [image-1791543053651.jpg](../evidence/raw/thorsten-20261009/image-1791543053651.jpg)
+- [image-1791542108092.jpg](../evidence/raw/Radstadt/image-1791542108092.jpg)
+- [image-1791542120355.jpg](../evidence/raw/Radstadt/image-1791542120355.jpg)
+- [image-1791542146990.jpg](../evidence/raw/Radstadt/image-1791542146990.jpg)
+- [image-1791542161221.jpg](../evidence/raw/Radstadt/image-1791542161221.jpg)
+- [image-1791542172733.jpg](../evidence/raw/Radstadt/image-1791542172733.jpg)
+- [image-1791542237069.jpg](../evidence/raw/Radstadt/image-1791542237069.jpg)
+- [image-1791542257101.jpg](../evidence/raw/Radstadt/image-1791542257101.jpg)
+- [image-1791542327774.jpg](../evidence/raw/Radstadt/image-1791542327774.jpg)
+- [image-1791542342950.jpg](../evidence/raw/Radstadt/image-1791542342950.jpg)
+- [image-1791543053651.jpg](../evidence/raw/Radstadt/image-1791543053651.jpg)
 
 ### a-bock
 
-- [image-1791543487137.jpg](../evidence/raw/thorsten-20261009/image-1791543487137.jpg)
-- [image-1791543497527.jpg](../evidence/raw/thorsten-20261009/image-1791543497527.jpg)
-- [image-1791543505768.jpg](../evidence/raw/thorsten-20261009/image-1791543505768.jpg)
-- [image-1791543574540.jpg](../evidence/raw/thorsten-20261009/image-1791543574540.jpg)
-- [image-1791543757351.jpg](../evidence/raw/thorsten-20261009/image-1791543757351.jpg)
+- [image-1791543487137.jpg](../evidence/raw/A-Bock/image-1791543487137.jpg)
+- [image-1791543497527.jpg](../evidence/raw/A-Bock/image-1791543497527.jpg)
+- [image-1791543505768.jpg](../evidence/raw/A-Bock/image-1791543505768.jpg)
+- [image-1791543574540.jpg](../evidence/raw/A-Bock/image-1791543574540.jpg)
+- [image-1791543757351.jpg](../evidence/raw/A-Bock/image-1791543757351.jpg)

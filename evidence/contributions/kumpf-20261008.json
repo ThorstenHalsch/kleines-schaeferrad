@@ -17,7 +17,7 @@
       "id": "PHOTO-1000046420",
       "original_filename": "1000046420.jpg",
       "archive": {
-        "path": "evidence/raw/1000046420.jpg"
+        "path": "evidence/raw/Kumpf/1000046420.jpg"
       },
       "bytes": 151269,
       "sha256": "a76cb11e6a27d3fa6db341408698925cd4f1b446475dbb4bbb64276db60acb22",
@@ -28,7 +28,7 @@
       "id": "PHOTO-1000046421",
       "original_filename": "1000046421.jpg",
       "archive": {
-        "path": "evidence/raw/1000046421.jpg"
+        "path": "evidence/raw/Kumpf/1000046421.jpg"
       },
       "bytes": 144185,
       "sha256": "83278627dc3b96e7f15d9290ea5dcf96575c30104d1bea7b904783f4e2a955da",
@@ -39,7 +39,7 @@
       "id": "PHOTO-1000046422",
       "original_filename": "1000046422.jpg",
       "archive": {
-        "path": "evidence/raw/1000046422.jpg"
+        "path": "evidence/raw/Kumpf/1000046422.jpg"
       },
       "bytes": 133763,
       "sha256": "b07a4a00163dfa629c0655b6e7cc261a74f93434a2b969c5938aed4089fb0da4",
@@ -50,7 +50,7 @@
       "id": "PHOTO-1000046423",
       "original_filename": "1000046423.jpg",
       "archive": {
-        "path": "evidence/raw/1000046423.jpg"
+        "path": "evidence/raw/Kumpf/1000046423.jpg"
       },
       "bytes": 163254,
       "sha256": "836b49ff126fccba4ec495660554870e52f5394649d8e03fdacf7be9f0e9f396",
@@ -294,9 +294,9 @@
       "PHOTO-6847"
     ],
     "drawing_paths": [
-      "evidence/raw/IMG_6821.jpeg",
-      "evidence/raw/IMG_6846.jpeg",
-      "evidence/raw/IMG_6847.jpeg"
+      "evidence/raw/Kumpf/IMG_6821.jpeg",
+      "evidence/raw/Kumpf/IMG_6846.jpeg",
+      "evidence/raw/Kumpf/IMG_6847.jpeg"
     ],
     "claim_ids": [
       "CLAIM-0032",
@@ -317,13 +317,13 @@
     ],
     "fastener_evidence": {
       "photo_paths": [
-        "evidence/raw/IMG_6822.jpeg",
-        "evidence/raw/IMG_6832.jpeg"
+        "evidence/raw/Kumpf/IMG_6822.jpeg",
+        "evidence/raw/Kumpf/IMG_6832.jpeg"
       ],
       "photo_reference_basis": "docs/reconstruction/SOURCE-RECONCILIATION.md",
       "wheel_scan_paths": [
-        "evidence/raw/Scaniverse 2026-10-07 173556.ply",
-        "evidence/raw/Scaniverse 2026-10-07 173556.glb"
+        "evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.ply",
+        "evidence/raw/Gesamtansichten/Scaniverse 2026-10-07 173556.glb"
       ],
       "wheel_scan_use": "Überlappung laut Fachkenner sichtbar; gezielter Scanabgleich steht aus.",
       "dedicated_nail_point_cloud": {
