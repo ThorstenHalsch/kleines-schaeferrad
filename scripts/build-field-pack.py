@@ -1,5 +1,6 @@
 """A3 technical capture pack: mesh-derived projections plus original-photo overlays."""
 from pathlib import Path
+from evidence_paths import evidence_path
 import json, hashlib, shutil, math, io, base64, gzip
 from xml.sax.saxutils import escape
 from PIL import Image, ImageOps, ImageEnhance
@@ -24,7 +25,7 @@ for sheet in sheets:
 for name,file in [('KS','DejaVuSans.ttf'),('KSB','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
 W,H=420,297
 c=canvas.Canvas(str(OUT/'KS-Werkstatt-Aufnahmeplan-A3.pdf'),pagesize=landscape(A3),invariant=1,pageCompression=1)
-c.setTitle('Kleines Schäferrad · Technischer Aufnahmeplan ITER-001');c.setAuthor('Kleines Schäferrad')
+c.setTitle(f'Kleines Schäferrad · Technischer Aufnahmeplan {D["iteration"]}');c.setAuthor('Kleines Schäferrad')
 def line(a,b,color='#333333',width=.3,dash=None):
  c.setStrokeColor(color);c.setLineWidth(width*mm);c.setDash(*([1.7*mm,1*mm] if dash else []));c.line(a[0]*mm,a[1]*mm,b[0]*mm,b[1]*mm);c.setDash()
 def text(s,x,y,size=3.4,bold=False,color='#292d2d'):
@@ -49,9 +50,7 @@ photo_locations={
 }
 def photo(name,rect,overlay=False,locations=None):
  if name not in photos:
-  p=ROOT/'evidence/raw'/name
-  if not p.exists():p=ROOT/name
-  if not p.exists():raise FileNotFoundError(p)
+  p=evidence_path(ROOT,name)
   im=ImageOps.exif_transpose(Image.open(p)).convert('RGB');im.thumbnail((1600,1600))
   # Print-only exposure compensation for dark synthetic render plates; originals unchanged.
   if name.startswith('output/calibration/'):
@@ -100,22 +99,22 @@ for i,s in enumerate(sheets):
    wrap(before,xx,yy+20,125,3.1);wrap(after,xx,yy+11,125,3.0)
   text('Je Ereignis festhalten',280,112,4,True)
   for k,tx in enumerate(['Teil / Partner: __________________','Foto vorher: __________________','Foto danach: __________________','Maß / Werkzeug: ______________','Person / Reihenfolge: __________','Sicherung geprüft: _____________']):text(tx,280,99-k*11,3.2)
-  line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · Aufnahmebereiche, keine Perspektivmaße',13,13,2.7);text('Originalfotos / Samstagplan · tatsächliche Kontaktstellen nah ergänzen',13,7,2.7)
+  line((13,19),(407,19),'#9da5a0',.25);text(f'{D["iteration"]} · {i+1:02}/{len(sheets)} · A3 quer · Aufnahmebereiche, keine Perspektivmaße',13,13,2.7);text('Originalfotos / Samstagplan · tatsächliche Kontaktstellen nah ergänzen',13,7,2.7)
   pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'five-original-photo-event-panels','status':'REVIEW_REQUIRED'})
   continue
  n=len(s['views']);ww=394/n
  # Existing source and canonical images only: no new geometry or reconstruction render.
  decision_images={
-  'KS-11':['evidence/raw/IMG_6856.jpeg','output/calibration/ITER-001/canonical/07-truth.png'],
-  'KS-30':['evidence/raw/1000046420.jpg','evidence/raw/1000046421.jpg','evidence/raw/1000046422.jpg'],
-  'KS-31':['evidence/raw/IMG_6809.jpeg','output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png'],
-  'KS-40':['evidence/raw/IMG_6854.jpeg','output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png'],
-  'KS-51':['evidence/raw/IMG_6812.jpeg','output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg']}
+  'KS-11':['evidence/raw/Arme/IMG_6856.jpeg','output/calibration/ITER-001/canonical/07-truth.png'],
+  'KS-30':['evidence/raw/Kumpf/1000046420.jpg','evidence/raw/Kumpf/1000046421.jpg','evidence/raw/Kumpf/1000046422.jpg'],
+  'KS-31':['evidence/raw/Kumpf/IMG_6809.jpeg','output/calibration/ITER-001/comparisons/06-nail-candidates-ABC.png'],
+  'KS-40':['evidence/raw/Kumpf/IMG_6854.jpeg','output/calibration/ITER-001/comparisons/03-paddle-v2-v3.png'],
+  'KS-51':['evidence/raw/Gesamtansichten/IMG_6812.jpeg','output/calibration/ITER-001/operation/pickup-lift-discharge-channel.jpg']}
  imgs=decision_images.get(s['id'])
  if imgs:
   for k,img in enumerate(imgs):
    xx=13+k*394/len(imgs);wwi=394/len(imgs)-6
-   text(('ORIGINALQUELLE' if img.startswith('evidence/') else 'SYNTHESE - AUFGEHELLT / UNBESTÄTIGT'),xx,242,3.2,True)
+   text(('ORIGINALQUELLE' if img.startswith('evidence/') else 'ITER-001 · ÄLTERER KANDIDAT / UNBESTÄTIGT'),xx,242,3.2,True)
    photo(img,(xx,100,wwi,135));wrap(Path(img).name,xx,96,wwi,2.5)
   text('Entscheidung offen: am realen Teil zeigen und mit Messreferenz aufnehmen.',13,84,3.3,True)
  # Retain existing frozen projections on other pages.
@@ -133,7 +132,7 @@ for i,s in enumerate(sheets):
  for note in s['notes']:yy=wrap(note,note_x,yy,note_w,3.4)-2
  text('Teil / Partner: ___________________    Maß / Werkzeug: ___________________',note_x,max(yy-3,37),3.2)
  line((note_x,29),(407,29),'#bcc1bc',.2);text('Person / Datum / Reihenfolge: __________________________________________',note_x,24,3)
- line((13,19),(407,19),'#9da5a0',.25);text(f'ITER-001 · {i+1:02}/{len(sheets)} · A3 quer · 09.10.2026 · nicht maßhaltig',13,13,2.7)
+ line((13,19),(407,19),'#9da5a0',.25);text(f'{D["iteration"]} · {i+1:02}/{len(sheets)} · A3 quer · 09.10.2026 · nicht maßhaltig',13,13,2.7)
  text('TRUTH CRITIC · OFFEN · keine Demontagefreigabe',190,13,2.7)
  wrap(('Quellen: '+', '.join(imgs)) if imgs else s['source'],13,7,390,2.3)
  pages.append({'page':i+1,'code':s['id'],'title':s['title'],'visual':'existing-source-and-candidate-decision-view' if imgs else 'frozen-mesh-projection / original-photo','status':'REVIEW_REQUIRED'})
@@ -150,7 +149,7 @@ photo_specs={
 for g in G['guides']:
  name=photo_specs.get(g['id'])
  if name:
-  file,markers,labels=name;im=ImageOps.exif_transpose(Image.open(ROOT/'evidence/raw'/file)).convert('RGB');im.thumbnail((1400,1100));im.save(VIS/(g['id']+'.jpg'),quality=88);ww,hh=im.size;encoded=base64.b64encode((VIS/(g['id']+'.jpg')).read_bytes()).decode('ascii');data_url='data:image/jpeg;base64,'+encoded
+  file,markers,labels=name;im=ImageOps.exif_transpose(Image.open(evidence_path(ROOT,file))).convert('RGB');im.thumbnail((1400,1100));im.save(VIS/(g['id']+'.jpg'),quality=88);ww,hh=im.size;encoded=base64.b64encode((VIS/(g['id']+'.jpg')).read_bytes()).decode('ascii');data_url='data:image/jpeg;base64,'+encoded
   svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {ww} {hh}" role="img"><title>{escape(g["title"])}</title><image href="{data_url}" xlink:href="{data_url}" width="{ww}" height="{hh}"/>'
   for u,v,num in markers:
    x,y=u*ww,v*hh;r=max(16,ww*.018);svg+=f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff8e8" stroke="#93601b" stroke-width="3"/><text x="{x}" y="{y+r*.34}" text-anchor="middle" font-family="sans-serif" font-size="{r*1.1}" font-weight="bold">{num}</text>'
@@ -170,13 +169,13 @@ route=[next(t for t in T['tasks'] if t['task_id']==p['task_id']) for p in E['pri
 for page in range(2):
  if page:A.showPage()
  A.setFont('KSB',17);A.drawString(12*mm,191*mm,'Kleines Schäferrad · Aufnahmefolge')
- A.setFont('KS',8);A.drawString(12*mm,181*mm,'Reihenfolge mit den Monteuren abstimmen. Erst aufnehmen, dann lösen.')
+ A.setFont('KS',8);A.drawString(12*mm,10*mm,D['iteration']+' · Keine Ist-Maße / keine Demontagefreigabe');A.drawString(12*mm,181*mm,'Reihenfolge mit den Monteuren abstimmen. Erst aufnehmen, dann lösen.')
  for j,t in enumerate(route[page*11:(page+1)*11]):
   yy=(167-j*12)*mm;A.setFont('KSB',9);A.drawString(12*mm,yy,('KS-30/31' if t['task_id']=='TASK-KUM-BEFORE' else gmap[G['task_visual_map'][t['task_id']]]['sheet']));A.setFont('KS',9);A.drawString(38*mm,yy,(t['capture_priority']['priority']+' '+t['title'])[:78])
   A.setFont('KS',7);A.drawString(38*mm,yy-4*mm,t['capture_priority']['window']+' | '+t['task_id'])
  A.setFont('KS',8);A.drawString(12*mm,20*mm,'Abschluss: Partner zugeordnet · Originale gesichert · Sicherung auf zweitem Gerät geöffnet')
 A.save()
-manifest={'schema':'ks-field-pack/v2','task_source':'data/field-tasks.json','task_source_sha256':hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest(),'visual_source':'data/visual-guides.json','visual_source_sha256':hashlib.sha256((ROOT/'data/visual-guides.json').read_bytes()).hexdigest(),'task_ids':[t['task_id'] for t in T['tasks']],'task_to_sheet':{tid:gmap[gid]['sheet'] for tid,gid in G['task_visual_map'].items()},'task_additional_sheets':{'TASK-KUM-BEFORE':['KS-31']},'evidence_gate_source':'data/pre-disassembly-evidence-gate.json','evidence_gate_sha256':hashlib.sha256((ROOT/'data/pre-disassembly-evidence-gate.json').read_bytes()).hexdigest(),'pages':pages,'format':'A3 landscape','physical_instances_precreated':0,'geometry_sha256':D['geometry_sha256'],'quality_gate':'PENDING_VISUAL_AUDIT'}
+manifest={'schema':'ks-field-pack/v2','iteration':D['iteration'],'geometry_dependencies':D['geometry_dependencies'],'task_source':'data/field-tasks.json','task_source_sha256':hashlib.sha256((ROOT/'data/field-tasks.json').read_bytes()).hexdigest(),'visual_source':'data/visual-guides.json','visual_source_sha256':hashlib.sha256((ROOT/'data/visual-guides.json').read_bytes()).hexdigest(),'task_ids':[t['task_id'] for t in T['tasks']],'task_to_sheet':{tid:gmap[gid]['sheet'] for tid,gid in G['task_visual_map'].items()},'task_additional_sheets':{'TASK-KUM-BEFORE':['KS-31']},'evidence_gate_source':'data/pre-disassembly-evidence-gate.json','evidence_gate_sha256':hashlib.sha256((ROOT/'data/pre-disassembly-evidence-gate.json').read_bytes()).hexdigest(),'pages':pages,'format':'A3 landscape','physical_instances_precreated':0,'geometry_sha256':D['geometry_sha256'],'quality_gate':'PENDING_VISUAL_AUDIT'}
 review_path=ROOT/'state/reconstruction/quality-review.json'
 if review_path.exists():
  review=json.loads(review_path.read_text())
